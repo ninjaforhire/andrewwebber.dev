@@ -1,29 +1,40 @@
+import { StatsCounter } from "@/components/animation/StatsCounter";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { JourneyTeaser } from "@/components/sections/JourneyTeaser";
+
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center">
-      <div className="text-center">
-        <p className="mb-2 font-mono text-xs uppercase tracking-[0.3em] text-terminal">
-          initializing
+    <>
+      <HeroSection />
+      <StatsCounter />
+      <JourneyTeaser />
+
+      {/* CTA */}
+      <section className="relative z-10 mx-auto max-w-2xl px-8 py-24 text-center">
+        <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">
+          $ echo &quot;let&apos;s build something&quot;
         </p>
-        <h1 className="font-heading text-5xl font-bold tracking-tight">
-          Andrew
-          <br />
-          <span className="text-data">Webber</span>
-        </h1>
-        <p className="mt-1 font-mono text-lg text-muted-foreground">
-          <span className="text-creative">.dev</span>
+        <h2 className="mt-4 font-heading text-3xl font-bold">
+          Ready to <span className="text-terminal">collaborate</span>?
+        </h2>
+        <p className="mt-4 text-muted-foreground">
+          Whether you need AI automation, a security audit, or a creative coding partner.
         </p>
-        <p className="mt-6 max-w-md text-sm text-muted-foreground">
-          Builder / Automation Architect / Creative Coder
-        </p>
-        <div className="mt-8 flex gap-4 font-mono text-xs">
-          <span className="text-terminal">170+ tools</span>
-          <span className="text-muted-foreground">·</span>
-          <span className="text-data">377K+ LOC</span>
-          <span className="text-muted-foreground">·</span>
-          <span className="text-creative">20 yrs building</span>
+        <div className="mt-8 flex justify-center gap-4">
+          <a
+            href="/work#consultation"
+            className="rounded-md bg-terminal/10 px-6 py-3 font-mono text-sm text-terminal transition-colors hover:bg-terminal/20"
+          >
+            Book Consultation →
+          </a>
+          <a
+            href="/about#contact"
+            className="rounded-md border border-border px-6 py-3 font-mono text-sm text-muted-foreground transition-colors hover:border-data hover:text-data"
+          >
+            Get in Touch
+          </a>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }

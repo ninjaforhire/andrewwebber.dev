@@ -3,6 +3,8 @@ import { mono, heading, body } from "@/lib/fonts";
 import { NavRail } from "@/components/layout/NavRail";
 import { InquiryPill } from "@/components/layout/InquiryPill";
 import { LenisProvider } from "@/components/layout/LenisProvider";
+import { LoadingScreen } from "@/components/animation/LoadingScreen";
+import { BinaryRain } from "@/components/animation/BinaryRain";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -46,9 +48,11 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full">
+        <LoadingScreen />
         <LenisProvider>
+          <BinaryRain />
           <NavRail />
-          <main className="ml-16">{children}</main>
+          <main className="relative z-10 ml-16">{children}</main>
           <InquiryPill />
         </LenisProvider>
       </body>

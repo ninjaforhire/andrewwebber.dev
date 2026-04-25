@@ -149,3 +149,22 @@
   );
   pointer-events: none;
 }
+
+/* Glitch animation for loading screen transition */
+@keyframes glitch {
+  0% { transform: translate(0); filter: none; }
+  10% { transform: translate(-2px, 1px); filter: hue-rotate(90deg); }
+  20% { transform: translate(2px, -1px); filter: hue-rotate(180deg); }
+  30% { transform: translate(-1px, 2px); }
+  40% { transform: translate(1px, -2px); filter: hue-rotate(270deg); }
+  50% { transform: translate(-2px, 0); filter: none; }
+  60% { transform: translate(2px, 1px); filter: hue-rotate(90deg); }
+  70% { transform: translate(0, -1px); }
+  80% { transform: translate(-1px, 0); filter: hue-rotate(180deg); }
+  90% { transform: translate(1px, 1px); filter: none; }
+  100% { transform: translate(0); opacity: 0; }
+}
+
+.animate-glitch {
+  animation: glitch 0.5s ease-in-out forwards;
+}
