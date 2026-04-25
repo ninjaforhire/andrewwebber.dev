@@ -1,0 +1,151 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* Font families */
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-mono);
+  --font-heading: var(--font-heading);
+
+  /* Shadcn color tokens */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Custom accent colors */
+  --color-terminal: var(--terminal);
+  --color-data: var(--data);
+  --color-creative: var(--creative);
+  --color-warm: var(--warm);
+
+  /* Radius */
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+/* ============================================
+   DARK MODE (default)
+   ============================================ */
+:root {
+  --background: #0f0f1a;
+  --foreground: #e0e0e0;
+  --card: #1a1a2e;
+  --card-foreground: #e0e0e0;
+  --popover: #1a1a2e;
+  --popover-foreground: #e0e0e0;
+  --primary: #e0e0e0;
+  --primary-foreground: #0f0f1a;
+  --secondary: #222233;
+  --secondary-foreground: #e0e0e0;
+  --muted: #222233;
+  --muted-foreground: #888888;
+  --accent: #222233;
+  --accent-foreground: #e0e0e0;
+  --destructive: #ff4444;
+  --border: #222233;
+  --input: #222233;
+  --ring: #00ff41;
+  --radius: 0.625rem;
+
+  /* Multi-accent system */
+  --terminal: #00ff41;
+  --data: #00e5ff;
+  --creative: #b44aff;
+  --warm: #ffb000;
+
+  color-scheme: dark;
+}
+
+/* ============================================
+   LIGHT MODE
+   ============================================ */
+.light {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --card: #f5f5f7;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  --primary: #1a1a1a;
+  --primary-foreground: #ffffff;
+  --secondary: #f0f0f2;
+  --secondary-foreground: #1a1a1a;
+  --muted: #f0f0f2;
+  --muted-foreground: #666666;
+  --accent: #f0f0f2;
+  --accent-foreground: #1a1a1a;
+  --destructive: #cc0000;
+  --border: #e0e0e0;
+  --input: #e0e0e0;
+  --ring: #00cc33;
+
+  --terminal: #00cc33;
+  --data: #0099cc;
+  --creative: #8833cc;
+  --warm: #cc8800;
+
+  color-scheme: light;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+/* ============================================
+   CUSTOM UTILITIES
+   ============================================ */
+
+/* Glow effects for accent colors */
+.glow-terminal {
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.15);
+}
+.glow-data {
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.15);
+}
+.glow-creative {
+  box-shadow: 0 0 20px rgba(180, 74, 255, 0.15);
+}
+.glow-warm {
+  box-shadow: 0 0 20px rgba(255, 176, 0, 0.15);
+}
+
+/* Scanline overlay for glitch effects */
+.scanlines {
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.03) 0px,
+    rgba(0, 0, 0, 0.03) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+}
