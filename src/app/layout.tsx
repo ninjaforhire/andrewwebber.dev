@@ -4,19 +4,18 @@ import { NavRail } from "@/components/layout/NavRail";
 import { InquiryPill } from "@/components/layout/InquiryPill";
 import { LenisProvider } from "@/components/layout/LenisProvider";
 import { LoadingScreen } from "@/components/animation/LoadingScreen";
-import { BinaryRain } from "@/components/animation/BinaryRain";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Andrew Webber — Builder / Automation Architect",
+    default: "Andrew Webber — AI Architect",
     template: "%s | andrewwebber.dev",
   },
   description:
     "170+ AI tools. 377K+ lines of code. Builder, automation architect, and creative coder from Fort Worth, TX.",
   metadataBase: new URL("https://andrewwebber.dev"),
   openGraph: {
-    title: "Andrew Webber — Builder / Automation Architect",
+    title: "Andrew Webber — AI Architect",
     description:
       "170+ AI tools. 377K+ lines of code. Builder, automation architect, and creative coder from Fort Worth, TX.",
     url: "https://andrewwebber.dev",
@@ -26,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Andrew Webber — Builder / Automation Architect",
+    title: "Andrew Webber — AI Architect",
     description:
       "170+ AI tools. 377K+ lines of code. Builder, automation architect, and creative coder from Fort Worth, TX.",
   },
@@ -50,7 +49,6 @@ export default function RootLayout({
       <body className="min-h-full">
         <LoadingScreen />
         <LenisProvider>
-          <BinaryRain />
           <NavRail />
           <main className="relative z-10 ml-16">{children}</main>
           <InquiryPill />

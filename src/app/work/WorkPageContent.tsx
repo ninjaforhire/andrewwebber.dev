@@ -4,6 +4,7 @@ import { useState } from "react";
 import { PROJECTS, ALL_TAGS } from "@/lib/projects";
 import { ProjectCard } from "@/components/sections/ProjectCard";
 import { ServiceTier } from "@/components/sections/ServiceTier";
+import { BusinessCard } from "@/components/sections/BusinessCard";
 import { ConsultationForm } from "@/components/forms/ConsultationForm";
 import { cn } from "@/lib/utils";
 
