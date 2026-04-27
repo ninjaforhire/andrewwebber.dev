@@ -1,65 +1,54 @@
 "use client";
 
-import { TypeWriter } from "@/components/animation/TypeWriter";
-
 const MILESTONES = [
   {
     year: "2006",
-    label: "Live Events in DFW",
-    description: "Started in the live events industry",
-    accent: "text-warm",
-    dot: "bg-warm",
+    title: "Live events, sound, lights, AV.",
+    description:
+      "Started in DFW live production. Learned to ship under pressure, on deadlines, with zero margin for error. The discipline transferred.",
   },
   {
     year: "2016",
-    label: "MIGHTY Photo Booths",
-    description: "Founded December 5th. Premium photo experiences.",
-    accent: "text-creative",
-    dot: "bg-creative",
+    title: "Founded MIGHTY Photo Booths.",
+    description:
+      "December 5th. Premium experiences for brands that demand more than a backdrop and a button.",
   },
   {
     year: "Now",
-    label: "AI & Automation",
-    description: "170+ tools. 377K+ lines. Building the future.",
-    accent: "text-terminal",
-    dot: "bg-terminal",
+    title: "Building AI agents at scale.",
+    description:
+      "170+ tools. Custom orchestrators, automation pipelines, creative code. Shipping daily.",
   },
 ];
 
 export function JourneyTeaser() {
   return (
-    <section className="relative z-10 mx-auto max-w-2xl px-8 py-24">
-      <p className="mb-8 text-center font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">
-        <TypeWriter text="$ git log --oneline --reverse" speed={40} cursor={false} />
-      </p>
+    <section className="px-12 sm:px-16 md:px-24 py-32 md:py-40 border-t border-white/5">
+      <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-creative mb-16 md:mb-24">
+        § 02 — Timeline
+      </div>
 
-      <div className="space-y-8">
+      <div className="space-y-24 md:space-y-32">
         {MILESTONES.map((m) => (
-          <div key={m.year} className="flex items-start gap-4">
-            <div className="flex flex-col items-center">
-              <div className={`h-3 w-3 rounded-full ${m.dot}`} />
-              <div className="h-full w-px bg-border" />
-            </div>
-            <div>
-              <p className={`font-mono text-sm font-medium ${m.accent}`}>
+          <div
+            key={m.year}
+            className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start"
+          >
+            <div className="md:col-span-3">
+              <div className="crop text-[clamp(72px,10vw,120px)] font-extrabold text-creative leading-none">
                 {m.year}
-              </p>
-              <p className="font-heading text-lg font-bold">{m.label}</p>
-              <p className="mt-1 text-sm text-muted-foreground">
+              </div>
+            </div>
+            <div className="md:col-span-8 md:col-start-5">
+              <h3 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6 crop">
+                {m.title}
+              </h3>
+              <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground">
                 {m.description}
               </p>
             </div>
           </div>
         ))}
-      </div>
-
-      <div className="mt-12 text-center">
-        <a
-          href="/about"
-          className="font-mono text-xs text-data transition-colors hover:text-terminal"
-        >
-          Read the full story →
-        </a>
       </div>
     </section>
   );

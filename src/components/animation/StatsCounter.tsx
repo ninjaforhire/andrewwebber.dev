@@ -1,21 +1,12 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { cn } from "@/lib/utils";
 
 interface StatProps {
   value: number;
   suffix?: string;
   label: string;
-  accent: "terminal" | "data" | "creative" | "warm";
 }
-
-const ACCENT_MAP = {
-  terminal: "text-terminal",
-  data: "text-data",
-  creative: "text-creative",
-  warm: "text-warm",
-};
 
 function AnimatedNumber({ target, suffix = "" }: { target: number; suffix?: string }) {
   const [current, setCurrent] = useState(0);
@@ -60,15 +51,15 @@ function AnimatedNumber({ target, suffix = "" }: { target: number; suffix?: stri
   );
 }
 
-function Stat({ value, suffix, label, accent }: StatProps) {
+function Stat({ value, suffix, label }: StatProps) {
   return (
-    <div className="text-center">
-      <p className={cn("font-mono text-3xl font-medium tabular-nums", ACCENT_MAP[accent])}>
+    <div>
+      <div className="crop text-[clamp(72px,10vw,140px)] font-extrabold leading-none text-data tabular-nums">
         <AnimatedNumber target={value} suffix={suffix} />
-      </p>
-      <p className="mt-1 text-xs uppercase tracking-wider text-muted-foreground">
+      </div>
+      <div className="font-mono text-sm font-medium tracking-wider text-muted-foreground mt-4 sm:mt-6 uppercase">
         {label}
-      </p>
+      </div>
     </div>
   );
 }
@@ -91,20 +82,16 @@ export function StatsCounter({ stats }: StatsCounterProps) {
   };
 
   return (
-    <section className="relative z-10 mx-auto w-full max-w-3xl px-8 py-24">
-      <p className="mb-8 text-center font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">
-        $ wc -l **/*.py **/*.ts
-      </p>
-      <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-        <Stat value={data.tools} suffix="+" label="Tools Built" accent="terminal" />
-        <Stat
-          value={data.linesOfCode}
-          suffix="+"
-          label="Lines of Code"
-          accent="data"
-        />
-        <Stat value={data.skills} label="Skills" accent="creative" />
-        <Stat value={data.yearsBuilding} suffix=" yrs" label="Building" accent="warm" />
+    <section className="px-12 sm:px-16 md:px-24 py-32 md:py-40 border-t border-white/5">
+      <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-data mb-16 md:mb-24">
+        § 01 — Output
+      </div>
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-8">
+        <Stat value={data.tools} suffix="+" label="Tools shipped" />
+        <Stat value={data.linesOfCode} label="Lines of code" />
+        <Stat value={data.skills} label="Skills authored" />
+        <Stat value={data.yearsBuilding} suffix=" y" label="Building" />
       </div>
     </section>
   );

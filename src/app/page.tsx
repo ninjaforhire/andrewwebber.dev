@@ -9,29 +9,34 @@ export default function Home() {
       <StatsCounter />
       <JourneyTeaser />
 
-      {/* CTA */}
-      <section className="relative z-10 mx-auto max-w-2xl px-8 py-24 text-center">
-        <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">
-          $ echo &quot;let&apos;s build something&quot;
-        </p>
-        <h2 className="mt-4 font-heading text-3xl font-bold">
-          Ready to <span className="text-terminal">collaborate</span>?
+      {/* CTA — single amber accent, big confident */}
+      <section className="px-12 sm:px-16 md:px-24 py-32 md:py-40 border-t border-white/5 mb-24">
+        <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-warm mb-12">
+          § 03 — Work together
+        </div>
+
+        <h2 className="crop font-extrabold text-[clamp(56px,10vw,120px)] leading-[0.9] max-w-5xl">
+          Got something
+          <br />
+          <span className="text-warm">worth building?</span>
         </h2>
-        <p className="mt-4 text-muted-foreground">
-          Whether you need AI automation, a security audit, or a creative coding partner.
+
+        <p className="text-2xl leading-relaxed text-muted-foreground max-w-2xl mt-12">
+          Limited consulting slots. AI implementation, custom dashboards, automation strategy. Let&apos;s talk.
         </p>
-        <div className="mt-8 flex justify-center gap-4">
+
+        <div className="flex flex-wrap gap-4 mt-16">
           <a
             href="/work#consultation"
-            className="rounded-md bg-terminal/10 px-6 py-3 font-mono text-sm text-terminal transition-colors hover:bg-terminal/20"
+            className="font-mono text-base font-medium tracking-wider uppercase text-warm border-2 border-warm/40 bg-warm/5 px-10 py-6 hover:bg-warm/10 transition-colors"
           >
-            Book Consultation →
+            → Book Consultation · $1K
           </a>
           <a
             href="/about#contact"
-            className="rounded-md border border-border px-6 py-3 font-mono text-sm text-muted-foreground transition-colors hover:border-data hover:text-data"
+            className="font-mono text-base font-medium tracking-wider uppercase text-muted-foreground border-2 border-white/10 px-10 py-6 hover:border-white/30 transition-colors"
           >
-            Get in Touch
+            → Get in Touch
           </a>
         </div>
       </section>

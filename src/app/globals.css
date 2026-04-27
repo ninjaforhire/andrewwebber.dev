@@ -5,10 +5,10 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  /* Font families */
-  --font-sans: var(--font-body);
+  /* Font families — Geist everywhere (display + body), Geist Mono for code/labels */
+  --font-sans: var(--font-display);
   --font-mono: var(--font-mono);
-  --font-heading: var(--font-heading);
+  --font-heading: var(--font-display);
 
   /* Shadcn color tokens */
   --color-background: var(--background);
@@ -114,10 +114,22 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-size: 22px;
+    line-height: 1.55;
+    letter-spacing: -0.011em;
+    -webkit-font-smoothing: antialiased;
   }
   html {
     @apply font-sans;
   }
+}
+
+/* v2-B Bold Geometric — cropped letter-spacing for big display type */
+.crop {
+  letter-spacing: -0.05em;
+}
+.muted {
+  color: #7a7a86;
 }
 
 /* ============================================

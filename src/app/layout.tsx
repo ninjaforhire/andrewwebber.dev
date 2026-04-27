@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { mono, heading, body } from "@/lib/fonts";
+import { display, mono } from "@/lib/fonts";
 import { NavRail } from "@/components/layout/NavRail";
 import { InquiryPill } from "@/components/layout/InquiryPill";
 import { LenisProvider } from "@/components/layout/LenisProvider";
@@ -44,7 +44,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${mono.variable} ${heading.variable} ${body.variable} dark h-full antialiased`}
+      className={`${display.variable} ${mono.variable} dark h-full antialiased`}
       suppressHydrationWarning
     >
       <body className="min-h-full">
