@@ -2,13 +2,34 @@
 
 import { useEffect, useRef, useState } from "react";
 
+type FormatType = "compact" | "default";
+
 interface StatProps {
   value: number;
   suffix?: string;
   label: string;
+  format?: FormatType;
 }
 
-function AnimatedNumber({ target, suffix = "" }: { target: number; suffix?: string }) {
+function formatNumber(n: number, format: FormatType): string {
+  if (format === "compact") {
+    return new Intl.NumberFormat("en-US", {
+      notation: "compact",
+      maximumFractionDigits: 0,
+    }).format(n);
+  }
+  return n.toLocaleString();
+}
+
+function AnimatedNumber({
+  target,
+  suffix = "",
+  format = "default",
+}: {
+  target: number;
+  suffix?: string;
+  format?: FormatType;
+}) {
   const [current, setCurrent] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
   const hasAnimated = useRef(false);
@@ -45,19 +66,19 @@ function AnimatedNumber({ target, suffix = "" }: { target: number; suffix?: stri
 
   return (
     <span ref={ref}>
-      {current.toLocaleString()}
-      {suffix}
+      {formatNumber(current, format)}
+      {suffix && <span className="text-[0.55em] align-top ml-0.5">{suffix}</span>}
     </span>
   );
 }
 
-function Stat({ value, suffix, label }: StatProps) {
+function Stat({ value, suffix, label, format = "default" }: StatProps) {
   return (
-    <div>
-      <div className="crop text-[clamp(72px,10vw,140px)] font-extrabold leading-none text-data tabular-nums">
-        <AnimatedNumber target={value} suffix={suffix} />
+    <div className="min-w-0 overflow-hidden">
+      <div className="crop text-[clamp(56px,7.5vw,104px)] font-extrabold leading-none text-data tabular-nums whitespace-nowrap">
+        <AnimatedNumber target={value} suffix={suffix} format={format} />
       </div>
-      <div className="font-mono text-sm font-medium tracking-wider text-muted-foreground mt-4 sm:mt-6 uppercase">
+      <div className="font-mono text-xs sm:text-sm font-medium tracking-wider text-muted-foreground mt-4 sm:mt-6 uppercase">
         {label}
       </div>
     </div>
@@ -87,11 +108,11 @@ export function StatsCounter({ stats }: StatsCounterProps) {
         § 01 — Output
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-8">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
         <Stat value={data.tools} suffix="+" label="Tools shipped" />
-        <Stat value={data.linesOfCode} label="Lines of code" />
+        <Stat value={data.linesOfCode} format="compact" suffix="+" label="Lines of code" />
         <Stat value={data.skills} label="Skills authored" />
-        <Stat value={data.yearsBuilding} suffix=" y" label="Building" />
+        <Stat value={data.yearsBuilding} suffix="yr" label="Building" />
       </div>
     </section>
   );
