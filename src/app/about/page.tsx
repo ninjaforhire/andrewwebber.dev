@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { CertTimeline } from "@/components/sections/CertTimeline";
 import { ContactForm } from "@/components/forms/ContactForm";
+import { CharacterStats } from "@/components/sections/CharacterStats";
 
 export const metadata: Metadata = {
   title: "Dossier",
@@ -67,10 +68,24 @@ export default function AboutPage() {
         </p>
       </div>
 
+      {/* CHARACTER STATS */}
+      <div className="mt-32 md:mt-40 pt-32 border-t border-white/5">
+        <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-terminal mb-6">
+          § 02 — Character Sheet
+        </div>
+        <h2 className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] mb-8">
+          Stats <span className="text-terminal">unlocked</span>.
+        </h2>
+        <p className="text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-16">
+          Twenty years of practice across six disciplines. Still grinding XP.
+        </p>
+        <CharacterStats />
+      </div>
+
       {/* EDUCATION */}
       <div className="mt-32 md:mt-40 pt-32 border-t border-white/5">
         <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-data mb-6">
-          § 02 — Credentials
+          § 03 — Credentials
         </div>
         <h2 className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] mb-8">
           Always <span className="text-data">learning</span>.<br />
@@ -85,7 +100,7 @@ export default function AboutPage() {
       {/* CONTACT */}
       <div id="contact" className="mt-32 md:mt-40 pt-32 border-t border-white/5">
         <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-terminal mb-6">
-          § 03 — Get in touch
+          § 04 — Get in touch
         </div>
         <h2 className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] mb-8">
           Say <span className="text-terminal">hello</span>.
