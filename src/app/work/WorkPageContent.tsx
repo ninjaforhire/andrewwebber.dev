@@ -15,25 +15,29 @@ export function WorkPageContent() {
     : PROJECTS;
 
   return (
-    <div className="relative z-10 mx-auto max-w-5xl px-8 py-24">
-      {/* Header */}
-      <p className="font-mono text-xs uppercase tracking-[0.3em] text-data">
-        $ ls ~/projects
-      </p>
-      <h1 className="mt-2 font-heading text-4xl font-bold">Work</h1>
-      <p className="mt-2 text-muted-foreground">
-        A selection of tools, agents, and systems I&apos;ve built.
+    <div className="px-12 sm:px-16 md:px-24 py-24 md:py-32">
+
+      {/* HEADER */}
+      <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-data mb-6">
+        § 01 — The Work
+      </div>
+      <h1 className="crop font-extrabold text-[clamp(56px,10vw,140px)] leading-[0.88] mb-8">
+        A selection of <span className="text-data">things</span><br />
+        I&apos;ve built.
+      </h1>
+      <p className="text-2xl leading-relaxed text-muted-foreground max-w-3xl">
+        170+ tools, agents, and systems shipped. Most live in production today. A few of the highlights below.
       </p>
 
-      {/* Tag filter */}
-      <div className="mt-8 flex flex-wrap gap-2">
+      {/* TAG FILTER */}
+      <div className="mt-16 flex flex-wrap gap-2">
         <button
           onClick={() => setActiveTag(null)}
           className={cn(
-            "rounded-full px-3 py-1 font-mono text-[10px] uppercase tracking-wider transition-colors",
+            "rounded-full px-4 py-2 font-mono text-xs uppercase tracking-wider transition-colors",
             !activeTag
-              ? "bg-data/10 text-data"
-              : "text-muted-foreground hover:text-foreground"
+              ? "bg-data/10 text-data border border-data/30"
+              : "text-muted-foreground border border-white/10 hover:border-white/30"
           )}
         >
           All
@@ -43,10 +47,10 @@ export function WorkPageContent() {
             key={tag}
             onClick={() => setActiveTag(tag === activeTag ? null : tag)}
             className={cn(
-              "rounded-full px-3 py-1 font-mono text-[10px] uppercase tracking-wider transition-colors",
+              "rounded-full px-4 py-2 font-mono text-xs uppercase tracking-wider transition-colors",
               tag === activeTag
-                ? "bg-data/10 text-data"
-                : "text-muted-foreground hover:text-foreground"
+                ? "bg-data/10 text-data border border-data/30"
+                : "text-muted-foreground border border-white/10 hover:border-white/30"
             )}
           >
             {tag}
@@ -54,24 +58,26 @@ export function WorkPageContent() {
         ))}
       </div>
 
-      {/* Project grid */}
-      <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {/* PROJECT GRID */}
+      <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {filtered.map((project) => (
           <ProjectCard key={project.title} project={project} />
         ))}
       </div>
 
-      {/* Services */}
-      <div className="mt-32">
-        <p className="font-mono text-xs uppercase tracking-[0.3em] text-data">
-          $ cat services.yml
-        </p>
-        <h2 className="mt-2 font-heading text-3xl font-bold">Services</h2>
-        <p className="mt-2 text-muted-foreground">
-          Hands-on consulting for businesses ready to level up.
+      {/* SERVICES */}
+      <div className="mt-32 md:mt-40 pt-32 border-t border-white/5">
+        <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-warm mb-6">
+          § 02 — Services
+        </div>
+        <h2 className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] mb-8">
+          Hands-on <span className="text-warm">consulting</span>.
+        </h2>
+        <p className="text-2xl leading-relaxed text-muted-foreground max-w-3xl">
+          Limited engagements each quarter for businesses ready to level up.
         </p>
 
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
+        <div className="mt-16 grid gap-6 md:grid-cols-2">
           <ServiceTier
             title="Photo Booth Consulting"
             price="Let's Talk"
@@ -96,22 +102,23 @@ export function WorkPageContent() {
               "AI operations integration",
               "30-day post-implementation support",
             ]}
-            accent="data"
+            accent="warm"
             featured
           />
         </div>
       </div>
 
-      {/* Consultation form */}
-      <div className="mt-32">
-        <p className="font-mono text-xs uppercase tracking-[0.3em] text-data">
-          $ ./book-consultation.sh
-        </p>
-        <h2 className="mt-2 font-heading text-3xl font-bold">
-          Book a Consultation
+      {/* CONSULTATION FORM */}
+      <div className="mt-32 md:mt-40 pt-32 border-t border-white/5">
+        <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-terminal mb-6">
+          § 03 — Book a call
+        </div>
+        <h2 className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] mb-8">
+          Tell me what<br />
+          you&apos;re <span className="text-terminal">building</span>.
         </h2>
-        <p className="mt-2 mb-8 text-muted-foreground">
-          Tell me what you&apos;re working on. I&apos;ll respond within 24 hours.
+        <p className="text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-12">
+          I respond within 24 hours.
         </p>
         <ConsultationForm />
       </div>

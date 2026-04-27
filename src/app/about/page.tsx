@@ -10,34 +10,31 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="relative z-10 mx-auto max-w-3xl px-8 py-24">
-      {/* Header */}
-      <p className="font-mono text-xs uppercase tracking-[0.3em] text-creative">
-        $ cat about.txt
-      </p>
-      <h1 className="mt-2 font-heading text-4xl font-bold">About</h1>
+    <div className="px-12 sm:px-16 md:px-24 py-24 md:py-32">
 
-      {/* Story */}
-      <div className="mt-12 space-y-6 text-base leading-relaxed text-muted-foreground">
+      {/* HEADER */}
+      <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-creative mb-6">
+        § 01 — About
+      </div>
+      <h1 className="crop font-extrabold text-[clamp(56px,10vw,140px)] leading-[0.88]">
+        Builder. <br />
+        <span className="text-creative">Storyteller.</span><br />
+        Systems guy.
+      </h1>
+
+      {/* STORY */}
+      <div className="mt-20 max-w-4xl space-y-8 text-2xl leading-relaxed text-muted-foreground">
         <p>
-          My dad brought home a computer when I was about six years old. It was
-          running <span className="text-warm">Windows 3.1</span> and didn&apos;t
-          have a single game on it. But I had this unexplainable fascination
-          with the way the file systems worked. I&apos;d click through every
-          folder, every icon, trying to understand how it all connected.
+          My dad brought home a computer when I was about six years old. It was running{" "}
+          <span className="text-warm">Windows 3.1</span> and didn&apos;t have a single game on it. But I had this unexplainable fascination with the way the file systems worked. I&apos;d click through every folder, every icon, trying to understand how it all connected.
         </p>
 
         <p>
-          By fifth grade I was building my own computers and making websites.
-          Not because anyone told me to. Because I couldn&apos;t stop.
+          By fifth grade I was building my own computers and making websites. Not because anyone told me to. Because I couldn&apos;t stop.
         </p>
 
         <p>
-          That energy never went away. In{" "}
-          <span className="text-data">2006</span>, I started working in live
-          events across DFW. Sound, lighting, AV production, photography. I
-          learned how to make things work under pressure, on a deadline, with
-          zero margin for error.
+          That energy never went away. In <span className="text-data">2006</span>, I started working in live events across DFW. Sound, lighting, AV production, photography. I learned how to make things work under pressure, on a deadline, with zero margin for error.
         </p>
 
         <p>
@@ -50,60 +47,51 @@ export default function AboutPage() {
           >
             MIGHTY Photo Booths
           </a>
-          . Premium photo experiences for corporate events and brand
-          activations. Canon DSLRs, custom designs from scratch, self-powered
-          battery setups. 55+ brands served. 80+ unique configurations.
+          . Premium photo experiences for corporate events and brand activations. Canon DSLRs, custom designs from scratch, self-powered battery setups. 55+ brands served. 80+ unique configurations.
         </p>
 
         <p>
-          Somewhere along the way I discovered my{" "}
-          <span className="text-terminal">ADHD superpower</span>. The thing
-          people told me was a weakness turned out to be the reason I can build
-          170+ tools, manage multiple businesses, and hyperfocus on problems
-          until they&apos;re solved. I stopped fighting it and started
-          unleashing it on code.
+          Somewhere along the way I discovered my <span className="text-terminal">ADHD superpower</span>. The thing people told me was a weakness turned out to be the reason I can build 170+ tools, manage multiple businesses, and hyperfocus on problems until they&apos;re solved. I stopped fighting it and started unleashing it on code.
         </p>
 
         <p>
-          Today I build AI agents, automation systems, and creative code. I have
-          a passion for{" "}
+          Today I build AI agents, automation systems, and creative code. I have a passion for{" "}
           <span className="text-terminal">cybersecurity</span>,{" "}
           <span className="text-warm">AV production</span>,{" "}
           <span className="text-creative">photography</span>, and{" "}
-          <span className="text-data">everything tech</span>. I&apos;m a
-          systems guy who loves perfect organization, LaCroix, and building
-          things that make other people&apos;s lives easier.
+          <span className="text-data">everything tech</span>. I&apos;m a systems guy who loves perfect organization, LaCroix, and building things that make other people&apos;s lives easier.
         </p>
 
         <p>
-          No aspirations of being a teacher. I help people and businesses by
-          building, not lecturing. I love my family more than anyone should
-          be allowed to love.
+          No aspirations of being a teacher. I help people and businesses by building, not lecturing. I love my family more than anyone should be allowed to love.
         </p>
       </div>
 
-      {/* Education */}
-      <div className="mt-24">
-        <p className="font-mono text-xs uppercase tracking-[0.3em] text-creative">
-          $ cat ~/.credentials
-        </p>
-        <h2 className="mt-2 font-heading text-3xl font-bold">
-          Education & Certifications
+      {/* EDUCATION */}
+      <div className="mt-32 md:mt-40 pt-32 border-t border-white/5">
+        <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-data mb-6">
+          § 02 — Credentials
+        </div>
+        <h2 className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] mb-8">
+          Always <span className="text-data">learning</span>.<br />
+          Never done.
         </h2>
-        <p className="mt-2 mb-8 text-muted-foreground">
-          Always learning. Never done.
+        <p className="text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-16">
+          Certifications, courses, and credentials picked up along the way.
         </p>
         <CertTimeline />
       </div>
 
-      {/* Contact */}
-      <div className="mt-24">
-        <p className="font-mono text-xs uppercase tracking-[0.3em] text-creative">
-          $ echo &quot;say hello&quot;
-        </p>
-        <h2 className="mt-2 font-heading text-3xl font-bold">Get in Touch</h2>
-        <p className="mt-2 mb-8 text-muted-foreground">
-          Have a question, want to collaborate, or just want to say hey.
+      {/* CONTACT */}
+      <div id="contact" className="mt-32 md:mt-40 pt-32 border-t border-white/5">
+        <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-terminal mb-6">
+          § 03 — Get in touch
+        </div>
+        <h2 className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] mb-8">
+          Say <span className="text-terminal">hello</span>.
+        </h2>
+        <p className="text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-12">
+          Question, collaboration, or just want to say hey.
         </p>
         <ContactForm />
       </div>
