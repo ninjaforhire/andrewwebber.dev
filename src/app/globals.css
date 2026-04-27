@@ -201,13 +201,11 @@
    HERO MOTION — shine sweep + glow pulse + scan bar
    ============================================ */
 
-/* Brushed steel texture — layered: vertical brushed lines + tonal gradient + moving sheen */
+/* WEBBER — brushed grain + tonal green + vertical sheen bouncing top<->bottom */
 @keyframes hero-shine {
-  0%   { background-position: 0 0, 0 0, 200% 50%; }
-  100% { background-position: 0 0, 0 0, -200% 50%; }
+  0%   { background-position: 0 0, 0 0, 50% -60%; }
+  100% { background-position: 0 0, 0 0, 50% 160%; }
 }
-
-/* GREEN STEEL — "Webber" */
 .hero-shine {
   background-image:
     /* fine brushed grain */
@@ -221,51 +219,38 @@
       #aaffc0 48%,
       #00ff5c 60%,
       #006e1d 100%),
-    /* moving specular sheen */
-    linear-gradient(100deg,
+    /* vertical specular sheen — bounces top↔bottom */
+    linear-gradient(180deg,
       transparent 0%,
       transparent 38%,
-      rgba(255, 255, 255, 0.85) 50%,
+      rgba(255, 255, 255, 0.9) 50%,
       transparent 62%,
       transparent 100%);
-  background-size: auto, 100% 100%, 250% 100%;
-  background-position: 0 0, 0 0, 200% 50%;
+  background-size: auto, 100% 100%, 100% 220%;
+  background-position: 0 0, 0 0, 50% -60%;
   background-repeat: repeat, no-repeat, no-repeat;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  animation: hero-shine 5s linear infinite;
+  animation: hero-shine 7s ease-in-out infinite alternate;
   filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.4))
           drop-shadow(0 0 24px rgba(0, 255, 65, 0.35));
 }
 
-/* SILVER STEEL — "Andrew" */
+/* ANDREW — clean silver steel, no brushed lines */
 .hero-steel {
   background-image:
-    repeating-linear-gradient(180deg,
-      rgba(0, 0, 0, 0.18) 0 1px,
-      transparent 1px 3px),
     linear-gradient(180deg,
       #b8b8c4 0%,
       #f5f5f9 22%,
       #ffffff 48%,
       #d8d8e0 60%,
-      #6c6c78 100%),
-    linear-gradient(100deg,
-      transparent 0%,
-      transparent 40%,
-      rgba(255, 255, 255, 0.7) 50%,
-      transparent 60%,
-      transparent 100%);
-  background-size: auto, 100% 100%, 250% 100%;
-  background-position: 0 0, 0 0, 200% 50%;
-  background-repeat: repeat, no-repeat, no-repeat;
+      #6c6c78 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  animation: hero-shine 6s linear infinite;
   filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.5))
           drop-shadow(0 0 18px rgba(255, 255, 255, 0.08));
 }
