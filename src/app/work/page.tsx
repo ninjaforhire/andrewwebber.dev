@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { WorkPageContent } from "./WorkPageContent";
 
 export const metadata: Metadata = {
-  title: "Work",
+  title: "Projects",
   description: "170+ AI tools, automation agents, and consultation services.",
 };
 

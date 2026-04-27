@@ -3,7 +3,7 @@ import { CertTimeline } from "@/components/sections/CertTimeline";
 import { ContactForm } from "@/components/forms/ContactForm";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "Dossier",
   description:
     "The story behind the code. Andrew Webber — builder, automation architect, and creative coder from Fort Worth, TX.",
 };
@@ -14,7 +14,7 @@ export default function AboutPage() {
 
       {/* HEADER */}
       <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-creative mb-6">
-        § 01 — About
+        § 01 — Dossier
       </div>
       <h1 className="crop font-extrabold text-[clamp(56px,10vw,140px)] leading-[0.88]">
         Builder. <br />

@@ -3,7 +3,7 @@ import { getAllPosts } from "@/lib/blog";
 import { BlogCard } from "@/components/sections/BlogCard";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "Field Notes",
   description: "Thoughts on AI, creative coding, security, and automation.",
 };
 
@@ -13,11 +13,11 @@ export default function BlogPage() {
   return (
     <div className="px-12 sm:px-16 md:px-24 py-24 md:py-32">
       <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-warm mb-6">
-        § 01 — Writing
+        § 01 — Field Notes
       </div>
       <h1 className="crop font-extrabold text-[clamp(56px,10vw,140px)] leading-[0.88]">
-        Thoughts &<br />
-        <span className="text-warm">field notes</span>.
+        Thoughts from<br />
+        the <span className="text-warm">workbench</span>.
       </h1>
       <p className="text-2xl leading-relaxed text-muted-foreground max-w-3xl mt-8">
         Notes from the workbench. AI, creative coding, security, automation.

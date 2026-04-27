@@ -8,9 +8,9 @@ import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
   { label: "HOME", href: "/", accent: "terminal" },
-  { label: "WORK", href: "/work", accent: "data" },
-  { label: "ABOUT", href: "/about", accent: "creative" },
-  { label: "BLOG", href: "/blog", accent: "warm" },
+  { label: "PROJECTS", href: "/work", accent: "data" },
+  { label: "DOSSIER", href: "/about", accent: "creative" },
+  { label: "FIELD NOTES", href: "/blog", accent: "warm" },
 ] as const;
 
 const ACCENT_COLORS: Record<string, string> = {

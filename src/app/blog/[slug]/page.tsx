@@ -37,7 +37,7 @@ export default async function BlogPostPage({
         href="/blog"
         className="font-mono text-xs font-medium tracking-[0.3em] uppercase text-muted-foreground transition-colors hover:text-warm"
       >
-        ← Back to writing
+        ← Back to field notes
       </Link>
 
       <header className="mt-12">

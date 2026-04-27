@@ -19,7 +19,7 @@ export function WorkPageContent() {
 
       {/* HEADER */}
       <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-data mb-6">
-        § 01 — The Work
+        § 01 — Projects
       </div>
       <h1 className="crop font-extrabold text-[clamp(56px,10vw,140px)] leading-[0.88] mb-8">
         A selection of <span className="text-data">things</span><br />
