@@ -16,7 +16,7 @@ export function HeroSection() {
       {/* Top meta bar */}
       <div className="relative flex justify-between items-start">
         <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-muted-foreground">
-          AI Architect · Fort Worth, TX
+          Systems · Agents · Security · Fort Worth, TX
         </div>
         <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-terminal flex items-center gap-2">
           <span className="inline-block w-1.5 h-1.5 rounded-full bg-terminal animate-pulse" />
@@ -40,9 +40,20 @@ export function HeroSection() {
 
       {/* Bottom row — descriptor + scroll hint */}
       <div className="relative flex flex-col sm:flex-row justify-between items-start sm:items-end gap-6 max-w-7xl">
-        <p className="text-2xl sm:text-3xl leading-snug max-w-xl font-medium">
-          Builder. Automation architect. Creative coder. Shipping agents and systems that get out of your way.
-        </p>
+        <div className="flex flex-col gap-1.5">
+          <div className="flex items-center gap-3">
+            <span className="h-px w-6 bg-terminal" />
+            <span className="font-mono text-sm sm:text-base tracking-[0.3em] uppercase text-terminal font-medium">Systems Architect</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <span className="h-px w-6 bg-data" />
+            <span className="font-mono text-sm sm:text-base tracking-[0.3em] uppercase text-data font-medium">Agentic Engineer</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <span className="h-px w-6 bg-creative" />
+            <span className="font-mono text-sm sm:text-base tracking-[0.3em] uppercase text-creative font-medium">Cybersecurity</span>
+          </div>
+        </div>
         <div className="font-mono text-sm text-muted-foreground shrink-0">
           ↓ scroll
         </div>
