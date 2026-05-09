@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 const MILESTONES = [
   {
     year: "2006",
@@ -27,6 +29,20 @@ const MILESTONES = [
       "Dante Audio Networking — Levels 1-3",
       "93 audiobooks on business, psychology, and strategy",
     ],
+  },
+  {
+    year: "2025",
+    title: "MIGHTY goes full-time.",
+    description:
+      "January. Every contract expired — and I let them. Walked away from the safety net to bet everything on MIGHTY Photo Booths. Eyes open to eyes closed, usually 2 or 3am. A year of conviction, manual processes, and proving myself.",
+    details: [
+      "Hired a creative partner for design — Matt changed the game",
+      "Tried to hire an executive assistant three times — all three quit",
+      "Every quote, every email, every follow-up — done by hand",
+      "The EA frustration became the spark: what if AI could do this?",
+      "December 26, 2025 — the journey begins →",
+    ],
+    link: "/journey",
   },
   {
     year: "Now",
@@ -63,15 +79,27 @@ export function JourneyTeaser() {
               </p>
               {"details" in m && m.details && (
                 <ul className="mt-6 space-y-2">
-                  {(m.details as string[]).map((d) => (
-                    <li
-                      key={d}
-                      className="flex items-start gap-3 text-base md:text-lg text-muted-foreground"
-                    >
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-creative" />
-                      {d}
-                    </li>
-                  ))}
+                  {(m.details as string[]).map((d, i) => {
+                    const isLinkItem = "link" in m && m.link && d.includes("→");
+                    return (
+                      <li
+                        key={d}
+                        className="flex items-start gap-3 text-base md:text-lg text-muted-foreground"
+                      >
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-creative" />
+                        {isLinkItem ? (
+                          <Link
+                            href={m.link as string}
+                            className="text-creative hover:text-foreground transition-colors font-semibold"
+                          >
+                            {d}
+                          </Link>
+                        ) : (
+                          d
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               )}
             </div>
