@@ -8,16 +8,16 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Andrew Webber — AI Architect",
+    default: "Andrew Webber — Systems Architect · Agentic Engineer · Cybersecurity",
     template: "%s | andrewwebber.dev",
   },
   description:
-    "170+ AI tools. 377K+ lines of code. Builder, automation architect, and creative coder from Fort Worth, TX.",
+    "Systems architect, agentic engineer, and cybersecurity builder. 31 autonomous agents, 193 skills, 1.3M+ lines of code. Fort Worth, TX.",
   metadataBase: new URL("https://andrewwebber.dev"),
   openGraph: {
-    title: "Andrew Webber — AI Architect",
+    title: "Andrew Webber — Systems Architect · Agentic Engineer · Cybersecurity",
     description:
-      "170+ AI tools. 377K+ lines of code. Builder, automation architect, and creative coder from Fort Worth, TX.",
+      "Systems architect, agentic engineer, and cybersecurity builder. 31 autonomous agents, 193 skills, 1.3M+ lines of code. Fort Worth, TX.",
     url: "https://andrewwebber.dev",
     siteName: "andrewwebber.dev",
     locale: "en_US",
@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Andrew Webber — AI Architect",
+    title: "Andrew Webber — Systems Architect · Agentic Engineer · Cybersecurity",
     description:
-      "170+ AI tools. 377K+ lines of code. Builder, automation architect, and creative coder from Fort Worth, TX.",
+      "Systems architect, agentic engineer, and cybersecurity builder. 31 autonomous agents, 193 skills, 1.3M+ lines of code. Fort Worth, TX.",
   },
   robots: {
     index: true,

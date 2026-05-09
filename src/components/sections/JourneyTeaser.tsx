@@ -46,9 +46,16 @@ const MILESTONES = [
   },
   {
     year: "Now",
-    title: "Building AI agents at scale.",
+    title: "Systems architect. Agentic engineer. Security builder.",
     description:
-      "170+ tools. Custom orchestrators, automation pipelines, creative code. Shipping daily.",
+      "170+ tools. Custom orchestrators, autonomous agent pipelines, offensive security platforms. From OSINT engines to production deployment — full stack, every layer.",
+    details: [
+      "31 autonomous agents orchestrated by a custom dispatch system",
+      "SPECTRE — offensive security + OSINT platform (Docker, Nmap, Nuclei)",
+      "193 Claude Code skills powering daily operations",
+      "1.3M+ lines of code across 22 repositories",
+      "Shipping daily — 135 consecutive days and counting",
+    ],
   },
 ];
 
