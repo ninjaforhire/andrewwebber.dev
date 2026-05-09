@@ -50,7 +50,7 @@ export default function RootLayout({
         <LoadingScreen />
         <LenisProvider>
           <NavRail />
-          <main className="relative z-10 ml-16">{children}</main>
+          <main className="relative z-10 ml-20">{children}</main>
           <InquiryPill />
         </LenisProvider>
       </body>

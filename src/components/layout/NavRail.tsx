@@ -58,7 +58,7 @@ export function NavRail() {
   }
 
   return (
-    <nav className="fixed left-0 top-0 z-50 flex h-full w-16 flex-col items-center justify-between border-r border-border bg-background/80 py-8 backdrop-blur-md">
+    <nav className="fixed left-0 top-0 z-50 flex h-full w-20 flex-col items-center justify-between border-r border-border bg-background/80 py-8 backdrop-blur-md">
       {/* Nav items */}
       <div className="flex flex-col items-center gap-6">
         {NAV_ITEMS.map((item) => {
@@ -72,7 +72,7 @@ export function NavRail() {
               key={item.href}
               href={item.href}
               className={cn(
-                "group relative font-mono text-[10px] font-medium uppercase tracking-[0.25em] transition-colors duration-200",
+                "group relative font-mono text-sm font-semibold uppercase tracking-[0.25em] transition-colors duration-200",
                 "[writing-mode:vertical-rl] rotate-180",
                 isActive
                   ? ACCENT_COLORS[item.accent]
@@ -83,7 +83,7 @@ export function NavRail() {
               {isActive && (
                 <span
                   className={cn(
-                    "absolute -right-[1.45rem] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full",
+                    "absolute -right-[1.6rem] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full",
                     item.accent === "terminal" && "bg-terminal",
                     item.accent === "data" && "bg-data",
                     item.accent === "creative" && "bg-creative",
@@ -103,14 +103,14 @@ export function NavRail() {
           className="text-muted-foreground transition-colors hover:text-terminal"
           aria-label={soundEnabled ? "Mute sound" : "Enable sound"}
         >
-          {soundEnabled ? <Volume2 size={14} /> : <VolumeOff size={14} />}
+          {soundEnabled ? <Volume2 size={18} /> : <VolumeOff size={18} />}
         </button>
         <button
           onClick={toggleTheme}
           className="text-muted-foreground transition-colors hover:text-warm"
           aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
         >
-          {isDark ? <Sun size={14} /> : <Moon size={14} />}
+          {isDark ? <Sun size={18} /> : <Moon size={18} />}
         </button>
       </div>
     </nav>
