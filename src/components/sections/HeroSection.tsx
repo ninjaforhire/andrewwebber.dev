@@ -1,6 +1,25 @@
 "use client";
 
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+const ROLES = [
+  { text: "Systems Architect", color: "text-terminal" },
+  { text: "Agentic Engineer", color: "text-data" },
+  { text: "Cybersecurity", color: "text-creative" },
+];
+
+const DIVIDER_COLORS = ["bg-terminal", "bg-data", "bg-creative"];
+
 export function HeroSection() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % ROLES.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <section className="min-h-[100dvh] px-12 sm:px-16 md:px-24 pt-16 pb-12 flex flex-col justify-between relative overflow-hidden">
       {/* Soft radial glow behind the name */}
@@ -40,19 +59,33 @@ export function HeroSection() {
 
       {/* Bottom row — descriptor + scroll hint */}
       <div className="relative flex flex-col sm:flex-row justify-between items-start sm:items-end gap-6 max-w-7xl">
-        <div className="flex flex-col gap-1.5">
-          <div className="flex items-center gap-3">
-            <span className="h-px w-6 bg-terminal" />
-            <span className="font-mono text-sm sm:text-base tracking-[0.3em] uppercase text-terminal font-medium">Systems Architect</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <span className="h-px w-6 bg-data" />
-            <span className="font-mono text-sm sm:text-base tracking-[0.3em] uppercase text-data font-medium">Agentic Engineer</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <span className="h-px w-6 bg-creative" />
-            <span className="font-mono text-sm sm:text-base tracking-[0.3em] uppercase text-creative font-medium">Cybersecurity</span>
-          </div>
+        <div className="flex items-center gap-4">
+          {ROLES.map((role, i) => (
+            <button
+              key={role.text}
+              onClick={() => setActiveIndex(i)}
+              className="flex items-center gap-3 group cursor-pointer"
+            >
+              <motion.span
+                className={`h-2 w-2 rounded-full ${DIVIDER_COLORS[i]}`}
+                animate={{
+                  scale: i === activeIndex ? [1, 1.4, 1] : 1,
+                  opacity: i === activeIndex ? 1 : 0.4,
+                }}
+                transition={{ duration: 0.6, repeat: i === activeIndex ? Infinity : 0, repeatDelay: 2 }}
+              />
+              <span
+                className={`text-lg sm:text-xl md:text-2xl font-bold tracking-tight transition-all duration-500 ${
+                  i === activeIndex ? role.color : "text-muted-foreground/40"
+                } group-hover:opacity-100`}
+              >
+                {role.text}
+              </span>
+              {i < ROLES.length - 1 && (
+                <span className="text-muted-foreground/20 text-xl font-light ml-1">·</span>
+              )}
+            </button>
+          ))}
         </div>
         <div className="font-mono text-sm text-muted-foreground shrink-0">
           ↓ scroll
