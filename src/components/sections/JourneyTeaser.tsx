@@ -14,6 +14,21 @@ const MILESTONES = [
       "December 5th. Premium experiences for brands that demand more than a backdrop and a button.",
   },
   {
+    year: "2022",
+    title: "The Learning Era.",
+    description:
+      "93 Audible books. 19 certifications — Google IT Support, Python, cybersecurity, SEO, Dante audio networking, Photoshop, leadership. Stacking skills while running a business full-time.",
+    details: [
+      "Google IT Support Certificate — Coursera",
+      "Python 101 for Hackers — TCM Security",
+      "Programming with AI — TCM Security",
+      "OOP Design + Learning Python — LinkedIn",
+      "SEMrush SEO Suite — 3 certifications",
+      "Dante Audio Networking — Levels 1-3",
+      "93 audiobooks on business, psychology, and strategy",
+    ],
+  },
+  {
     year: "Now",
     title: "Building AI agents at scale.",
     description:
@@ -46,6 +61,19 @@ export function JourneyTeaser() {
               <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground">
                 {m.description}
               </p>
+              {"details" in m && m.details && (
+                <ul className="mt-6 space-y-2">
+                  {(m.details as string[]).map((d) => (
+                    <li
+                      key={d}
+                      className="flex items-start gap-3 text-base md:text-lg text-muted-foreground"
+                    >
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-creative" />
+                      {d}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         ))}
