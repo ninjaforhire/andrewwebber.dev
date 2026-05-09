@@ -29,7 +29,7 @@ export function DayCard({ entry }: DayCardProps) {
       <div className="relative flex flex-col items-center pt-1">
         <div
           className={cn(
-            "relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border text-[10px] font-mono font-bold",
+            "relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border text-xs font-mono font-bold",
             eraColors
           )}
         >
@@ -53,10 +53,10 @@ export function DayCard({ entry }: DayCardProps) {
         >
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center gap-3 min-w-0">
-              <span className="shrink-0 font-mono text-[10px] text-muted-foreground tracking-wider">
+              <span className="shrink-0 font-mono text-xs text-muted-foreground tracking-wider">
                 {formatted}
               </span>
-              <h3 className="text-sm md:text-base font-semibold truncate">
+              <h3 className="text-base md:text-lg font-semibold truncate">
                 {entry.title}
               </h3>
             </div>
@@ -89,7 +89,7 @@ export function DayCard({ entry }: DayCardProps) {
           <div className="mt-2 flex items-center gap-2">
             <span
               className={cn(
-                "rounded-full border px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider",
+                "rounded-full border px-2 py-0.5 font-mono text-[11px] uppercase tracking-wider",
                 eraColors
               )}
             >
@@ -98,7 +98,7 @@ export function DayCard({ entry }: DayCardProps) {
             {entry.category.map((cat) => (
               <span
                 key={cat}
-                className="font-mono text-[9px] text-muted-foreground tracking-wider"
+                className="font-mono text-[11px] text-muted-foreground tracking-wider"
               >
                 {cat}
               </span>
@@ -118,15 +118,26 @@ export function DayCard({ entry }: DayCardProps) {
               <div className="border-t border-white/5 px-4 py-3 md:px-5 md:py-4 space-y-3">
                 {entry.videos.length > 0 && (
                   <div>
-                    <div className="font-mono text-[9px] uppercase tracking-wider text-red-400 mb-1.5">
+                    <div className="font-mono text-[11px] uppercase tracking-wider text-red-400 mb-1.5">
                       Videos
                     </div>
                     {entry.videos.map((v, i) => (
                       <div key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
                         <Play size={12} className="mt-0.5 shrink-0 text-red-400" />
                         <div>
-                          <span className="text-foreground">{v.title}</span>
-                          <span className="text-muted-foreground"> -- {v.channel}</span>
+                          {v.url ? (
+                            <a
+                              href={v.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-foreground hover:text-red-400 transition-colors underline decoration-white/20 hover:decoration-red-400"
+                            >
+                              {v.title}
+                            </a>
+                          ) : (
+                            <span className="text-foreground">{v.title}</span>
+                          )}
+                          <span className="text-muted-foreground"> — {v.channel}</span>
                         </div>
                       </div>
                     ))}
@@ -135,12 +146,12 @@ export function DayCard({ entry }: DayCardProps) {
 
                 {entry.builds.length > 0 && (
                   <div>
-                    <div className="font-mono text-[9px] uppercase tracking-wider text-blue-400 mb-1.5">
+                    <div className="font-mono text-[11px] uppercase tracking-wider text-blue-400 mb-1.5">
                       Builds
                     </div>
                     {entry.builds.map((b, i) => (
                       <div key={i} className="space-y-1">
-                        <span className="font-mono text-[10px] text-data">{b.repo}</span>
+                        <span className="font-mono text-xs text-data">{b.repo}</span>
                         {b.commits.map((c, j) => (
                           <div key={j} className="flex items-start gap-2 text-sm text-muted-foreground">
                             <GitCommit size={12} className="mt-0.5 shrink-0 text-blue-400" />
@@ -154,7 +165,7 @@ export function DayCard({ entry }: DayCardProps) {
 
                 {entry.takeaway && (
                   <div>
-                    <div className="font-mono text-[9px] uppercase tracking-wider text-terminal mb-1.5">
+                    <div className="font-mono text-[11px] uppercase tracking-wider text-terminal mb-1.5">
                       Takeaway
                     </div>
                     <p className="text-sm text-muted-foreground italic">

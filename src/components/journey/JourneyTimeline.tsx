@@ -38,7 +38,7 @@ export function JourneyTimeline({ entries }: JourneyTimelineProps) {
                   </div>
                   <div className="flex-1 flex items-center gap-3">
                     <div className="h-px flex-1 bg-white/10" />
-                    <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+                    <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
                       {entry.era} begins
                     </span>
                     <div className="h-px flex-1 bg-white/10" />
@@ -49,7 +49,7 @@ export function JourneyTimeline({ entries }: JourneyTimelineProps) {
               {showMonth && (
                 <div className="relative flex items-center gap-4 md:gap-6 mb-4 mt-8 first:mt-0">
                   <div className="hidden md:block w-8" />
-                  <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+                  <div className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
                     {monthKey}
                   </div>
                 </div>

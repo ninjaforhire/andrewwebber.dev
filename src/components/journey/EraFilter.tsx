@@ -15,7 +15,7 @@ export function EraFilter({ active, onSelect, total }: EraFilterProps) {
       <button
         onClick={() => onSelect(null)}
         className={cn(
-          "rounded-full px-3 py-1 font-mono text-[10px] uppercase tracking-wider transition-colors border",
+          "rounded-full px-3 py-1 font-mono text-xs uppercase tracking-wider transition-colors border",
           !active
             ? "bg-terminal/10 text-terminal border-terminal/20"
             : "text-muted-foreground border-transparent hover:text-foreground"
@@ -31,7 +31,7 @@ export function EraFilter({ active, onSelect, total }: EraFilterProps) {
             key={era}
             onClick={() => onSelect(era === active ? null : era)}
             className={cn(
-              "rounded-full px-3 py-1 font-mono text-[10px] uppercase tracking-wider transition-colors border",
+              "rounded-full px-3 py-1 font-mono text-xs uppercase tracking-wider transition-colors border",
               isActive
                 ? colors
                 : "text-muted-foreground border-transparent hover:text-foreground"

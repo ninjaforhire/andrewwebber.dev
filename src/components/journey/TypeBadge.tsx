@@ -10,7 +10,7 @@ export function TypeBadge({ type }: TypeBadgeProps) {
   return (
     <span
       className={cn(
-        "inline-block rounded-full px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider",
+        "inline-block rounded-full px-2 py-0.5 font-mono text-[11px] uppercase tracking-wider",
         colors
       )}
     >

@@ -51,7 +51,7 @@ export function StatsHeader({ data }: StatsHeaderProps) {
             transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
           />
         </div>
-        <div className="mt-3 font-mono text-[10px] text-muted-foreground tracking-wider">
+        <div className="mt-3 font-mono text-xs text-muted-foreground tracking-wider">
           Last updated {formattedDate} at {formattedTime}
         </div>
       </div>
