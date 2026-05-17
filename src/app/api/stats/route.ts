@@ -5,7 +5,7 @@ import path from "path";
 interface StatsOverrides {
   tools?: number;
   linesOfCode?: number;
-  dayStreak?: number;
+  commitsShipped?: number;
   agentsLive?: number;
 }
 
@@ -17,9 +17,6 @@ function loadOverrides(): StatsOverrides {
   return {};
 }
 
-const TOOLS_BASELINE = 170;
-const LOC_FALLBACK = 1300000;
-
 function loadDayStreak(): number {
   try {
     const journeyPath = path.join(process.cwd(), "src", "data", "journey-2026.json");
@@ -30,17 +27,36 @@ function loadDayStreak(): number {
   }
 }
 
+const TOOLS_FALLBACK = 170;
+const LOC_FALLBACK = 1300000;
+const COMMITS_FALLBACK = 3200;
+const AGENTS_FALLBACK = 31;
+
+async function timed<T>(promise: Promise<T>, fallback: T, ms = 8000): Promise<T> {
+  return Promise.race([
+    promise,
+    new Promise<T>((resolve) => setTimeout(() => resolve(fallback), ms)),
+  ]);
+}
+
 async function fetchGitHubStats(): Promise<{
   tools: number;
   linesOfCode: number;
-  dayStreak: number;
+  commitsShipped: number;
   agentsLive: number;
+  dayStreak: number;
 }> {
   const token = process.env.GITHUB_TOKEN;
   const dayStreak = loadDayStreak();
 
   if (!token) {
-    return { tools: TOOLS_BASELINE, linesOfCode: LOC_FALLBACK, dayStreak, agentsLive: 31 };
+    return {
+      tools: TOOLS_FALLBACK,
+      linesOfCode: LOC_FALLBACK,
+      commitsShipped: COMMITS_FALLBACK,
+      agentsLive: AGENTS_FALLBACK,
+      dayStreak,
+    };
   }
 
   const headers = {
@@ -49,40 +65,77 @@ async function fetchGitHubStats(): Promise<{
   };
 
   try {
-    const reposRes = await fetch(
-      "https://api.github.com/orgs/ninjaforhire/repos?per_page=100",
-      { headers }
-    );
+    // Repos list + code search in parallel (first round)
+    const [reposRes, searchRes] = await Promise.all([
+      fetch("https://api.github.com/orgs/ninjaforhire/repos?per_page=100", { headers }),
+      fetch(
+        "https://api.github.com/search/code?q=org%3Aninjaforhire+language%3APython&per_page=1",
+        { headers }
+      ),
+    ]);
+
     const repos = await reposRes.json();
+    const searchData = await searchRes.json();
+
     if (!Array.isArray(repos)) {
-      return { tools: TOOLS_BASELINE, linesOfCode: LOC_FALLBACK, dayStreak, agentsLive: 31 };
+      return {
+        tools: TOOLS_FALLBACK,
+        linesOfCode: LOC_FALLBACK,
+        commitsShipped: COMMITS_FALLBACK,
+        agentsLive: AGENTS_FALLBACK,
+        dayStreak,
+      };
     }
 
     const repoCount = repos.length;
+    const toolsShipped = typeof searchData.total_count === "number"
+      ? searchData.total_count
+      : TOOLS_FALLBACK;
 
-    // Fetch language byte counts for all repos in parallel
-    const langResults = await Promise.all(
-      repos.map((repo: { name: string }) =>
-        fetch(`https://api.github.com/repos/ninjaforhire/${repo.name}/languages`, { headers })
-          .then((r) => r.json())
-          .catch(() => ({}))
-      )
+    // Language bytes + commit counts per repo in parallel (second round)
+    const perRepoData = await timed(
+      Promise.all(
+        repos.map(async (repo: { name: string }) => {
+          const [langRes, commitRes] = await Promise.all([
+            fetch(
+              `https://api.github.com/repos/ninjaforhire/${repo.name}/languages`,
+              { headers }
+            ),
+            fetch(
+              `https://api.github.com/repos/ninjaforhire/${repo.name}/commits?per_page=1`,
+              { headers }
+            ),
+          ]);
+
+          const langs: Record<string, number> = await langRes.json().catch(() => ({}));
+          const totalBytes = Object.values(langs).reduce(
+            (a, b) => a + (typeof b === "number" ? b : 0),
+            0
+          );
+
+          const link = commitRes.headers.get("link") ?? "";
+          const match = link.match(/page=(\d+)>; rel="last"/);
+          const commits = match ? parseInt(match[1]) : 1;
+
+          return { bytes: totalBytes, commits };
+        })
+      ),
+      [] as { bytes: number; commits: number }[]
     );
 
-    const totalBytes = langResults.reduce((sum, langs) => {
-      const bytes = Object.values(langs as Record<string, number>).reduce(
-        (a, b) => a + (typeof b === "number" ? b : 0),
-        0
-      );
-      return sum + bytes;
-    }, 0);
-
-    // ~40 bytes per line of code (averaged across languages)
+    const totalBytes = perRepoData.reduce((sum, r) => sum + r.bytes, 0);
     const linesOfCode = totalBytes > 0 ? Math.round(totalBytes / 40) : LOC_FALLBACK;
+    const commitsShipped = perRepoData.reduce((sum, r) => sum + r.commits, 0) || COMMITS_FALLBACK;
 
-    return { tools: TOOLS_BASELINE, linesOfCode, dayStreak, agentsLive: repoCount };
+    return { tools: toolsShipped, linesOfCode, commitsShipped, agentsLive: repoCount, dayStreak };
   } catch {
-    return { tools: TOOLS_BASELINE, linesOfCode: LOC_FALLBACK, dayStreak, agentsLive: 31 };
+    return {
+      tools: TOOLS_FALLBACK,
+      linesOfCode: LOC_FALLBACK,
+      commitsShipped: COMMITS_FALLBACK,
+      agentsLive: AGENTS_FALLBACK,
+      dayStreak,
+    };
   }
 }
 
@@ -93,8 +146,9 @@ export async function GET() {
   const stats = {
     tools: overrides.tools ?? github.tools,
     linesOfCode: overrides.linesOfCode ?? github.linesOfCode,
-    dayStreak: overrides.dayStreak ?? github.dayStreak,
+    commitsShipped: overrides.commitsShipped ?? github.commitsShipped,
     agentsLive: overrides.agentsLive ?? github.agentsLive,
+    dayStreak: github.dayStreak,
   };
 
   return NextResponse.json(stats, {

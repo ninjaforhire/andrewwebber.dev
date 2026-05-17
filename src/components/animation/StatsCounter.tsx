@@ -88,14 +88,14 @@ function Stat({ value, suffix, label, format = "default" }: StatProps) {
 interface LiveStats {
   tools: number;
   linesOfCode: number;
-  dayStreak: number;
+  commitsShipped: number;
   agentsLive: number;
 }
 
 const DEFAULTS: LiveStats = {
   tools: 170,
-  linesOfCode: 377000,
-  dayStreak: 143,
+  linesOfCode: 1300000,
+  commitsShipped: 3200,
   agentsLive: 31,
 };
 
@@ -116,9 +116,9 @@ export function StatsCounter() {
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-16">
-        <Stat value={data.tools} suffix="+" label="Tools shipped" />
-        <Stat value={data.linesOfCode} format="compact" suffix="+" label="Lines of code" />
-        <Stat value={data.dayStreak} suffix="+" label="Day Streak" />
+        <Stat value={data.tools} suffix="+" label="Tools Shipped" />
+        <Stat value={data.linesOfCode} format="compact" suffix="+" label="Lines of Code" />
+        <Stat value={data.commitsShipped} suffix="+" label="Commits Shipped" />
         <Stat value={data.agentsLive} label="Live Agents" />
       </div>
     </section>
