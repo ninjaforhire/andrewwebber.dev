@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-17T13:52:08",
+  "lastUpdated": "2026-05-17T14:00:00",
   "totalDays": 143,
   "currentEra": "Full Stack AI",
   "entries": [
@@ -9,7 +9,8 @@
       "title": "Day 143 — Terminal Concierge — Portfolio Stats Go Live — Journey Update Skill",
       "era": "Full Stack AI",
       "type": [
-        "Build"
+        "Build",
+        "Video"
       ],
       "source": "GitHub",
       "category": [
@@ -19,7 +20,43 @@
         "DevOps"
       ],
       "impact": "Medium",
-      "videos": [],
+      "videos": [
+        {
+          "title": "The AI Career Opportunity Nobody is Talking About in 2026",
+          "channel": "Tina Huang",
+          "url": "https://www.youtube.com/watch?v=iIfOprq2kCM"
+        },
+        {
+          "title": "How to set up Surveys in Booth.Events",
+          "channel": "Booth.Events",
+          "url": "https://www.youtube.com/watch?v=dmOlTzSXPl0"
+        },
+        {
+          "title": "AI Fashion Sketch: Highlight Reel",
+          "channel": "NA",
+          "url": "https://www.youtube.com/watch?v=kHrYFka6-8o"
+        },
+        {
+          "title": "At first it was awesome… #comedy #relatable #shorts",
+          "channel": "NA",
+          "url": "https://www.youtube.com/watch?v=CZGvqKURtpQ"
+        },
+        {
+          "title": "Android 17 Is the Biggest Upgrade in Years",
+          "channel": "Marques Brownlee",
+          "url": "https://www.youtube.com/watch?v=j7i_4RokEIo"
+        },
+        {
+          "title": "Rubio warns of 'TERRIBLE MISTAKE' after China summit",
+          "channel": "Fox News",
+          "url": "https://www.youtube.com/watch?v=d_nvDVlWaX4"
+        },
+        {
+          "title": "The TWO Claude Skills that run our entire AI video pipeline",
+          "channel": "Andrew Webber",
+          "url": "https://www.youtube.com/watch?v=0YhhPQVXA7c"
+        }
+      ],
       "builds": [
         {
           "repo": "general-tools",
@@ -36,7 +73,7 @@
           ]
         }
       ],
-      "takeaway": "Terminal Concierge shipped to general-tools: an interactive launcher that prompts for model, effort level (defaulting to High), and working directory before opening a Claude Code session — also fixes a macOS .terminal plist corruption bug that had been causing terminal launch failures. On the portfolio side, the homepage now surfaces live agent and tool counts pulled from the actual codebase, and the new /journey-update skill automates the process of enriching this JSON log so it stays current without manual editing."
+      "takeaway": "Terminal Concierge shipped to general-tools: an interactive launcher that prompts for model, effort level (defaulting to High), and working directory before opening a Claude Code session — also fixes a macOS .terminal plist corruption bug that had been causing terminal launch failures. On the portfolio side, the homepage now surfaces live agent and tool counts pulled from the actual codebase, and the new /journey-update skill automates the process of enriching this JSON log so it stays current without manual editing. Watched 7 videos including content on The AI Career Opportunity Nobody is Talking About in 2026, How to set up Surveys in Booth.Events."
     },
     {
       "day": 142,
@@ -46,7 +83,8 @@
       "type": [
         "Build",
         "Research",
-        "Design"
+        "Design",
+        "Video"
       ],
       "source": "GitHub",
       "category": [
@@ -56,7 +94,43 @@
         "Security"
       ],
       "impact": "High",
-      "videos": [],
+      "videos": [
+        {
+          "title": "This Device Proves Gaming Has No Limits",
+          "channel": "Linus Tech Tips",
+          "url": "https://www.youtube.com/watch?v=wY6vZvzcSS0"
+        },
+        {
+          "title": "The Very Best of Gengar So Far | Pokémon Seasons 1-5",
+          "channel": "Pokémon",
+          "url": "https://www.youtube.com/watch?v=zmkKteuKr10"
+        },
+        {
+          "title": "The Complete Story Of Ash's Gengar",
+          "channel": "Pokémon",
+          "url": "https://www.youtube.com/watch?v=8Ym9r5S8vsQ"
+        },
+        {
+          "title": "Claude Code Just Got an Agent Dashboard",
+          "channel": "Matthew Berman",
+          "url": "https://www.youtube.com/watch?v=ZAaxx3qyT8g"
+        },
+        {
+          "title": "Hermes Agent: Zero to Personal AI Assistant (1 Hour Course)",
+          "channel": "Chase AI",
+          "url": "https://www.youtube.com/watch?v=gb5TlGw6Uks"
+        },
+        {
+          "title": "The Internet's Hidden 3D Model of the World",
+          "channel": "Wendover Productions",
+          "url": "https://www.youtube.com/watch?v=KWXuxfdZhwk"
+        },
+        {
+          "title": "Hermes Agent just got 10X Better (Agentic OS)",
+          "channel": "Chase AI",
+          "url": "https://www.youtube.com/watch?v=7xuWZ-3lyQE"
+        }
+      ],
       "builds": [
         {
           "repo": "mighty",
@@ -80,7 +154,7 @@
           ]
         }
       ],
-      "takeaway": "Sprint 2 of the Hermes-Eater project landed with a 35-task implementation plan across 8 phases, a full design spec for the Jimbo Curator module, and an operator guide documenting the before/after state of Jimbo’s behavior. The ntn smoke test script got hardened against real API quirks found in Phase 0 testing (page_size must go in the body, in_trash replaces archived, rate limits documented). SPECTRE core dirs consolidated in hotfixops and its CLAUDE.md synced to match disk reality. Forge slide generation fixed to pipe prompts via stdin and use the opus alias correctly."
+      "takeaway": "Sprint 2 of the Hermes-Eater project landed with a 35-task implementation plan across 8 phases, a full design spec for the Jimbo Curator module, and an operator guide documenting the before/after state of Jimbo’s behavior. The ntn smoke test script got hardened against real API quirks found in Phase 0 testing (page_size must go in the body, in_trash replaces archived, rate limits documented). SPECTRE core dirs consolidated in hotfixops and its CLAUDE.md synced to match disk reality. Forge slide generation fixed to pipe prompts via stdin and use the opus alias correctly. Watched 7 videos including content on This Device Proves Gaming Has No Limits, The Very Best of Gengar So Far | Pokémon Seasons 1-5."
     },
     {
       "day": 141,
@@ -89,7 +163,8 @@
       "era": "Full Stack AI",
       "type": [
         "Build",
-        "Skill"
+        "Skill",
+        "Video"
       ],
       "source": "GitHub",
       "category": [
@@ -99,7 +174,63 @@
         "DevOps"
       ],
       "impact": "Critical",
-      "videos": [],
+      "videos": [
+        {
+          "title": "Top 7 OSINT tools REVEALED for 2026",
+          "channel": "NetworkChuck",
+          "url": "https://www.youtube.com/watch?v=WHOgdsEiyew"
+        },
+        {
+          "title": "OSINT Toolkit Every Investigator Needs in 2026",
+          "channel": "David Bombal",
+          "url": "https://www.youtube.com/watch?v=iMD4R1LeqNg"
+        },
+        {
+          "title": "Introducing Notion's Developer Platform: Keynote (Ivan Zhao)",
+          "channel": "Notion",
+          "url": "https://www.youtube.com/watch?v=rpE2rzKO6L0"
+        },
+        {
+          "title": "The Easiest Way to Actually Make Money With AI",
+          "channel": "Greg Isenberg",
+          "url": "https://www.youtube.com/watch?v=03DjE7j0Suw"
+        },
+        {
+          "title": "\"Before I Go…\" Powell Drops BOMBSHELL on New Fed Chair",
+          "channel": "CNBC",
+          "url": "https://www.youtube.com/watch?v=qKJW_R_jlPk"
+        },
+        {
+          "title": "The Most Passive $104K/M Online Business You've Never Heard Of",
+          "channel": "Starter Story",
+          "url": "https://www.youtube.com/watch?v=xUZYy3hCRUM"
+        },
+        {
+          "title": "The UNTHINKABLE is about to happen to Stocks",
+          "channel": "George Gammon",
+          "url": "https://www.youtube.com/watch?v=KgzthZdu8Rk"
+        },
+        {
+          "title": "US-China presidents meet for second open talks to wrap visit",
+          "channel": "PBS NewsHour",
+          "url": "https://www.youtube.com/watch?v=nkCUaG_5ddY"
+        },
+        {
+          "title": "BREAKING NEWS: Trump And Xi Hold Final Talks In Beijing, China",
+          "channel": "Fox News",
+          "url": "https://www.youtube.com/watch?v=vUsY-gENhjM"
+        },
+        {
+          "title": "Inside the Virtual Cyber War Training Used by Governments | Cyber Ranges Uncovered",
+          "channel": "David Bombal",
+          "url": "https://www.youtube.com/watch?v=SBnhtjMA71w"
+        },
+        {
+          "title": "Notion Just Announced A Massive Shift (Big Update)",
+          "channel": "Notion",
+          "url": "https://www.youtube.com/watch?v=zCFlM2XhJJE"
+        }
+      ],
       "builds": [
         {
           "repo": "mighty",
@@ -149,7 +280,7 @@
           ]
         }
       ],
-      "takeaway": "Massive infrastructure day across six repos. The Notion MCP was fully retired and replaced by the ntn CLI — a REST passthrough that returns JSON natively, fixing the broken multi-source DB query behavior and cutting round-trip latency. Simultaneously, two new Go CLIs shipped: quo-pp-cli (Quo/OpenPhone) and slack-pp-cli (Slack), both generated by cli-printing-press and installed at ~/go/bin/, replacing their respective MCPs entirely. On the security side, the SPECTRE module consolidated: hexstrike-ai classes ported into ember + spectre_core, shannon relocated from a decepticon clone into hotfixops/security/ with proper vendoring. State snapshots saved across six repos to mark the cutover point. This is the day the MCP era ended for Notion, Quo, and Slack."
+      "takeaway": "Massive infrastructure day across six repos. The Notion MCP was fully retired and replaced by the ntn CLI — a REST passthrough that returns JSON natively, fixing the broken multi-source DB query behavior and cutting round-trip latency. Simultaneously, two new Go CLIs shipped: quo-pp-cli (Quo/OpenPhone) and slack-pp-cli (Slack), both generated by cli-printing-press and installed at ~/go/bin/, replacing their respective MCPs entirely. On the security side, the SPECTRE module consolidated: hexstrike-ai classes ported into ember + spectre_core, shannon relocated from a decepticon clone into hotfixops/security/ with proper vendoring. State snapshots saved across six repos to mark the cutover point. This is the day the MCP era ended for Notion, Quo, and Slack. Watched 11 videos including content on Top 7 OSINT tools REVEALED for 2026, OSINT Toolkit Every Investigator Needs in 2026."
     },
     {
       "day": 140,
@@ -157,7 +288,8 @@
       "title": "Day 140 — Deep Research Day — ntn CLI Migration Strategy",
       "era": "Full Stack AI",
       "type": [
-        "Research"
+        "Research",
+        "Video"
       ],
       "source": "Other",
       "category": [
@@ -166,9 +298,45 @@
         "DevOps"
       ],
       "impact": "Low",
-      "videos": [],
+      "videos": [
+        {
+          "title": "Skill Issue: Andrej Karpathy on Code Agents, AutoResearch, and the Loopy Era of AI",
+          "channel": "Y Combinator",
+          "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU"
+        },
+        {
+          "title": "Build Andrej Karpathy's LLM Knowledge Base for Businesses (10x Output!)",
+          "channel": "Matt Wolfe",
+          "url": "https://www.youtube.com/watch?v=FAWm7DuFSPc"
+        },
+        {
+          "title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering",
+          "channel": "Y Combinator",
+          "url": "https://www.youtube.com/watch?v=96jN2OCOfLs"
+        },
+        {
+          "title": "Alex Hormozi: How To Make So Much Money You Question The Meaning Of It",
+          "channel": "Alex Hormozi",
+          "url": "https://www.youtube.com/watch?v=gEF67-G9MO0"
+        },
+        {
+          "title": "Robert Kiyosaki: The American Empire Is Cracking — Here's What He's Buying",
+          "channel": "Rich Dad",
+          "url": "https://www.youtube.com/watch?v=Izn_DFVOHQs"
+        },
+        {
+          "title": "How Anyone Can Make $10K+/Month From the Government",
+          "channel": "Starter Story",
+          "url": "https://www.youtube.com/watch?v=xrU6tVo-qME"
+        },
+        {
+          "title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering",
+          "channel": "Y Combinator",
+          "url": "https://www.youtube.com/watch?v=96jN2OCOfLs"
+        }
+      ],
       "builds": [],
-      "takeaway": "No commits — dedicated to planning the Notion MCP retirement and ntn CLI migration. The Notion MCP had become a liability: slow, fragile under multi-source DBs, and impossible to audit. This session mapped every agent that calls Notion, documented the API 2025-09-03 quirks (search filter ‘data_source’ not ‘database’, page_size via body not query string, in_trash not archived), and drafted the Phase 0 smoke test plan that would validate the migration before cutting over."
+      "takeaway": "No commits — dedicated to planning the Notion MCP retirement and ntn CLI migration. The Notion MCP had become a liability: slow, fragile under multi-source DBs, and impossible to audit. This session mapped every agent that calls Notion, documented the API 2025-09-03 quirks (search filter ‘data_source’ not ‘database’, page_size via body not query string, in_trash not archived), and drafted the Phase 0 smoke test plan that would validate the migration before cutting over. Watched 7 videos including content on Skill Issue, Build Andrej Karpathy's LLM Knowledge Base for Businesses (10x Output!)."
     },
     {
       "day": 139,
@@ -176,7 +344,8 @@
       "title": "Day 139 — Architecture Planning Day — Jimbo Hermes-Eater Design",
       "era": "Full Stack AI",
       "type": [
-        "Research"
+        "Research",
+        "Video"
       ],
       "source": "Other",
       "category": [
@@ -184,9 +353,35 @@
         "Agents"
       ],
       "impact": "Low",
-      "videos": [],
+      "videos": [
+        {
+          "title": "If We Had to Make $1M Fast, We'd Start These Businesses",
+          "channel": "Greg Isenberg",
+          "url": "https://www.youtube.com/watch?v=2B5dCquvK4c"
+        },
+        {
+          "title": "He Built a $725 Million Company in 255 Days",
+          "channel": "Acquisition.com",
+          "url": "https://www.youtube.com/watch?v=0OdHGliowm4"
+        },
+        {
+          "title": "Anthropic Just Dethroned OpenAI. Here's What Happens Next.",
+          "channel": "Matthew Berman",
+          "url": "https://www.youtube.com/watch?v=-nG-9vlSkho"
+        },
+        {
+          "title": "President Trump and Xi wrap up first day of meetings",
+          "channel": "NBC News",
+          "url": "https://www.youtube.com/watch?v=6_cjSPckLUo"
+        },
+        {
+          "title": "Illuminati AI: The Shadow World",
+          "channel": "NA",
+          "url": "https://www.youtube.com/watch?v=J-P3L5fy3NA"
+        }
+      ],
       "builds": [],
-      "takeaway": "No commits — full day spent designing the Jimbo Hermes-Eater project. Hermes-Eater is the sprint to transform Jimbo from a reactive router into a proactive curator: an orchestrator that monitors, schedules, and initiates work without being prompted. This session was pure architecture — mapping agent dependencies, defining the curator’s decision loop, and identifying what Jimbo needs to ‘eat’ from Hermes (the notification layer) to act autonomously."
+      "takeaway": "No commits — full day spent designing the Jimbo Hermes-Eater project. Hermes-Eater is the sprint to transform Jimbo from a reactive router into a proactive curator: an orchestrator that monitors, schedules, and initiates work without being prompted. This session was pure architecture — mapping agent dependencies, defining the curator’s decision loop, and identifying what Jimbo needs to ‘eat’ from Hermes (the notification layer) to act autonomously. Watched 5 videos including content on If We Had to Make $1M Fast, We'd Start These Businesses, He Built a $725 Million Company in 255 Days."
     },
     {
       "day": 138,
@@ -194,7 +389,8 @@
       "title": "Day 138 — Skill-to-Command Symlink Sync — Unified Claude Code Skill Registry",
       "era": "Full Stack AI",
       "type": [
-        "Build"
+        "Build",
+        "Video"
       ],
       "source": "GitHub",
       "category": [
@@ -203,7 +399,28 @@
         "DevOps"
       ],
       "impact": "Medium",
-      "videos": [],
+      "videos": [
+        {
+          "title": "NEW Claude Update is a GAME CHANGER!",
+          "channel": "Matthew Berman",
+          "url": "https://www.youtube.com/watch?v=NI1fU2z_TF4"
+        },
+        {
+          "title": "Claude Desktop Just Got Every Open-Source Model",
+          "channel": "Matthew Berman",
+          "url": "https://www.youtube.com/watch?v=qDaoP8ObaTo"
+        },
+        {
+          "title": "Bobby Lee | This Past Weekend w/ Theo Von #657",
+          "channel": "Theo Von",
+          "url": "https://www.youtube.com/watch?v=SLLCT-fYTTU"
+        },
+        {
+          "title": "Robert Greene on Ego Traps, The Art of Control, & How to Stay Irreplaceable",
+          "channel": "Chris Williamson",
+          "url": "https://www.youtube.com/watch?v=-1aSoZ1ffTg"
+        }
+      ],
       "builds": [
         {
           "repo": "mighty",
@@ -212,7 +429,7 @@
           ]
         }
       ],
-      "takeaway": "Built a sync script that maintains symlinks between skills defined in the skills directory and the Claude Code slash commands that invoke them. Previously, adding or renaming a skill required manual symlink wiring — now it’s one command. This tightens the loop between writing a skill spec and having it immediately callable from any Claude Code session across all projects."
+      "takeaway": "Built a sync script that maintains symlinks between skills defined in the skills directory and the Claude Code slash commands that invoke them. Previously, adding or renaming a skill required manual symlink wiring — now it’s one command. This tightens the loop between writing a skill spec and having it immediately callable from any Claude Code session across all projects. Watched 4 videos including content on NEW Claude Update is a GAME CHANGER!, Claude Desktop Just Got Every Open-Source Model."
     },
     {
       "day": 137,
@@ -220,7 +437,8 @@
       "title": "Day 137 — Graphify v0.7.13 Deployed Across Agent Stack — AST Graphs + PreToolUse Hooks",
       "era": "Full Stack AI",
       "type": [
-        "Build"
+        "Build",
+        "Video"
       ],
       "source": "GitHub",
       "category": [
@@ -230,7 +448,23 @@
         "Open Source"
       ],
       "impact": "Medium",
-      "videos": [],
+      "videos": [
+        {
+          "title": "The $29 Trillion Gold Race Has Begun",
+          "channel": "George Gammon",
+          "url": "https://www.youtube.com/watch?v=GQvr9w7n7W8"
+        },
+        {
+          "title": "Dreamy Garden Lofi Hip Hop",
+          "channel": "Lofi Girl",
+          "url": "https://www.youtube.com/watch?v=T5YcNquOwEs"
+        },
+        {
+          "title": "I Confronted the Muslim Water Park Event Organizer | 05/07/26",
+          "channel": "NA",
+          "url": "https://www.youtube.com/watch?v=p7-By03bKqc"
+        }
+      ],
       "builds": [
         {
           "repo": "mighty",
@@ -239,7 +473,7 @@
           ]
         }
       ],
-      "takeaway": "Graphify v0.7.13 goes system-wide across the entire mighty agent stack. The upgrade adds AST-level extraction (no API cost), a PreToolUse hook that forces agents to read the graph before touching source files, and auto-rebuild hooks that keep the graph current after every edit. Agents now have a structural map of the codebase they’re operating in, which measurably reduces hallucinated file paths and redundant searches."
+      "takeaway": "Graphify v0.7.13 goes system-wide across the entire mighty agent stack. The upgrade adds AST-level extraction (no API cost), a PreToolUse hook that forces agents to read the graph before touching source files, and auto-rebuild hooks that keep the graph current after every edit. Agents now have a structural map of the codebase they’re operating in, which measurably reduces hallucinated file paths and redundant searches. Watched 3 videos including content on The $29 Trillion Gold Race Has Begun, Dreamy Garden Lofi Hip Hop."
     },
     {
       "day": 136,
@@ -247,7 +481,8 @@
       "title": "Day 136 — Graphify Callflow Export — Mermaid Architecture Diagrams",
       "era": "Full Stack AI",
       "type": [
-        "Build"
+        "Build",
+        "Video"
       ],
       "source": "GitHub",
       "category": [
@@ -256,7 +491,48 @@
         "Open Source"
       ],
       "impact": "Medium",
-      "videos": [],
+      "videos": [
+        {
+          "title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck",
+          "channel": "Sequoia Capital",
+          "url": "https://www.youtube.com/watch?v=bBS93A0BeNI"
+        },
+        {
+          "title": "Leading in the Age of AI: NVIDIA CEO Jensen Huang | Global Conference 2026",
+          "channel": "Sequoia Capital",
+          "url": "https://www.youtube.com/watch?v=dUFis1dte14"
+        },
+        {
+          "title": "The Truth About Graphify's 70x Token Saving Claim",
+          "channel": "Graphify",
+          "url": "https://www.youtube.com/watch?v=Ro3Xf1AxVjs"
+        },
+        {
+          "title": "Why AI Should Design the Chips That Power AI: Ricursive Intelligence",
+          "channel": "Sequoia Capital",
+          "url": "https://www.youtube.com/watch?v=K05Dh-QjM8c"
+        },
+        {
+          "title": "Starcloud's Philip Johnston: Why the Cheapest Compute Will Be in Space",
+          "channel": "Sequoia Capital",
+          "url": "https://www.youtube.com/watch?v=94b6i5jI1nE"
+        },
+        {
+          "title": "Waymo's Dmitri Dolgov: 20 Million Rides and the Road to Full Autonomy",
+          "channel": "Sequoia Capital",
+          "url": "https://www.youtube.com/watch?v=I_0Kuf6Aa2c"
+        },
+        {
+          "title": "Demis Hassabis: We're Three Quarters of the Way to AGI",
+          "channel": "Sequoia Capital",
+          "url": "https://www.youtube.com/watch?v=AFpeWo1GTeg"
+        },
+        {
+          "title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck",
+          "channel": "Sequoia Capital",
+          "url": "https://www.youtube.com/watch?v=bBS93A0BeNI"
+        }
+      ],
       "builds": [
         {
           "repo": "graphify",
