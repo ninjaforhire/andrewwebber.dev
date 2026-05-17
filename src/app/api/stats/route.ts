@@ -18,6 +18,7 @@ function loadOverrides(): StatsOverrides {
 }
 
 const TOOLS_BASELINE = 170;
+const LOC_FALLBACK = 1300000;
 
 function loadDayStreak(): number {
   try {
@@ -39,7 +40,7 @@ async function fetchGitHubStats(): Promise<{
   const dayStreak = loadDayStreak();
 
   if (!token) {
-    return { tools: TOOLS_BASELINE, linesOfCode: 377000, dayStreak, agentsLive: 31 };
+    return { tools: TOOLS_BASELINE, linesOfCode: LOC_FALLBACK, dayStreak, agentsLive: 31 };
   }
 
   const headers = {
@@ -53,16 +54,35 @@ async function fetchGitHubStats(): Promise<{
       { headers }
     );
     const repos = await reposRes.json();
-    const repoCount = Array.isArray(repos) ? repos.length : 31;
+    if (!Array.isArray(repos)) {
+      return { tools: TOOLS_BASELINE, linesOfCode: LOC_FALLBACK, dayStreak, agentsLive: 31 };
+    }
 
-    return {
-      tools: TOOLS_BASELINE,
-      linesOfCode: 377000,
-      dayStreak,
-      agentsLive: repoCount,
-    };
+    const repoCount = repos.length;
+
+    // Fetch language byte counts for all repos in parallel
+    const langResults = await Promise.all(
+      repos.map((repo: { name: string }) =>
+        fetch(`https://api.github.com/repos/ninjaforhire/${repo.name}/languages`, { headers })
+          .then((r) => r.json())
+          .catch(() => ({}))
+      )
+    );
+
+    const totalBytes = langResults.reduce((sum, langs) => {
+      const bytes = Object.values(langs as Record<string, number>).reduce(
+        (a, b) => a + (typeof b === "number" ? b : 0),
+        0
+      );
+      return sum + bytes;
+    }, 0);
+
+    // ~40 bytes per line of code (averaged across languages)
+    const linesOfCode = totalBytes > 0 ? Math.round(totalBytes / 40) : LOC_FALLBACK;
+
+    return { tools: TOOLS_BASELINE, linesOfCode, dayStreak, agentsLive: repoCount };
   } catch {
-    return { tools: TOOLS_BASELINE, linesOfCode: 377000, dayStreak, agentsLive: 31 };
+    return { tools: TOOLS_BASELINE, linesOfCode: LOC_FALLBACK, dayStreak, agentsLive: 31 };
   }
 }
 
