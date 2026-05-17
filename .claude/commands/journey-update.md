@@ -1,6 +1,6 @@
 ---
 description: Pull latest journey entries from Notion, update stats, and deploy to andrewwebber.dev
-allowed-tools: Bash(python3:*), Bash(git:*), Bash(npm:*)
+allowed-tools: Bash(python3:*), Bash(git:*), Bash(npm:*), Bash(npx:*)
 ---
 
 ## Context
@@ -39,12 +39,22 @@ git commit -m "feat: journey update — Day <N> through Day <M> (YYYY-MM-DD)"
 git push origin main
 ```
 
-Replace `<N>` and `<M>` with the actual day range. Vercel will auto-deploy on push.
+Replace `<N>` and `<M>` with the actual day range.
 
-### Step 4 — Confirm deployment
+### Step 4 — Deploy to Vercel
+
+GitHub auto-deploy is disconnected. Must deploy manually:
+
+```bash
+cd /Users/mightydesigncenter/Desktop/_Code/andrewwebber.dev && npx vercel --prod
+```
+
+Wait for "Aliased: https://andrewwebber.dev" in output before reporting success.
+
+### Step 5 — Confirm deployment
 
 Tell the user:
 - How many new days were added
 - The new total day count
-- That Vercel is building (usually takes ~60s)
+- That Vercel deployed (not just building — it's done)
 - The live URL: https://andrewwebber.dev/journey
