@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const MILESTONES = [
   {
@@ -54,12 +55,39 @@ const MILESTONES = [
       "SPECTRE — offensive security + OSINT platform (Docker, Nmap, Nuclei)",
       "193 Claude Code skills powering daily operations",
       "1.3M+ lines of code across 22 repositories",
-      "Shipping daily — 135 consecutive days and counting",
+      "Shipping daily — 143 consecutive days and counting",
     ],
   },
 ];
 
 export function JourneyTeaser() {
+  const [agentsLive, setAgentsLive] = useState(31);
+  const [dayStreak, setDayStreak] = useState(143);
+
+  useEffect(() => {
+    fetch("/api/stats")
+      .then((r) => r.json())
+      .then((s) => {
+        if (s.agentsLive) setAgentsLive(s.agentsLive);
+        if (s.dayStreak) setDayStreak(s.dayStreak);
+      })
+      .catch(() => {});
+  }, []);
+
+  const milestones = MILESTONES.map((m) => {
+    if (m.year !== "Now") return m;
+    return {
+      ...m,
+      details: [
+        `${agentsLive} autonomous agents orchestrated by a custom dispatch system`,
+        "SPECTRE — offensive security + OSINT platform (Docker, Nmap, Nuclei)",
+        "193 Claude Code skills powering daily operations",
+        "1.3M+ lines of code across 22 repositories",
+        `Shipping daily — ${dayStreak} consecutive days and counting`,
+      ],
+    };
+  });
+
   return (
     <section className="px-12 sm:px-16 md:px-24 py-32 md:py-40 border-t border-white/5">
       <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-creative mb-16 md:mb-24">
@@ -67,7 +95,7 @@ export function JourneyTeaser() {
       </div>
 
       <div className="space-y-24 md:space-y-32">
-        {MILESTONES.map((m) => (
+        {milestones.map((m) => (
           <div
             key={m.year}
             className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start"

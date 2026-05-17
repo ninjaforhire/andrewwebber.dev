@@ -5,7 +5,7 @@ import path from "path";
 interface StatsOverrides {
   tools?: number;
   linesOfCode?: number;
-  toolsBuilt?: number;
+  dayStreak?: number;
   agentsLive?: number;
 }
 
@@ -17,19 +17,29 @@ function loadOverrides(): StatsOverrides {
   return {};
 }
 
-const SKILLS_BASELINE = 71;
 const TOOLS_BASELINE = 170;
+
+function loadDayStreak(): number {
+  try {
+    const journeyPath = path.join(process.cwd(), "src", "data", "journey-2026.json");
+    const data = JSON.parse(fs.readFileSync(journeyPath, "utf-8"));
+    return data.totalDays ?? 143;
+  } catch {
+    return 143;
+  }
+}
 
 async function fetchGitHubStats(): Promise<{
   tools: number;
   linesOfCode: number;
-  toolsBuilt: number;
+  dayStreak: number;
   agentsLive: number;
 }> {
   const token = process.env.GITHUB_TOKEN;
+  const dayStreak = loadDayStreak();
 
   if (!token) {
-    return { tools: TOOLS_BASELINE, linesOfCode: 377000, toolsBuilt: 256, agentsLive: 31 };
+    return { tools: TOOLS_BASELINE, linesOfCode: 377000, dayStreak, agentsLive: 31 };
   }
 
   const headers = {
@@ -48,11 +58,11 @@ async function fetchGitHubStats(): Promise<{
     return {
       tools: TOOLS_BASELINE,
       linesOfCode: 377000,
-      toolsBuilt: SKILLS_BASELINE + TOOLS_BASELINE + repoCount,
+      dayStreak,
       agentsLive: repoCount,
     };
   } catch {
-    return { tools: TOOLS_BASELINE, linesOfCode: 377000, toolsBuilt: 256, agentsLive: 31 };
+    return { tools: TOOLS_BASELINE, linesOfCode: 377000, dayStreak, agentsLive: 31 };
   }
 }
 
@@ -63,7 +73,7 @@ export async function GET() {
   const stats = {
     tools: overrides.tools ?? github.tools,
     linesOfCode: overrides.linesOfCode ?? github.linesOfCode,
-    toolsBuilt: overrides.toolsBuilt ?? github.toolsBuilt,
+    dayStreak: overrides.dayStreak ?? github.dayStreak,
     agentsLive: overrides.agentsLive ?? github.agentsLive,
   };
 

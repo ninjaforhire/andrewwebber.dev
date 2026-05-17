@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { PROJECTS, ALL_TAGS } from "@/lib/projects";
 import { ProjectCard } from "@/components/sections/ProjectCard";
 import { ServiceTier } from "@/components/sections/ServiceTier";
@@ -10,6 +10,14 @@ import { cn } from "@/lib/utils";
 
 export function WorkPageContent() {
   const [activeTag, setActiveTag] = useState<string | null>(null);
+  const [tools, setTools] = useState(170);
+
+  useEffect(() => {
+    fetch("/api/stats")
+      .then((r) => r.json())
+      .then((s) => { if (s.tools) setTools(s.tools); })
+      .catch(() => {});
+  }, []);
 
   const filtered = activeTag
     ? PROJECTS.filter((p) => p.tags.includes(activeTag))
@@ -27,7 +35,7 @@ export function WorkPageContent() {
         I&apos;ve built.
       </h1>
       <p className="text-2xl leading-relaxed text-muted-foreground max-w-3xl">
-        170+ tools, agents, and systems shipped. Most live in production today. A few of the highlights below.
+        {tools}+ tools, agents, and systems shipped. Most live in production today. A few of the highlights below.
       </p>
 
       {/* TAG FILTER */}

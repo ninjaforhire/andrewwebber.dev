@@ -51,10 +51,15 @@ cd /Users/mightydesigncenter/Desktop/_Code/andrewwebber.dev && npx vercel --prod
 
 Wait for "Aliased: https://andrewwebber.dev" in output before reporting success.
 
+The following sections auto-update from `journey-2026.json` and `/api/stats` on every deploy — no manual edits needed:
+- **Homepage stats** (`§ 01 — Output`): Day Streak counter pulls from `totalDays`
+- **Homepage timeline** (`§ 02 — Timeline`, "Now" section): agent count + consecutive days
+- **Work page** (`/work`): tools count in hero subtitle
+
 ### Step 5 — Confirm deployment
 
 Tell the user:
 - How many new days were added
-- The new total day count
+- The new total day count (now showing as "Day Streak")
 - That Vercel deployed (not just building — it's done)
-- The live URL: https://andrewwebber.dev/journey
+- Live URLs: https://andrewwebber.dev and https://andrewwebber.dev/journey
