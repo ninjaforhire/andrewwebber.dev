@@ -85,22 +85,29 @@ function Stat({ value, suffix, label, format = "default" }: StatProps) {
   );
 }
 
-interface StatsCounterProps {
-  stats?: {
-    tools: number;
-    linesOfCode: number;
-    skills: number;
-    yearsBuilding: number;
-  };
+interface LiveStats {
+  tools: number;
+  linesOfCode: number;
+  toolsBuilt: number;
+  agentsLive: number;
 }
 
-export function StatsCounter({ stats }: StatsCounterProps) {
-  const data = stats ?? {
-    tools: 170,
-    linesOfCode: 377000,
-    skills: 71,
-    yearsBuilding: 20,
-  };
+const DEFAULTS: LiveStats = {
+  tools: 170,
+  linesOfCode: 377000,
+  toolsBuilt: 256,
+  agentsLive: 31,
+};
+
+export function StatsCounter() {
+  const [data, setData] = useState<LiveStats>(DEFAULTS);
+
+  useEffect(() => {
+    fetch("/api/stats")
+      .then((r) => r.json())
+      .then(setData)
+      .catch(() => {});
+  }, []);
 
   return (
     <section className="px-12 sm:px-16 md:px-24 py-32 md:py-40 border-t border-white/5">
@@ -111,8 +118,8 @@ export function StatsCounter({ stats }: StatsCounterProps) {
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
         <Stat value={data.tools} suffix="+" label="Tools shipped" />
         <Stat value={data.linesOfCode} format="compact" suffix="+" label="Lines of code" />
-        <Stat value={data.skills} label="Skills authored" />
-        <Stat value={data.yearsBuilding} suffix="yr" label="Building" />
+        <Stat value={data.toolsBuilt} suffix="+" label="Tools Built" />
+        <Stat value={data.agentsLive} label="Live Agents" />
       </div>
     </section>
   );

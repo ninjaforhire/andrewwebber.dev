@@ -5,8 +5,8 @@ import path from "path";
 interface StatsOverrides {
   tools?: number;
   linesOfCode?: number;
-  skills?: number;
-  yearsBuilding?: number;
+  toolsBuilt?: number;
+  agentsLive?: number;
 }
 
 function loadOverrides(): StatsOverrides {
@@ -17,16 +17,19 @@ function loadOverrides(): StatsOverrides {
   return {};
 }
 
+const SKILLS_BASELINE = 71;
+const TOOLS_BASELINE = 170;
+
 async function fetchGitHubStats(): Promise<{
   tools: number;
   linesOfCode: number;
-  skills: number;
+  toolsBuilt: number;
+  agentsLive: number;
 }> {
   const token = process.env.GITHUB_TOKEN;
 
   if (!token) {
-    // Fallback to static defaults when no token
-    return { tools: 170, linesOfCode: 377000, skills: 71 };
+    return { tools: TOOLS_BASELINE, linesOfCode: 377000, toolsBuilt: 256, agentsLive: 31 };
   }
 
   const headers = {
@@ -35,24 +38,21 @@ async function fetchGitHubStats(): Promise<{
   };
 
   try {
-    // Count repos in the org
     const reposRes = await fetch(
       "https://api.github.com/orgs/ninjaforhire/repos?per_page=100",
       { headers }
     );
     const repos = await reposRes.json();
+    const repoCount = Array.isArray(repos) ? repos.length : 31;
 
-    // Use repo count as a proxy multiplier
-    const repoCount = Array.isArray(repos) ? repos.length : 0;
-
-    // Rough estimates based on known data
     return {
-      tools: Math.max(170, repoCount * 10),
+      tools: TOOLS_BASELINE,
       linesOfCode: 377000,
-      skills: 71,
+      toolsBuilt: SKILLS_BASELINE + TOOLS_BASELINE + repoCount,
+      agentsLive: repoCount,
     };
   } catch {
-    return { tools: 170, linesOfCode: 377000, skills: 71 };
+    return { tools: TOOLS_BASELINE, linesOfCode: 377000, toolsBuilt: 256, agentsLive: 31 };
   }
 }
 
@@ -63,8 +63,8 @@ export async function GET() {
   const stats = {
     tools: overrides.tools ?? github.tools,
     linesOfCode: overrides.linesOfCode ?? github.linesOfCode,
-    skills: overrides.skills ?? github.skills,
-    yearsBuilding: overrides.yearsBuilding ?? 20,
+    toolsBuilt: overrides.toolsBuilt ?? github.toolsBuilt,
+    agentsLive: overrides.agentsLive ?? github.agentsLive,
   };
 
   return NextResponse.json(stats, {
