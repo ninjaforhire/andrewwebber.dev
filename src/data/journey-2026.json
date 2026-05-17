@@ -1,8 +1,260 @@
 {
-  "lastUpdated": "2026-05-17T11:12:42",
-  "totalDays": 135,
+  "lastUpdated": "2026-05-17T13:52:08",
+  "totalDays": 143,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 143,
+      "date": "2026-05-17",
+      "title": "Day 143 \u2014 Terminal Concierge & Portfolio Stats \u2014 Live Agents Counter Goes Live",
+      "era": "Full Stack AI",
+      "type": [
+        "Build"
+      ],
+      "source": "GitHub",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "DevOps"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [
+        {
+          "repo": "andrewwebber.dev",
+          "commits": [
+            "feat: homepage stats \u2014 Live Agents + Tools Built, add /journey-update skill",
+            "chore: update journey-2026.json"
+          ]
+        },
+        {
+          "repo": "general-tools",
+          "commits": [
+            "feat: set default effort to High",
+            "feat: Terminal Concierge \u2014 model/effort/workdir prompts, fix corrupt .terminal plist"
+          ]
+        }
+      ],
+      "takeaway": "Focused work on general-tools. Small commits add up."
+    },
+    {
+      "day": 142,
+      "date": "2026-05-16",
+      "title": "Day 142 \u2014 Jimbo Curator Design \u2014 Hermes-Eater Sprint 2 & 35-Task Implementation Plan",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Research",
+        "Design"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Design",
+        "Security"
+      ],
+      "impact": "Critical",
+      "videos": [],
+      "builds": [
+        {
+          "repo": "forge",
+          "commits": [
+            "fix(slides): pipe prompt via stdin, use opus alias"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "chore: consolidate spectre core dirs + sync CLAUDE.md w/ disk state"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "docs: jimbo curator implementation plan (35 tasks across 8 phases)",
+            "docs: jimbo daily operator guide + before/after hermes",
+            "docs: jimbo curator des"
+          ]
+        }
+      ],
+      "takeaway": "Focused work on mighty. Small commits add up."
+    },
+    {
+      "day": 141,
+      "date": "2026-05-15",
+      "title": "Day 141 \u2014 NTN Phase 0 Smoke Tests & SPECTRE Consolidation \u2014 Notion MCP Retired",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Skill"
+      ],
+      "source": "GitHub",
+      "category": [
+        "AI/ML",
+        "Security"
+      ],
+      "impact": "Critical",
+      "videos": [],
+      "builds": [
+        {
+          "repo": "andrewwebber.dev",
+          "commits": [
+            "chore: wip snapshot 2026-05-15"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "chore: wip snapshot 2026-05-15",
+            "chore: wip snapshot 2026-05-15"
+          ]
+        },
+        {
+          "repo": "general-tools",
+          "commits": [
+            "chore: remove decepticon clone + relocate shannon into hotfixops/security/",
+            "chore: bump submodule refs 2026-05-15",
+            "chore: wip snapshot 2026-05-15"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "chore: ignore vendored security/shannon (external KeygraphHQ clone)",
+            "feat(spectre): port hexstrike-ai classes into ember + spectre_core",
+            "chore: wip"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "fix: drop --json from ntn api calls (returns JSON natively)",
+            "feat: add ntn Phase 0 smoke test script"
+          ]
+        },
+        {
+          "repo": "terminal-gloss",
+          "commits": [
+            "chore: wip snapshot 2026-05-15"
+          ]
+        },
+        {
+          "repo": "terminal-karaoke",
+          "commits": [
+            "chore: wip snapshot 2026-05-15"
+          ]
+        }
+      ],
+      "takeaway": "Solid build sprint with 13 commits. The compound effect of daily coding practice is becoming obvious."
+    },
+    {
+      "day": 140,
+      "date": "2026-05-14",
+      "title": "Day 140 \u2014 Deep Research Day \u2014 ntn CLI Migration Strategy",
+      "era": "Full Stack AI",
+      "type": [
+        "Build"
+      ],
+      "source": "Other",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": "From zero to full-stack AI builder in 135 days. The learning curve was really a learning cliff \u2014 and I climbed it."
+    },
+    {
+      "day": 139,
+      "date": "2026-05-13",
+      "title": "Day 139 \u2014 Research & Planning \u2014 Jimbo Hermes-Eater Architecture",
+      "era": "Full Stack AI",
+      "type": [
+        "Build"
+      ],
+      "source": "Other",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": "From zero to full-stack AI builder in 135 days. The learning curve was really a learning cliff \u2014 and I climbed it."
+    },
+    {
+      "day": 138,
+      "date": "2026-05-12",
+      "title": "Day 138 \u2014 Skill-to-Command Sync \u2014 Unified Claude Code Skill Registry",
+      "era": "Full Stack AI",
+      "type": [
+        "Build"
+      ],
+      "source": "GitHub",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [
+        {
+          "repo": "mighty",
+          "commits": [
+            "feat: add skill-to-command symlink sync script"
+          ]
+        }
+      ],
+      "takeaway": "Focused work on mighty. Small commits add up."
+    },
+    {
+      "day": 137,
+      "date": "2026-05-11",
+      "title": "Day 137 \u2014 Graphify v0.7.13 Deployed Across Agent Stack \u2014 AST Graphs + Hooks",
+      "era": "Full Stack AI",
+      "type": [
+        "Build"
+      ],
+      "source": "GitHub",
+      "category": [
+        "Open Source"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [
+        {
+          "repo": "mighty",
+          "commits": [
+            "feat: install graphify v0.7.13 \u2014 AST+semantic graph, PreToolUse hook, auto-rebuild hooks"
+          ]
+        }
+      ],
+      "takeaway": "Focused work on mighty. Small commits add up."
+    },
+    {
+      "day": 136,
+      "date": "2026-05-10",
+      "title": "Day 136 \u2014 Graphify Callflow Export \u2014 Mermaid Architecture Diagrams",
+      "era": "Full Stack AI",
+      "type": [
+        "Build"
+      ],
+      "source": "GitHub",
+      "category": [
+        "AI/ML",
+        "Frontend"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [
+        {
+          "repo": "graphify",
+          "commits": [
+            "feat: add callflow HTML export with Mermaid architecture diagrams"
+          ]
+        }
+      ],
+      "takeaway": "Focused work on graphify. Small commits add up."
+    },
     {
       "day": 135,
       "date": "2026-05-09",
