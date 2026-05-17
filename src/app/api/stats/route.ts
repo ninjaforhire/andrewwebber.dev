@@ -67,9 +67,9 @@ async function fetchGitHubStats(): Promise<{
   try {
     // Repos list + code search in parallel (first round)
     const [reposRes, searchRes] = await Promise.all([
-      fetch("https://api.github.com/orgs/ninjaforhire/repos?per_page=100", { headers }),
+      fetch("https://api.github.com/user/repos?per_page=100&affiliation=owner", { headers }),
       fetch(
-        "https://api.github.com/search/code?q=org%3Aninjaforhire+language%3APython&per_page=1",
+        "https://api.github.com/search/code?q=user%3Aninjaforhire+language%3APython&per_page=1",
         { headers }
       ),
     ]);
