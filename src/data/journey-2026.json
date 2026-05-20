@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-20T17:00:00",
+  "lastUpdated": "2026-05-20T18:00:00",
   "totalDays": 146,
   "currentEra": "Full Stack AI",
   "entries": [
@@ -10,7 +10,8 @@
       "era": "Full Stack AI",
       "type": [
         "Build",
-        "Milestone"
+        "Milestone",
+        "Video"
       ],
       "source": "GitHub",
       "category": [
@@ -20,7 +21,28 @@
         "Open Source"
       ],
       "impact": "Critical",
-      "videos": [],
+      "videos": [
+        {
+          "title": "Content Masterclass: The Most Valuable 3 Hours For Any Business Owner in 2026",
+          "channel": "Open Residency",
+          "url": ""
+        },
+        {
+          "title": "Robert Greene on Ego Traps, The Art of Control, & How to Stay Irreplaceable",
+          "channel": "Open Residency",
+          "url": ""
+        },
+        {
+          "title": "The Psychology of Making People Respect You Instantly! | Robert Greene",
+          "channel": "Vassal",
+          "url": ""
+        },
+        {
+          "title": "Treat Social Media Like a Video Game and Get Rich",
+          "channel": "Neel Dhingra",
+          "url": ""
+        }
+      ],
       "builds": [
         {
           "repo": "cli-printing-press (upstream)",
@@ -45,7 +67,7 @@
           ]
         }
       ],
-      "takeaway": "First public milestone: PR #1597 -- the Quo (formerly OpenPhone) catalog entry submitted two days prior -- was merged by mvanhorn into the upstream cli-printing-press repo, making this Andrew's first accepted open-source contribution to a community-maintained project. On the home front, the _Code directory received a major consolidation: the mighty symlink was replaced with the real 8.5 GB directory, _Code/Agents was renamed to _Code/agents with 28 source file references updated, and both Jimbo Curator v1 (Hermes-Eater Sprint 2, 35 tasks) and Penny Finance (phases 1-3) were merged to main."
+      "takeaway": "First public milestone: PR #1597 merged by mvanhorn into cli-printing-press -- Andrew's first accepted open-source contribution. Filesystem consolidation: mighty symlink replaced with real 8.5 GB directory, _Code/Agents renamed to _Code/agents, Jimbo Curator v1 and Penny Finance merged to main. Watched 4 videos: business masterclass, Robert Greene on ego/control, social media strategy."
     },
     {
       "day": 145,
@@ -68,14 +90,54 @@
       "impact": "Critical",
       "videos": [
         {
+          "title": "Build & Sell Claude Code Operating Systems (2+ Hour Course)",
+          "channel": "Nate Herk | AI Automation",
+          "url": ""
+        },
+        {
+          "title": "Developer Keynote (Google I/O 2026)",
+          "channel": "Google for Developers",
+          "url": ""
+        },
+        {
+          "title": "Unlock modern web capabilities in your AI coding workflows",
+          "channel": "Google for Developers",
+          "url": ""
+        },
+        {
+          "title": "Build next-gen AI experiences with Google AI Studio and Google Antigravity",
+          "channel": "Google for Developers",
+          "url": ""
+        },
+        {
+          "title": "The Real Reason Karpathy Joined Anthropic",
+          "channel": "Nate Herk | AI Automation",
+          "url": ""
+        },
+        {
+          "title": "How Social Media Algorithms Actually Work (And How to Beat Them)",
+          "channel": "Kallaway",
+          "url": ""
+        },
+        {
+          "title": "The NEW Era of Personal Brands is Here (and you're not ready)",
+          "channel": "Kallaway",
+          "url": ""
+        },
+        {
+          "title": "Claude Managed Agents Full Tutorial: How to Setup Your First AI Agent",
+          "channel": "Bart Slodyczka",
+          "url": ""
+        },
+        {
           "title": "Trading Cards Photo Booth : Custom Cards Made On-Site",
-          "channel": "YouTube",
+          "channel": "MIGHTY Photo Booths",
           "url": "https://www.youtube.com/watch?v=RJJcd0A9p6k"
         },
         {
-          "title": "pov: when your brain finally locks in - Boom Bap Jazzy Lo-fi for Deep Work / Study",
-          "channel": "YouTube",
-          "url": "https://www.youtube.com/watch?v=jGU527KhR34"
+          "title": "AI Fashion Sketch: Highlight Reel",
+          "channel": "MIGHTY Photo Booths",
+          "url": "https://www.youtube.com/watch?v=kHrYFka6-8o"
         }
       ],
       "certifications": [
@@ -118,7 +180,7 @@
           ]
         }
       ],
-      "takeaway": "30+ commits across repos. vsco-workspace-pp-cli shipped with 139 endpoints covering VSCO CRM jobs, leads, orders, and payments. inbox-agent received serious hardening: lead + client autoreply pipelines with quality scoring, draft_guard pre-send verification, and compose_reply strict JSON mode (no more 116-char fallback stubs). Jimbo Curator cleared all Codex P0/P1/P2 review flags across 9 fixes. forge got gif_maker for image-sequence GIF/MP4/WebP export. LinkedIn Learning SDLC cert completed (1h 55m, Shashi Shekhar)."
+      "takeaway": "30+ commits. vsco-workspace-pp-cli shipped (139 endpoints). inbox-agent hardened: autoreply pipelines, draft_guard, compose_reply strict JSON. Jimbo Curator cleared all Codex P0/P1/P2 flags. forge got gif_maker. LinkedIn Learning SDLC cert completed (1h 55m). Watched 10 videos: Google I/O 2026 developer keynote + 2 sessions, full Claude Code OS course, Karpathy/Anthropic, social media algorithm + personal brand strategy, Claude Managed Agents tutorial, two MIGHTY community videos."
     },
     {
       "day": 144,
@@ -138,14 +200,9 @@
       "impact": "High",
       "videos": [
         {
-          "title": "URGENT: Do This In Notion Today",
-          "channel": "Matthias Frank",
-          "url": "https://www.youtube.com/watch?v=6xpOlmzoG4k"
-        },
-        {
-          "title": "Notion Masterclass: Formulas & Automations (Complete Guide 2025)",
-          "channel": "YouTube",
-          "url": "https://www.youtube.com/watch?v=5JaGJBPC0Q8"
+          "title": "How to Use Your Claude Code Projects in Codex in 5 Mins",
+          "channel": "Nate Herk | AI Automation",
+          "url": ""
         }
       ],
       "builds": [
@@ -156,7 +213,7 @@
           ]
         }
       ],
-      "takeaway": "Andrew submitted PR #1597 to mvanhorn/cli-printing-press -- the upstream community-maintained CLI factory -- adding the full Quo (formerly OpenPhone) catalog entry and OpenAPI spec. His first open-source PR to a project he did not create. The PR adds Quo to the catalog so any developer can generate a fully-typed CLI for OpenPhone's API using the Printing Press toolchain. It would merge in 48 hours."
+      "takeaway": "Submitted PR #1597 to mvanhorn/cli-printing-press adding the full Quo (formerly OpenPhone) catalog entry and OpenAPI spec -- first open-source PR to a project Andrew did not create. It would merge in 48 hours. Watched 1 video: Claude Code Projects + Codex integration (Nate Herk)."
     },
     {
       "day": 143,
@@ -177,8 +234,23 @@
       "impact": "Medium",
       "videos": [
         {
+          "title": "Notion Just Announced A Massive Shift (Big Update)",
+          "channel": "Matthias Frank",
+          "url": "https://www.youtube.com/watch?v=zCFlM2XhJJE"
+        },
+        {
+          "title": "Notion Masterclass: Formulas and Automations (Complete Guide 2025)",
+          "channel": "Matthias Frank",
+          "url": "https://www.youtube.com/watch?v=5JaGJBPC0Q8"
+        },
+        {
+          "title": "URGENT: Do This In Notion Today",
+          "channel": "Matthias Frank",
+          "url": "https://www.youtube.com/watch?v=6xpOlmzoG4k"
+        },
+        {
           "title": "The AI Career Opportunity Nobody is Talking About in 2026",
-          "channel": "Tina Huang",
+          "channel": "Nate Herk | AI Automation",
           "url": "https://www.youtube.com/watch?v=iIfOprq2kCM"
         },
         {
@@ -188,18 +260,18 @@
         },
         {
           "title": "AI Fashion Sketch: Highlight Reel",
-          "channel": "NA",
+          "channel": "MIGHTY Photo Booths",
           "url": "https://www.youtube.com/watch?v=kHrYFka6-8o"
         },
         {
-          "title": "Android 17 Is the Biggest Upgrade in Years",
-          "channel": "Marques Brownlee",
-          "url": "https://www.youtube.com/watch?v=j7i_4RokEIo"
+          "title": "The TWO Claude Skills that run our entire AI video pipeline",
+          "channel": "JOEY",
+          "url": "https://www.youtube.com/watch?v=0YhhPQVXA7c"
         },
         {
-          "title": "The TWO Claude Skills that run our entire AI video pipeline",
-          "channel": "Andrew Webber",
-          "url": "https://www.youtube.com/watch?v=0YhhPQVXA7c"
+          "title": "Android 17 Is the Biggest Upgrade in Years",
+          "channel": "MrWhosetheboss",
+          "url": "https://www.youtube.com/watch?v=j7i_4RokEIo"
         }
       ],
       "builds": [
@@ -218,7 +290,7 @@
           ]
         }
       ],
-      "takeaway": "Terminal Concierge shipped to general-tools: an interactive launcher that prompts for model, effort level (defaulting to High), and working directory before opening a Claude Code session — also fixes a macOS .terminal plist corruption bug that had been causing terminal launch failures. On the portfolio side, the homepage now surfaces live agent and tool counts pulled from the actual codebase, and the new /journey-update skill automates the process of enriching this JSON log so it stays current without manual editing. Watched 7 videos including content on The AI Career Opportunity Nobody is Talking About in 2026, How to set up Surveys in Booth.Events."
+      "takeaway": "Terminal Concierge shipped: interactive Claude Code launcher prompting model, effort, and working directory. Portfolio homepage surfaces live agent + tool counts. /journey-update skill added. Watched 8 videos: deep Notion session (3 Matthias Frank videos), AI career content, Booth.Events survey setup, two MIGHTY community videos, Claude Code pipeline coverage, Android 17 review."
     },
     {
       "day": 142,
