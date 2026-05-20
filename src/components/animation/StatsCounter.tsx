@@ -15,7 +15,7 @@ function formatNumber(n: number, format: FormatType): string {
   if (format === "compact") {
     return new Intl.NumberFormat("en-US", {
       notation: "compact",
-      maximumFractionDigits: 0,
+      maximumFractionDigits: 1,
     }).format(n);
   }
   return n.toLocaleString();
@@ -118,7 +118,7 @@ export function StatsCounter() {
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-16">
         <Stat value={data.tools} suffix="+" label="Tools Shipped" />
         <Stat value={data.linesOfCode} format="compact" suffix="+" label="Lines of Code" />
-        <Stat value={data.commitsShipped} suffix="+" label="Commits Shipped" />
+        <Stat value={data.commitsShipped} format="compact" suffix="+" label="Commits Shipped" />
         <Stat value={data.agentsLive} label="Live Agents" />
       </div>
     </section>
