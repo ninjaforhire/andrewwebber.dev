@@ -75,7 +75,7 @@ function AnimatedNumber({
 function Stat({ value, suffix, label, format = "default" }: StatProps) {
   return (
     <div className="min-w-0 overflow-hidden">
-      <div className="crop text-[clamp(56px,7.5vw,104px)] font-extrabold leading-none text-data tabular-nums whitespace-nowrap">
+      <div className="crop text-[clamp(28px,4vw,52px)] font-extrabold leading-none text-data tabular-nums whitespace-nowrap">
         <AnimatedNumber target={value} suffix={suffix} format={format} />
       </div>
       <div className="font-mono text-xs sm:text-sm font-medium tracking-wider text-muted-foreground mt-4 sm:mt-6 uppercase">
