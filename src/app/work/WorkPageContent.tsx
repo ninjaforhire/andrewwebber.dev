@@ -12,59 +12,73 @@ interface Tool {
   slug: string;
   name: string;
   description: string;
-  category: string;
-  source: "skill" | "agent";
+  category: "photo-booth" | "design-forge" | "spectre" | "global";
+  subcategory: string;
+  source: string;
+  location: string;
 }
 
-// Category → accent color bucket. Keeps the 22 raw categories visually grouped
-// into the 4 brand accents without hiding any of them from the filter row.
-const CATEGORY_ACCENT: Record<string, Project["accent"]> = {
-  ops: "terminal",
-  admin: "terminal",
-  integrations: "terminal",
-  infrastructure: "terminal",
-  email: "terminal",
-  notion: "terminal",
-  "design-center": "creative",
-  design: "creative",
-  brand: "creative",
-  media: "creative",
-  crm: "data",
-  sales: "data",
-  marketing: "data",
-  analytics: "data",
-  "scraper-agents": "data",
-  finance: "warm",
-  legal: "warm",
-  "r-and-d": "warm",
-  tools: "warm",
-  "general-tools": "warm",
-  "photo-booth-tools": "warm",
-  voice: "warm",
-  research: "warm",
+const CATEGORY_LABELS: Record<Tool["category"], string> = {
+  "photo-booth": "Photo Booth",
+  "design-forge": "Design Forge",
+  spectre: "SPECTRE",
+  global: "Global",
 };
 
-function accentFor(category: string): Project["accent"] {
-  return CATEGORY_ACCENT[category] ?? "data";
+const CATEGORY_ACCENT: Record<Tool["category"], Project["accent"]> = {
+  "photo-booth": "warm",
+  "design-forge": "creative",
+  spectre: "terminal",
+  global: "data",
+};
+
+function accentFor(category: Tool["category"]): Project["accent"] {
+  return CATEGORY_ACCENT[category];
 }
 
 function toolToProject(t: Tool): Project {
-  const sourceTag = t.source === "agent" ? "Agent" : "Skill";
+  const subTag =
+    t.subcategory === "agent"
+      ? "Agent"
+      : t.subcategory === "skill"
+        ? "Skill"
+        : t.subcategory === "wing"
+          ? "Wing"
+          : t.subcategory === "spectre-aisec"
+            ? "AISec"
+            : t.subcategory === "spectre-tool"
+              ? "Tool"
+              : t.subcategory === "parent"
+                ? "Suite"
+                : t.subcategory === "site"
+                  ? "Site"
+                  : t.subcategory === "global-tool"
+                    ? "Tool"
+                    : t.subcategory === "app"
+                      ? "App"
+                      : t.subcategory;
   return {
     title: t.name,
-    description: t.description || `${sourceTag} — ${t.category}`,
-    tags: [t.category, sourceTag],
+    description: t.description,
+    tags: [CATEGORY_LABELS[t.category], subTag],
     accent: accentFor(t.category),
   };
 }
 
 const PAGE_SIZE = 24;
-const TOOLS = (toolsData as Tool[]).slice();
-TOOLS.sort((a, b) => a.name.localeCompare(b.name));
-const ALL_CATEGORIES = [...new Set(TOOLS.map((t) => t.category))].sort();
+const RAW_TOOLS = toolsData as Tool[];
+const FEATURED_SLUGS = ["design-forge", "spectre-spectre-api", "spectre-watchtower"];
+
+// Featured callouts always render first. Everything else is paginated.
+const FEATURED = FEATURED_SLUGS
+  .map((slug) => RAW_TOOLS.find((t) => t.slug === slug))
+  .filter((t): t is Tool => Boolean(t));
+
+const TOOLS = [...RAW_TOOLS].sort((a, b) => a.name.localeCompare(b.name));
+const CATEGORY_ORDER: Tool["category"][] = ["photo-booth", "design-forge", "spectre", "global"];
 
 export function WorkPageContent() {
-  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const [activeCategory, setActiveCategory] = useState<Tool["category"] | null>(null);
   const [page, setPage] = useState(1);
   const [toolsCount, setToolsCount] = useState(TOOLS.length);
 
@@ -96,6 +110,17 @@ export function WorkPageContent() {
     setPage(1);
   }, [activeCategory]);
 
+  const categoryCounts = useMemo(() => {
+    const out: Record<Tool["category"], number> = {
+      "photo-booth": 0,
+      "design-forge": 0,
+      spectre: 0,
+      global: 0,
+    };
+    for (const t of TOOLS) out[t.category]++;
+    return out;
+  }, []);
+
   return (
     <div className="page-x py-16 md:py-32">
       {/* HEADER */}
@@ -108,15 +133,29 @@ export function WorkPageContent() {
         I&apos;ve built.
       </h1>
       <p className="text-2xl leading-relaxed text-muted-foreground max-w-3xl">
-        {toolsCount} tools, agents, and systems shipped — every one of them live in production. Filter, browse, or just scroll through the lot.
+        {toolsCount} tools, agents, and systems Andrew built. Photo Booth ({categoryCounts["photo-booth"]}) covers MIGHTY operations. SPECTRE ({categoryCounts.spectre}) is the offensive security suite. Design Forge ({categoryCounts["design-forge"]}) drives every brand asset. Global ({categoryCounts.global}) runs across every repo.
       </p>
 
+      {/* FEATURED — Design Forge + SPECTRE highlights */}
+      {FEATURED.length > 0 && (
+        <div className="mt-16 md:mt-20">
+          <div className="font-mono text-[11px] font-medium tracking-[0.3em] uppercase text-creative mb-6">
+            Featured
+          </div>
+          <div className="grid gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {FEATURED.map((tool) => (
+              <ProjectCard key={`featured-${tool.slug}`} project={toolToProject(tool)} />
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* CATEGORY FILTER */}
-      <div className="-mx-5 mt-12 flex snap-x gap-2 overflow-x-auto px-5 pb-2 md:mx-0 md:mt-16 md:flex-wrap md:overflow-visible md:px-0 md:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <div className="mt-16 md:mt-20 flex flex-wrap gap-2">
         <button
           onClick={() => setActiveCategory(null)}
           className={cn(
-            "shrink-0 snap-start rounded-full px-4 py-2 font-mono text-xs uppercase tracking-wider transition-colors touch-target",
+            "rounded-full px-4 py-2 font-mono text-xs uppercase tracking-wider transition-colors touch-target",
             !activeCategory
               ? "bg-data/10 text-data border border-data/30"
               : "text-muted-foreground border border-white/10 hover:border-white/30",
@@ -124,25 +163,22 @@ export function WorkPageContent() {
         >
           All ({TOOLS.length})
         </button>
-        {ALL_CATEGORIES.map((cat) => {
-          const count = TOOLS.filter((t) => t.category === cat).length;
-          return (
-            <button
-              key={cat}
-              onClick={() =>
-                setActiveCategory(cat === activeCategory ? null : cat)
-              }
-              className={cn(
-                "shrink-0 snap-start rounded-full px-4 py-2 font-mono text-xs uppercase tracking-wider transition-colors touch-target",
-                cat === activeCategory
-                  ? "bg-data/10 text-data border border-data/30"
-                  : "text-muted-foreground border border-white/10 hover:border-white/30",
-              )}
-            >
-              {cat} ({count})
-            </button>
-          );
-        })}
+        {CATEGORY_ORDER.map((cat) => (
+          <button
+            key={cat}
+            onClick={() =>
+              setActiveCategory(cat === activeCategory ? null : cat)
+            }
+            className={cn(
+              "rounded-full px-4 py-2 font-mono text-xs uppercase tracking-wider transition-colors touch-target",
+              cat === activeCategory
+                ? "bg-data/10 text-data border border-data/30"
+                : "text-muted-foreground border border-white/10 hover:border-white/30",
+            )}
+          >
+            {CATEGORY_LABELS[cat]} ({categoryCounts[cat]})
+          </button>
+        ))}
       </div>
 
       {/* TOOL GRID */}

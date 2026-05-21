@@ -1,758 +1,1289 @@
 [
   {
-    "slug": "agent-audit",
-    "name": "agent-audit",
-    "description": "Weekly audit of agent ecosystem to flag drift, duplicates, dead agents, naming collisions, manifest issues, dispatch registry mismatches, and skill registry inconsistencies",
-    "category": "admin",
-    "source": "skill"
+    "slug": "design-forge",
+    "name": "Design Forge",
+    "description": "AI-powered design automation. Multi-provider image + video generation, brand-aware template engine, Notion-driven asset pipeline.",
+    "category": "design-forge",
+    "subcategory": "parent",
+    "source": "parent",
+    "location": "forge"
   },
   {
-    "slug": "draft",
-    "name": "draft",
-    "description": "Load Andrew's voice profile, style memories, and Gmail thread context before drafting any email",
-    "category": "admin",
-    "source": "skill"
+    "slug": "design-forge-creative-coding-wing",
+    "name": "Design Forge \u2014 Creative Coding Wing",
+    "description": "Generative art pipeline. Shader-driven posters, animated backgrounds, brand-tuned procedural art.",
+    "category": "design-forge",
+    "subcategory": "wing",
+    "source": "wing",
+    "location": "forge/execution/wings/creative_coding"
   },
   {
-    "slug": "free-space",
-    "name": "free-space",
-    "description": "Intelligent disk space cleanup with iCloud awareness, external drive routing, and tiered triage",
-    "category": "admin",
-    "source": "skill"
+    "slug": "design-forge-slides-wing",
+    "name": "Design Forge \u2014 Slides Wing",
+    "description": "Brand-aware HTML deck generator. 21 rule checks, 72-brand library, NotebookLM bridge, PDF + presenter modes.",
+    "category": "design-forge",
+    "subcategory": "wing",
+    "source": "wing",
+    "location": "forge/execution/wings/slides"
   },
   {
-    "slug": "inbox-agent",
-    "name": "inbox-agent",
-    "description": "Scan Gmail for action items that need attention over the past 14 days",
-    "category": "admin",
-    "source": "skill"
+    "slug": "andrewwebber-dev",
+    "name": "andrewwebber.dev",
+    "description": "This site. Next.js 16, terminal-style portfolio, live stats wired to GitHub.",
+    "category": "global",
+    "subcategory": "site",
+    "source": "site",
+    "location": "andrewwebber.dev"
   },
   {
-    "slug": "jimbo",
-    "name": "jimbo",
-    "description": "Open the Jimbo v4",
-    "category": "admin",
-    "source": "skill"
+    "slug": "cli-printing-press",
+    "name": "Cli Printing Press",
+    "description": "Cross-project tool \u2014 runs across all of Andrew's repos, not just MIGHTY.",
+    "category": "global",
+    "subcategory": "global-tool",
+    "source": "global-tool",
+    "location": "general-tools/cli-printing-press"
   },
   {
-    "slug": "meeting-analysis",
-    "name": "meeting-analysis",
-    "description": "Automatically pull meeting transcripts from Notion Transcribe, Gemini Notes (Google Drive), or Quo Call and convert them into a richly formatted, strategically analyzed Notion 'Meeting Analysis' page in the Meeting Notes database",
-    "category": "admin",
-    "source": "skill"
+    "slug": "dev",
+    "name": "Dev",
+    "description": "Cross-project tool \u2014 runs across all of Andrew's repos, not just MIGHTY.",
+    "category": "global",
+    "subcategory": "global-tool",
+    "source": "global-tool",
+    "location": "general-tools/dev"
   },
   {
-    "slug": "notion-dedupe-agent",
-    "name": "notion-dedupe-agent",
-    "description": "Scan Notion databases for duplicate records, auto-detect matches, and merge them while keeping the most complete data",
-    "category": "admin",
-    "source": "skill"
+    "slug": "gdrive-recovery",
+    "name": "Gdrive Recovery",
+    "description": "Cross-project tool \u2014 runs across all of Andrew's repos, not just MIGHTY.",
+    "category": "global",
+    "subcategory": "global-tool",
+    "source": "global-tool",
+    "location": "general-tools/gdrive-recovery"
   },
   {
-    "slug": "notion-health",
-    "name": "notion-health",
-    "description": "Notion Health Check: scan databases for stale, incomplete, or orphaned records",
-    "category": "admin",
-    "source": "skill"
+    "slug": "graphify",
+    "name": "Graphify",
+    "description": "Cross-project tool \u2014 runs across all of Andrew's repos, not just MIGHTY.",
+    "category": "global",
+    "subcategory": "global-tool",
+    "source": "global-tool",
+    "location": "general-tools/graphify"
   },
   {
-    "slug": "weekly-worksheet",
-    "name": "weekly-worksheet",
-    "description": "Generate the printable MIGHTY Weekly Working Sheet with event checklists, staff tracking, and today's outlook",
-    "category": "admin",
-    "source": "skill"
+    "slug": "scrapers",
+    "name": "Scrapers",
+    "description": "Cross-project tool \u2014 runs across all of Andrew's repos, not just MIGHTY.",
+    "category": "global",
+    "subcategory": "global-tool",
+    "source": "global-tool",
+    "location": "general-tools/Scrapers"
   },
   {
-    "slug": "wiki-lint",
-    "name": "wiki-lint",
-    "description": "Wiki Lint: 5-minute hygiene check on the Claude memory wiki",
-    "category": "admin",
-    "source": "skill"
-  },
-  {
-    "slug": "mighty-brand-guide",
-    "name": "mighty-brand-guide",
-    "description": "Use when creating any content, design, email, document, or marketing material for MIGHTY Photo Booths",
-    "category": "brand",
-    "source": "skill"
-  },
-  {
-    "slug": "booth-events-report",
-    "name": "booth-events-report",
-    "description": "Generate a branded post-event analytics PDF report and contacts CSV from a Booth",
-    "category": "crm",
-    "source": "skill"
-  },
-  {
-    "slug": "pdf-copy",
-    "name": "pdf-copy",
-    "description": "Download a PDF invoice from VSCO Workspace for a client or event",
-    "category": "crm",
-    "source": "skill"
-  },
-  {
-    "slug": "design-center-pipeline",
-    "name": "design-center-pipeline",
-    "description": "Design Center pipeline — manually trigger a status-based action on one or more Design Request pages",
-    "category": "design-center",
-    "source": "skill"
-  },
-  {
-    "slug": "huashu-design",
-    "name": "huashu-design",
-    "description": "花叔Design（Huashu-Design）——用HTML做高保真原型、交互Demo、幻灯片、动画、设计变体探索+设计方向顾问+专家评审的一体化设计能力。HTML是工具不是媒介，根据任务embody不同专家（UX设计师/动画师/幻灯片设计师/原型师），避免web design tropes。触发词：做原型、设计Demo、交互原型、HTML演示、动画Demo、设计变体、hi-fi设计、UI mockup、prototype、设计探索、做个HTML页面、做个可视化、app原型、iOS原型、移动应用mockup、导出MP4、导出GIF、60fps视频、设计风格、设计方向、设计哲学、配色方案、视觉风格、推荐风格、选个风格、做个好看的、评审、好不好看、review this design。**主干能力**：Junior Designer工作流（先给假设+reasoning+placeholder再迭代）、反AI slop清单、React+Babel最佳实践、Tweaks变体切换、Speaker Notes演示、Starter Components（幻灯片外壳/变体画布/动画引擎/设备边框）、App原型专属守则（默认从Wikimedia/Met/Unsplash取真图、每台iPhone包AppPhone状态管理器可交互、交付前跑Playwright点击测试）、Playwright验证、HTML动画→MP4/GIF视频导出（25fps基础 + 60fps插帧 + palette优化GIF + 6首场景化BGM + 自动fade）。**需求模糊时的Fallback**：设计方向顾问模式——从5流派×20种设计哲学（Pentagram信息建筑/Field",
-    "category": "design-center",
-    "source": "skill"
-  },
-  {
-    "slug": "mighty-spec-sheets",
-    "name": "mighty-spec-sheets",
-    "description": "Generate client-facing design specification sheets for MIGHTY Photo Booths",
-    "category": "design-center",
-    "source": "skill"
-  },
-  {
-    "slug": "nanobanana2",
-    "name": "nanobanana2",
-    "description": "Generate top-tier image content for MIGHTY Photo Booths using AI image generation",
-    "category": "design-center",
-    "source": "skill"
-  },
-  {
-    "slug": "overlay-batch-fixer",
-    "name": "overlay-batch-fixer",
-    "description": "Batch-apply a single PNG overlay onto every photo in a folder that already shares the same base overlay — typical case is a Google Drive event folder where designers fixed a small detail in the overlay and need every `*-template",
-    "category": "design-center",
-    "source": "skill"
-  },
-  {
-    "slug": "remotion-video",
-    "name": "remotion-video",
-    "description": "Turn still images into video content using Remotion",
-    "category": "design-center",
-    "source": "skill"
-  },
-  {
-    "slug": "snappic-gallery",
-    "name": "snappic-gallery",
-    "description": "Retrieve the Snappic microsite gallery URL for an event",
-    "category": "design-center",
-    "source": "skill"
-  },
-  {
-    "slug": "snappic-microsite",
-    "name": "snappic-microsite",
-    "description": "Interactive wizard for Snappic microsite styling",
-    "category": "design-center",
-    "source": "skill"
+    "slug": "security",
+    "name": "Security",
+    "description": "Cross-project tool \u2014 runs across all of Andrew's repos, not just MIGHTY.",
+    "category": "global",
+    "subcategory": "global-tool",
+    "source": "global-tool",
+    "location": "general-tools/security"
   },
   {
     "slug": "ach-sender",
     "name": "ach-sender",
     "description": "Send ACH/direct deposit payment information to clients or partners for MIGHTY Photo Booths",
-    "category": "finance",
-    "source": "skill"
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/finance/ach-sender"
   },
   {
-    "slug": "coi-creator",
-    "name": "coi-creator",
-    "description": "Generate and send Certificates of Insurance (COI) for MIGHTY Photo Booths events",
-    "category": "finance",
-    "source": "skill"
+    "slug": "agent-audit",
+    "name": "agent-audit",
+    "description": "Weekly governance audit",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/agent-audit"
   },
   {
-    "slug": "mighty-doc",
-    "name": "mighty-doc",
-    "description": "Author professional service agreements, sponsorships, partner agreements, NDAs, and other business documents for MIGHTY Photo Booths",
-    "category": "legal",
-    "source": "skill"
+    "slug": "ai-caricature-studio",
+    "name": "Ai Caricature Studio",
+    "description": "Standalone app under mighty/apps.",
+    "category": "photo-booth",
+    "subcategory": "app",
+    "source": "app",
+    "location": "mighty/apps/ai-caricature-studio"
   },
   {
-    "slug": "w9-creator",
-    "name": "w9-creator",
-    "description": "Generate and send W-9 tax forms for MIGHTY Photo Booths",
-    "category": "legal",
-    "source": "skill"
+    "slug": "analyze-video",
+    "name": "analyze-video",
+    "description": ">",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/r-and-d/analyze-video"
   },
   {
     "slug": "article-writing",
     "name": "article-writing",
     "description": "Write articles, guides, blog posts, tutorials, newsletter issues, and other long-form content in a distinctive voice derived from supplied examples or brand guidance",
-    "category": "marketing",
-    "source": "skill"
-  },
-  {
-    "slug": "blog",
-    "name": "blog",
-    "description": "Blog Agent — write SEO-optimized industry articles with backlinks to MIGHTYphotobooths",
-    "category": "marketing",
-    "source": "skill"
-  },
-  {
-    "slug": "daily-recap",
-    "name": "daily-recap",
-    "description": "Daily Recap: evening accomplishment summary",
-    "category": "marketing",
-    "source": "skill"
-  },
-  {
-    "slug": "market-intel",
-    "name": "market-intel",
-    "description": "Monday Market Intel: competitive research, industry trends, DFW opportunities",
-    "category": "marketing",
-    "source": "skill"
-  },
-  {
-    "slug": "morning-brief",
-    "name": "morning-brief",
-    "description": "Morning Brief v2: dashboard-first daily operations command center",
-    "category": "marketing",
-    "source": "skill"
-  },
-  {
-    "slug": "morning-brief-publish",
-    "name": "morning-brief-publish",
-    "description": "Morning Brief Phase 3 — Notion page publishing template",
-    "category": "marketing",
-    "source": "skill"
-  },
-  {
-    "slug": "web-patrol",
-    "name": "web-patrol",
-    "description": "Web Patrol: research and enrich venue/company records in Notion",
-    "category": "marketing",
-    "source": "skill"
-  },
-  {
-    "slug": "booth-events-export",
-    "name": "booth-events-export",
-    "description": "Download the full event media zip from the Booth",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "drive-event-dedup",
-    "name": "drive-event-dedup",
-    "description": "Detect and clean up duplicate Google Drive event folders in the yearly events directory",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "mpb-event-briefing",
-    "name": "mpb-event-briefing",
-    "description": "Generate a one-page PDF briefing sheet for any staff member working an event",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "event-details-agent",
-    "name": "event-details-agent",
-    "description": "Build Event Details pages in Notion for MIGHTY Photo Booths events",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "event-folder",
-    "name": "event-folder",
-    "description": "Create a Google Drive event folder from the template",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "mpb-event-logistics",
-    "name": "mpb-event-logistics",
-    "description": "Calculate drive times with DFW traffic buffers, build staff schedules, check calendar conflicts, and assess multi-event feasibility",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "mpb-event-prep",
-    "name": "mpb-event-prep",
-    "description": "Full pre-event preparation pipeline",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "loom-library-sync",
-    "name": "loom-library-sync",
-    "description": "Mirror the MIGHTY Loom video library locally, transcribe with Whisper, and turn each video into a Markdown SOP via claude -p",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "newclient-dedup",
-    "name": "newclient-dedup",
-    "description": "Dedup procedure for the /newclient pipeline",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "newclient-event-details",
-    "name": "newclient-event-details",
-    "description": "Phase 4 of /newclient — full Event Details page template, operational defaults, equipment checklist IDs, and contacts",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "newclient-project-page",
-    "name": "newclient-project-page",
-    "description": "Phase 5 of /newclient — full Project Page template, Communication Log format, cross-linking table, Drive folder creation, and chat notification",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "notion-project",
-    "name": "notion-project",
-    "description": "Build a Project page in Notion for an event — links all records (Client, Company, Venue, Event Details, DR)",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "post-event",
-    "name": "post-event",
-    "description": "Post-Event Follow-Up: draft thank-you and gallery emails for recent events",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "post-event-pipeline",
-    "name": "post-event-pipeline",
-    "description": "End-to-end post-event delivery pipeline",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "print-checklist",
-    "name": "print-checklist",
-    "description": "Print any Notion equipment checklist as a clean PDF grouped by Case/Bag",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "print-event",
-    "name": "print-event",
-    "description": "Print everything for an event: Event Details page + Equipment Checklist",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "print-event-details",
-    "name": "print-event-details",
-    "description": "Print a Notion Event Details page as a clean, print-optimized PDF",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "shell-cheatsheet",
-    "name": "shell-cheatsheet",
-    "description": "Curated shell one-liners for MPB ops debugging — SSL/cert checks on mighty domains, port/process diagnostics, log analysis, find/permissions, disk usage, secure delete",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "snappic-export",
-    "name": "snappic-export",
-    "description": "Download the full event photo/GIF zip from the Snappic dashboard and upload to the event's Google Drive 04_event-output/ folder",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "mpb-staff-dispatch",
-    "name": "mpb-staff-dispatch",
-    "description": "Send event details, briefings, schedule updates, and coordination texts to staff via Quo/OpenPhone",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "staffing-events",
-    "name": "staffing-events",
-    "description": "Discover upcoming MIGHTY events that need staff, cross-verify details across Notion + Gmail + Google Calendar, then send personalized briefing texts to chosen team members via Quo Team Chat",
-    "category": "ops",
-    "source": "skill"
-  },
-  {
-    "slug": "analyze-video",
-    "name": "analyze-video",
-    "description": "Analyze YouTube/Loom videos — extract transcript and key frames, correlate what's being shown with what's being said, generate a plain-English breakdown with PDF report and Excalidraw concept diagram",
-    "category": "r-and-d",
-    "source": "skill"
-  },
-  {
-    "slug": "security-review",
-    "name": "security-review",
-    "description": "Code Council: 12-agent adversarial security review with HexStrike integration and SOP generation",
-    "category": "r-and-d",
-    "source": "skill"
-  },
-  {
-    "slug": "creating-skills",
-    "name": "creating-skills",
-    "description": "Creates new skills for the Claude Code agent environment",
-    "category": "r-and-d",
-    "source": "skill"
-  },
-  {
-    "slug": "ui-ux",
-    "name": "ui-ux",
-    "description": "Design and build production-grade UI/UX — pages, components, dashboards, and full applications",
-    "category": "r-and-d",
-    "source": "skill"
-  },
-  {
-    "slug": "video-to-website",
-    "name": "video-to-website",
-    "description": "Turn a short product video into a premium, scroll-driven animated landing page",
-    "category": "r-and-d",
-    "source": "skill"
-  },
-  {
-    "slug": "client-lookup",
-    "name": "client-lookup",
-    "description": "Look up a client in the MIGHTY Photo Booths Notion CRM",
-    "category": "sales",
-    "source": "skill"
-  },
-  {
-    "slug": "company-lookup",
-    "name": "company-lookup",
-    "description": "Look up a company or organization in the MIGHTY Photo Booths Notion CRM",
-    "category": "sales",
-    "source": "skill"
-  },
-  {
-    "slug": "gmail-lead-scanner",
-    "name": "gmail-lead-scanner",
-    "description": "Scan Gmail for new photo booth inquiry leads and flag them for follow-up",
-    "category": "sales",
-    "source": "skill"
-  },
-  {
-    "slug": "newclient",
-    "name": "newclient",
-    "description": "Full event buildout for a booked client",
-    "category": "sales",
-    "source": "skill"
-  },
-  {
-    "slug": "newlead",
-    "name": "newlead",
-    "description": "Research a potential lead and create linked Client + Company records in Notion CRM with auto lead-scoring",
-    "category": "sales",
-    "source": "skill"
-  },
-  {
-    "slug": "osint",
-    "name": "osint",
-    "description": "Full OSINT pipeline: research client + company + venue, create Notion records, generate pitch design request",
-    "category": "sales",
-    "source": "skill"
-  },
-  {
-    "slug": "quo-scanner",
-    "name": "quo-scanner",
-    "description": "Scan Quo (OpenPhone) calls and text messages for leads, action items, and important interactions across both MIGHTY phone lines",
-    "category": "sales",
-    "source": "skill"
-  },
-  {
-    "slug": "venue-lookup",
-    "name": "venue-lookup",
-    "description": "Look up a venue in the MIGHTY Photo Booths Notion database or research a new venue",
-    "category": "sales",
-    "source": "skill"
-  },
-  {
-    "slug": "coi-automation",
-    "name": "coi-automation",
-    "description": "Automates Hiscox COI requests: form submission, email monitoring, Drive storage, and delivery",
-    "category": "integrations",
-    "source": "agent"
-  },
-  {
-    "slug": "inbox-processor",
-    "name": "inbox-processor",
-    "description": "Email inbox automation for design requests - scans Gmail, extracts data, creates Notion entries",
-    "category": "email",
-    "source": "agent"
-  },
-  {
-    "slug": "gift-card-gen",
-    "name": "gift-card-gen",
-    "description": "Web app for generating and tracking digital gift cards with Google Sheets integration",
-    "category": "finance",
-    "source": "agent"
-  },
-  {
-    "slug": "overlay-batcher",
-    "name": "overlay-batcher",
-    "description": "Batch image processing tool - overlay photos into template windows with cover/contain modes",
-    "category": "media",
-    "source": "agent"
-  },
-  {
-    "slug": "boothbook-quote-agent",
-    "name": "boothbook-quote-agent",
-    "description": "Automates photo booth quote creation in BoothBook and sends responses via Gmail",
-    "category": "tools",
-    "source": "agent"
-  },
-  {
-    "slug": "daily-todo",
-    "name": "daily-todo",
-    "description": "Daily to-do list agent that aggregates action items from Gmail, Quo (OpenPhone), Slack, and Notion (Design Center) into a printable B&W table ordered by urgency (due date and wait time)",
-    "category": "tools",
-    "source": "agent"
-  },
-  {
-    "slug": "domain-brainstormer",
-    "name": "domain-brainstormer",
-    "description": "Domain name brainstorming tool (in development)",
-    "category": "tools",
-    "source": "agent"
-  },
-  {
-    "slug": "prompt-reverse-engineer",
-    "name": "prompt-reverse-engineer",
-    "description": "Desktop app that reverse-engineers AI prompts from generated images and tests them with Nano Banana Pro",
-    "category": "tools",
-    "source": "agent"
-  },
-  {
-    "slug": "brain-tunnel",
-    "name": "brain-tunnel",
-    "description": "Desktop voice-to-CLI interface for design request processing with screenshot capture",
-    "category": "voice",
-    "source": "agent"
-  },
-  {
-    "slug": "design-request-agent",
-    "name": "design-request-agent",
-    "description": "Desktop app that processes client questionnaire PDFs, deep-searches Gmail for context, and creates structured Design Request pages in Notion",
-    "category": "tools",
-    "source": "agent"
-  },
-  {
-    "slug": "mailpro",
-    "name": "MailPro",
-    "description": "Gmail inbox triage sidebar — categorize, prioritize, and track emails",
-    "category": "ops",
-    "source": "agent"
-  },
-  {
-    "slug": "penny",
-    "name": "penny",
-    "description": "MIGHTY finance orchestrator with AI categorization via claude -p",
-    "category": "finance",
-    "source": "agent"
-  },
-  {
-    "slug": "subscription-tracker",
-    "name": "subscription-tracker",
-    "description": "Subscription and bill tracker that connects to bank accounts via Plaid, detects recurring charges, shows a bill calendar, and flags waste",
-    "category": "finance",
-    "source": "agent"
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/marketing/article-writing-skill"
   },
   {
     "slug": "audible-sync",
     "name": "audible-sync",
     "description": "Syncs Audible library into Notion Learning Library with AI summaries",
-    "category": "general-tools",
-    "source": "agent"
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/audible-sync"
   },
   {
     "slug": "autofill-v1-0",
     "name": "autofill-v1.0",
     "description": "General-purpose form filler",
-    "category": "ops",
-    "source": "agent"
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/autofill-v1.0"
+  },
+  {
+    "slug": "blog",
+    "name": "blog",
+    "description": "Blog Agent \u2014 write SEO-optimized industry articles with backlinks to MIGHTYphotobooths.com",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/marketing/blog"
+  },
+  {
+    "slug": "booth-events-export",
+    "name": "booth-events-export",
+    "description": "Download the full event media zip from the Booth.Events dashboard, upload to the event's Google Drive 04_event-output/ folder, and capture the public gallery URL for the post-event email",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/booth-events-export"
+  },
+  {
+    "slug": "booth-events-report",
+    "name": "booth-events-report",
+    "description": "Generate a branded post-event analytics PDF report and contacts CSV from a Booth.Events gallery, upload to Drive, and draft the delivery email to the client",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/crm/boothbook/booth-events-report"
+  },
+  {
+    "slug": "boothbook-quote-agent",
+    "name": "boothbook-quote-agent",
+    "description": "Automates photo booth quote creation in BoothBook and sends responses via Gmail",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/agents-export/tools/boothbook-quote-agent-v1.0"
+  },
+  {
+    "slug": "brain-tunnel",
+    "name": "brain-tunnel",
+    "description": "Desktop voice-to-CLI interface for design request processing with screenshot capture",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/agents-export/voice/brain-tunnel-v1.0"
   },
   {
     "slug": "calendar-watcher",
     "name": "calendar-watcher",
     "description": "Scans Google Calendar for upcoming confirmed client bookings and exports as terminal output or printable PDF",
-    "category": "general-tools",
-    "source": "agent"
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/calendar-watcher"
+  },
+  {
+    "slug": "client-lookup",
+    "name": "client-lookup",
+    "description": "Standalone client research agent \u2014 Gmail analysis, communication profiling, social discovery, and rich Notion client pages",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/client-lookup"
+  },
+  {
+    "slug": "coi-automation",
+    "name": "coi-automation",
+    "description": "Automates Hiscox COI requests: form submission, email monitoring, Drive storage, and delivery",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/agents-export/COI/coi-automation-v1.0"
+  },
+  {
+    "slug": "coi-creator",
+    "name": "coi-creator",
+    "description": "Generate and send Certificates of Insurance (COI) for MIGHTY Photo Booths events",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/finance/coi-creator"
+  },
+  {
+    "slug": "company-lookup",
+    "name": "company-lookup",
+    "description": "Standalone company research agent \u2014 website scraping, social link discovery, industry detection, and Notion integration",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/company-lookup"
+  },
+  {
+    "slug": "creating-skills",
+    "name": "creating-skills",
+    "description": "Creates new skills for the Claude Code agent environment",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/r-and-d/skill-creator"
+  },
+  {
+    "slug": "daily-recap",
+    "name": "daily-recap",
+    "description": "Daily Recap: evening accomplishment summary",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/marketing/daily-recap"
+  },
+  {
+    "slug": "daily-todo",
+    "name": "daily-todo",
+    "description": "Daily to-do list agent that aggregates action items from Gmail, Quo (OpenPhone), Slack, and Notion (Design Center) into a printable B&W table ordered by urgency (due date and wait time)",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/agents-export/tools/daily-todo-v1.0"
   },
   {
     "slug": "de-dupe-agent",
     "name": "de-dupe-agent",
     "description": "Locate, merge, and purge duplicate Notion records across all databases",
-    "category": "notion",
-    "source": "agent"
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/de-dupe-agent"
+  },
+  {
+    "slug": "deconstructed-studio",
+    "name": "Deconstructed Studio",
+    "description": "Standalone app under mighty/apps.",
+    "category": "photo-booth",
+    "subcategory": "app",
+    "source": "app",
+    "location": "mighty/apps/deconstructed-studio"
+  },
+  {
+    "slug": "design-center-pipeline",
+    "name": "design-center-pipeline",
+    "description": "Polling daemon that watches Notion Design Center for DR status changes and routes each transition: NEW REQUEST\u2192Slack, FOR INTERNAL REVIEW\u2192preview email, APPROVED\u2192Slack celebration, NEEDS REVISION\u2192scrape+update DR+Slack",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/design-center-pipeline"
+  },
+  {
+    "slug": "design-request-agent",
+    "name": "design-request-agent",
+    "description": "Desktop app that processes client questionnaire PDFs, deep-searches Gmail for context, and creates structured Design Request pages in Notion",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/design-request-agent"
   },
   {
     "slug": "directory-submission-agent",
     "name": "directory-submission-agent",
     "description": "Multi-tenant directory submission agent",
-    "category": "ops",
-    "source": "agent"
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/directory-submission-agent"
   },
   {
     "slug": "domain-authority-checker",
     "name": "domain-authority-checker",
     "description": "Checks domain authority metrics using Ubersuggest/Neil Patel API intercept",
-    "category": "tools",
-    "source": "agent"
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/domain-authority-checker"
+  },
+  {
+    "slug": "domain-brainstormer",
+    "name": "domain-brainstormer",
+    "description": "Domain name brainstorming tool (in development)",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/agents-export/tools/domain-brainstormer-v0.1"
+  },
+  {
+    "slug": "draft",
+    "name": "draft",
+    "description": "Load Andrew's voice profile, style memories, and Gmail thread context before drafting any email",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/admin/draft-email"
+  },
+  {
+    "slug": "drive-event-dedup",
+    "name": "drive-event-dedup",
+    "description": ">",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/drive-event-dedup"
   },
   {
     "slug": "dropbox-migrator",
     "name": "dropbox-migrator",
     "description": "Migrates Dropbox files to Google Drive with verification",
-    "category": "ops",
-    "source": "agent"
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/dropbox-migrator"
+  },
+  {
+    "slug": "environment-framework",
+    "name": "environment-framework",
+    "description": "Reusable environment configuration framework with webhook integration patterns",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/_templates/environment-framework-v1.0"
+  },
+  {
+    "slug": "event-details-agent",
+    "name": "event-details-agent",
+    "description": "Build Event Details pages in Notion for MIGHTY Photo Booths events",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/event-details"
+  },
+  {
+    "slug": "event-folder",
+    "name": "event-folder",
+    "description": ">",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/event-folder"
   },
   {
     "slug": "follow-up-cadence",
     "name": "follow-up-cadence",
-    "description": "Automated lead follow-up cadence — queries CLIENTS DB for due follow-ups by tier, searches Gmail for thread context, generates email drafts via Anthropic, writes tracking properties back to Notion",
-    "category": "tools",
-    "source": "agent"
+    "description": "Automated lead follow-up cadence \u2014 queries CLIENTS DB for due follow-ups by tier, searches Gmail for thread context, generates email drafts via Anthropic, writes tracking properties back to Notion",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/follow-up-cadence"
+  },
+  {
+    "slug": "free-space",
+    "name": "free-space",
+    "description": "Intelligent disk space cleanup with iCloud awareness, external drive routing, and tiered triage",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/admin/free-space"
   },
   {
     "slug": "gallery-analytics",
     "name": "gallery-analytics",
-    "description": "Post-event analytics pipeline — generates branded PDF impact reports and hosted analytics pages from Booth",
-    "category": "analytics",
-    "source": "agent"
+    "description": "Post-event analytics pipeline \u2014 generates branded PDF impact reports and hosted analytics pages from Booth.Events gallery data",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/gallery-analytics"
   },
   {
     "slug": "gbp-manager",
     "name": "gbp-manager",
-    "description": "Google Business Profile post manager — writes GBP-optimized content, publishes via API, tracks in Notion CONTENT DATABASE, verifies with screenshot proof",
-    "category": "tools",
-    "source": "agent"
+    "description": "Google Business Profile post manager \u2014 writes GBP-optimized content, publishes via API, tracks in Notion CONTENT DATABASE, verifies with screenshot proof",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/gbp-manager"
   },
   {
     "slug": "gdocs-library",
     "name": "gdocs-library",
-    "description": "Google Docs Library — syncs all Google Docs metadata from Drive to a Notion database for filtering, sorting, and inventory management",
-    "category": "ops",
-    "source": "agent"
+    "description": "Google Docs Library \u2014 syncs all Google Docs metadata from Drive to a Notion database for filtering, sorting, and inventory management",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/gdocs-library"
+  },
+  {
+    "slug": "gift-card-gen",
+    "name": "gift-card-gen",
+    "description": "Web app for generating and tracking digital gift cards with Google Sheets integration",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/finance/gift-card-gen-v1.0"
+  },
+  {
+    "slug": "gmail-lead-scanner",
+    "name": "gmail-lead-scanner",
+    "description": "Scan Gmail for new photo booth inquiry leads and flag them for follow-up",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/sales/gmail-lead-scanner"
+  },
+  {
+    "slug": "inbox-agent",
+    "name": "inbox-agent",
+    "description": "Email inbox automation for design requests - scans Gmail, extracts data, creates Notion entries",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/email/inbox-agent"
+  },
+  {
+    "slug": "inbox-processor",
+    "name": "inbox-processor",
+    "description": "Email inbox automation for design requests - scans Gmail, extracts data, creates Notion entries",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/agents-export/email/inbox-processor-v1.0"
   },
   {
     "slug": "inbox-therapist",
     "name": "inbox-therapist",
-    "description": "The Inbox Therapist — vulgar, gorgeous email analytics dashboard with AI comedy",
-    "category": "analytics",
-    "source": "agent"
+    "description": "The Inbox Therapist \u2014 vulgar, gorgeous email analytics dashboard with AI comedy",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/inbox-therapist"
+  },
+  {
+    "slug": "iris-studio",
+    "name": "Iris Studio",
+    "description": "Standalone app under mighty/apps.",
+    "category": "photo-booth",
+    "subcategory": "app",
+    "source": "app",
+    "location": "mighty/apps/iris-studio"
+  },
+  {
+    "slug": "jimbo",
+    "name": "jimbo",
+    "description": "Jimbo \u2014 Personal Command Agent",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/jimbo"
+  },
+  {
+    "slug": "jimbo-voice-out",
+    "name": "jimbo-voice-out",
+    "description": "MIGHTY agent.",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/jimbo-voice-out-v1.0"
   },
   {
     "slug": "kajabi-video-scraper",
     "name": "kajabi-video-scraper",
-    "description": "Scrapes Alison Prince's Kajabi library (alison-prince",
-    "category": "scraper-agents",
-    "source": "agent"
+    "description": "Scrapes Alison Prince's Kajabi library (alison-prince.mykajabi.com/library), enumerates all videos with metadata, verifies download URLs, generates AI summaries, and syncs everything to the VIVIAN PROJECT Notion database",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/kajabi-video-scraper"
   },
   {
     "slug": "lead-score-agent",
     "name": "lead-score-agent",
     "description": "Scores leads in CLIENTS DB using 13-factor weighted algorithm",
-    "category": "tools",
-    "source": "agent"
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/lead-score-agent"
+  },
+  {
+    "slug": "loom-library-sync",
+    "name": "loom-library-sync",
+    "description": "Mirror the MIGHTY Loom video library locally, transcribe with Whisper, and turn each video into a Markdown SOP via claude -p",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/loom-library-sync"
+  },
+  {
+    "slug": "mailpro",
+    "name": "MailPro",
+    "description": "Gmail inbox triage sidebar \u2014 categorize, prioritize, and track emails",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/email/inbox-agent/extension"
+  },
+  {
+    "slug": "market-intel",
+    "name": "market-intel",
+    "description": "Monday Market Intel: competitive research, industry trends, DFW opportunities",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/marketing/market-intel"
+  },
+  {
+    "slug": "meeting-analysis",
+    "name": "meeting-analysis",
+    "description": "Automatically pull meeting transcripts from Notion Transcribe, Gemini Notes (Google Drive), or Quo Call and convert them into a richly formatted, strategically analyzed Notion 'Meeting Analysis' page in the Meeting Notes database",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/admin/meeting-analysis"
   },
   {
     "slug": "memory-bridge",
     "name": "memory-bridge",
     "description": "One-way sync from Claude Code auto memory feedback files to the shared SQLite facts table",
-    "category": "infrastructure",
-    "source": "agent"
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/memory-bridge"
+  },
+  {
+    "slug": "mighty-brand-guide",
+    "name": "mighty-brand-guide",
+    "description": "Use when creating any content, design, email, document, or marketing material for MIGHTY Photo Booths",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/brand/mighty-brand-guide"
   },
   {
     "slug": "mighty-crm",
     "name": "mighty-crm",
     "description": "Quote engine, contract generator, and payment integration for MIGHTY Photo Booths",
-    "category": "crm",
-    "source": "agent"
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/mighty-crm"
+  },
+  {
+    "slug": "mighty-doc",
+    "name": "mighty-doc",
+    "description": "Author professional service agreements, sponsorships, partner agreements, NDAs, and other business documents for MIGHTY Photo Booths",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/legal/mighty-doc"
   },
   {
     "slug": "mighty-doc-agent",
     "name": "mighty-doc-agent",
     "description": "Author, edit, and manage official business documents for MIGHTY Photo Booths",
-    "category": "tools",
-    "source": "agent"
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/mighty-doc-agent"
+  },
+  {
+    "slug": "mighty-spec-sheets",
+    "name": "mighty-spec-sheets",
+    "description": "Generate client-facing design specification sheets for MIGHTY Photo Booths",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/design-center/mighty-spec-sheets"
   },
   {
     "slug": "model-generator",
     "name": "model-generator",
     "description": "Generates synthetic model photos matching photo booth aesthetics with reusable identities",
-    "category": "photo-booth-tools",
-    "source": "agent"
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/model-generator"
+  },
+  {
+    "slug": "morning-brief",
+    "name": "morning-brief",
+    "description": "Morning Brief v2: dashboard-first daily operations command center",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/marketing/morning-brief"
+  },
+  {
+    "slug": "morning-brief-publish",
+    "name": "morning-brief-publish",
+    "description": "Morning Brief Phase 3 \u2014 Notion page publishing template",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/marketing/morning-brief-publish"
+  },
+  {
+    "slug": "mpb-agent-template",
+    "name": "mpb-agent-template",
+    "description": "Reference architecture template for agent projects - 3-layer system with directives, orchestration, and execution",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/_templates/mpb-agent-v1.1"
+  },
+  {
+    "slug": "mpb-event-briefing",
+    "name": "mpb-event-briefing",
+    "description": "Generate a one-page PDF briefing sheet for any staff member working an event",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/event-briefing"
+  },
+  {
+    "slug": "mpb-event-logistics",
+    "name": "mpb-event-logistics",
+    "description": "Calculate drive times with DFW traffic buffers, build staff schedules, check calendar conflicts, and assess multi-event feasibility",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/event-logistics"
+  },
+  {
+    "slug": "mpb-event-prep",
+    "name": "mpb-event-prep",
+    "description": "Full pre-event preparation pipeline",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/event-prep"
+  },
+  {
+    "slug": "mpb-staff-dispatch",
+    "name": "mpb-staff-dispatch",
+    "description": "Send event details, briefings, schedule updates, and coordination texts to staff via Quo/OpenPhone",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/staff-dispatch"
+  },
+  {
+    "slug": "nanobanana2",
+    "name": "nanobanana2",
+    "description": "Generate top-tier image content for MIGHTY Photo Booths using AI image generation",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/design-center/nanobanana2"
   },
   {
     "slug": "new-client-agent",
     "name": "new-client-agent",
     "description": "Researches potential clients via Gmail and web, creates linked Client and Company records in Notion CRM",
-    "category": "tools",
-    "source": "agent"
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/new-client-agent"
+  },
+  {
+    "slug": "newclient",
+    "name": "newclient",
+    "description": "Full event buildout for a booked client",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/sales/newclient"
+  },
+  {
+    "slug": "newclient-dedup",
+    "name": "newclient-dedup",
+    "description": "Dedup procedure for the /newclient pipeline",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/newclient-dedup"
+  },
+  {
+    "slug": "newclient-event-details",
+    "name": "newclient-event-details",
+    "description": "Phase 4 of /newclient \u2014 full Event Details page template, operational defaults, equipment checklist IDs, and contacts",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/newclient-event-details"
+  },
+  {
+    "slug": "newclient-project-page",
+    "name": "newclient-project-page",
+    "description": "Phase 5 of /newclient \u2014 full Project Page template, Communication Log format, cross-linking table, Drive folder creation, and chat notification",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/newclient-project-page"
+  },
+  {
+    "slug": "newlead",
+    "name": "newlead",
+    "description": "Research a potential lead and create linked Client + Company records in Notion CRM with auto lead-scoring",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/sales/newlead"
   },
   {
     "slug": "news-reporter",
     "name": "news-reporter",
     "description": "Monthly News Feed publisher for MIGHTY Photo Booths",
-    "category": "tools",
-    "source": "agent"
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/news-reporter"
   },
   {
     "slug": "notion-analytics",
     "name": "notion-analytics",
     "description": "Private web dashboard displaying analytics across all Notion workspace databases",
-    "category": "ops",
-    "source": "agent"
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/notion-analytics"
+  },
+  {
+    "slug": "notion-dedupe-agent",
+    "name": "notion-dedupe-agent",
+    "description": "Scan Notion databases for duplicate records, auto-detect matches, and merge them while keeping the most complete data",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/admin/notion-dedupe"
+  },
+  {
+    "slug": "notion-health",
+    "name": "notion-health",
+    "description": "Notion Health Check: scan databases for stale, incomplete, or orphaned records",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/admin/notion-health"
+  },
+  {
+    "slug": "notion-project",
+    "name": "notion-project",
+    "description": "Build a Project page in Notion for an event \u2014 links all records (Client, Company, Venue, Event Details, DR)",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/notion-project"
   },
   {
     "slug": "notion-warden",
     "name": "notion-warden",
     "description": "Notion DB hygiene + governance agent",
-    "category": "tools",
-    "source": "agent"
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/notion-warden"
   },
   {
     "slug": "org-lookup",
     "name": "org-lookup",
-    "description": "Standalone organization research agent — mission, tax status, org type, key staff discovery with Notion integration",
-    "category": "research",
-    "source": "agent"
+    "description": "Standalone organization research agent \u2014 mission, tax status, org type, key staff discovery with Notion integration",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/org-lookup"
+  },
+  {
+    "slug": "osint",
+    "name": "osint",
+    "description": "Full OSINT pipeline: research client + company + venue, create Notion records, generate pitch design request",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/sales/osint"
+  },
+  {
+    "slug": "overlay-batch-fixer",
+    "name": "overlay-batch-fixer",
+    "description": "Batch-apply a single PNG overlay onto every photo in a folder that already shares the same base overlay \u2014 typical case is a Google Drive event folder where designers fixed a small detail in the overlay and need every `*-template.jpg` recomposited",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/design-center/overlay-batch-fixer"
+  },
+  {
+    "slug": "overlay-batcher",
+    "name": "overlay-batcher",
+    "description": "Batch image processing tool - overlay photos into template windows with cover/contain modes",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/agents-export/media/overlay-batcher-v1.0"
+  },
+  {
+    "slug": "pdf-copy",
+    "name": "pdf-copy",
+    "description": "Download a PDF invoice from VSCO Workspace for a client or event",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/crm/vsco/pdf-copy"
+  },
+  {
+    "slug": "penny",
+    "name": "penny",
+    "description": "MIGHTY finance orchestrator with AI categorization via claude -p",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/finance/penny/agents/penny"
+  },
+  {
+    "slug": "post-event",
+    "name": "post-event",
+    "description": "Post-Event Follow-Up: draft thank-you and gallery emails for recent events",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/post-event"
+  },
+  {
+    "slug": "post-event-pipeline",
+    "name": "post-event-pipeline",
+    "description": "End-to-end post-event delivery orchestrator",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/post-event-pipeline"
+  },
+  {
+    "slug": "print-checklist",
+    "name": "print-checklist",
+    "description": "Print any Notion equipment checklist as a clean PDF grouped by Case/Bag",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/print-checklist"
+  },
+  {
+    "slug": "print-event",
+    "name": "print-event",
+    "description": "Print everything for an event: Event Details page + Equipment Checklist",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/print-event"
+  },
+  {
+    "slug": "print-event-details",
+    "name": "print-event-details",
+    "description": "Print a Notion Event Details page as a clean, print-optimized PDF",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/print-event-details"
   },
   {
     "slug": "project-manager",
     "name": "project-manager",
     "description": "Notion Projects DB lifecycle owner",
-    "category": "tools",
-    "source": "agent"
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/project-manager"
+  },
+  {
+    "slug": "prompt-reverse-engineer",
+    "name": "prompt-reverse-engineer",
+    "description": "Desktop app that reverse-engineers AI prompts from generated images and tests them with Nano Banana Pro",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/agents-export/tools/prompt-reverse-engineer-v1.0"
+  },
+  {
+    "slug": "quo-scanner",
+    "name": "quo-scanner",
+    "description": "Scan Quo (OpenPhone) calls and text messages for leads, action items, and important interactions across both MIGHTY phone lines",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/sales/quo-scanner"
+  },
+  {
+    "slug": "remotion-video",
+    "name": "remotion-video",
+    "description": "Turn still images into video content using Remotion",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/design-center/remotion-video"
   },
   {
     "slug": "research-agent",
     "name": "research-agent",
-    "description": "Unified research agent — single owner of all research work",
-    "category": "tools",
-    "source": "agent"
+    "description": "Unified research agent \u2014 single owner of all research work",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/research-agent"
+  },
+  {
+    "slug": "security-review",
+    "name": "security-review",
+    "description": "Code Council: 12-agent adversarial security review with HexStrike integration and SOP generation",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/r-and-d/security-review"
   },
   {
     "slug": "seo-agent",
     "name": "seo-agent",
-    "description": "Strategic SEO agent for mightyphotobooths",
-    "category": "marketing",
-    "source": "agent"
+    "description": "Strategic SEO agent for mightyphotobooths.com",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/seo-agent-v1.0"
+  },
+  {
+    "slug": "shell-cheatsheet",
+    "name": "shell-cheatsheet",
+    "description": "Curated shell one-liners for MPB ops debugging \u2014 SSL/cert checks on mighty domains, port/process diagnostics, log analysis, find/permissions, disk usage, secure delete",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/shell-cheatsheet"
+  },
+  {
+    "slug": "snappic-export",
+    "name": "snappic-export",
+    "description": "Download the full event photo/GIF zip from the Snappic dashboard and upload to the event's Google Drive 04_event-output/ folder",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/snappic-export"
+  },
+  {
+    "slug": "snappic-gallery",
+    "name": "snappic-gallery",
+    "description": "Retrieve the Snappic microsite gallery URL for an event",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/design-center/snappic-gallery"
+  },
+  {
+    "slug": "snappic-microsite",
+    "name": "snappic-microsite",
+    "description": "Interactive wizard for Snappic microsite styling",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/design-center/snappic-microsite"
+  },
+  {
+    "slug": "staffing-events",
+    "name": "staffing-events",
+    "description": "Discover upcoming MIGHTY events that need staff, cross-verify details across Notion + Gmail + Google Calendar, then send personalized briefing texts to chosen team members via Quo Team Chat",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/staffing-events"
+  },
+  {
+    "slug": "subscription-tracker",
+    "name": "subscription-tracker",
+    "description": "Subscription and bill tracker that connects to bank accounts via Plaid, detects recurring charges, shows a bill calendar, and flags waste",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/finance/subscription-tracker-v1.0"
+  },
+  {
+    "slug": "ui-ux",
+    "name": "ui-ux",
+    "description": ">",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/r-and-d/ui-ux"
   },
   {
     "slug": "vault-sync",
     "name": "vault-sync",
-    "description": "Bitwarden-backed secret management — sync",
-    "category": "ops",
-    "source": "agent"
+    "description": "Bitwarden-backed secret management \u2014 sync .env files, runtime credential provider, key rotation tracking, encrypted backups, and compliance auditing across the workspace",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/vault-sync"
+  },
+  {
+    "slug": "venue-lookup",
+    "name": "venue-lookup",
+    "description": "Standalone venue research agent \u2014 multi-source deep venue intelligence gathering with Notion integration",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/venue-lookup"
   },
   {
     "slug": "video-teacher",
     "name": "video-teacher",
-    "description": "Video understanding agent — extracts transcripts and key frames from YouTube/Loom videos, correlates visual and verbal content, generates plain-English breakdowns with PDF reports and Excalidraw diagrams",
-    "category": "tools",
-    "source": "agent"
+    "description": "Video understanding agent \u2014 extracts transcripts and key frames from YouTube/Loom videos, correlates visual and verbal content, generates plain-English breakdowns with PDF reports and Excalidraw diagrams",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/video-teacher"
+  },
+  {
+    "slug": "video-to-website",
+    "name": "video-to-website",
+    "description": ">",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/r-and-d/video-to-website"
   },
   {
     "slug": "voice-receptionist",
     "name": "voice-receptionist",
-    "description": "Simone — MIGHTY inbound phone receptionist",
-    "category": "ops",
-    "source": "agent"
+    "description": "Simone \u2014 MIGHTY inbound phone receptionist",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/voice-receptionist-v1.0"
+  },
+  {
+    "slug": "w9-creator",
+    "name": "w9-creator",
+    "description": "Generate and send W-9 tax forms for MIGHTY Photo Booths",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/legal/w9-creator"
+  },
+  {
+    "slug": "watermark-app",
+    "name": "Watermark App",
+    "description": "Standalone app under mighty/apps.",
+    "category": "photo-booth",
+    "subcategory": "app",
+    "source": "app",
+    "location": "mighty/apps/watermark-app"
+  },
+  {
+    "slug": "web-patrol",
+    "name": "web-patrol",
+    "description": "Web Patrol: research and enrich venue/company records in Notion",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/marketing/web-patrol"
+  },
+  {
+    "slug": "weekly-worksheet",
+    "name": "weekly-worksheet",
+    "description": "Generate the printable MIGHTY Weekly Working Sheet with event checklists, staff tracking, and today's outlook",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/admin/weekly-worksheet"
+  },
+  {
+    "slug": "wiki-lint",
+    "name": "wiki-lint",
+    "description": "Wiki Lint: 5-minute hygiene check on the Claude memory wiki",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/admin/wiki-lint"
+  },
+  {
+    "slug": "spectre-bastion",
+    "name": "SPECTRE \u2014 Bastion",
+    "description": "SPECTRE suite module.",
+    "category": "spectre",
+    "subcategory": "spectre-tool",
+    "source": "spectre-tool",
+    "location": "hotfixops/security/bastion"
+  },
+  {
+    "slug": "spectre-blackthorn",
+    "name": "SPECTRE \u2014 Blackthorn",
+    "description": "SPECTRE suite module.",
+    "category": "spectre",
+    "subcategory": "spectre-tool",
+    "source": "spectre-tool",
+    "location": "hotfixops/security/blackthorn"
+  },
+  {
+    "slug": "spectre-cloudbreak",
+    "name": "SPECTRE \u2014 Cloudbreak",
+    "description": "SPECTRE suite module.",
+    "category": "spectre",
+    "subcategory": "spectre-tool",
+    "source": "spectre-tool",
+    "location": "hotfixops/security/cloudbreak"
+  },
+  {
+    "slug": "spectre-code-council",
+    "name": "SPECTRE \u2014 Code Council",
+    "description": "SPECTRE suite module.",
+    "category": "spectre",
+    "subcategory": "spectre-tool",
+    "source": "spectre-tool",
+    "location": "hotfixops/security/code_council"
+  },
+  {
+    "slug": "spectre-decepticon-bridge",
+    "name": "SPECTRE \u2014 Decepticon Bridge",
+    "description": "SPECTRE suite module.",
+    "category": "spectre",
+    "subcategory": "spectre-tool",
+    "source": "spectre-tool",
+    "location": "hotfixops/security/decepticon-bridge"
+  },
+  {
+    "slug": "spectre-dossier",
+    "name": "SPECTRE \u2014 Dossier",
+    "description": "SPECTRE suite module.",
+    "category": "spectre",
+    "subcategory": "spectre-tool",
+    "source": "spectre-tool",
+    "location": "hotfixops/security/dossier"
+  },
+  {
+    "slug": "spectre-ember",
+    "name": "SPECTRE \u2014 Ember",
+    "description": "SPECTRE suite module.",
+    "category": "spectre",
+    "subcategory": "spectre-tool",
+    "source": "spectre-tool",
+    "location": "hotfixops/security/ember"
+  },
+  {
+    "slug": "spectre-gauntlet",
+    "name": "SPECTRE \u2014 Gauntlet",
+    "description": "SPECTRE suite module.",
+    "category": "spectre",
+    "subcategory": "spectre-tool",
+    "source": "spectre-tool",
+    "location": "hotfixops/security/gauntlet"
+  },
+  {
+    "slug": "spectre-ghost-core",
+    "name": "SPECTRE \u2014 Ghost Core",
+    "description": "SPECTRE AISec module \u2014 computer-use + adversarial AI security.",
+    "category": "spectre",
+    "subcategory": "spectre-aisec",
+    "source": "spectre-aisec",
+    "location": "hotfixops/security/aisec/ghost-core"
+  },
+  {
+    "slug": "spectre-ghost-local",
+    "name": "SPECTRE \u2014 Ghost Local",
+    "description": "SPECTRE AISec module \u2014 computer-use + adversarial AI security.",
+    "category": "spectre",
+    "subcategory": "spectre-aisec",
+    "source": "spectre-aisec",
+    "location": "hotfixops/security/aisec/ghost-local"
+  },
+  {
+    "slug": "spectre-ghost-sandbox",
+    "name": "SPECTRE \u2014 Ghost Sandbox",
+    "description": "SPECTRE AISec module \u2014 computer-use + adversarial AI security.",
+    "category": "spectre",
+    "subcategory": "spectre-aisec",
+    "source": "spectre-aisec",
+    "location": "hotfixops/security/aisec/ghost-sandbox"
+  },
+  {
+    "slug": "spectre-injection-corpus",
+    "name": "SPECTRE \u2014 Injection Corpus",
+    "description": "SPECTRE AISec module \u2014 computer-use + adversarial AI security.",
+    "category": "spectre",
+    "subcategory": "spectre-aisec",
+    "source": "spectre-aisec",
+    "location": "hotfixops/security/aisec/injection_corpus"
+  },
+  {
+    "slug": "spectre-llm-guard-wrapper",
+    "name": "SPECTRE \u2014 Llm Guard Wrapper",
+    "description": "SPECTRE AISec module \u2014 computer-use + adversarial AI security.",
+    "category": "spectre",
+    "subcategory": "spectre-aisec",
+    "source": "spectre-aisec",
+    "location": "hotfixops/security/aisec/llm_guard_wrapper"
+  },
+  {
+    "slug": "spectre-loop",
+    "name": "SPECTRE \u2014 Loop",
+    "description": "SPECTRE AISec module \u2014 computer-use + adversarial AI security.",
+    "category": "spectre",
+    "subcategory": "spectre-aisec",
+    "source": "spectre-aisec",
+    "location": "hotfixops/security/aisec/loop"
+  },
+  {
+    "slug": "spectre-raven",
+    "name": "SPECTRE \u2014 Raven",
+    "description": "SPECTRE suite module.",
+    "category": "spectre",
+    "subcategory": "spectre-tool",
+    "source": "spectre-tool",
+    "location": "hotfixops/security/raven"
+  },
+  {
+    "slug": "spectre-shannon",
+    "name": "SPECTRE \u2014 Shannon",
+    "description": "SPECTRE suite module.",
+    "category": "spectre",
+    "subcategory": "spectre-tool",
+    "source": "spectre-tool",
+    "location": "hotfixops/security/shannon"
+  },
+  {
+    "slug": "spectre-spectre-api",
+    "name": "SPECTRE \u2014 Spectre Api",
+    "description": "SPECTRE suite module.",
+    "category": "spectre",
+    "subcategory": "spectre-tool",
+    "source": "spectre-tool",
+    "location": "hotfixops/security/spectre-api"
+  },
+  {
+    "slug": "spectre-spectre-guide",
+    "name": "SPECTRE \u2014 Spectre Guide",
+    "description": "SPECTRE suite module.",
+    "category": "spectre",
+    "subcategory": "spectre-tool",
+    "source": "spectre-tool",
+    "location": "hotfixops/security/spectre-guide"
+  },
+  {
+    "slug": "spectre-watchtower",
+    "name": "SPECTRE \u2014 Watchtower",
+    "description": "SPECTRE suite module.",
+    "category": "spectre",
+    "subcategory": "spectre-tool",
+    "source": "spectre-tool",
+    "location": "hotfixops/security/watchtower"
   }
 ]

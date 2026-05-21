@@ -1,24 +1,24 @@
 {
   "methodology": "github_clone_wc_l",
-  "countedAt": "2026-05-21T19:39:52.940342+00:00",
-  "github_loc": 1803154,
-  "github_commits": 1350,
+  "countedAt": "2026-05-21T19:59:57.198651+00:00",
+  "github_loc": 1804000,
+  "github_commits": 1353,
   "live_agents_registry": 39,
   "repos_count": 33,
   "agents_live": 39,
-  "ratchet_loc": 1803154,
-  "ratchet_commits": 1350,
+  "ratchet_loc": 1804000,
+  "ratchet_commits": 1353,
   "ratchet_agents": 39,
   "claude_hours": 1129,
-  "claude_tokens": 12141568304,
+  "claude_tokens": 12150008887,
   "claude_sessions": 320,
   "ratchet_claude_hours": 1129,
-  "ratchet_claude_tokens": 12141568304,
+  "ratchet_claude_tokens": 12150008887,
   "skills": 372,
   "ratchet_skills": 372,
   "ratchet_repos": 33,
-  "tools": 108,
-  "ratchet_tools": 108,
+  "tools": 143,
+  "ratchet_tools": 143,
   "per_repo": {
     "ninjaforhire/Agents": {
       "loc": 432696,
@@ -26,9 +26,9 @@
       "commits": 532
     },
     "ninjaforhire/andrewwebber.dev": {
-      "loc": 14944,
+      "loc": 15790,
       "files": 96,
-      "commits": 51
+      "commits": 53
     },
     "ninjaforhire/Biometric-Lab": {
       "loc": 11,
@@ -103,7 +103,7 @@
     "ninjaforhire/mighty": {
       "loc": 101372,
       "files": 398,
-      "commits": 186
+      "commits": 187
     },
     "ninjaforhire/MIGHTY-Apps": {
       "loc": 743,
