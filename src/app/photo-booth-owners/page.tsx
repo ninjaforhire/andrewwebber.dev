@@ -2,8 +2,12 @@ import type { Metadata } from "next";
 import { Hero } from "@/components/photo-booth-owners/Hero";
 import { ToolsGrid } from "@/components/photo-booth-owners/ToolsGrid";
 import { ServicesGrid } from "@/components/photo-booth-owners/ServicesGrid";
+import { CalcomEmbed } from "@/components/photo-booth-owners/CalcomEmbed";
+import { GuideCard } from "@/components/photo-booth-owners/GuideCard";
+import { InquiryForm } from "@/components/photo-booth-owners/InquiryForm";
 import toolsData from "@/data/mighty-tools.json";
 import overridesData from "@/data/tools-overrides.json";
+import guidesData from "@/data/guides.json";
 import type { MightyTool } from "@/components/photo-booth-owners/ToolCard";
 
 export const metadata: Metadata = {
@@ -129,20 +133,22 @@ export default function PhotoBoothOwnersPage() {
           their own pace.
         </p>
 
-        <div className="rounded-lg border border-border bg-card/30 p-8 max-w-xl">
-          <p className="font-mono text-xs uppercase tracking-wider text-muted-foreground mb-4">
-            Booking
-          </p>
-          <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
-            Cal.com embed coming soon. In the meantime, use the inquiry form below and mention
-            &ldquo;consultation&rdquo; in your message.
-          </p>
-          <a
-            href="#inquiry"
-            className="font-mono text-sm uppercase tracking-wider text-terminal border border-terminal/30 px-6 py-3 hover:bg-terminal/5 transition-colors block text-center"
-          >
-            → Send Inquiry
-          </a>
+        <div className="grid gap-6 md:grid-cols-2 max-w-4xl mb-12 md:mb-16">
+          <CalcomEmbed
+            label="10-min Discovery Call"
+            description="Quick call to figure out if we're a fit. No commitment. Come with a specific problem."
+          />
+          <CalcomEmbed
+            label="1-hr AMA"
+            description="Bring your questions. We'll talk through ops, automation, SEO, security — whatever you need."
+          />
+        </div>
+
+        <h3 className="font-heading text-2xl font-bold mb-8">PDF Guides</h3>
+        <div className="grid gap-4 md:grid-cols-3 max-w-5xl">
+          {(guidesData as Parameters<typeof GuideCard>[0]["guide"][]).map((guide) => (
+            <GuideCard key={guide.slug} guide={guide} />
+          ))}
         </div>
       </section>
 
@@ -159,12 +165,7 @@ export default function PhotoBoothOwnersPage() {
         <p className="text-xl leading-relaxed text-muted-foreground max-w-3xl mb-12 md:mb-16">
           Fill out the form. I read everything. If it&apos;s a fit, I&apos;ll reply within 24 hours.
         </p>
-
-        <div className="rounded-lg border border-border bg-card/30 p-8 max-w-2xl">
-          <p className="font-mono text-xs text-muted-foreground text-center py-8">
-            Inquiry form — coming in Phase 3. Email directly: andrew@mightyphotobooths.com
-          </p>
-        </div>
+        <InquiryForm />
       </section>
     </>
   );
