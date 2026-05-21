@@ -1,0 +1,212 @@
+---
+title: "Notes From a Year of Building With Claude Code and Codex"
+description: "A year of building with two AI coding assistants in parallel: the workflow, the failure modes, and what changes for a solo developer when the tools start talking to each other."
+date: "2026-05-21"
+tags: ["AI", "Claude Code", "Codex", "Workflow", "HotFix Ops"]
+---
+
+<figure className="not-prose my-12 md:my-16">
+  <img
+    src="/images/blog/claude-codex/hero.jpg"
+    alt="Over-the-shoulder view of Andrew at his HotFix Ops workshop desk. His arm is being pulled into a glowing laptop screen filled with terminal windows, like the laptop is a portal to another world."
+    className="w-full rounded-xl border border-border"
+  />
+  <figcaption className="font-mono text-[10px] md:text-xs uppercase tracking-[0.2em] text-muted-foreground mt-4 text-center">
+    The moment the workflow stopped feeling like coding and started feeling like getting pulled into something bigger.
+  </figcaption>
+</figure>
+
+If somebody had told me a year ago that my Tuesday nights would involve refereeing arguments between two AI assistants at two in the morning, I would have laughed and gone back to whatever I was doing.
+
+That is the actual setup now. Three AI sessions open on my laptop, two of them passing notes back and forth through a small handoff routine I had written the night before.
+
+Less typing, more conducting.
+
+> The shift was not learning to code faster. It was learning to stop typing and start directing.
+
+## What an AI coding session actually is
+
+Quick translation, since this is the part of the conversation where language starts to drift.
+
+An <em>AI session</em> is a chat window with a coding assistant that can read and edit the files on your computer, not only answer questions.
+
+A <em>handoff</em> is a short script that tells one assistant to stop, summarize where it is, and pass that summary to the other assistant so the work continues without losing context.
+
+That is the whole vocabulary you need for the rest of this piece.
+
+## How I learned to run two AI coding tools at once
+
+None of this came together by accident. It came from a few weekends of YouTube, taking notes on builders who were further down the road.
+
+Big shoutout to <span className="text-warm">Nate Herk</span>, <span className="text-warm">Jack Roberts</span>, and <span className="text-warm">Nick Saraev</span>, the three creators whose channels have shaped most of my workflow ideas this year.
+
+The two-assistant approach in particular came directly from watching senior developers describe how they split jobs between their tools. Trying it on my own projects confirmed what they were saying, with the catch that it only pays off if you actually do the work.
+
+### A bit of background
+
+My day-to-day is internal tools and small product launches for my own business, [MIGHTY Photo Booths, the best photo booth experience in Dallas](https://mightyphotobooths.com). Not a senior engineer at a giant company. A builder who learned to code out of necessity and then fell for the craft.
+
+The two tools in heavy rotation are Claude Code on the Max plan and Codex on the Pro plan. Coding assistants made by different companies, with very different personalities.
+
+Google has been moving fast on their Ultra tier, and the next Gemini release looks strong enough that a third subscription is probably coming. Today's notes stick to what has actually been tested.
+
+<figure className="not-prose my-12 md:my-16">
+  <img
+    src="/images/blog/claude-codex/jimbo-cameo.jpg"
+    alt="Andrew at his workshop desk with Jimbo, the MIGHTY Photo Booths operations expert, standing beside him and pointing at one of Andrew's screens, weighing in on a decision."
+    className="w-full rounded-xl border border-border"
+  />
+  <figcaption className="font-mono text-[10px] md:text-xs uppercase tracking-[0.2em] text-muted-foreground mt-4 text-center">
+    When the models disagree, having someone in the room who has run a thousand events helps me decide who has the better read.
+  </figcaption>
+</figure>
+
+## Two AI assistants, two very different personalities
+
+The reason I keep both Claude Code and Codex around is that they are good at completely different parts of the job.
+
+### Claude Code is for planning
+
+Claude is where I go when an idea is still fuzzy. There is a setting called `/opusplan` that puts the assistant into its most thoughtful mode and walks me through the design of whatever I am building before any code gets written.
+
+It sits with a half-formed thought, asks clarifying questions, and turns it into a real plan. Phases, decisions, trade-offs spelled out.
+
+### Codex is for the red-pen pass
+
+Codex is the opposite personality. Shorter-tempered, more skeptical, less willing to nod along with whatever framing I walked in with.
+
+That makes it the right tool for the kind of review pass where every assumption gets stress-tested. The same diff sent to both assistants almost always comes back with two different lists of problems. That is exactly why I keep both around.
+
+Worth a quick shoutout to <span className="text-warm">Matthias Frank</span>, whose Notion-focused content has changed how I plan projects. If you live in Notion, his channel is worth your time.
+
+## Is AI coming for developer jobs?
+
+This is the loudest question in the room right now, and the one nobody wants to bring up at dinner. So let me bring it up.
+
+My honest read, after a year of using these tools every day, is that developers, programmers, and software engineers are about as safe as it gets.
+
+### What AI is genuinely good at
+
+Generating code that looks correct. Filling in boilerplate. Translating intent into syntax. Surfacing patterns from a thousand similar codebases it has seen before.
+
+That is real value. That is also the easy part of the job.
+
+### What AI is still bad at
+
+Four things, all of them load-bearing:
+
+- Deciding what to build in the first place.
+- Choosing between five plausible designs.
+- Catching the bug that will bite you in production at three in the morning.
+- Taking responsibility when something goes wrong.
+
+That has always been the actual job. Typing was never the hard part.
+
+Reading what got produced, judging whether it is right, and being on the hook when it is not. That is what gets paid for. The work is not shrinking, it is shifting toward the parts that still need a human brain.
+
+## Common worries when getting started
+
+### Do you need multiple AI subscriptions?
+
+No.
+
+Plenty of this runs fine on a single good tool. A second assistant is something you add once you are already shipping regularly and want a second pair of eyes that never gets tired.
+
+If you are still settling into one tool, hold off. Layering on a second one too early is how you end up paying for two and using neither.
+
+<figure className="not-prose my-12 md:my-16">
+  <img
+    src="/images/blog/claude-codex/twelve-terminals.jpg"
+    alt="Andrew leaning toward a laptop screen filled with twelve tiled terminal windows in a 4x3 grid, fully committed to the chaos, while Jimbo stands behind him arms crossed with a skeptical 'are you serious' expression."
+    className="w-full rounded-xl border border-border"
+  />
+  <figcaption className="font-mono text-[10px] md:text-xs uppercase tracking-[0.2em] text-muted-foreground mt-4 text-center">
+    Most of my learning curve was figuring out that twelve terminals is not actually a workflow.
+  </figcaption>
+</figure>
+
+### Do you still have to review everything?
+
+Yes. Every line.
+
+The code is better than it used to be, but the kinds of mistakes have changed. An AI assistant makes mistakes that look completely plausible, that pass the eye test and quietly fail on the edge case.
+
+A few from my own week:
+
+- Code that prints an API key into the log output as part of a helpful debug line.
+- A query that works on five rows and silently falls apart on fifty thousand.
+- A handler that returns the right shape on the happy path and the wrong status code on every error branch.
+
+Reviewing well is the single skill that has mattered most for me this year. If you take one thing from this post, take that.
+
+### Is AI-assisted coding actually faster?
+
+Sometimes not.
+
+For small, well-understood tasks, the orchestration overhead is real. A planning session plus a review pass on a fifteen-line fix is overkill.
+
+The wins show up on medium and large work, where holding the shape of the project in your head and letting the assistants handle the parts that used to eat a whole afternoon is the trade you want.
+
+## The hard lesson on running multiple AI assistants
+
+Do not point two assistants at the same files without giving each of them a clear job.
+
+The first time I tried it, the two assistants cheerfully overwrote each other's work for about forty minutes before I noticed.
+
+The fix has been explicit role assignment:
+
+- One assistant owns planning.
+- The other owns implementation.
+- Both check a shared status file before doing anything.
+
+When work needs to move between them, the handoff routine takes over. It is not glamorous. It saves hours.
+
+## The discipline AI cannot replace
+
+The unsexy part of all this is the discipline underneath.
+
+Saving your work to version history in clean, small pieces. Naming things so somebody else could read them. Setting up the automated checks that catch problems before a real user does. Writing tests alongside features instead of leaving them for the end.
+
+None of that is new advice. The catch is that when an assistant can produce a hundred lines of code in thirty seconds, the part of you that keeps the project coherent has to get stricter, not looser.
+
+That tradeoff is what has freed me up to focus on the work that actually matters. With the boring parts getting automated, my time is going into building [interactive photo and video experiences](https://mightyphotobooths.com) I could not have shipped this fast a year ago.
+
+## This shift is not on the way. It is already here.
+
+The workspace is not on the verge of changing. <span className="text-warm">It already has.</span>
+
+The people I know who started experimenting twelve months ago are running circles around workloads they used to spend whole weeks on. The ones who waited are not behind by a little. They are behind by a lot, and the gap is widening every quarter.
+
+## How to actually start today
+
+Getting started does not have to be dramatic.
+
+1. Pick one assistant.
+2. Open one project you already understand.
+3. Spend an hour trying to do something with it that would normally take an afternoon.
+4. Pay attention to where it helps and where it gets in the way.
+
+That single hour will teach you more than any blog post, including this one.
+
+<figure className="not-prose my-12 md:my-16">
+  <img
+    src="/images/blog/claude-codex/boardroom.jpg"
+    alt="Andrew and Jimbo at the head of a white conference table in a Fort Worth high-rise. The skyline glows behind them at dusk. A wall-mounted screen reads 'small business AI Solutions.' Both look ready to make an offer."
+    className="w-full rounded-xl border border-border"
+  />
+  <figcaption className="font-mono text-[10px] md:text-xs uppercase tracking-[0.2em] text-muted-foreground mt-4 text-center">
+    Andrew and Jimbo, Fort Worth boardroom, the moment before a small-business AI conversation gets interesting.
+  </figcaption>
+</figure>
+
+## A question for you, and where to ask yours
+
+Here is what I keep wondering, and what I would like to hear from you.
+
+If two AI assistants disagree on a decision in your codebase, which one do you trust by default? Is it the more confident one, the one with the better track record on your stack, or the one whose answer matches what you already wanted to do?
+
+I do not have a clean answer yet, and I think the answer changes the kind of developer you become.
+
+<span className="text-warm">Drop your take in the comments.</span> If you have questions, or you are not sure where to start, leave those there too. I answer everything in the comments, not in DMs, so the next person reading can learn from the same exchange.
+
+We are all early on this, and most of what is true today will be wrong by spring. Better to be early and confused than late and confident.

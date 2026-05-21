@@ -73,7 +73,7 @@ const STATS_FALLBACK: Stats = {
   dayStreak: 146,
   skills: 372,
   repos: 33,
-  linesOfCode: 1792309,
+  linesOfCode: 1801003,
 };
 
 export function JourneyTeaser() {
