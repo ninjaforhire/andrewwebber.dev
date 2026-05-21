@@ -3,7 +3,7 @@ import { WorkPageContent } from "./WorkPageContent";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "170+ AI tools, automation agents, and consultation services.",
+  description: "108 AI tools, automation agents, and consultation services shipped in production.",
 };
 
 export default function WorkPage() {

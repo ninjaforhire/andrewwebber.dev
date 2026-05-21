@@ -192,6 +192,20 @@ def fetch_claude_2026() -> dict:
     }
 
 
+def count_tools() -> int:
+    """Tools = entries in mighty-tools.json (written by scan-mighty-tools.ts).
+    One row = one shipped agent or skill. Honest count.
+    """
+    p = ROOT / "src" / "data" / "mighty-tools.json"
+    if not p.exists():
+        return 0
+    try:
+        data = json.loads(p.read_text())
+    except json.JSONDecodeError:
+        return 0
+    return len(data) if isinstance(data, list) else 0
+
+
 def count_skills() -> int:
     """Skills registry sibling to agent registry. One row = one skill."""
     registry = pathlib.Path.home() / "Desktop" / "_Code" / "mighty" / "agents" / "_shared" / "dispatch" / "skills_registry.json"
@@ -268,6 +282,7 @@ def main() -> None:
     agents_live_now = max(live_agents, len(repos))
 
     skills_now = count_skills()
+    tools_now = count_tools()
 
     print("Reading Claude 2026 usage...", file=sys.stderr)
     claude = fetch_claude_2026()
@@ -286,9 +301,10 @@ def main() -> None:
         prev_tokens = int(prev.get("ratchet_claude_tokens", prev.get("claude_tokens", 0)))
         prev_skills = int(prev.get("ratchet_skills", prev.get("skills", 0)))
         prev_repos = int(prev.get("ratchet_repos", prev.get("repos_count", 0)))
+        prev_tools = int(prev.get("ratchet_tools", prev.get("tools", 0)))
     else:
         prev_loc = prev_commits = prev_agents = prev_hours = prev_tokens = 0
-        prev_skills = prev_repos = 0
+        prev_skills = prev_repos = prev_tools = 0
 
     final_loc = max(total_loc, prev_loc)
     final_commits = max(total_commits, prev_commits)
@@ -297,6 +313,7 @@ def main() -> None:
     final_tokens = max(claude["tokens"], prev_tokens)
     final_skills = max(skills_now, prev_skills)
     final_repos = max(len(repos), prev_repos)
+    final_tools = max(tools_now, prev_tools)
 
     checkpoint = {
         "methodology": METHOD,
@@ -317,6 +334,8 @@ def main() -> None:
         "skills": skills_now,
         "ratchet_skills": final_skills,
         "ratchet_repos": final_repos,
+        "tools": tools_now,
+        "ratchet_tools": final_tools,
         "per_repo": per_repo,
     }
     CHECKPOINT.write_text(json.dumps(checkpoint, indent=2) + "\n")
@@ -334,6 +353,7 @@ def main() -> None:
     overrides["claudeTokens"] = final_tokens
     overrides["skills"] = final_skills
     overrides["repos"] = final_repos
+    overrides["tools"] = final_tools
     OVERRIDES.write_text(json.dumps(overrides, indent=2) + "\n")
 
     summary = {
