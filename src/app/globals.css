@@ -376,3 +376,16 @@ textarea {
   stroke-dasharray: 18 82;
   animation: perimeter-trace 6s linear infinite;
 }
+
+/* Blog: force MDX-wrapped <p> inside figcaption to inherit caption styling */
+figcaption p,
+figcaption .blog-p {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+  font-weight: inherit;
+}

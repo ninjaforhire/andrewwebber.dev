@@ -23,7 +23,7 @@ export const blogMDXComponents = {
   ),
   p: (props: Props<"p">) => (
     <p
-      className="my-7 md:my-8 text-lg md:text-xl leading-[1.8] text-muted-foreground"
+      className="blog-p my-7 md:my-8 text-lg md:text-xl leading-[1.8] text-muted-foreground"
       {...props}
     />
   ),
