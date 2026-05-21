@@ -93,12 +93,15 @@ function AnimatedNumber({
 }
 
 function Stat({ value, suffix, label, format = "default" }: StatProps) {
+  // Font max capped so a 9-digit number (1,801,003) fits a 4-col desktop slot
+  // without bleeding into the next column. text-center keeps number visually
+  // anchored above its label at every breakpoint.
   return (
-    <div className="min-w-0">
-      <div className="crop text-[clamp(20px,5.5vw,52px)] font-extrabold leading-none text-data tabular-nums whitespace-nowrap">
+    <div className="min-w-0 text-center">
+      <div className="crop text-[clamp(22px,4vw,40px)] font-extrabold leading-none text-data tabular-nums whitespace-nowrap">
         <AnimatedNumber target={value} suffix={suffix} format={format} />
       </div>
-      <div className="font-mono text-[10px] sm:text-sm font-medium tracking-wider text-muted-foreground mt-3 sm:mt-6 uppercase">
+      <div className="font-mono text-[10px] sm:text-xs md:text-sm font-medium tracking-[0.2em] text-muted-foreground mt-3 sm:mt-5 uppercase">
         {label}
       </div>
     </div>
@@ -106,14 +109,14 @@ function Stat({ value, suffix, label, format = "default" }: StatProps) {
 }
 
 function SubStat({ value, label, format = "default" }: StatProps) {
-  // Smaller min font than top-tier Stat so a 14-char number like
-  // 11,962,615,408 still fits in a ~90-150px mobile column without wrapping.
+  // 14-digit token count (12,085,102,124) is the constraint. Lower clamp so
+  // mobile cells (~150px) and desktop 2-col cells both hold it on one line.
   return (
-    <div className="min-w-0">
-      <div className="crop text-[clamp(11px,3.6vw,28px)] font-bold leading-none text-data/80 tabular-nums whitespace-nowrap">
+    <div className="min-w-0 text-center">
+      <div className="crop text-[clamp(14px,3vw,26px)] font-bold leading-none text-data/85 tabular-nums whitespace-nowrap">
         <AnimatedNumber target={value} format={format} />
       </div>
-      <div className="font-mono text-[9px] sm:text-xs font-medium tracking-wider text-muted-foreground/70 mt-2 sm:mt-4 uppercase">
+      <div className="font-mono text-[9px] sm:text-[10px] md:text-xs font-medium tracking-[0.2em] text-muted-foreground/80 mt-2 sm:mt-3 uppercase">
         {label}
       </div>
     </div>
@@ -158,14 +161,14 @@ export function StatsCounter() {
           </span>
         </figcaption>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 sm:gap-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-4 sm:gap-x-6 lg:gap-x-8 place-items-center">
           <Stat value={data.tools} label="Tools Shipped" />
           <Stat value={data.linesOfCode} label="Lines of Code" />
           <Stat value={data.commitsShipped} label="Commits Shipped" />
           <Stat value={data.agentsLive} label="Live Agents" />
         </div>
 
-        <div className="mt-10 pt-8 sm:mt-14 sm:pt-10 border-t border-white/10 grid grid-cols-2 gap-12 sm:gap-16">
+        <div className="mt-10 pt-8 sm:mt-14 sm:pt-10 border-t border-white/10 grid grid-cols-2 gap-x-4 sm:gap-x-8 place-items-center">
           <SubStat value={data.claudeHours} label="Hours with Claude" />
           <SubStat value={data.claudeTokens} label="Tokens through Claude" />
         </div>
