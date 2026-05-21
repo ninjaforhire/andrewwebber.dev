@@ -152,7 +152,7 @@ export function StatsCounter() {
     <section className="page-x section-y border-t border-white/5">
       <figure className="rounded-2xl border border-white/10 bg-white/[0.015] px-6 py-10 sm:px-10 sm:py-14">
         <figcaption className="font-mono text-[11px] sm:text-sm font-medium tracking-[0.3em] uppercase text-data mb-10 md:mb-14 text-center leading-relaxed">
-          Since January 1st, 2026 — all of this.
+          Since January 1st, 2026.
           <span className="block mt-2 text-muted-foreground normal-case tracking-normal text-xs sm:text-sm">
             Some were even legible.
           </span>

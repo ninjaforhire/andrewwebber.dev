@@ -6,7 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const ROLES = [
   { text: "Systems Architect", color: "text-terminal", dot: "bg-terminal" },
   { text: "Agentic Engineer", color: "text-data", dot: "bg-data" },
-  { text: "Cybersecurity", color: "text-creative", dot: "bg-creative" },
+  { text: "Cybersecurity Expert", color: "text-creative", dot: "bg-creative" },
 ];
 
 export function HeroSectionMobile() {

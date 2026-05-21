@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const ROLES = [
   { text: "Systems Architect", color: "text-terminal" },
   { text: "Agentic Engineer", color: "text-data" },
-  { text: "Cybersecurity", color: "text-creative" },
+  { text: "Cybersecurity Expert", color: "text-creative" },
 ];
 
 const DIVIDER_COLORS = ["bg-terminal", "bg-data", "bg-creative"];

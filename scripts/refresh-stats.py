@@ -192,6 +192,22 @@ def fetch_claude_2026() -> dict:
     }
 
 
+def count_skills() -> int:
+    """Skills registry sibling to agent registry. One row = one skill."""
+    registry = pathlib.Path.home() / "Desktop" / "_Code" / "mighty" / "agents" / "_shared" / "dispatch" / "skills_registry.json"
+    if not registry.exists():
+        return 0
+    try:
+        data = json.loads(registry.read_text())
+    except json.JSONDecodeError:
+        return 0
+    if isinstance(data, dict):
+        return len(data)
+    if isinstance(data, list):
+        return len(data)
+    return 0
+
+
 def count_live_agents() -> int:
     """Canonical 'live agents' = registry entries with status active or production.
 
@@ -251,6 +267,8 @@ def main() -> None:
     # User-confirmed methodology: max of canonical registry-active and GitHub repo count.
     agents_live_now = max(live_agents, len(repos))
 
+    skills_now = count_skills()
+
     print("Reading Claude 2026 usage...", file=sys.stderr)
     claude = fetch_claude_2026()
     print(f"  hours={claude['hours']} sessions={claude['sessions']} tokens={claude['tokens']:,}", file=sys.stderr)
@@ -266,14 +284,19 @@ def main() -> None:
         prev_agents = int(prev.get("ratchet_agents", prev.get("agents_live", 0)))
         prev_hours = int(prev.get("ratchet_claude_hours", prev.get("claude_hours", 0)))
         prev_tokens = int(prev.get("ratchet_claude_tokens", prev.get("claude_tokens", 0)))
+        prev_skills = int(prev.get("ratchet_skills", prev.get("skills", 0)))
+        prev_repos = int(prev.get("ratchet_repos", prev.get("repos_count", 0)))
     else:
         prev_loc = prev_commits = prev_agents = prev_hours = prev_tokens = 0
+        prev_skills = prev_repos = 0
 
     final_loc = max(total_loc, prev_loc)
     final_commits = max(total_commits, prev_commits)
     final_agents = max(agents_live_now, prev_agents)
     final_hours = max(claude["hours"], prev_hours)
     final_tokens = max(claude["tokens"], prev_tokens)
+    final_skills = max(skills_now, prev_skills)
+    final_repos = max(len(repos), prev_repos)
 
     checkpoint = {
         "methodology": METHOD,
@@ -291,6 +314,9 @@ def main() -> None:
         "claude_sessions": claude["sessions"],
         "ratchet_claude_hours": final_hours,
         "ratchet_claude_tokens": final_tokens,
+        "skills": skills_now,
+        "ratchet_skills": final_skills,
+        "ratchet_repos": final_repos,
         "per_repo": per_repo,
     }
     CHECKPOINT.write_text(json.dumps(checkpoint, indent=2) + "\n")
@@ -306,6 +332,8 @@ def main() -> None:
     overrides["agentsLive"] = final_agents
     overrides["claudeHours"] = final_hours
     overrides["claudeTokens"] = final_tokens
+    overrides["skills"] = final_skills
+    overrides["repos"] = final_repos
     OVERRIDES.write_text(json.dumps(overrides, indent=2) + "\n")
 
     summary = {

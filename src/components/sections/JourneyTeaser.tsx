@@ -47,44 +47,66 @@ const MILESTONES = [
   },
   {
     year: "Now",
-    title: "Systems architect. Agentic engineer. Security builder.",
+    title: "Systems architect. Agentic engineer. Cybersecurity expert.",
     description:
-      "170+ tools. Custom orchestrators, autonomous agent pipelines, offensive security platforms. From OSINT engines to production deployment — full stack, every layer.",
+      "Custom orchestrators, autonomous agent pipelines, offensive security platforms. From OSINT engines to production deployment — full stack, every layer.",
     details: [
-      "31 autonomous agents orchestrated by a custom dispatch system",
+      "{agents} autonomous agents orchestrated by a custom dispatch system",
       "SPECTRE — offensive security + OSINT platform (Docker, Nmap, Nuclei)",
-      "193 Claude Code skills powering daily operations",
-      "1.3M+ lines of code across 22 repositories",
-      "Shipping daily — 143 consecutive days and counting",
+      "{skills} Claude Code skills powering daily operations",
+      "{loc} lines of code across {repos} repositories",
+      "Shipping daily — {days} consecutive days and counting",
     ],
   },
 ];
 
+interface Stats {
+  agentsLive: number;
+  dayStreak: number;
+  skills: number;
+  repos: number;
+  linesOfCode: number;
+}
+
+const STATS_FALLBACK: Stats = {
+  agentsLive: 39,
+  dayStreak: 146,
+  skills: 372,
+  repos: 33,
+  linesOfCode: 1792309,
+};
+
 export function JourneyTeaser() {
-  const [agentsLive, setAgentsLive] = useState(31);
-  const [dayStreak, setDayStreak] = useState(143);
+  const [stats, setStats] = useState<Stats>(STATS_FALLBACK);
 
   useEffect(() => {
     fetch("/api/stats")
       .then((r) => r.json())
-      .then((s) => {
-        if (s.agentsLive) setAgentsLive(s.agentsLive);
-        if (s.dayStreak) setDayStreak(s.dayStreak);
-      })
+      .then((s) =>
+        setStats({
+          agentsLive: s.agentsLive || STATS_FALLBACK.agentsLive,
+          dayStreak: s.dayStreak || STATS_FALLBACK.dayStreak,
+          skills: s.skills || STATS_FALLBACK.skills,
+          repos: s.repos || STATS_FALLBACK.repos,
+          linesOfCode: s.linesOfCode || STATS_FALLBACK.linesOfCode,
+        }),
+      )
       .catch(() => {});
   }, []);
+
+  const fillTemplate = (s: string) =>
+    s
+      .replaceAll("{agents}", String(stats.agentsLive))
+      .replaceAll("{skills}", String(stats.skills))
+      .replaceAll("{loc}", stats.linesOfCode.toLocaleString())
+      .replaceAll("{repos}", String(stats.repos))
+      .replaceAll("{days}", String(stats.dayStreak));
 
   const milestones = MILESTONES.map((m) => {
     if (m.year !== "Now") return m;
     return {
       ...m,
-      details: [
-        `${agentsLive} autonomous agents orchestrated by a custom dispatch system`,
-        "SPECTRE — offensive security + OSINT platform (Docker, Nmap, Nuclei)",
-        "193 Claude Code skills powering daily operations",
-        "1.3M+ lines of code across 22 repositories",
-        `Shipping daily — ${dayStreak} consecutive days and counting`,
-      ],
+      details: (m.details as string[]).map(fillTemplate),
     };
   });
 

@@ -9,6 +9,8 @@ interface StatsOverrides {
   agentsLive?: number;
   claudeHours?: number;
   claudeTokens?: number;
+  skills?: number;
+  repos?: number;
 }
 
 function loadOverrides(): StatsOverrides {
@@ -43,6 +45,8 @@ export async function GET() {
     agentsLive: overrides.agentsLive ?? 0,
     claudeHours: overrides.claudeHours ?? 0,
     claudeTokens: overrides.claudeTokens ?? 0,
+    skills: overrides.skills ?? 0,
+    repos: overrides.repos ?? 0,
     dayStreak,
   };
 
