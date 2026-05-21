@@ -1,6 +1,6 @@
 ---
-title: "Notes From a Year of Building With Claude Code and Codex"
-description: "A year of building with two AI coding assistants in parallel. The workflow, the failure modes, and the moment my code started feeling like an argument I was refereeing."
+title: "A Year of Claude Code (and One Day of Codex)"
+description: "A year of building solo with Claude Code, then yesterday I added Codex. What changed in a single day, and what the year before taught me about working alongside AI."
 date: "2026-05-21"
 tags: ["AI", "Claude Code", "Codex", "Workflow", "HotFix Ops"]
 ---
@@ -14,25 +14,23 @@ tags: ["AI", "Claude Code", "Codex", "Workflow", "HotFix Ops"]
   <figcaption className="font-mono text-[10px] md:text-xs uppercase tracking-[0.2em] text-muted-foreground mt-4 text-center">The moment the workflow stopped feeling like coding and started feeling like getting pulled into something bigger.</figcaption>
 </figure>
 
-If somebody had told me a year ago that my Tuesday nights would involve refereeing arguments between two AI assistants at two in the morning, I would have laughed and gone back to whatever I was doing.
+A year ago I started using Claude Code every day. Yesterday I added Codex to the stack for the first time.
 
-That is the actual setup now. Three AI sessions open on my laptop, two of them passing notes back and forth through a small handoff routine I had written the night before. One model laying out a plan. Another model poking holes in it. Me stepping in when they could not agree.
-
-Less typing. More conducting.
+This morning I am writing it down, because the difference between one tool and two tools talking to each other is bigger than I expected.
 
 > The shift was not learning to code faster. It was learning to stop typing and start directing.
 
-A quick translation before we go further. An <em>AI session</em> is a chat window with a coding assistant that can read and edit the files on your computer, not only answer questions. A <em>handoff</em> is a short script that pauses one assistant, summarizes where it is, and passes that summary to the other. That is the whole vocabulary you need.
+A quick translation before we go further. An <em>AI session</em> is a chat window with a coding assistant that can read and edit the files on your computer, not only answer questions. A <em>handoff</em> is a short script that pauses one assistant, summarizes where it is, and passes that summary to another tool so the work can continue. That is the whole vocabulary you need.
 
-## How I ended up running two AI assistants at once
+## What a year of Claude Code taught me
 
-None of this came together by accident. It came from a few weekends of YouTube, taking notes on builders who were further down the road.
+For most of the last twelve months, Claude Code has been my one AI tool.
 
-Big shoutout to [Nate Herk](https://www.youtube.com/@nateherk), [Jack Roberts](https://www.youtube.com/@Itssssss_Jack), and [Nick Saraev](https://www.youtube.com/@nicksaraev), the three creators whose channels have shaped most of my workflow ideas this year. The two-assistant approach in particular came directly from watching senior developers describe how they split jobs between their tools.
+A setting called `/opusplan` does most of the heavy lifting. It puts the assistant into its most thoughtful mode and walks me through the design of whatever I am building before any code gets written. It sits with a half-formed thought, asks the right questions, and turns it into a real plan with phases and trade-offs spelled out.
 
-I run MIGHTY Photo Booths day to day, so most of what I build is internal tooling. Not a senior engineer at a giant company. A builder who learned to code out of necessity and then fell for the craft.
+Almost everything I have shipped this year started in that mode. Less time typing line by line. More time deciding what to build and why.
 
-The two tools in heavy rotation are Claude Code on the Max plan and Codex on the Pro plan. Different companies, very different personalities.
+Big shoutout to [Nate Herk](https://www.youtube.com/@nateherk), [Jack Roberts](https://www.youtube.com/@Itssssss_Jack), and [Nick Saraev](https://www.youtube.com/@nicksaraev), the three creators whose channels have shaped most of my workflow ideas this year. And worth a quick shoutout to [Matthias Frank](https://www.youtube.com/@mfreihaendig), whose Notion content has changed how I plan projects. If you live in Notion, his channel is worth your time.
 
 <figure className="not-prose my-12 md:my-16">
   <img
@@ -43,15 +41,19 @@ The two tools in heavy rotation are Claude Code on the Max plan and Codex on the
   <figcaption className="font-mono text-[10px] md:text-xs uppercase tracking-[0.2em] text-muted-foreground mt-4 text-center">Jimbo, my operations partner. The human reality check no AI assistant can give me.</figcaption>
 </figure>
 
-## Claude plans. Codex argues.
+## What changed yesterday when I added Codex
 
-Claude is where I go when an idea is still fuzzy. There is a setting called `/opusplan` that puts the assistant into its most thoughtful mode and walks me through the design of whatever I am building before any code gets written. It sits with a half-formed thought, asks the right questions, and turns it into a real plan with phases and trade-offs spelled out.
+I had been watching senior developers describe a two-tool workflow on YouTube for weeks. Yesterday I finally tried it.
 
-Codex is the opposite personality. Shorter-tempered. More skeptical. Less willing to nod along with whatever framing I walked in with. That makes it the right tool for what I would call the red-pen pass.
+Codex is the opposite personality from Claude. Shorter-tempered. More skeptical. Less willing to nod along with whatever framing I walked in with. That makes it the right tool for what I would call the red-pen pass.
 
-The same set of changes sent to both assistants almost always comes back with two different lists of problems. That is exactly why I keep both around.
+I ran the same set of changes past both assistants within an hour of each other. They came back with two almost-completely-different lists of problems.
 
-Worth a quick shoutout to [Matthias Frank](https://www.youtube.com/@mfreihaendig), whose Notion content has changed how I plan projects. If you live in Notion, his channel is worth your time.
+That was the moment the workflow clicked.
+
+Claude is the planner that sits with the ambiguity and helps you decide. Codex is the reviewer that shows up after you have a draft and tries to find what is wrong with it. Solo, each is useful. Together, they cover blind spots the other has.
+
+It only took a day to see that. I imagine the workflow gets sharper over the next month.
 
 ## Is AI coming for developer jobs?
 
@@ -97,7 +99,7 @@ Reviewing well is the single skill that has mattered most for me this year.
 
 ### Two assistants on the same files will fight
 
-The first time I ran two assistants in parallel, they cheerfully overwrote each other's work for about forty minutes before I noticed.
+The first time I ran two assistants in parallel yesterday, they cheerfully overwrote each other's work for about forty minutes before I noticed.
 
 The fix is explicit role assignment. One assistant owns planning. The other owns implementation. Both check a shared status file before doing anything. When work needs to move between them, the handoff routine takes over.
 
@@ -105,7 +107,9 @@ Not glamorous. Saves hours.
 
 ### You do not need three subscriptions on day one
 
-Plenty of this runs fine on a single good tool. The second assistant is something you add once you are already shipping regularly and want a second pair of eyes that never gets tired. Layering on a second one too early is how you end up paying for two and using neither.
+Plenty of this runs fine on a single good tool. A second assistant is something you add once you are already shipping regularly and want a second pair of eyes that never gets tired. Layering on a second one too early is how you end up paying for two and using neither.
+
+That is the path I took. A year of one tool, then one more.
 
 ## The discipline AI cannot replace
 
@@ -141,12 +145,12 @@ That single hour will teach you more than any blog post, including this one.
   <figcaption className="font-mono text-[10px] md:text-xs uppercase tracking-[0.2em] text-muted-foreground mt-4 text-center">Fort Worth, dusk. The moment before a small-business AI conversation gets interesting.</figcaption>
 </figure>
 
-## A question for you
+## One honest question for you
 
-If two AI assistants disagree on a decision in your codebase, which one do you trust by default? The more confident one? The one with the better track record on your stack? The one whose answer matches what you already wanted to do?
+When an AI gives you code that works on the very first try, do you trust it <span className="text-warm">more</span>, or do you trust it <span className="text-warm">less</span>?
 
-I do not have a clean answer yet, and I think the answer changes the kind of developer you become.
+I have caught myself answering both ways in the same week, and I think how you answer that question quietly shapes what kind of developer you are becoming.
 
-<span className="text-warm">Drop your take in the comments.</span> If you have questions, or you are not sure where to start, leave those there too. I answer everything in the comments, not in DMs, so the next person reading can learn from the same exchange.
+Drop your answer in the comments below. If you have questions, or you are not sure where to start, leave those there too. I answer everything in the comments, not in DMs, so the next person reading can learn from the same exchange.
 
 We are all early on this, and most of what is true today will be wrong by spring. Better to be early and confused than late and confident.

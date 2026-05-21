@@ -3,6 +3,8 @@ import { getAllPosts, getPostBySlug } from "@/lib/blog";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
 import { blogMDXComponents } from "@/components/blog/MDXComponents";
+import { Comments } from "@/components/blog/Comments";
+import { LikeButton } from "@/components/blog/LikeButton";
 
 export function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }));
@@ -66,6 +68,15 @@ export default async function BlogPostPage({
       <div className="mt-12 md:mt-16 max-w-none">
         <MDXRemote source={post.content} components={blogMDXComponents} />
       </div>
+
+      <div className="mt-16 md:mt-20 flex flex-wrap items-center justify-between gap-4 border-t border-border pt-8">
+        <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">
+          If this hit, tap the heart.
+        </p>
+        <LikeButton slug={slug} />
+      </div>
+
+      <Comments />
     </article>
   );
 }
