@@ -1,5 +1,184 @@
 {
-  "linesOfCode": 2646867,
-  "commitsShipped": 934,
-  "countedAt": "2026-05-20T18:22:06.038342+00:00"
+  "methodology": "github_clone_wc_l",
+  "countedAt": "2026-05-21T15:42:40.693653+00:00",
+  "github_loc": 1792309,
+  "github_commits": 1328,
+  "live_agents_registry": 39,
+  "repos_count": 33,
+  "agents_live": 39,
+  "ratchet_loc": 1792309,
+  "ratchet_commits": 1328,
+  "ratchet_agents": 39,
+  "claude_hours": 1125,
+  "claude_tokens": 11962615408,
+  "claude_sessions": 319,
+  "ratchet_claude_hours": 1125,
+  "ratchet_claude_tokens": 11962615408,
+  "per_repo": {
+    "ninjaforhire/Agents": {
+      "loc": 427861,
+      "files": 2061,
+      "commits": 523
+    },
+    "ninjaforhire/andrewwebber.dev": {
+      "loc": 12333,
+      "files": 64,
+      "commits": 41
+    },
+    "ninjaforhire/Biometric-Lab": {
+      "loc": 11,
+      "files": 1,
+      "commits": 0
+    },
+    "ninjaforhire/BoothBook": {
+      "loc": 16570,
+      "files": 79,
+      "commits": 7
+    },
+    "ninjaforhire/claude-config": {
+      "loc": 22786,
+      "files": 690,
+      "commits": 16
+    },
+    "ninjaforhire/cli-printing-press": {
+      "loc": 324996,
+      "files": 871,
+      "commits": 3
+    },
+    "ninjaforhire/deconstructed-studio": {
+      "loc": 3012,
+      "files": 28,
+      "commits": 12
+    },
+    "ninjaforhire/design-request-agent": {
+      "loc": 6101,
+      "files": 25,
+      "commits": 1
+    },
+    "ninjaforhire/dotfiles": {
+      "loc": 168,
+      "files": 4,
+      "commits": 1
+    },
+    "ninjaforhire/everything-claude-code": {
+      "loc": 345130,
+      "files": 1823,
+      "commits": 1
+    },
+    "ninjaforhire/forge": {
+      "loc": 39018,
+      "files": 203,
+      "commits": 8
+    },
+    "ninjaforhire/General-Tools": {
+      "loc": 23416,
+      "files": 110,
+      "commits": 47
+    },
+    "ninjaforhire/gstack": {
+      "loc": 129692,
+      "files": 332,
+      "commits": 0
+    },
+    "ninjaforhire/hotfixops": {
+      "loc": 61134,
+      "files": 515,
+      "commits": 39
+    },
+    "ninjaforhire/hotfixops-site": {
+      "loc": 9403,
+      "files": 83,
+      "commits": 9
+    },
+    "ninjaforhire/Iris-Studio": {
+      "loc": 4682,
+      "files": 42,
+      "commits": 8
+    },
+    "ninjaforhire/mighty": {
+      "loc": 97973,
+      "files": 376,
+      "commits": 183
+    },
+    "ninjaforhire/MIGHTY-Apps": {
+      "loc": 743,
+      "files": 10,
+      "commits": 2
+    },
+    "ninjaforhire/mighty-gallery": {
+      "loc": 2080,
+      "files": 26,
+      "commits": 14
+    },
+    "ninjaforhire/mighty-gobbla": {
+      "loc": 6229,
+      "files": 48,
+      "commits": 28
+    },
+    "ninjaforhire/mighty-playbook": {
+      "loc": 2294,
+      "files": 2,
+      "commits": 28
+    },
+    "ninjaforhire/mighty-skills": {
+      "loc": 9321,
+      "files": 52,
+      "commits": 6
+    },
+    "ninjaforhire/mightyphotobooths": {
+      "loc": 39284,
+      "files": 228,
+      "commits": 32
+    },
+    "ninjaforhire/mpb-ai-gen-tool": {
+      "loc": 2151,
+      "files": 22,
+      "commits": 9
+    },
+    "ninjaforhire/mpb-site": {
+      "loc": 11820,
+      "files": 133,
+      "commits": 14
+    },
+    "ninjaforhire/Notion-Tools": {
+      "loc": 837,
+      "files": 7,
+      "commits": 4
+    },
+    "ninjaforhire/pp-libraries": {
+      "loc": 70731,
+      "files": 297,
+      "commits": 1
+    },
+    "ninjaforhire/Scrapers": {
+      "loc": 2698,
+      "files": 30,
+      "commits": 1
+    },
+    "ninjaforhire/snappic-site-builder": {
+      "loc": 5269,
+      "files": 39,
+      "commits": 5
+    },
+    "ninjaforhire/terminal-gloss": {
+      "loc": 5991,
+      "files": 46,
+      "commits": 36
+    },
+    "ninjaforhire/terminal-karaoke": {
+      "loc": 3921,
+      "files": 42,
+      "commits": 41
+    },
+    "ninjaforhire/Video-Agent": {
+      "loc": 748,
+      "files": 5,
+      "commits": 2
+    },
+    "ninjaforhire/_Code": {
+      "loc": 103906,
+      "files": 463,
+      "commits": 206
+    }
+  }
 }
