@@ -48,23 +48,23 @@ function walkAgents(dir: string, results: ToolEntry[]): void {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     if (entry.name.startsWith("_") || entry.name === "node_modules" || entry.name === "archive") continue;
     const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) {
-      const manifestFile = path.join(full, "manifest.json");
-      if (fs.existsSync(manifestFile)) {
-        try {
-          const manifest = JSON.parse(fs.readFileSync(manifestFile, "utf-8"));
-          if (manifest.name && manifest.description && manifest.status !== "archived") {
-            results.push({
-              slug: slugify(manifest.name),
-              name: manifest.name,
-              description: String(manifest.description).split(".")[0].trim(),
-              category: manifest.category ?? "ops",
-              source: "agent",
-            });
-          }
-        } catch {}
-      }
+    if (!entry.isDirectory()) continue;
+    const manifestFile = path.join(full, "manifest.json");
+    if (fs.existsSync(manifestFile)) {
+      try {
+        const manifest = JSON.parse(fs.readFileSync(manifestFile, "utf-8"));
+        if (manifest.name && manifest.description && manifest.status !== "archived") {
+          results.push({
+            slug: slugify(manifest.name),
+            name: manifest.name,
+            description: String(manifest.description).split(".")[0].trim(),
+            category: manifest.category ?? "ops",
+            source: "agent",
+          });
+        }
+      } catch {}
     }
+    walkAgents(full, results);
   }
 }
 
