@@ -1116,9 +1116,18 @@
     "location": "mighty/skills/admin/wiki-lint"
   },
   {
+    "slug": "spectre-spectre-api",
+    "name": "SPECTRE \u2014 API",
+    "description": "FastAPI sidecar at port 2027. Exposes spectre-core SQLite (findings, engagements, scores) as REST so external dashboards and clients can read state.",
+    "category": "spectre",
+    "subcategory": "spectre-tool",
+    "source": "spectre-tool",
+    "location": "hotfixops/security/spectre-api"
+  },
+  {
     "slug": "spectre-bastion",
     "name": "SPECTRE \u2014 Bastion",
-    "description": "SPECTRE suite module.",
+    "description": "Blue Team defense layer. Wazuh SIEM orchestrating 6 LangGraph agents (sentinel, ironhide, others) for monitor + harden + respond. Port 2025.",
     "category": "spectre",
     "subcategory": "spectre-tool",
     "source": "spectre-tool",
@@ -1127,7 +1136,7 @@
   {
     "slug": "spectre-blackthorn",
     "name": "SPECTRE \u2014 Blackthorn",
-    "description": "SPECTRE suite module.",
+    "description": "Red team + DAST vulnerability scanner. OWASP ZAP integration plus Decepticon bridge for autonomous offensive operations.",
     "category": "spectre",
     "subcategory": "spectre-tool",
     "source": "spectre-tool",
@@ -1136,7 +1145,7 @@
   {
     "slug": "spectre-cloudbreak",
     "name": "SPECTRE \u2014 Cloudbreak",
-    "description": "SPECTRE suite module.",
+    "description": "Cloud security auditor. AWS, GCP, and Azure misconfiguration scanning. Surfaces IAM, network, and storage exposures.",
     "category": "spectre",
     "subcategory": "spectre-tool",
     "source": "spectre-tool",
@@ -1145,7 +1154,7 @@
   {
     "slug": "spectre-code-council",
     "name": "SPECTRE \u2014 Code Council",
-    "description": "SPECTRE suite module.",
+    "description": "12-hat adversarial security review. Each hat reviews diffs from its discipline (Black, Red, White, Blue, Purple, Gray, Green, Gold, Silver, Orange, Cyan, Bronze) and converges on a verdict.",
     "category": "spectre",
     "subcategory": "spectre-tool",
     "source": "spectre-tool",
@@ -1154,7 +1163,7 @@
   {
     "slug": "spectre-decepticon-bridge",
     "name": "SPECTRE \u2014 Decepticon Bridge",
-    "description": "SPECTRE suite module.",
+    "description": "Bridge to the Decepticon red-team agent framework. Lets Blackthorn dispatch autonomous offensive engagements without leaving SPECTRE.",
     "category": "spectre",
     "subcategory": "spectre-tool",
     "source": "spectre-tool",
@@ -1163,7 +1172,7 @@
   {
     "slug": "spectre-dossier",
     "name": "SPECTRE \u2014 Dossier",
-    "description": "SPECTRE suite module.",
+    "description": "Unified findings consolidator. Pulls outputs from every SPECTRE tool, deduplicates, scores, and renders branded PDF + Notion reports for client engagements.",
     "category": "spectre",
     "subcategory": "spectre-tool",
     "source": "spectre-tool",
@@ -1172,7 +1181,7 @@
   {
     "slug": "spectre-ember",
     "name": "SPECTRE \u2014 Ember",
-    "description": "SPECTRE suite module.",
+    "description": "Threat-intel and breach monitoring. Watches HIBP, NVD CVE feeds, and paste sites for exposure tied to the protected surface area.",
     "category": "spectre",
     "subcategory": "spectre-tool",
     "source": "spectre-tool",
@@ -1181,7 +1190,7 @@
   {
     "slug": "spectre-gauntlet",
     "name": "SPECTRE \u2014 Gauntlet",
-    "description": "SPECTRE suite module.",
+    "description": "Purple Team bridge. Runs Atomic Red Team techniques, scores Wazuh detection against MITRE ATT&CK, and tracks coverage uplift over time. Port 2026.",
     "category": "spectre",
     "subcategory": "spectre-tool",
     "source": "spectre-tool",
@@ -1190,7 +1199,7 @@
   {
     "slug": "spectre-ghost-core",
     "name": "SPECTRE \u2014 Ghost Core",
-    "description": "SPECTRE AISec module \u2014 computer-use + adversarial AI security.",
+    "description": "Shared computer-use lib. Dispatch, audit, ledger, policy, firewall, guard, reviewer. Lets Ghost-Local and Ghost-Sandbox share defense-in-depth without duplicating code.",
     "category": "spectre",
     "subcategory": "spectre-aisec",
     "source": "spectre-aisec",
@@ -1199,25 +1208,43 @@
   {
     "slug": "spectre-ghost-local",
     "name": "SPECTRE \u2014 Ghost Local",
-    "description": "SPECTRE AISec module \u2014 computer-use + adversarial AI security.",
+    "description": "Trusted-brain computer-use agent. Runs on Andrew's Mac with native macOS app access. Used for vendor portals + cross-app workflows where session continuity matters.",
     "category": "spectre",
     "subcategory": "spectre-aisec",
     "source": "spectre-aisec",
     "location": "hotfixops/security/aisec/ghost-local"
   },
   {
+    "slug": "spectre-loop",
+    "name": "SPECTRE \u2014 Ghost Loop",
+    "description": "The screenshot \u2192 think \u2192 click \u2192 repeat orchestrator. Wraps Anthropic's computer-use beta in SPECTRE's 8-layer fail-closed defense.",
+    "category": "spectre",
+    "subcategory": "spectre-aisec",
+    "source": "spectre-aisec",
+    "location": "hotfixops/security/aisec/loop"
+  },
+  {
     "slug": "spectre-ghost-sandbox",
     "name": "SPECTRE \u2014 Ghost Sandbox",
-    "description": "SPECTRE AISec module \u2014 computer-use + adversarial AI security.",
+    "description": "Untrusted-brain computer-use agent. Ephemeral Chromium in a Hostinger container with nftables egress lockdown, PI guard, and output sanitization. For adversarial browsing.",
     "category": "spectre",
     "subcategory": "spectre-aisec",
     "source": "spectre-aisec",
     "location": "hotfixops/security/aisec/ghost-sandbox"
   },
   {
+    "slug": "spectre-spectre-guide",
+    "name": "SPECTRE \u2014 Guide",
+    "description": "Dual-audience PDF generator. Builds the operator manual (full internals) and the client brief (sanitized) from one source. Pushes to Notion hub.",
+    "category": "spectre",
+    "subcategory": "spectre-tool",
+    "source": "spectre-tool",
+    "location": "hotfixops/security/spectre-guide"
+  },
+  {
     "slug": "spectre-injection-corpus",
     "name": "SPECTRE \u2014 Injection Corpus",
-    "description": "SPECTRE AISec module \u2014 computer-use + adversarial AI security.",
+    "description": "Curated prompt-injection adversarial dataset. Drives the LLM-guard wrapper's evaluation harness so Ghost variants stay robust as upstream prompts evolve.",
     "category": "spectre",
     "subcategory": "spectre-aisec",
     "source": "spectre-aisec",
@@ -1225,26 +1252,17 @@
   },
   {
     "slug": "spectre-llm-guard-wrapper",
-    "name": "SPECTRE \u2014 Llm Guard Wrapper",
-    "description": "SPECTRE AISec module \u2014 computer-use + adversarial AI security.",
+    "name": "SPECTRE \u2014 LLM Guard",
+    "description": "Defense-in-depth wrapper around computer-use prompts. Vets every model input + output against the injection corpus before letting an action hit the OS.",
     "category": "spectre",
     "subcategory": "spectre-aisec",
     "source": "spectre-aisec",
     "location": "hotfixops/security/aisec/llm_guard_wrapper"
   },
   {
-    "slug": "spectre-loop",
-    "name": "SPECTRE \u2014 Loop",
-    "description": "SPECTRE AISec module \u2014 computer-use + adversarial AI security.",
-    "category": "spectre",
-    "subcategory": "spectre-aisec",
-    "source": "spectre-aisec",
-    "location": "hotfixops/security/aisec/loop"
-  },
-  {
     "slug": "spectre-raven",
     "name": "SPECTRE \u2014 Raven",
-    "description": "SPECTRE suite module.",
+    "description": "Recon + OSINT module. Subfinder, theHarvester, Wappalyzer, and custom asset discovery \u2014 feeds Blackthorn before an engagement.",
     "category": "spectre",
     "subcategory": "spectre-tool",
     "source": "spectre-tool",
@@ -1253,34 +1271,16 @@
   {
     "slug": "spectre-shannon",
     "name": "SPECTRE \u2014 Shannon",
-    "description": "SPECTRE suite module.",
+    "description": "Autonomous white-box AI pentester for web apps and APIs. Drives Blackthorn at depth on individual targets where deep coverage matters more than breadth.",
     "category": "spectre",
     "subcategory": "spectre-tool",
     "source": "spectre-tool",
     "location": "hotfixops/security/shannon"
   },
   {
-    "slug": "spectre-spectre-api",
-    "name": "SPECTRE \u2014 Spectre Api",
-    "description": "SPECTRE suite module.",
-    "category": "spectre",
-    "subcategory": "spectre-tool",
-    "source": "spectre-tool",
-    "location": "hotfixops/security/spectre-api"
-  },
-  {
-    "slug": "spectre-spectre-guide",
-    "name": "SPECTRE \u2014 Spectre Guide",
-    "description": "SPECTRE suite module.",
-    "category": "spectre",
-    "subcategory": "spectre-tool",
-    "source": "spectre-tool",
-    "location": "hotfixops/security/spectre-guide"
-  },
-  {
     "slug": "spectre-watchtower",
     "name": "SPECTRE \u2014 Watchtower",
-    "description": "SPECTRE suite module.",
+    "description": "Autonomous website intelligence agent. SEO, security headers, AI-visibility, and competitor tracking on a schedule. Dashboard included.",
     "category": "spectre",
     "subcategory": "spectre-tool",
     "source": "spectre-tool",

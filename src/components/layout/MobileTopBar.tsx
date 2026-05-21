@@ -37,11 +37,13 @@ export function MobileTopBar() {
     const next = !soundEnabled;
     setSoundEnabled(next);
     localStorage.setItem("sound", String(next));
+    // Same-tab listener (storage event only fires for OTHER tabs).
+    window.dispatchEvent(new Event("sound-toggle"));
   }
 
   return (
     <header
-      className="sticky top-0 z-40 flex h-11 items-center justify-between border-b border-[#222233] bg-[#0f0f1a]/70 px-4 backdrop-blur-md md:hidden"
+      className="sticky top-0 z-40 flex h-11 items-center justify-between border-b border-border bg-background/80 px-4 backdrop-blur-md md:hidden"
       aria-label="Mobile header"
     >
       <Link

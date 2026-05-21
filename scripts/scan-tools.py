@@ -242,6 +242,90 @@ def scan_design_forge(tools: list[dict]) -> None:
         )
 
 
+SPECTRE_DESCRIPTIONS: dict[str, tuple[str, str]] = {
+    # name override, description
+    "bastion": (
+        "SPECTRE — Bastion",
+        "Blue Team defense layer. Wazuh SIEM orchestrating 6 LangGraph agents (sentinel, ironhide, others) for monitor + harden + respond. Port 2025.",
+    ),
+    "blackthorn": (
+        "SPECTRE — Blackthorn",
+        "Red team + DAST vulnerability scanner. OWASP ZAP integration plus Decepticon bridge for autonomous offensive operations.",
+    ),
+    "cloudbreak": (
+        "SPECTRE — Cloudbreak",
+        "Cloud security auditor. AWS, GCP, and Azure misconfiguration scanning. Surfaces IAM, network, and storage exposures.",
+    ),
+    "code_council": (
+        "SPECTRE — Code Council",
+        "12-hat adversarial security review. Each hat reviews diffs from its discipline (Black, Red, White, Blue, Purple, Gray, Green, Gold, Silver, Orange, Cyan, Bronze) and converges on a verdict.",
+    ),
+    "decepticon-bridge": (
+        "SPECTRE — Decepticon Bridge",
+        "Bridge to the Decepticon red-team agent framework. Lets Blackthorn dispatch autonomous offensive engagements without leaving SPECTRE.",
+    ),
+    "dossier": (
+        "SPECTRE — Dossier",
+        "Unified findings consolidator. Pulls outputs from every SPECTRE tool, deduplicates, scores, and renders branded PDF + Notion reports for client engagements.",
+    ),
+    "ember": (
+        "SPECTRE — Ember",
+        "Threat-intel and breach monitoring. Watches HIBP, NVD CVE feeds, and paste sites for exposure tied to the protected surface area.",
+    ),
+    "gauntlet": (
+        "SPECTRE — Gauntlet",
+        "Purple Team bridge. Runs Atomic Red Team techniques, scores Wazuh detection against MITRE ATT&CK, and tracks coverage uplift over time. Port 2026.",
+    ),
+    "raven": (
+        "SPECTRE — Raven",
+        "Recon + OSINT module. Subfinder, theHarvester, Wappalyzer, and custom asset discovery — feeds Blackthorn before an engagement.",
+    ),
+    "shannon": (
+        "SPECTRE — Shannon",
+        "Autonomous white-box AI pentester for web apps and APIs. Drives Blackthorn at depth on individual targets where deep coverage matters more than breadth.",
+    ),
+    "watchtower": (
+        "SPECTRE — Watchtower",
+        "Autonomous website intelligence agent. SEO, security headers, AI-visibility, and competitor tracking on a schedule. Dashboard included.",
+    ),
+    "spectre-api": (
+        "SPECTRE — API",
+        "FastAPI sidecar at port 2027. Exposes spectre-core SQLite (findings, engagements, scores) as REST so external dashboards and clients can read state.",
+    ),
+    "spectre-guide": (
+        "SPECTRE — Guide",
+        "Dual-audience PDF generator. Builds the operator manual (full internals) and the client brief (sanitized) from one source. Pushes to Notion hub.",
+    ),
+}
+
+SPECTRE_AISEC_DESCRIPTIONS: dict[str, tuple[str, str]] = {
+    "ghost-core": (
+        "SPECTRE — Ghost Core",
+        "Shared computer-use lib. Dispatch, audit, ledger, policy, firewall, guard, reviewer. Lets Ghost-Local and Ghost-Sandbox share defense-in-depth without duplicating code.",
+    ),
+    "ghost-local": (
+        "SPECTRE — Ghost Local",
+        "Trusted-brain computer-use agent. Runs on Andrew's Mac with native macOS app access. Used for vendor portals + cross-app workflows where session continuity matters.",
+    ),
+    "ghost-sandbox": (
+        "SPECTRE — Ghost Sandbox",
+        "Untrusted-brain computer-use agent. Ephemeral Chromium in a Hostinger container with nftables egress lockdown, PI guard, and output sanitization. For adversarial browsing.",
+    ),
+    "injection_corpus": (
+        "SPECTRE — Injection Corpus",
+        "Curated prompt-injection adversarial dataset. Drives the LLM-guard wrapper's evaluation harness so Ghost variants stay robust as upstream prompts evolve.",
+    ),
+    "llm_guard_wrapper": (
+        "SPECTRE — LLM Guard",
+        "Defense-in-depth wrapper around computer-use prompts. Vets every model input + output against the injection corpus before letting an action hit the OS.",
+    ),
+    "loop": (
+        "SPECTRE — Ghost Loop",
+        "The screenshot → think → click → repeat orchestrator. Wraps Anthropic's computer-use beta in SPECTRE's 8-layer fail-closed defense.",
+    ),
+}
+
+
 def scan_spectre(tools: list[dict]) -> None:
     root = CODE_ROOT / "hotfixops" / "security"
     if not root.exists():
@@ -254,14 +338,18 @@ def scan_spectre(tools: list[dict]) -> None:
             continue
         if entry == aisec:
             continue
-        name = entry.name.replace("-", " ").replace("_", " ").title()
-        if entry.name.lower().startswith("spectre"):
-            name = "Spectre " + entry.name.replace("spectre-", "").replace("spectre_", "").replace("-", " ").title()
+        if entry.name in SPECTRE_DESCRIPTIONS:
+            name, desc = SPECTRE_DESCRIPTIONS[entry.name]
+        else:
+            pretty = entry.name.replace("-", " ").replace("_", " ").title()
+            name = f"SPECTRE — {pretty}"
+            data = parse_manifest(entry / "manifest.json")
+            desc = first_sentence(str(data.get("description") or "")) or "SPECTRE suite module."
         add(
             tools,
             slug=slugify("spectre " + entry.name),
-            name=f"SPECTRE — {name}",
-            description=f"SPECTRE suite module.",
+            name=name,
+            description=desc,
             category="spectre",
             subcategory="spectre-tool",
             location=str(entry.relative_to(CODE_ROOT)),
@@ -274,12 +362,17 @@ def scan_spectre(tools: list[dict]) -> None:
                 continue
             if not (entry.name.startswith("ghost") or entry.name in {"injection_corpus", "llm_guard_wrapper", "loop"}):
                 continue
-            name = entry.name.replace("-", " ").replace("_", " ").title()
+            if entry.name in SPECTRE_AISEC_DESCRIPTIONS:
+                name, desc = SPECTRE_AISEC_DESCRIPTIONS[entry.name]
+            else:
+                pretty = entry.name.replace("-", " ").replace("_", " ").title()
+                name = f"SPECTRE — {pretty}"
+                desc = "SPECTRE AISec module."
             add(
                 tools,
                 slug=slugify("spectre " + entry.name),
-                name=f"SPECTRE — {name}",
-                description="SPECTRE AISec module — computer-use + adversarial AI security.",
+                name=name,
+                description=desc,
                 category="spectre",
                 subcategory="spectre-aisec",
                 location=str(entry.relative_to(CODE_ROOT)),

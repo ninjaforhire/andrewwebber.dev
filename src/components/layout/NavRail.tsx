@@ -55,6 +55,7 @@ export function NavRail() {
     const next = !soundEnabled;
     setSoundEnabled(next);
     localStorage.setItem("sound", String(next));
+    window.dispatchEvent(new Event("sound-toggle"));
   }
 
   return (

@@ -6,9 +6,16 @@ import { useEffect, useState } from "react";
 const MILESTONES = [
   {
     year: "2006",
-    title: "Live events, sound, lights, AV.",
+    title: "Lakeview Centennial — television production magnet.",
     description:
-      "Started in DFW live production. Learned to ship under pressure, on deadlines, with zero margin for error. The discipline transferred.",
+      "Garland's TV production magnet program. Wrapped cables, ran cameras for newscasts and Friday-night football, learned CGI titling, and edited everything in Final Cut Pro. The core production skills that still inform every decision — pacing, framing, how to deliver under a live deadline — started here.",
+    details: [
+      "Cable wrapping the right way (over-under, no twists)",
+      "Studio + ENG cameras — newscast desk + sideline football",
+      "CGI lower-thirds and broadcast titling",
+      "Final Cut Pro — first real editing environment",
+      "Live broadcast pressure: no second takes",
+    ],
   },
   {
     year: "2016",

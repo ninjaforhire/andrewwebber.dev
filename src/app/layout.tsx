@@ -6,6 +6,7 @@ import { MobileTopBar } from "@/components/layout/MobileTopBar";
 import { InquiryPill } from "@/components/layout/InquiryPill";
 import { LenisProvider } from "@/components/layout/LenisProvider";
 import { LoadingScreen } from "@/components/animation/LoadingScreen";
+import { FocusAudio } from "@/components/animation/FocusAudio";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -60,6 +61,7 @@ export default function RootLayout({
     >
       <body className="min-h-full">
         <LoadingScreen />
+        <FocusAudio />
         <LenisProvider>
           <MobileTopBar />
           <NavRail />

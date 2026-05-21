@@ -150,6 +150,9 @@ export function WorkPageContent() {
         </div>
       )}
 
+      {/* CODE COUNCIL — the 12-hat discipline that inspired the SPECTRE stack */}
+      <CodeCouncilSection />
+
       {/* CATEGORY FILTER */}
       <div className="mt-16 md:mt-20 flex flex-wrap gap-2">
         <button
@@ -261,6 +264,61 @@ export function WorkPageContent() {
         <ConsultationForm />
       </div>
     </div>
+  );
+}
+
+const CODE_COUNCIL = [
+  { hat: "Black", role: "Offensive Attacker", focus: "Vulnerability discovery, exploit paths, secrets exposure" },
+  { hat: "Red", role: "Penetration Tester", focus: "Webhook + API testing, injection, fuzzing" },
+  { hat: "White", role: "Defensive Engineer", focus: "Best practices, input validation, encryption" },
+  { hat: "Blue", role: "Security Ops", focus: "Monitoring, incident response, audit trails" },
+  { hat: "Purple", role: "Threat Modeler", focus: "Attack chain mapping, STRIDE, crown jewel ID" },
+  { hat: "Gray", role: "Supply Chain", focus: "Dependencies, CVEs, transitive risks" },
+  { hat: "Green", role: "Privacy + Compliance", focus: "PII handling, data flows, CCPA + GDPR" },
+  { hat: "Gold", role: "Business Continuity", focus: "Failure modes, resilience, recovery" },
+  { hat: "Silver", role: "DevSecOps", focus: "CI/CD pipelines, GitHub Actions, branch protection" },
+  { hat: "Orange", role: "API Security", focus: "OWASP API Top 10, BOLA, auth flows, SSRF" },
+  { hat: "Cyan", role: "Secrets Lifecycle", focus: "Inventory, rotation, scope, emergency revocation" },
+  { hat: "Bronze", role: "Runtime Analyst", focus: "Process execution, concurrency, dynamic code, env drift" },
+];
+
+function CodeCouncilSection() {
+  return (
+    <section className="mt-20 md:mt-32 pt-16 md:pt-20 border-t border-white/5">
+      <div className="font-mono text-[11px] font-medium tracking-[0.3em] uppercase text-terminal mb-6">
+        SPECTRE — The Code Council
+      </div>
+      <h2 className="crop font-extrabold text-[clamp(40px,6vw,80px)] leading-[0.95] mb-6">
+        Twelve disciplines.<br />
+        <span className="text-terminal">One adversarial review.</span>
+      </h2>
+      <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-4">
+        The Code Council is the doctrine behind every SPECTRE tool. Twelve specialist hats — each a different security discipline — review the same change from their own angle. Black Hat tries to break it. White Hat tries to harden it. Purple Hat maps the attack chain. They argue, then converge on a verdict.
+      </p>
+      <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-12">
+        That argument-and-converge pattern is what every Spectre module runs on internally: daily missions sweep the surface area through the hats relevant to the work — recon (Raven), red-team (Blackthorn + Decepticon), purple-team coverage (Gauntlet), blue-team detection (Bastion), supply chain (Gray), runtime (Bronze) — and the Dossier consolidates the verdict. Client engagements are the same loop, just longer and reported through Spectre-Guide.
+      </p>
+      <ul className="grid gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {CODE_COUNCIL.map((agent) => (
+          <li
+            key={agent.hat}
+            className="rounded-lg border border-border bg-card/40 p-4"
+          >
+            <div className="flex items-baseline justify-between gap-3">
+              <span className="font-heading text-base font-bold text-terminal">
+                {agent.hat} Hat
+              </span>
+              <span className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
+                {agent.role}
+              </span>
+            </div>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              {agent.focus}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }
 

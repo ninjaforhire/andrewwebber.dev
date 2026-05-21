@@ -13,10 +13,19 @@ interface StatProps {
 
 function formatNumber(n: number, format: FormatType): string {
   if (format === "compact") {
-    return new Intl.NumberFormat("en-US", {
-      notation: "compact",
-      maximumFractionDigits: 1,
-    }).format(n);
+    if (n >= 1_000_000_000) {
+      // 12,150,008,887 -> 12.2B (round hundreds-of-millions up to the
+      // nearest tenth of a billion; "basic rounding rules" per spec).
+      const tenths = Math.round(n / 1e8) / 10;
+      return tenths.toFixed(1) + "B";
+    }
+    if (n >= 1_000_000) {
+      return (Math.round(n / 1e5) / 10).toFixed(1) + "M";
+    }
+    if (n >= 1_000) {
+      return (Math.round(n / 100) / 10).toFixed(1) + "K";
+    }
+    return n.toLocaleString();
   }
   return n.toLocaleString();
 }
@@ -109,14 +118,15 @@ function Stat({ value, suffix, label, format = "default" }: StatProps) {
 }
 
 function SubStat({ value, label, format = "default" }: StatProps) {
-  // 14-digit token count (12,085,102,124) is the constraint. Lower clamp so
-  // mobile cells (~150px) and desktop 2-col cells both hold it on one line.
+  // Tokens render in compact form ("12.2B") so this clamp can run closer to
+  // Stat's top-tier scale without overflowing. Still ~30% smaller than Stat
+  // because the token count is naturally the largest number on the page.
   return (
     <div className="min-w-0 text-center">
-      <div className="crop text-[clamp(14px,3vw,26px)] font-bold leading-none text-data/85 tabular-nums whitespace-nowrap">
+      <div className="crop text-[clamp(18px,3.5vw,32px)] font-extrabold leading-none text-data/85 tabular-nums whitespace-nowrap">
         <AnimatedNumber target={value} format={format} />
       </div>
-      <div className="font-mono text-[9px] sm:text-[10px] md:text-xs font-medium tracking-[0.2em] text-muted-foreground/80 mt-2 sm:mt-3 uppercase">
+      <div className="font-mono text-[10px] sm:text-xs md:text-sm font-medium tracking-[0.2em] text-muted-foreground mt-3 sm:mt-5 uppercase">
         {label}
       </div>
     </div>
@@ -169,8 +179,8 @@ export function StatsCounter() {
         </div>
 
         <div className="mt-10 pt-8 sm:mt-14 sm:pt-10 border-t border-white/10 grid grid-cols-2 gap-x-4 sm:gap-x-8 place-items-center">
-          <SubStat value={data.claudeHours} label="Hours with Claude" />
-          <SubStat value={data.claudeTokens} label="Tokens through Claude" />
+          <Stat value={data.claudeHours} label="Hours with Claude" />
+          <SubStat value={data.claudeTokens} label="Tokens through Claude" format="compact" />
         </div>
       </figure>
     </section>
