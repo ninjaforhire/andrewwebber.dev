@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "jimbo",
+    "name": "Jimbo — AI Orchestrator",
+    "description": "Master dispatcher. Routes tasks to specialist agents, manages shared memory, and runs 22 autonomous missions overnight without supervision.",
+    "category": "ops",
+    "source": "agent"
+  },
+  {
+    "slug": "inbox-agent",
+    "name": "Inbox Agent",
+    "description": "Email automation engine. Classifies inquiries, drafts responses in Andrew's voice, and generates a morning action brief with ranked leads.",
+    "category": "ops",
+    "source": "agent"
+  },
+  {
+    "slug": "lead-score-agent",
+    "name": "Lead Score Agent",
+    "description": "Scores every lead across 13 weighted signals. Surfaces hot prospects before manual triage begins.",
+    "category": "sales",
+    "source": "agent"
+  },
+  {
+    "slug": "design-request-agent",
+    "name": "Design Request Pipeline",
+    "description": "End-to-end design intake. Parses briefs from email, builds structured Notion DR pages, links Drive assets.",
+    "category": "design",
+    "source": "agent"
+  },
+  {
+    "slug": "post-event-pipeline",
+    "name": "Post-Event Pipeline",
+    "description": "Runs automatically after every event. Downloads media, updates Drive, sets gallery links, drafts thank-you email.",
+    "category": "ops",
+    "source": "skill"
+  },
+  {
+    "slug": "seo-agent",
+    "name": "SEO Agent",
+    "description": "Monitors keyword rankings and competitor movement for MIGHTY Photo Booths. Dashboard at port 8329.",
+    "category": "marketing",
+    "source": "agent"
+  },
+  {
+    "slug": "market-intel",
+    "name": "Competitor Intel Engine",
+    "description": "Passive OSINT on local photo booth competitors. Tracks pricing, social velocity, venue relationships, and GBP signals.",
+    "category": "marketing",
+    "source": "skill"
+  },
+  {
+    "slug": "snappic-microsite",
+    "name": "Snappic Microsite Builder",
+    "description": "Generates per-event custom CSS for the Snappic guest gallery. Matches the event design package automatically.",
+    "category": "design",
+    "source": "skill"
+  },
+  {
+    "slug": "w9-creator",
+    "name": "W9 Generator",
+    "description": "Generates pre-filled W9 request packages for vendors and subcontractors. Files to Drive.",
+    "category": "finance",
+    "source": "skill"
+  },
+  {
+    "slug": "morning-brief",
+    "name": "Morning Brief",
+    "description": "Daily 06:00 report: leads ranked by score, overdue tasks, upcoming events, Snappic anomalies, and one priority action.",
+    "category": "ops",
+    "source": "skill"
+  },
+  {
+    "slug": "event-details",
+    "name": "Event Details Builder",
+    "description": "Builds fully-structured Notion Event Details pages from CRM data — timeline, venue, equipment, design brief, staff.",
+    "category": "ops",
+    "source": "skill"
+  },
+  {
+    "slug": "blog-agent",
+    "name": "Blog Agent",
+    "description": "Researches, writes, and formats SEO articles for the photo booth industry. Generates cover images. Publishes on schedule.",
+    "category": "marketing",
+    "source": "skill"
+  }
+]

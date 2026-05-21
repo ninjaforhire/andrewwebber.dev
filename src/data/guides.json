@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "seo-playbook",
+    "title": "Photo Booth SEO Playbook",
+    "description": "Keyword strategy, GBP optimization, and the exact cluster approach that earned page-1 rankings in Dallas — with zero paid ads.",
+    "price": "TBD",
+    "storefront": "lemonsqueezy",
+    "url": "#",
+    "accent": "data",
+    "tags": ["SEO", "Marketing", "Strategy"]
+  },
+  {
+    "slug": "ai-ops-starter",
+    "title": "AI Ops Starter Kit",
+    "description": "How to set up Claude, wire it to your inbox, and start automating the repetitive parts of running a photo booth company.",
+    "price": "TBD",
+    "storefront": "gumroad",
+    "url": "#",
+    "accent": "terminal",
+    "tags": ["AI", "Automation", "Ops"]
+  },
+  {
+    "slug": "competitor-intel-guide",
+    "title": "Competitor Intel Field Guide",
+    "description": "Step-by-step passive OSINT process for photo booth operators. No hacking. Public data only. Know exactly what every competitor in your market is doing.",
+    "price": "TBD",
+    "storefront": "square",
+    "url": "#",
+    "accent": "creative",
+    "tags": ["Research", "Strategy", "OSINT"]
+  }
+]

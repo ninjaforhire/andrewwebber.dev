@@ -1,0 +1,121 @@
+[
+  {
+    "group": "Software Builds",
+    "accent": "terminal",
+    "icon": "⚙️",
+    "description": "Custom software for photo booth operators — features, integrations, and tools built to spec.",
+    "items": [
+      { "name": "Snappic Feature Builds", "description": "Custom modules and workflow extensions for the Snappic platform." },
+      { "name": "booth.events Feature Builds", "description": "Custom reporting, workflow, and automation extensions for booth.events." },
+      { "name": "Twilio Setup", "description": "SMS notifications, review requests, and automated messaging for your events." },
+      { "name": "Custom Webhooks", "description": "Connect your booth software to any third-party platform via webhook pipelines." },
+      { "name": "Custom Microsites", "description": "Branded guest experience pages that match your event design, not a generic URL." },
+      { "name": "Custom Analytics", "description": "Event performance dashboards — prints, shares, peak times, engagement metrics." },
+      { "name": "Branded Impact Reports", "description": "Post-event reports for corporate clients: attendee stats, engagement data, social reach." },
+      { "name": "Gamified Microsites", "description": "Interactive experiences built around your booth — custom per-event, high engagement." },
+      { "name": "Online Voting / Leaderboards", "description": "Per-event interactive features that extend the booth experience. Methods stay private." },
+      { "name": "Review-Hunter SMS Tool", "description": "Automated post-event review request sequences. Built and in production at MIGHTY." }
+    ]
+  },
+  {
+    "group": "Brand + Design",
+    "accent": "creative",
+    "icon": "🎨",
+    "description": "Small team, real-agency creatives. Not a design factory. Every project gets a human designer.",
+    "items": [
+      {
+        "name": "Basic Photo Booth Event Package",
+        "price": "$150",
+        "description": "Welcome screen + 2 matching overlays + microsite background with custom-coded CSS + 2 edit requests."
+      },
+      {
+        "name": "Backdrop Design Only",
+        "price": "$150",
+        "description": "Any size. Single or double-sided. Step-and-repeat OK. Logo integration OK."
+      },
+      {
+        "name": "Backdrop Full Package",
+        "price": "$400 / $475 rush",
+        "description": "Design + delivery + frame + custom fabric + carry bag. 48 contiguous states only. Standard 2–3 weeks. Rush (3–7 days) adds $75."
+      },
+      {
+        "name": "Custom 2×3 Attract Signage w/ QR",
+        "price": "$125",
+        "description": "Eye-catching signage with your QR code. Client prints locally."
+      },
+      {
+        "name": "Custom Crew / Product Checklists",
+        "price": "Quote-based",
+        "description": "Mobile-friendly and printer-friendly. Tailored to your gear and workflow."
+      }
+    ]
+  },
+  {
+    "group": "SEO + Competitive Intel",
+    "accent": "data",
+    "icon": "📊",
+    "description": "Proof: mightyphotobooths.com ranks page 1 for photo booth rental Dallas and surrounding clusters. Zero paid ads. Years sustained.",
+    "items": [
+      {
+        "name": "Website SEO Review + Report",
+        "description": "Keyword mapping, on-page analysis, GBP audit, and a prioritized fix list."
+      },
+      {
+        "name": "Competitor Report",
+        "description": "Up to 10 named competitors — or full area discovery via passive OSINT. Per competitor: strengths, weaknesses, pricing, venues, contact info, years active, easy wins. Color-coded service-area map included."
+      },
+      {
+        "name": "Social Media Intel Add-On",
+        "description": "Actionable social intel: market share signals, bot-follower detection, upload patterns, post-style breakdown (BTS / highlight / educational), and engagement analysis."
+      }
+    ]
+  },
+  {
+    "group": "Security + Tech",
+    "accent": "creative",
+    "icon": "🔒",
+    "description": "Professional-grade security work for photo booth operators who take their business seriously.",
+    "items": [
+      {
+        "name": "Security / Vulnerability Scan",
+        "description": "Professional cybersecurity stack. Signed engagement letter required. Comprehensive report delivered."
+      },
+      {
+        "name": "Implementation / Hardening",
+        "description": "Add-on after scan. Remediation, configuration hardening, and follow-up verification."
+      },
+      {
+        "name": "Remote Server Setup",
+        "description": "VPS provisioning, DNS, firewall rules, SSH hardening, and monitoring hooks."
+      },
+      {
+        "name": "IDE / Claude / ChatGPT Setup",
+        "description": "Hands-on AI tooling setup for operators who want to start building but don't know where to start."
+      },
+      {
+        "name": "DNS Configuration",
+        "description": "Domain, subdomain, email authentication (SPF/DKIM/DMARC), and CDN wiring."
+      },
+      {
+        "name": "Anything Nerdy and Difficult",
+        "description": "Probably can help. Drop a line."
+      }
+    ]
+  },
+  {
+    "group": "Ops Tools",
+    "accent": "warm",
+    "icon": "🤖",
+    "description": "Already built and running at MIGHTY Photo Booths. Available for other operators.",
+    "items": [
+      {
+        "name": "W9 Generator",
+        "description": "Generates a complete W9 request package for any vendor or sub. Pre-filled, signed, filed."
+      },
+      {
+        "name": "Inbox Agent",
+        "description": "Trains on your sent email. Learns your voice and tone. Drafts responses, surfaces leads, sends a morning action brief. Audience-aware directives."
+      }
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "inbox-agent",
+    "name": "Inbox Agent",
+    "blurb": "Reads every inbound inquiry, classifies it, and drafts a response in Andrew's voice. Trained on 3+ years of sent email. Morning brief surfaces leads with action items. Nothing slips.",
+    "time_saved_per_event": "45 min",
+    "category": "ops"
+  },
+  {
+    "slug": "lead-score-agent",
+    "name": "Lead Score Agent",
+    "blurb": "Scores every inquiry across 13 weighted signals — event proximity, guest count, upsell potential, repeat-client flags, price sensitivity. Hot leads surface before you even open Gmail.",
+    "time_saved_per_event": "20 min",
+    "category": "sales"
+  },
+  {
+    "slug": "design-request-agent",
+    "name": "Design Request Pipeline",
+    "blurb": "End-to-end design intake. Scans email for brand assets, builds a structured brief, links to Drive, and queues it for the creative team — no back-and-forth needed.",
+    "time_saved_per_event": "30 min",
+    "category": "design"
+  },
+  {
+    "slug": "post-event-pipeline",
+    "name": "Post-Event Pipeline",
+    "blurb": "Day after every event, auto-downloads the media archive, uploads to Drive, updates the project record with gallery links and stats, and drafts the thank-you email. Zero manual steps.",
+    "time_saved_per_event": "60 min",
+    "category": "ops"
+  },
+  {
+    "slug": "snappic-microsite",
+    "name": "Snappic Microsite Builder",
+    "blurb": "Generates custom CSS for the Snappic guest gallery on a per-event basis. Color-matches the event's design package. Clients open a branded experience, not a generic URL.",
+    "time_saved_per_event": "15 min",
+    "category": "design"
+  },
+  {
+    "slug": "seo-agent",
+    "name": "SEO Agent",
+    "blurb": "Monitors ranking positions for photo booth rental keywords across DFW markets. Surfaces drops and competitor gains before they compound. Built the page-1 position at mightyphotobooths.com with zero paid ads.",
+    "time_saved_per_event": "0 min",
+    "category": "marketing"
+  },
+  {
+    "slug": "market-intel",
+    "name": "Competitor Intel Engine",
+    "blurb": "Passive OSINT on every area competitor. Tracks pricing, venue relationships, social velocity, and GBP signals. Color-coded service-area map. No more flying blind on local competition.",
+    "time_saved_per_event": "0 min",
+    "category": "marketing"
+  },
+  {
+    "slug": "w9-creator",
+    "name": "W9 Generator",
+    "blurb": "Generates a pre-filled W9 request package for any vendor or subcontractor. Signs it, attaches it, and drops it into the right Drive folder.",
+    "time_saved_per_event": "10 min",
+    "category": "finance"
+  },
+  {
+    "slug": "blog-agent",
+    "name": "Blog Agent",
+    "blurb": "Researches, outlines, writes, and formats SEO-optimized articles for the photo booth industry. Generates matched cover images. Publishes to Notion on a schedule.",
+    "time_saved_per_event": "0 min",
+    "category": "marketing"
+  },
+  {
+    "slug": "morning-brief",
+    "name": "Morning Brief",
+    "blurb": "Daily 06:00 intelligence report: new leads ranked by score, overdue tasks, upcoming events, Snappic anomalies, and one priority action. Lands in Slack before coffee is done.",
+    "time_saved_per_event": "0 min",
+    "category": "ops"
+  },
+  {
+    "slug": "event-details",
+    "name": "Event Details Builder",
+    "blurb": "Pulls CRM data and builds a fully-structured Notion Event Details page — timeline, venue logistics, equipment list, design brief, staff assignments — in one shot.",
+    "time_saved_per_event": "25 min",
+    "category": "ops"
+  },
+  {
+    "slug": "jimbo",
+    "name": "Jimbo — AI Orchestrator",
+    "blurb": "The master dispatcher. Routes tasks to the right agent, manages memory across 39 agents, and runs overnight missions without supervision. 22 active missions. 24/7.",
+    "time_saved_per_event": "90 min",
+    "category": "ops"
+  }
+]
