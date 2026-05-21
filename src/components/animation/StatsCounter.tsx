@@ -110,7 +110,7 @@ export function StatsCounter() {
   }, []);
 
   return (
-    <section className="px-12 sm:px-16 md:px-24 py-32 md:py-40 border-t border-white/5">
+    <section className="page-x section-y border-t border-white/5">
       <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-data mb-16 md:mb-24">
         § 01 — Output
       </div>

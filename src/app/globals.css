@@ -152,6 +152,57 @@
    CUSTOM UTILITIES
    ============================================ */
 
+/* Responsive page padding — replaces ad-hoc px-12 sm:px-16 md:px-24 */
+@utility page-x {
+  padding-inline: 20px;
+  @media (min-width: 640px) { padding-inline: 32px; }
+  @media (min-width: 768px) { padding-inline: 48px; }
+  @media (min-width: 1024px) { padding-inline: 96px; }
+}
+
+/* Responsive vertical page padding */
+@utility page-y {
+  padding-block: 32px;
+  @media (min-width: 768px) { padding-block: 48px; }
+}
+
+/* Section vertical rhythm — replaces py-32 md:py-40 */
+@utility section-y {
+  padding-block: 64px;
+  @media (min-width: 768px) { padding-block: 128px; }
+  @media (min-width: 1024px) { padding-block: 160px; }
+}
+
+/* Safe-area-aware bottom padding for mobile dock + iOS home indicator */
+@utility safe-bottom {
+  padding-bottom: max(16px, env(safe-area-inset-bottom));
+}
+
+/* Apple HIG minimum tap target */
+@utility touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Prevent iOS Safari from zooming on input focus */
+input,
+select,
+textarea {
+  font-size: max(16px, 1rem);
+}
+
+/* Honor reduced-motion users — disables animation flourishes */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Glow effects for accent colors */
 .glow-terminal {
   box-shadow: 0 0 20px rgba(0, 255, 65, 0.15);

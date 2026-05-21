@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { display, mono } from "@/lib/fonts";
 import { NavRail } from "@/components/layout/NavRail";
+import { MobileDock } from "@/components/layout/MobileDock";
+import { MobileTopBar } from "@/components/layout/MobileTopBar";
 import { InquiryPill } from "@/components/layout/InquiryPill";
 import { LenisProvider } from "@/components/layout/LenisProvider";
 import { LoadingScreen } from "@/components/animation/LoadingScreen";
@@ -35,6 +37,16 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#0f0f1a" },
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -49,9 +61,11 @@ export default function RootLayout({
       <body className="min-h-full">
         <LoadingScreen />
         <LenisProvider>
+          <MobileTopBar />
           <NavRail />
-          <main className="relative z-10 ml-20">{children}</main>
+          <main className="relative z-10 pb-24 md:ml-20 md:pb-0">{children}</main>
           <InquiryPill />
+          <MobileDock />
         </LenisProvider>
       </body>
     </html>

@@ -16,7 +16,7 @@ export default function JourneyPage() {
   const filtered = activeEra ? sorted.filter((e) => e.era === activeEra) : sorted;
 
   return (
-    <div className="px-6 sm:px-12 md:px-24 py-24 md:py-32">
+    <div className="page-x py-16 md:py-32">
       <StatsHeader data={journeyData} />
       <EraFilter
         active={activeEra}

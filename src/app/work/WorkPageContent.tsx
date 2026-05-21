@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { PROJECTS, ALL_TAGS } from "@/lib/projects";
 import { ProjectCard } from "@/components/sections/ProjectCard";
+import { WorkCardCarousel } from "@/components/sections/WorkCardCarousel";
 import { ServiceTier } from "@/components/sections/ServiceTier";
 import { BusinessCard } from "@/components/sections/BusinessCard";
 import { ConsultationForm } from "@/components/forms/ConsultationForm";
@@ -24,7 +25,7 @@ export function WorkPageContent() {
     : PROJECTS;
 
   return (
-    <div className="px-12 sm:px-16 md:px-24 py-24 md:py-32">
+    <div className="page-x py-16 md:py-32">
 
       {/* HEADER */}
       <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-data mb-6">
@@ -38,12 +39,12 @@ export function WorkPageContent() {
         {tools}+ tools, agents, and systems shipped. Most live in production today. A few of the highlights below.
       </p>
 
-      {/* TAG FILTER */}
-      <div className="mt-16 flex flex-wrap gap-2">
+      {/* TAG FILTER — horizontal scroll on mobile, wrap on desktop */}
+      <div className="-mx-5 mt-12 flex snap-x gap-2 overflow-x-auto px-5 pb-2 md:mx-0 md:mt-16 md:flex-wrap md:overflow-visible md:px-0 md:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         <button
           onClick={() => setActiveTag(null)}
           className={cn(
-            "rounded-full px-4 py-2 font-mono text-xs uppercase tracking-wider transition-colors",
+            "shrink-0 snap-start rounded-full px-4 py-2 font-mono text-xs uppercase tracking-wider transition-colors touch-target",
             !activeTag
               ? "bg-data/10 text-data border border-data/30"
               : "text-muted-foreground border border-white/10 hover:border-white/30"
@@ -56,7 +57,7 @@ export function WorkPageContent() {
             key={tag}
             onClick={() => setActiveTag(tag === activeTag ? null : tag)}
             className={cn(
-              "rounded-full px-4 py-2 font-mono text-xs uppercase tracking-wider transition-colors",
+              "shrink-0 snap-start rounded-full px-4 py-2 font-mono text-xs uppercase tracking-wider transition-colors touch-target",
               tag === activeTag
                 ? "bg-data/10 text-data border border-data/30"
                 : "text-muted-foreground border border-white/10 hover:border-white/30"
@@ -67,15 +68,18 @@ export function WorkPageContent() {
         ))}
       </div>
 
-      {/* PROJECT GRID */}
-      <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-        {filtered.map((project) => (
-          <ProjectCard key={project.title} project={project} />
-        ))}
+      {/* PROJECTS — carousel on mobile, grid on desktop */}
+      <div className="mt-8 md:mt-12">
+        <WorkCardCarousel projects={filtered} />
+        <div className="hidden gap-5 md:grid md:grid-cols-2 lg:grid-cols-3">
+          {filtered.map((project) => (
+            <ProjectCard key={project.title} project={project} />
+          ))}
+        </div>
       </div>
 
       {/* SERVICES */}
-      <div className="mt-32 md:mt-40 pt-32 border-t border-white/5">
+      <div className="mt-20 md:mt-40 pt-16 md:pt-32 border-t border-white/5">
         <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-warm mb-6">
           § 02 — Services
         </div>
@@ -118,7 +122,7 @@ export function WorkPageContent() {
       </div>
 
       {/* CONSULTATION FORM */}
-      <div className="mt-32 md:mt-40 pt-32 border-t border-white/5">
+      <div className="mt-20 md:mt-40 pt-16 md:pt-32 border-t border-white/5">
         <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-terminal mb-6">
           § 03 — Book a call
         </div>

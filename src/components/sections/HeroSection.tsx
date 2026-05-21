@@ -21,7 +21,7 @@ export function HeroSection() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <section className="min-h-[100dvh] px-12 sm:px-16 md:px-24 pt-16 pb-12 flex flex-col justify-between relative overflow-hidden">
+    <section className="hidden min-h-[100dvh] page-x pt-16 pb-12 md:flex flex-col justify-between relative overflow-hidden">
       {/* Soft radial glow behind the name */}
       <div
         className="absolute inset-0 pointer-events-none"

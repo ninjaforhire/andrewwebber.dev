@@ -58,7 +58,7 @@ export function NavRail() {
   }
 
   return (
-    <nav className="fixed left-0 top-0 z-50 flex h-full w-20 flex-col items-center justify-between border-r border-border bg-background/80 py-8 backdrop-blur-md">
+    <nav className="fixed left-0 top-0 z-50 hidden h-full w-20 flex-col items-center justify-between border-r border-border bg-background/80 py-8 backdrop-blur-md md:flex">
       {/* Nav items */}
       <div className="flex flex-col items-center gap-6">
         {NAV_ITEMS.map((item) => {

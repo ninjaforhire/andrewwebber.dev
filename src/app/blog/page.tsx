@@ -11,7 +11,7 @@ export default function BlogPage() {
   const posts = getAllPosts();
 
   return (
-    <div className="px-12 sm:px-16 md:px-24 py-24 md:py-32">
+    <div className="page-x py-16 md:py-32">
       <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-warm mb-6">
         § 01 — Field Notes
       </div>
@@ -19,7 +19,7 @@ export default function BlogPage() {
         Thoughts from<br />
         the <span className="text-warm">workbench</span>.
       </h1>
-      <p className="text-2xl leading-relaxed text-muted-foreground max-w-3xl mt-8">
+      <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground max-w-3xl mt-6 md:mt-8">
         Notes from the workbench. AI, creative coding, security, automation.
       </p>
 
@@ -29,7 +29,7 @@ export default function BlogPage() {
           <p className="mt-2 text-muted-foreground">First post coming soon.</p>
         </div>
       ) : (
-        <div className="mt-16 space-y-4 max-w-4xl">
+        <div className="mt-12 md:mt-16 space-y-4 max-w-4xl">
           {posts.map((post) => (
             <BlogCard key={post.slug} post={post} />
           ))}

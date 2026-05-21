@@ -8,7 +8,7 @@ export function InquiryPill() {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-[calc(env(safe-area-inset-bottom)+5.5rem)] right-4 z-50 md:bottom-6 md:right-6">
       {expanded && (
         <div className="mb-3 w-72 rounded-lg border border-border bg-card p-4 shadow-2xl animate-in fade-in slide-in-from-bottom-2 duration-200">
           <div className="mb-3 flex items-center justify-between">
@@ -52,7 +52,7 @@ export function InquiryPill() {
         )}
       >
         <MessageSquare size={14} />
-        <span className="hidden sm:inline">Get in Touch</span>
+        <span>Get in Touch</span>
       </button>
     </div>
   );

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { CertTimeline } from "@/components/sections/CertTimeline";
 import { ContactForm } from "@/components/forms/ContactForm";
-import { CharacterStats } from "@/components/sections/CharacterStats";
+import { CharacterStats, CharacterStatsStrip } from "@/components/sections/CharacterStats";
 
 export const metadata: Metadata = {
   title: "Dossier",
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="px-12 sm:px-16 md:px-24 py-24 md:py-32">
+    <div className="page-x py-24 md:py-32">
 
       {/* HEADER */}
       <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-creative mb-6">
@@ -69,21 +69,26 @@ export default function AboutPage() {
       </div>
 
       {/* CHARACTER STATS */}
-      <div className="mt-32 md:mt-40 pt-32 border-t border-white/5">
+      <div className="mt-20 md:mt-40 pt-16 md:pt-32 border-t border-white/5">
         <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-terminal mb-6">
           § 02 — Character Sheet
         </div>
         <h2 className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] mb-8">
           Stats <span className="text-terminal">unlocked</span>.
         </h2>
-        <p className="text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-16">
+        <p className="text-xl md:text-xl md:text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-10 md:mb-12 md:mb-16">
           Twenty years of practice across six disciplines. Still grinding XP.
         </p>
-        <CharacterStats />
+        <div className="md:hidden">
+          <CharacterStatsStrip />
+        </div>
+        <div className="hidden md:block">
+          <CharacterStats />
+        </div>
       </div>
 
       {/* EDUCATION */}
-      <div className="mt-32 md:mt-40 pt-32 border-t border-white/5">
+      <div className="mt-20 md:mt-40 pt-16 md:pt-32 border-t border-white/5">
         <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-data mb-6">
           § 03 — Credentials
         </div>
@@ -91,21 +96,21 @@ export default function AboutPage() {
           Always <span className="text-data">learning</span>.<br />
           Never done.
         </h2>
-        <p className="text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-16">
+        <p className="text-xl md:text-xl md:text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-10 md:mb-12 md:mb-16">
           Certifications, courses, and credentials picked up along the way.
         </p>
         <CertTimeline />
       </div>
 
       {/* CONTACT */}
-      <div id="contact" className="mt-32 md:mt-40 pt-32 border-t border-white/5">
+      <div id="contact" className="mt-20 md:mt-40 pt-16 md:pt-32 border-t border-white/5">
         <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-terminal mb-6">
           § 04 — Get in touch
         </div>
         <h2 className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] mb-8">
           Say <span className="text-terminal">hello</span>.
         </h2>
-        <p className="text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-12">
+        <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-10 md:mb-12">
           Question, collaboration, or just want to say hey.
         </p>
         <ContactForm />
