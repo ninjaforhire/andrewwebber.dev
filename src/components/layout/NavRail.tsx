@@ -3,8 +3,9 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Volume2, VolumeOff, Sun, Moon } from "lucide-react";
+import { Sun, Moon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { SoundPicker } from "@/components/animation/SoundPicker";
 
 const NAV_ITEMS = [
   { label: "HOME", href: "/", accent: "terminal" },
@@ -23,18 +24,15 @@ const ACCENT_COLORS: Record<string, string> = {
 
 export function NavRail() {
   const pathname = usePathname();
-  const [soundEnabled, setSoundEnabled] = useState(false);
   const [isDark, setIsDark] = useState(true);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
-    const savedSound = localStorage.getItem("sound");
     if (savedTheme === "light") {
       setIsDark(false);
       document.documentElement.classList.remove("dark");
       document.documentElement.classList.add("light");
     }
-    if (savedSound === "true") setSoundEnabled(true);
   }, []);
 
   function toggleTheme() {
@@ -49,13 +47,6 @@ export function NavRail() {
       document.documentElement.classList.add("light");
       localStorage.setItem("theme", "light");
     }
-  }
-
-  function toggleSound() {
-    const next = !soundEnabled;
-    setSoundEnabled(next);
-    localStorage.setItem("sound", String(next));
-    window.dispatchEvent(new Event("sound-toggle"));
   }
 
   return (
@@ -99,13 +90,7 @@ export function NavRail() {
 
       {/* Controls */}
       <div className="flex flex-col items-center gap-4">
-        <button
-          onClick={toggleSound}
-          className="text-muted-foreground transition-colors hover:text-terminal"
-          aria-label={soundEnabled ? "Mute sound" : "Enable sound"}
-        >
-          {soundEnabled ? <Volume2 size={18} /> : <VolumeOff size={18} />}
-        </button>
+        <SoundPicker iconSize={18} align="left" />
         <button
           onClick={toggleTheme}
           className="text-muted-foreground transition-colors hover:text-warm"
