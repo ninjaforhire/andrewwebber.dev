@@ -268,18 +268,78 @@ export function WorkPageContent() {
 }
 
 const CODE_COUNCIL = [
-  { hat: "Black", role: "Offensive Attacker", focus: "Vulnerability discovery, exploit paths, secrets exposure" },
-  { hat: "Red", role: "Penetration Tester", focus: "Webhook + API testing, injection, fuzzing" },
-  { hat: "White", role: "Defensive Engineer", focus: "Best practices, input validation, encryption" },
-  { hat: "Blue", role: "Security Ops", focus: "Monitoring, incident response, audit trails" },
-  { hat: "Purple", role: "Threat Modeler", focus: "Attack chain mapping, STRIDE, crown jewel ID" },
-  { hat: "Gray", role: "Supply Chain", focus: "Dependencies, CVEs, transitive risks" },
-  { hat: "Green", role: "Privacy + Compliance", focus: "PII handling, data flows, CCPA + GDPR" },
-  { hat: "Gold", role: "Business Continuity", focus: "Failure modes, resilience, recovery" },
-  { hat: "Silver", role: "DevSecOps", focus: "CI/CD pipelines, GitHub Actions, branch protection" },
-  { hat: "Orange", role: "API Security", focus: "OWASP API Top 10, BOLA, auth flows, SSRF" },
-  { hat: "Cyan", role: "Secrets Lifecycle", focus: "Inventory, rotation, scope, emergency revocation" },
-  { hat: "Bronze", role: "Runtime Analyst", focus: "Process execution, concurrency, dynamic code, env drift" },
+  {
+    hat: "Black",
+    role: "Offensive Attacker",
+    focus: "Vulnerability discovery, exploit paths, secrets exposure",
+    ai: "Jailbreaks, prompt-injection attacks, model exfil chains",
+  },
+  {
+    hat: "Red",
+    role: "Penetration Tester",
+    focus: "Webhook + API testing, injection, fuzzing",
+    ai: "LLM red-teaming, adversarial prompt fuzzing, model extraction",
+  },
+  {
+    hat: "White",
+    role: "Defensive Engineer",
+    focus: "Best practices, input validation, encryption",
+    ai: "Prompt + output sanitization, system-prompt hardening, guardrails",
+  },
+  {
+    hat: "Blue",
+    role: "Security Ops",
+    focus: "Monitoring, incident response, audit trails",
+    ai: "Model-call telemetry, anomaly detection on inference traffic",
+  },
+  {
+    hat: "Purple",
+    role: "Threat Modeler",
+    focus: "Attack chain mapping, STRIDE, crown jewel ID",
+    ai: "STRIDE for LLM apps, tool-use attack chains, blast-radius modeling",
+  },
+  {
+    hat: "Gray",
+    role: "Supply Chain",
+    focus: "Dependencies, CVEs, transitive risks",
+    ai: "Model provenance, training-data poisoning, AI dep vuln tracking",
+  },
+  {
+    hat: "Green",
+    role: "Privacy + Compliance",
+    focus: "PII handling, data flows, CCPA + GDPR",
+    ai: "PII leakage in prompts + outputs, RAG data exposure, memorization",
+  },
+  {
+    hat: "Gold",
+    role: "Business Continuity",
+    focus: "Failure modes, resilience, recovery",
+    ai: "Model availability + fallback chains, rate-limit + outage handling",
+  },
+  {
+    hat: "Silver",
+    role: "DevSecOps",
+    focus: "CI/CD pipelines, GitHub Actions, branch protection",
+    ai: "Model versioning in pipeline, eval suites as deploy gates",
+  },
+  {
+    hat: "Orange",
+    role: "API Security",
+    focus: "OWASP API Top 10, BOLA, auth flows, SSRF",
+    ai: "AI API gateways, per-model rate limits, BOLA on tool endpoints",
+  },
+  {
+    hat: "Cyan",
+    role: "Secrets Lifecycle",
+    focus: "Inventory, rotation, scope, emergency revocation",
+    ai: "Provider API keys (Anthropic, OpenAI, etc.) — rotation + scope",
+  },
+  {
+    hat: "Bronze",
+    role: "Runtime Analyst",
+    focus: "Process execution, concurrency, dynamic code, env drift",
+    ai: "Live prompt-injection detection, computer-use action vetting, LLM-Guard",
+  },
 ];
 
 function CodeCouncilSection() {
@@ -295,8 +355,11 @@ function CodeCouncilSection() {
       <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-4">
         The Code Council is the doctrine behind every SPECTRE tool. Twelve specialist hats — each a different security discipline — review the same change from their own angle. Black Hat tries to break it. White Hat tries to harden it. Purple Hat maps the attack chain. They argue, then converge on a verdict.
       </p>
-      <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-12">
+      <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-8">
         That argument-and-converge pattern is what every Spectre module runs on internally: daily missions sweep the surface area through the hats relevant to the work — recon (Raven), red-team (Blackthorn + Decepticon), purple-team coverage (Gauntlet), blue-team detection (Bastion), supply chain (Gray), runtime (Bronze) — and the Dossier consolidates the verdict. Client engagements are the same loop, just longer and reported through Spectre-Guide.
+      </p>
+      <p className="text-base md:text-lg leading-relaxed text-muted-foreground/90 max-w-3xl mb-12">
+        <span className="text-terminal font-semibold">AI threat surface</span> doesn&apos;t get its own hat — every existing hat already owns a slice. Black + Red drive offensive prompt-injection + jailbreaks; White + Bronze run the live defenses (LLM-Guard, output sanitization, action vetting); Green guards memorization + RAG leaks; Gray watches model provenance + training-data poisoning; Cyan rotates provider API keys; Orange locks the AI API gateway. The AISec wing (Ghost Core + Sandbox + Local + LLM Guard + Injection Corpus) is the implementation those hats operate on.
       </p>
       <ul className="grid gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {CODE_COUNCIL.map((agent) => (
@@ -314,6 +377,10 @@ function CodeCouncilSection() {
             </div>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
               {agent.focus}
+            </p>
+            <p className="mt-2 text-xs leading-relaxed text-data/80">
+              <span className="font-mono uppercase tracking-wider text-[10px] text-data/60">AI:</span>{" "}
+              {agent.ai}
             </p>
           </li>
         ))}
