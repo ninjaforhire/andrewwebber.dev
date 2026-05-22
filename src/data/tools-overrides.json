@@ -52,30 +52,35 @@
     "slug": "snappic-microsite",
     "name": "Snappic Microsite Builder",
     "blurb": "Generates custom CSS for the Snappic guest gallery on a per-event basis. Color-matches the event's design package. Clients open a branded experience, not a generic URL.",
+    "time_saved_per_event": "20 min/event",
     "category": "design"
   },
   {
     "slug": "seo-agent",
     "name": "SEO Agent",
     "blurb": "Monitors ranking positions for photo booth rental keywords across DFW markets. Surfaces drops and competitor gains before they compound. Built the page-1 position at mightyphotobooths.com with zero paid ads.",
+    "time_saved_per_day": "~30 min/day",
     "category": "marketing"
   },
   {
     "slug": "market-intel",
     "name": "Competitor Intel Engine",
     "blurb": "Passive OSINT on every area competitor. Tracks pricing, venue relationships, social velocity, and GBP signals. Color-coded service-area map. No more flying blind on local competition.",
+    "time_saved_per_event": "~30 min/report",
     "category": "marketing"
   },
   {
     "slug": "w9-creator",
     "name": "W9 Generator",
     "blurb": "Generates a pre-filled W9 request package for any vendor or subcontractor. Signs it, attaches it, and drops it into the right Drive folder.",
+    "time_saved_per_event": "15 min/request",
     "category": "finance"
   },
   {
     "slug": "blog-agent",
     "name": "Blog Agent",
     "blurb": "Researches, outlines, writes, and formats SEO-optimized articles for the photo booth industry. Generates matched cover images. Publishes to Notion on a schedule.",
+    "time_saved_per_event": "~2 hrs/article",
     "category": "marketing"
   }
 ]
