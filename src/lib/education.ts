@@ -6,6 +6,7 @@ export interface Certification {
 }
 
 export const CERTIFICATIONS: Certification[] = [
+  { title: "DevOps Foundations: DevSecOps", issuer: "LinkedIn Learning", year: "2026", category: "Security" },
   { title: "Software Development Life Cycle (SDLC)", issuer: "LinkedIn Learning", year: "2026", category: "Programming" },
   { title: "Using AI as Your SEO Assistant", issuer: "LinkedIn", year: "2024", category: "SEO" },
   { title: "On-Page and Technical SEO: SEMRush Deep Dive", issuer: "SEMrush", year: "2024", category: "SEO" },

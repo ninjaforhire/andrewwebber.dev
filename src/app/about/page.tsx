@@ -52,7 +52,7 @@ export default function AboutPage() {
         </p>
 
         <p>
-          Somewhere along the way I discovered my <span className="text-terminal">ADHD superpower</span>. The thing people told me was a weakness turned out to be the reason I can build 170+ tools, manage multiple businesses, and hyperfocus on problems until they&apos;re solved. I stopped fighting it and started unleashing it on code.
+          Somewhere along the way I discovered my <span className="text-terminal">ADHD superpower</span>. The thing people told me was a weakness turned out to be the reason I can build 143+ tools, manage multiple businesses, and hyperfocus on problems until they&apos;re solved. I stopped fighting it and started unleashing it on code.
         </p>
 
         <p>

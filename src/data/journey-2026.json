@@ -1,8 +1,131 @@
 {
-  "lastUpdated": "2026-05-20T18:00:00",
-  "totalDays": 146,
+  "lastUpdated": "2026-05-23T18:00:00",
+  "totalDays": 149,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 149,
+      "date": "2026-05-23",
+      "title": "Day 149 - DevOps Foundations: DevSecOps - CYBER THREATS DB Wired to All Producers",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Learn",
+        "Security"
+      ],
+      "source": "GitHub",
+      "category": [
+        "Security",
+        "DevOps",
+        "AI/ML"
+      ],
+      "impact": "High",
+      "videos": [],
+      "certification": {
+        "title": "DevOps Foundations: DevSecOps",
+        "issuer": "LinkedIn Learning",
+        "date": "2026-05-23"
+      },
+      "builds": [
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "feat(spectre-core): add CYBER THREATS DB write helper",
+            "docs(security): add CYBER THREATS DB write protocol",
+            "chore(security): wire producer CLAUDE.md to CYBER THREATS DB"
+          ]
+        }
+      ],
+      "takeaway": "Completed LinkedIn Learning course: DevOps Foundations: DevSecOps — integrates security into every stage of the software delivery pipeline. On the build side: wired all SPECTRE producers to the CYBER THREATS DB Notion sink — feat(spectre-core) adds the write helper, write protocol documented, and producer CLAUDE.md updated to enforce the pattern across all 10 producers."
+    },
+    {
+      "day": 148,
+      "date": "2026-05-22",
+      "title": "Day 148 - Penny Phase 4 Docs - Jimbo Scheduler Skip-Fix - Security DB Hardening",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "DevOps"
+      ],
+      "source": "GitHub",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Security",
+        "Finance"
+      ],
+      "impact": "High",
+      "videos": [],
+      "builds": [
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(submodule): bump agents — jimbo scheduler skip-fix + meeting_prep dual-mode",
+            "chore(submodule): bump agents — penny phase 4 docs + hard rule",
+            "chore(submodule): bump agents to 0578f24"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "fix(code-council): correct JIMBO REPORTS ids + add all Security DB ids",
+            "docs(code-council): retire COUNCIL MEMBER UPDATES references"
+          ]
+        }
+      ],
+      "takeaway": "Infra hardening day: Jimbo scheduler skip-fix lands (no more double-fires on late crons), meeting_prep dual-mode shipped, Penny Phase 4 docs and hard rule merged. Code Council cleanup: JIMBO REPORTS Notion IDs corrected, all Security DB IDs wired, COUNCIL MEMBER UPDATES references retired."
+    },
+    {
+      "day": 147,
+      "date": "2026-05-21",
+      "title": "Day 147 - andrewwebber.dev Major Push - SPECTRE + Code Council + Blog Polish",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Milestone",
+        "Security"
+      ],
+      "source": "GitHub",
+      "category": [
+        "AI/ML",
+        "Security",
+        "DevOps",
+        "Design"
+      ],
+      "impact": "Critical",
+      "videos": [],
+      "builds": [
+        {
+          "repo": "andrewwebber.dev",
+          "commits": [
+            "feat(work): tools count rule + Design Forge/SPECTRE feature cards",
+            "feat(blog): polish Claude Code + Codex post — 8-min read, custom MDX styling",
+            "fix(stats): center stats + cap font so numbers stop bleeding columns",
+            "feat(blog): retitle to year-of-claude-code, add giscus comments + like button",
+            "feat(work): show all 108 tools w/ pagination + category filter",
+            "feat(blog): retitle to New Superpower Unlocked + rename slug",
+            "feat: SPECTRE descriptions + Code Council section + light mode + focus audio",
+            "feat(audio): minimalist focus picker — 4 modes",
+            "feat(work): map AI threat surface across all 12 Code Council hats",
+            "chore(pb-owners): add time-saved metrics to all 12 tools"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "feat(code-council): map AI threat surface across all 12 hats (v1.3)"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(submodule): bump agents — penny phase 4 sync engine (#2)",
+            "chore(submodule): bump agents to a30bba7"
+          ]
+        }
+      ],
+      "takeaway": "Massive andrewwebber.dev push: SPECTRE section live with full Code Council descriptions, focus audio picker shipped, blog posts polished with giscus comments, tools pagination with category filter. 10 commits to the portfolio in one day. Threat surface mapped across all 12 Code Council hats — both on the site and in hotfixops."
+    },
     {
       "day": 146,
       "date": "2026-05-20",

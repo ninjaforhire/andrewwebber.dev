@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 export const DISCIPLINES = [
   { label: "Coding", value: 92, lore: "Python, TS, daily shipping" },
-  { label: "Automation", value: 91, lore: "170+ AI tools in production" },
+  { label: "Automation", value: 91, lore: "143+ AI tools in production" },
   { label: "Design", value: 78, lore: "Premium event experiences" },
   { label: "Systems", value: 94, lore: "Perfect organization energy" },
   { label: "Security", value: 72, lore: "Pentests, SPECTRE, audits" },
