@@ -20,7 +20,18 @@
         "AI/ML"
       ],
       "impact": "High",
-      "videos": [],
+      "videos": [
+        {
+          "title": "Build & Sell Claude Code Operating Systems (2+ Hour Course)",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=bCljOfCH8Ms"
+        },
+        {
+          "title": "The AI Offer You Can Sell Tomorrow Morning",
+          "channel": "AI Entrepreneur",
+          "url": "https://www.youtube.com/watch?v=Pi-m8R068r4"
+        }
+      ],
       "certification": {
         "title": "DevOps Foundations: DevSecOps",
         "issuer": "LinkedIn Learning",
@@ -55,7 +66,68 @@
         "Finance"
       ],
       "impact": "High",
-      "videos": [],
+      "videos": [
+        {
+          "title": "Design Systems, Pattern Libraries & Style Guides... Oh My!",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/watch?v=rO5dBA-avfw"
+        },
+        {
+          "title": "Create a Reusable UI Component Library with AI in Magic Patterns",
+          "channel": "Magic Patterns",
+          "url": "https://www.youtube.com/watch?v=JyqPXgm9vT8"
+        },
+        {
+          "title": "The greatest design system I've ever used (AntiGravity)",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=CpzZnudxSTM"
+        },
+        {
+          "title": "Claude Code just got 10X Better (Agentic OS)",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/watch?v=UQmmGnz6iVQ"
+        },
+        {
+          "title": "Karpathy's Skills just changed Everything (Claude Code)",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=pCqpuHA8kHM"
+        },
+        {
+          "title": "How I vibecode Beautiful $10,000 AI Websites (AntiGravity)",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=UR09nuSxGio"
+        },
+        {
+          "title": "Anthropic Just Dropped Claude for Small Businesses (31 Skills)",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/watch?v=zzo33HUOfxI"
+        },
+        {
+          "title": "Learn 97% of Claude in Under 16 Minutes",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/watch?v=wZeOwqmSw84"
+        },
+        {
+          "title": "Splice Now Inside Claude - Full Walkthrough",
+          "channel": "Splice",
+          "url": "https://www.youtube.com/watch?v=YrtnviwCJ2Q"
+        },
+        {
+          "title": "Meet Notion Workers: Here's How Syncs Work",
+          "channel": "Notion",
+          "url": "https://www.youtube.com/watch?v=iDNJXqiIglQ"
+        },
+        {
+          "title": "NEW NOTION UPDATE: Skills And Workers",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/watch?v=mfqpUrgO6ww"
+        },
+        {
+          "title": "Introducing Notion's Developer Platform: Keynote (Ivan Zhao)",
+          "channel": "Notion",
+          "url": "https://www.youtube.com/watch?v=rpE2rzKO6L0"
+        }
+      ],
       "builds": [
         {
           "repo": "mighty",
@@ -93,7 +165,13 @@
         "Design"
       ],
       "impact": "Critical",
-      "videos": [],
+      "videos": [
+        {
+          "title": "Claude Design Builds Beautiful 3D Websites Instantly (full tutorial)",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/watch?v=TcFeSjwTo7g"
+        }
+      ],
       "builds": [
         {
           "repo": "andrewwebber.dev",
