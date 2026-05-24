@@ -1,34 +1,34 @@
 {
   "methodology": "github_clone_wc_l",
-  "countedAt": "2026-05-21T19:59:57.198651+00:00",
-  "github_loc": 1804000,
-  "github_commits": 1353,
+  "countedAt": "2026-05-24T04:42:50.037819+00:00",
+  "github_loc": 1814030,
+  "github_commits": 1379,
   "live_agents_registry": 39,
   "repos_count": 33,
   "agents_live": 39,
-  "ratchet_loc": 1804000,
-  "ratchet_commits": 1353,
+  "ratchet_loc": 1814030,
+  "ratchet_commits": 1379,
   "ratchet_agents": 39,
-  "claude_hours": 1129,
-  "claude_tokens": 12150008887,
-  "claude_sessions": 320,
-  "ratchet_claude_hours": 1129,
-  "ratchet_claude_tokens": 12150008887,
+  "claude_hours": 1166,
+  "claude_tokens": 12410013799,
+  "claude_sessions": 330,
+  "ratchet_claude_hours": 1166,
+  "ratchet_claude_tokens": 12410013799,
   "skills": 372,
   "ratchet_skills": 372,
   "ratchet_repos": 33,
-  "tools": 143,
-  "ratchet_tools": 143,
+  "tools": 145,
+  "ratchet_tools": 145,
   "per_repo": {
     "ninjaforhire/Agents": {
-      "loc": 432696,
-      "files": 2081,
-      "commits": 532
+      "loc": 439094,
+      "files": 2112,
+      "commits": 531
     },
     "ninjaforhire/andrewwebber.dev": {
-      "loc": 15790,
-      "files": 96,
-      "commits": 53
+      "loc": 17551,
+      "files": 99,
+      "commits": 60
     },
     "ninjaforhire/Biometric-Lab": {
       "loc": 11,
@@ -41,9 +41,9 @@
       "commits": 7
     },
     "ninjaforhire/claude-config": {
-      "loc": 22786,
-      "files": 690,
-      "commits": 16
+      "loc": 23472,
+      "files": 699,
+      "commits": 20
     },
     "ninjaforhire/cli-printing-press": {
       "loc": 324996,
@@ -71,9 +71,9 @@
       "commits": 1
     },
     "ninjaforhire/forge": {
-      "loc": 39018,
-      "files": 203,
-      "commits": 8
+      "loc": 39415,
+      "files": 208,
+      "commits": 10
     },
     "ninjaforhire/General-Tools": {
       "loc": 23416,
@@ -86,9 +86,9 @@
       "commits": 0
     },
     "ninjaforhire/hotfixops": {
-      "loc": 61134,
-      "files": 515,
-      "commits": 39
+      "loc": 61752,
+      "files": 517,
+      "commits": 45
     },
     "ninjaforhire/hotfixops-site": {
       "loc": 9403,
@@ -101,9 +101,9 @@
       "commits": 8
     },
     "ninjaforhire/mighty": {
-      "loc": 101372,
-      "files": 398,
-      "commits": 187
+      "loc": 101542,
+      "files": 399,
+      "commits": 195
     },
     "ninjaforhire/MIGHTY-Apps": {
       "loc": 743,
