@@ -37,12 +37,12 @@
           ]
         }
       ],
-      "takeaway": "Notion + AWD consolidation day. Three separate Learning Library databases collapsed into one canonical LEARNING LIBRARY \u2014 62 entries unified, 53 books and courses migrated, 2 duplicates archived, 7 Alyssa-created Skillshare rows skipped per Andrew's rule. PBM Advanced LinkedIn for Photo Booth Owners (Erik Kane, May 28 2024) backfilled as a credential. On the andrewwebber.dev side: shipped a new LearningLibrary component to the /about dossier page (compact list + cover thumbs via Next/Image, filter chips for type/source/status), added a CurrentReading widget to the /journey page showing 2026 books in progress, and baked src/data/courses.json + a sync-courses.py script for future re-syncs. Fixed the CharacterStats radar where AUTOMATION, SECURITY, and AI/ML labels were cropping at viewBox edges. Refreshed stats: LOC 1.81M \u2192 2.03M, tools 143 \u2192 149, Claude hours 1166 \u2192 1227, dayStreak now 154. PR #1 merged, manual Vercel deploy live."
+      "takeaway": "Notion + AWD consolidation day.\n\nThree separate **Learning Library** databases collapsed into one canonical **LEARNING LIBRARY** \u2014 **62 entries** unified, 53 books and courses migrated, 2 duplicates archived, 7 Alyssa-created Skillshare rows skipped per Andrew's rule. PBM Advanced LinkedIn for Photo Booth Owners (Erik Kane, May 28 2024) backfilled as a credential.\n\nOn the andrewwebber.dev side: **shipped** a new LearningLibrary component to the /about dossier page (compact list + cover thumbs via Next/Image, filter chips for type/source/status), added a CurrentReading widget to the /journey page showing 2026 books in progress, and baked src/data/courses.json + a sync-courses.py script for future re-syncs. Fixed the CharacterStats radar where AUTOMATION, SECURITY, and AI/ML labels were cropping at viewBox edges.\n\nRefreshed stats: LOC 1.81M \u2192 2.03M, tools 143 \u2192 149, Claude hours 1166 \u2192 1227, dayStreak now 154. PR #1 **merged**, manual Vercel deploy live."
     },
     {
       "day": 153,
       "date": "2026-05-27",
-      "title": "Day 153 - Hardening Pass: inbox-agent + Jimbo Scheduler + pbt-snif-snif",
+      "title": "Day 153 - Hardening Pass: inbox-agent + Jimbo Scheduler",
       "era": "Full Stack AI",
       "type": [
         "Build",
@@ -61,7 +61,6 @@
           "commits": [
             "fix(inbox-agent): templatize auto-title date bug + fail-fast validation; add Phase 0 tests",
             "fix(jimbo): on-demand SPECTRE tunnel, HTTP-based liveness check, scheduler null-schedule guard, disable stale missions",
-            "feat(pbt-snif-snif): rename from pbt-jacker, daily cadence, title schema cleanup",
             "feat(templates): write-time validation for COMMUNICATION TEMPLATES",
             "feat(inbox-agent): add review ask playbook directive + keyword wiring"
           ]
@@ -74,7 +73,7 @@
           ]
         }
       ],
-      "takeaway": "Hardening + cleanup pass on the mighty stack. inbox-agent got a review-ask playbook directive, write-time validation for COMMUNICATION TEMPLATES, and a templatize auto-title date bug fix with Phase 0 tests. Jimbo got on-demand SPECTRE tunnel, HTTP-based liveness check, scheduler null-schedule guard, and stale missions disabled. pbt-jacker renamed to pbt-snif-snif with daily cadence and title schema cleanup. Build-pipeline (ctf-firecrawl) added a Local Path URL prop + woody-update plan to the index."
+      "takeaway": "Hardening + cleanup pass on the **mighty** stack.\n\n**inbox-agent** got a review-ask playbook directive, write-time validation for **COMMUNICATION TEMPLATES**, and a templatize auto-title date bug fix with **Phase 0** tests. **Jimbo** got on-demand **SPECTRE** tunnel, HTTP-based liveness check, **scheduler** null-schedule guard, and stale missions disabled.\n\n**Build-pipeline** (ctf-firecrawl) added a Local Path URL prop + woody-update plan to the index."
     },
     {
       "day": 152,
@@ -119,7 +118,7 @@
           ]
         }
       ],
-      "takeaway": "Heaviest day of the stretch. Three major threads all landed: First, COMMUNICATION TEMPLATES DB wired end-to-end into inbox-agent \u2014 composer queries it at draft time, templatize_email writes to it, product directives and topic-matched memory rules load automatically. Plus the apr-may voice delta now loads on every draft. The proven-asset playbook is live across all email outputs. Second, MIGHTY Knowledge Coach Phase 0 \u2014 SQLite migration for coach tables, gmail_drafter body logging, and a Jimbo /coach command handler. The self-curating product brain skeleton is in place. Third, ntn shim infrastructure \u2014 USE_NTN_SHIM feature flag with urllib fallback, 9 high-level helpers, and Notion-Version pinned to 2025-09-03 across the toolchain. design-center-pipeline got a dedup re-flip fix and top anchor. Build-pipeline (ctf-firecrawl) hit Phase 3 with GitHub PR status polling and Notion backfill."
+      "takeaway": "Heaviest day of the stretch.\n\nThree major threads all **landed**: First, **COMMUNICATION TEMPLATES DB** wired end-to-end into **inbox-agent** \u2014 composer queries it at draft time, templatize_email writes to it, product directives and topic-matched memory rules load automatically. Plus the apr-may voice delta now loads on every draft.\n\nThe proven-asset playbook is live across all email outputs. Second, **MIGHTY** **Knowledge Coach** **Phase 0** \u2014 SQLite migration for coach tables, **gmail_drafter** body logging, and a **Jimbo** /coach command handler.\n\nThe self-curating product brain skeleton is in place. Third, ntn shim infrastructure \u2014 USE_NTN_SHIM feature flag with urllib fallback, 9 high-level helpers, and Notion-Version pinned to 2025-09-03 across the toolchain.\n\n**design-center-pipeline** got a dedup re-flip fix and top anchor. **Build-pipeline** (ctf-firecrawl) hit **Phase 3** with GitHub PR status polling and Notion backfill."
     },
     {
       "day": 151,
@@ -142,7 +141,7 @@
           ]
         }
       ],
-      "takeaway": "Genuine rest day. Logged a lot of Claude hours this past week and the body called it \u2014 a migraine showed up early and shut the morning down. Spent the rest of the day with family. Two tiny build-pipeline cleanup commits, then I closed the laptop. Health is quite literally wealth. It is okay to slow down. If you are into AI right now, you are probably already ahead anyway. The streak counts calendar days, not commit volume \u2014 and the work is always going to be there tomorrow."
+      "takeaway": "Genuine rest day.\n\nLogged a lot of Claude hours this past week and the body called it \u2014 a migraine showed up early and shut the morning down. Spent the rest of the day with family.\n\nTwo tiny **build-pipeline** cleanup commits, then I closed the laptop. Health is quite literally wealth.\n\nIt is okay to slow down. If you are into AI right now, you are probably already ahead anyway.\n\nThe streak counts calendar days, not commit volume \u2014 and the work is always going to be there tomorrow."
     },
     {
       "day": 150,
@@ -184,7 +183,7 @@
           ]
         }
       ],
-      "takeaway": "Consolidation day. Deleted standalone Arlo scripts and folded GitHub sync into Rusty (Apify-driven). Activated Apify by fixing the APIFY_API_TOKEN to APIFY_TOKEN rename and correcting the vault-sync registry path (jimbo-v4.0 to jimbo). Locked filesystem and memory boundary rules into Jimbo so Rusty stays isolated. On the HFO side, wrote MASTER_PLAN.md and a rename script to start aligning HFO docs to the existing 7-room HQ structure. Started drafting the Notion-API to ntn-CLI migration plan that would land Tuesday."
+      "takeaway": "Consolidation day.\n\nDeleted standalone Arlo scripts and folded GitHub sync into **Rusty** (**Apify**-driven). Activated **Apify** by fixing the APIFY_API_TOKEN to APIFY_TOKEN rename and correcting the vault-sync registry path (**jimbo**-**v4**.0 to **jimbo**).\n\nLocked filesystem and memory boundary rules into **Jimbo** so **Rusty** stays isolated. On the HFO side, wrote MASTER_PLAN.md and a rename script to start aligning HFO docs to the existing 7-room HQ structure.\n\nStarted drafting the Notion-API to ntn-CLI migration plan that would land Tuesday."
     },
     {
       "day": 149,
@@ -230,7 +229,7 @@
           ]
         }
       ],
-      "takeaway": "Completed LinkedIn Learning course: DevOps Foundations: DevSecOps \u2014 integrates security into every stage of the software delivery pipeline. On the build side: wired all SPECTRE producers to the CYBER THREATS DB Notion sink \u2014 feat(spectre-core) adds the write helper, write protocol documented, and producer CLAUDE.md updated to enforce the pattern across all 10 producers."
+      "takeaway": "Completed LinkedIn Learning course: DevOps Foundations: DevSecOps \u2014 integrates security into every stage of the software delivery pipeline.\n\nOn the build side: wired all **SPECTRE** producers to the **CYBER THREATS DB** Notion sink \u2014 feat(**spectre**-core) adds the write helper, write protocol documented, and producer **CLAUDE.md** updated to enforce the pattern across all 10 producers."
     },
     {
       "day": 148,
@@ -328,7 +327,7 @@
           ]
         }
       ],
-      "takeaway": "Infra hardening day: Jimbo scheduler skip-fix lands (no more double-fires on late crons), meeting_prep dual-mode shipped, Penny Phase 4 docs and hard rule merged. Code Council cleanup: JIMBO REPORTS Notion IDs corrected, all Security DB IDs wired, COUNCIL MEMBER UPDATES references retired."
+      "takeaway": "Infra hardening day: **Jimbo** **scheduler** skip-fix lands (no more double-fires on late crons), meeting_prep dual-mode **shipped**, **Penny** **Phase 4** docs and hard rule **merged**.\n\nCode Council cleanup: **JIMBO REPORTS** Notion IDs corrected, all Security DB IDs wired, COUNCIL MEMBER UPDATES references retired."
     },
     {
       "day": 147,
@@ -385,7 +384,7 @@
           ]
         }
       ],
-      "takeaway": "Massive andrewwebber.dev push: SPECTRE section live with full Code Council descriptions, focus audio picker shipped, blog posts polished with giscus comments, tools pagination with category filter. 10 commits to the portfolio in one day. Threat surface mapped across all 12 Code Council hats \u2014 both on the site and in hotfixops."
+      "takeaway": "Massive andrewwebber.dev push: **SPECTRE** section live with full Code Council descriptions, focus audio picker **shipped**, blog posts polished with giscus comments, tools pagination with category filter. **10 commits** to the portfolio in one day.\n\nThreat surface mapped across all 12 Code Council hats \u2014 both on the site and in hotfixops."
     },
     {
       "day": 146,
@@ -451,7 +450,7 @@
           ]
         }
       ],
-      "takeaway": "First public milestone: PR #1597 merged by mvanhorn into cli-printing-press -- Andrew's first accepted open-source contribution. Filesystem consolidation: mighty symlink replaced with real 8.5 GB directory, _Code/Agents renamed to _Code/agents, Jimbo Curator v1 and Penny Finance merged to main. Watched 4 videos: business masterclass, Robert Greene on ego/control, social media strategy."
+      "takeaway": "First public milestone: PR #1597 **merged** by mvanhorn into cli-printing-press -- Andrew's first accepted open-source contribution.\n\nFilesystem consolidation: **mighty** symlink replaced with real 8.5 GB directory, _Code/Agents renamed to _Code/agents, **Jimbo** Curator **v1** and **Penny** Finance **merged** to main. Watched 4 videos: business masterclass, Robert Greene on ego/control, social media strategy."
     },
     {
       "day": 145,
@@ -564,7 +563,7 @@
           ]
         }
       ],
-      "takeaway": "30+ commits. vsco-workspace-pp-cli shipped (139 endpoints). inbox-agent hardened: autoreply pipelines, draft_guard, compose_reply strict JSON. Jimbo Curator cleared all Codex P0/P1/P2 flags. forge got gif_maker. LinkedIn Learning SDLC cert completed (1h 55m). Watched 10 videos: Google I/O 2026 developer keynote + 2 sessions, full Claude Code OS course, Karpathy/Anthropic, social media algorithm + personal brand strategy, Claude Managed Agents tutorial, two MIGHTY community videos."
+      "takeaway": "30+ commits.\n\n**vsco-workspace-pp-cli** **shipped** (139 endpoints). **inbox-agent** hardened: autoreply pipelines, draft_guard, **compose_reply** strict JSON.\n\n**Jimbo** Curator cleared all Codex P0/P1/P2 flags. forge got gif_maker.\n\nLinkedIn Learning SDLC cert completed (1h 55m). Watched 10 videos: Google I/O 2026 developer keynote + 2 sessions, full **Claude Code** OS course, Karpathy/Anthropic, social media algorithm + personal brand strategy, Claude Managed Agents tutorial, two **MIGHTY** community videos."
     },
     {
       "day": 144,
@@ -597,7 +596,7 @@
           ]
         }
       ],
-      "takeaway": "Submitted PR #1597 to mvanhorn/cli-printing-press adding the full Quo (formerly OpenPhone) catalog entry and OpenAPI spec -- first open-source PR to a project Andrew did not create. It would merge in 48 hours. Watched 1 video: Claude Code Projects + Codex integration (Nate Herk)."
+      "takeaway": "Submitted PR #1597 to mvanhorn/cli-printing-press adding the full Quo (formerly OpenPhone) catalog entry and OpenAPI spec -- first open-source PR to a project Andrew did not create.\n\nIt would merge in **48 hours**. Watched 1 video: **Claude Code** Projects + Codex integration (Nate Herk)."
     },
     {
       "day": 143,
@@ -674,7 +673,7 @@
           ]
         }
       ],
-      "takeaway": "Terminal Concierge shipped: interactive Claude Code launcher prompting model, effort, and working directory. Portfolio homepage surfaces live agent + tool counts. /journey-update skill added. Watched 8 videos: deep Notion session (3 Matthias Frank videos), AI career content, Booth.Events survey setup, two MIGHTY community videos, Claude Code pipeline coverage, Android 17 review."
+      "takeaway": "Terminal Concierge **shipped**: interactive **Claude Code** launcher prompting model, effort, and working directory.\n\nPortfolio homepage surfaces live agent + tool counts. /journey-update skill added. Watched 8 videos: deep Notion session (3 Matthias Frank videos), AI career content, Booth.Events survey setup, two **MIGHTY** community videos, **Claude Code** pipeline coverage, Android 17 review."
     },
     {
       "day": 142,
@@ -740,7 +739,7 @@
           ]
         }
       ],
-      "takeaway": "Sprint 2 of the Hermes-Eater project landed with a 35-task implementation plan across 8 phases, a full design spec for the Jimbo Curator module, and an operator guide documenting the before/after state of Jimbo\u2019s behavior. The ntn smoke test script got hardened against real API quirks found in Phase 0 testing (page_size must go in the body, in_trash replaces archived, rate limits documented). SPECTRE core dirs consolidated in hotfixops and its CLAUDE.md synced to match disk reality. Forge slide generation fixed to pipe prompts via stdin and use the opus alias correctly. Watched 7 videos including content on This Device Proves Gaming Has No Limits, The Very Best of Gengar So Far | Pok\u00e9mon Seasons 1-5."
+      "takeaway": "**Sprint 2** of the Hermes-Eater project **landed** with a 35-task implementation plan across 8 phases, a full design spec for the **Jimbo** Curator module, and an operator guide documenting the before/after state of **Jimbo**\u2019s behavior.\n\nThe ntn smoke test script got hardened against real API quirks found in **Phase 0** testing (page_size must go in the body, in_trash replaces archived, rate limits documented). **SPECTRE** core dirs consolidated in hotfixops and its **CLAUDE.md** synced to match disk reality.\n\nForge slide generation fixed to pipe prompts via stdin and use the opus alias correctly. Watched 7 videos including content on This Device Proves Gaming Has No Limits, The Very Best of Gengar So Far | Pok\u00e9mon Seasons 1-5."
     },
     {
       "day": 141,
@@ -846,7 +845,7 @@
           ]
         }
       ],
-      "takeaway": "Massive infrastructure day across six repos. The Notion MCP was fully retired and replaced by the ntn CLI \u2014 a REST passthrough that returns JSON natively, fixing the broken multi-source DB query behavior and cutting round-trip latency. Simultaneously, two new Go CLIs shipped: quo-pp-cli (Quo/OpenPhone) and slack-pp-cli (Slack), both generated by cli-printing-press and installed at ~/go/bin/, replacing their respective MCPs entirely. On the security side, the SPECTRE module consolidated: hexstrike-ai classes ported into ember + spectre_core, shannon relocated from a decepticon clone into hotfixops/security/ with proper vendoring. State snapshots saved across six repos to mark the cutover point. This is the day the MCP era ended for Notion, Quo, and Slack. Watched 11 videos including content on Top 7 OSINT tools REVEALED for 2026, OSINT Toolkit Every Investigator Needs in 2026."
+      "takeaway": "Massive infrastructure day across six repos.\n\nThe Notion MCP was fully retired and replaced by the ntn CLI \u2014 a REST passthrough that returns JSON natively, fixing the broken multi-source DB query behavior and cutting round-trip latency. Simultaneously, two new Go CLIs **shipped**: **quo-pp-cli** (Quo/OpenPhone) and slack-pp-cli (Slack), both generated by cli-printing-press and installed at ~/go/bin/, replacing their respective MCPs entirely.\n\nOn the security side, the **SPECTRE** module consolidated: hexstrike-ai classes ported into ember + spectre_core, shannon relocated from a decepticon clone into hotfixops/security/ with proper vendoring. State snapshots saved across six repos to mark the cutover point.\n\nThis is the day the MCP era ended for Notion, Quo, and Slack. Watched 11 videos including content on Top 7 OSINT tools REVEALED for 2026, OSINT Toolkit Every Investigator Needs in 2026."
     },
     {
       "day": 140,
@@ -902,7 +901,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "No commits \u2014 dedicated to planning the Notion MCP retirement and ntn CLI migration. The Notion MCP had become a liability: slow, fragile under multi-source DBs, and impossible to audit. This session mapped every agent that calls Notion, documented the API 2025-09-03 quirks (search filter \u2018data_source\u2019 not \u2018database\u2019, page_size via body not query string, in_trash not archived), and drafted the Phase 0 smoke test plan that would validate the migration before cutting over. Watched 7 videos including content on Skill Issue, Build Andrej Karpathy's LLM Knowledge Base for Businesses (10x Output!)."
+      "takeaway": "No commits \u2014 dedicated to planning the Notion MCP retirement and ntn CLI migration.\n\nThe Notion MCP had become a liability: slow, fragile under multi-source DBs, and impossible to audit. This session mapped every agent that calls Notion, documented the API 2025-09-03 quirks (search filter \u2018data_source\u2019 not \u2018database\u2019, page_size via body not query string, in_trash not archived), and drafted the **Phase 0** smoke test plan that would validate the migration before cutting over.\n\nWatched 7 videos including content on Skill Issue, Build Andrej Karpathy's LLM Knowledge Base for Businesses (10x Output!)."
     },
     {
       "day": 139,
@@ -942,7 +941,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "No commits \u2014 full day spent designing the Jimbo Hermes-Eater project. Hermes-Eater is the sprint to transform Jimbo from a reactive router into a proactive curator: an orchestrator that monitors, schedules, and initiates work without being prompted. This session was pure architecture \u2014 mapping agent dependencies, defining the curator\u2019s decision loop, and identifying what Jimbo needs to \u2018eat\u2019 from Hermes (the notification layer) to act autonomously. Watched 5 videos including content on If We Had to Make $1M Fast, We'd Start These Businesses, He Built a $725 Million Company in 255 Days."
+      "takeaway": "No commits \u2014 full day spent designing the **Jimbo** Hermes-Eater project.\n\nHermes-Eater is the sprint to transform **Jimbo** from a reactive router into a proactive curator: an orchestrator that monitors, schedules, and initiates work without being prompted. This session was pure architecture \u2014 mapping agent dependencies, defining the curator\u2019s decision loop, and identifying what **Jimbo** needs to \u2018eat\u2019 from Hermes (the notification layer) to act autonomously.\n\nWatched 5 videos including content on If We Had to Make $1M Fast, We'd Start These Businesses, He Built a $725 Million Company in **255 Days**."
     },
     {
       "day": 138,
@@ -985,7 +984,7 @@
           ]
         }
       ],
-      "takeaway": "Built a sync script that maintains symlinks between skills defined in the skills directory and the Claude Code slash commands that invoke them. Previously, adding or renaming a skill required manual symlink wiring \u2014 now it\u2019s one command. This tightens the loop between writing a skill spec and having it immediately callable from any Claude Code session across all projects. Watched 4 videos including content on NEW Claude Update is a GAME CHANGER!, Claude Desktop Just Got Every Open-Source Model."
+      "takeaway": "Built a sync script that maintains symlinks between skills defined in the skills directory and the **Claude Code** slash commands that invoke them.\n\nPreviously, adding or renaming a skill required manual symlink wiring \u2014 now it\u2019s one command. This tightens the loop between writing a skill spec and having it immediately callable from any **Claude Code** session across all projects.\n\nWatched 4 videos including content on NEW Claude Update is a GAME CHANGER!, Claude Desktop Just Got Every Open-Source Model."
     },
     {
       "day": 137,
@@ -1013,7 +1012,7 @@
           ]
         }
       ],
-      "takeaway": "Graphify v0.7.13 goes system-wide across the entire mighty agent stack. The upgrade adds AST-level extraction (no API cost), a PreToolUse hook that forces agents to read the graph before touching source files, and auto-rebuild hooks that keep the graph current after every edit. Agents now have a structural map of the codebase they\u2019re operating in, which measurably reduces hallucinated file paths and redundant searches. Watched 3 videos including content on The $29 Trillion Gold Race Has Begun, Dreamy Garden Lofi Hip Hop."
+      "takeaway": "**Graphify** **v0**.7.13 goes system-wide across the entire **mighty** agent stack.\n\nThe upgrade adds AST-level extraction (no API cost), a PreToolUse hook that forces agents to read the graph before touching source files, and auto-rebuild hooks that keep the graph current after every edit. Agents now have a structural map of the codebase they\u2019re operating in, which measurably reduces hallucinated file paths and redundant searches.\n\nWatched 3 videos including content on The $29 Trillion Gold Race Has Begun, Dreamy Garden Lofi Hip Hop."
     },
     {
       "day": 136,
@@ -1081,7 +1080,7 @@
           ]
         }
       ],
-      "takeaway": "Graphify gains its first visual output format: self-contained HTML pages that render a project's call graph as a Mermaid architecture diagram. This makes codebase structure immediately reviewable in a browser without installing anything. Also scaffolded five experimental studio tools (ai-caricature-studio, chalk-bench, iris-studio, video-agent, watermark-app) as quick capability probes \u2014 evaluating what\u2019s worth building out vs. discarding."
+      "takeaway": "**Graphify** gains its first visual output format: self-contained HTML pages that render a project's call graph as a Mermaid architecture diagram.\n\nThis makes codebase structure immediately reviewable in a browser without installing anything. Also scaffolded five experimental studio tools (ai-caricature-studio, chalk-bench, iris-studio, video-agent, watermark-app) as quick capability probes \u2014 evaluating what\u2019s worth building out vs. discarding."
     },
     {
       "day": 135,
@@ -1119,7 +1118,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "Learning from Nate Herk | AI Automation, Sequoia Capital. Every video adds a tool to the belt."
+      "takeaway": "Learning from Nate Herk | AI Automation, Sequoia Capital.\n\nEvery video adds a tool to the belt."
     },
     {
       "day": 134,
@@ -1156,7 +1155,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (2 videos) and building (1 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (2 videos) and building (**1 commits**).\n\nTheory meets practice."
     },
     {
       "day": 133,
@@ -1212,7 +1211,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (10 videos) and building (7 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (10 videos) and building (**7 commits**).\n\nTheory meets practice."
     },
     {
       "day": 132,
@@ -1249,7 +1248,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (2 videos) and building (1 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (2 videos) and building (**1 commits**).\n\nTheory meets practice."
     },
     {
       "day": 131,
@@ -1275,7 +1274,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "Deep research day \u2014 21 AI videos consumed. Filling the mental model before the next build sprint."
+      "takeaway": "Deep research day \u2014 21 AI videos consumed.\n\nFilling the mental model before the next build sprint."
     },
     {
       "day": 130,
@@ -1292,7 +1291,7 @@
       "impact": "Low",
       "videos": [],
       "builds": [],
-      "takeaway": "From zero to full-stack AI builder in 135 days. The learning curve was really a learning cliff \u2014 and I climbed it."
+      "takeaway": "From zero to full-stack AI builder in **135 days**.\n\nThe learning curve was really a learning cliff \u2014 and I climbed it."
     },
     {
       "day": 129,
@@ -1342,7 +1341,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (10 videos) and building (1 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (10 videos) and building (**1 commits**).\n\nTheory meets practice."
     },
     {
       "day": 128,
@@ -1386,7 +1385,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (3 videos) and building (1 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (3 videos) and building (**1 commits**).\n\nTheory meets practice."
     },
     {
       "day": 127,
@@ -1433,7 +1432,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (2 videos) and building (4 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (2 videos) and building (**4 commits**).\n\nTheory meets practice."
     },
     {
       "day": 126,
@@ -1470,7 +1469,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 16 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **16 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 125,
@@ -1537,7 +1536,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (4 videos) and building (4 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (4 videos) and building (**4 commits**).\n\nTheory meets practice."
     },
     {
       "day": 124,
@@ -1613,7 +1612,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (13 videos) and building (10 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (13 videos) and building (**10 commits**).\n\nTheory meets practice."
     },
     {
       "day": 123,
@@ -1676,7 +1675,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (12 videos) and building (9 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (12 videos) and building (**9 commits**).\n\nTheory meets practice."
     },
     {
       "day": 122,
@@ -1712,7 +1711,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "Learning from Mrwhosetheboss, Brett Malinowski. Every video adds a tool to the belt."
+      "takeaway": "Learning from Mrwhosetheboss, Brett Malinowski.\n\nEvery video adds a tool to the belt."
     },
     {
       "day": 121,
@@ -1759,7 +1758,7 @@
           ]
         }
       ],
-      "takeaway": "Focused work on mighty. Small commits add up."
+      "takeaway": "Focused work on **mighty**.\n\nSmall commits add up."
     },
     {
       "day": 120,
@@ -1821,7 +1820,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 12 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **12 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 119,
@@ -1876,7 +1875,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 3 repos with 29 commits. This is what flow state looks like in the Platform Architect."
+      "takeaway": "Massive build day across 3 repos with **29 commits**.\n\nThis is what flow state looks like in the Platform Architect."
     },
     {
       "day": 118,
@@ -1950,7 +1949,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 7 repos with 79 commits. This is what flow state looks like in the Platform Architect."
+      "takeaway": "Massive build day across 7 repos with **79 commits**.\n\nThis is what flow state looks like in the Platform Architect."
     },
     {
       "day": 117,
@@ -1996,7 +1995,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 3 repos with 24 commits. This is what flow state looks like in the Platform Architect."
+      "takeaway": "Massive build day across 3 repos with **24 commits**.\n\nThis is what flow state looks like in the Platform Architect."
     },
     {
       "day": 116,
@@ -2033,7 +2032,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (1 videos) and building (2 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (1 videos) and building (**2 commits**).\n\nTheory meets practice."
     },
     {
       "day": 115,
@@ -2076,7 +2075,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "Learning from Nate Herk | AI Automation, Brain Project. Every video adds a tool to the belt."
+      "takeaway": "Learning from Nate Herk | AI Automation, Brain Project.\n\nEvery video adds a tool to the belt."
     },
     {
       "day": 114,
@@ -2155,7 +2154,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 15 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **15 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 113,
@@ -2212,7 +2211,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (8 videos) and building (8 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (8 videos) and building (**8 commits**).\n\nTheory meets practice."
     },
     {
       "day": 112,
@@ -2275,7 +2274,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 3 repos with 45 commits. This is what flow state looks like in the Platform Architect."
+      "takeaway": "Massive build day across 3 repos with **45 commits**.\n\nThis is what flow state looks like in the Platform Architect."
     },
     {
       "day": 111,
@@ -2409,7 +2408,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 7 repos with 65 commits. This is what flow state looks like in the Platform Architect."
+      "takeaway": "Massive build day across 7 repos with **65 commits**.\n\nThis is what flow state looks like in the Platform Architect."
     },
     {
       "day": 110,
@@ -2469,7 +2468,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 11 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **11 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 109,
@@ -2555,7 +2554,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 4 repos with 102 commits. This is what flow state looks like in the Platform Architect."
+      "takeaway": "Massive build day across 4 repos with **102 commits**.\n\nThis is what flow state looks like in the Platform Architect."
     },
     {
       "day": 108,
@@ -2592,7 +2591,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (22 videos) and building (7 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (22 videos) and building (**7 commits**).\n\nTheory meets practice."
     },
     {
       "day": 107,
@@ -2619,7 +2618,7 @@
           ]
         }
       ],
-      "takeaway": "Focused work on graphify. Small commits add up."
+      "takeaway": "Focused work on **graphify**.\n\nSmall commits add up."
     },
     {
       "day": 106,
@@ -2694,7 +2693,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 3 repos with 29 commits. This is what flow state looks like in the Platform Architect."
+      "takeaway": "Massive build day across 3 repos with **29 commits**.\n\nThis is what flow state looks like in the Platform Architect."
     },
     {
       "day": 105,
@@ -2759,7 +2758,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 2 repos with 37 commits. This is what flow state looks like in the Platform Architect."
+      "takeaway": "Massive build day across 2 repos with **37 commits**.\n\nThis is what flow state looks like in the Platform Architect."
     },
     {
       "day": 104,
@@ -2825,7 +2824,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 2 repos with 27 commits. This is what flow state looks like in the Platform Architect."
+      "takeaway": "Massive build day across 2 repos with **27 commits**.\n\nThis is what flow state looks like in the Platform Architect."
     },
     {
       "day": 103,
@@ -2879,7 +2878,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 4 repos with 100 commits. This is what flow state looks like in the Platform Architect."
+      "takeaway": "Massive build day across 4 repos with **100 commits**.\n\nThis is what flow state looks like in the Platform Architect."
     },
     {
       "day": 102,
@@ -2976,7 +2975,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 7 repos with 84 commits. This is what flow state looks like in the Platform Architect."
+      "takeaway": "Massive build day across 7 repos with **84 commits**.\n\nThis is what flow state looks like in the Platform Architect."
     },
     {
       "day": 101,
@@ -3050,7 +3049,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 3 repos with 27 commits. This is what flow state looks like in the Platform Architect."
+      "takeaway": "Massive build day across 3 repos with **27 commits**.\n\nThis is what flow state looks like in the Platform Architect."
     },
     {
       "day": 100,
@@ -3122,7 +3121,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 3 repos with 30 commits. This is what flow state looks like in the Platform Architect."
+      "takeaway": "Massive build day across 3 repos with **30 commits**.\n\nThis is what flow state looks like in the Platform Architect."
     },
     {
       "day": 99,
@@ -3206,7 +3205,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 13 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **13 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 98,
@@ -3260,7 +3259,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 11 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **11 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 97,
@@ -3284,7 +3283,7 @@
           ]
         }
       ],
-      "takeaway": "Focused work on shannon. Small commits add up."
+      "takeaway": "Focused work on shannon.\n\nSmall commits add up."
     },
     {
       "day": 96,
@@ -3337,7 +3336,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (8 videos) and building (1 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (8 videos) and building (**1 commits**).\n\nTheory meets practice."
     },
     {
       "day": 95,
@@ -3367,7 +3366,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (16 videos) and building (4 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (16 videos) and building (**4 commits**).\n\nTheory meets practice."
     },
     {
       "day": 94,
@@ -3402,7 +3401,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "Deep research day \u2014 14 AI videos consumed. Filling the mental model before the next build sprint."
+      "takeaway": "Deep research day \u2014 14 AI videos consumed.\n\nFilling the mental model before the next build sprint."
     },
     {
       "day": 93,
@@ -3467,7 +3466,7 @@
           ]
         }
       ],
-      "takeaway": "Focused work on general-tools. Small commits add up."
+      "takeaway": "Focused work on general-tools.\n\nSmall commits add up."
     },
     {
       "day": 92,
@@ -3544,7 +3543,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 15 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **15 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 91,
@@ -3632,7 +3631,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 1 repos with 23 commits. This is what flow state looks like in the Agent Builder."
+      "takeaway": "Massive build day across 1 repos with **23 commits**.\n\nThis is what flow state looks like in the Agent Builder."
     },
     {
       "day": 90,
@@ -3703,7 +3702,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 17 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **17 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 89,
@@ -3770,7 +3769,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 3 repos with 30 commits. This is what flow state looks like in the Agent Builder."
+      "takeaway": "Massive build day across 3 repos with **30 commits**.\n\nThis is what flow state looks like in the Agent Builder."
     },
     {
       "day": 88,
@@ -3838,7 +3837,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 4 repos with 25 commits. This is what flow state looks like in the Agent Builder."
+      "takeaway": "Massive build day across 4 repos with **25 commits**.\n\nThis is what flow state looks like in the Agent Builder."
     },
     {
       "day": 87,
@@ -3884,7 +3883,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "Deep research day \u2014 8 AI videos consumed. Filling the mental model before the next build sprint."
+      "takeaway": "Deep research day \u2014 8 AI videos consumed.\n\nFilling the mental model before the next build sprint."
     },
     {
       "day": 86,
@@ -3938,7 +3937,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (7 videos) and building (3 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (7 videos) and building (**3 commits**).\n\nTheory meets practice."
     },
     {
       "day": 85,
@@ -3996,7 +3995,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (26 videos) and building (8 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (26 videos) and building (**8 commits**).\n\nTheory meets practice."
     },
     {
       "day": 84,
@@ -4065,7 +4064,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 4 repos with 27 commits. This is what flow state looks like in the Agent Builder."
+      "takeaway": "Massive build day across 4 repos with **27 commits**.\n\nThis is what flow state looks like in the Agent Builder."
     },
     {
       "day": 83,
@@ -4138,7 +4137,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 14 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **14 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 82,
@@ -4198,7 +4197,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 19 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **19 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 81,
@@ -4256,7 +4255,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (21 videos) and building (6 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (21 videos) and building (**6 commits**).\n\nTheory meets practice."
     },
     {
       "day": 80,
@@ -4297,7 +4296,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "Deep research day \u2014 36 AI videos consumed. Filling the mental model before the next build sprint."
+      "takeaway": "Deep research day \u2014 36 AI videos consumed.\n\nFilling the mental model before the next build sprint."
     },
     {
       "day": 79,
@@ -4336,7 +4335,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (30 videos) and building (9 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (30 videos) and building (**9 commits**).\n\nTheory meets practice."
     },
     {
       "day": 78,
@@ -4404,7 +4403,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 3 repos with 33 commits. This is what flow state looks like in the Agent Builder."
+      "takeaway": "Massive build day across 3 repos with **33 commits**.\n\nThis is what flow state looks like in the Agent Builder."
     },
     {
       "day": 77,
@@ -4448,7 +4447,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 17 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **17 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 76,
@@ -4478,7 +4477,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "Deep research day \u2014 33 AI videos consumed. Filling the mental model before the next build sprint."
+      "takeaway": "Deep research day \u2014 33 AI videos consumed.\n\nFilling the mental model before the next build sprint."
     },
     {
       "day": 75,
@@ -4507,7 +4506,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 12 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **12 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 74,
@@ -4570,7 +4569,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 3 repos with 26 commits. This is what flow state looks like in the Agent Builder."
+      "takeaway": "Massive build day across 3 repos with **26 commits**.\n\nThis is what flow state looks like in the Agent Builder."
     },
     {
       "day": 73,
@@ -4617,7 +4616,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (6 videos) and building (7 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (6 videos) and building (**7 commits**).\n\nTheory meets practice."
     },
     {
       "day": 72,
@@ -4646,7 +4645,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (10 videos) and building (2 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (10 videos) and building (**2 commits**).\n\nTheory meets practice."
     },
     {
       "day": 71,
@@ -4706,7 +4705,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 14 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **14 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 70,
@@ -4778,7 +4777,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 3 repos with 61 commits. This is what flow state looks like in the Agent Builder."
+      "takeaway": "Massive build day across 3 repos with **61 commits**.\n\nThis is what flow state looks like in the Agent Builder."
     },
     {
       "day": 69,
@@ -4851,7 +4850,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 3 repos with 73 commits. This is what flow state looks like in the Agent Builder."
+      "takeaway": "Massive build day across 3 repos with **73 commits**.\n\nThis is what flow state looks like in the Agent Builder."
     },
     {
       "day": 68,
@@ -4918,7 +4917,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 3 repos with 30 commits. This is what flow state looks like in the Agent Builder."
+      "takeaway": "Massive build day across 3 repos with **30 commits**.\n\nThis is what flow state looks like in the Agent Builder."
     },
     {
       "day": 67,
@@ -4954,7 +4953,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (15 videos) and building (5 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (15 videos) and building (**5 commits**).\n\nTheory meets practice."
     },
     {
       "day": 66,
@@ -5000,7 +4999,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "Deep research day \u2014 13 AI videos consumed. Filling the mental model before the next build sprint."
+      "takeaway": "Deep research day \u2014 13 AI videos consumed.\n\nFilling the mental model before the next build sprint."
     },
     {
       "day": 65,
@@ -5027,7 +5026,7 @@
           ]
         }
       ],
-      "takeaway": "Focused work on agents. Small commits add up."
+      "takeaway": "Focused work on agents.\n\nSmall commits add up."
     },
     {
       "day": 64,
@@ -5077,7 +5076,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (13 videos) and building (3 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (13 videos) and building (**3 commits**).\n\nTheory meets practice."
     },
     {
       "day": 63,
@@ -5115,7 +5114,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (7 videos) and building (1 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (7 videos) and building (**1 commits**).\n\nTheory meets practice."
     },
     {
       "day": 62,
@@ -5151,7 +5150,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 14 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **14 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 61,
@@ -5206,7 +5205,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (3 videos) and building (8 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (3 videos) and building (**8 commits**).\n\nTheory meets practice."
     },
     {
       "day": 60,
@@ -5289,7 +5288,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 5 repos with 22 commits. This is what flow state looks like in the First Code."
+      "takeaway": "Massive build day across 5 repos with **22 commits**.\n\nThis is what flow state looks like in the First Code."
     },
     {
       "day": 59,
@@ -5318,7 +5317,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "Learning from Brock Mesarich | AI for Non Techies, Jack Roberts. Every video adds a tool to the belt."
+      "takeaway": "Learning from Brock Mesarich | AI for Non Techies, Jack Roberts.\n\nEvery video adds a tool to the belt."
     },
     {
       "day": 58,
@@ -5367,7 +5366,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (5 videos) and building (2 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (5 videos) and building (**2 commits**).\n\nTheory meets practice."
     },
     {
       "day": 57,
@@ -5431,7 +5430,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (14 videos) and building (7 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (14 videos) and building (**7 commits**).\n\nTheory meets practice."
     },
     {
       "day": 56,
@@ -5475,7 +5474,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (4 videos) and building (5 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (4 videos) and building (**5 commits**).\n\nTheory meets practice."
     },
     {
       "day": 55,
@@ -5538,7 +5537,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 11 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **11 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 54,
@@ -5582,7 +5581,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (1 videos) and building (10 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (1 videos) and building (**10 commits**).\n\nTheory meets practice."
     },
     {
       "day": 53,
@@ -5621,7 +5620,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 2 repos with 59 commits. This is what flow state looks like in the First Code."
+      "takeaway": "Massive build day across 2 repos with **59 commits**.\n\nThis is what flow state looks like in the First Code."
     },
     {
       "day": 52,
@@ -5657,7 +5656,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (14 videos) and building (6 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (14 videos) and building (**6 commits**).\n\nTheory meets practice."
     },
     {
       "day": 51,
@@ -5722,7 +5721,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (43 videos) and building (8 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (43 videos) and building (**8 commits**).\n\nTheory meets practice."
     },
     {
       "day": 50,
@@ -5787,7 +5786,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 12 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **12 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 49,
@@ -5833,7 +5832,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 2 repos with 23 commits. This is what flow state looks like in the First Code."
+      "takeaway": "Massive build day across 2 repos with **23 commits**.\n\nThis is what flow state looks like in the First Code."
     },
     {
       "day": 48,
@@ -5897,7 +5896,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 2 repos with 30 commits. This is what flow state looks like in the First Code."
+      "takeaway": "Massive build day across 2 repos with **30 commits**.\n\nThis is what flow state looks like in the First Code."
     },
     {
       "day": 47,
@@ -5959,7 +5958,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 15 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **15 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 46,
@@ -6007,7 +6006,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 13 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **13 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 45,
@@ -6035,7 +6034,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "Learning from Jack Roberts, Matt Wolfe. Every video adds a tool to the belt."
+      "takeaway": "Learning from Jack Roberts, Matt Wolfe.\n\nEvery video adds a tool to the belt."
     },
     {
       "day": 44,
@@ -6079,7 +6078,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 2 repos with 25 commits. This is what flow state looks like in the First Code."
+      "takeaway": "Massive build day across 2 repos with **25 commits**.\n\nThis is what flow state looks like in the First Code."
     },
     {
       "day": 43,
@@ -6110,7 +6109,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 1 repos with 70 commits. This is what flow state looks like in the First Code."
+      "takeaway": "Massive build day across 1 repos with **70 commits**.\n\nThis is what flow state looks like in the First Code."
     },
     {
       "day": 42,
@@ -6167,7 +6166,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 1 repos with 61 commits. This is what flow state looks like in the First Code."
+      "takeaway": "Massive build day across 1 repos with **61 commits**.\n\nThis is what flow state looks like in the First Code."
     },
     {
       "day": 41,
@@ -6219,7 +6218,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 1 repos with 35 commits. This is what flow state looks like in the First Code."
+      "takeaway": "Massive build day across 1 repos with **35 commits**.\n\nThis is what flow state looks like in the First Code."
     },
     {
       "day": 40,
@@ -6245,7 +6244,7 @@
           ]
         }
       ],
-      "takeaway": "Focused work on claude-mem. Small commits add up."
+      "takeaway": "Focused work on claude-mem.\n\nSmall commits add up."
     },
     {
       "day": 39,
@@ -6298,7 +6297,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (6 videos) and building (2 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (6 videos) and building (**2 commits**).\n\nTheory meets practice."
     },
     {
       "day": 38,
@@ -6336,7 +6335,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (12 videos) and building (1 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (12 videos) and building (**1 commits**).\n\nTheory meets practice."
     },
     {
       "day": 37,
@@ -6360,7 +6359,7 @@
           ]
         }
       ],
-      "takeaway": "Focused work on claude-mem. Small commits add up."
+      "takeaway": "Focused work on claude-mem.\n\nSmall commits add up."
     },
     {
       "day": 36,
@@ -6412,7 +6411,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (5 videos) and building (1 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (5 videos) and building (**1 commits**).\n\nTheory meets practice."
     },
     {
       "day": 35,
@@ -6448,7 +6447,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "Learning from David Mendoza, Josu Relax. Every video adds a tool to the belt."
+      "takeaway": "Learning from David Mendoza, Josu Relax.\n\nEvery video adds a tool to the belt."
     },
     {
       "day": 34,
@@ -6488,7 +6487,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (2 videos) and building (8 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (2 videos) and building (**8 commits**).\n\nTheory meets practice."
     },
     {
       "day": 33,
@@ -6550,7 +6549,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (5 videos) and building (6 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (5 videos) and building (**6 commits**).\n\nTheory meets practice."
     },
     {
       "day": 32,
@@ -6584,7 +6583,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (3 videos) and building (4 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (3 videos) and building (**4 commits**).\n\nTheory meets practice."
     },
     {
       "day": 31,
@@ -6612,7 +6611,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (1 videos) and building (9 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (1 videos) and building (**9 commits**).\n\nTheory meets practice."
     },
     {
       "day": 30,
@@ -6648,7 +6647,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (9 videos) and building (1 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (9 videos) and building (**1 commits**).\n\nTheory meets practice."
     },
     {
       "day": 29,
@@ -6674,7 +6673,7 @@
           ]
         }
       ],
-      "takeaway": "Focused work on claude-mem. Small commits add up."
+      "takeaway": "Focused work on claude-mem.\n\nSmall commits add up."
     },
     {
       "day": 28,
@@ -6708,7 +6707,7 @@
           ]
         }
       ],
-      "takeaway": "Focused work on shannon. Small commits add up."
+      "takeaway": "Focused work on shannon.\n\nSmall commits add up."
     },
     {
       "day": 27,
@@ -6753,7 +6752,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (4 videos) and building (5 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (4 videos) and building (**5 commits**).\n\nTheory meets practice."
     },
     {
       "day": 26,
@@ -6783,7 +6782,7 @@
           ]
         }
       ],
-      "takeaway": "Focused work on shannon. Small commits add up."
+      "takeaway": "Focused work on shannon.\n\nSmall commits add up."
     },
     {
       "day": 25,
@@ -6800,7 +6799,7 @@
       "impact": "Low",
       "videos": [],
       "builds": [],
-      "takeaway": "Learning from Jason Lewis - Mind Amend. Every video adds a tool to the belt."
+      "takeaway": "Learning from Jason Lewis - Mind Amend.\n\nEvery video adds a tool to the belt."
     },
     {
       "day": 24,
@@ -6823,7 +6822,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "Learning from Julian Goldie SEO. Every video adds a tool to the belt."
+      "takeaway": "Learning from Julian Goldie SEO.\n\nEvery video adds a tool to the belt."
     },
     {
       "day": 23,
@@ -6854,7 +6853,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (1 videos) and building (1 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (1 videos) and building (**1 commits**).\n\nTheory meets practice."
     },
     {
       "day": 22,
@@ -6886,7 +6885,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (1 videos) and building (2 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (1 videos) and building (**2 commits**).\n\nTheory meets practice."
     },
     {
       "day": 21,
@@ -6935,7 +6934,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (2 videos) and building (7 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (2 videos) and building (**7 commits**).\n\nTheory meets practice."
     },
     {
       "day": 20,
@@ -6967,7 +6966,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (1 videos) and building (2 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (1 videos) and building (**2 commits**).\n\nTheory meets practice."
     },
     {
       "day": 19,
@@ -7007,7 +7006,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (2 videos) and building (5 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (2 videos) and building (**5 commits**).\n\nTheory meets practice."
     },
     {
       "day": 18,
@@ -7057,7 +7056,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (4 videos) and building (3 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (4 videos) and building (**3 commits**).\n\nTheory meets practice."
     },
     {
       "day": 17,
@@ -7103,7 +7102,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "Deep research day \u2014 29 AI videos consumed. Filling the mental model before the next build sprint."
+      "takeaway": "Deep research day \u2014 29 AI videos consumed.\n\nFilling the mental model before the next build sprint."
     },
     {
       "day": 16,
@@ -7159,7 +7158,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (7 videos) and building (7 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (7 videos) and building (**7 commits**).\n\nTheory meets practice."
     },
     {
       "day": 15,
@@ -7194,7 +7193,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (1 videos) and building (8 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (1 videos) and building (**8 commits**).\n\nTheory meets practice."
     },
     {
       "day": 14,
@@ -7225,7 +7224,7 @@
           ]
         }
       ],
-      "takeaway": "Focused work on shannon. Small commits add up."
+      "takeaway": "Focused work on shannon.\n\nSmall commits add up."
     },
     {
       "day": 13,
@@ -7271,7 +7270,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (3 videos) and building (6 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (3 videos) and building (**6 commits**).\n\nTheory meets practice."
     },
     {
       "day": 12,
@@ -7303,7 +7302,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (1 videos) and building (1 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (1 videos) and building (**1 commits**).\n\nTheory meets practice."
     },
     {
       "day": 11,
@@ -7365,7 +7364,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 11 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **11 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 10,
@@ -7410,7 +7409,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 13 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **13 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 9,
@@ -7457,7 +7456,7 @@
           ]
         }
       ],
-      "takeaway": "Balanced day of learning (3 videos) and building (8 commits). Theory meets practice."
+      "takeaway": "Balanced day of learning (3 videos) and building (**8 commits**).\n\nTheory meets practice."
     },
     {
       "day": 8,
@@ -7485,7 +7484,7 @@
           ]
         }
       ],
-      "takeaway": "Focused work on claude-mem. Small commits add up."
+      "takeaway": "Focused work on claude-mem.\n\nSmall commits add up."
     },
     {
       "day": 7,
@@ -7514,7 +7513,7 @@
           ]
         }
       ],
-      "takeaway": "Focused work on claude-mem. Small commits add up."
+      "takeaway": "Focused work on claude-mem.\n\nSmall commits add up."
     },
     {
       "day": 6,
@@ -7542,7 +7541,7 @@
           ]
         }
       ],
-      "takeaway": "Focused work on claude-mem. Small commits add up."
+      "takeaway": "Focused work on claude-mem.\n\nSmall commits add up."
     },
     {
       "day": 5,
@@ -7572,7 +7571,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "Learning from CNBC Television, Nick Saraev. Every video adds a tool to the belt."
+      "takeaway": "Learning from CNBC Television, Nick Saraev.\n\nEvery video adds a tool to the belt."
     },
     {
       "day": 4,
@@ -7615,7 +7614,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 1 repos with 47 commits. This is what flow state looks like in the No-Code Era."
+      "takeaway": "Massive build day across 1 repos with **47 commits**.\n\nThis is what flow state looks like in the No-Code Era."
     },
     {
       "day": 3,
@@ -7672,7 +7671,7 @@
           ]
         }
       ],
-      "takeaway": "Solid build sprint with 15 commits. The compound effect of daily coding practice is becoming obvious."
+      "takeaway": "Solid build sprint with **15 commits**.\n\nThe compound effect of daily coding practice is becoming obvious."
     },
     {
       "day": 2,
@@ -7715,7 +7714,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 1 repos with 26 commits. This is what flow state looks like in the No-Code Era."
+      "takeaway": "Massive build day across 1 repos with **26 commits**.\n\nThis is what flow state looks like in the No-Code Era."
     },
     {
       "day": 1,
@@ -7772,7 +7771,7 @@
           ]
         }
       ],
-      "takeaway": "Massive build day across 1 repos with 28 commits. This is what flow state looks like in the No-Code Era."
+      "takeaway": "Massive build day across 1 repos with **28 commits**.\n\nThis is what flow state looks like in the No-Code Era."
     }
   ]
 }

@@ -6,6 +6,7 @@ import { ChevronDown, GitCommit, Play } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ERA_COLORS, IMPACT_COLORS } from "@/lib/journey";
 import { TypeBadge } from "./TypeBadge";
+import { FormattedTakeaway } from "./FormattedTakeaway";
 import type { JourneyEntry } from "@/lib/journey";
 
 interface DayCardProps {
@@ -165,12 +166,10 @@ export function DayCard({ entry }: DayCardProps) {
 
                 {entry.takeaway && (
                   <div>
-                    <div className="font-mono text-[11px] uppercase tracking-wider text-terminal mb-1.5">
+                    <div className="font-mono text-[11px] uppercase tracking-wider text-terminal mb-2">
                       Takeaway
                     </div>
-                    <p className="text-sm text-muted-foreground italic">
-                      {entry.takeaway}
-                    </p>
+                    <FormattedTakeaway text={entry.takeaway} />
                   </div>
                 )}
               </div>
