@@ -9,6 +9,15 @@
     "location": "forge"
   },
   {
+    "slug": "design-forge-copy-wing",
+    "name": "Design Forge \u2014 Copy Wing",
+    "description": "Design Forge wing.",
+    "category": "design-forge",
+    "subcategory": "wing",
+    "source": "wing",
+    "location": "forge/execution/wings/copy"
+  },
+  {
     "slug": "design-forge-creative-coding-wing",
     "name": "Design Forge \u2014 Creative Coding Wing",
     "description": "Generative art pipeline. Shader-driven posters, animated backgrounds, brand-tuned procedural art.",
@@ -25,6 +34,15 @@
     "subcategory": "wing",
     "source": "wing",
     "location": "forge/execution/wings/slides"
+  },
+  {
+    "slug": "design-forge-website-wing",
+    "name": "Design Forge \u2014 Website Wing",
+    "description": "Design Forge wing.",
+    "category": "design-forge",
+    "subcategory": "wing",
+    "source": "wing",
+    "location": "forge/execution/wings/website"
   },
   {
     "slug": "andrewwebber-dev",
@@ -142,6 +160,15 @@
     "subcategory": "agent",
     "source": "agent",
     "location": "mighty/agents/tools/audible-sync"
+  },
+  {
+    "slug": "audit-templates",
+    "name": "audit-templates",
+    "description": "Audit COMMUNICATION TEMPLATES Notion DB for drift: untagged records, hardcoded names/dates/venues, near-duplicates, missing Audience/Use Case",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/admin/audit-templates"
   },
   {
     "slug": "autofill-v1-0",
@@ -511,6 +538,15 @@
     "subcategory": "agent",
     "source": "agent",
     "location": "mighty/agents/tools/kajabi-video-scraper"
+  },
+  {
+    "slug": "knowledge-coach",
+    "name": "knowledge-coach",
+    "description": "MIGHTY Knowledge Coach \u2014 self-curating product brain",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/coach"
   },
   {
     "slug": "lead-score-agent",
@@ -945,6 +981,15 @@
     "location": "mighty/agents/tools/research-agent"
   },
   {
+    "slug": "sales-lesson",
+    "name": "sales-lesson",
+    "description": ">",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/sales/sales-lesson"
+  },
+  {
     "slug": "security-review",
     "name": "security-review",
     "description": "Code Council: 12-agent adversarial security review with HexStrike integration and SOP generation",
@@ -1015,6 +1060,15 @@
     "subcategory": "agent",
     "source": "agent",
     "location": "mighty/agents/finance/subscription-tracker-v1.0"
+  },
+  {
+    "slug": "triple-review",
+    "name": "triple-review",
+    "description": ">",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/r-and-d/triple-review"
   },
   {
     "slug": "ui-ux",

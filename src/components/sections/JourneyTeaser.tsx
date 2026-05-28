@@ -27,7 +27,7 @@ const MILESTONES = [
     year: "2022",
     title: "The Learning Era.",
     description:
-      "93 Audible books. 19 certifications — Google IT Support, Python, cybersecurity, SEO, Dante audio networking, Photoshop, leadership. Stacking skills while running a business full-time.",
+      "52 audiobooks. 21 certifications. 7 self-study courses. Google IT Support, Python, cybersecurity, SEO, Dante audio networking, Photoshop, leadership. Stacking skills while running a business full-time.",
     details: [
       "Google IT Support Certificate — Coursera",
       "Python 101 for Hackers — TCM Security",
@@ -35,8 +35,10 @@ const MILESTONES = [
       "OOP Design + Learning Python — LinkedIn",
       "SEMrush SEO Suite — 3 certifications",
       "Dante Audio Networking — Levels 1-3",
-      "93 audiobooks on business, psychology, and strategy",
+      "Advanced LinkedIn for Photo Booth Owners — PBM Academy",
+      "52 audiobooks on business, psychology, and strategy → /about#credentials",
     ],
+    link: "/about#credentials",
   },
   {
     year: "2025",
@@ -77,10 +79,10 @@ interface Stats {
 
 const STATS_FALLBACK: Stats = {
   agentsLive: 39,
-  dayStreak: 149,
+  dayStreak: 153,
   skills: 372,
-  repos: 33,
-  linesOfCode: 1814030,
+  repos: 34,
+  linesOfCode: 2033807,
 };
 
 export function JourneyTeaser() {
