@@ -1,24 +1,24 @@
 {
-  "lastUpdated": "2026-05-27T18:00:00",
-  "totalDays": 153,
+  "lastUpdated": "2026-05-28T09:30:00",
+  "totalDays": 154,
   "currentEra": "Full Stack AI",
   "entries": [
     {
-      "day": 153,
-      "date": "2026-05-27",
-      "title": "Day 153 - Hardening Pass + LEARNING LIBRARY Consolidated + AWD Library Live",
+      "day": 154,
+      "date": "2026-05-28",
+      "title": "Day 154 - LEARNING LIBRARY Consolidated + AWD Dossier Ships",
       "era": "Full Stack AI",
       "type": [
         "Build",
-        "Refactor",
-        "Design"
+        "Milestone",
+        "Refactor"
       ],
       "source": "Claude Code",
       "category": [
         "Agents",
-        "DevOps",
         "Design",
-        "Automation"
+        "Automation",
+        "DevOps"
       ],
       "impact": "High",
       "videos": [],
@@ -27,6 +27,34 @@
         "issuer": "Photo Booth Marketing Academy",
         "date": "2024-05-28"
       },
+      "builds": [
+        {
+          "repo": "andrewwebber.dev",
+          "commits": [
+            "feat(library): merge LEARNING LIBRARY into AWD dossier + journey",
+            "feat(stats): refresh stats + 4 journey entries (150-153) + radar fix",
+            "Merge pull request #1 from ninjaforhire/learning-library-merge"
+          ]
+        }
+      ],
+      "takeaway": "Notion + AWD consolidation day. Three separate Learning Library databases collapsed into one canonical LEARNING LIBRARY \u2014 62 entries unified, 53 books and courses migrated, 2 duplicates archived, 7 Alyssa-created Skillshare rows skipped per Andrew's rule. PBM Advanced LinkedIn for Photo Booth Owners (Erik Kane, May 28 2024) backfilled as a credential. On the andrewwebber.dev side: shipped a new LearningLibrary component to the /about dossier page (compact list + cover thumbs via Next/Image, filter chips for type/source/status), added a CurrentReading widget to the /journey page showing 2026 books in progress, and baked src/data/courses.json + a sync-courses.py script for future re-syncs. Fixed the CharacterStats radar where AUTOMATION, SECURITY, and AI/ML labels were cropping at viewBox edges. Refreshed stats: LOC 1.81M \u2192 2.03M, tools 143 \u2192 149, Claude hours 1166 \u2192 1227, dayStreak now 154. PR #1 merged, manual Vercel deploy live."
+    },
+    {
+      "day": 153,
+      "date": "2026-05-27",
+      "title": "Day 153 - Hardening Pass: inbox-agent + Jimbo Scheduler + pbt-snif-snif",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Refactor"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "DevOps"
+      ],
+      "impact": "Medium",
+      "videos": [],
       "builds": [
         {
           "repo": "mighty",
@@ -44,18 +72,9 @@
             "feat(build-pipeline): add Local Path URL prop + backfill voice plan",
             "chore: add woody-update plan to index and active builds"
           ]
-        },
-        {
-          "repo": "andrewwebber.dev",
-          "commits": [
-            "feat(stats): fix CharacterStats radar label cropping (viewBox + overflow-visible)",
-            "feat(about): ship LearningLibrary component + sync-courses.py script",
-            "feat(journey): add CurrentReading widget for 2026 books in progress",
-            "data: bake src/data/courses.json (59 items \u2014 52 books + 7 courses)"
-          ]
         }
       ],
-      "takeaway": "Hardening + cleanup pass. inbox-agent got review-ask playbook directive, write-time validation for COMMUNICATION TEMPLATES, and a templatize auto-title date bug fix with Phase 0 tests. Jimbo got on-demand SPECTRE tunnel, HTTP liveness check, scheduler null-guard, and stale missions disabled. pbt-jacker renamed to pbt-snif-snif with daily cadence. Build-pipeline added Local Path URL prop. Plus a big Notion cleanup: consolidated 3 separate Learning Library databases into one canonical LEARNING LIBRARY (62 entries). On andrewwebber.dev, fixed the CharacterStats radar label cropping (AUTOMATION + SECURITY + AI/ML were getting cut off), shipped the LearningLibrary component to the dossier page with book covers and filters, added a CurrentReading widget to the journey page, and baked courses.json from Notion. Backfilled the PBM Advanced LinkedIn for Photo Booth Owners course (Erik Kane, May 28 2024) as a credential."
+      "takeaway": "Hardening + cleanup pass on the mighty stack. inbox-agent got a review-ask playbook directive, write-time validation for COMMUNICATION TEMPLATES, and a templatize auto-title date bug fix with Phase 0 tests. Jimbo got on-demand SPECTRE tunnel, HTTP-based liveness check, scheduler null-schedule guard, and stale missions disabled. pbt-jacker renamed to pbt-snif-snif with daily cadence and title schema cleanup. Build-pipeline (ctf-firecrawl) added a Local Path URL prop + woody-update plan to the index."
     },
     {
       "day": 152,
