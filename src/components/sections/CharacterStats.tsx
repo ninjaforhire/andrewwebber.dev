@@ -14,6 +14,8 @@ export const DISCIPLINES = [
 const SIZE = 480;
 const CENTER = SIZE / 2;
 const RADIUS = SIZE * 0.36;
+const LABEL_PAD_X = 90;
+const LABEL_PAD_Y = 24;
 
 function pointAt(angleDeg: number, dist: number): [number, number] {
   const rad = ((angleDeg - 90) * Math.PI) / 180;
@@ -92,8 +94,11 @@ export function CharacterStats() {
       className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-12 items-center"
     >
       {/* HEXAGON */}
-      <div className="relative" style={{ width: SIZE, maxWidth: "100%" }}>
-        <svg viewBox={`0 0 ${SIZE} ${SIZE}`} className="w-full h-auto">
+      <div className="relative" style={{ width: SIZE + LABEL_PAD_X * 2, maxWidth: "100%" }}>
+        <svg
+          viewBox={`${-LABEL_PAD_X} ${-LABEL_PAD_Y} ${SIZE + LABEL_PAD_X * 2} ${SIZE + LABEL_PAD_Y * 2}`}
+          className="w-full h-auto overflow-visible"
+        >
           <defs>
             <radialGradient id="statGrad" cx="50%" cy="50%" r="50%">
               <stop offset="0%" stopColor="#00ff41" stopOpacity={0.45 + breath * 0.15} />

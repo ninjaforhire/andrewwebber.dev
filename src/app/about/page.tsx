@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { CertTimeline } from "@/components/sections/CertTimeline";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { CharacterStats, CharacterStatsStrip } from "@/components/sections/CharacterStats";
+import { LearningLibrary } from "@/components/sections/LearningLibrary";
 
 export const metadata: Metadata = {
   title: "Dossier",
@@ -100,6 +101,17 @@ export default function AboutPage() {
           Certifications, courses, and credentials picked up along the way.
         </p>
         <CertTimeline />
+
+        {/* LEARNING LIBRARY — books + courses (Audible, Skillshare, PBM, YouTube) */}
+        <div className="mt-16 md:mt-24">
+          <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-warm mb-4">
+            Library / books + courses
+          </div>
+          <p className="text-base md:text-lg leading-relaxed text-muted-foreground max-w-3xl mb-8">
+            The reading and self-study stack. Business, leadership, design, security. Always something open in the queue.
+          </p>
+          <LearningLibrary />
+        </div>
       </div>
 
       {/* CONTACT */}
