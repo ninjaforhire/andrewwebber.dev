@@ -6,6 +6,7 @@ import type { JourneyData } from "@/lib/journey";
 import { StatsHeader } from "@/components/journey/StatsHeader";
 import { EraFilter } from "@/components/journey/EraFilter";
 import { JourneyTimeline } from "@/components/journey/JourneyTimeline";
+import { CurrentReading } from "@/components/journey/CurrentReading";
 
 const journeyData = journeyRaw as JourneyData;
 
@@ -23,6 +24,7 @@ export default function JourneyPage() {
         onSelect={setActiveEra}
         total={journeyData.entries.length}
       />
+      <CurrentReading />
       <JourneyTimeline entries={filtered} />
     </div>
   );
