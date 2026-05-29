@@ -97,6 +97,102 @@ function Card({ label, price, sub, desc, features, accent, featured, cta = "Book
   );
 }
 
+function ArchitectureGraphic() {
+  const nodes = [
+    { cx: 80,  cy: 60,  r: 5 },
+    { cx: 200, cy: 40,  r: 7 },
+    { cx: 310, cy: 80,  r: 5 },
+    { cx: 140, cy: 130, r: 9 },
+    { cx: 260, cy: 130, r: 6 },
+    { cx: 360, cy: 150, r: 4 },
+    { cx: 80,  cy: 185, r: 5 },
+    { cx: 195, cy: 200, r: 5 },
+    { cx: 310, cy: 190, r: 7 },
+  ];
+  const edges = [
+    [0,1],[1,2],[1,3],[2,4],[3,4],[4,5],[3,6],[3,7],[4,8],[6,7],[7,8],[2,5]
+  ];
+
+  return (
+    <svg
+      viewBox="0 0 420 230"
+      className="w-full h-full opacity-60"
+      aria-hidden="true"
+    >
+      <defs>
+        <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="#f43f5e" stopOpacity="0.8" />
+          <stop offset="100%" stopColor="#fb923c" stopOpacity="0" />
+        </radialGradient>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="2.5" result="blur" />
+          <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+        <linearGradient id="edgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#f43f5e" stopOpacity="0.4" />
+          <stop offset="100%" stopColor="#fb923c" stopOpacity="0.2" />
+        </linearGradient>
+      </defs>
+
+      {/* edges */}
+      {edges.map(([a, b], i) => (
+        <line
+          key={i}
+          x1={nodes[a].cx} y1={nodes[a].cy}
+          x2={nodes[b].cx} y2={nodes[b].cy}
+          stroke="url(#edgeGrad)"
+          strokeWidth="1"
+        />
+      ))}
+
+      {/* node halos */}
+      {nodes.map((n, i) => (
+        <circle
+          key={`h${i}`}
+          cx={n.cx} cy={n.cy}
+          r={n.r * 3}
+          fill="url(#nodeGlow)"
+          opacity="0.25"
+        />
+      ))}
+
+      {/* nodes */}
+      {nodes.map((n, i) => (
+        <circle
+          key={`n${i}`}
+          cx={n.cx} cy={n.cy}
+          r={n.r}
+          fill={i === 3 || i === 8 ? "#f43f5e" : "#fb923c"}
+          opacity={i === 3 || i === 8 ? "0.9" : "0.6"}
+          filter="url(#glow)"
+        />
+      ))}
+
+      {/* label hints */}
+      {[
+        { x: 140, y: 148, text: "CORE" },
+        { x: 295, y: 208, text: "OUTPUT" },
+      ].map((l) => (
+        <text
+          key={l.text}
+          x={l.x} y={l.y}
+          textAnchor="middle"
+          fontSize="7"
+          fontFamily="monospace"
+          fill="#f43f5e"
+          opacity="0.5"
+          letterSpacing="2"
+        >
+          {l.text}
+        </text>
+      ))}
+    </svg>
+  );
+}
+
 export default function ConsultingPreviewPage() {
   return (
     <main className="min-h-screen bg-[#0d0d0f] px-6 py-24">
@@ -128,7 +224,6 @@ export default function ConsultingPreviewPage() {
             accent="purple"
             cta="Grab a slot →"
           />
-
           <Card
             label="Owner's Session"
             price="$400"
@@ -147,12 +242,11 @@ export default function ConsultingPreviewPage() {
             accent="blue"
             featured
           />
-
           <Card
             label="AI Discovery"
             price="$150"
             sub="/ 30 min"
-            desc="Map what's worth automating and what isn't before committing to a build."
+            desc="Map what's worth automating before committing to a build."
             features={[
               "AI and automation opportunity scan",
               "Business efficiency gaps",
@@ -160,17 +254,16 @@ export default function ConsultingPreviewPage() {
               "HotFix / security-adjacent scoping",
               "Clear go/no-go recommendation",
             ]}
-            note="If you move forward, this $150 applies toward your engagement."
+            note="Discovery cost applied toward your engagement if you move forward."
             accent="emerald"
             featured
             cta="Scope it →"
           />
-
           <Card
             label="AI Implementation"
             price="$1,000"
             sub="/ 1–2 hrs"
-            desc="Deploy proven AI tools into your existing stack. No custom code — expert configuration, integration, and training."
+            desc="Deploy proven AI tools into your existing stack. Expert configuration, integration, and training — no custom code."
             features={[
               "Off-the-shelf AI tool setup",
               "Integration into existing workflows",
@@ -183,46 +276,75 @@ export default function ConsultingPreviewPage() {
           />
         </div>
 
-        {/* Wide custom build card */}
-        <div className="mt-5 rounded-xl border border-white/10 bg-white/[0.02] p-8 md:p-10 transition-all duration-300 hover:border-white/15 hover:bg-white/[0.03]">
-          <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
-            <div className="flex-1 max-w-2xl">
-              <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-white/35">Custom Build</p>
-              <div className="mt-3 flex items-baseline gap-3 flex-wrap">
-                <span className="font-heading text-4xl font-extrabold leading-none">$3,000</span>
-                <span className="font-mono text-sm text-white/35">– $25,000+ depending on scope</span>
-              </div>
-              <p className="mt-4 text-base leading-relaxed text-white/45 max-w-xl">
-                Bespoke software built from scratch. Custom agents, automation pipelines, internal tools,
-                and security-hardened systems. Scoped through an AI Discovery call — no estimates without a conversation first.
-              </p>
-            </div>
-            <div className="grid gap-x-12 gap-y-2.5 sm:grid-cols-2 md:shrink-0 md:w-auto">
-              {[
-                "Custom AI agents and pipelines",
-                "Internal ops tooling",
-                "Security-hardened builds (HotFix)",
-                "Multi-system integrations",
-                "Dashboards and reporting systems",
-                "Ongoing maintenance available",
-              ].map((f) => (
-                <div key={f} className="flex items-start gap-2.5 text-sm">
-                  <span className="mt-0.5 font-mono text-xs shrink-0 text-white/30">✓</span>
-                  <span className="text-white/50">{f}</span>
-                </div>
-              ))}
-            </div>
+        {/* Custom Build — premium wide card */}
+        <div
+          className="relative mt-5 overflow-hidden rounded-xl border border-rose-500/25 transition-all duration-300 hover:border-rose-500/40"
+          style={{
+            background: "linear-gradient(135deg, rgba(136,19,55,0.18) 0%, rgba(120,10,40,0.12) 40%, rgba(15,10,10,0.6) 100%)",
+          }}
+        >
+          {/* background glow blobs */}
+          <div className="pointer-events-none absolute inset-0">
+            <div
+              className="absolute -right-20 -top-20 h-80 w-80 rounded-full opacity-20"
+              style={{ background: "radial-gradient(circle, #f43f5e 0%, transparent 70%)" }}
+            />
+            <div
+              className="absolute right-60 bottom-0 h-48 w-48 rounded-full opacity-10"
+              style={{ background: "radial-gradient(circle, #fb923c 0%, transparent 70%)" }}
+            />
           </div>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a
-              href="#"
-              className="rounded-md border border-white/15 px-6 py-2.5 text-center font-mono text-xs uppercase tracking-widest text-white/50 transition-colors hover:border-white/25 hover:text-white/70"
-            >
-              Start with AI Discovery →
-            </a>
-            <p className="self-center font-mono text-[10px] text-white/25">
-              Discovery call cost applied to project total
-            </p>
+
+          <div className="relative flex flex-col gap-0 lg:flex-row">
+            {/* left — copy */}
+            <div className="flex flex-col justify-between p-8 md:p-10 lg:w-[42%]">
+              <div>
+                <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-rose-400">Custom Build</p>
+                <div className="mt-3 flex items-baseline gap-3 flex-wrap">
+                  <span className="font-heading text-5xl font-extrabold leading-none">$3,000</span>
+                  <span className="font-mono text-sm text-white/35">– $25,000+ depending on scope</span>
+                </div>
+                <p className="mt-4 text-base leading-relaxed text-white/50 max-w-sm">
+                  Bespoke software built from scratch. Custom agents, automation pipelines, internal tools, and security-hardened systems. Every project starts with an AI Discovery call.
+                </p>
+              </div>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+                <a
+                  href="#"
+                  className="inline-block rounded-md border border-rose-500/40 bg-rose-500/10 px-6 py-2.5 text-center font-mono text-xs uppercase tracking-widest text-rose-300 transition-colors hover:bg-rose-500/20"
+                >
+                  Start with AI Discovery →
+                </a>
+                <p className="font-mono text-[10px] text-white/25">
+                  Discovery cost applied to project total
+                </p>
+              </div>
+            </div>
+
+            {/* center — graphic */}
+            <div className="hidden lg:flex lg:w-[28%] items-center justify-center px-4 py-8 opacity-80">
+              <ArchitectureGraphic />
+            </div>
+
+            {/* right — features */}
+            <div className="border-t border-white/5 p-8 md:p-10 lg:border-t-0 lg:border-l lg:w-[30%]">
+              <p className="mb-4 font-mono text-[9px] uppercase tracking-[0.2em] text-white/30">What&apos;s in scope</p>
+              <ul className="space-y-3">
+                {[
+                  "Custom AI agents and pipelines",
+                  "Internal ops and reporting tools",
+                  "Security-hardened builds (HotFix)",
+                  "Multi-system integrations",
+                  "Dashboards and data systems",
+                  "Ongoing maintenance available",
+                ].map((f) => (
+                  <li key={f} className="flex items-start gap-2.5 text-sm">
+                    <span className="mt-0.5 font-mono text-xs shrink-0 text-rose-500/60">✓</span>
+                    <span className="text-white/50">{f}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 
