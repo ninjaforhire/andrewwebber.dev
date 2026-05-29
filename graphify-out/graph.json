@@ -1737,7 +1737,7 @@
       "source_file": "scripts/stats-checkpoint.json",
       "source_location": "L22",
       "id": "scripts_stats_checkpoint_per_repo",
-      "community": 33,
+      "community": 38,
       "norm_label": "per_repo"
     },
     {
@@ -3472,7 +3472,7 @@
       "label": "AboutPage()",
       "file_type": "code",
       "source_file": "src/app/about/page.tsx",
-      "source_location": "L77",
+      "source_location": "L84",
       "id": "about_page_aboutpage",
       "community": 77,
       "norm_label": "aboutpage()"
@@ -3483,7 +3483,7 @@
       "source_file": "src/app/journey/page.tsx",
       "source_location": "L1",
       "id": "src_app_journey_page_tsx",
-      "community": 18,
+      "community": 76,
       "norm_label": "page.tsx"
     },
     {
@@ -3492,7 +3492,7 @@
       "source_file": "src/app/journey/page.tsx",
       "source_location": "L11",
       "id": "journey_page_journeydata",
-      "community": 18,
+      "community": 76,
       "norm_label": "journeydata"
     },
     {
@@ -3501,7 +3501,7 @@
       "source_file": "src/app/journey/page.tsx",
       "source_location": "L13",
       "id": "journey_page_journeypage",
-      "community": 18,
+      "community": 76,
       "norm_label": "journeypage()"
     },
     {
@@ -3832,7 +3832,7 @@
       "label": "CODE_COUNCIL",
       "file_type": "code",
       "source_file": "src/app/work/WorkPageContent.tsx",
-      "source_location": "L338",
+      "source_location": "L376",
       "id": "work_workpagecontent_code_council",
       "community": 6,
       "norm_label": "code_council"
@@ -3841,7 +3841,7 @@
       "label": "CodeCouncilSection()",
       "file_type": "code",
       "source_file": "src/app/work/WorkPageContent.tsx",
-      "source_location": "L413",
+      "source_location": "L451",
       "id": "work_workpagecontent_codecouncilsection",
       "community": 6,
       "norm_label": "codecouncilsection()"
@@ -3850,7 +3850,7 @@
       "label": "Pagination()",
       "file_type": "code",
       "source_file": "src/app/work/WorkPageContent.tsx",
-      "source_location": "L465",
+      "source_location": "L503",
       "id": "work_workpagecontent_pagination",
       "community": 6,
       "norm_label": "pagination()"
@@ -4149,7 +4149,7 @@
       "source_file": "src/components/sections/BlogCard.tsx",
       "source_location": "L1",
       "id": "src_components_sections_blogcard_tsx",
-      "community": 83,
+      "community": 12,
       "norm_label": "blogcard.tsx"
     },
     {
@@ -4158,7 +4158,7 @@
       "source_file": "src/components/sections/BlogCard.tsx",
       "source_location": "L5",
       "id": "sections_blogcard_tag_accents",
-      "community": 83,
+      "community": 12,
       "norm_label": "tag_accents"
     },
     {
@@ -4482,7 +4482,7 @@
       "source_file": "src/components/forms/ConsultationForm.tsx",
       "source_location": "L1",
       "id": "src_components_forms_consultationform_tsx",
-      "community": 7,
+      "community": 6,
       "norm_label": "consultationform.tsx"
     },
     {
@@ -4491,7 +4491,7 @@
       "source_file": "src/components/forms/ConsultationForm.tsx",
       "source_location": "L6",
       "id": "forms_consultationform_formdata",
-      "community": 7,
+      "community": 6,
       "norm_label": "formdata"
     },
     {
@@ -4500,7 +4500,7 @@
       "source_file": "src/components/forms/ConsultationForm.tsx",
       "source_location": "L14",
       "id": "forms_consultationform_services",
-      "community": 7,
+      "community": 6,
       "norm_label": "services"
     },
     {
@@ -4509,7 +4509,7 @@
       "source_file": "src/components/forms/ConsultationForm.tsx",
       "source_location": "L23",
       "id": "forms_consultationform_consultationform",
-      "community": 7,
+      "community": 6,
       "norm_label": "consultationform()"
     },
     {
@@ -5193,25 +5193,25 @@
       "source_file": "src/components/journey/StatsHeader.tsx",
       "source_location": "L1",
       "id": "src_components_journey_statsheader_tsx",
-      "community": 18,
+      "community": 76,
       "norm_label": "statsheader.tsx"
     },
     {
       "label": "StatsHeaderProps",
       "file_type": "code",
       "source_file": "src/components/journey/StatsHeader.tsx",
-      "source_location": "L6",
+      "source_location": "L8",
       "id": "journey_statsheader_statsheaderprops",
-      "community": 18,
+      "community": 76,
       "norm_label": "statsheaderprops"
     },
     {
       "label": "StatsHeader()",
       "file_type": "code",
       "source_file": "src/components/journey/StatsHeader.tsx",
-      "source_location": "L10",
+      "source_location": "L12",
       "id": "journey_statsheader_statsheader",
-      "community": 18,
+      "community": 76,
       "norm_label": "statsheader()"
     },
     {
@@ -5220,7 +5220,7 @@
       "source_file": "src/components/journey/CurrentReading.tsx",
       "source_location": "L1",
       "id": "src_components_journey_currentreading_tsx",
-      "community": 18,
+      "community": 79,
       "norm_label": "currentreading.tsx"
     },
     {
@@ -5229,34 +5229,25 @@
       "source_file": "src/components/journey/CurrentReading.tsx",
       "source_location": "L4",
       "id": "journey_currentreading_courseitem",
-      "community": 18,
+      "community": 79,
       "norm_label": "courseitem"
     },
     {
       "label": "stripSubtitle()",
       "file_type": "code",
       "source_file": "src/components/journey/CurrentReading.tsx",
-      "source_location": "L17",
+      "source_location": "L15",
       "id": "journey_currentreading_stripsubtitle",
-      "community": 18,
+      "community": 79,
       "norm_label": "stripsubtitle()"
-    },
-    {
-      "label": "year()",
-      "file_type": "code",
-      "source_file": "src/components/journey/CurrentReading.tsx",
-      "source_location": "L21",
-      "id": "journey_currentreading_year",
-      "community": 18,
-      "norm_label": "year()"
     },
     {
       "label": "CurrentReading()",
       "file_type": "code",
       "source_file": "src/components/journey/CurrentReading.tsx",
-      "source_location": "L25",
+      "source_location": "L19",
       "id": "journey_currentreading_currentreading",
-      "community": 18,
+      "community": 79,
       "norm_label": "currentreading()"
     },
     {
@@ -5326,7 +5317,7 @@
       "label": "JourneyTimelineProps",
       "file_type": "code",
       "source_file": "src/components/journey/JourneyTimeline.tsx",
-      "source_location": "L7",
+      "source_location": "L10",
       "id": "journey_journeytimeline_journeytimelineprops",
       "community": 18,
       "norm_label": "journeytimelineprops"
@@ -5335,18 +5326,45 @@
       "label": "getMonthKey()",
       "file_type": "code",
       "source_file": "src/components/journey/JourneyTimeline.tsx",
-      "source_location": "L11",
+      "source_location": "L14",
       "id": "journey_journeytimeline_getmonthkey",
       "community": 18,
       "norm_label": "getmonthkey()"
     },
     {
+      "label": "getCurrentMonthKey()",
+      "file_type": "code",
+      "source_file": "src/components/journey/JourneyTimeline.tsx",
+      "source_location": "L19",
+      "id": "journey_journeytimeline_getcurrentmonthkey",
+      "community": 18,
+      "norm_label": "getcurrentmonthkey()"
+    },
+    {
+      "label": "AnnotatedEntry",
+      "file_type": "code",
+      "source_file": "src/components/journey/JourneyTimeline.tsx",
+      "source_location": "L26",
+      "id": "journey_journeytimeline_annotatedentry",
+      "community": 18,
+      "norm_label": "annotatedentry"
+    },
+    {
+      "label": "MonthGroup",
+      "file_type": "code",
+      "source_file": "src/components/journey/JourneyTimeline.tsx",
+      "source_location": "L32",
+      "id": "journey_journeytimeline_monthgroup",
+      "community": 18,
+      "norm_label": "monthgroup"
+    },
+    {
       "label": "JourneyTimeline()",
       "file_type": "code",
       "source_file": "src/components/journey/JourneyTimeline.tsx",
-      "source_location": "L16",
+      "source_location": "L37",
       "id": "journey_journeytimeline_journeytimeline",
-      "community": 18,
+      "community": 76,
       "norm_label": "journeytimeline()"
     },
     {
@@ -5355,7 +5373,7 @@
       "source_file": "src/components/journey/FormattedTakeaway.tsx",
       "source_location": "L1",
       "id": "src_components_journey_formattedtakeaway_tsx",
-      "community": 18,
+      "community": 85,
       "norm_label": "formattedtakeaway.tsx"
     },
     {
@@ -5364,7 +5382,7 @@
       "source_file": "src/components/journey/FormattedTakeaway.tsx",
       "source_location": "L12",
       "id": "journey_formattedtakeaway_isfilepath",
-      "community": 18,
+      "community": 85,
       "norm_label": "isfilepath()"
     },
     {
@@ -5373,7 +5391,7 @@
       "source_file": "src/components/journey/FormattedTakeaway.tsx",
       "source_location": "L19",
       "id": "journey_formattedtakeaway_renderinline",
-      "community": 18,
+      "community": 85,
       "norm_label": "renderinline()"
     },
     {
@@ -5382,7 +5400,7 @@
       "source_file": "src/components/journey/FormattedTakeaway.tsx",
       "source_location": "L74",
       "id": "journey_formattedtakeaway_formattedtakeaway",
-      "community": 18,
+      "community": 85,
       "norm_label": "formattedtakeaway()"
     },
     {
@@ -5391,7 +5409,7 @@
       "source_file": "src/components/journey/EraFilter.tsx",
       "source_location": "L1",
       "id": "src_components_journey_erafilter_tsx",
-      "community": 18,
+      "community": 84,
       "norm_label": "erafilter.tsx"
     },
     {
@@ -5400,7 +5418,7 @@
       "source_file": "src/components/journey/EraFilter.tsx",
       "source_location": "L6",
       "id": "journey_erafilter_erafilterprops",
-      "community": 18,
+      "community": 84,
       "norm_label": "erafilterprops"
     },
     {
@@ -5409,7 +5427,7 @@
       "source_file": "src/components/journey/EraFilter.tsx",
       "source_location": "L12",
       "id": "journey_erafilter_erafilter",
-      "community": 18,
+      "community": 84,
       "norm_label": "erafilter()"
     },
     {
@@ -5589,7 +5607,7 @@
       "source_file": "src/components/photo-booth-owners/ToolsGrid.tsx",
       "source_location": "L1",
       "id": "src_components_photo_booth_owners_toolsgrid_tsx",
-      "community": 76,
+      "community": 13,
       "norm_label": "toolsgrid.tsx"
     },
     {
@@ -5598,7 +5616,7 @@
       "source_file": "src/components/photo-booth-owners/ToolsGrid.tsx",
       "source_location": "L7",
       "id": "photo_booth_owners_toolsgrid_categories",
-      "community": 76,
+      "community": 13,
       "norm_label": "categories"
     },
     {
@@ -5607,7 +5625,7 @@
       "source_file": "src/components/photo-booth-owners/ToolsGrid.tsx",
       "source_location": "L9",
       "id": "photo_booth_owners_toolsgrid_toolsgrid",
-      "community": 76,
+      "community": 13,
       "norm_label": "toolsgrid()"
     },
     {
@@ -5634,7 +5652,7 @@
       "source_file": "src/components/photo-booth-owners/GuideCard.tsx",
       "source_location": "L1",
       "id": "src_components_photo_booth_owners_guidecard_tsx",
-      "community": 79,
+      "community": 13,
       "norm_label": "guidecard.tsx"
     },
     {
@@ -5643,7 +5661,7 @@
       "source_file": "src/components/photo-booth-owners/GuideCard.tsx",
       "source_location": "L3",
       "id": "photo_booth_owners_guidecard_guide",
-      "community": 79,
+      "community": 13,
       "norm_label": "guide"
     },
     {
@@ -5652,7 +5670,7 @@
       "source_file": "src/components/photo-booth-owners/GuideCard.tsx",
       "source_location": "L14",
       "id": "photo_booth_owners_guidecard_accent",
-      "community": 79,
+      "community": 13,
       "norm_label": "accent"
     },
     {
@@ -5661,7 +5679,7 @@
       "source_file": "src/components/photo-booth-owners/GuideCard.tsx",
       "source_location": "L21",
       "id": "photo_booth_owners_guidecard_store_labels",
-      "community": 79,
+      "community": 13,
       "norm_label": "store_labels"
     },
     {
@@ -5670,7 +5688,7 @@
       "source_file": "src/components/photo-booth-owners/GuideCard.tsx",
       "source_location": "L27",
       "id": "photo_booth_owners_guidecard_guidecard",
-      "community": 79,
+      "community": 13,
       "norm_label": "guidecard()"
     },
     {
@@ -5751,7 +5769,7 @@
       "source_file": "src/components/photo-booth-owners/InquiryForm.tsx",
       "source_location": "L1",
       "id": "src_components_photo_booth_owners_inquiryform_tsx",
-      "community": 13,
+      "community": 7,
       "norm_label": "inquiryform.tsx"
     },
     {
@@ -5760,7 +5778,7 @@
       "source_file": "src/components/photo-booth-owners/InquiryForm.tsx",
       "source_location": "L6",
       "id": "photo_booth_owners_inquiryform_formdata",
-      "community": 13,
+      "community": 7,
       "norm_label": "formdata"
     },
     {
@@ -5769,7 +5787,7 @@
       "source_file": "src/components/photo-booth-owners/InquiryForm.tsx",
       "source_location": "L14",
       "id": "photo_booth_owners_inquiryform_services",
-      "community": 13,
+      "community": 7,
       "norm_label": "services"
     },
     {
@@ -5778,7 +5796,7 @@
       "source_file": "src/components/photo-booth-owners/InquiryForm.tsx",
       "source_location": "L29",
       "id": "photo_booth_owners_inquiryform_inquiryform",
-      "community": 13,
+      "community": 7,
       "norm_label": "inquiryform()"
     },
     {
@@ -5787,7 +5805,7 @@
       "source_file": "src/components/photo-booth-owners/ServicesGrid.tsx",
       "source_location": "L1",
       "id": "src_components_photo_booth_owners_servicesgrid_tsx",
-      "community": 2,
+      "community": 13,
       "norm_label": "servicesgrid.tsx"
     },
     {
@@ -5796,7 +5814,7 @@
       "source_file": "src/components/photo-booth-owners/ServicesGrid.tsx",
       "source_location": "L4",
       "id": "photo_booth_owners_servicesgrid_accentkey",
-      "community": 2,
+      "community": 13,
       "norm_label": "accentkey"
     },
     {
@@ -5805,7 +5823,7 @@
       "source_file": "src/components/photo-booth-owners/ServicesGrid.tsx",
       "source_location": "L6",
       "id": "photo_booth_owners_servicesgrid_servicegroup",
-      "community": 2,
+      "community": 13,
       "norm_label": "servicegroup"
     },
     {
@@ -5814,7 +5832,7 @@
       "source_file": "src/components/photo-booth-owners/ServicesGrid.tsx",
       "source_location": "L14",
       "id": "photo_booth_owners_servicesgrid_accent_cycle",
-      "community": 2,
+      "community": 13,
       "norm_label": "accent_cycle"
     },
     {
@@ -5823,7 +5841,7 @@
       "source_file": "src/components/photo-booth-owners/ServicesGrid.tsx",
       "source_location": "L16",
       "id": "photo_booth_owners_servicesgrid_servicesgrid",
-      "community": 2,
+      "community": 13,
       "norm_label": "servicesgrid()"
     },
     {
@@ -5877,7 +5895,7 @@
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L1",
       "id": "src_components_photo_booth_owners_toolcard_tsx",
-      "community": 76,
+      "community": 13,
       "norm_label": "toolcard.tsx"
     },
     {
@@ -5886,7 +5904,7 @@
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L6",
       "id": "photo_booth_owners_toolcard_mightytool",
-      "community": 76,
+      "community": 13,
       "norm_label": "mightytool"
     },
     {
@@ -5895,7 +5913,7 @@
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L16",
       "id": "photo_booth_owners_toolcard_category_accent",
-      "community": 76,
+      "community": 13,
       "norm_label": "category_accent"
     },
     {
@@ -5904,7 +5922,7 @@
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L49",
       "id": "photo_booth_owners_toolcard_accent",
-      "community": 76,
+      "community": 13,
       "norm_label": "accent()"
     },
     {
@@ -5913,7 +5931,7 @@
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L53",
       "id": "photo_booth_owners_toolcard_toolcard",
-      "community": 76,
+      "community": 13,
       "norm_label": "toolcard()"
     },
     {
@@ -6156,7 +6174,7 @@
       "source_file": "src/lib/journey.ts",
       "source_location": "L26",
       "id": "lib_journey_journeydata",
-      "community": 18,
+      "community": 76,
       "norm_label": "journeydata"
     },
     {
@@ -6165,7 +6183,7 @@
       "source_file": "src/lib/journey.ts",
       "source_location": "L33",
       "id": "lib_journey_era_colors",
-      "community": 18,
+      "community": 84,
       "norm_label": "era_colors"
     },
     {
@@ -6192,7 +6210,7 @@
       "source_file": "src/lib/journey.ts",
       "source_location": "L61",
       "id": "lib_journey_eras",
-      "community": 18,
+      "community": 84,
       "norm_label": "eras"
     },
     {
@@ -6255,7 +6273,7 @@
       "source_file": "src/data/services.json",
       "source_location": "L1",
       "id": "src_data_services_json",
-      "community": 2,
+      "community": 13,
       "norm_label": "services.json"
     },
     {
@@ -6282,7 +6300,7 @@
       "source_file": "src/data/courses.json",
       "source_location": "L1",
       "id": "src_data_courses_json",
-      "community": 32,
+      "community": 79,
       "norm_label": "courses.json"
     },
     {
@@ -6291,7 +6309,7 @@
       "source_file": "src/data/courses.json",
       "source_location": "L2",
       "id": "data_courses_lastupdated",
-      "community": 32,
+      "community": 79,
       "norm_label": "lastupdated"
     },
     {
@@ -6300,7 +6318,7 @@
       "source_file": "src/data/courses.json",
       "source_location": "L3",
       "id": "data_courses_total",
-      "community": 32,
+      "community": 79,
       "norm_label": "total"
     },
     {
@@ -6309,7 +6327,7 @@
       "source_file": "src/data/courses.json",
       "source_location": "L4",
       "id": "data_courses_items",
-      "community": 32,
+      "community": 79,
       "norm_label": "items"
     },
     {
@@ -6318,7 +6336,7 @@
       "source_file": "src/data/journey-2026.json",
       "source_location": "L1",
       "id": "src_data_journey_2026_json",
-      "community": 18,
+      "community": 83,
       "norm_label": "journey-2026.json"
     },
     {
@@ -6327,7 +6345,7 @@
       "source_file": "src/data/journey-2026.json",
       "source_location": "L2",
       "id": "data_journey_2026_lastupdated",
-      "community": 18,
+      "community": 83,
       "norm_label": "lastupdated"
     },
     {
@@ -6336,7 +6354,7 @@
       "source_file": "src/data/journey-2026.json",
       "source_location": "L3",
       "id": "data_journey_2026_totaldays",
-      "community": 18,
+      "community": 83,
       "norm_label": "totaldays"
     },
     {
@@ -6345,7 +6363,7 @@
       "source_file": "src/data/journey-2026.json",
       "source_location": "L4",
       "id": "data_journey_2026_currentera",
-      "community": 18,
+      "community": 83,
       "norm_label": "currentera"
     },
     {
@@ -6354,7 +6372,7 @@
       "source_file": "src/data/journey-2026.json",
       "source_location": "L5",
       "id": "data_journey_2026_entries",
-      "community": 18,
+      "community": 83,
       "norm_label": "entries"
     },
     {
@@ -6790,6 +6808,15 @@
       "norm_label": "what's covered"
     },
     {
+      "label": "year()",
+      "file_type": "code",
+      "source_file": "src/components/journey/CurrentReading.tsx",
+      "source_location": "L21",
+      "community": 79,
+      "norm_label": "year()",
+      "id": "journey_currentreading_year"
+    },
+    {
       "label": "scan_global_tools()",
       "file_type": "code",
       "source_file": "scripts/scan-tools.py",
@@ -7082,7 +7109,7 @@
       "file_type": "code",
       "source_file": "src/app/journey/page.tsx",
       "source_location": "L12",
-      "community": 18,
+      "community": 76,
       "norm_label": "journeypage()",
       "id": "page_journeypage"
     },
@@ -7091,7 +7118,7 @@
       "file_type": "code",
       "source_file": "src/app/photo-booth-owners/vlogs/[slug]/page.tsx",
       "source_location": "L8",
-      "community": 12,
+      "community": 3,
       "norm_label": "generatestaticparams()",
       "id": "page_generatestaticparams"
     },
@@ -7262,7 +7289,7 @@
       "file_type": "code",
       "source_file": "src/components/sections/BlogCard.tsx",
       "source_location": "L13",
-      "community": 83,
+      "community": 12,
       "norm_label": "blogcard()",
       "id": "blogcard_blogcard"
     },
@@ -7307,7 +7334,7 @@
       "file_type": "code",
       "source_file": "src/components/forms/ConsultationForm.tsx",
       "source_location": "L23",
-      "community": 7,
+      "community": 6,
       "norm_label": "consultationform()",
       "id": "consultationform_consultationform"
     },
@@ -7469,7 +7496,7 @@
       "file_type": "code",
       "source_file": "src/components/journey/StatsHeader.tsx",
       "source_location": "L10",
-      "community": 18,
+      "community": 76,
       "norm_label": "statsheader()",
       "id": "statsheader_statsheader"
     },
@@ -7559,7 +7586,7 @@
       "file_type": "code",
       "source_file": "src/components/photo-booth-owners/GuideCard.tsx",
       "source_location": "L47",
-      "community": 79,
+      "community": 13,
       "norm_label": "cn()",
       "id": "guidecard_cn"
     },
@@ -7577,7 +7604,7 @@
       "file_type": "code",
       "source_file": "src/components/photo-booth-owners/InquiryForm.tsx",
       "source_location": "L40",
-      "community": 13,
+      "community": 7,
       "norm_label": "handlesubmit()",
       "id": "inquiryform_handlesubmit"
     },
@@ -7586,7 +7613,7 @@
       "file_type": "code",
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L49",
-      "community": 76,
+      "community": 13,
       "norm_label": "accent()",
       "id": "toolcard_accent"
     },
@@ -7595,7 +7622,7 @@
       "file_type": "code",
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L53",
-      "community": 76,
+      "community": 13,
       "norm_label": "toolcard()",
       "id": "toolcard_toolcard"
     },
@@ -7604,7 +7631,7 @@
       "file_type": "code",
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L70",
-      "community": 76,
+      "community": 13,
       "norm_label": "cn()",
       "id": "toolcard_cn"
     },
@@ -7658,7 +7685,7 @@
       "file_type": "code",
       "source_file": "src/lib/blog.ts",
       "source_location": "L23",
-      "community": 12,
+      "community": 3,
       "norm_label": "getallposts()",
       "id": "blog_getallposts"
     },
@@ -14251,9 +14278,9 @@
       "source_file": "src/app/work/WorkPageContent.tsx",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_work_workpagecontent_tsx",
-      "target": "work_workpagecontent_subcategory_labels",
-      "confidence_score": 1.0
+      "target": "work_workpagecontent_subcategory_labels"
     },
     {
       "relation": "contains",
@@ -14321,9 +14348,9 @@
       "source_file": "src/app/work/WorkPageContent.tsx",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_work_workpagecontent_tsx",
-      "target": "work_workpagecontent_photo_booth_domains",
-      "confidence_score": 1.0
+      "target": "work_workpagecontent_photo_booth_domains"
     },
     {
       "relation": "contains",
@@ -16752,21 +16779,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/journey/CurrentReading.tsx",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_components_journey_currentreading_tsx",
-      "target": "journey_currentreading_year"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/journey/CurrentReading.tsx",
       "source_location": "L19",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_components_journey_currentreading_tsx",
       "target": "journey_currentreading_currentreading"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/journey/CurrentReading.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_journey_currentreading_tsx",
+      "target": "journey_currentreading_year"
     },
     {
       "relation": "imports_from",
@@ -17021,6 +17048,28 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/components/journey/JourneyTimeline.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_journey_journeytimeline_tsx",
+      "target": "src_lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/journey/JourneyTimeline.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_journey_journeytimeline_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/journey/JourneyTimeline.tsx",
       "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -17057,6 +17106,36 @@
       "confidence_score": 1.0,
       "source": "src_components_journey_journeytimeline_tsx",
       "target": "journey_journeytimeline_getmonthkey"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/journey/JourneyTimeline.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_components_journey_journeytimeline_tsx",
+      "target": "journey_journeytimeline_getcurrentmonthkey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/journey/JourneyTimeline.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "src_components_journey_journeytimeline_tsx",
+      "target": "journey_journeytimeline_annotatedentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/journey/JourneyTimeline.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "src_components_journey_journeytimeline_tsx",
+      "target": "journey_journeytimeline_monthgroup",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -19438,5 +19517,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "523eadae1193dd0068552f6dc91e6eb107bf93ea"
+  "built_at_commit": "7952e255e61454956aadc8ce7630eac7cbf801d8"
 }
