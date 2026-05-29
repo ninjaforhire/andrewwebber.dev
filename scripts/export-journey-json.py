@@ -128,7 +128,7 @@ def parse_blocks(blocks: list[dict]) -> dict:
 def props_to_entry(page: dict, body_data: dict) -> dict:
     props = page["properties"]
 
-    title_parts = props.get("Day", {}).get("title", [])
+    title_parts = props.get("Title", {}).get("title", []) or props.get("Day", {}).get("title", [])
     title = extract_rich_text(title_parts) if title_parts else "Untitled"
 
     date_obj = props.get("Date", {}).get("date")
@@ -144,6 +144,11 @@ def props_to_entry(page: dict, body_data: dict) -> dict:
     era = era_obj["name"] if era_obj else ""
     streak = props.get("Streak Day", {}).get("number", 0) or 0
 
+    link = (props.get("Links") or {}).get("url")
+    channel_rt = props.get("Channel", {}).get("rich_text", [])
+    channel = extract_rich_text(channel_rt) if channel_rt else ""
+    runtime = props.get("Runtime (min)", {}).get("number")
+
     return {
         "day": int(streak),
         "date": date_str,
@@ -153,10 +158,64 @@ def props_to_entry(page: dict, body_data: dict) -> dict:
         "source": source,
         "category": categories,
         "impact": impact,
+        "url": link,
+        "channel": channel,
+        "runtime_min": runtime,
         "videos": body_data.get("videos", []),
         "builds": body_data.get("builds", []),
         "takeaway": body_data.get("takeaway", ""),
     }
+
+
+def bundle_videos_into_journal(entries: list[dict]) -> list[dict]:
+    """Merge per-video LL records (Source=YouTube or Type=Video) into each day's journal entry's videos[] list."""
+    from collections import defaultdict
+    by_date: dict[str, list[dict]] = defaultdict(list)
+    for e in entries:
+        by_date[e.get("date") or ""].append(e)
+
+    out: list[dict] = []
+    for date_key, day_entries in by_date.items():
+        # Journal = entry whose title looks like "Day NNN" or has builds or takeaway populated
+        def is_journal(e: dict) -> bool:
+            t = (e.get("title") or "").strip()
+            if t.startswith("Day "):
+                return True
+            if e.get("builds") or (e.get("takeaway") or "").strip():
+                return True
+            return False
+
+        def is_video_record(e: dict) -> bool:
+            if e.get("source") == "YouTube":
+                return True
+            types = e.get("type") or []
+            return any(t in {"Video", "YouTube"} for t in types)
+
+        journals = [e for e in day_entries if is_journal(e)]
+        videos = [e for e in day_entries if is_video_record(e) and not is_journal(e)]
+        other = [e for e in day_entries if e not in journals and e not in videos]
+
+        if journals:
+            journal = journals[0]
+            existing = list(journal.get("videos") or [])
+            for v in videos:
+                existing.append({
+                    "title": v.get("title", ""),
+                    "channel": v.get("channel") or "",
+                    "url": v.get("url") or "",
+                    "runtime_min": v.get("runtime_min"),
+                    "category": v.get("category") or [],
+                })
+            journal["videos"] = existing
+            out.append(journal)
+            # Keep any other non-journal, non-video entries (e.g. books, courses)
+            out.extend(other)
+            out.extend(journals[1:])  # in case of multiple journals same day
+        else:
+            # No journal entry that day — keep video records as-is (won't show as bundled)
+            out.extend(day_entries)
+
+    return out
 
 
 def main() -> None:
@@ -179,6 +238,7 @@ def main() -> None:
         entry = props_to_entry(page, body_data)
         entries.append(entry)
 
+    entries = bundle_videos_into_journal(entries)
     entries.sort(key=lambda e: e["day"], reverse=True)
     current_era = entries[0]["era"] if entries else ""
 

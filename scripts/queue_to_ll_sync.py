@@ -109,7 +109,7 @@ def create_ll_page(title: str, type_: str, category: str, source_url: str | None
     ll_type = type_map.get(type_, "Other")
 
     props: dict = {
-        "Day": {"title": [{"type": "text", "text": {"content": title}}]},
+        "Title": {"title": [{"type": "text", "text": {"content": title}}]},
         "Date": {"date": {"start": today}},
         "Type": {"multi_select": [{"name": ll_type}]},
         "Status": {"status": {"name": "Done"}},

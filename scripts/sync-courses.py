@@ -86,7 +86,7 @@ def main():
         types = [t["name"] for t in (p.get("Type", {}).get("multi_select") or [])]
         if not ({"Book", "Course"} & set(types)):
             continue
-        title = gtext(p.get("Day"))
+        title = gtext(p.get("Title") or p.get("Day"))
         if not title:
             continue
         url = (p.get("Links") or {}).get("url")
