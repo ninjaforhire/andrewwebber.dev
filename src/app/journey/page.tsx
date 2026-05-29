@@ -19,12 +19,12 @@ export default function JourneyPage() {
   return (
     <div className="page-x py-16 md:py-32">
       <StatsHeader data={journeyData} />
+      <CurrentReading />
       <EraFilter
         active={activeEra}
         onSelect={setActiveEra}
         total={journeyData.entries.length}
       />
-      <CurrentReading />
       <JourneyTimeline entries={filtered} />
     </div>
   );

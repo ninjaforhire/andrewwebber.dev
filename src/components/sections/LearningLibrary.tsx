@@ -43,7 +43,7 @@ function getYear(date: string | null): string {
 export function LearningLibrary() {
   const [typeFilter, setTypeFilter] = useState<TypeFilter>("All");
   const [sourceFilter, setSourceFilter] = useState<string | null>(null);
-  const [statusFilter, setStatusFilter] = useState<"All" | "Done" | "In progress">("All");
+  const [statusFilter, setStatusFilter] = useState<"All" | "Done" | "In progress" | "Not started">("All");
 
   const items = coursesData.items as CourseItem[];
 
@@ -113,7 +113,7 @@ export function LearningLibrary() {
         <span className="text-border">·</span>
 
         <div className="flex gap-2">
-          {(["All", "Done", "In progress"] as const).map((s) => (
+          {(["All", "Done", "In progress", "Not started"] as const).map((s) => (
             <button
               key={s}
               onClick={() => setStatusFilter(s)}
@@ -225,6 +225,11 @@ export function LearningLibrary() {
                 {c.status === "In progress" && (
                   <span className="hidden rounded-full border border-data/20 bg-data/10 px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider text-data sm:inline">
                     In progress
+                  </span>
+                )}
+                {c.status === "Not started" && (
+                  <span className="hidden rounded-full border border-border bg-muted/40 px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider text-muted-foreground sm:inline">
+                    Not started
                   </span>
                 )}
               </div>
