@@ -1,4 +1,16 @@
 {
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true,
+    "security-guidance@claude-code-plugins": false,
+    "mighty@mighty": false,
+    "playground@claude-plugins-official": false,
+    "telegram@claude-plugins-official": false,
+    "caveman@caveman": false,
+    "rust-analyzer-lsp@claude-plugins-official": false,
+    "design-extract@design-extract": false,
+    "exa@claude-plugins-official": false,
+    "greptile@claude-plugins-official": false
+  },
   "hooks": {
     "PreToolUse": [
       {
