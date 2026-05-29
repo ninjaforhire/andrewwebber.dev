@@ -90,7 +90,7 @@ export function NavRail() {
 
       {/* Controls */}
       <div className="flex flex-col items-center gap-4">
-        <SoundPicker iconSize={18} align="left" direction="up" />
+        <SoundPicker iconSize={18} align="left" direction="right" />
         <button
           onClick={toggleTheme}
           className="text-muted-foreground transition-colors hover:text-warm"

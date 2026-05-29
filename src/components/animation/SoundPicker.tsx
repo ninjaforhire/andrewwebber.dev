@@ -31,10 +31,11 @@ interface Props {
   iconSize?: number;
   className?: string;
   align?: "left" | "right";
-  direction?: "up" | "down";
+  direction?: "up" | "down" | "right";
 }
 
 export function SoundPicker({ iconSize = 18, className, align = "right", direction = "down" }: Props) {
+  const isSide = direction === "right";
   const [mode, setMode] = useState<Mode>("off");
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
@@ -101,8 +102,12 @@ export function SoundPicker({ iconSize = 18, className, align = "right", directi
           aria-label="Focus audio"
           className={cn(
             "absolute z-50 min-w-[180px] rounded-md border border-border bg-popover/95 p-1 shadow-lg backdrop-blur-md",
-            align === "right" ? "right-0" : "left-0",
-            direction === "up" ? "bottom-full mb-2" : "top-full mt-2"
+            isSide
+              ? "left-full ml-3 bottom-0"
+              : cn(
+                  align === "right" ? "right-0" : "left-0",
+                  direction === "up" ? "bottom-full mb-2" : "top-full mt-2"
+                )
           )}
         >
           {MODES.map((m) => (
