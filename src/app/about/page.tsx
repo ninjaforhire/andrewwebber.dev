@@ -1,8 +1,12 @@
+import fs from "fs";
+import path from "path";
 import type { Metadata } from "next";
 import { CertTimeline } from "@/components/sections/CertTimeline";
 import { ContactForm } from "@/components/forms/ContactForm";
-import { CharacterStats, CharacterStatsStrip } from "@/components/sections/CharacterStats";
+import { CharacterStatsStrip } from "@/components/sections/CharacterStats";
 import { LearningLibrary } from "@/components/sections/LearningLibrary";
+import { MatrixRain } from "@/components/portrait/MatrixRain";
+import { PortraitFigure } from "@/components/portrait/PortraitFigure";
 
 export const metadata: Metadata = {
   title: "Dossier",
@@ -10,123 +14,242 @@ export const metadata: Metadata = {
     "The story behind the code. Andrew Webber — builder, automation architect, and creative coder from Fort Worth, TX.",
 };
 
+const ROOT = process.cwd();
+const LINEART_SVG = fs.readFileSync(
+  path.join(ROOT, "src/data/portrait-lineart.svg"),
+  "utf-8",
+);
+
+const HERO_LABEL_SHADOW = "0 0 18px var(--background), 0 0 36px var(--background)";
+const HERO_TEXT_SHADOW =
+  "0 0 28px var(--background), 0 0 56px var(--background), 0 0 90px var(--background), 0 0 120px var(--background)";
+
+const CHAPTERS = [
+  {
+    year: "1996",
+    tag: "Origin",
+    hook: "Dad brought home a Windows 3.1 machine when I was six. Zero games.",
+    body: "I clicked through every folder anyway. Trying to figure out how it all connected. Couldn't stop.",
+    accent: "text-warm",
+  },
+  {
+    year: "2001",
+    tag: "First builds",
+    hook: "Fifth grade. Wrote my first HTML page.",
+    body: "View source on every site I liked. Copied tags into Notepad. Hit refresh. Repeat. Nobody asked me to. The compulsion never went away.",
+    accent: "text-data",
+  },
+  {
+    year: "2004",
+    tag: "LAN years",
+    hook: "Built my first gaming rig.",
+    body: "Counter-Strike at a competitive level. LAN tournaments across the country. The sweatiest years of my life. My parents drove me everywhere, paid the entry fees, and never once told me to do something else. They are heroes.",
+    accent: "text-warm",
+  },
+  {
+    year: "2006",
+    tag: "Live events",
+    hook: "Started running live events across DFW.",
+    body: "Sound, lighting, AV, photography. Every weekend was a new venue, a new load-in, a new way for gear to get broken in transit. Got fluent in problem-solving under a clock.",
+    accent: "text-creative",
+  },
+  {
+    year: "2016",
+    tag: "MIGHTY",
+    hook: "Founded MIGHTY Photo Booths.",
+    body: "Premium photo + video activations for corporate brands. Canon DSLRs. Custom designs from scratch. Self-powered battery setups.",
+    accent: "text-creative",
+    stats: [
+      { n: "55+", k: "Brands served" },
+      { n: "80+", k: "Custom configs" },
+      { n: "9", k: "Years live" },
+    ],
+  },
+  {
+    year: "2023",
+    tag: "ADHD ≠ bug",
+    hook: "Figured out the thing people called a weakness was actually the engine.",
+    body: "143+ tools. Multiple businesses. Hyperfocus until the problem dies. Stopped fighting it. Started pointing it at code.",
+    accent: "text-terminal",
+  },
+  {
+    year: "Now",
+    tag: "Today",
+    hook: "AI agents. Automation systems. Creative code. Cybersecurity.",
+    body: "Systems guy who loves perfect organization, LaCroix, and shipping things that make other people's lives easier. I help by building, not lecturing.",
+    accent: "text-terminal",
+  },
+];
+
 export default function AboutPage() {
   return (
-    <div className="page-x py-24 md:py-32">
+    <>
+      <MatrixRain />
 
-      {/* HEADER */}
-      <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-creative mb-6">
-        § 01 — Dossier
-      </div>
-      <h1 className="crop font-extrabold text-[clamp(56px,10vw,140px)] leading-[0.88]">
-        Builder. <br />
-        <span className="text-creative">Storyteller.</span><br />
-        Systems guy.
-      </h1>
+      <div className="page-x py-24 md:py-32 relative">
+        {/* HERO + STORY — left content column; PortraitFigure pins to the right 40vw of the viewport. */}
+        <section className="relative">
+          <PortraitFigure
+            lineartSvg={LINEART_SVG}
+            photoSrc="/images/portrait/andrew-display.jpg"
+          />
 
-      {/* STORY */}
-      <div className="mt-20 max-w-4xl space-y-8 text-2xl leading-relaxed text-muted-foreground">
-        <p>
-          My dad brought home a computer when I was about six years old. It was running{" "}
-          <span className="text-warm">Windows 3.1</span> and didn&apos;t have a single game on it. But I had this unexplainable fascination with the way the file systems worked. I&apos;d click through every folder, every icon, trying to understand how it all connected.
-        </p>
-
-        <p>
-          By fifth grade I was building my own computers and making websites. Not because anyone told me to. Because I couldn&apos;t stop.
-        </p>
-
-        <p>
-          That energy never went away. In <span className="text-data">2006</span>, I started working in live events across DFW. Sound, lighting, AV production, photography. I learned how to make things work under pressure, on a deadline, with zero margin for error.
-        </p>
-
-        <p>
-          On <span className="text-creative">December 5, 2016</span>, I founded{" "}
-          <a
-            href="https://mightyphotobooths.com"
-            className="text-creative underline decoration-creative/30 transition-colors hover:text-creative/80"
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
+            className="relative z-10 rounded-2xl px-5 py-8 backdrop-blur-sm md:px-8 md:py-10 lg:mr-[40%]"
+            style={{ background: "color-mix(in oklab, var(--background) 80%, transparent)" }}
           >
-            MIGHTY Photo Booths
-          </a>
-          . Premium photo experiences for corporate events and brand activations. Canon DSLRs, custom designs from scratch, self-powered battery setups. 55+ brands served. 80+ unique configurations.
-        </p>
+            {/* HEADER */}
+            <div
+              className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-creative mb-6"
+              style={{ textShadow: HERO_LABEL_SHADOW }}
+            >
+              § 01 — Dossier
+            </div>
+            <h1
+              className="crop font-extrabold text-[clamp(56px,9vw,128px)] leading-[0.88]"
+              style={{ textShadow: HERO_TEXT_SHADOW }}
+            >
+              Builder. <br />
+              <span className="text-creative">Storyteller.</span>
+              <br />
+              Systems guy.
+            </h1>
 
-        <p>
-          Somewhere along the way I discovered my <span className="text-terminal">ADHD superpower</span>. The thing people told me was a weakness turned out to be the reason I can build 143+ tools, manage multiple businesses, and hyperfocus on problems until they&apos;re solved. I stopped fighting it and started unleashing it on code.
-        </p>
+            {/* STATS STRIP */}
+            <div className="mt-12 md:mt-16">
+              <CharacterStatsStrip />
+            </div>
 
-        <p>
-          Today I build AI agents, automation systems, and creative code. I have a passion for{" "}
-          <span className="text-terminal">cybersecurity</span>,{" "}
-          <span className="text-warm">AV production</span>,{" "}
-          <span className="text-creative">photography</span>, and{" "}
-          <span className="text-data">everything tech</span>. I&apos;m a systems guy who loves perfect organization, LaCroix, and building things that make other people&apos;s lives easier.
-        </p>
-
-        <p>
-          No aspirations of being a teacher. I help people and businesses by building, not lecturing. I love my family more than anyone should be allowed to love.
-        </p>
-      </div>
-
-      {/* CHARACTER STATS */}
-      <div className="mt-20 md:mt-40 pt-16 md:pt-32 border-t border-white/5">
-        <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-terminal mb-6">
-          § 02 — Character Sheet
-        </div>
-        <h2 className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] mb-8">
-          Stats <span className="text-terminal">unlocked</span>.
-        </h2>
-        <p className="text-xl md:text-xl md:text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-10 md:mb-12 md:mb-16">
-          Twenty years of practice across six disciplines. Still grinding XP.
-        </p>
-        <div className="md:hidden">
-          <CharacterStatsStrip />
-        </div>
-        <div className="hidden md:block">
-          <CharacterStats />
-        </div>
-      </div>
-
-      {/* EDUCATION */}
-      <div className="mt-20 md:mt-40 pt-16 md:pt-32 border-t border-white/5">
-        <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-data mb-6">
-          § 03 — Credentials
-        </div>
-        <h2 className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] mb-8">
-          Always <span className="text-data">learning</span>.<br />
-          Never done.
-        </h2>
-        <p className="text-xl md:text-xl md:text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-10 md:mb-12 md:mb-16">
-          Certifications, courses, and credentials picked up along the way.
-        </p>
-        <CertTimeline />
-
-        {/* LEARNING LIBRARY — books + courses (Audible, Skillshare, PBM, YouTube) */}
-        <div className="mt-16 md:mt-24">
-          <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-warm mb-4">
-            Library / books + courses
+            {/* CHAPTERED STORY — replaces the wall of text. Each chapter:
+                year marker · short tag · big hook · subordinate body line. */}
+            <div className="mt-24 md:mt-32 space-y-16 md:space-y-20">
+              {CHAPTERS.map((c, i) => (
+                <article
+                  key={c.year}
+                  className="grid gap-3 md:grid-cols-[140px_1fr] md:gap-6"
+                >
+                  <div className="font-mono">
+                    <div
+                      className={`text-2xl md:text-3xl font-bold tabular-nums ${c.accent}`}
+                      style={{ textShadow: HERO_LABEL_SHADOW }}
+                    >
+                      {c.year}
+                    </div>
+                    <div className="mt-1 text-[10px] uppercase tracking-[0.3em] text-muted-foreground/70">
+                      {c.tag}
+                    </div>
+                  </div>
+                  <div>
+                    <p
+                      className="font-heading text-2xl md:text-3xl font-bold leading-[1.15]"
+                      style={{ textShadow: HERO_LABEL_SHADOW }}
+                    >
+                      {c.hook.includes("MIGHTY Photo Booths") ? (
+                        <>
+                          {c.hook.split("MIGHTY")[0]}
+                          <a
+                            href="https://mightyphotobooths.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-creative underline decoration-creative/30 hover:text-creative/80"
+                          >
+                            MIGHTY Photo Booths
+                          </a>
+                          {c.hook.split("MIGHTY Photo Booths")[1]}
+                        </>
+                      ) : (
+                        c.hook
+                      )}
+                    </p>
+                    <p className="mt-3 text-base md:text-lg leading-relaxed text-muted-foreground max-w-xl">
+                      {c.body}
+                    </p>
+                    {c.stats && (
+                      <div className="mt-5 grid grid-cols-3 gap-4 max-w-md">
+                        {c.stats.map((s) => (
+                          <div key={s.k}>
+                            <div className="font-mono text-xl md:text-2xl font-bold text-creative tabular-nums">
+                              {s.n}
+                            </div>
+                            <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground/70">
+                              {s.k}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                  {i < CHAPTERS.length - 1 && (
+                    <div className="md:col-span-2 mt-10 h-px bg-white/5" />
+                  )}
+                </article>
+              ))}
+            </div>
           </div>
-          <p className="text-base md:text-lg leading-relaxed text-muted-foreground max-w-3xl mb-8">
-            The reading and self-study stack. Business, leadership, design, security. Always something open in the queue.
-          </p>
-          <LearningLibrary />
-        </div>
-      </div>
+        </section>
 
-      {/* CONTACT */}
-      <div id="contact" className="mt-20 md:mt-40 pt-16 md:pt-32 border-t border-white/5">
-        <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-terminal mb-6">
-          § 04 — Get in touch
+        {/* EDUCATION — anchored left, constrained, plated against the portrait */}
+        <div
+          className="relative z-10 mt-16 md:mt-24 rounded-2xl px-5 py-12 backdrop-blur-sm md:px-8 md:py-16 lg:mr-[40%]"
+          style={{ background: "color-mix(in oklab, var(--background) 80%, transparent)" }}
+        >
+          <div
+            className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-data mb-6"
+            style={{ textShadow: HERO_LABEL_SHADOW }}
+          >
+            § 02 — Credentials
+          </div>
+          <h2
+            className="crop font-extrabold text-[clamp(40px,7vw,96px)] leading-[0.9] mb-6"
+            style={{ textShadow: HERO_TEXT_SHADOW }}
+          >
+            Always <span className="text-data">learning</span>.<br />
+            Never done.
+          </h2>
+          <p className="text-lg md:text-xl leading-relaxed text-muted-foreground max-w-2xl mb-10">
+            Certifications, courses, and credentials picked up along the way.
+          </p>
+          <CertTimeline />
+
+          <div className="mt-16 md:mt-24">
+            <div
+              className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-warm mb-4"
+              style={{ textShadow: HERO_LABEL_SHADOW }}
+            >
+              Library / books + courses
+            </div>
+            <p className="text-base md:text-lg leading-relaxed text-muted-foreground max-w-2xl mb-8">
+              The reading and self-study stack. Business, leadership, design, security. Always
+              something open in the queue.
+            </p>
+            <LearningLibrary />
+          </div>
         </div>
-        <h2 className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] mb-8">
-          Say <span className="text-terminal">hello</span>.
-        </h2>
-        <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-10 md:mb-12">
-          Question, collaboration, or just want to say hey.
-        </p>
-        <ContactForm />
+
+        {/* CONTACT — backplate at 80% bg so the portrait + rain barely peek through */}
+        <div
+          id="contact"
+          className="relative z-10 mt-32 md:mt-48 rounded-2xl border border-white/5 px-6 md:px-10 py-16 md:py-24 backdrop-blur-sm"
+          style={{ background: "color-mix(in oklab, var(--background) 80%, transparent)" }}
+        >
+          <div
+            className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-terminal mb-6"
+            style={{ textShadow: HERO_LABEL_SHADOW }}
+          >
+            § 03 — Get in touch
+          </div>
+          <h2
+            className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] mb-8"
+            style={{ textShadow: HERO_TEXT_SHADOW }}
+          >
+            Say <span className="text-terminal">hello</span>.
+          </h2>
+          <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-10 md:mb-12">
+            Question, collaboration, or just want to say hey.
+          </p>
+          <ContactForm />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
