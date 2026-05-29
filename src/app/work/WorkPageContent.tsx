@@ -3,7 +3,7 @@
 import { useMemo, useState, useEffect } from "react";
 import type { Project } from "@/lib/projects";
 import { ProjectCard } from "@/components/sections/ProjectCard";
-import { ServiceTier } from "@/components/sections/ServiceTier";
+import { ConsultingSection } from "@/components/sections/ConsultingSection";
 import { ConsultationForm } from "@/components/forms/ConsultationForm";
 import { cn } from "@/lib/utils";
 import toolsData from "@/data/mighty-tools.json";
@@ -323,34 +323,8 @@ export function WorkPageContent() {
           Limited engagements each quarter for businesses ready to level up.
         </p>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-2">
-          <ServiceTier
-            title="Photo Booth Consulting"
-            price="Let's Talk"
-            description="20 years of live event experience. Ask me anything."
-            features={[
-              "Photo booth business strategy",
-              "Website and SEO audit",
-              "Security assessment",
-              "Equipment and workflow review",
-              "Brand positioning guidance",
-            ]}
-            accent="creative"
-          />
-          <ServiceTier
-            title="AI Implementation"
-            price="$1,000"
-            description="Custom AI automation for your business operations."
-            features={[
-              "Process automation audit",
-              "Custom agent architecture",
-              "Dashboard and reporting build",
-              "AI operations integration",
-              "30-day post-implementation support",
-            ]}
-            accent="warm"
-            featured
-          />
+        <div className="mt-16">
+          <ConsultingSection />
         </div>
       </div>
 
