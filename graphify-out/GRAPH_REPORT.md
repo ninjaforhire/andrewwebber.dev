@@ -1,16 +1,16 @@
-# Graph Report - andrewwebber.dev  (2026-05-28)
+# Graph Report - andrewwebber.dev  (2026-05-29)
 
 ## Corpus Check
-- 110 files · ~509,319 words
+- 115 files · ~511,364 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 856 nodes · 1149 edges · 86 communities (74 shown, 12 thin omitted)
-- Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 42 edges (avg confidence: 0.8)
+- 915 nodes · 1236 edges · 93 communities (81 shown, 12 thin omitted)
+- Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 42 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7952e255`
+- Built from commit: `65aa4d8b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -100,6 +100,13 @@
 - [[_COMMUNITY_Community 83|Community 83]]
 - [[_COMMUNITY_Community 84|Community 84]]
 - [[_COMMUNITY_Community 85|Community 85]]
+- [[_COMMUNITY_Community 86|Community 86]]
+- [[_COMMUNITY_Community 87|Community 87]]
+- [[_COMMUNITY_Community 88|Community 88]]
+- [[_COMMUNITY_Community 89|Community 89]]
+- [[_COMMUNITY_Community 90|Community 90]]
+- [[_COMMUNITY_Community 91|Community 91]]
+- [[_COMMUNITY_Community 92|Community 92]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `cn()` - 47 edges
@@ -125,19 +132,19 @@
 - `BlogPage()` --calls--> `getAllPosts()`  [EXTRACTED]
   src/app/blog/page.tsx → src/lib/blog.ts
 
-## Communities (86 total, 12 thin omitted)
+## Communities (93 total, 12 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.07
-Nodes (51): Stat(), Home(), extract_rich_text(), fetch_all_pages(), fetch_page_blocks(), main(), parse_blocks(), props_to_entry() (+43 more)
+Cohesion: 0.11
+Nodes (29): Stat(), count_commits_for_repo(), count_loc_in_repo(), fetch_claude_2026(), gh(), is_skippable(), list_repos(), load_prev() (+21 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.17
 Nodes (33): add(), first_sentence(), has_skip_part(), main(), parse_manifest(), parse_skill_frontmatter(), scan_design_forge(), scan_global_tools() (+25 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.40
-Nodes (4): ACCENT_CLASSES, ServiceCard(), ServiceCardProps, ServiceItem
+Cohesion: 0.20
+Nodes (8): ACCENT_CLASSES, ServiceCard(), ServiceCardProps, ServiceItem, ACCENT_CYCLE, AccentKey, ServiceGroup, ServicesGrid()
 
 ### Community 3 - "Community 3"
 Cohesion: 0.09
@@ -152,12 +159,12 @@ Cohesion: 0.06
 Nodes (25): FocusAudio(), FocusMode, VALID_MODES, Mode, MODES, Props, SoundPicker(), VALID_IDS (+17 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.06
-Nodes (28): ConsultationForm(), FormData, SERVICES, ALL_TAGS, Project, PROJECTS, ACCENT_BG, ACCENT_BORDER (+20 more)
+Cohesion: 0.09
+Nodes (18): ConsultationForm(), FormData, SERVICES, accentFor(), CATEGORY_ACCENT, CATEGORY_LABELS, CATEGORY_ORDER, CODE_COUNCIL (+10 more)
 
 ### Community 7 - "Community 7"
-Cohesion: 0.12
-Nodes (14): BOOT_LINES, LoadingScreen(), WELCOME_LINES, TypeWriter(), TypeWriterProps, ContactForm(), InquiryPill(), cn() (+6 more)
+Cohesion: 0.13
+Nodes (13): BOOT_LINES, LoadingScreen(), WELCOME_LINES, TypeWriter(), TypeWriterProps, ContactForm(), InquiryPill(), cn() (+5 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.40
@@ -180,8 +187,8 @@ Cohesion: 0.08
 Nodes (21): calculateReadingTime(), Comments(), GISCUS, getPostBySlug(), LikeButton(), LikeButtonProps, blogMDXComponents, Props (+13 more)
 
 ### Community 13 - "Community 13"
-Cohesion: 0.07
-Nodes (22): CalcomEmbed(), CalcomEmbedProps, ACCENT, Guide, GuideCard(), STORE_LABELS, Hero(), mergeTools() (+14 more)
+Cohesion: 0.12
+Nodes (10): CalcomEmbed(), CalcomEmbedProps, ACCENT, Guide, GuideCard(), STORE_LABELS, Hero(), mergeTools() (+2 more)
 
 ### Community 14 - "Community 14"
 Cohesion: 0.09
@@ -192,8 +199,8 @@ Cohesion: 0.10
 Nodes (20): agents_live, claude_hours, claude_sessions, claude_tokens, countedAt, github_commits, github_loc, live_agents_registry (+12 more)
 
 ### Community 18 - "Community 18"
-Cohesion: 0.14
-Nodes (12): DayCard(), DayCardProps, AnnotatedEntry, JourneyTimelineProps, MonthGroup, TypeBadge(), TypeBadgeProps, IMPACT_COLORS (+4 more)
+Cohesion: 0.06
+Nodes (32): currentEra, entries, lastUpdated, totalDays, CourseItem, CurrentReading(), QueueItem, QueueMeta (+24 more)
 
 ### Community 19 - "Community 19"
 Cohesion: 0.10
@@ -240,12 +247,12 @@ Cohesion: 0.50
 Nodes (3): buildCommand, framework, outputDirectory
 
 ### Community 30 - "Community 30"
-Cohesion: 0.50
-Nodes (4): commits, files, loc, ninjaforhire/Agents
+Cohesion: 0.40
+Nodes (5): commits, files, loc, per_repo, ninjaforhire/Agents
 
 ### Community 32 - "Community 32"
-Cohesion: 0.25
-Nodes (5): CourseItem, LearningLibrary(), SOURCE_BADGE, TYPE_FILTERS, TypeFilter
+Cohesion: 0.17
+Nodes (8): items, lastUpdated, total, CourseItem, LearningLibrary(), SOURCE_BADGE, TYPE_FILTERS, TypeFilter
 
 ### Community 33 - "Community 33"
 Cohesion: 0.50
@@ -268,8 +275,8 @@ Cohesion: 0.50
 Nodes (4): commits, files, loc, ninjaforhire/cli-printing-press
 
 ### Community 38 - "Community 38"
-Cohesion: 0.40
-Nodes (5): commits, files, loc, per_repo, ninjaforhire/_Code
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/_Code
 
 ### Community 39 - "Community 39"
 Cohesion: 0.50
@@ -388,8 +395,8 @@ Cohesion: 0.20
 Nodes (10): andrewwebber.dev — Personal Portfolio + Blog, Blog Pipeline, code:bash (npm run dev          # next dev (Turbopack)), Commands, Directory Map, graphify, Hard Rules, Stack (+2 more)
 
 ### Community 76 - "Community 76"
-Cohesion: 0.24
-Nodes (5): JourneyTimeline(), journeyData, StatsHeader(), StatsHeaderProps, JourneyData
+Cohesion: 0.16
+Nodes (14): agents, claude, CODE_ROOT, countAgents(), countLOC(), countSkills(), loc, OUT (+6 more)
 
 ### Community 77 - "Community 77"
 Cohesion: 0.18
@@ -400,44 +407,72 @@ Cohesion: 0.33
 Nodes (8): build_ascii(), build_body_mask(), build_lineart_svg(), build_svg(), main(), Build 4 portrait artifacts from a single source photo.  Inputs:  public/images/p, Return an HxW uint8 alpha mask: ~255 inside body, 0 outside, feathered edges., Return an HxW uint8 alpha mask: ~255 inside body, 0 outside, feathered edges.
 
 ### Community 79 - "Community 79"
-Cohesion: 0.22
-Nodes (5): items, lastUpdated, total, CourseItem, CurrentReading()
+Cohesion: 0.25
+Nodes (8): accent(), CATEGORY_ACCENT, MightyTool, ToolCard(), CATEGORIES, ToolsGrid(), accent(), ToolCard()
+
+### Community 80 - "Community 80"
+Cohesion: 0.35
+Nodes (10): create_ll_page(), get_status(), gtext(), has_ll_relation(), load_config(), main(), ntn_call(), query_all() (+2 more)
 
 ### Community 81 - "Community 81"
+Cohesion: 0.22
+Nodes (8): items, lastUpdated, meta, displayCap, totalBooks, totalCompleted, totalInProgress, totalInQueue
+
+### Community 83 - "Community 83"
+Cohesion: 0.39
+Nodes (7): extract(), get_date(), get_status(), gtext(), load_config(), main(), query_all()
+
+### Community 84 - "Community 84"
+Cohesion: 0.31
+Nodes (13): extract_rich_text(), fetch_all_pages(), fetch_page_blocks(), main(), parse_blocks(), props_to_entry(), GET(), loadDayStreak() (+5 more)
+
+### Community 85 - "Community 85"
+Cohesion: 0.21
+Nodes (8): ALL_TAGS, Project, PROJECTS, ACCENT_BG, ACCENT_BORDER, ACCENT_TEXT, ProjectCard(), Props
+
+### Community 86 - "Community 86"
+Cohesion: 0.40
+Nodes (3): FormData, InquiryForm(), SERVICES
+
+### Community 87 - "Community 87"
+Cohesion: 0.29
+Nodes (8): count_tools(), Tools = entries in src/data/mighty-tools.json, written by scan-tools.py.      Th, Treeless clone: full commit history (cheap), no blobs until checkout., shallow_clone(), getClaudeUsage(), run(), getClaudeUsage(), run()
+
+### Community 88 - "Community 88"
+Cohesion: 0.73
+Nodes (5): create_db(), main(), ntn(), patch_data_source_properties(), resolve_dsid()
+
+### Community 89 - "Community 89"
+Cohesion: 0.50
+Nodes (3): data_source_id, db_id, ll_db_id
+
+### Community 90 - "Community 90"
+Cohesion: 0.40
+Nodes (5): Home(), count_live_agents(), count_skills(), Skills registry sibling to agent registry. One row = one skill., Canonical 'live agents' = registry entries with status active or production.
+
+### Community 92 - "Community 92"
 Cohesion: 0.40
 Nodes (4): Phase, PHASE_MS, PortraitFigure(), Props
 
-### Community 83 - "Community 83"
-Cohesion: 0.40
-Nodes (4): currentEra, entries, lastUpdated, totalDays
-
-### Community 84 - "Community 84"
-Cohesion: 0.40
-Nodes (4): EraFilter(), EraFilterProps, ERA_COLORS, ERAS
-
-### Community 85 - "Community 85"
-Cohesion: 0.67
-Nodes (3): FormattedTakeaway(), isFilePath(), renderInline()
-
 ## Knowledge Gaps
-- **396 isolated node(s):** `buildCommand`, `outputDirectory`, `framework`, `config`, `tools` (+391 more)
+- **408 isolated node(s):** `buildCommand`, `outputDirectory`, `framework`, `config`, `tools` (+403 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `cn()` connect `Community 7` to `Community 32`, `Community 2`, `Community 3`, `Community 68`, `Community 5`, `Community 6`, `Community 4`, `Community 12`, `Community 13`, `Community 80`, `Community 18`, `Community 84`?**
-  _High betweenness centrality (0.208) - this node is a cross-community bridge._
+- **Why does `cn()` connect `Community 7` to `Community 32`, `Community 2`, `Community 3`, `Community 68`, `Community 5`, `Community 6`, `Community 4`, `Community 12`, `Community 13`, `Community 79`, `Community 18`, `Community 85`, `Community 86`, `Community 91`?**
+  _High betweenness centrality (0.199) - this node is a cross-community bridge._
 - **Why does `add()` connect `Community 1` to `Community 0`, `Community 5`?**
-  _High betweenness centrality (0.137) - this node is a cross-community bridge._
+  _High betweenness centrality (0.141) - this node is a cross-community bridge._
 - **Why does `toggleTheme()` connect `Community 5` to `Community 1`?**
-  _High betweenness centrality (0.137) - this node is a cross-community bridge._
-- **Are the 11 inferred relationships involving `GET()` (e.g. with `fetch_claude_2026()` and `count_live_agents()`) actually correct?**
+  _High betweenness centrality (0.140) - this node is a cross-community bridge._
+- **Are the 11 inferred relationships involving `GET()` (e.g. with `fetch_all_pages()` and `fetch_page_blocks()`) actually correct?**
   _`GET()` has 11 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `buildCommand`, `outputDirectory`, `framework` to the rest of the system?**
-  _409 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _428 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.06578947368421052 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.10804597701149425 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
   _Cohesion score 0.0873015873015873 - nodes in this community are weakly interconnected._

@@ -1102,6 +1102,42 @@
       "norm_label": "pretooluse"
     },
     {
+      "label": "queue_config.json",
+      "file_type": "code",
+      "source_file": "scripts/queue_config.json",
+      "source_location": "L1",
+      "id": "scripts_queue_config_json",
+      "community": 89,
+      "norm_label": "queue_config.json"
+    },
+    {
+      "label": "db_id",
+      "file_type": "code",
+      "source_file": "scripts/queue_config.json",
+      "source_location": "L2",
+      "id": "scripts_queue_config_db_id",
+      "community": 89,
+      "norm_label": "db_id"
+    },
+    {
+      "label": "data_source_id",
+      "file_type": "code",
+      "source_file": "scripts/queue_config.json",
+      "source_location": "L3",
+      "id": "scripts_queue_config_data_source_id",
+      "community": 89,
+      "norm_label": "data_source_id"
+    },
+    {
+      "label": "ll_db_id",
+      "file_type": "code",
+      "source_file": "scripts/queue_config.json",
+      "source_location": "L4",
+      "id": "scripts_queue_config_ll_db_id",
+      "community": 89,
+      "norm_label": "ll_db_id"
+    },
+    {
       "label": "build-portrait-previews.py",
       "file_type": "code",
       "source_file": "scripts/build-portrait-previews.py",
@@ -1372,6 +1408,60 @@
       "norm_label": "pull the metadata callout block to recover author/duration/rating/asin/cover."
     },
     {
+      "label": "create_content_queue_db.py",
+      "file_type": "code",
+      "source_file": "scripts/create_content_queue_db.py",
+      "source_location": "L1",
+      "id": "scripts_create_content_queue_db_py",
+      "community": 88,
+      "norm_label": "create_content_queue_db.py"
+    },
+    {
+      "label": "ntn()",
+      "file_type": "code",
+      "source_file": "scripts/create_content_queue_db.py",
+      "source_location": "L28",
+      "id": "scripts_create_content_queue_db_ntn",
+      "community": 88,
+      "norm_label": "ntn()"
+    },
+    {
+      "label": "create_db()",
+      "file_type": "code",
+      "source_file": "scripts/create_content_queue_db.py",
+      "source_location": "L71",
+      "id": "scripts_create_content_queue_db_create_db",
+      "community": 88,
+      "norm_label": "create_db()"
+    },
+    {
+      "label": "patch_data_source_properties()",
+      "file_type": "code",
+      "source_file": "scripts/create_content_queue_db.py",
+      "source_location": "L82",
+      "id": "scripts_create_content_queue_db_patch_data_source_properties",
+      "community": 88,
+      "norm_label": "patch_data_source_properties()"
+    },
+    {
+      "label": "resolve_dsid()",
+      "file_type": "code",
+      "source_file": "scripts/create_content_queue_db.py",
+      "source_location": "L89",
+      "id": "scripts_create_content_queue_db_resolve_dsid",
+      "community": 88,
+      "norm_label": "resolve_dsid()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/create_content_queue_db.py",
+      "source_location": "L98",
+      "id": "scripts_create_content_queue_db_main",
+      "community": 88,
+      "norm_label": "main()"
+    },
+    {
       "label": "refresh-stats.py",
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
@@ -1385,7 +1475,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L60",
-      "id": "refresh_stats_gh",
+      "id": "scripts_refresh_stats_gh",
       "community": 0,
       "norm_label": "gh()"
     },
@@ -1394,7 +1484,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L64",
-      "id": "refresh_stats_list_repos",
+      "id": "scripts_refresh_stats_list_repos",
       "community": 0,
       "norm_label": "list_repos()"
     },
@@ -1403,7 +1493,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L74",
-      "id": "refresh_stats_shallow_clone",
+      "id": "scripts_refresh_stats_shallow_clone",
       "community": 0,
       "norm_label": "shallow_clone()"
     },
@@ -1412,7 +1502,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L91",
-      "id": "refresh_stats_is_skippable",
+      "id": "scripts_refresh_stats_is_skippable",
       "community": 0,
       "norm_label": "is_skippable()"
     },
@@ -1421,7 +1511,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L106",
-      "id": "refresh_stats_count_loc_in_repo",
+      "id": "scripts_refresh_stats_count_loc_in_repo",
       "community": 0,
       "norm_label": "count_loc_in_repo()"
     },
@@ -1430,7 +1520,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L138",
-      "id": "refresh_stats_count_commits_for_repo",
+      "id": "scripts_refresh_stats_count_commits_for_repo",
       "community": 0,
       "norm_label": "count_commits_for_repo()"
     },
@@ -1439,7 +1529,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L159",
-      "id": "refresh_stats_fetch_claude_2026",
+      "id": "scripts_refresh_stats_fetch_claude_2026",
       "community": 0,
       "norm_label": "fetch_claude_2026()"
     },
@@ -1448,7 +1538,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L195",
-      "id": "refresh_stats_count_tools",
+      "id": "scripts_refresh_stats_count_tools",
       "community": 0,
       "norm_label": "count_tools()"
     },
@@ -1457,7 +1547,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L232",
-      "id": "refresh_stats_count_skills",
+      "id": "scripts_refresh_stats_count_skills",
       "community": 0,
       "norm_label": "count_skills()"
     },
@@ -1466,7 +1556,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L248",
-      "id": "refresh_stats_count_live_agents",
+      "id": "scripts_refresh_stats_count_live_agents",
       "community": 0,
       "norm_label": "count_live_agents()"
     },
@@ -1475,7 +1565,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L268",
-      "id": "refresh_stats_load_prev",
+      "id": "scripts_refresh_stats_load_prev",
       "community": 0,
       "norm_label": "load_prev()"
     },
@@ -1484,7 +1574,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L277",
-      "id": "refresh_stats_main",
+      "id": "scripts_refresh_stats_main",
       "community": 0,
       "norm_label": "main()"
     },
@@ -1493,7 +1583,7 @@
       "file_type": "rationale",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L75",
-      "id": "refresh_stats_rationale_75",
+      "id": "scripts_refresh_stats_rationale_75",
       "community": 0,
       "norm_label": "treeless clone: full commit history (cheap), no blobs until checkout."
     },
@@ -1502,7 +1592,7 @@
       "file_type": "rationale",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L139",
-      "id": "refresh_stats_rationale_139",
+      "id": "scripts_refresh_stats_rationale_139",
       "community": 0,
       "norm_label": "count commits authored by andrew across all branches, dedup by sha."
     },
@@ -1511,7 +1601,7 @@
       "file_type": "rationale",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L160",
-      "id": "refresh_stats_rationale_160",
+      "id": "scripts_refresh_stats_rationale_160",
       "community": 0,
       "norm_label": "scoped to calendar year 2026. honest sum across non-gap blocks."
     },
@@ -1520,7 +1610,7 @@
       "file_type": "rationale",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L196",
-      "id": "refresh_stats_rationale_196",
+      "id": "scripts_refresh_stats_rationale_196",
       "community": 0,
       "norm_label": "tools = entries in src/data/mighty-tools.json, written by scan-tools.py.      th"
     },
@@ -1529,7 +1619,7 @@
       "file_type": "rationale",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L233",
-      "id": "refresh_stats_rationale_233",
+      "id": "scripts_refresh_stats_rationale_233",
       "community": 0,
       "norm_label": "skills registry sibling to agent registry. one row = one skill."
     },
@@ -1538,9 +1628,108 @@
       "file_type": "rationale",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L249",
-      "id": "refresh_stats_rationale_249",
+      "id": "scripts_refresh_stats_rationale_249",
       "community": 0,
       "norm_label": "canonical 'live agents' = registry entries with status active or production."
+    },
+    {
+      "label": "queue_to_ll_sync.py",
+      "file_type": "code",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L1",
+      "id": "scripts_queue_to_ll_sync_py",
+      "community": 80,
+      "norm_label": "queue_to_ll_sync.py"
+    },
+    {
+      "label": "load_config()",
+      "file_type": "code",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L43",
+      "id": "scripts_queue_to_ll_sync_load_config",
+      "community": 80,
+      "norm_label": "load_config()"
+    },
+    {
+      "label": "ntn_call()",
+      "file_type": "code",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L50",
+      "id": "scripts_queue_to_ll_sync_ntn_call",
+      "community": 80,
+      "norm_label": "ntn_call()"
+    },
+    {
+      "label": "query_all()",
+      "file_type": "code",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L61",
+      "id": "scripts_queue_to_ll_sync_query_all",
+      "community": 80,
+      "norm_label": "query_all()"
+    },
+    {
+      "label": "gtext()",
+      "file_type": "code",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L81",
+      "id": "scripts_queue_to_ll_sync_gtext",
+      "community": 80,
+      "norm_label": "gtext()"
+    },
+    {
+      "label": "get_status()",
+      "file_type": "code",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L88",
+      "id": "scripts_queue_to_ll_sync_get_status",
+      "community": 80,
+      "norm_label": "get_status()"
+    },
+    {
+      "label": "has_ll_relation()",
+      "file_type": "code",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L92",
+      "id": "scripts_queue_to_ll_sync_has_ll_relation",
+      "community": 80,
+      "norm_label": "has_ll_relation()"
+    },
+    {
+      "label": "create_ll_page()",
+      "file_type": "code",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L97",
+      "id": "scripts_queue_to_ll_sync_create_ll_page",
+      "community": 80,
+      "norm_label": "create_ll_page()"
+    },
+    {
+      "label": "set_ll_relation()",
+      "file_type": "code",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L159",
+      "id": "scripts_queue_to_ll_sync_set_ll_relation",
+      "community": 80,
+      "norm_label": "set_ll_relation()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L171",
+      "id": "scripts_queue_to_ll_sync_main",
+      "community": 80,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Create a LEARNING LIBRARY page. Returns the new page_id or None on failure.",
+      "file_type": "rationale",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L98",
+      "id": "scripts_queue_to_ll_sync_rationale_98",
+      "community": 80,
+      "norm_label": "create a learning library page. returns the new page_id or none on failure."
     },
     {
       "label": "stats-checkpoint.json",
@@ -1737,7 +1926,7 @@
       "source_file": "scripts/stats-checkpoint.json",
       "source_location": "L22",
       "id": "scripts_stats_checkpoint_per_repo",
-      "community": 38,
+      "community": 30,
       "norm_label": "per_repo"
     },
     {
@@ -2965,12 +3154,93 @@
       "norm_label": "commits"
     },
     {
+      "label": "sync-queue.py",
+      "file_type": "code",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L1",
+      "id": "scripts_sync_queue_py",
+      "community": 83,
+      "norm_label": "sync-queue.py"
+    },
+    {
+      "label": "load_config()",
+      "file_type": "code",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L30",
+      "id": "scripts_sync_queue_load_config",
+      "community": 83,
+      "norm_label": "load_config()"
+    },
+    {
+      "label": "query_all()",
+      "file_type": "code",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L37",
+      "id": "scripts_sync_queue_query_all",
+      "community": 83,
+      "norm_label": "query_all()"
+    },
+    {
+      "label": "gtext()",
+      "file_type": "code",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L57",
+      "id": "scripts_sync_queue_gtext",
+      "community": 83,
+      "norm_label": "gtext()"
+    },
+    {
+      "label": "get_status()",
+      "file_type": "code",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L65",
+      "id": "scripts_sync_queue_get_status",
+      "community": 83,
+      "norm_label": "get_status()"
+    },
+    {
+      "label": "get_date()",
+      "file_type": "code",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L69",
+      "id": "scripts_sync_queue_get_date",
+      "community": 83,
+      "norm_label": "get_date()"
+    },
+    {
+      "label": "extract()",
+      "file_type": "code",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L75",
+      "id": "scripts_sync_queue_extract",
+      "community": 83,
+      "norm_label": "extract()"
+    },
+    {
+      "label": "sort_key()",
+      "file_type": "code",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L98",
+      "id": "scripts_sync_queue_sort_key",
+      "community": 83,
+      "norm_label": "sort_key()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L106",
+      "id": "scripts_sync_queue_main",
+      "community": 83,
+      "norm_label": "main()"
+    },
+    {
       "label": "export-journey-json.py",
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L1",
       "id": "scripts_export_journey_json_py",
-      "community": 0,
+      "community": 84,
       "norm_label": "export-journey-json.py"
     },
     {
@@ -2979,7 +3249,7 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L29",
       "id": "export_journey_json_fetch_all_pages",
-      "community": 0,
+      "community": 84,
       "norm_label": "fetch_all_pages()"
     },
     {
@@ -2988,7 +3258,7 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L51",
       "id": "export_journey_json_fetch_page_blocks",
-      "community": 0,
+      "community": 84,
       "norm_label": "fetch_page_blocks()"
     },
     {
@@ -2997,7 +3267,7 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L68",
       "id": "export_journey_json_extract_rich_text",
-      "community": 0,
+      "community": 84,
       "norm_label": "extract_rich_text()"
     },
     {
@@ -3006,7 +3276,7 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L72",
       "id": "export_journey_json_parse_blocks",
-      "community": 0,
+      "community": 84,
       "norm_label": "parse_blocks()"
     },
     {
@@ -3015,7 +3285,7 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L128",
       "id": "export_journey_json_props_to_entry",
-      "community": 0,
+      "community": 84,
       "norm_label": "props_to_entry()"
     },
     {
@@ -3024,7 +3294,7 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L162",
       "id": "export_journey_json_main",
-      "community": 0,
+      "community": 84,
       "norm_label": "main()"
     },
     {
@@ -3204,7 +3474,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L1",
       "id": "scripts_sync_claude_stats_js",
-      "community": 0,
+      "community": 76,
       "norm_label": "sync-claude-stats.js"
     },
     {
@@ -3213,7 +3483,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L12",
       "id": "scripts_sync_claude_stats_code_root",
-      "community": 0,
+      "community": 76,
       "norm_label": "code_root"
     },
     {
@@ -3222,7 +3492,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L13",
       "id": "scripts_sync_claude_stats_out",
-      "community": 0,
+      "community": 76,
       "norm_label": "out"
     },
     {
@@ -3231,7 +3501,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L15",
       "id": "scripts_sync_claude_stats_run",
-      "community": 0,
+      "community": 87,
       "norm_label": "run()"
     },
     {
@@ -3240,7 +3510,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L21",
       "id": "scripts_sync_claude_stats_getclaudeusage",
-      "community": 0,
+      "community": 87,
       "norm_label": "getclaudeusage()"
     },
     {
@@ -3249,7 +3519,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L45",
       "id": "scripts_sync_claude_stats_walk",
-      "community": 0,
+      "community": 76,
       "norm_label": "walk()"
     },
     {
@@ -3258,7 +3528,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L58",
       "id": "scripts_sync_claude_stats_countagents",
-      "community": 0,
+      "community": 76,
       "norm_label": "countagents()"
     },
     {
@@ -3267,7 +3537,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L64",
       "id": "scripts_sync_claude_stats_countskills",
-      "community": 0,
+      "community": 76,
       "norm_label": "countskills()"
     },
     {
@@ -3276,7 +3546,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L70",
       "id": "scripts_sync_claude_stats_countlines",
-      "community": 0,
+      "community": 76,
       "norm_label": "countlines()"
     },
     {
@@ -3285,7 +3555,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L77",
       "id": "scripts_sync_claude_stats_countloc",
-      "community": 0,
+      "community": 76,
       "norm_label": "countloc()"
     },
     {
@@ -3294,7 +3564,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L87",
       "id": "scripts_sync_claude_stats_claude",
-      "community": 0,
+      "community": 76,
       "norm_label": "claude"
     },
     {
@@ -3303,7 +3573,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L91",
       "id": "scripts_sync_claude_stats_agents",
-      "community": 0,
+      "community": 76,
       "norm_label": "agents"
     },
     {
@@ -3312,7 +3582,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L95",
       "id": "scripts_sync_claude_stats_skills",
-      "community": 0,
+      "community": 76,
       "norm_label": "skills"
     },
     {
@@ -3321,7 +3591,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L99",
       "id": "scripts_sync_claude_stats_loc",
-      "community": 0,
+      "community": 76,
       "norm_label": "loc"
     },
     {
@@ -3375,7 +3645,7 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L6",
       "id": "app_page_home",
-      "community": 0,
+      "community": 90,
       "norm_label": "home()"
     },
     {
@@ -3483,7 +3753,7 @@
       "source_file": "src/app/journey/page.tsx",
       "source_location": "L1",
       "id": "src_app_journey_page_tsx",
-      "community": 76,
+      "community": 18,
       "norm_label": "page.tsx"
     },
     {
@@ -3492,7 +3762,7 @@
       "source_file": "src/app/journey/page.tsx",
       "source_location": "L11",
       "id": "journey_page_journeydata",
-      "community": 76,
+      "community": 18,
       "norm_label": "journeydata"
     },
     {
@@ -3501,7 +3771,7 @@
       "source_file": "src/app/journey/page.tsx",
       "source_location": "L13",
       "id": "journey_page_journeypage",
-      "community": 76,
+      "community": 18,
       "norm_label": "journeypage()"
     },
     {
@@ -3825,7 +4095,7 @@
       "source_file": "src/app/work/WorkPageContent.tsx",
       "source_location": "L95",
       "id": "work_workpagecontent_workpagecontent",
-      "community": 6,
+      "community": 91,
       "norm_label": "workpagecontent()"
     },
     {
@@ -3861,7 +4131,7 @@
       "source_file": "src/app/work/page.tsx",
       "source_location": "L1",
       "id": "src_app_work_page_tsx",
-      "community": 6,
+      "community": 91,
       "norm_label": "page.tsx"
     },
     {
@@ -3870,7 +4140,7 @@
       "source_file": "src/app/work/page.tsx",
       "source_location": "L4",
       "id": "work_page_metadata",
-      "community": 6,
+      "community": 91,
       "norm_label": "metadata"
     },
     {
@@ -3879,7 +4149,7 @@
       "source_file": "src/app/work/page.tsx",
       "source_location": "L9",
       "id": "work_page_workpage",
-      "community": 6,
+      "community": 91,
       "norm_label": "workpage()"
     },
     {
@@ -3951,7 +4221,7 @@
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L1",
       "id": "src_app_api_stats_route_ts",
-      "community": 0,
+      "community": 84,
       "norm_label": "route.ts"
     },
     {
@@ -3960,7 +4230,7 @@
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L5",
       "id": "stats_route_statsoverrides",
-      "community": 0,
+      "community": 84,
       "norm_label": "statsoverrides"
     },
     {
@@ -3969,7 +4239,7 @@
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L16",
       "id": "stats_route_loadoverrides",
-      "community": 0,
+      "community": 84,
       "norm_label": "loadoverrides()"
     },
     {
@@ -3978,7 +4248,7 @@
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L24",
       "id": "stats_route_loaddaystreak",
-      "community": 0,
+      "community": 84,
       "norm_label": "loaddaystreak()"
     },
     {
@@ -3987,7 +4257,7 @@
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L37",
       "id": "stats_route_get",
-      "community": 0,
+      "community": 84,
       "norm_label": "get()"
     },
     {
@@ -3996,7 +4266,7 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L1",
       "id": "src_components_ui_button_tsx",
-      "community": 80,
+      "community": 7,
       "norm_label": "button.tsx"
     },
     {
@@ -4005,7 +4275,7 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L6",
       "id": "ui_button_buttonvariants",
-      "community": 80,
+      "community": 7,
       "norm_label": "buttonvariants"
     },
     {
@@ -4014,7 +4284,7 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L43",
       "id": "ui_button_button",
-      "community": 80,
+      "community": 7,
       "norm_label": "button()"
     },
     {
@@ -4023,7 +4293,7 @@
       "source_file": "src/components/sections/WorkCardCarousel.tsx",
       "source_location": "L1",
       "id": "src_components_sections_workcardcarousel_tsx",
-      "community": 6,
+      "community": 85,
       "norm_label": "workcardcarousel.tsx"
     },
     {
@@ -4032,7 +4302,7 @@
       "source_file": "src/components/sections/WorkCardCarousel.tsx",
       "source_location": "L8",
       "id": "sections_workcardcarousel_props",
-      "community": 6,
+      "community": 85,
       "norm_label": "props"
     },
     {
@@ -4041,7 +4311,7 @@
       "source_file": "src/components/sections/WorkCardCarousel.tsx",
       "source_location": "L12",
       "id": "sections_workcardcarousel_workcardcarousel",
-      "community": 6,
+      "community": 85,
       "norm_label": "workcardcarousel()"
     },
     {
@@ -4329,7 +4599,7 @@
       "source_file": "src/components/sections/ProjectCard.tsx",
       "source_location": "L1",
       "id": "src_components_sections_projectcard_tsx",
-      "community": 6,
+      "community": 85,
       "norm_label": "projectcard.tsx"
     },
     {
@@ -4338,7 +4608,7 @@
       "source_file": "src/components/sections/ProjectCard.tsx",
       "source_location": "L7",
       "id": "sections_projectcard_accent_border",
-      "community": 6,
+      "community": 85,
       "norm_label": "accent_border"
     },
     {
@@ -4347,7 +4617,7 @@
       "source_file": "src/components/sections/ProjectCard.tsx",
       "source_location": "L14",
       "id": "sections_projectcard_accent_text",
-      "community": 6,
+      "community": 85,
       "norm_label": "accent_text"
     },
     {
@@ -4356,7 +4626,7 @@
       "source_file": "src/components/sections/ProjectCard.tsx",
       "source_location": "L21",
       "id": "sections_projectcard_accent_bg",
-      "community": 6,
+      "community": 85,
       "norm_label": "accent_bg"
     },
     {
@@ -4365,7 +4635,7 @@
       "source_file": "src/components/sections/ProjectCard.tsx",
       "source_location": "L28",
       "id": "sections_projectcard_projectcard",
-      "community": 6,
+      "community": 85,
       "norm_label": "projectcard()"
     },
     {
@@ -4860,7 +5130,7 @@
       "source_file": "src/components/portrait/PortraitFigure.tsx",
       "source_location": "L1",
       "id": "src_components_portrait_portraitfigure_tsx",
-      "community": 81,
+      "community": 92,
       "norm_label": "portraitfigure.tsx"
     },
     {
@@ -4869,7 +5139,7 @@
       "source_file": "src/components/portrait/PortraitFigure.tsx",
       "source_location": "L5",
       "id": "portrait_portraitfigure_props",
-      "community": 81,
+      "community": 92,
       "norm_label": "props"
     },
     {
@@ -4878,7 +5148,7 @@
       "source_file": "src/components/portrait/PortraitFigure.tsx",
       "source_location": "L10",
       "id": "portrait_portraitfigure_phase",
-      "community": 81,
+      "community": 92,
       "norm_label": "phase"
     },
     {
@@ -4887,7 +5157,7 @@
       "source_file": "src/components/portrait/PortraitFigure.tsx",
       "source_location": "L12",
       "id": "portrait_portraitfigure_phase_ms",
-      "community": 81,
+      "community": 92,
       "norm_label": "phase_ms"
     },
     {
@@ -4896,7 +5166,7 @@
       "source_file": "src/components/portrait/PortraitFigure.tsx",
       "source_location": "L24",
       "id": "portrait_portraitfigure_portraitfigure",
-      "community": 81,
+      "community": 92,
       "norm_label": "portraitfigure()"
     },
     {
@@ -5193,7 +5463,7 @@
       "source_file": "src/components/journey/StatsHeader.tsx",
       "source_location": "L1",
       "id": "src_components_journey_statsheader_tsx",
-      "community": 76,
+      "community": 18,
       "norm_label": "statsheader.tsx"
     },
     {
@@ -5202,7 +5472,7 @@
       "source_file": "src/components/journey/StatsHeader.tsx",
       "source_location": "L8",
       "id": "journey_statsheader_statsheaderprops",
-      "community": 76,
+      "community": 18,
       "norm_label": "statsheaderprops"
     },
     {
@@ -5211,7 +5481,7 @@
       "source_file": "src/components/journey/StatsHeader.tsx",
       "source_location": "L12",
       "id": "journey_statsheader_statsheader",
-      "community": 76,
+      "community": 18,
       "norm_label": "statsheader()"
     },
     {
@@ -5220,34 +5490,43 @@
       "source_file": "src/components/journey/CurrentReading.tsx",
       "source_location": "L1",
       "id": "src_components_journey_currentreading_tsx",
-      "community": 79,
+      "community": 18,
       "norm_label": "currentreading.tsx"
     },
     {
-      "label": "CourseItem",
+      "label": "QueueItem",
       "file_type": "code",
       "source_file": "src/components/journey/CurrentReading.tsx",
       "source_location": "L4",
-      "id": "journey_currentreading_courseitem",
-      "community": 79,
-      "norm_label": "courseitem"
+      "id": "journey_currentreading_queueitem",
+      "community": 18,
+      "norm_label": "queueitem"
+    },
+    {
+      "label": "QueueMeta",
+      "file_type": "code",
+      "source_file": "src/components/journey/CurrentReading.tsx",
+      "source_location": "L14",
+      "id": "journey_currentreading_queuemeta",
+      "community": 18,
+      "norm_label": "queuemeta"
     },
     {
       "label": "stripSubtitle()",
       "file_type": "code",
       "source_file": "src/components/journey/CurrentReading.tsx",
-      "source_location": "L15",
+      "source_location": "L22",
       "id": "journey_currentreading_stripsubtitle",
-      "community": 79,
+      "community": 18,
       "norm_label": "stripsubtitle()"
     },
     {
       "label": "CurrentReading()",
       "file_type": "code",
       "source_file": "src/components/journey/CurrentReading.tsx",
-      "source_location": "L19",
+      "source_location": "L26",
       "id": "journey_currentreading_currentreading",
-      "community": 79,
+      "community": 18,
       "norm_label": "currentreading()"
     },
     {
@@ -5364,7 +5643,7 @@
       "source_file": "src/components/journey/JourneyTimeline.tsx",
       "source_location": "L37",
       "id": "journey_journeytimeline_journeytimeline",
-      "community": 76,
+      "community": 18,
       "norm_label": "journeytimeline()"
     },
     {
@@ -5373,7 +5652,7 @@
       "source_file": "src/components/journey/FormattedTakeaway.tsx",
       "source_location": "L1",
       "id": "src_components_journey_formattedtakeaway_tsx",
-      "community": 85,
+      "community": 18,
       "norm_label": "formattedtakeaway.tsx"
     },
     {
@@ -5382,7 +5661,7 @@
       "source_file": "src/components/journey/FormattedTakeaway.tsx",
       "source_location": "L12",
       "id": "journey_formattedtakeaway_isfilepath",
-      "community": 85,
+      "community": 18,
       "norm_label": "isfilepath()"
     },
     {
@@ -5391,7 +5670,7 @@
       "source_file": "src/components/journey/FormattedTakeaway.tsx",
       "source_location": "L19",
       "id": "journey_formattedtakeaway_renderinline",
-      "community": 85,
+      "community": 18,
       "norm_label": "renderinline()"
     },
     {
@@ -5400,7 +5679,7 @@
       "source_file": "src/components/journey/FormattedTakeaway.tsx",
       "source_location": "L74",
       "id": "journey_formattedtakeaway_formattedtakeaway",
-      "community": 85,
+      "community": 18,
       "norm_label": "formattedtakeaway()"
     },
     {
@@ -5409,7 +5688,7 @@
       "source_file": "src/components/journey/EraFilter.tsx",
       "source_location": "L1",
       "id": "src_components_journey_erafilter_tsx",
-      "community": 84,
+      "community": 18,
       "norm_label": "erafilter.tsx"
     },
     {
@@ -5418,7 +5697,7 @@
       "source_file": "src/components/journey/EraFilter.tsx",
       "source_location": "L6",
       "id": "journey_erafilter_erafilterprops",
-      "community": 84,
+      "community": 18,
       "norm_label": "erafilterprops"
     },
     {
@@ -5427,7 +5706,7 @@
       "source_file": "src/components/journey/EraFilter.tsx",
       "source_location": "L12",
       "id": "journey_erafilter_erafilter",
-      "community": 84,
+      "community": 18,
       "norm_label": "erafilter()"
     },
     {
@@ -5607,7 +5886,7 @@
       "source_file": "src/components/photo-booth-owners/ToolsGrid.tsx",
       "source_location": "L1",
       "id": "src_components_photo_booth_owners_toolsgrid_tsx",
-      "community": 13,
+      "community": 79,
       "norm_label": "toolsgrid.tsx"
     },
     {
@@ -5616,7 +5895,7 @@
       "source_file": "src/components/photo-booth-owners/ToolsGrid.tsx",
       "source_location": "L7",
       "id": "photo_booth_owners_toolsgrid_categories",
-      "community": 13,
+      "community": 79,
       "norm_label": "categories"
     },
     {
@@ -5625,7 +5904,7 @@
       "source_file": "src/components/photo-booth-owners/ToolsGrid.tsx",
       "source_location": "L9",
       "id": "photo_booth_owners_toolsgrid_toolsgrid",
-      "community": 13,
+      "community": 79,
       "norm_label": "toolsgrid()"
     },
     {
@@ -5769,7 +6048,7 @@
       "source_file": "src/components/photo-booth-owners/InquiryForm.tsx",
       "source_location": "L1",
       "id": "src_components_photo_booth_owners_inquiryform_tsx",
-      "community": 7,
+      "community": 86,
       "norm_label": "inquiryform.tsx"
     },
     {
@@ -5778,7 +6057,7 @@
       "source_file": "src/components/photo-booth-owners/InquiryForm.tsx",
       "source_location": "L6",
       "id": "photo_booth_owners_inquiryform_formdata",
-      "community": 7,
+      "community": 86,
       "norm_label": "formdata"
     },
     {
@@ -5787,7 +6066,7 @@
       "source_file": "src/components/photo-booth-owners/InquiryForm.tsx",
       "source_location": "L14",
       "id": "photo_booth_owners_inquiryform_services",
-      "community": 7,
+      "community": 86,
       "norm_label": "services"
     },
     {
@@ -5796,7 +6075,7 @@
       "source_file": "src/components/photo-booth-owners/InquiryForm.tsx",
       "source_location": "L29",
       "id": "photo_booth_owners_inquiryform_inquiryform",
-      "community": 7,
+      "community": 86,
       "norm_label": "inquiryform()"
     },
     {
@@ -5805,7 +6084,7 @@
       "source_file": "src/components/photo-booth-owners/ServicesGrid.tsx",
       "source_location": "L1",
       "id": "src_components_photo_booth_owners_servicesgrid_tsx",
-      "community": 13,
+      "community": 2,
       "norm_label": "servicesgrid.tsx"
     },
     {
@@ -5814,7 +6093,7 @@
       "source_file": "src/components/photo-booth-owners/ServicesGrid.tsx",
       "source_location": "L4",
       "id": "photo_booth_owners_servicesgrid_accentkey",
-      "community": 13,
+      "community": 2,
       "norm_label": "accentkey"
     },
     {
@@ -5823,7 +6102,7 @@
       "source_file": "src/components/photo-booth-owners/ServicesGrid.tsx",
       "source_location": "L6",
       "id": "photo_booth_owners_servicesgrid_servicegroup",
-      "community": 13,
+      "community": 2,
       "norm_label": "servicegroup"
     },
     {
@@ -5832,7 +6111,7 @@
       "source_file": "src/components/photo-booth-owners/ServicesGrid.tsx",
       "source_location": "L14",
       "id": "photo_booth_owners_servicesgrid_accent_cycle",
-      "community": 13,
+      "community": 2,
       "norm_label": "accent_cycle"
     },
     {
@@ -5841,7 +6120,7 @@
       "source_file": "src/components/photo-booth-owners/ServicesGrid.tsx",
       "source_location": "L16",
       "id": "photo_booth_owners_servicesgrid_servicesgrid",
-      "community": 13,
+      "community": 2,
       "norm_label": "servicesgrid()"
     },
     {
@@ -5895,7 +6174,7 @@
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L1",
       "id": "src_components_photo_booth_owners_toolcard_tsx",
-      "community": 13,
+      "community": 79,
       "norm_label": "toolcard.tsx"
     },
     {
@@ -5904,7 +6183,7 @@
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L6",
       "id": "photo_booth_owners_toolcard_mightytool",
-      "community": 13,
+      "community": 79,
       "norm_label": "mightytool"
     },
     {
@@ -5913,7 +6192,7 @@
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L16",
       "id": "photo_booth_owners_toolcard_category_accent",
-      "community": 13,
+      "community": 79,
       "norm_label": "category_accent"
     },
     {
@@ -5922,7 +6201,7 @@
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L49",
       "id": "photo_booth_owners_toolcard_accent",
-      "community": 13,
+      "community": 79,
       "norm_label": "accent()"
     },
     {
@@ -5931,7 +6210,7 @@
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L53",
       "id": "photo_booth_owners_toolcard_toolcard",
-      "community": 13,
+      "community": 79,
       "norm_label": "toolcard()"
     },
     {
@@ -6048,7 +6327,7 @@
       "source_file": "src/lib/projects.ts",
       "source_location": "L1",
       "id": "src_lib_projects_ts",
-      "community": 6,
+      "community": 85,
       "norm_label": "projects.ts"
     },
     {
@@ -6057,7 +6336,7 @@
       "source_file": "src/lib/projects.ts",
       "source_location": "L1",
       "id": "lib_projects_project",
-      "community": 6,
+      "community": 85,
       "norm_label": "project"
     },
     {
@@ -6066,7 +6345,7 @@
       "source_file": "src/lib/projects.ts",
       "source_location": "L9",
       "id": "lib_projects_projects",
-      "community": 6,
+      "community": 85,
       "norm_label": "projects"
     },
     {
@@ -6075,7 +6354,7 @@
       "source_file": "src/lib/projects.ts",
       "source_location": "L97",
       "id": "lib_projects_all_tags",
-      "community": 6,
+      "community": 85,
       "norm_label": "all_tags"
     },
     {
@@ -6174,7 +6453,7 @@
       "source_file": "src/lib/journey.ts",
       "source_location": "L26",
       "id": "lib_journey_journeydata",
-      "community": 76,
+      "community": 18,
       "norm_label": "journeydata"
     },
     {
@@ -6183,7 +6462,7 @@
       "source_file": "src/lib/journey.ts",
       "source_location": "L33",
       "id": "lib_journey_era_colors",
-      "community": 84,
+      "community": 18,
       "norm_label": "era_colors"
     },
     {
@@ -6210,7 +6489,7 @@
       "source_file": "src/lib/journey.ts",
       "source_location": "L61",
       "id": "lib_journey_eras",
-      "community": 84,
+      "community": 18,
       "norm_label": "eras"
     },
     {
@@ -6273,7 +6552,7 @@
       "source_file": "src/data/services.json",
       "source_location": "L1",
       "id": "src_data_services_json",
-      "community": 13,
+      "community": 2,
       "norm_label": "services.json"
     },
     {
@@ -6300,7 +6579,7 @@
       "source_file": "src/data/courses.json",
       "source_location": "L1",
       "id": "src_data_courses_json",
-      "community": 79,
+      "community": 32,
       "norm_label": "courses.json"
     },
     {
@@ -6309,7 +6588,7 @@
       "source_file": "src/data/courses.json",
       "source_location": "L2",
       "id": "data_courses_lastupdated",
-      "community": 79,
+      "community": 32,
       "norm_label": "lastupdated"
     },
     {
@@ -6318,7 +6597,7 @@
       "source_file": "src/data/courses.json",
       "source_location": "L3",
       "id": "data_courses_total",
-      "community": 79,
+      "community": 32,
       "norm_label": "total"
     },
     {
@@ -6327,7 +6606,88 @@
       "source_file": "src/data/courses.json",
       "source_location": "L4",
       "id": "data_courses_items",
-      "community": 79,
+      "community": 32,
+      "norm_label": "items"
+    },
+    {
+      "label": "queue.json",
+      "file_type": "code",
+      "source_file": "src/data/queue.json",
+      "source_location": "L1",
+      "id": "src_data_queue_json",
+      "community": 81,
+      "norm_label": "queue.json"
+    },
+    {
+      "label": "lastUpdated",
+      "file_type": "code",
+      "source_file": "src/data/queue.json",
+      "source_location": "L2",
+      "id": "data_queue_lastupdated",
+      "community": 81,
+      "norm_label": "lastupdated"
+    },
+    {
+      "label": "meta",
+      "file_type": "code",
+      "source_file": "src/data/queue.json",
+      "source_location": "L3",
+      "id": "data_queue_meta",
+      "community": 81,
+      "norm_label": "meta"
+    },
+    {
+      "label": "totalBooks",
+      "file_type": "code",
+      "source_file": "src/data/queue.json",
+      "source_location": "L4",
+      "id": "data_queue_meta_totalbooks",
+      "community": 81,
+      "norm_label": "totalbooks"
+    },
+    {
+      "label": "totalCompleted",
+      "file_type": "code",
+      "source_file": "src/data/queue.json",
+      "source_location": "L5",
+      "id": "data_queue_meta_totalcompleted",
+      "community": 81,
+      "norm_label": "totalcompleted"
+    },
+    {
+      "label": "totalInProgress",
+      "file_type": "code",
+      "source_file": "src/data/queue.json",
+      "source_location": "L6",
+      "id": "data_queue_meta_totalinprogress",
+      "community": 81,
+      "norm_label": "totalinprogress"
+    },
+    {
+      "label": "totalInQueue",
+      "file_type": "code",
+      "source_file": "src/data/queue.json",
+      "source_location": "L7",
+      "id": "data_queue_meta_totalinqueue",
+      "community": 81,
+      "norm_label": "totalinqueue"
+    },
+    {
+      "label": "displayCap",
+      "file_type": "code",
+      "source_file": "src/data/queue.json",
+      "source_location": "L8",
+      "id": "data_queue_meta_displaycap",
+      "community": 81,
+      "norm_label": "displaycap"
+    },
+    {
+      "label": "items",
+      "file_type": "code",
+      "source_file": "src/data/queue.json",
+      "source_location": "L10",
+      "id": "data_queue_items",
+      "community": 81,
       "norm_label": "items"
     },
     {
@@ -6336,7 +6696,7 @@
       "source_file": "src/data/journey-2026.json",
       "source_location": "L1",
       "id": "src_data_journey_2026_json",
-      "community": 83,
+      "community": 18,
       "norm_label": "journey-2026.json"
     },
     {
@@ -6345,7 +6705,7 @@
       "source_file": "src/data/journey-2026.json",
       "source_location": "L2",
       "id": "data_journey_2026_lastupdated",
-      "community": 83,
+      "community": 18,
       "norm_label": "lastupdated"
     },
     {
@@ -6354,7 +6714,7 @@
       "source_file": "src/data/journey-2026.json",
       "source_location": "L3",
       "id": "data_journey_2026_totaldays",
-      "community": 83,
+      "community": 18,
       "norm_label": "totaldays"
     },
     {
@@ -6363,7 +6723,7 @@
       "source_file": "src/data/journey-2026.json",
       "source_location": "L4",
       "id": "data_journey_2026_currentera",
-      "community": 83,
+      "community": 18,
       "norm_label": "currentera"
     },
     {
@@ -6372,7 +6732,7 @@
       "source_file": "src/data/journey-2026.json",
       "source_location": "L5",
       "id": "data_journey_2026_entries",
-      "community": 83,
+      "community": 18,
       "norm_label": "entries"
     },
     {
@@ -6808,11 +7168,182 @@
       "norm_label": "what's covered"
     },
     {
+      "label": "gh()",
+      "file_type": "code",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L60",
+      "community": 0,
+      "norm_label": "gh()",
+      "id": "refresh_stats_gh"
+    },
+    {
+      "label": "list_repos()",
+      "file_type": "code",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L64",
+      "community": 0,
+      "norm_label": "list_repos()",
+      "id": "refresh_stats_list_repos"
+    },
+    {
+      "label": "shallow_clone()",
+      "file_type": "code",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L74",
+      "community": 87,
+      "norm_label": "shallow_clone()",
+      "id": "refresh_stats_shallow_clone"
+    },
+    {
+      "label": "is_skippable()",
+      "file_type": "code",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L91",
+      "community": 0,
+      "norm_label": "is_skippable()",
+      "id": "refresh_stats_is_skippable"
+    },
+    {
+      "label": "count_loc_in_repo()",
+      "file_type": "code",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L106",
+      "community": 0,
+      "norm_label": "count_loc_in_repo()",
+      "id": "refresh_stats_count_loc_in_repo"
+    },
+    {
+      "label": "count_commits_for_repo()",
+      "file_type": "code",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L138",
+      "community": 0,
+      "norm_label": "count_commits_for_repo()",
+      "id": "refresh_stats_count_commits_for_repo"
+    },
+    {
+      "label": "fetch_claude_2026()",
+      "file_type": "code",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L159",
+      "community": 0,
+      "norm_label": "fetch_claude_2026()",
+      "id": "refresh_stats_fetch_claude_2026"
+    },
+    {
+      "label": "count_tools()",
+      "file_type": "code",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L195",
+      "community": 87,
+      "norm_label": "count_tools()",
+      "id": "refresh_stats_count_tools"
+    },
+    {
+      "label": "count_skills()",
+      "file_type": "code",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L232",
+      "community": 90,
+      "norm_label": "count_skills()",
+      "id": "refresh_stats_count_skills"
+    },
+    {
+      "label": "count_live_agents()",
+      "file_type": "code",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L248",
+      "community": 90,
+      "norm_label": "count_live_agents()",
+      "id": "refresh_stats_count_live_agents"
+    },
+    {
+      "label": "load_prev()",
+      "file_type": "code",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L268",
+      "community": 0,
+      "norm_label": "load_prev()",
+      "id": "refresh_stats_load_prev"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L277",
+      "community": 0,
+      "norm_label": "main()",
+      "id": "refresh_stats_main"
+    },
+    {
+      "label": "Treeless clone: full commit history (cheap), no blobs until checkout.",
+      "file_type": "rationale",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L75",
+      "community": 87,
+      "norm_label": "treeless clone: full commit history (cheap), no blobs until checkout.",
+      "id": "refresh_stats_rationale_75"
+    },
+    {
+      "label": "Count commits authored by Andrew across ALL branches, dedup by SHA.",
+      "file_type": "rationale",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L139",
+      "community": 0,
+      "norm_label": "count commits authored by andrew across all branches, dedup by sha.",
+      "id": "refresh_stats_rationale_139"
+    },
+    {
+      "label": "Scoped to calendar year 2026. Honest sum across non-gap blocks.",
+      "file_type": "rationale",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L160",
+      "community": 0,
+      "norm_label": "scoped to calendar year 2026. honest sum across non-gap blocks.",
+      "id": "refresh_stats_rationale_160"
+    },
+    {
+      "label": "Tools = entries in src/data/mighty-tools.json, written by scan-tools.py.      Th",
+      "file_type": "rationale",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L196",
+      "community": 87,
+      "norm_label": "tools = entries in src/data/mighty-tools.json, written by scan-tools.py.      th",
+      "id": "refresh_stats_rationale_196"
+    },
+    {
+      "label": "Skills registry sibling to agent registry. One row = one skill.",
+      "file_type": "rationale",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L233",
+      "community": 90,
+      "norm_label": "skills registry sibling to agent registry. one row = one skill.",
+      "id": "refresh_stats_rationale_233"
+    },
+    {
+      "label": "Canonical 'live agents' = registry entries with status active or production.",
+      "file_type": "rationale",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L249",
+      "community": 90,
+      "norm_label": "canonical 'live agents' = registry entries with status active or production.",
+      "id": "refresh_stats_rationale_249"
+    },
+    {
+      "label": "CourseItem",
+      "file_type": "code",
+      "source_file": "src/components/journey/CurrentReading.tsx",
+      "source_location": "L4",
+      "community": 18,
+      "norm_label": "courseitem",
+      "id": "journey_currentreading_courseitem"
+    },
+    {
       "label": "year()",
       "file_type": "code",
       "source_file": "src/components/journey/CurrentReading.tsx",
       "source_location": "L21",
-      "community": 79,
+      "community": 18,
       "norm_label": "year()",
       "id": "journey_currentreading_year"
     },
@@ -7028,7 +7559,7 @@
       "file_type": "code",
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L15",
-      "community": 0,
+      "community": 87,
       "norm_label": "run()",
       "id": "sync_claude_stats_run"
     },
@@ -7037,7 +7568,7 @@
       "file_type": "code",
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L21",
-      "community": 0,
+      "community": 87,
       "norm_label": "getclaudeusage()",
       "id": "sync_claude_stats_getclaudeusage"
     },
@@ -7046,7 +7577,7 @@
       "file_type": "code",
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L45",
-      "community": 0,
+      "community": 76,
       "norm_label": "walk()",
       "id": "sync_claude_stats_walk"
     },
@@ -7055,7 +7586,7 @@
       "file_type": "code",
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L58",
-      "community": 0,
+      "community": 76,
       "norm_label": "countagents()",
       "id": "sync_claude_stats_countagents"
     },
@@ -7064,7 +7595,7 @@
       "file_type": "code",
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L64",
-      "community": 0,
+      "community": 76,
       "norm_label": "countskills()",
       "id": "sync_claude_stats_countskills"
     },
@@ -7073,7 +7604,7 @@
       "file_type": "code",
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L70",
-      "community": 0,
+      "community": 76,
       "norm_label": "countlines()",
       "id": "sync_claude_stats_countlines"
     },
@@ -7082,7 +7613,7 @@
       "file_type": "code",
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L77",
-      "community": 0,
+      "community": 76,
       "norm_label": "countloc()",
       "id": "sync_claude_stats_countloc"
     },
@@ -7109,7 +7640,7 @@
       "file_type": "code",
       "source_file": "src/app/journey/page.tsx",
       "source_location": "L12",
-      "community": 76,
+      "community": 18,
       "norm_label": "journeypage()",
       "id": "page_journeypage"
     },
@@ -7208,7 +7739,7 @@
       "file_type": "code",
       "source_file": "src/app/work/page.tsx",
       "source_location": "L9",
-      "community": 6,
+      "community": 91,
       "norm_label": "workpage()",
       "id": "page_workpage"
     },
@@ -7226,7 +7757,7 @@
       "file_type": "code",
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L16",
-      "community": 0,
+      "community": 84,
       "norm_label": "loadoverrides()",
       "id": "route_loadoverrides"
     },
@@ -7235,7 +7766,7 @@
       "file_type": "code",
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L24",
-      "community": 0,
+      "community": 84,
       "norm_label": "loaddaystreak()",
       "id": "route_loaddaystreak"
     },
@@ -7244,7 +7775,7 @@
       "file_type": "code",
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L37",
-      "community": 0,
+      "community": 84,
       "norm_label": "get()",
       "id": "route_get"
     },
@@ -7253,7 +7784,7 @@
       "file_type": "code",
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L52",
-      "community": 80,
+      "community": 7,
       "norm_label": "cn()",
       "id": "button_cn"
     },
@@ -7262,7 +7793,7 @@
       "file_type": "code",
       "source_file": "src/components/sections/WorkCardCarousel.tsx",
       "source_location": "L40",
-      "community": 6,
+      "community": 85,
       "norm_label": "scrollto()",
       "id": "workcardcarousel_scrollto"
     },
@@ -7496,7 +8027,7 @@
       "file_type": "code",
       "source_file": "src/components/journey/StatsHeader.tsx",
       "source_location": "L10",
-      "community": 76,
+      "community": 18,
       "norm_label": "statsheader()",
       "id": "statsheader_statsheader"
     },
@@ -7604,7 +8135,7 @@
       "file_type": "code",
       "source_file": "src/components/photo-booth-owners/InquiryForm.tsx",
       "source_location": "L40",
-      "community": 7,
+      "community": 86,
       "norm_label": "handlesubmit()",
       "id": "inquiryform_handlesubmit"
     },
@@ -7613,7 +8144,7 @@
       "file_type": "code",
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L49",
-      "community": 13,
+      "community": 79,
       "norm_label": "accent()",
       "id": "toolcard_accent"
     },
@@ -7622,7 +8153,7 @@
       "file_type": "code",
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L53",
-      "community": 13,
+      "community": 79,
       "norm_label": "toolcard()",
       "id": "toolcard_toolcard"
     },
@@ -7631,7 +8162,7 @@
       "file_type": "code",
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L70",
-      "community": 13,
+      "community": 79,
       "norm_label": "cn()",
       "id": "toolcard_cn"
     },
@@ -8853,6 +9384,36 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_config.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_config_json",
+      "target": "scripts_queue_config_db_id"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_config.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_config_json",
+      "target": "scripts_queue_config_data_source_id"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_config.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_config_json",
+      "target": "scripts_queue_config_ll_db_id"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/build-portrait-previews.py",
       "source_location": "L25",
       "weight": 1.0,
@@ -9261,6 +9822,242 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/create_content_queue_db.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_create_content_queue_db_py",
+      "target": "scripts_create_content_queue_db_ntn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/create_content_queue_db.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_create_content_queue_db_py",
+      "target": "scripts_create_content_queue_db_create_db"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/create_content_queue_db.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "scripts_create_content_queue_db_py",
+      "target": "scripts_create_content_queue_db_patch_data_source_properties",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/create_content_queue_db.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_create_content_queue_db_py",
+      "target": "scripts_create_content_queue_db_resolve_dsid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/create_content_queue_db.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_create_content_queue_db_py",
+      "target": "scripts_create_content_queue_db_main"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/create_content_queue_db.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_create_content_queue_db_create_db",
+      "target": "scripts_create_content_queue_db_ntn"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/create_content_queue_db.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "scripts_create_content_queue_db_patch_data_source_properties",
+      "target": "scripts_create_content_queue_db_ntn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/create_content_queue_db.py",
+      "source_location": "L114",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_create_content_queue_db_resolve_dsid",
+      "target": "scripts_create_content_queue_db_ntn"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/create_content_queue_db.py",
+      "source_location": "L134",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_create_content_queue_db_main",
+      "target": "scripts_create_content_queue_db_create_db"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/create_content_queue_db.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "scripts_create_content_queue_db_main",
+      "target": "scripts_create_content_queue_db_patch_data_source_properties",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/create_content_queue_db.py",
+      "source_location": "L142",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_create_content_queue_db_main",
+      "target": "scripts_create_content_queue_db_resolve_dsid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_refresh_stats_py",
+      "target": "scripts_refresh_stats_gh"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_refresh_stats_py",
+      "target": "scripts_refresh_stats_list_repos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_refresh_stats_py",
+      "target": "scripts_refresh_stats_shallow_clone"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_refresh_stats_py",
+      "target": "scripts_refresh_stats_is_skippable"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_refresh_stats_py",
+      "target": "scripts_refresh_stats_count_loc_in_repo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_refresh_stats_py",
+      "target": "scripts_refresh_stats_count_commits_for_repo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L159",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_refresh_stats_py",
+      "target": "scripts_refresh_stats_fetch_claude_2026"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L195",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_refresh_stats_py",
+      "target": "scripts_refresh_stats_count_tools"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L232",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_refresh_stats_py",
+      "target": "scripts_refresh_stats_count_skills"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L248",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_refresh_stats_py",
+      "target": "scripts_refresh_stats_count_live_agents"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L268",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_refresh_stats_py",
+      "target": "scripts_refresh_stats_load_prev"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L277",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_refresh_stats_py",
+      "target": "scripts_refresh_stats_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L60",
       "weight": 1.0,
@@ -9380,33 +10177,36 @@
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L65",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "refresh_stats_gh",
-      "target": "refresh_stats_list_repos"
+      "source": "scripts_refresh_stats_list_repos",
+      "target": "scripts_refresh_stats_gh"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L279",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "refresh_stats_list_repos",
-      "target": "refresh_stats_main"
+      "source": "scripts_refresh_stats_main",
+      "target": "scripts_refresh_stats_list_repos"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L292",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "refresh_stats_shallow_clone",
-      "target": "refresh_stats_main"
+      "source": "scripts_refresh_stats_main",
+      "target": "scripts_refresh_stats_shallow_clone"
     },
     {
       "relation": "rationale_for",
@@ -9415,70 +10215,41 @@
       "source_location": "L75",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "refresh_stats_shallow_clone",
-      "target": "refresh_stats_rationale_75"
+      "source": "scripts_refresh_stats_rationale_75",
+      "target": "scripts_refresh_stats_shallow_clone"
     },
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/refresh-stats.py",
-      "source_location": "L77",
-      "weight": 1.0,
-      "source": "refresh_stats_shallow_clone",
-      "target": "scripts_sync_claude_stats_run"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/refresh-stats.py",
-      "source_location": "L77",
-      "weight": 1.0,
-      "source": "refresh_stats_shallow_clone",
-      "target": "sync_claude_stats_run"
-    },
-    {
-      "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L120",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "refresh_stats_is_skippable",
-      "target": "refresh_stats_count_loc_in_repo"
+      "source": "scripts_refresh_stats_count_loc_in_repo",
+      "target": "scripts_refresh_stats_is_skippable"
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L296",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "refresh_stats_count_loc_in_repo",
-      "target": "refresh_stats_main"
+      "source": "scripts_refresh_stats_main",
+      "target": "scripts_refresh_stats_count_loc_in_repo"
     },
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/refresh-stats.py",
-      "source_location": "L127",
-      "weight": 1.0,
-      "source": "refresh_stats_count_loc_in_repo",
-      "target": "animation_statscounter_stat"
-    },
-    {
-      "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L297",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "refresh_stats_count_commits_for_repo",
-      "target": "refresh_stats_main"
+      "source": "scripts_refresh_stats_main",
+      "target": "scripts_refresh_stats_count_commits_for_repo"
     },
     {
       "relation": "rationale_for",
@@ -9487,40 +10258,19 @@
       "source_location": "L139",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "refresh_stats_count_commits_for_repo",
-      "target": "refresh_stats_rationale_139"
+      "source": "scripts_refresh_stats_rationale_139",
+      "target": "scripts_refresh_stats_count_commits_for_repo"
     },
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/refresh-stats.py",
-      "source_location": "L155",
-      "weight": 1.0,
-      "source": "refresh_stats_count_commits_for_repo",
-      "target": "scripts_scan_tools_add"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/refresh-stats.py",
-      "source_location": "L155",
-      "weight": 1.0,
-      "source": "refresh_stats_count_commits_for_repo",
-      "target": "scan_tools_add"
-    },
-    {
-      "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L311",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "refresh_stats_fetch_claude_2026",
-      "target": "refresh_stats_main"
+      "source": "scripts_refresh_stats_main",
+      "target": "scripts_refresh_stats_fetch_claude_2026"
     },
     {
       "relation": "rationale_for",
@@ -9529,39 +10279,19 @@
       "source_location": "L160",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "refresh_stats_fetch_claude_2026",
-      "target": "refresh_stats_rationale_160"
+      "source": "scripts_refresh_stats_rationale_160",
+      "target": "scripts_refresh_stats_fetch_claude_2026"
     },
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/refresh-stats.py",
-      "source_location": "L178",
-      "weight": 1.0,
-      "source": "refresh_stats_fetch_claude_2026",
-      "target": "stats_route_get"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/refresh-stats.py",
-      "source_location": "L178",
-      "weight": 1.0,
-      "source": "refresh_stats_fetch_claude_2026",
-      "target": "route_get"
-    },
-    {
-      "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L308",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "refresh_stats_count_tools",
-      "target": "refresh_stats_main"
+      "source": "scripts_refresh_stats_main",
+      "target": "scripts_refresh_stats_count_tools"
     },
     {
       "relation": "rationale_for",
@@ -9570,39 +10300,19 @@
       "source_location": "L196",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "refresh_stats_count_tools",
-      "target": "refresh_stats_rationale_196"
+      "source": "scripts_refresh_stats_rationale_196",
+      "target": "scripts_refresh_stats_count_tools"
     },
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/refresh-stats.py",
-      "source_location": "L214",
-      "weight": 1.0,
-      "source": "refresh_stats_count_tools",
-      "target": "scripts_sync_claude_stats_run"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/refresh-stats.py",
-      "source_location": "L214",
-      "weight": 1.0,
-      "source": "refresh_stats_count_tools",
-      "target": "sync_claude_stats_run"
-    },
-    {
-      "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L307",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "refresh_stats_count_skills",
-      "target": "refresh_stats_main"
+      "source": "scripts_refresh_stats_main",
+      "target": "scripts_refresh_stats_count_skills"
     },
     {
       "relation": "rationale_for",
@@ -9611,29 +10321,19 @@
       "source_location": "L233",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "refresh_stats_count_skills",
-      "target": "refresh_stats_rationale_233"
+      "source": "scripts_refresh_stats_rationale_233",
+      "target": "scripts_refresh_stats_count_skills"
     },
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/refresh-stats.py",
-      "source_location": "L234",
-      "weight": 1.0,
-      "source": "refresh_stats_count_skills",
-      "target": "app_page_home"
-    },
-    {
-      "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L303",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "refresh_stats_count_live_agents",
-      "target": "refresh_stats_main"
+      "source": "scripts_refresh_stats_main",
+      "target": "scripts_refresh_stats_count_live_agents"
     },
     {
       "relation": "rationale_for",
@@ -9642,71 +10342,218 @@
       "source_location": "L249",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "refresh_stats_count_live_agents",
-      "target": "refresh_stats_rationale_249"
+      "source": "scripts_refresh_stats_rationale_249",
+      "target": "scripts_refresh_stats_count_live_agents"
     },
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/refresh-stats.py",
-      "source_location": "L255",
-      "weight": 1.0,
-      "source": "refresh_stats_count_live_agents",
-      "target": "app_page_home"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/refresh-stats.py",
-      "source_location": "L265",
-      "weight": 1.0,
-      "source": "refresh_stats_count_live_agents",
-      "target": "stats_route_get"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/refresh-stats.py",
-      "source_location": "L265",
-      "weight": 1.0,
-      "source": "refresh_stats_count_live_agents",
-      "target": "route_get"
-    },
-    {
-      "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L314",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "refresh_stats_load_prev",
-      "target": "refresh_stats_main"
+      "source": "scripts_refresh_stats_main",
+      "target": "scripts_refresh_stats_load_prev"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_py",
+      "target": "scripts_queue_to_ll_sync_load_config"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_py",
+      "target": "scripts_queue_to_ll_sync_ntn_call"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_py",
+      "target": "scripts_queue_to_ll_sync_query_all"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_py",
+      "target": "scripts_queue_to_ll_sync_gtext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_py",
+      "target": "scripts_queue_to_ll_sync_get_status"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_py",
+      "target": "scripts_queue_to_ll_sync_has_ll_relation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L97",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_py",
+      "target": "scripts_queue_to_ll_sync_create_ll_page"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L159",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_py",
+      "target": "scripts_queue_to_ll_sync_set_ll_relation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L171",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_py",
+      "target": "scripts_queue_to_ll_sync_main"
     },
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/refresh-stats.py",
-      "source_location": "L315",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L176",
       "weight": 1.0,
-      "source": "refresh_stats_main",
-      "target": "stats_route_get"
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_main",
+      "target": "scripts_queue_to_ll_sync_load_config"
     },
     {
       "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/refresh-stats.py",
-      "source_location": "L315",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L130",
       "weight": 1.0,
-      "source": "refresh_stats_main",
-      "target": "route_get"
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_create_ll_page",
+      "target": "scripts_queue_to_ll_sync_ntn_call"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L167",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_set_ll_relation",
+      "target": "scripts_queue_to_ll_sync_ntn_call"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L180",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_main",
+      "target": "scripts_queue_to_ll_sync_query_all"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L194",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_main",
+      "target": "scripts_queue_to_ll_sync_gtext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L186",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_main",
+      "target": "scripts_queue_to_ll_sync_get_status"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L192",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_main",
+      "target": "scripts_queue_to_ll_sync_has_ll_relation"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L219",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_main",
+      "target": "scripts_queue_to_ll_sync_create_ll_page"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_rationale_98",
+      "target": "scripts_queue_to_ll_sync_create_ll_page"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/queue_to_ll_sync.py",
+      "source_location": "L231",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_queue_to_ll_sync_main",
+      "target": "scripts_queue_to_ll_sync_set_ll_relation"
     },
     {
       "relation": "contains",
@@ -11281,6 +12128,152 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_queue_py",
+      "target": "scripts_sync_queue_load_config"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_queue_py",
+      "target": "scripts_sync_queue_query_all"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_queue_py",
+      "target": "scripts_sync_queue_gtext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_queue_py",
+      "target": "scripts_sync_queue_get_status"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_queue_py",
+      "target": "scripts_sync_queue_get_date"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_queue_py",
+      "target": "scripts_sync_queue_extract"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L97",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_queue_py",
+      "target": "scripts_sync_queue_sort_key"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L105",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_queue_py",
+      "target": "scripts_sync_queue_main"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_queue_main",
+      "target": "scripts_sync_queue_load_config"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_queue_main",
+      "target": "scripts_sync_queue_query_all"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_queue_extract",
+      "target": "scripts_sync_queue_gtext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_queue_extract",
+      "target": "scripts_sync_queue_get_status"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_queue_extract",
+      "target": "scripts_sync_queue_get_date"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sync-queue.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sync_queue_main",
+      "target": "scripts_sync_queue_extract"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L29",
       "weight": 1.0,
@@ -12044,6 +13037,17 @@
     {
       "relation": "calls",
       "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "refresh_stats_count_commits_for_repo",
+      "target": "scripts_scan_tools_add"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/scan-tools.py",
       "source_location": "L401",
@@ -12452,6 +13456,28 @@
     {
       "relation": "calls",
       "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "refresh_stats_shallow_clone",
+      "target": "scripts_sync_claude_stats_run"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L214",
+      "weight": 1.0,
+      "source": "refresh_stats_count_tools",
+      "target": "scripts_sync_claude_stats_run"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L60",
@@ -12805,6 +13831,28 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app_page_tsx",
+      "target": "app_page_home"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L234",
+      "weight": 1.0,
+      "source": "refresh_stats_count_skills",
+      "target": "app_page_home"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L255",
+      "weight": 1.0,
+      "source": "refresh_stats_count_live_agents",
       "target": "app_page_home"
     },
     {
@@ -14667,6 +15715,39 @@
       "confidence_score": 1.0,
       "source": "stats_route_get",
       "target": "stats_route_loaddaystreak"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L178",
+      "weight": 1.0,
+      "source": "refresh_stats_fetch_claude_2026",
+      "target": "stats_route_get"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L265",
+      "weight": 1.0,
+      "source": "refresh_stats_count_live_agents",
+      "target": "stats_route_get"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L315",
+      "weight": 1.0,
+      "source": "refresh_stats_main",
+      "target": "stats_route_get"
     },
     {
       "relation": "calls",
@@ -16693,6 +17774,17 @@
       "target": "animation_statscounter_formatnumber"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "refresh_stats_count_loc_in_repo",
+      "target": "animation_statscounter_stat"
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -16753,7 +17845,7 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_components_journey_currentreading_tsx",
-      "target": "src_data_courses_json"
+      "target": "src_data_queue_json"
     },
     {
       "relation": "contains",
@@ -16763,7 +17855,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_components_journey_currentreading_tsx",
-      "target": "journey_currentreading_courseitem"
+      "target": "journey_currentreading_queueitem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/journey/CurrentReading.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_journey_currentreading_tsx",
+      "target": "journey_currentreading_queuemeta"
     },
     {
       "relation": "contains",
@@ -16784,6 +17886,27 @@
       "confidence_score": 1.0,
       "source": "src_components_journey_currentreading_tsx",
       "target": "journey_currentreading_currentreading"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/journey/CurrentReading.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_journey_currentreading_tsx",
+      "target": "src_data_courses_json"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/journey/CurrentReading.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_journey_currentreading_tsx",
+      "target": "journey_currentreading_courseitem"
     },
     {
       "relation": "contains",
@@ -17050,9 +18173,9 @@
       "source_file": "src/components/journey/JourneyTimeline.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_journey_journeytimeline_tsx",
-      "target": "src_lib_utils_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_utils_ts"
     },
     {
       "relation": "imports",
@@ -17061,9 +18184,9 @@
       "source_file": "src/components/journey/JourneyTimeline.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_journey_journeytimeline_tsx",
-      "target": "lib_utils_cn",
-      "confidence_score": 1.0
+      "target": "lib_utils_cn"
     },
     {
       "relation": "imports_from",
@@ -17113,9 +18236,9 @@
       "source_file": "src/components/journey/JourneyTimeline.tsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_journey_journeytimeline_tsx",
-      "target": "journey_journeytimeline_getcurrentmonthkey",
-      "confidence_score": 1.0
+      "target": "journey_journeytimeline_getcurrentmonthkey"
     },
     {
       "relation": "contains",
@@ -17123,9 +18246,9 @@
       "source_file": "src/components/journey/JourneyTimeline.tsx",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_journey_journeytimeline_tsx",
-      "target": "journey_journeytimeline_annotatedentry",
-      "confidence_score": 1.0
+      "target": "journey_journeytimeline_annotatedentry"
     },
     {
       "relation": "contains",
@@ -17133,9 +18256,9 @@
       "source_file": "src/components/journey/JourneyTimeline.tsx",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_journey_journeytimeline_tsx",
-      "target": "journey_journeytimeline_monthgroup",
-      "confidence_score": 1.0
+      "target": "journey_journeytimeline_monthgroup"
     },
     {
       "relation": "contains",
@@ -18558,6 +19681,86 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/data/queue.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_queue_json",
+      "target": "data_queue_lastupdated"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/queue.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_queue_json",
+      "target": "data_queue_meta"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/queue.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_queue_json",
+      "target": "data_queue_items"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/queue.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_queue_meta",
+      "target": "data_queue_meta_totalbooks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/queue.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_queue_meta",
+      "target": "data_queue_meta_totalcompleted"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/queue.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_queue_meta",
+      "target": "data_queue_meta_totalinprogress"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/queue.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_queue_meta",
+      "target": "data_queue_meta_totalinqueue"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/queue.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_queue_meta",
+      "target": "data_queue_meta_displaycap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/data/journey-2026.json",
       "source_location": "L2",
       "weight": 1.0,
@@ -18994,6 +20197,237 @@
       "confidence_score": 1.0,
       "source": "src_content_photo_booth_owners_vlogs_seo_without_ads_mdx",
       "target": "vlogs_seo_without_ads_what_s_covered"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "refresh_stats_gh",
+      "target": "refresh_stats_list_repos"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L279",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "refresh_stats_list_repos",
+      "target": "refresh_stats_main"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L292",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "refresh_stats_shallow_clone",
+      "target": "refresh_stats_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "refresh_stats_shallow_clone",
+      "target": "refresh_stats_rationale_75"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "refresh_stats_shallow_clone",
+      "target": "sync_claude_stats_run"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L120",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "refresh_stats_is_skippable",
+      "target": "refresh_stats_count_loc_in_repo"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L296",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "refresh_stats_count_loc_in_repo",
+      "target": "refresh_stats_main"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L297",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "refresh_stats_count_commits_for_repo",
+      "target": "refresh_stats_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "refresh_stats_count_commits_for_repo",
+      "target": "refresh_stats_rationale_139"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "refresh_stats_count_commits_for_repo",
+      "target": "scan_tools_add"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L311",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "refresh_stats_fetch_claude_2026",
+      "target": "refresh_stats_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L160",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "refresh_stats_fetch_claude_2026",
+      "target": "refresh_stats_rationale_160"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L178",
+      "weight": 1.0,
+      "source": "refresh_stats_fetch_claude_2026",
+      "target": "route_get"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L308",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "refresh_stats_count_tools",
+      "target": "refresh_stats_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L196",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "refresh_stats_count_tools",
+      "target": "refresh_stats_rationale_196"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L214",
+      "weight": 1.0,
+      "source": "refresh_stats_count_tools",
+      "target": "sync_claude_stats_run"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L307",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "refresh_stats_count_skills",
+      "target": "refresh_stats_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L233",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "refresh_stats_count_skills",
+      "target": "refresh_stats_rationale_233"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L303",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "refresh_stats_count_live_agents",
+      "target": "refresh_stats_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L249",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "refresh_stats_count_live_agents",
+      "target": "refresh_stats_rationale_249"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L265",
+      "weight": 1.0,
+      "source": "refresh_stats_count_live_agents",
+      "target": "route_get"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L314",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "refresh_stats_load_prev",
+      "target": "refresh_stats_main"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/refresh-stats.py",
+      "source_location": "L315",
+      "weight": 1.0,
+      "source": "refresh_stats_main",
+      "target": "route_get"
     },
     {
       "relation": "calls",
@@ -19517,5 +20951,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "7952e255e61454956aadc8ce7630eac7cbf801d8"
+  "built_at_commit": "65aa4d8b7dafc557e824128be03c08017690d01c"
 }
