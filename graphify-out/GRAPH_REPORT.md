@@ -1,109 +1,429 @@
-# Graph Report - andrewwebber.dev  (2026-05-20)
+# Graph Report - andrewwebber.dev  (2026-05-28)
 
 ## Corpus Check
-- 47 files · ~95,309 words
+- 110 files · ~508,654 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 110 nodes · 87 edges · 9 communities detected
-- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 10 edges (avg confidence: 0.8)
+- 853 nodes · 1144 edges · 84 communities (71 shown, 13 thin omitted)
+- Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 42 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `523eadae`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Community 0|Community 0]]
 - [[_COMMUNITY_Community 1|Community 1]]
 - [[_COMMUNITY_Community 2|Community 2]]
 - [[_COMMUNITY_Community 3|Community 3]]
+- [[_COMMUNITY_Community 4|Community 4]]
 - [[_COMMUNITY_Community 5|Community 5]]
 - [[_COMMUNITY_Community 6|Community 6]]
+- [[_COMMUNITY_Community 7|Community 7]]
 - [[_COMMUNITY_Community 8|Community 8]]
+- [[_COMMUNITY_Community 9|Community 9]]
 - [[_COMMUNITY_Community 10|Community 10]]
+- [[_COMMUNITY_Community 11|Community 11]]
+- [[_COMMUNITY_Community 12|Community 12]]
+- [[_COMMUNITY_Community 13|Community 13]]
+- [[_COMMUNITY_Community 14|Community 14]]
+- [[_COMMUNITY_Community 15|Community 15]]
+- [[_COMMUNITY_Community 16|Community 16]]
+- [[_COMMUNITY_Community 17|Community 17]]
+- [[_COMMUNITY_Community 18|Community 18]]
+- [[_COMMUNITY_Community 19|Community 19]]
+- [[_COMMUNITY_Community 20|Community 20]]
+- [[_COMMUNITY_Community 21|Community 21]]
+- [[_COMMUNITY_Community 22|Community 22]]
+- [[_COMMUNITY_Community 23|Community 23]]
+- [[_COMMUNITY_Community 24|Community 24]]
+- [[_COMMUNITY_Community 25|Community 25]]
 - [[_COMMUNITY_Community 26|Community 26]]
+- [[_COMMUNITY_Community 27|Community 27]]
+- [[_COMMUNITY_Community 28|Community 28]]
+- [[_COMMUNITY_Community 29|Community 29]]
+- [[_COMMUNITY_Community 30|Community 30]]
+- [[_COMMUNITY_Community 31|Community 31]]
+- [[_COMMUNITY_Community 32|Community 32]]
+- [[_COMMUNITY_Community 33|Community 33]]
+- [[_COMMUNITY_Community 34|Community 34]]
+- [[_COMMUNITY_Community 35|Community 35]]
+- [[_COMMUNITY_Community 36|Community 36]]
+- [[_COMMUNITY_Community 37|Community 37]]
+- [[_COMMUNITY_Community 38|Community 38]]
+- [[_COMMUNITY_Community 39|Community 39]]
+- [[_COMMUNITY_Community 40|Community 40]]
+- [[_COMMUNITY_Community 41|Community 41]]
+- [[_COMMUNITY_Community 42|Community 42]]
+- [[_COMMUNITY_Community 43|Community 43]]
+- [[_COMMUNITY_Community 44|Community 44]]
+- [[_COMMUNITY_Community 45|Community 45]]
+- [[_COMMUNITY_Community 46|Community 46]]
+- [[_COMMUNITY_Community 48|Community 48]]
+- [[_COMMUNITY_Community 49|Community 49]]
+- [[_COMMUNITY_Community 50|Community 50]]
+- [[_COMMUNITY_Community 51|Community 51]]
+- [[_COMMUNITY_Community 52|Community 52]]
+- [[_COMMUNITY_Community 53|Community 53]]
+- [[_COMMUNITY_Community 54|Community 54]]
+- [[_COMMUNITY_Community 55|Community 55]]
+- [[_COMMUNITY_Community 56|Community 56]]
+- [[_COMMUNITY_Community 57|Community 57]]
+- [[_COMMUNITY_Community 58|Community 58]]
+- [[_COMMUNITY_Community 59|Community 59]]
+- [[_COMMUNITY_Community 60|Community 60]]
+- [[_COMMUNITY_Community 61|Community 61]]
+- [[_COMMUNITY_Community 62|Community 62]]
+- [[_COMMUNITY_Community 63|Community 63]]
+- [[_COMMUNITY_Community 64|Community 64]]
+- [[_COMMUNITY_Community 65|Community 65]]
+- [[_COMMUNITY_Community 66|Community 66]]
+- [[_COMMUNITY_Community 67|Community 67]]
+- [[_COMMUNITY_Community 68|Community 68]]
+- [[_COMMUNITY_Community 69|Community 69]]
+- [[_COMMUNITY_Community 70|Community 70]]
+- [[_COMMUNITY_Community 71|Community 71]]
+- [[_COMMUNITY_Community 72|Community 72]]
+- [[_COMMUNITY_Community 73|Community 73]]
+- [[_COMMUNITY_Community 74|Community 74]]
+- [[_COMMUNITY_Community 75|Community 75]]
+- [[_COMMUNITY_Community 76|Community 76]]
+- [[_COMMUNITY_Community 77|Community 77]]
+- [[_COMMUNITY_Community 78|Community 78]]
+- [[_COMMUNITY_Community 79|Community 79]]
+- [[_COMMUNITY_Community 80|Community 80]]
+- [[_COMMUNITY_Community 81|Community 81]]
+- [[_COMMUNITY_Community 82|Community 82]]
+- [[_COMMUNITY_Community 83|Community 83]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `GET()` - 8 edges
-2. `main()` - 6 edges
-3. `fetch_all_pages()` - 4 edges
-4. `extract_rich_text()` - 4 edges
-5. `parse_blocks()` - 4 edges
-6. `props_to_entry()` - 4 edges
-7. `walk()` - 4 edges
-8. `fetchGitHubStats()` - 4 edges
-9. `getPostBySlug()` - 4 edges
-10. `main()` - 3 edges
+1. `cn()` - 46 edges
+2. `per_repo` - 35 edges
+3. `compilerOptions` - 16 edges
+4. `GET()` - 14 edges
+5. `GET()` - 14 edges
+6. `main()` - 12 edges
+7. `enabledPlugins` - 11 edges
+8. `add()` - 11 edges
+9. `add()` - 11 edges
+10. `main()` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `fetch_all_pages()` --calls--> `POST()`  [INFERRED]
-  scripts/export-journey-json.py → src/app/api/consultation/route.ts
-- `fetch_all_pages()` --calls--> `GET()`  [INFERRED]
-  scripts/export-journey-json.py → src/app/api/stats/route.ts
-- `fetch_page_blocks()` --calls--> `GET()`  [INFERRED]
-  scripts/export-journey-json.py → src/app/api/stats/route.ts
-- `extract_rich_text()` --calls--> `GET()`  [INFERRED]
-  scripts/export-journey-json.py → src/app/api/stats/route.ts
-- `parse_blocks()` --calls--> `GET()`  [INFERRED]
-  scripts/export-journey-json.py → src/app/api/stats/route.ts
+- `cn()` --calls--> `clsx`  [INFERRED]
+  src/lib/utils.ts → package.json
+- `count_commits_for_repo()` --calls--> `add()`  [INFERRED]
+  scripts/refresh-stats.py → scripts/scan-tools.py
+- `count_commits_for_repo()` --calls--> `add()`  [INFERRED]
+  scripts/refresh-stats.py → scripts/scan-tools.py
+- `generateStaticParams()` --calls--> `getAllVlogs()`  [INFERRED]
+  src/app/photo-booth-owners/vlogs/[slug]/page.tsx → src/lib/vlogs.ts
+- `generateMetadata()` --calls--> `getPostBySlug()`  [INFERRED]
+  src/app/photo-booth-owners/vlogs/[slug]/page.tsx → src/lib/blog.ts
 
-## Communities
+## Communities (84 total, 13 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.61
-Nodes (7): extract_rich_text(), fetch_all_pages(), fetch_page_blocks(), main(), parse_blocks(), props_to_entry(), GET()
+Cohesion: 0.07
+Nodes (51): Stat(), Home(), extract_rich_text(), fetch_all_pages(), fetch_page_blocks(), main(), parse_blocks(), props_to_entry() (+43 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.39
-Nodes (6): countAgents(), countLOC(), countSkills(), getClaudeUsage(), run(), walk()
+Cohesion: 0.17
+Nodes (33): add(), first_sentence(), has_skip_part(), main(), parse_manifest(), parse_skill_frontmatter(), scan_design_forge(), scan_global_tools() (+25 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.36
-Nodes (6): calculateReadingTime(), getAllPosts(), getPostBySlug(), BlogPostPage(), generateMetadata(), generateStaticParams()
+Cohesion: 0.20
+Nodes (8): ACCENT_CLASSES, ServiceCard(), ServiceCardProps, ServiceItem, ACCENT_CYCLE, AccentKey, ServiceGroup, ServicesGrid()
 
 ### Community 3 - "Community 3"
-Cohesion: 0.6
-Nodes (4): fetchGitHubStats(), loadDayStreak(), loadOverrides(), timed()
+Cohesion: 0.09
+Nodes (23): getAllVlogs(), getVlogBySlug(), readingTime(), VlogPost, VLOGS_DIR, generateMetadata(), VlogsPage(), SupercutEmbed() (+15 more)
+
+### Community 4 - "Community 4"
+Cohesion: 0.04
+Nodes (45): dependencies, @base-ui/react, class-variance-authority, clsx, framer-motion, gray-matter, gsap, @gsap/react (+37 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.4
-Nodes (4): code:bash (npm run dev), Deploy on Vercel, Getting Started, Learn More
+Cohesion: 0.06
+Nodes (25): FocusAudio(), FocusMode, VALID_MODES, Mode, MODES, Props, SoundPicker(), VALID_IDS (+17 more)
 
 ### Community 6 - "Community 6"
+Cohesion: 0.07
+Nodes (25): ALL_TAGS, Project, PROJECTS, ACCENT_BG, ACCENT_BORDER, ACCENT_TEXT, ProjectCard(), Props (+17 more)
+
+### Community 7 - "Community 7"
+Cohesion: 0.12
+Nodes (14): BOOT_LINES, LoadingScreen(), WELCOME_LINES, TypeWriter(), TypeWriterProps, ConsultationForm(), FormData, SERVICES (+6 more)
+
+### Community 8 - "Community 8"
+Cohesion: 0.40
+Nodes (4): code:bash (npm run dev), Deploy on Vercel, Getting Started, Learn More
+
+### Community 9 - "Community 9"
 Cohesion: 0.83
 Nodes (3): count_commits(), count_loc(), main()
 
-### Community 8 - "Community 8"
-Cohesion: 0.67
-Nodes (1): POST()
-
 ### Community 10 - "Community 10"
-Cohesion: 0.67
-Nodes (2): What I Build, Why This Site
+Cohesion: 0.18
+Nodes (10): slugify(), walkAgents(), MIGHTY_ROOT, OUTPUT, seen, slugify(), ToolEntry, tools (+2 more)
+
+### Community 11 - "Community 11"
+Cohesion: 0.09
+Nodes (16): AnimatedNumber(), formatNumber(), FormatType, LiveStats, StatProps, StatsCounter(), ZERO, DIVIDER_COLORS (+8 more)
+
+### Community 12 - "Community 12"
+Cohesion: 0.08
+Nodes (22): calculateReadingTime(), Comments(), GISCUS, getAllPosts(), getPostBySlug(), LikeButton(), LikeButtonProps, blogMDXComponents (+14 more)
+
+### Community 13 - "Community 13"
+Cohesion: 0.13
+Nodes (9): CalcomEmbed(), CalcomEmbedProps, Hero(), FormData, InquiryForm(), SERVICES, mergeTools(), metadata (+1 more)
+
+### Community 14 - "Community 14"
+Cohesion: 0.09
+Nodes (21): aliases, components, hooks, lib, ui, utils, iconLibrary, menuAccent (+13 more)
+
+### Community 16 - "Community 16"
+Cohesion: 0.10
+Nodes (20): agents_live, claude_hours, claude_sessions, claude_tokens, countedAt, github_commits, github_loc, live_agents_registry (+12 more)
+
+### Community 18 - "Community 18"
+Cohesion: 0.06
+Nodes (28): currentEra, entries, lastUpdated, totalDays, CourseItem, CurrentReading(), DayCard(), DayCardProps (+20 more)
+
+### Community 19 - "Community 19"
+Cohesion: 0.10
+Nodes (19): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+11 more)
+
+### Community 20 - "Community 20"
+Cohesion: 0.28
+Nodes (4): metadata, DesignRequestForm(), PolicyBlock(), RULES
+
+### Community 21 - "Community 21"
+Cohesion: 0.14
+Nodes (10): ASCII, LINEART_SVG, metadata, ROOT, Phase, PHASE_MS, PortraitGlitch(), Props (+2 more)
+
+### Community 22 - "Community 22"
+Cohesion: 0.16
+Nodes (5): CharacterStats(), CharacterStatsStrip(), DISCIPLINES, statsPath(), stripStatsPath()
+
+### Community 23 - "Community 23"
+Cohesion: 0.25
+Nodes (6): Phase, PHASE_MS, PortraitEmbedded(), Props, RainCol, WORDS
+
+### Community 24 - "Community 24"
+Cohesion: 0.18
+Nodes (10): Is AI coming for developer jobs?, One honest question for you, The discipline AI cannot replace, The mistakes look correct, The things that will trip you up, Two assistants on the same files will fight, What a year of Claude Code taught me, What changed yesterday when I added Codex (+2 more)
+
+### Community 25 - "Community 25"
+Cohesion: 0.18
+Nodes (10): code:bash (cd /Users/mightydesigncenter/Desktop/_Code && python3 export), code:bash (git add src/data/journey-2026.json), code:bash (cd /Users/mightydesigncenter/Desktop/_Code/andrewwebber.dev ), Context, Step 1 — Pull from Notion, Step 2 — Report new entries, Step 3 — Commit and push, Step 4 — Deploy to Vercel (+2 more)
 
 ### Community 26 - "Community 26"
-Cohesion: 1.0
-Nodes (1): This is NOT the Next.js you know
+Cohesion: 0.20
+Nodes (9): agentsLive, claudeHours, claudeTokens, commitsShipped, linesOfCode, repos, skills, tools (+1 more)
+
+### Community 27 - "Community 27"
+Cohesion: 0.43
+Nodes (5): extract_meta_from_callout(), gtext(), main(), query_all(), Pull the metadata callout block to recover Author/Duration/Rating/ASIN/Cover.
+
+### Community 28 - "Community 28"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/mpb-site
+
+### Community 29 - "Community 29"
+Cohesion: 0.50
+Nodes (3): buildCommand, framework, outputDirectory
+
+### Community 30 - "Community 30"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/Agents
+
+### Community 32 - "Community 32"
+Cohesion: 0.17
+Nodes (8): items, lastUpdated, total, CourseItem, LearningLibrary(), SOURCE_BADGE, TYPE_FILTERS, TypeFilter
+
+### Community 33 - "Community 33"
+Cohesion: 0.40
+Nodes (5): commits, files, loc, per_repo, ninjaforhire/andrewwebber.dev
+
+### Community 34 - "Community 34"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/Biometric-Lab
+
+### Community 35 - "Community 35"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/BoothBook
+
+### Community 36 - "Community 36"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/claude-config
+
+### Community 37 - "Community 37"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/cli-printing-press
+
+### Community 38 - "Community 38"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/_Code
+
+### Community 39 - "Community 39"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/deconstructed-studio
+
+### Community 40 - "Community 40"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/design-request-agent
+
+### Community 41 - "Community 41"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/dotfiles
+
+### Community 42 - "Community 42"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/everything-claude-code
+
+### Community 43 - "Community 43"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/forge
+
+### Community 44 - "Community 44"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/General-Tools
+
+### Community 50 - "Community 50"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/gstack
+
+### Community 51 - "Community 51"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/hotfixops
+
+### Community 53 - "Community 53"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/hotfixops-site
+
+### Community 54 - "Community 54"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/workspace-config
+
+### Community 55 - "Community 55"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/Iris-Studio
+
+### Community 56 - "Community 56"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/MIGHTY-Apps
+
+### Community 57 - "Community 57"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/mighty
+
+### Community 58 - "Community 58"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/mighty-gallery
+
+### Community 59 - "Community 59"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/mighty-gobbla
+
+### Community 60 - "Community 60"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/mighty-playbook
+
+### Community 61 - "Community 61"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/mighty-skills
+
+### Community 62 - "Community 62"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/mightyphotobooths
+
+### Community 63 - "Community 63"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/mpb-ai-gen-tool
+
+### Community 64 - "Community 64"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/Notion-Tools
+
+### Community 65 - "Community 65"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/pp-libraries
+
+### Community 66 - "Community 66"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/Scrapers
+
+### Community 67 - "Community 67"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/snappic-site-builder
+
+### Community 68 - "Community 68"
+Cohesion: 0.38
+Nodes (5): CERT_CATEGORIES, Certification, CERTIFICATIONS, CATEGORY_ACCENTS, CertTimeline()
+
+### Community 69 - "Community 69"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/terminal-gloss
+
+### Community 70 - "Community 70"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/terminal-karaoke
+
+### Community 71 - "Community 71"
+Cohesion: 0.50
+Nodes (4): commits, files, loc, ninjaforhire/Video-Agent
+
+### Community 72 - "Community 72"
+Cohesion: 0.14
+Nodes (13): enabledPlugins, caveman@caveman, design-extract@design-extract, exa@claude-plugins-official, frontend-design@claude-plugins-official, greptile@claude-plugins-official, mighty@mighty, playground@claude-plugins-official (+5 more)
+
+### Community 73 - "Community 73"
+Cohesion: 0.20
+Nodes (10): andrewwebber.dev — Personal Portfolio + Blog, Blog Pipeline, code:bash (npm run dev          # next dev (Turbopack)), Commands, Directory Map, graphify, Hard Rules, Stack (+2 more)
+
+### Community 76 - "Community 76"
+Cohesion: 0.25
+Nodes (8): accent(), CATEGORY_ACCENT, MightyTool, ToolCard(), CATEGORIES, ToolsGrid(), accent(), ToolCard()
+
+### Community 77 - "Community 77"
+Cohesion: 0.18
+Nodes (7): CHAPTERS, LINEART_SVG, metadata, ROOT, MatrixRain(), RainCol, WORDS
+
+### Community 78 - "Community 78"
+Cohesion: 0.33
+Nodes (8): build_ascii(), build_body_mask(), build_lineart_svg(), build_svg(), main(), Build 4 portrait artifacts from a single source photo.  Inputs:  public/images/p, Return an HxW uint8 alpha mask: ~255 inside body, 0 outside, feathered edges., Return an HxW uint8 alpha mask: ~255 inside body, 0 outside, feathered edges.
+
+### Community 79 - "Community 79"
+Cohesion: 0.33
+Nodes (4): ACCENT, Guide, GuideCard(), STORE_LABELS
+
+### Community 81 - "Community 81"
+Cohesion: 0.40
+Nodes (4): Phase, PHASE_MS, PortraitFigure(), Props
 
 ## Knowledge Gaps
-- **6 isolated node(s):** `code:bash (npm run dev)`, `Learn More`, `Deploy on Vercel`, `This is NOT the Next.js you know`, `What I Build` (+1 more)
+- **394 isolated node(s):** `buildCommand`, `outputDirectory`, `framework`, `config`, `tools` (+389 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `Community 8`** (3 nodes): `POST()`, `route.ts`, `route.ts`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 10`** (3 nodes): `What I Build`, `Why This Site`, `hello-world.mdx`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 26`** (2 nodes): `AGENTS.md`, `This is NOT the Next.js you know`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `main()` connect `Community 0` to `Community 1`?**
-  _High betweenness centrality (0.021) - this node is a cross-community bridge._
-- **Why does `run()` connect `Community 1` to `Community 0`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
-- **Why does `GET()` connect `Community 0` to `Community 3`?**
-  _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **Are the 5 inferred relationships involving `GET()` (e.g. with `fetch_all_pages()` and `fetch_page_blocks()`) actually correct?**
-  _`GET()` has 5 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 2 inferred relationships involving `fetch_all_pages()` (e.g. with `POST()` and `GET()`) actually correct?**
-  _`fetch_all_pages()` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `code:bash (npm run dev)`, `Learn More`, `Deploy on Vercel` to the rest of the system?**
-  _6 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `cn()` connect `Community 7` to `Community 32`, `Community 2`, `Community 3`, `Community 68`, `Community 5`, `Community 6`, `Community 4`, `Community 76`, `Community 13`, `Community 79`, `Community 80`, `Community 18`, `Community 83`?**
+  _High betweenness centrality (0.209) - this node is a cross-community bridge._
+- **Why does `add()` connect `Community 1` to `Community 0`, `Community 5`?**
+  _High betweenness centrality (0.137) - this node is a cross-community bridge._
+- **Why does `toggleTheme()` connect `Community 5` to `Community 1`?**
+  _High betweenness centrality (0.137) - this node is a cross-community bridge._
+- **Are the 11 inferred relationships involving `GET()` (e.g. with `fetch_claude_2026()` and `count_live_agents()`) actually correct?**
+  _`GET()` has 11 INFERRED edges - model-reasoned connections that need verification._
+- **What connects `buildCommand`, `outputDirectory`, `framework` to the rest of the system?**
+  _407 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Community 0` be split into smaller, more focused modules?**
+  _Cohesion score 0.06578947368421052 - nodes in this community are weakly interconnected._
+- **Should `Community 3` be split into smaller, more focused modules?**
+  _Cohesion score 0.09269162210338681 - nodes in this community are weakly interconnected._
