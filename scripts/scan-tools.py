@@ -1,30 +1,31 @@
-#!/usr/bin/env python3
 """Scan ~/Desktop/_Code for tools Andrew built.
 
-THE RULE:
 A "tool" = a discrete thing Andrew built. Discovered by walking these
 subtrees of ~/Desktop/_Code. Each row in the output = exactly one tool.
 Categories are derived from location, not content.
 
 | Subtree                                        | What counts                        | Category     |
 |------------------------------------------------|------------------------------------|--------------|
+| mighty/agents/finance/**/manifest.json         | each finance agent                 | finance      |
 | mighty/agents/**/manifest.json                 | each agent dir (recursive)         | photo-booth  |
+| mighty/skills/finance/<skill>/SKILL.md         | each finance skill                 | finance      |
 | mighty/skills/<cat>/<skill>/SKILL.md           | each skill dir                     | photo-booth  |
 | mighty/apps/<name>/                            | each standalone app                | photo-booth  |
 | forge/                                         | Design Forge parent                | design-forge |
 | forge/execution/wings/<name>/                  | each wing                          | design-forge |
 | hotfixops/security/<dir>/                      | each Spectre tool                  | spectre      |
 | hotfixops/security/aisec/<sub>/                | each Ghost variant                 | spectre      |
-| general-tools/<dir>/                           | each global tool                   | global       |
-| andrewwebber.dev/                              | this site                          | global       |
+| general-tools/<allowlist>                      | curated cross-project tools        | tooling      |
+| general-tools/Scrapers/<dir>/                  | each scraper                       | tooling      |
+| andrewwebber.dev/                              | this site                          | tooling      |
 
-Excludes any path under: .worktrees/, .cache/, _archive/, _reference/,
-node_modules/, vendor/, __pycache__/, graphify-out/, .git/.
+Photo Booth entries also get a `domain` tag (Ops/Sales/Design/etc) derived
+from path so the UI can offer a sub-filter without exploding top-level tabs.
 
 Explicit SKIP list (downloaded/upstream things Andrew did not author):
   - huashu-design
-
-Output: src/data/mighty-tools.json (kept name for backwards compat).
+  - everything under general-tools/dev/ unless allowlisted
+  - everything under general-tools/security/ unless allowlisted
 """
 
 from __future__ import annotations
@@ -47,12 +48,39 @@ SKIP_TOOL_SLUGS = {
     "huashu-design",
 }
 
-# Curated names + descriptions for high-signal tools. Anything not in this map
-# falls back to manifest/SKILL.md metadata or the directory basename.
+# Domain mapping for Photo Booth sub-filter. Key = first path component after
+# mighty/agents/ or mighty/skills/. Value = display label.
+DOMAIN_BY_AGENT_DIR: dict[str, str] = {
+    "agency-agents": "Sales",
+    "autoresearch": "R&D",
+    "coach": "R&D",
+    "design-request-agent": "Design",
+    "email": "Comms",
+    "finance": "Finance",
+    "legal-team": "Legal",
+    "mighty-agent-upgrade": "Ops",
+    "operations": "Ops",
+    "tools": "Ops",
+    "voice": "Comms",
+    "workflows": "Ops",
+}
+DOMAIN_BY_SKILL_DIR: dict[str, str] = {
+    "admin": "Admin",
+    "brand": "Brand",
+    "crm": "CRM",
+    "design-center": "Design",
+    "finance": "Finance",
+    "legal": "Legal",
+    "marketing": "Marketing",
+    "ops": "Ops",
+    "r-and-d": "R&D",
+    "sales": "Sales",
+}
+
 CURATED: dict[str, dict[str, str]] = {
     "design-forge": {
-        "name": "Design Forge",
-        "description": "AI-powered design automation. Multi-provider image + video generation, brand-aware template engine, Notion-driven asset pipeline.",
+        "name": "PANDORA'S FORGE",
+        "description": "Andrew's full creative-AI suite. 11 specialist wings across creation, production, intelligence, and distribution: image + video generation across every major model, brand-aware template engine, font + style libraries, scene composers, post-production, and a Notion-driven asset pipeline. Outputs everything from event posters and animated reels to client decks and impact reports. Actively iterating — new wings ship every few weeks.",
     },
     "design-forge:creative_coding": {
         "name": "Design Forge — Creative Coding Wing",
@@ -62,6 +90,38 @@ CURATED: dict[str, dict[str, str]] = {
         "name": "Design Forge — Slides Wing",
         "description": "Brand-aware HTML deck generator. 21 rule checks, 72-brand library, NotebookLM bridge, PDF + presenter modes.",
     },
+}
+
+# general-tools/ allowlist — only the dirs Andrew actually built. Everything
+# else under general-tools/ (dev/, security/, etc.) is upstream / vendored
+# / experiments and is excluded from the published tools count.
+GENERAL_TOOLS_ALLOWED: dict[str, dict[str, str]] = {
+    "graphify": {
+        "name": "Graphify",
+        "description": "Andrew's queryable knowledge-graph builder for any codebase. AST + LLM extraction → JSON graph; powers cross-repo `graphify query` / `path` / `explain` workflows across all of _Code.",
+    },
+    "cli-printing-press": {
+        "name": "CLI Printing Press",
+        "description": "Generator that turns a third-party API spec into a complete `*-pp-cli` Go CLI. Powers quo-pp-cli, vsco-workspace-pp-cli, kie-pp-cli and friends — one printer, many CLIs.",
+    },
+    "gdrive-recovery": {
+        "name": "Gdrive Recovery",
+        "description": "Tooling for reclaiming ownership + restoring Google Drive uploads (the iammagicmatt → MIGHTY ownership-fix story).",
+    },
+}
+
+# general-tools/Scrapers/<dir>/ — individual scrapers Andrew built. Skip the
+# parent and only expose the actual tools underneath.
+SCRAPER_DESCRIPTIONS: dict[str, str] = {
+    "awwwards-scraper": "Scrapes Awwwards site-of-the-day designs, downloads hero shots, and tags by style for the Forge inspiration library.",
+    "video-agent": "Video-content scraper / analyzer pipeline used to convert YouTube + Loom + login-gated videos into transcript + key-frame data.",
+}
+
+# Finance-side skill slugs that live under mighty/skills/finance/* but also
+# the few finance-adjacent skills that live elsewhere by historical accident.
+EXTRA_FINANCE_SKILLS: set[str] = {
+    "w9-creator",   # historically under mighty/skills/legal — re-tag to finance
+    "pdf-copy",     # invoices live here too
 }
 
 
@@ -79,10 +139,20 @@ def slugify(name: str) -> str:
     return "".join(out).strip("-")
 
 
-def add(tools: list[dict], *, slug: str, name: str, description: str, category: str, subcategory: str, location: str) -> None:
+def add(
+    tools: list[dict],
+    *,
+    slug: str,
+    name: str,
+    description: str,
+    category: str,
+    subcategory: str,
+    location: str,
+    domain: str | None = None,
+) -> None:
     if slug in SKIP_TOOL_SLUGS:
         return
-    tools.append({
+    entry = {
         "slug": slug,
         "name": name,
         "description": description,
@@ -90,7 +160,10 @@ def add(tools: list[dict], *, slug: str, name: str, description: str, category: 
         "subcategory": subcategory,
         "source": subcategory,
         "location": location,
-    })
+    }
+    if domain:
+        entry["domain"] = domain
+    tools.append(entry)
 
 
 def first_sentence(text: str) -> str:
@@ -131,6 +204,20 @@ def parse_manifest(p: pathlib.Path) -> dict:
         return {}
 
 
+def _domain_for_agent_path(rel: pathlib.PurePath) -> str | None:
+    if not rel.parts:
+        return None
+    first = rel.parts[0]
+    return DOMAIN_BY_AGENT_DIR.get(first)
+
+
+def _domain_for_skill_path(rel: pathlib.PurePath) -> str | None:
+    if not rel.parts:
+        return None
+    first = rel.parts[0]
+    return DOMAIN_BY_SKILL_DIR.get(first)
+
+
 def scan_mighty_agents(tools: list[dict]) -> None:
     root = CODE_ROOT / "mighty" / "agents"
     if not root.exists():
@@ -143,6 +230,17 @@ def scan_mighty_agents(tools: list[dict]) -> None:
             continue
         if data.get("status") == "archived":
             continue
+        rel_from_root = manifest.parent.relative_to(root)
+        domain = _domain_for_agent_path(rel_from_root)
+        # Finance agents get re-routed to the finance category entirely.
+        if domain == "Finance":
+            category = "finance"
+            subcategory = "finance-agent"
+            domain = None
+        else:
+            category = "photo-booth"
+            subcategory = "agent"
+
         name = str(data.get("name") or manifest.parent.name)
         slug = slugify(name)
         desc = first_sentence(str(data.get("description") or ""))
@@ -153,9 +251,10 @@ def scan_mighty_agents(tools: list[dict]) -> None:
             slug=slug,
             name=name,
             description=desc,
-            category="photo-booth",
-            subcategory="agent",
+            category=category,
+            subcategory=subcategory,
             location=str(manifest.parent.relative_to(CODE_ROOT)),
+            domain=domain,
         )
 
 
@@ -169,6 +268,17 @@ def scan_mighty_skills(tools: list[dict]) -> None:
         fm = parse_skill_frontmatter(skill_md)
         name = fm.get("name") or skill_md.parent.name
         slug = slugify(name)
+        rel_from_root = skill_md.parent.relative_to(root)
+        domain = _domain_for_skill_path(rel_from_root)
+        # Finance skills (or any allowlisted finance-adjacent skill) get
+        # re-routed to the Finance category.
+        if domain == "Finance" or slug in EXTRA_FINANCE_SKILLS:
+            category = "finance"
+            subcategory = "finance-skill"
+            domain = None
+        else:
+            category = "photo-booth"
+            subcategory = "skill"
         desc = first_sentence(fm.get("description", ""))
         if not desc:
             desc = "MIGHTY skill."
@@ -177,9 +287,10 @@ def scan_mighty_skills(tools: list[dict]) -> None:
             slug=slug,
             name=name,
             description=desc,
-            category="photo-booth",
-            subcategory="skill",
+            category=category,
+            subcategory=subcategory,
             location=str(skill_md.parent.relative_to(CODE_ROOT)),
+            domain=domain,
         )
 
 
@@ -197,10 +308,11 @@ def scan_mighty_apps(tools: list[dict]) -> None:
             tools,
             slug=slugify(entry.name),
             name=name,
-            description=f"Standalone app under mighty/apps.",
+            description="Standalone app under mighty/apps.",
             category="photo-booth",
             subcategory="app",
             location=str(entry.relative_to(CODE_ROOT)),
+            domain="Apps",
         )
 
 
@@ -230,7 +342,7 @@ def scan_design_forge(tools: list[dict]) -> None:
             desc = CURATED[key]["description"]
         else:
             name = f"Design Forge — {entry.name.replace('_', ' ').title()} Wing"
-            desc = f"Design Forge wing."
+            desc = "Design Forge wing."
         add(
             tools,
             slug=slugify(name),
@@ -243,7 +355,6 @@ def scan_design_forge(tools: list[dict]) -> None:
 
 
 SPECTRE_DESCRIPTIONS: dict[str, tuple[str, str]] = {
-    # name override, description
     "bastion": (
         "SPECTRE — Bastion",
         "Blue Team defense layer. Wazuh SIEM orchestrating 6 LangGraph agents (sentinel, ironhide, others) for monitor + harden + respond. Port 2025.",
@@ -330,6 +441,15 @@ def scan_spectre(tools: list[dict]) -> None:
     root = CODE_ROOT / "hotfixops" / "security"
     if not root.exists():
         return
+    add(
+        tools,
+        slug="spectre",
+        name="SPECTRE",
+        description="Andrew's full-spectrum security platform. 13 modules across recon, red-team, blue-team, purple-team, AI-security, and reporting — Raven, Blackthorn, Bastion, Gauntlet, Ember, Cloudbreak, Watchtower, Shannon, Dossier, Code Council, Ghost (computer-use), and a REST API. Runs autonomous engagements end-to-end: discover the surface, hammer it, detect what should have caught it, and ship a branded report. Actively iterating — new tools and detections land every sprint.",
+        category="spectre",
+        subcategory="parent",
+        location="hotfixops/security",
+    )
     aisec = root / "aisec"
     for entry in sorted(root.iterdir()):
         if not entry.is_dir() or entry.name.startswith("_") or entry.name.startswith("."):
@@ -379,25 +499,46 @@ def scan_spectre(tools: list[dict]) -> None:
             )
 
 
-def scan_global_tools(tools: list[dict]) -> None:
+def scan_general_tools(tools: list[dict]) -> None:
+    """Allowlisted cross-project tools + individual scrapers. Skip everything
+    else under general-tools/ (dev/, security/, etc. are upstream)."""
     root = CODE_ROOT / "general-tools"
     if not root.exists():
         return
-    for entry in sorted(root.iterdir()):
-        if not entry.is_dir() or entry.name.startswith("_") or entry.name.startswith("."):
+    for slug, meta in GENERAL_TOOLS_ALLOWED.items():
+        candidate = root / slug
+        if not candidate.exists():
             continue
-        if entry.name in SKIP_DIR_PARTS:
-            continue
-        name = entry.name.replace("-", " ").title()
         add(
             tools,
-            slug=slugify(entry.name),
-            name=name,
-            description="Cross-project tool — runs across all of Andrew's repos, not just MIGHTY.",
-            category="global",
-            subcategory="global-tool",
-            location=str(entry.relative_to(CODE_ROOT)),
+            slug=slug,
+            name=meta["name"],
+            description=meta["description"],
+            category="tooling",
+            subcategory="tool",
+            location=str(candidate.relative_to(CODE_ROOT)),
         )
+    # Expand the Scrapers/ parent into individual scraper tools.
+    scrapers = root / "Scrapers"
+    if scrapers.exists():
+        for entry in sorted(scrapers.iterdir()):
+            if not entry.is_dir() or entry.name.startswith("_") or entry.name.startswith("."):
+                continue
+            if entry.name in SKIP_DIR_PARTS:
+                continue
+            desc = SCRAPER_DESCRIPTIONS.get(
+                entry.name,
+                "Web scraper / data extraction tool.",
+            )
+            add(
+                tools,
+                slug=slugify(entry.name),
+                name=entry.name.replace("-", " ").title(),
+                description=desc,
+                category="tooling",
+                subcategory="scraper",
+                location=str(entry.relative_to(CODE_ROOT)),
+            )
 
 
 def scan_personal(tools: list[dict]) -> None:
@@ -408,7 +549,7 @@ def scan_personal(tools: list[dict]) -> None:
             slug="andrewwebber-dev",
             name="andrewwebber.dev",
             description="This site. Next.js 16, terminal-style portfolio, live stats wired to GitHub.",
-            category="global",
+            category="tooling",
             subcategory="site",
             location="andrewwebber.dev",
         )
@@ -421,11 +562,9 @@ def main() -> None:
     scan_mighty_agents(tools)
     scan_mighty_skills(tools)
     scan_mighty_apps(tools)
-    scan_global_tools(tools)
+    scan_general_tools(tools)
     scan_personal(tools)
 
-    # Dedup by slug. First occurrence wins so curated forge/spectre entries
-    # take precedence over any name collisions in mighty.
     seen: set[str] = set()
     unique: list[dict] = []
     for t in tools:
@@ -444,6 +583,10 @@ def main() -> None:
     print(f"Wrote {len(unique)} tools to {OUTPUT}", file=sys.stderr)
     for cat, n in by_cat.most_common():
         print(f"  {cat}: {n}", file=sys.stderr)
+    by_domain = Counter(t.get("domain") for t in unique if t["category"] == "photo-booth")
+    print(f"  photo-booth domains:", file=sys.stderr)
+    for d, n in sorted(by_domain.items(), key=lambda x: -x[1]):
+        print(f"    {d or '(none)'}: {n}", file=sys.stderr)
     print(json.dumps({"count": len(unique), "by_category": dict(by_cat)}))
 
 

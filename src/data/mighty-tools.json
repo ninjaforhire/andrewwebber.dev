@@ -1,12 +1,30 @@
 [
   {
-    "slug": "design-forge",
-    "name": "Design Forge",
-    "description": "AI-powered design automation. Multi-provider image + video generation, brand-aware template engine, Notion-driven asset pipeline.",
+    "slug": "design-forge-animation-wing",
+    "name": "Design Forge \u2014 Animation Wing",
+    "description": "Design Forge wing.",
     "category": "design-forge",
-    "subcategory": "parent",
-    "source": "parent",
-    "location": "forge"
+    "subcategory": "wing",
+    "source": "wing",
+    "location": "forge/execution/wings/animation"
+  },
+  {
+    "slug": "design-forge-avatar-3d-wing",
+    "name": "Design Forge \u2014 Avatar 3D Wing",
+    "description": "Design Forge wing.",
+    "category": "design-forge",
+    "subcategory": "wing",
+    "source": "wing",
+    "location": "forge/execution/wings/avatar_3d"
+  },
+  {
+    "slug": "design-forge-brand-intelligence-wing",
+    "name": "Design Forge \u2014 Brand Intelligence Wing",
+    "description": "Design Forge wing.",
+    "category": "design-forge",
+    "subcategory": "wing",
+    "source": "wing",
+    "location": "forge/execution/wings/brand_intelligence"
   },
   {
     "slug": "design-forge-copy-wing",
@@ -27,6 +45,42 @@
     "location": "forge/execution/wings/creative_coding"
   },
   {
+    "slug": "design-forge-mockup-wing",
+    "name": "Design Forge \u2014 Mockup Wing",
+    "description": "Design Forge wing.",
+    "category": "design-forge",
+    "subcategory": "wing",
+    "source": "wing",
+    "location": "forge/execution/wings/mockup"
+  },
+  {
+    "slug": "design-forge-podcast-wing",
+    "name": "Design Forge \u2014 Podcast Wing",
+    "description": "Design Forge wing.",
+    "category": "design-forge",
+    "subcategory": "wing",
+    "source": "wing",
+    "location": "forge/execution/wings/podcast"
+  },
+  {
+    "slug": "design-forge-presentation-wing",
+    "name": "Design Forge \u2014 Presentation Wing",
+    "description": "Design Forge wing.",
+    "category": "design-forge",
+    "subcategory": "wing",
+    "source": "wing",
+    "location": "forge/execution/wings/presentation"
+  },
+  {
+    "slug": "design-forge-print-production-wing",
+    "name": "Design Forge \u2014 Print Production Wing",
+    "description": "Design Forge wing.",
+    "category": "design-forge",
+    "subcategory": "wing",
+    "source": "wing",
+    "location": "forge/execution/wings/print_production"
+  },
+  {
     "slug": "design-forge-slides-wing",
     "name": "Design Forge \u2014 Slides Wing",
     "description": "Brand-aware HTML deck generator. 21 rule checks, 72-brand library, NotebookLM bridge, PDF + presenter modes.",
@@ -45,76 +99,76 @@
     "location": "forge/execution/wings/website"
   },
   {
-    "slug": "andrewwebber-dev",
-    "name": "andrewwebber.dev",
-    "description": "This site. Next.js 16, terminal-style portfolio, live stats wired to GitHub.",
-    "category": "global",
-    "subcategory": "site",
-    "source": "site",
-    "location": "andrewwebber.dev"
-  },
-  {
-    "slug": "cli-printing-press",
-    "name": "Cli Printing Press",
-    "description": "Cross-project tool \u2014 runs across all of Andrew's repos, not just MIGHTY.",
-    "category": "global",
-    "subcategory": "global-tool",
-    "source": "global-tool",
-    "location": "general-tools/cli-printing-press"
-  },
-  {
-    "slug": "dev",
-    "name": "Dev",
-    "description": "Cross-project tool \u2014 runs across all of Andrew's repos, not just MIGHTY.",
-    "category": "global",
-    "subcategory": "global-tool",
-    "source": "global-tool",
-    "location": "general-tools/dev"
-  },
-  {
-    "slug": "gdrive-recovery",
-    "name": "Gdrive Recovery",
-    "description": "Cross-project tool \u2014 runs across all of Andrew's repos, not just MIGHTY.",
-    "category": "global",
-    "subcategory": "global-tool",
-    "source": "global-tool",
-    "location": "general-tools/gdrive-recovery"
-  },
-  {
-    "slug": "graphify",
-    "name": "Graphify",
-    "description": "Cross-project tool \u2014 runs across all of Andrew's repos, not just MIGHTY.",
-    "category": "global",
-    "subcategory": "global-tool",
-    "source": "global-tool",
-    "location": "general-tools/graphify"
-  },
-  {
-    "slug": "scrapers",
-    "name": "Scrapers",
-    "description": "Cross-project tool \u2014 runs across all of Andrew's repos, not just MIGHTY.",
-    "category": "global",
-    "subcategory": "global-tool",
-    "source": "global-tool",
-    "location": "general-tools/Scrapers"
-  },
-  {
-    "slug": "security",
-    "name": "Security",
-    "description": "Cross-project tool \u2014 runs across all of Andrew's repos, not just MIGHTY.",
-    "category": "global",
-    "subcategory": "global-tool",
-    "source": "global-tool",
-    "location": "general-tools/security"
+    "slug": "design-forge",
+    "name": "PANDORA'S FORGE",
+    "description": "Andrew's full creative-AI suite. 11 specialist wings across creation, production, intelligence, and distribution: image + video generation across every major model, brand-aware template engine, font + style libraries, scene composers, post-production, and a Notion-driven asset pipeline. Outputs everything from event posters and animated reels to client decks and impact reports. Actively iterating \u2014 new wings ship every few weeks.",
+    "category": "design-forge",
+    "subcategory": "parent",
+    "source": "parent",
+    "location": "forge"
   },
   {
     "slug": "ach-sender",
     "name": "ach-sender",
     "description": "Send ACH/direct deposit payment information to clients or partners for MIGHTY Photo Booths",
-    "category": "photo-booth",
-    "subcategory": "skill",
-    "source": "skill",
+    "category": "finance",
+    "subcategory": "finance-skill",
+    "source": "finance-skill",
     "location": "mighty/skills/finance/ach-sender"
+  },
+  {
+    "slug": "coi-creator",
+    "name": "coi-creator",
+    "description": "Generate and send Certificates of Insurance (COI) for MIGHTY Photo Booths events",
+    "category": "finance",
+    "subcategory": "finance-skill",
+    "source": "finance-skill",
+    "location": "mighty/skills/finance/coi-creator"
+  },
+  {
+    "slug": "gift-card-gen",
+    "name": "gift-card-gen",
+    "description": "Web app for generating and tracking digital gift cards with Google Sheets integration",
+    "category": "finance",
+    "subcategory": "finance-agent",
+    "source": "finance-agent",
+    "location": "mighty/agents/finance/gift-card-gen-v1.0"
+  },
+  {
+    "slug": "pdf-copy",
+    "name": "pdf-copy",
+    "description": "Download a PDF invoice from VSCO Workspace for a client or event",
+    "category": "finance",
+    "subcategory": "finance-skill",
+    "source": "finance-skill",
+    "location": "mighty/skills/crm/vsco/pdf-copy"
+  },
+  {
+    "slug": "penny",
+    "name": "penny",
+    "description": "MIGHTY finance orchestrator with AI categorization via claude -p",
+    "category": "finance",
+    "subcategory": "finance-agent",
+    "source": "finance-agent",
+    "location": "mighty/agents/finance/penny/agents/penny"
+  },
+  {
+    "slug": "subscription-tracker",
+    "name": "subscription-tracker",
+    "description": "Subscription and bill tracker that connects to bank accounts via Plaid, detects recurring charges, shows a bill calendar, and flags waste",
+    "category": "finance",
+    "subcategory": "finance-agent",
+    "source": "finance-agent",
+    "location": "mighty/agents/finance/subscription-tracker-v1.0"
+  },
+  {
+    "slug": "w9-creator",
+    "name": "w9-creator",
+    "description": "Generate and send W-9 tax forms for MIGHTY Photo Booths",
+    "category": "finance",
+    "subcategory": "finance-skill",
+    "source": "finance-skill",
+    "location": "mighty/skills/legal/w9-creator"
   },
   {
     "slug": "agent-audit",
@@ -123,7 +177,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/agent-audit"
+    "location": "mighty/agents/tools/agent-audit",
+    "domain": "Ops"
   },
   {
     "slug": "ai-caricature-studio",
@@ -132,7 +187,8 @@
     "category": "photo-booth",
     "subcategory": "app",
     "source": "app",
-    "location": "mighty/apps/ai-caricature-studio"
+    "location": "mighty/apps/ai-caricature-studio",
+    "domain": "Apps"
   },
   {
     "slug": "analyze-video",
@@ -141,7 +197,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/r-and-d/analyze-video"
+    "location": "mighty/skills/r-and-d/analyze-video",
+    "domain": "R&D"
   },
   {
     "slug": "article-writing",
@@ -150,7 +207,18 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/marketing/article-writing-skill"
+    "location": "mighty/skills/marketing/article-writing-skill",
+    "domain": "Marketing"
+  },
+  {
+    "slug": "atticus",
+    "name": "atticus",
+    "description": "Content curator agent \u2014 inventories Drive content surfaces, deduplicates files by tiered fingerprinting (stat \u2192 sha256 \u2192 pHash/videohash), detects corruption via heuristic ladder, proposes kebab-case renames, archives on approval",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/atticus",
+    "domain": "Ops"
   },
   {
     "slug": "audible-sync",
@@ -159,7 +227,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/audible-sync"
+    "location": "mighty/agents/tools/audible-sync",
+    "domain": "Ops"
   },
   {
     "slug": "audit-templates",
@@ -168,7 +237,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/admin/audit-templates"
+    "location": "mighty/skills/admin/audit-templates",
+    "domain": "Admin"
   },
   {
     "slug": "autofill-v1-0",
@@ -177,7 +247,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/autofill-v1.0"
+    "location": "mighty/agents/tools/autofill-v1.0",
+    "domain": "Ops"
   },
   {
     "slug": "blog",
@@ -186,7 +257,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/marketing/blog"
+    "location": "mighty/skills/marketing/blog",
+    "domain": "Marketing"
   },
   {
     "slug": "booth-events-export",
@@ -195,7 +267,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/booth-events-export"
+    "location": "mighty/skills/ops/booth-events-export",
+    "domain": "Ops"
   },
   {
     "slug": "booth-events-report",
@@ -204,7 +277,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/crm/boothbook/booth-events-report"
+    "location": "mighty/skills/crm/boothbook/booth-events-report",
+    "domain": "CRM"
   },
   {
     "slug": "boothbook-quote-agent",
@@ -231,7 +305,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/calendar-watcher"
+    "location": "mighty/agents/tools/calendar-watcher",
+    "domain": "Ops"
   },
   {
     "slug": "client-lookup",
@@ -240,7 +315,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/client-lookup"
+    "location": "mighty/agents/tools/client-lookup",
+    "domain": "Ops"
   },
   {
     "slug": "coi-automation",
@@ -252,22 +328,14 @@
     "location": "mighty/agents/agents-export/COI/coi-automation-v1.0"
   },
   {
-    "slug": "coi-creator",
-    "name": "coi-creator",
-    "description": "Generate and send Certificates of Insurance (COI) for MIGHTY Photo Booths events",
-    "category": "photo-booth",
-    "subcategory": "skill",
-    "source": "skill",
-    "location": "mighty/skills/finance/coi-creator"
-  },
-  {
     "slug": "company-lookup",
     "name": "company-lookup",
     "description": "Standalone company research agent \u2014 website scraping, social link discovery, industry detection, and Notion integration",
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/company-lookup"
+    "location": "mighty/agents/tools/company-lookup",
+    "domain": "Ops"
   },
   {
     "slug": "creating-skills",
@@ -276,7 +344,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/r-and-d/skill-creator"
+    "location": "mighty/skills/r-and-d/skill-creator",
+    "domain": "R&D"
   },
   {
     "slug": "daily-recap",
@@ -285,7 +354,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/marketing/daily-recap"
+    "location": "mighty/skills/marketing/daily-recap",
+    "domain": "Marketing"
   },
   {
     "slug": "daily-todo",
@@ -303,7 +373,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/de-dupe-agent"
+    "location": "mighty/agents/tools/de-dupe-agent",
+    "domain": "Ops"
   },
   {
     "slug": "deconstructed-studio",
@@ -312,7 +383,8 @@
     "category": "photo-booth",
     "subcategory": "app",
     "source": "app",
-    "location": "mighty/apps/deconstructed-studio"
+    "location": "mighty/apps/deconstructed-studio",
+    "domain": "Apps"
   },
   {
     "slug": "design-center-pipeline",
@@ -321,7 +393,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/design-center-pipeline"
+    "location": "mighty/agents/tools/design-center-pipeline",
+    "domain": "Ops"
   },
   {
     "slug": "design-request-agent",
@@ -330,7 +403,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/design-request-agent"
+    "location": "mighty/agents/design-request-agent",
+    "domain": "Design"
   },
   {
     "slug": "directory-submission-agent",
@@ -339,7 +413,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/directory-submission-agent"
+    "location": "mighty/agents/tools/directory-submission-agent",
+    "domain": "Ops"
   },
   {
     "slug": "domain-authority-checker",
@@ -348,7 +423,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/domain-authority-checker"
+    "location": "mighty/agents/tools/domain-authority-checker",
+    "domain": "Ops"
   },
   {
     "slug": "domain-brainstormer",
@@ -366,7 +442,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/admin/draft-email"
+    "location": "mighty/skills/admin/draft-email",
+    "domain": "Admin"
   },
   {
     "slug": "drive-event-dedup",
@@ -375,7 +452,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/drive-event-dedup"
+    "location": "mighty/skills/ops/drive-event-dedup",
+    "domain": "Ops"
   },
   {
     "slug": "dropbox-migrator",
@@ -384,7 +462,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/dropbox-migrator"
+    "location": "mighty/agents/tools/dropbox-migrator",
+    "domain": "Ops"
   },
   {
     "slug": "environment-framework",
@@ -402,7 +481,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/event-details"
+    "location": "mighty/skills/ops/event-details",
+    "domain": "Ops"
   },
   {
     "slug": "event-folder",
@@ -411,7 +491,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/event-folder"
+    "location": "mighty/skills/ops/event-folder",
+    "domain": "Ops"
   },
   {
     "slug": "follow-up-cadence",
@@ -420,7 +501,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/follow-up-cadence"
+    "location": "mighty/agents/tools/follow-up-cadence",
+    "domain": "Ops"
   },
   {
     "slug": "free-space",
@@ -429,7 +511,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/admin/free-space"
+    "location": "mighty/skills/admin/free-space",
+    "domain": "Admin"
   },
   {
     "slug": "gallery-analytics",
@@ -438,7 +521,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/gallery-analytics"
+    "location": "mighty/agents/tools/gallery-analytics",
+    "domain": "Ops"
   },
   {
     "slug": "gbp-manager",
@@ -447,7 +531,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/gbp-manager"
+    "location": "mighty/agents/tools/gbp-manager",
+    "domain": "Ops"
   },
   {
     "slug": "gdocs-library",
@@ -456,16 +541,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/gdocs-library"
-  },
-  {
-    "slug": "gift-card-gen",
-    "name": "gift-card-gen",
-    "description": "Web app for generating and tracking digital gift cards with Google Sheets integration",
-    "category": "photo-booth",
-    "subcategory": "agent",
-    "source": "agent",
-    "location": "mighty/agents/finance/gift-card-gen-v1.0"
+    "location": "mighty/agents/tools/gdocs-library",
+    "domain": "Ops"
   },
   {
     "slug": "gmail-lead-scanner",
@@ -474,7 +551,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/sales/gmail-lead-scanner"
+    "location": "mighty/skills/sales/gmail-lead-scanner",
+    "domain": "Sales"
   },
   {
     "slug": "inbox-agent",
@@ -483,7 +561,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/email/inbox-agent"
+    "location": "mighty/agents/email/inbox-agent",
+    "domain": "Comms"
   },
   {
     "slug": "inbox-processor",
@@ -501,7 +580,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/inbox-therapist"
+    "location": "mighty/agents/tools/inbox-therapist",
+    "domain": "Ops"
   },
   {
     "slug": "iris-studio",
@@ -510,7 +590,8 @@
     "category": "photo-booth",
     "subcategory": "app",
     "source": "app",
-    "location": "mighty/apps/iris-studio"
+    "location": "mighty/apps/iris-studio",
+    "domain": "Apps"
   },
   {
     "slug": "jimbo",
@@ -519,7 +600,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/jimbo"
+    "location": "mighty/agents/tools/jimbo",
+    "domain": "Ops"
   },
   {
     "slug": "jimbo-voice-out",
@@ -528,7 +610,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/jimbo-voice-out-v1.0"
+    "location": "mighty/agents/tools/jimbo-voice-out-v1.0",
+    "domain": "Ops"
   },
   {
     "slug": "kajabi-video-scraper",
@@ -537,7 +620,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/kajabi-video-scraper"
+    "location": "mighty/agents/tools/kajabi-video-scraper",
+    "domain": "Ops"
   },
   {
     "slug": "knowledge-coach",
@@ -546,7 +630,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/coach"
+    "location": "mighty/agents/coach",
+    "domain": "R&D"
   },
   {
     "slug": "lead-score-agent",
@@ -555,7 +640,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/lead-score-agent"
+    "location": "mighty/agents/tools/lead-score-agent",
+    "domain": "Ops"
   },
   {
     "slug": "loom-library-sync",
@@ -564,7 +650,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/loom-library-sync"
+    "location": "mighty/skills/ops/loom-library-sync",
+    "domain": "Ops"
   },
   {
     "slug": "mailpro",
@@ -573,7 +660,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/email/inbox-agent/extension"
+    "location": "mighty/agents/email/inbox-agent/extension",
+    "domain": "Comms"
   },
   {
     "slug": "market-intel",
@@ -582,7 +670,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/marketing/market-intel"
+    "location": "mighty/skills/marketing/market-intel",
+    "domain": "Marketing"
   },
   {
     "slug": "meeting-analysis",
@@ -591,7 +680,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/admin/meeting-analysis"
+    "location": "mighty/skills/admin/meeting-analysis",
+    "domain": "Admin"
   },
   {
     "slug": "memory-bridge",
@@ -600,7 +690,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/memory-bridge"
+    "location": "mighty/agents/tools/memory-bridge",
+    "domain": "Ops"
   },
   {
     "slug": "mighty-brand-guide",
@@ -609,7 +700,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/brand/mighty-brand-guide"
+    "location": "mighty/skills/brand/mighty-brand-guide",
+    "domain": "Brand"
   },
   {
     "slug": "mighty-crm",
@@ -618,7 +710,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/mighty-crm"
+    "location": "mighty/agents/tools/mighty-crm",
+    "domain": "Ops"
   },
   {
     "slug": "mighty-doc",
@@ -627,7 +720,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/legal/mighty-doc"
+    "location": "mighty/skills/legal/mighty-doc",
+    "domain": "Legal"
   },
   {
     "slug": "mighty-doc-agent",
@@ -636,7 +730,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/mighty-doc-agent"
+    "location": "mighty/agents/tools/mighty-doc-agent",
+    "domain": "Ops"
   },
   {
     "slug": "mighty-spec-sheets",
@@ -645,7 +740,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/design-center/mighty-spec-sheets"
+    "location": "mighty/skills/design-center/mighty-spec-sheets",
+    "domain": "Design"
   },
   {
     "slug": "model-generator",
@@ -654,7 +750,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/model-generator"
+    "location": "mighty/agents/tools/model-generator",
+    "domain": "Ops"
   },
   {
     "slug": "morning-brief",
@@ -663,7 +760,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/marketing/morning-brief"
+    "location": "mighty/skills/marketing/morning-brief",
+    "domain": "Marketing"
   },
   {
     "slug": "morning-brief-publish",
@@ -672,7 +770,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/marketing/morning-brief-publish"
+    "location": "mighty/skills/marketing/morning-brief-publish",
+    "domain": "Marketing"
   },
   {
     "slug": "mpb-agent-template",
@@ -690,7 +789,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/event-briefing"
+    "location": "mighty/skills/ops/event-briefing",
+    "domain": "Ops"
   },
   {
     "slug": "mpb-event-logistics",
@@ -699,7 +799,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/event-logistics"
+    "location": "mighty/skills/ops/event-logistics",
+    "domain": "Ops"
   },
   {
     "slug": "mpb-event-prep",
@@ -708,7 +809,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/event-prep"
+    "location": "mighty/skills/ops/event-prep",
+    "domain": "Ops"
   },
   {
     "slug": "mpb-staff-dispatch",
@@ -717,7 +819,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/staff-dispatch"
+    "location": "mighty/skills/ops/staff-dispatch",
+    "domain": "Ops"
   },
   {
     "slug": "nanobanana2",
@@ -726,7 +829,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/design-center/nanobanana2"
+    "location": "mighty/skills/design-center/nanobanana2",
+    "domain": "Design"
   },
   {
     "slug": "new-client-agent",
@@ -735,7 +839,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/new-client-agent"
+    "location": "mighty/agents/tools/new-client-agent",
+    "domain": "Ops"
   },
   {
     "slug": "newclient",
@@ -744,7 +849,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/sales/newclient"
+    "location": "mighty/skills/sales/newclient",
+    "domain": "Sales"
   },
   {
     "slug": "newclient-dedup",
@@ -753,7 +859,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/newclient-dedup"
+    "location": "mighty/skills/ops/newclient-dedup",
+    "domain": "Ops"
   },
   {
     "slug": "newclient-event-details",
@@ -762,7 +869,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/newclient-event-details"
+    "location": "mighty/skills/ops/newclient-event-details",
+    "domain": "Ops"
   },
   {
     "slug": "newclient-project-page",
@@ -771,7 +879,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/newclient-project-page"
+    "location": "mighty/skills/ops/newclient-project-page",
+    "domain": "Ops"
   },
   {
     "slug": "newlead",
@@ -780,7 +889,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/sales/newlead"
+    "location": "mighty/skills/sales/newlead",
+    "domain": "Sales"
   },
   {
     "slug": "news-reporter",
@@ -789,7 +899,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/news-reporter"
+    "location": "mighty/agents/tools/news-reporter",
+    "domain": "Ops"
   },
   {
     "slug": "notion-analytics",
@@ -798,7 +909,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/notion-analytics"
+    "location": "mighty/agents/tools/notion-analytics",
+    "domain": "Ops"
   },
   {
     "slug": "notion-dedupe-agent",
@@ -807,7 +919,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/admin/notion-dedupe"
+    "location": "mighty/skills/admin/notion-dedupe",
+    "domain": "Admin"
   },
   {
     "slug": "notion-health",
@@ -816,7 +929,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/admin/notion-health"
+    "location": "mighty/skills/admin/notion-health",
+    "domain": "Admin"
   },
   {
     "slug": "notion-project",
@@ -825,7 +939,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/notion-project"
+    "location": "mighty/skills/ops/notion-project",
+    "domain": "Ops"
   },
   {
     "slug": "notion-warden",
@@ -834,7 +949,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/notion-warden"
+    "location": "mighty/agents/tools/notion-warden",
+    "domain": "Ops"
   },
   {
     "slug": "org-lookup",
@@ -843,7 +959,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/org-lookup"
+    "location": "mighty/agents/tools/org-lookup",
+    "domain": "Ops"
   },
   {
     "slug": "osint",
@@ -852,7 +969,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/sales/osint"
+    "location": "mighty/skills/sales/osint",
+    "domain": "Sales"
   },
   {
     "slug": "overlay-batch-fixer",
@@ -861,7 +979,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/design-center/overlay-batch-fixer"
+    "location": "mighty/skills/design-center/overlay-batch-fixer",
+    "domain": "Design"
   },
   {
     "slug": "overlay-batcher",
@@ -873,31 +992,14 @@
     "location": "mighty/agents/agents-export/media/overlay-batcher-v1.0"
   },
   {
-    "slug": "pdf-copy",
-    "name": "pdf-copy",
-    "description": "Download a PDF invoice from VSCO Workspace for a client or event",
-    "category": "photo-booth",
-    "subcategory": "skill",
-    "source": "skill",
-    "location": "mighty/skills/crm/vsco/pdf-copy"
-  },
-  {
-    "slug": "penny",
-    "name": "penny",
-    "description": "MIGHTY finance orchestrator with AI categorization via claude -p",
-    "category": "photo-booth",
-    "subcategory": "agent",
-    "source": "agent",
-    "location": "mighty/agents/finance/penny/agents/penny"
-  },
-  {
     "slug": "post-event",
     "name": "post-event",
     "description": "Post-Event Follow-Up: draft thank-you and gallery emails for recent events",
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/post-event"
+    "location": "mighty/skills/ops/post-event",
+    "domain": "Ops"
   },
   {
     "slug": "post-event-pipeline",
@@ -906,7 +1008,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/post-event-pipeline"
+    "location": "mighty/agents/tools/post-event-pipeline",
+    "domain": "Ops"
   },
   {
     "slug": "print-checklist",
@@ -915,7 +1018,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/print-checklist"
+    "location": "mighty/skills/ops/print-checklist",
+    "domain": "Ops"
   },
   {
     "slug": "print-event",
@@ -924,7 +1028,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/print-event"
+    "location": "mighty/skills/ops/print-event",
+    "domain": "Ops"
   },
   {
     "slug": "print-event-details",
@@ -933,7 +1038,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/print-event-details"
+    "location": "mighty/skills/ops/print-event-details",
+    "domain": "Ops"
   },
   {
     "slug": "project-manager",
@@ -942,7 +1048,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/project-manager"
+    "location": "mighty/agents/tools/project-manager",
+    "domain": "Ops"
   },
   {
     "slug": "prompt-reverse-engineer",
@@ -960,7 +1067,38 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/sales/quo-scanner"
+    "location": "mighty/skills/sales/quo-scanner",
+    "domain": "Sales"
+  },
+  {
+    "slug": "refresh-event",
+    "name": "refresh-event",
+    "description": "Rescan Gmail/Quo/meetings for an existing booked event, diff against live Notion records (Client, Company, Venue, Event Details, Project, DR), and apply approved changes",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/sales/refresh-event",
+    "domain": "Sales"
+  },
+  {
+    "slug": "refresh-event-details",
+    "name": "refresh-event-details",
+    "description": "R2 of /refresh-event \u2014 apply Event Details field and body changes from the approved diff bundle",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/refresh-event-details",
+    "domain": "Ops"
+  },
+  {
+    "slug": "refresh-project-page",
+    "name": "refresh-project-page",
+    "description": "R3 of /refresh-event \u2014 apply Project page property and body changes + enumerate new Drive assets from the diff bundle",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/refresh-project-page",
+    "domain": "Ops"
   },
   {
     "slug": "remotion-video",
@@ -969,7 +1107,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/design-center/remotion-video"
+    "location": "mighty/skills/design-center/remotion-video",
+    "domain": "Design"
   },
   {
     "slug": "research-agent",
@@ -978,7 +1117,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/research-agent"
+    "location": "mighty/agents/tools/research-agent",
+    "domain": "Ops"
   },
   {
     "slug": "sales-lesson",
@@ -987,7 +1127,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/sales/sales-lesson"
+    "location": "mighty/skills/sales/sales-lesson",
+    "domain": "Sales"
   },
   {
     "slug": "security-review",
@@ -996,7 +1137,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/r-and-d/security-review"
+    "location": "mighty/skills/r-and-d/security-review",
+    "domain": "R&D"
   },
   {
     "slug": "seo-agent",
@@ -1005,7 +1147,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/seo-agent-v1.0"
+    "location": "mighty/agents/tools/seo-agent-v1.0",
+    "domain": "Ops"
   },
   {
     "slug": "shell-cheatsheet",
@@ -1014,7 +1157,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/shell-cheatsheet"
+    "location": "mighty/skills/ops/shell-cheatsheet",
+    "domain": "Ops"
   },
   {
     "slug": "snappic-export",
@@ -1023,7 +1167,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/snappic-export"
+    "location": "mighty/skills/ops/snappic-export",
+    "domain": "Ops"
   },
   {
     "slug": "snappic-gallery",
@@ -1032,7 +1177,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/design-center/snappic-gallery"
+    "location": "mighty/skills/design-center/snappic-gallery",
+    "domain": "Design"
   },
   {
     "slug": "snappic-microsite",
@@ -1041,7 +1187,18 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/design-center/snappic-microsite"
+    "location": "mighty/skills/design-center/snappic-microsite",
+    "domain": "Design"
+  },
+  {
+    "slug": "spec-builder",
+    "name": "spec-builder",
+    "description": "Open the interactive MIGHTY Spec Builder \u2014 a local Konva.js drag-and-drop canvas tool that emits PB DESIGN SPECS JSON, renders SVG diagrams through generate.py, and syncs to the PB DESIGN SPECS Notion DB",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/design-center/spec-builder",
+    "domain": "Design"
   },
   {
     "slug": "staffing-events",
@@ -1050,16 +1207,28 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/ops/staffing-events"
+    "location": "mighty/skills/ops/staffing-events",
+    "domain": "Ops"
   },
   {
-    "slug": "subscription-tracker",
-    "name": "subscription-tracker",
-    "description": "Subscription and bill tracker that connects to bank accounts via Plaid, detects recurring charges, shows a bill calendar, and flags waste",
+    "slug": "sync-indexes",
+    "name": "sync-indexes",
+    "description": "Refresh all graphify graphs, re-merge the cross-repo graph, regenerate the skills + agents dispatch registries, then patch any stale node-count references in CLAUDE.md / AGENTS.md / memory",
     "category": "photo-booth",
-    "subcategory": "agent",
-    "source": "agent",
-    "location": "mighty/agents/finance/subscription-tracker-v1.0"
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/admin/sync-indexes",
+    "domain": "Admin"
+  },
+  {
+    "slug": "teach",
+    "name": "teach",
+    "description": "Interactive teach session \u2014 walk through Knowledge Coach's pending question queue",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/admin/teach",
+    "domain": "Admin"
   },
   {
     "slug": "triple-review",
@@ -1068,7 +1237,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/r-and-d/triple-review"
+    "location": "mighty/skills/r-and-d/triple-review",
+    "domain": "R&D"
   },
   {
     "slug": "ui-ux",
@@ -1077,7 +1247,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/r-and-d/ui-ux"
+    "location": "mighty/skills/r-and-d/ui-ux",
+    "domain": "R&D"
   },
   {
     "slug": "vault-sync",
@@ -1086,7 +1257,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/vault-sync"
+    "location": "mighty/agents/tools/vault-sync",
+    "domain": "Ops"
   },
   {
     "slug": "venue-lookup",
@@ -1095,7 +1267,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/venue-lookup"
+    "location": "mighty/agents/tools/venue-lookup",
+    "domain": "Ops"
   },
   {
     "slug": "video-teacher",
@@ -1104,7 +1277,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/video-teacher"
+    "location": "mighty/agents/tools/video-teacher",
+    "domain": "Ops"
   },
   {
     "slug": "video-to-website",
@@ -1113,7 +1287,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/r-and-d/video-to-website"
+    "location": "mighty/skills/r-and-d/video-to-website",
+    "domain": "R&D"
   },
   {
     "slug": "voice-receptionist",
@@ -1122,16 +1297,8 @@
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
-    "location": "mighty/agents/tools/voice-receptionist-v1.0"
-  },
-  {
-    "slug": "w9-creator",
-    "name": "w9-creator",
-    "description": "Generate and send W-9 tax forms for MIGHTY Photo Booths",
-    "category": "photo-booth",
-    "subcategory": "skill",
-    "source": "skill",
-    "location": "mighty/skills/legal/w9-creator"
+    "location": "mighty/agents/tools/voice-receptionist-v1.0",
+    "domain": "Ops"
   },
   {
     "slug": "watermark-app",
@@ -1140,7 +1307,8 @@
     "category": "photo-booth",
     "subcategory": "app",
     "source": "app",
-    "location": "mighty/apps/watermark-app"
+    "location": "mighty/apps/watermark-app",
+    "domain": "Apps"
   },
   {
     "slug": "web-patrol",
@@ -1149,7 +1317,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/marketing/web-patrol"
+    "location": "mighty/skills/marketing/web-patrol",
+    "domain": "Marketing"
   },
   {
     "slug": "weekly-worksheet",
@@ -1158,7 +1327,8 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/admin/weekly-worksheet"
+    "location": "mighty/skills/admin/weekly-worksheet",
+    "domain": "Admin"
   },
   {
     "slug": "wiki-lint",
@@ -1167,7 +1337,17 @@
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
-    "location": "mighty/skills/admin/wiki-lint"
+    "location": "mighty/skills/admin/wiki-lint",
+    "domain": "Admin"
+  },
+  {
+    "slug": "spectre",
+    "name": "SPECTRE",
+    "description": "Andrew's full-spectrum security platform. 13 modules across recon, red-team, blue-team, purple-team, AI-security, and reporting \u2014 Raven, Blackthorn, Bastion, Gauntlet, Ember, Cloudbreak, Watchtower, Shannon, Dossier, Code Council, Ghost (computer-use), and a REST API. Runs autonomous engagements end-to-end: discover the surface, hammer it, detect what should have caught it, and ship a branded report. Actively iterating \u2014 new tools and detections land every sprint.",
+    "category": "spectre",
+    "subcategory": "parent",
+    "source": "parent",
+    "location": "hotfixops/security"
   },
   {
     "slug": "spectre-spectre-api",
@@ -1339,5 +1519,59 @@
     "subcategory": "spectre-tool",
     "source": "spectre-tool",
     "location": "hotfixops/security/watchtower"
+  },
+  {
+    "slug": "andrewwebber-dev",
+    "name": "andrewwebber.dev",
+    "description": "This site. Next.js 16, terminal-style portfolio, live stats wired to GitHub.",
+    "category": "tooling",
+    "subcategory": "site",
+    "source": "site",
+    "location": "andrewwebber.dev"
+  },
+  {
+    "slug": "awwwards-scraper",
+    "name": "Awwwards Scraper",
+    "description": "Scrapes Awwwards site-of-the-day designs, downloads hero shots, and tags by style for the Forge inspiration library.",
+    "category": "tooling",
+    "subcategory": "scraper",
+    "source": "scraper",
+    "location": "general-tools/Scrapers/awwwards-scraper"
+  },
+  {
+    "slug": "cli-printing-press",
+    "name": "CLI Printing Press",
+    "description": "Generator that turns a third-party API spec into a complete `*-pp-cli` Go CLI. Powers quo-pp-cli, vsco-workspace-pp-cli, kie-pp-cli and friends \u2014 one printer, many CLIs.",
+    "category": "tooling",
+    "subcategory": "tool",
+    "source": "tool",
+    "location": "general-tools/cli-printing-press"
+  },
+  {
+    "slug": "gdrive-recovery",
+    "name": "Gdrive Recovery",
+    "description": "Tooling for reclaiming ownership + restoring Google Drive uploads (the iammagicmatt \u2192 MIGHTY ownership-fix story).",
+    "category": "tooling",
+    "subcategory": "tool",
+    "source": "tool",
+    "location": "general-tools/gdrive-recovery"
+  },
+  {
+    "slug": "graphify",
+    "name": "Graphify",
+    "description": "Andrew's queryable knowledge-graph builder for any codebase. AST + LLM extraction \u2192 JSON graph; powers cross-repo `graphify query` / `path` / `explain` workflows across all of _Code.",
+    "category": "tooling",
+    "subcategory": "tool",
+    "source": "tool",
+    "location": "general-tools/graphify"
+  },
+  {
+    "slug": "video-agent",
+    "name": "Video Agent",
+    "description": "Video-content scraper / analyzer pipeline used to convert YouTube + Loom + login-gated videos into transcript + key-frame data.",
+    "category": "tooling",
+    "subcategory": "scraper",
+    "source": "scraper",
+    "location": "general-tools/Scrapers/video-agent"
   }
 ]
