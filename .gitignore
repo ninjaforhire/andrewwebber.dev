@@ -44,3 +44,4 @@ next-env.d.ts
 
 # Graphify knowledge graphs (regeneratable, AST-only)
 graphify-out/
+scripts/data/*.json
