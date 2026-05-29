@@ -1,28 +1,29 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Volume2, VolumeOff } from "lucide-react";
+import { Volume2, VolumeOff, Music2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-type Mode = "off" | "noise" | "binaural" | "isochronic";
+type Mode = "off" | "pink" | "brown" | "binaural" | "lofi" | "drone";
 
-// Intentionally cryptic labels. The point is the experience, not the
-// explanation. ADHD audience tends to discover what works by feel.
-const MODES: { id: Mode; label: string }[] = [
+const MODES: { id: Mode; label: string; musical?: boolean }[] = [
   { id: "off", label: "Silence" },
-  { id: "noise", label: "Brown" },
+  { id: "pink", label: "Pink noise" },
+  { id: "brown", label: "Brown noise" },
   { id: "binaural", label: "Binaural γ" },
-  { id: "isochronic", label: "Isochronic α" },
+  { id: "lofi", label: "Lo-fi pad", musical: true },
+  { id: "drone", label: "Cinematic drone", musical: true },
 ];
+
+const VALID_IDS = new Set<Mode>(["off", "pink", "brown", "binaural", "lofi", "drone"]);
 
 function readMode(): Mode {
   if (typeof window === "undefined") return "off";
   const raw = localStorage.getItem("sound");
-  if (raw === "true") return "noise";
-  if (raw === "false" || raw === null) return "off";
-  if (raw === "off" || raw === "noise" || raw === "binaural" || raw === "isochronic") {
-    return raw;
-  }
+  if (raw === "true") return "brown";
+  if (raw === "noise") return "brown";
+  if (raw === "isochronic") return "binaural";
+  if (raw && VALID_IDS.has(raw as Mode)) return raw as Mode;
   return "off";
 }
 
@@ -30,9 +31,10 @@ interface Props {
   iconSize?: number;
   className?: string;
   align?: "left" | "right";
+  direction?: "up" | "down";
 }
 
-export function SoundPicker({ iconSize = 18, className, align = "right" }: Props) {
+export function SoundPicker({ iconSize = 18, className, align = "right", direction = "down" }: Props) {
   const [mode, setMode] = useState<Mode>("off");
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
@@ -98,8 +100,9 @@ export function SoundPicker({ iconSize = 18, className, align = "right" }: Props
           role="menu"
           aria-label="Focus audio"
           className={cn(
-            "absolute z-50 mt-2 min-w-[160px] rounded-md border border-border bg-popover/95 p-1 shadow-lg backdrop-blur-md",
-            align === "right" ? "right-0" : "left-0"
+            "absolute z-50 min-w-[180px] rounded-md border border-border bg-popover/95 p-1 shadow-lg backdrop-blur-md",
+            align === "right" ? "right-0" : "left-0",
+            direction === "up" ? "bottom-full mb-2" : "top-full mt-2"
           )}
         >
           {MODES.map((m) => (
@@ -115,7 +118,16 @@ export function SoundPicker({ iconSize = 18, className, align = "right" }: Props
                   : "text-muted-foreground hover:bg-accent hover:text-foreground"
               )}
             >
-              <span>{m.label}</span>
+              <span className="flex items-center gap-2">
+                {m.label}
+                {m.musical && (
+                  <Music2
+                    size={11}
+                    aria-label="Musical mode"
+                    className={cn(mode === m.id ? "text-data" : "text-creative/70")}
+                  />
+                )}
+              </span>
               {mode === m.id && (
                 <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-data" />
               )}
