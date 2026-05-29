@@ -7,8 +7,8 @@ export const DISCIPLINES = [
   { label: "Automation", value: 91, lore: "143+ AI tools in production" },
   { label: "Design", value: 78, lore: "Premium event experiences" },
   { label: "Systems", value: 94, lore: "Perfect organization energy" },
-  { label: "Security", value: 72, lore: "Pentests, SPECTRE, audits" },
-  { label: "AI / ML", value: 90, lore: "Agents, orchestrators, LLMs" },
+  { label: "Security", value: 90, lore: "Pentests, SPECTRE, audits" },
+  { label: "AI / ML", value: 85, lore: "Agents, orchestrators, LLMs" },
 ] as const;
 
 const SIZE = 480;

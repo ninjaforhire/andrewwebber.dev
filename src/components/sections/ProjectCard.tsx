@@ -25,7 +25,7 @@ const ACCENT_BG = {
   warm: "bg-warm/10 text-warm",
 };
 
-export function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({ project, featured = false }: { project: Project; featured?: boolean }) {
   const Wrapper = project.link ? "a" : "div";
   const wrapperProps = project.link
     ? { href: project.link, target: "_blank", rel: "noopener noreferrer" }
@@ -35,32 +35,60 @@ export function ProjectCard({ project }: { project: Project }) {
     <Wrapper
       {...wrapperProps}
       className={cn(
-        "group block rounded-lg border border-border bg-card/50 p-5 transition-all duration-300",
+        "group block rounded-lg border border-border bg-card/50 transition-all duration-300",
+        featured ? "p-8 md:p-10 ring-1 ring-white/5" : "p-5",
         ACCENT_BORDER[project.accent],
         project.link && "cursor-pointer"
       )}
     >
-      <div className="flex items-start justify-between">
-        <h3 className="font-heading text-base font-bold">{project.title}</h3>
-        {project.link && (
-          <ExternalLink
-            size={14}
-            className={cn(
-              "mt-0.5 opacity-0 transition-opacity group-hover:opacity-100",
-              ACCENT_TEXT[project.accent]
-            )}
-          />
-        )}
+      <div className="flex items-start justify-between gap-3">
+        <h3
+          className={cn(
+            "font-heading font-bold",
+            featured ? "text-2xl md:text-3xl leading-tight" : "text-base"
+          )}
+        >
+          {project.title}
+        </h3>
+        <div className="flex items-center gap-2 shrink-0">
+          {featured && (
+            <span
+              className={cn(
+                "rounded-full border px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.18em]",
+                "border-terminal/30 bg-terminal/10 text-terminal"
+              )}
+              aria-label="Actively iterating"
+            >
+              <span className="mr-1 inline-block h-1.5 w-1.5 -translate-y-[1px] rounded-full bg-terminal animate-pulse" />
+              Live · iterating
+            </span>
+          )}
+          {project.link && (
+            <ExternalLink
+              size={featured ? 18 : 14}
+              className={cn(
+                "mt-0.5 opacity-0 transition-opacity group-hover:opacity-100",
+                ACCENT_TEXT[project.accent]
+              )}
+            />
+          )}
+        </div>
       </div>
-      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+      <p
+        className={cn(
+          "leading-relaxed text-muted-foreground",
+          featured ? "mt-4 text-base md:text-[17px]" : "mt-2 text-sm"
+        )}
+      >
         {project.description}
       </p>
-      <div className="mt-3 flex flex-wrap gap-1.5">
+      <div className={cn("flex flex-wrap gap-1.5", featured ? "mt-5" : "mt-3")}>
         {project.tags.map((tag) => (
           <span
             key={tag}
             className={cn(
-              "rounded-full px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider",
+              "rounded-full px-2 py-0.5 font-mono uppercase tracking-wider",
+              featured ? "text-[11px] px-2.5 py-1" : "text-[10px]",
               ACCENT_BG[project.accent]
             )}
           >
