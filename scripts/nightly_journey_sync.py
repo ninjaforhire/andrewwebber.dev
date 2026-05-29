@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import argparse
 import logging
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -29,9 +30,10 @@ DATA_FILES = [
     "src/data/queue.json",
 ]
 
-VERCEL = "/usr/local/bin/vercel"
 GIT = "/usr/bin/git"
 PYTHON = "/usr/bin/python3"
+_vercel = shutil.which("vercel") or "/opt/homebrew/bin/vercel"
+VERCEL = _vercel
 
 
 def run(cmd: list[str], *, label: str, dry_run: bool = False) -> bool:
