@@ -379,6 +379,14 @@ def main() -> None:
     overrides["tools"] = final_tools
     OVERRIDES.write_text(json.dumps(overrides, indent=2) + "\n")
 
+    # Sync CONTENT QUEUE → queue.json so AWD Reading Queue stays fresh
+    sync_queue = ROOT / "scripts" / "sync-queue.py"
+    if sync_queue.exists():
+        try:
+            subprocess.run(["python3", str(sync_queue)], check=True, stderr=subprocess.DEVNULL)
+        except subprocess.CalledProcessError as e:
+            print(f"Warning: sync-queue.py failed: {e}", file=sys.stderr)
+
     summary = {
         "linesOfCode": final_loc,
         "commitsShipped": final_commits,

@@ -1,15 +1,22 @@
 import Image from "next/image";
-import coursesData from "@/data/courses.json";
+import queueData from "@/data/queue.json";
 
-interface CourseItem {
+interface QueueItem {
   title: string;
   type: string;
-  source: string;
   status: string;
-  date: string | null;
   author: string;
   cover: string | null;
   url: string | null;
+  recommendedBy?: string;
+}
+
+interface QueueMeta {
+  totalBooks: number;
+  totalCompleted: number;
+  totalInProgress: number;
+  totalInQueue: number;
+  displayCap: number;
 }
 
 function stripSubtitle(title: string): string {
@@ -17,15 +24,13 @@ function stripSubtitle(title: string): string {
 }
 
 export function CurrentReading() {
-  const all = coursesData.items as CourseItem[];
-  const books = all.filter((i) => i.type === "Book");
+  const items = queueData.items as QueueItem[];
+  const meta = queueData.meta as QueueMeta;
 
-  const reading = books.filter((b) => b.status === "In progress");
-  const notStarted = books.filter((b) => b.status === "Not started");
-  const totalRead = books.filter((b) => b.status === "Done").length;
+  if (items.length === 0) return null;
 
-  const queue = [...reading, ...notStarted];
-  if (queue.length === 0) return null;
+  const readingCount = items.filter((i) => i.status === "In Progress").length;
+  const upNextCount = items.filter((i) => i.status === "Up Next").length;
 
   return (
     <div className="mb-12 md:mb-16 border-l-2 border-warm/30 pl-4 md:pl-6">
@@ -34,13 +39,13 @@ export function CurrentReading() {
           Reading Queue
         </div>
         <div className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground/70">
-          <span className="text-foreground font-bold">{books.length}</span> books in library ·{" "}
-          <span className="text-foreground font-bold">{totalRead}</span> read ·{" "}
-          <span className="text-foreground font-bold">{reading.length}</span> reading now
-          {notStarted.length > 0 && (
+          <span className="text-foreground font-bold">{meta.totalBooks}</span> in queue ·{" "}
+          <span className="text-foreground font-bold">{meta.totalCompleted}</span> read ·{" "}
+          <span className="text-foreground font-bold">{readingCount}</span> reading now
+          {upNextCount > 0 && (
             <>
               {" · "}
-              <span className="text-foreground font-bold">{notStarted.length}</span> up next
+              <span className="text-foreground font-bold">{upNextCount}</span> up next
             </>
           )}
         </div>
@@ -55,16 +60,14 @@ export function CurrentReading() {
         </a>
       </p>
       <div className="flex flex-wrap gap-3">
-        {queue.map((b, i) => {
+        {items.map((b, i) => {
           const Wrapper = b.url ? "a" : "div";
           const props = b.url
             ? { href: b.url, target: "_blank", rel: "noopener noreferrer" }
             : {};
-          const isReading = b.status === "In progress";
+          const isReading = b.status === "In Progress";
           const statusLabel = isReading ? "Reading" : "Up next";
-          const statusClass = isReading
-            ? "text-data"
-            : "text-muted-foreground/60";
+          const statusClass = isReading ? "text-data" : "text-muted-foreground/60";
 
           return (
             <Wrapper
@@ -86,7 +89,8 @@ export function CurrentReading() {
               <div className="min-w-0 max-w-[220px]">
                 <p className="truncate text-xs font-medium">{stripSubtitle(b.title)}</p>
                 <p className="truncate text-[10px] text-muted-foreground">
-                  {b.author} · <span className={statusClass}>{statusLabel}</span>
+                  {b.author || b.recommendedBy || "—"} ·{" "}
+                  <span className={statusClass}>{statusLabel}</span>
                 </p>
               </div>
             </Wrapper>
