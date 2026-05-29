@@ -191,7 +191,7 @@ def main() -> None:
             continue
         if has_ll_relation(p):
             continue
-        title = gtext(p.get("Title"))
+        title = gtext(p.get("Name") or p.get("Title"))
         if not title:
             continue
         candidates.append({

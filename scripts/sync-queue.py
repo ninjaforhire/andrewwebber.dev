@@ -57,7 +57,8 @@ def query_all(dsid: str) -> list[dict]:
 def gtext(prop: dict | None) -> str:
     if not prop:
         return ""
-    arr = prop.get("rich_text") or prop.get("title") or []
+    # Notion title property can be "title" key (standard) or returned as rich_text
+    arr = prop.get("title") or prop.get("rich_text") or []
     return "".join(t.get("plain_text", "") for t in arr)
 
 
@@ -75,7 +76,7 @@ def extract(row: dict) -> dict:
     p = row["properties"]
     return {
         "id": row["id"],
-        "title": gtext(p.get("Title")),
+        "title": gtext(p.get("Name") or p.get("Title")),
         "type": (p.get("Type", {}).get("select") or {}).get("name", ""),
         "status": get_status(p.get("Status", {})),
         "awd_eligible": p.get("AWD Eligible", {}).get("checkbox", False),
