@@ -369,7 +369,7 @@
       "source_file": "package.json",
       "source_location": "L26",
       "id": "andrewwebber_dev_package_dependencies_next",
-      "community": 4,
+      "community": 79,
       "norm_label": "next"
     },
     {
@@ -1138,6 +1138,78 @@
       "norm_label": "ll_db_id"
     },
     {
+      "label": "youtube_enrich.py",
+      "file_type": "code",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L1",
+      "id": "scripts_youtube_enrich_py",
+      "community": 90,
+      "norm_label": "youtube_enrich.py"
+    },
+    {
+      "label": "load_raw()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L53",
+      "id": "scripts_youtube_enrich_load_raw",
+      "community": 90,
+      "norm_label": "load_raw()"
+    },
+    {
+      "label": "fetch_watch_page()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L60",
+      "id": "scripts_youtube_enrich_fetch_watch_page",
+      "community": 90,
+      "norm_label": "fetch_watch_page()"
+    },
+    {
+      "label": "extract_meta()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L72",
+      "id": "scripts_youtube_enrich_extract_meta",
+      "community": 90,
+      "norm_label": "extract_meta()"
+    },
+    {
+      "label": "classify_topics()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L114",
+      "id": "scripts_youtube_enrich_classify_topics",
+      "community": 90,
+      "norm_label": "classify_topics()"
+    },
+    {
+      "label": "should_skip()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L123",
+      "id": "scripts_youtube_enrich_should_skip",
+      "community": 90,
+      "norm_label": "should_skip()"
+    },
+    {
+      "label": "enrich_one()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L133",
+      "id": "scripts_youtube_enrich_enrich_one",
+      "community": 90,
+      "norm_label": "enrich_one()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L152",
+      "id": "scripts_youtube_enrich_main",
+      "community": 90,
+      "norm_label": "main()"
+    },
+    {
       "label": "build-portrait-previews.py",
       "file_type": "code",
       "source_file": "scripts/build-portrait-previews.py",
@@ -1199,6 +1271,42 @@
       "id": "scripts_build_portrait_previews_rationale_49",
       "community": 78,
       "norm_label": "return an hxw uint8 alpha mask: ~255 inside body, 0 outside, feathered edges."
+    },
+    {
+      "label": "nightly_journey_sync.py",
+      "file_type": "code",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L1",
+      "id": "scripts_nightly_journey_sync_py",
+      "community": 95,
+      "norm_label": "nightly_journey_sync.py"
+    },
+    {
+      "label": "run()",
+      "file_type": "code",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L42",
+      "id": "scripts_nightly_journey_sync_run",
+      "community": 95,
+      "norm_label": "run()"
+    },
+    {
+      "label": "data_files_changed()",
+      "file_type": "code",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L58",
+      "id": "scripts_nightly_journey_sync_data_files_changed",
+      "community": 95,
+      "norm_label": "data_files_changed()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L66",
+      "id": "scripts_nightly_journey_sync_main",
+      "community": 95,
+      "norm_label": "main()"
     },
     {
       "label": "count-stats.py",
@@ -1926,7 +2034,7 @@
       "source_file": "scripts/stats-checkpoint.json",
       "source_location": "L22",
       "id": "scripts_stats_checkpoint_per_repo",
-      "community": 30,
+      "community": 34,
       "norm_label": "per_repo"
     },
     {
@@ -3154,6 +3262,339 @@
       "norm_label": "commits"
     },
     {
+      "label": "youtube_history_extract.js",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L1",
+      "id": "scripts_youtube_history_extract_js",
+      "community": 2,
+      "norm_label": "youtube_history_extract.js"
+    },
+    {
+      "label": "TARGET_START",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L20",
+      "id": "scripts_youtube_history_extract_target_start",
+      "community": 2,
+      "norm_label": "target_start"
+    },
+    {
+      "label": "TARGET_END",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L21",
+      "id": "scripts_youtube_history_extract_target_end",
+      "community": 2,
+      "norm_label": "target_end"
+    },
+    {
+      "label": "parseHeader()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L23",
+      "id": "scripts_youtube_history_extract_parseheader",
+      "community": 2,
+      "norm_label": "parseheader()"
+    },
+    {
+      "label": "scrollUntilCovered()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L32",
+      "id": "scripts_youtube_history_extract_scrolluntilcovered",
+      "community": 2,
+      "norm_label": "scrolluntilcovered()"
+    },
+    {
+      "label": "sections",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L50",
+      "id": "scripts_youtube_history_extract_sections",
+      "community": 2,
+      "norm_label": "sections"
+    },
+    {
+      "label": "out",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L51",
+      "id": "scripts_youtube_history_extract_out",
+      "community": 2,
+      "norm_label": "out"
+    },
+    {
+      "label": "hEl",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L53",
+      "id": "scripts_youtube_history_extract_hel",
+      "community": 2,
+      "norm_label": "hel"
+    },
+    {
+      "label": "d",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L54",
+      "id": "scripts_youtube_history_extract_d",
+      "community": 2,
+      "norm_label": "d"
+    },
+    {
+      "label": "dateStr",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L56",
+      "id": "scripts_youtube_history_extract_datestr",
+      "community": 2,
+      "norm_label": "datestr"
+    },
+    {
+      "label": "titleEl",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L58",
+      "id": "scripts_youtube_history_extract_titleel",
+      "community": 2,
+      "norm_label": "titleel"
+    },
+    {
+      "label": "a",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L59",
+      "id": "scripts_youtube_history_extract_a",
+      "community": 2,
+      "norm_label": "a"
+    },
+    {
+      "label": "channelEl",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L60",
+      "id": "scripts_youtube_history_extract_channelel",
+      "community": 2,
+      "norm_label": "channelel"
+    },
+    {
+      "label": "meta",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L61",
+      "id": "scripts_youtube_history_extract_meta",
+      "community": 2,
+      "norm_label": "meta"
+    },
+    {
+      "label": "youtube_to_ll.py",
+      "file_type": "code",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L1",
+      "id": "scripts_youtube_to_ll_py",
+      "community": 79,
+      "norm_label": "youtube_to_ll.py"
+    },
+    {
+      "label": "ntn_api()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L42",
+      "id": "scripts_youtube_to_ll_ntn_api",
+      "community": 79,
+      "norm_label": "ntn_api()"
+    },
+    {
+      "label": "fetch_schema()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L54",
+      "id": "scripts_youtube_to_ll_fetch_schema",
+      "community": 79,
+      "norm_label": "fetch_schema()"
+    },
+    {
+      "label": "preflight()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L62",
+      "id": "scripts_youtube_to_ll_preflight",
+      "community": 79,
+      "norm_label": "preflight()"
+    },
+    {
+      "label": "existing_urls()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L70",
+      "id": "scripts_youtube_to_ll_existing_urls",
+      "community": 79,
+      "norm_label": "existing_urls()"
+    },
+    {
+      "label": "build_props()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L94",
+      "id": "scripts_youtube_to_ll_build_props",
+      "community": 79,
+      "norm_label": "build_props()"
+    },
+    {
+      "label": "body_blocks()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L124",
+      "id": "scripts_youtube_to_ll_body_blocks",
+      "community": 79,
+      "norm_label": "body_blocks()"
+    },
+    {
+      "label": "create_page()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L141",
+      "id": "scripts_youtube_to_ll_create_page",
+      "community": 79,
+      "norm_label": "create_page()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L156",
+      "id": "scripts_youtube_to_ll_main",
+      "community": 79,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Return {prop_name: type} for the LL data source. Empty on failure.",
+      "file_type": "rationale",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L55",
+      "id": "scripts_youtube_to_ll_rationale_55",
+      "community": 79,
+      "norm_label": "return {prop_name: type} for the ll data source. empty on failure."
+    },
+    {
+      "label": "Return (title_prop_name, missing_props). title_prop_name is None if no title fou",
+      "file_type": "rationale",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L63",
+      "id": "scripts_youtube_to_ll_rationale_63",
+      "community": 79,
+      "norm_label": "return (title_prop_name, missing_props). title_prop_name is none if no title fou"
+    },
+    {
+      "label": "Query all LL pages, return set of Links URLs already stored.",
+      "file_type": "rationale",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L71",
+      "id": "scripts_youtube_to_ll_rationale_71",
+      "community": 79,
+      "norm_label": "query all ll pages, return set of links urls already stored."
+    },
+    {
+      "label": "youtube_history_scrape.py",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L1",
+      "id": "scripts_youtube_history_scrape_py",
+      "community": 84,
+      "norm_label": "youtube_history_scrape.py"
+    },
+    {
+      "label": "parse_header_date()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L67",
+      "id": "scripts_youtube_history_scrape_parse_header_date",
+      "community": 84,
+      "norm_label": "parse_header_date()"
+    },
+    {
+      "label": "_text()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L96",
+      "id": "scripts_youtube_history_scrape_text",
+      "community": 84,
+      "norm_label": "_text()"
+    },
+    {
+      "label": "_parse_duration()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L107",
+      "id": "scripts_youtube_history_scrape_parse_duration",
+      "community": 84,
+      "norm_label": "_parse_duration()"
+    },
+    {
+      "label": "extract_from_video_renderer()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L120",
+      "id": "scripts_youtube_history_scrape_extract_from_video_renderer",
+      "community": 84,
+      "norm_label": "extract_from_video_renderer()"
+    },
+    {
+      "label": "extract_from_lockup()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L140",
+      "id": "scripts_youtube_history_scrape_extract_from_lockup",
+      "community": 84,
+      "norm_label": "extract_from_lockup()"
+    },
+    {
+      "label": "parse_browse_response()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L191",
+      "id": "scripts_youtube_history_scrape_parse_browse_response",
+      "community": 84,
+      "norm_label": "parse_browse_response()"
+    },
+    {
+      "label": "is_signed_in()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L255",
+      "id": "scripts_youtube_history_scrape_is_signed_in",
+      "community": 84,
+      "norm_label": "is_signed_in()"
+    },
+    {
+      "label": "scrape()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L266",
+      "id": "scripts_youtube_history_scrape_scrape",
+      "community": 84,
+      "norm_label": "scrape()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L397",
+      "id": "scripts_youtube_history_scrape_main",
+      "community": 84,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Walk a /youtubei/v1/browse response. Return (entries_with_date, continuation_tok",
+      "file_type": "rationale",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L192",
+      "id": "scripts_youtube_history_scrape_rationale_192",
+      "community": 84,
+      "norm_label": "walk a /youtubei/v1/browse response. return (entries_with_date, continuation_tok"
+    },
+    {
       "label": "sync-queue.py",
       "file_type": "code",
       "source_file": "scripts/sync-queue.py",
@@ -3240,7 +3681,7 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L1",
       "id": "scripts_export_journey_json_py",
-      "community": 84,
+      "community": 0,
       "norm_label": "export-journey-json.py"
     },
     {
@@ -3248,8 +3689,8 @@
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L29",
-      "id": "export_journey_json_fetch_all_pages",
-      "community": 84,
+      "id": "scripts_export_journey_json_fetch_all_pages",
+      "community": 0,
       "norm_label": "fetch_all_pages()"
     },
     {
@@ -3257,8 +3698,8 @@
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L51",
-      "id": "export_journey_json_fetch_page_blocks",
-      "community": 84,
+      "id": "scripts_export_journey_json_fetch_page_blocks",
+      "community": 0,
       "norm_label": "fetch_page_blocks()"
     },
     {
@@ -3266,8 +3707,8 @@
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L68",
-      "id": "export_journey_json_extract_rich_text",
-      "community": 84,
+      "id": "scripts_export_journey_json_extract_rich_text",
+      "community": 0,
       "norm_label": "extract_rich_text()"
     },
     {
@@ -3275,8 +3716,8 @@
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L72",
-      "id": "export_journey_json_parse_blocks",
-      "community": 84,
+      "id": "scripts_export_journey_json_parse_blocks",
+      "community": 0,
       "norm_label": "parse_blocks()"
     },
     {
@@ -3284,18 +3725,36 @@
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L128",
-      "id": "export_journey_json_props_to_entry",
-      "community": 84,
+      "id": "scripts_export_journey_json_props_to_entry",
+      "community": 0,
       "norm_label": "props_to_entry()"
+    },
+    {
+      "label": "bundle_videos_into_journal()",
+      "file_type": "code",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L170",
+      "id": "scripts_export_journey_json_bundle_videos_into_journal",
+      "community": 0,
+      "norm_label": "bundle_videos_into_journal()"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
-      "source_location": "L162",
-      "id": "export_journey_json_main",
-      "community": 84,
+      "source_location": "L221",
+      "id": "scripts_export_journey_json_main",
+      "community": 0,
       "norm_label": "main()"
+    },
+    {
+      "label": "Merge per-video LL records (Source=YouTube or Type=Video) into each day's journa",
+      "file_type": "rationale",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L171",
+      "id": "scripts_export_journey_json_rationale_171",
+      "community": 0,
+      "norm_label": "merge per-video ll records (source=youtube or type=video) into each day's journa"
     },
     {
       "label": "scan-tools.py",
@@ -3501,7 +3960,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L15",
       "id": "scripts_sync_claude_stats_run",
-      "community": 87,
+      "community": 76,
       "norm_label": "run()"
     },
     {
@@ -3510,7 +3969,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L21",
       "id": "scripts_sync_claude_stats_getclaudeusage",
-      "community": 87,
+      "community": 76,
       "norm_label": "getclaudeusage()"
     },
     {
@@ -3645,7 +4104,7 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L6",
       "id": "app_page_home",
-      "community": 90,
+      "community": 0,
       "norm_label": "home()"
     },
     {
@@ -4102,7 +4561,7 @@
       "label": "CODE_COUNCIL",
       "file_type": "code",
       "source_file": "src/app/work/WorkPageContent.tsx",
-      "source_location": "L376",
+      "source_location": "L350",
       "id": "work_workpagecontent_code_council",
       "community": 6,
       "norm_label": "code_council"
@@ -4111,7 +4570,7 @@
       "label": "CodeCouncilSection()",
       "file_type": "code",
       "source_file": "src/app/work/WorkPageContent.tsx",
-      "source_location": "L451",
+      "source_location": "L425",
       "id": "work_workpagecontent_codecouncilsection",
       "community": 6,
       "norm_label": "codecouncilsection()"
@@ -4120,7 +4579,7 @@
       "label": "Pagination()",
       "file_type": "code",
       "source_file": "src/app/work/WorkPageContent.tsx",
-      "source_location": "L503",
+      "source_location": "L477",
       "id": "work_workpagecontent_pagination",
       "community": 6,
       "norm_label": "pagination()"
@@ -4221,7 +4680,7 @@
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L1",
       "id": "src_app_api_stats_route_ts",
-      "community": 84,
+      "community": 0,
       "norm_label": "route.ts"
     },
     {
@@ -4230,7 +4689,7 @@
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L5",
       "id": "stats_route_statsoverrides",
-      "community": 84,
+      "community": 0,
       "norm_label": "statsoverrides"
     },
     {
@@ -4239,7 +4698,7 @@
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L16",
       "id": "stats_route_loadoverrides",
-      "community": 84,
+      "community": 0,
       "norm_label": "loadoverrides()"
     },
     {
@@ -4248,7 +4707,7 @@
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L24",
       "id": "stats_route_loaddaystreak",
-      "community": 84,
+      "community": 0,
       "norm_label": "loaddaystreak()"
     },
     {
@@ -4257,7 +4716,7 @@
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L37",
       "id": "stats_route_get",
-      "community": 84,
+      "community": 0,
       "norm_label": "get()"
     },
     {
@@ -4441,6 +4900,96 @@
       "norm_label": "blogcard()"
     },
     {
+      "label": "ConsultingSection.tsx",
+      "file_type": "code",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L1",
+      "id": "src_components_sections_consultingsection_tsx",
+      "community": 87,
+      "norm_label": "consultingsection.tsx"
+    },
+    {
+      "label": "GraphicIntro()",
+      "file_type": "code",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L7",
+      "id": "sections_consultingsection_graphicintro",
+      "community": 87,
+      "norm_label": "graphicintro()"
+    },
+    {
+      "label": "GraphicOwner()",
+      "file_type": "code",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L38",
+      "id": "sections_consultingsection_graphicowner",
+      "community": 87,
+      "norm_label": "graphicowner()"
+    },
+    {
+      "label": "GraphicDiscovery()",
+      "file_type": "code",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L73",
+      "id": "sections_consultingsection_graphicdiscovery",
+      "community": 87,
+      "norm_label": "graphicdiscovery()"
+    },
+    {
+      "label": "GraphicImplementation()",
+      "file_type": "code",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L103",
+      "id": "sections_consultingsection_graphicimplementation",
+      "community": 87,
+      "norm_label": "graphicimplementation()"
+    },
+    {
+      "label": "ArchitectureGraphic()",
+      "file_type": "code",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L149",
+      "id": "sections_consultingsection_architecturegraphic",
+      "community": 87,
+      "norm_label": "architecturegraphic()"
+    },
+    {
+      "label": "ACCENT",
+      "file_type": "code",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L201",
+      "id": "sections_consultingsection_accent",
+      "community": 87,
+      "norm_label": "accent"
+    },
+    {
+      "label": "ConsultingCardProps",
+      "file_type": "code",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L236",
+      "id": "sections_consultingsection_consultingcardprops",
+      "community": 87,
+      "norm_label": "consultingcardprops"
+    },
+    {
+      "label": "ConsultingCard()",
+      "file_type": "code",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L250",
+      "id": "sections_consultingsection_consultingcard",
+      "community": 87,
+      "norm_label": "consultingcard()"
+    },
+    {
+      "label": "ConsultingSection()",
+      "file_type": "code",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L307",
+      "id": "sections_consultingsection_consultingsection",
+      "community": 87,
+      "norm_label": "consultingsection()"
+    },
+    {
       "label": "CharacterStats.tsx",
       "file_type": "code",
       "source_file": "src/components/sections/CharacterStats.tsx",
@@ -4563,7 +5112,7 @@
       "source_file": "src/components/sections/ServiceTier.tsx",
       "source_location": "L1",
       "id": "src_components_sections_servicetier_tsx",
-      "community": 7,
+      "community": 6,
       "norm_label": "servicetier.tsx"
     },
     {
@@ -4572,7 +5121,7 @@
       "source_file": "src/components/sections/ServiceTier.tsx",
       "source_location": "L3",
       "id": "sections_servicetier_servicetierprops",
-      "community": 7,
+      "community": 6,
       "norm_label": "servicetierprops"
     },
     {
@@ -4581,7 +5130,7 @@
       "source_file": "src/components/sections/ServiceTier.tsx",
       "source_location": "L12",
       "id": "sections_servicetier_accent_classes",
-      "community": 7,
+      "community": 6,
       "norm_label": "accent_classes"
     },
     {
@@ -4590,7 +5139,7 @@
       "source_file": "src/components/sections/ServiceTier.tsx",
       "source_location": "L19",
       "id": "sections_servicetier_servicetier",
-      "community": 7,
+      "community": 6,
       "norm_label": "servicetier()"
     },
     {
@@ -4752,7 +5301,7 @@
       "source_file": "src/components/forms/ConsultationForm.tsx",
       "source_location": "L1",
       "id": "src_components_forms_consultationform_tsx",
-      "community": 6,
+      "community": 94,
       "norm_label": "consultationform.tsx"
     },
     {
@@ -4761,7 +5310,7 @@
       "source_file": "src/components/forms/ConsultationForm.tsx",
       "source_location": "L6",
       "id": "forms_consultationform_formdata",
-      "community": 6,
+      "community": 94,
       "norm_label": "formdata"
     },
     {
@@ -4770,7 +5319,7 @@
       "source_file": "src/components/forms/ConsultationForm.tsx",
       "source_location": "L14",
       "id": "forms_consultationform_services",
-      "community": 6,
+      "community": 94,
       "norm_label": "services"
     },
     {
@@ -4779,7 +5328,7 @@
       "source_file": "src/components/forms/ConsultationForm.tsx",
       "source_location": "L23",
       "id": "forms_consultationform_consultationform",
-      "community": 6,
+      "community": 94,
       "norm_label": "consultationform()"
     },
     {
@@ -5886,7 +6435,7 @@
       "source_file": "src/components/photo-booth-owners/ToolsGrid.tsx",
       "source_location": "L1",
       "id": "src_components_photo_booth_owners_toolsgrid_tsx",
-      "community": 79,
+      "community": 13,
       "norm_label": "toolsgrid.tsx"
     },
     {
@@ -5895,7 +6444,7 @@
       "source_file": "src/components/photo-booth-owners/ToolsGrid.tsx",
       "source_location": "L7",
       "id": "photo_booth_owners_toolsgrid_categories",
-      "community": 79,
+      "community": 13,
       "norm_label": "categories"
     },
     {
@@ -5904,7 +6453,7 @@
       "source_file": "src/components/photo-booth-owners/ToolsGrid.tsx",
       "source_location": "L9",
       "id": "photo_booth_owners_toolsgrid_toolsgrid",
-      "community": 79,
+      "community": 13,
       "norm_label": "toolsgrid()"
     },
     {
@@ -5931,7 +6480,7 @@
       "source_file": "src/components/photo-booth-owners/GuideCard.tsx",
       "source_location": "L1",
       "id": "src_components_photo_booth_owners_guidecard_tsx",
-      "community": 13,
+      "community": 93,
       "norm_label": "guidecard.tsx"
     },
     {
@@ -5940,7 +6489,7 @@
       "source_file": "src/components/photo-booth-owners/GuideCard.tsx",
       "source_location": "L3",
       "id": "photo_booth_owners_guidecard_guide",
-      "community": 13,
+      "community": 93,
       "norm_label": "guide"
     },
     {
@@ -5949,7 +6498,7 @@
       "source_file": "src/components/photo-booth-owners/GuideCard.tsx",
       "source_location": "L14",
       "id": "photo_booth_owners_guidecard_accent",
-      "community": 13,
+      "community": 93,
       "norm_label": "accent"
     },
     {
@@ -5958,7 +6507,7 @@
       "source_file": "src/components/photo-booth-owners/GuideCard.tsx",
       "source_location": "L21",
       "id": "photo_booth_owners_guidecard_store_labels",
-      "community": 13,
+      "community": 93,
       "norm_label": "store_labels"
     },
     {
@@ -5967,7 +6516,7 @@
       "source_file": "src/components/photo-booth-owners/GuideCard.tsx",
       "source_location": "L27",
       "id": "photo_booth_owners_guidecard_guidecard",
-      "community": 13,
+      "community": 93,
       "norm_label": "guidecard()"
     },
     {
@@ -6084,7 +6633,7 @@
       "source_file": "src/components/photo-booth-owners/ServicesGrid.tsx",
       "source_location": "L1",
       "id": "src_components_photo_booth_owners_servicesgrid_tsx",
-      "community": 2,
+      "community": 13,
       "norm_label": "servicesgrid.tsx"
     },
     {
@@ -6093,7 +6642,7 @@
       "source_file": "src/components/photo-booth-owners/ServicesGrid.tsx",
       "source_location": "L4",
       "id": "photo_booth_owners_servicesgrid_accentkey",
-      "community": 2,
+      "community": 13,
       "norm_label": "accentkey"
     },
     {
@@ -6102,7 +6651,7 @@
       "source_file": "src/components/photo-booth-owners/ServicesGrid.tsx",
       "source_location": "L6",
       "id": "photo_booth_owners_servicesgrid_servicegroup",
-      "community": 2,
+      "community": 13,
       "norm_label": "servicegroup"
     },
     {
@@ -6111,7 +6660,7 @@
       "source_file": "src/components/photo-booth-owners/ServicesGrid.tsx",
       "source_location": "L14",
       "id": "photo_booth_owners_servicesgrid_accent_cycle",
-      "community": 2,
+      "community": 13,
       "norm_label": "accent_cycle"
     },
     {
@@ -6120,7 +6669,7 @@
       "source_file": "src/components/photo-booth-owners/ServicesGrid.tsx",
       "source_location": "L16",
       "id": "photo_booth_owners_servicesgrid_servicesgrid",
-      "community": 2,
+      "community": 13,
       "norm_label": "servicesgrid()"
     },
     {
@@ -6129,7 +6678,7 @@
       "source_file": "src/components/photo-booth-owners/ServiceCard.tsx",
       "source_location": "L1",
       "id": "src_components_photo_booth_owners_servicecard_tsx",
-      "community": 2,
+      "community": 7,
       "norm_label": "servicecard.tsx"
     },
     {
@@ -6138,7 +6687,7 @@
       "source_file": "src/components/photo-booth-owners/ServiceCard.tsx",
       "source_location": "L3",
       "id": "photo_booth_owners_servicecard_serviceitem",
-      "community": 2,
+      "community": 7,
       "norm_label": "serviceitem"
     },
     {
@@ -6147,7 +6696,7 @@
       "source_file": "src/components/photo-booth-owners/ServiceCard.tsx",
       "source_location": "L9",
       "id": "photo_booth_owners_servicecard_servicecardprops",
-      "community": 2,
+      "community": 7,
       "norm_label": "servicecardprops"
     },
     {
@@ -6156,7 +6705,7 @@
       "source_file": "src/components/photo-booth-owners/ServiceCard.tsx",
       "source_location": "L17",
       "id": "photo_booth_owners_servicecard_accent_classes",
-      "community": 2,
+      "community": 7,
       "norm_label": "accent_classes"
     },
     {
@@ -6165,7 +6714,7 @@
       "source_file": "src/components/photo-booth-owners/ServiceCard.tsx",
       "source_location": "L24",
       "id": "photo_booth_owners_servicecard_servicecard",
-      "community": 2,
+      "community": 7,
       "norm_label": "servicecard()"
     },
     {
@@ -6174,7 +6723,7 @@
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L1",
       "id": "src_components_photo_booth_owners_toolcard_tsx",
-      "community": 79,
+      "community": 13,
       "norm_label": "toolcard.tsx"
     },
     {
@@ -6183,7 +6732,7 @@
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L6",
       "id": "photo_booth_owners_toolcard_mightytool",
-      "community": 79,
+      "community": 13,
       "norm_label": "mightytool"
     },
     {
@@ -6192,7 +6741,7 @@
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L16",
       "id": "photo_booth_owners_toolcard_category_accent",
-      "community": 79,
+      "community": 13,
       "norm_label": "category_accent"
     },
     {
@@ -6201,7 +6750,7 @@
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L49",
       "id": "photo_booth_owners_toolcard_accent",
-      "community": 79,
+      "community": 13,
       "norm_label": "accent()"
     },
     {
@@ -6210,7 +6759,7 @@
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L53",
       "id": "photo_booth_owners_toolcard_toolcard",
-      "community": 79,
+      "community": 13,
       "norm_label": "toolcard()"
     },
     {
@@ -6552,7 +7101,7 @@
       "source_file": "src/data/services.json",
       "source_location": "L1",
       "id": "src_data_services_json",
-      "community": 2,
+      "community": 13,
       "norm_label": "services.json"
     },
     {
@@ -7168,6 +7717,60 @@
       "norm_label": "what's covered"
     },
     {
+      "label": "fetch_all_pages()",
+      "file_type": "code",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L29",
+      "community": 0,
+      "norm_label": "fetch_all_pages()",
+      "id": "export_journey_json_fetch_all_pages"
+    },
+    {
+      "label": "fetch_page_blocks()",
+      "file_type": "code",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L51",
+      "community": 0,
+      "norm_label": "fetch_page_blocks()",
+      "id": "export_journey_json_fetch_page_blocks"
+    },
+    {
+      "label": "extract_rich_text()",
+      "file_type": "code",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L68",
+      "community": 0,
+      "norm_label": "extract_rich_text()",
+      "id": "export_journey_json_extract_rich_text"
+    },
+    {
+      "label": "parse_blocks()",
+      "file_type": "code",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L72",
+      "community": 0,
+      "norm_label": "parse_blocks()",
+      "id": "export_journey_json_parse_blocks"
+    },
+    {
+      "label": "props_to_entry()",
+      "file_type": "code",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L128",
+      "community": 0,
+      "norm_label": "props_to_entry()",
+      "id": "export_journey_json_props_to_entry"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L162",
+      "community": 0,
+      "norm_label": "main()",
+      "id": "export_journey_json_main"
+    },
+    {
       "label": "gh()",
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
@@ -7190,7 +7793,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L74",
-      "community": 87,
+      "community": 76,
       "norm_label": "shallow_clone()",
       "id": "refresh_stats_shallow_clone"
     },
@@ -7217,7 +7820,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L138",
-      "community": 0,
+      "community": 1,
       "norm_label": "count_commits_for_repo()",
       "id": "refresh_stats_count_commits_for_repo"
     },
@@ -7235,7 +7838,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L195",
-      "community": 87,
+      "community": 76,
       "norm_label": "count_tools()",
       "id": "refresh_stats_count_tools"
     },
@@ -7244,7 +7847,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L232",
-      "community": 90,
+      "community": 0,
       "norm_label": "count_skills()",
       "id": "refresh_stats_count_skills"
     },
@@ -7253,7 +7856,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L248",
-      "community": 90,
+      "community": 0,
       "norm_label": "count_live_agents()",
       "id": "refresh_stats_count_live_agents"
     },
@@ -7280,7 +7883,7 @@
       "file_type": "rationale",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L75",
-      "community": 87,
+      "community": 76,
       "norm_label": "treeless clone: full commit history (cheap), no blobs until checkout.",
       "id": "refresh_stats_rationale_75"
     },
@@ -7289,7 +7892,7 @@
       "file_type": "rationale",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L139",
-      "community": 0,
+      "community": 1,
       "norm_label": "count commits authored by andrew across all branches, dedup by sha.",
       "id": "refresh_stats_rationale_139"
     },
@@ -7307,7 +7910,7 @@
       "file_type": "rationale",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L196",
-      "community": 87,
+      "community": 76,
       "norm_label": "tools = entries in src/data/mighty-tools.json, written by scan-tools.py.      th",
       "id": "refresh_stats_rationale_196"
     },
@@ -7316,7 +7919,7 @@
       "file_type": "rationale",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L233",
-      "community": 90,
+      "community": 0,
       "norm_label": "skills registry sibling to agent registry. one row = one skill.",
       "id": "refresh_stats_rationale_233"
     },
@@ -7325,7 +7928,7 @@
       "file_type": "rationale",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L249",
-      "community": 90,
+      "community": 0,
       "norm_label": "canonical 'live agents' = registry entries with status active or production.",
       "id": "refresh_stats_rationale_249"
     },
@@ -7559,7 +8162,7 @@
       "file_type": "code",
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L15",
-      "community": 87,
+      "community": 76,
       "norm_label": "run()",
       "id": "sync_claude_stats_run"
     },
@@ -7568,7 +8171,7 @@
       "file_type": "code",
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L21",
-      "community": 87,
+      "community": 76,
       "norm_label": "getclaudeusage()",
       "id": "sync_claude_stats_getclaudeusage"
     },
@@ -7649,7 +8252,7 @@
       "file_type": "code",
       "source_file": "src/app/photo-booth-owners/vlogs/[slug]/page.tsx",
       "source_location": "L8",
-      "community": 3,
+      "community": 12,
       "norm_label": "generatestaticparams()",
       "id": "page_generatestaticparams"
     },
@@ -7757,7 +8360,7 @@
       "file_type": "code",
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L16",
-      "community": 84,
+      "community": 0,
       "norm_label": "loadoverrides()",
       "id": "route_loadoverrides"
     },
@@ -7766,7 +8369,7 @@
       "file_type": "code",
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L24",
-      "community": 84,
+      "community": 0,
       "norm_label": "loaddaystreak()",
       "id": "route_loaddaystreak"
     },
@@ -7775,7 +8378,7 @@
       "file_type": "code",
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L37",
-      "community": 84,
+      "community": 0,
       "norm_label": "get()",
       "id": "route_get"
     },
@@ -7865,7 +8468,7 @@
       "file_type": "code",
       "source_file": "src/components/forms/ConsultationForm.tsx",
       "source_location": "L23",
-      "community": 6,
+      "community": 94,
       "norm_label": "consultationform()",
       "id": "consultationform_consultationform"
     },
@@ -8117,7 +8720,7 @@
       "file_type": "code",
       "source_file": "src/components/photo-booth-owners/GuideCard.tsx",
       "source_location": "L47",
-      "community": 13,
+      "community": 93,
       "norm_label": "cn()",
       "id": "guidecard_cn"
     },
@@ -8144,7 +8747,7 @@
       "file_type": "code",
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L49",
-      "community": 79,
+      "community": 13,
       "norm_label": "accent()",
       "id": "toolcard_accent"
     },
@@ -8153,7 +8756,7 @@
       "file_type": "code",
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L53",
-      "community": 79,
+      "community": 13,
       "norm_label": "toolcard()",
       "id": "toolcard_toolcard"
     },
@@ -8162,7 +8765,7 @@
       "file_type": "code",
       "source_file": "src/components/photo-booth-owners/ToolCard.tsx",
       "source_location": "L70",
-      "community": 79,
+      "community": 13,
       "norm_label": "cn()",
       "id": "toolcard_cn"
     },
@@ -8216,7 +8819,7 @@
       "file_type": "code",
       "source_file": "src/lib/blog.ts",
       "source_location": "L23",
-      "community": 3,
+      "community": 12,
       "norm_label": "getallposts()",
       "id": "blog_getallposts"
     },
@@ -8740,6 +9343,17 @@
       "weight": 1.0,
       "source": "lib_utils_cn",
       "target": "andrewwebber_dev_package_dependencies_clsx"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_preflight",
+      "target": "andrewwebber_dev_package_dependencies_next"
     },
     {
       "relation": "contains",
@@ -9414,6 +10028,142 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "scripts_youtube_enrich_py",
+      "target": "scripts_youtube_enrich_load_raw",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "scripts_youtube_enrich_py",
+      "target": "scripts_youtube_enrich_fetch_watch_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "scripts_youtube_enrich_py",
+      "target": "scripts_youtube_enrich_extract_meta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "scripts_youtube_enrich_py",
+      "target": "scripts_youtube_enrich_classify_topics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "scripts_youtube_enrich_py",
+      "target": "scripts_youtube_enrich_should_skip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "scripts_youtube_enrich_py",
+      "target": "scripts_youtube_enrich_enrich_one",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L152",
+      "weight": 1.0,
+      "source": "scripts_youtube_enrich_py",
+      "target": "scripts_youtube_enrich_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "scripts_youtube_enrich_main",
+      "target": "scripts_youtube_enrich_load_raw",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "scripts_youtube_enrich_enrich_one",
+      "target": "scripts_youtube_enrich_fetch_watch_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "scripts_youtube_enrich_enrich_one",
+      "target": "scripts_youtube_enrich_extract_meta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "scripts_youtube_enrich_enrich_one",
+      "target": "scripts_youtube_enrich_classify_topics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L143",
+      "weight": 1.0,
+      "source": "scripts_youtube_enrich_enrich_one",
+      "target": "scripts_youtube_enrich_should_skip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_enrich.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "scripts_youtube_enrich_main",
+      "target": "scripts_youtube_enrich_enrich_one",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/build-portrait-previews.py",
       "source_location": "L25",
       "weight": 1.0,
@@ -9534,6 +10284,69 @@
       "confidence_score": 1.0,
       "source": "scripts_build_portrait_previews_main",
       "target": "scripts_build_portrait_previews_build_svg"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "scripts_nightly_journey_sync_py",
+      "target": "scripts_nightly_journey_sync_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "scripts_nightly_journey_sync_py",
+      "target": "scripts_nightly_journey_sync_data_files_changed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "scripts_nightly_journey_sync_py",
+      "target": "scripts_nightly_journey_sync_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "scripts_nightly_journey_sync_data_files_changed",
+      "target": "scripts_nightly_journey_sync_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "scripts_nightly_journey_sync_main",
+      "target": "scripts_nightly_journey_sync_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "scripts_nightly_journey_sync_main",
+      "target": "scripts_nightly_journey_sync_data_files_changed",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9845,9 +10658,9 @@
       "source_file": "scripts/create_content_queue_db.py",
       "source_location": "L82",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_create_content_queue_db_py",
-      "target": "scripts_create_content_queue_db_patch_data_source_properties",
-      "confidence_score": 1.0
+      "target": "scripts_create_content_queue_db_patch_data_source_properties"
     },
     {
       "relation": "contains",
@@ -9887,9 +10700,9 @@
       "source_file": "scripts/create_content_queue_db.py",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_create_content_queue_db_patch_data_source_properties",
-      "target": "scripts_create_content_queue_db_ntn",
-      "confidence_score": 1.0
+      "target": "scripts_create_content_queue_db_ntn"
     },
     {
       "relation": "calls",
@@ -9920,9 +10733,9 @@
       "source_file": "scripts/create_content_queue_db.py",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_create_content_queue_db_main",
-      "target": "scripts_create_content_queue_db_patch_data_source_properties",
-      "confidence_score": 1.0
+      "target": "scripts_create_content_queue_db_patch_data_source_properties"
     },
     {
       "relation": "calls",
@@ -12128,6 +12941,500 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_extract_js",
+      "target": "scripts_youtube_history_extract_target_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_extract_js",
+      "target": "scripts_youtube_history_extract_target_end",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_extract_js",
+      "target": "scripts_youtube_history_extract_parseheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_extract_js",
+      "target": "scripts_youtube_history_extract_scrolluntilcovered",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_extract_js",
+      "target": "scripts_youtube_history_extract_sections",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_extract_js",
+      "target": "scripts_youtube_history_extract_out",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_extract_js",
+      "target": "scripts_youtube_history_extract_hel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_extract_js",
+      "target": "scripts_youtube_history_extract_d",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_extract_js",
+      "target": "scripts_youtube_history_extract_datestr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_extract_js",
+      "target": "scripts_youtube_history_extract_titleel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_extract_js",
+      "target": "scripts_youtube_history_extract_a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_extract_js",
+      "target": "scripts_youtube_history_extract_channelel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_extract.js",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_extract_js",
+      "target": "scripts_youtube_history_extract_meta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_py",
+      "target": "scripts_youtube_to_ll_ntn_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_py",
+      "target": "scripts_youtube_to_ll_fetch_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_py",
+      "target": "scripts_youtube_to_ll_preflight",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_py",
+      "target": "scripts_youtube_to_ll_existing_urls",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_py",
+      "target": "scripts_youtube_to_ll_build_props",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_py",
+      "target": "scripts_youtube_to_ll_body_blocks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L141",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_py",
+      "target": "scripts_youtube_to_ll_create_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L156",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_py",
+      "target": "scripts_youtube_to_ll_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_fetch_schema",
+      "target": "scripts_youtube_to_ll_ntn_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L150",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_create_page",
+      "target": "scripts_youtube_to_ll_ntn_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_main",
+      "target": "scripts_youtube_to_ll_fetch_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_rationale_55",
+      "target": "scripts_youtube_to_ll_fetch_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L171",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_main",
+      "target": "scripts_youtube_to_ll_preflight",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_rationale_63",
+      "target": "scripts_youtube_to_ll_preflight",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L189",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_main",
+      "target": "scripts_youtube_to_ll_existing_urls",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_rationale_71",
+      "target": "scripts_youtube_to_ll_existing_urls",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L144",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_create_page",
+      "target": "scripts_youtube_to_ll_build_props",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_create_page",
+      "target": "scripts_youtube_to_ll_body_blocks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_to_ll.py",
+      "source_location": "L214",
+      "weight": 1.0,
+      "source": "scripts_youtube_to_ll_main",
+      "target": "scripts_youtube_to_ll_create_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_scrape_py",
+      "target": "scripts_youtube_history_scrape_parse_header_date",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_scrape_py",
+      "target": "scripts_youtube_history_scrape_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_scrape_py",
+      "target": "scripts_youtube_history_scrape_parse_duration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_scrape_py",
+      "target": "scripts_youtube_history_scrape_extract_from_video_renderer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L140",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_scrape_py",
+      "target": "scripts_youtube_history_scrape_extract_from_lockup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L191",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_scrape_py",
+      "target": "scripts_youtube_history_scrape_parse_browse_response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L255",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_scrape_py",
+      "target": "scripts_youtube_history_scrape_is_signed_in",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L266",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_scrape_py",
+      "target": "scripts_youtube_history_scrape_scrape",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L397",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_scrape_py",
+      "target": "scripts_youtube_history_scrape_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_scrape_extract_from_video_renderer",
+      "target": "scripts_youtube_history_scrape_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_scrape_extract_from_lockup",
+      "target": "scripts_youtube_history_scrape_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_scrape_extract_from_video_renderer",
+      "target": "scripts_youtube_history_scrape_parse_duration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_scrape_extract_from_lockup",
+      "target": "scripts_youtube_history_scrape_parse_duration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L192",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_scrape_rationale_192",
+      "target": "scripts_youtube_history_scrape_parse_browse_response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L287",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_scrape_scrape",
+      "target": "scripts_youtube_history_scrape_is_signed_in",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/youtube_history_scrape.py",
+      "source_location": "L406",
+      "weight": 1.0,
+      "source": "scripts_youtube_history_scrape_main",
+      "target": "scripts_youtube_history_scrape_scrape",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/sync-queue.py",
       "source_location": "L30",
       "weight": 1.0,
@@ -12277,6 +13584,76 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L29",
       "weight": 1.0,
+      "source": "scripts_export_journey_json_py",
+      "target": "scripts_export_journey_json_fetch_all_pages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "scripts_export_journey_json_py",
+      "target": "scripts_export_journey_json_fetch_page_blocks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "scripts_export_journey_json_py",
+      "target": "scripts_export_journey_json_extract_rich_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "scripts_export_journey_json_py",
+      "target": "scripts_export_journey_json_parse_blocks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "scripts_export_journey_json_py",
+      "target": "scripts_export_journey_json_props_to_entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L170",
+      "weight": 1.0,
+      "source": "scripts_export_journey_json_py",
+      "target": "scripts_export_journey_json_bundle_videos_into_journal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L221",
+      "weight": 1.0,
+      "source": "scripts_export_journey_json_py",
+      "target": "scripts_export_journey_json_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L29",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "scripts_export_journey_json_py",
       "target": "export_journey_json_fetch_all_pages"
@@ -12333,199 +13710,90 @@
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/export-journey-json.py",
-      "source_location": "L170",
+      "source_location": "L229",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "export_journey_json_fetch_all_pages",
-      "target": "export_journey_json_main"
+      "source": "scripts_export_journey_json_main",
+      "target": "scripts_export_journey_json_fetch_all_pages",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/export-journey-json.py",
-      "source_location": "L46",
-      "weight": 1.0,
-      "source": "export_journey_json_fetch_all_pages",
-      "target": "stats_route_get"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/export-journey-json.py",
-      "source_location": "L37",
-      "weight": 1.0,
-      "source": "export_journey_json_fetch_all_pages",
-      "target": "route_post"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/export-journey-json.py",
-      "source_location": "L46",
-      "weight": 1.0,
-      "source": "export_journey_json_fetch_all_pages",
-      "target": "route_get"
-    },
-    {
-      "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "scripts/export-journey-json.py",
-      "source_location": "L177",
+      "source_location": "L236",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "export_journey_json_fetch_page_blocks",
-      "target": "export_journey_json_main"
+      "source": "scripts_export_journey_json_main",
+      "target": "scripts_export_journey_json_fetch_page_blocks",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/export-journey-json.py",
-      "source_location": "L59",
-      "weight": 1.0,
-      "source": "export_journey_json_fetch_page_blocks",
-      "target": "stats_route_get"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/export-journey-json.py",
-      "source_location": "L59",
-      "weight": 1.0,
-      "source": "export_journey_json_fetch_page_blocks",
-      "target": "route_get"
-    },
-    {
-      "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L81",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "export_journey_json_extract_rich_text",
-      "target": "export_journey_json_parse_blocks"
+      "source": "scripts_export_journey_json_parse_blocks",
+      "target": "scripts_export_journey_json_extract_rich_text",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
+      "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L132",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "export_journey_json_extract_rich_text",
-      "target": "export_journey_json_props_to_entry"
+      "source": "scripts_export_journey_json_props_to_entry",
+      "target": "scripts_export_journey_json_extract_rich_text",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/export-journey-json.py",
-      "source_location": "L69",
-      "weight": 1.0,
-      "source": "export_journey_json_extract_rich_text",
-      "target": "stats_route_get"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/export-journey-json.py",
-      "source_location": "L69",
-      "weight": 1.0,
-      "source": "export_journey_json_extract_rich_text",
-      "target": "route_get"
-    },
-    {
-      "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "scripts/export-journey-json.py",
-      "source_location": "L178",
+      "source_location": "L237",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "export_journey_json_parse_blocks",
-      "target": "export_journey_json_main"
+      "source": "scripts_export_journey_json_main",
+      "target": "scripts_export_journey_json_parse_blocks",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/export-journey-json.py",
-      "source_location": "L81",
-      "weight": 1.0,
-      "source": "export_journey_json_parse_blocks",
-      "target": "stats_route_get"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/export-journey-json.py",
-      "source_location": "L81",
-      "weight": 1.0,
-      "source": "export_journey_json_parse_blocks",
-      "target": "route_get"
-    },
-    {
-      "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "scripts/export-journey-json.py",
-      "source_location": "L179",
+      "source_location": "L238",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "export_journey_json_props_to_entry",
-      "target": "export_journey_json_main"
+      "source": "scripts_export_journey_json_main",
+      "target": "scripts_export_journey_json_props_to_entry",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
+      "confidence": "EXTRACTED",
       "source_file": "scripts/export-journey-json.py",
-      "source_location": "L131",
+      "source_location": "L241",
       "weight": 1.0,
-      "source": "export_journey_json_props_to_entry",
-      "target": "stats_route_get"
+      "source": "scripts_export_journey_json_main",
+      "target": "scripts_export_journey_json_bundle_videos_into_journal",
+      "confidence_score": 1.0
     },
     {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/export-journey-json.py",
-      "source_location": "L131",
+      "source_location": "L171",
       "weight": 1.0,
-      "source": "export_journey_json_props_to_entry",
-      "target": "route_get"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/export-journey-json.py",
-      "source_location": "L204",
-      "weight": 1.0,
-      "source": "export_journey_json_main",
-      "target": "scripts_sync_claude_stats_run"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "scripts/export-journey-json.py",
-      "source_location": "L204",
-      "weight": 1.0,
-      "source": "export_journey_json_main",
-      "target": "sync_claude_stats_run"
+      "source": "scripts_export_journey_json_rationale_171",
+      "target": "scripts_export_journey_json_bundle_videos_into_journal",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -13451,6 +14719,17 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "scripts_sync_claude_stats_getclaudeusage",
+      "target": "scripts_sync_claude_stats_run"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L204",
+      "weight": 1.0,
+      "source": "export_journey_json_main",
       "target": "scripts_sync_claude_stats_run"
     },
     {
@@ -15210,9 +16489,9 @@
       "source_file": "src/app/work/WorkPageContent.tsx",
       "source_location": "L6",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "src_app_work_workpagecontent_tsx",
-      "target": "src_components_sections_servicetier_tsx"
+      "target": "src_components_sections_consultingsection_tsx",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -15221,9 +16500,9 @@
       "source_file": "src/app/work/WorkPageContent.tsx",
       "source_location": "L6",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "src_app_work_workpagecontent_tsx",
-      "target": "sections_servicetier_servicetier"
+      "target": "sections_consultingsection_consultingsection",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -15450,6 +16729,28 @@
       "confidence_score": 1.0,
       "source": "src_app_work_page_tsx",
       "target": "src_app_work_workpagecontent_tsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/work/WorkPageContent.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_work_workpagecontent_tsx",
+      "target": "src_components_sections_servicetier_tsx"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/work/WorkPageContent.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_work_workpagecontent_tsx",
+      "target": "sections_servicetier_servicetier"
     },
     {
       "relation": "contains",
@@ -15715,6 +17016,61 @@
       "confidence_score": 1.0,
       "source": "stats_route_get",
       "target": "stats_route_loaddaystreak"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "export_journey_json_fetch_all_pages",
+      "target": "stats_route_get"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "export_journey_json_fetch_page_blocks",
+      "target": "stats_route_get"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "export_journey_json_extract_rich_text",
+      "target": "stats_route_get"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "export_journey_json_parse_blocks",
+      "target": "stats_route_get"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "export_journey_json_props_to_entry",
+      "target": "stats_route_get"
     },
     {
       "relation": "calls",
@@ -16125,6 +17481,129 @@
       "confidence_score": 1.0,
       "source": "src_components_sections_blogcard_tsx",
       "target": "blogcard_blogcard"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_sections_consultingsection_tsx",
+      "target": "src_lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_sections_consultingsection_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_components_sections_consultingsection_tsx",
+      "target": "sections_consultingsection_graphicintro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "src_components_sections_consultingsection_tsx",
+      "target": "sections_consultingsection_graphicowner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "src_components_sections_consultingsection_tsx",
+      "target": "sections_consultingsection_graphicdiscovery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "src_components_sections_consultingsection_tsx",
+      "target": "sections_consultingsection_graphicimplementation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "src_components_sections_consultingsection_tsx",
+      "target": "sections_consultingsection_architecturegraphic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L201",
+      "weight": 1.0,
+      "source": "src_components_sections_consultingsection_tsx",
+      "target": "sections_consultingsection_accent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L236",
+      "weight": 1.0,
+      "source": "src_components_sections_consultingsection_tsx",
+      "target": "sections_consultingsection_consultingcardprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L250",
+      "weight": 1.0,
+      "source": "src_components_sections_consultingsection_tsx",
+      "target": "sections_consultingsection_consultingcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L307",
+      "weight": 1.0,
+      "source": "src_components_sections_consultingsection_tsx",
+      "target": "sections_consultingsection_consultingsection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/sections/ConsultingSection.tsx",
+      "source_location": "L257",
+      "weight": 1.0,
+      "source": "sections_consultingsection_consultingcard",
+      "target": "lib_utils_cn"
     },
     {
       "relation": "contains",
@@ -20201,6 +21680,136 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L170",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "export_journey_json_fetch_all_pages",
+      "target": "export_journey_json_main"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "export_journey_json_fetch_all_pages",
+      "target": "route_post"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "export_journey_json_fetch_all_pages",
+      "target": "route_get"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L177",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "export_journey_json_fetch_page_blocks",
+      "target": "export_journey_json_main"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "export_journey_json_fetch_page_blocks",
+      "target": "route_get"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "export_journey_json_extract_rich_text",
+      "target": "export_journey_json_parse_blocks"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L132",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "export_journey_json_extract_rich_text",
+      "target": "export_journey_json_props_to_entry"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "export_journey_json_extract_rich_text",
+      "target": "route_get"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L178",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "export_journey_json_parse_blocks",
+      "target": "export_journey_json_main"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "export_journey_json_parse_blocks",
+      "target": "route_get"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L179",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "export_journey_json_props_to_entry",
+      "target": "export_journey_json_main"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "export_journey_json_props_to_entry",
+      "target": "route_get"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L204",
+      "weight": 1.0,
+      "source": "export_journey_json_main",
+      "target": "sync_claude_stats_run"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L65",
       "weight": 1.0,
@@ -20951,5 +22560,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "65aa4d8b7dafc557e824128be03c08017690d01c"
+  "built_at_commit": "03212ef62d1069624c6b69011acfd360989ca145"
 }
