@@ -1,8 +1,120 @@
 {
-  "lastUpdated": "2026-05-29T12:54:32",
-  "totalDays": 201,
+  "lastUpdated": "2026-05-29T12:51:46",
+  "totalDays": 243,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 143,
+      "date": "2026-05-17",
+      "title": "At first it was awesome\u2026 #comedy #relatable #shorts",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 143,
+      "date": "2026-05-17",
+      "title": "How to set up Surveys in Booth.Events",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 143,
+      "date": "2026-05-17",
+      "title": "The AI Career Opportunity Nobody is Talking About in 2026",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Automation",
+        "Business"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 143,
+      "date": "2026-05-17",
+      "title": "URGENT: Do This In Notion Today",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Business",
+        "No-Code"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 143,
+      "date": "2026-05-17",
+      "title": "Notion Masterclass: Formulas & Automations (Complete Guide 2025)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Automation",
+        "Business",
+        "No-Code"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 143,
+      "date": "2026-05-17",
+      "title": "Notion Just Announced A Massive Shift (Big Update)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Agents",
+        "Automation",
+        "Business",
+        "No-Code"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
     {
       "day": 143,
       "date": "2026-05-17",
@@ -18,75 +130,7 @@
         "DevOps"
       ],
       "impact": "Low",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
-      "videos": [
-        {
-          "title": "At first it was awesome\u2026 #comedy #relatable #shorts",
-          "channel": "that's a bad idea",
-          "url": "https://www.youtube.com/watch?v=CZGvqKURtpQ",
-          "runtime_min": 3,
-          "category": [
-            "AI/ML"
-          ]
-        },
-        {
-          "title": "How to set up Surveys in Booth.Events",
-          "channel": "Booth.Events",
-          "url": "https://www.youtube.com/watch?v=dmOlTzSXPl0",
-          "runtime_min": 5.2,
-          "category": [
-            "AI/ML"
-          ]
-        },
-        {
-          "title": "The AI Career Opportunity Nobody is Talking About in 2026",
-          "channel": "Nate Herk | AI Automation",
-          "url": "https://www.youtube.com/watch?v=iIfOprq2kCM",
-          "runtime_min": 19.2,
-          "category": [
-            "AI/ML",
-            "Automation",
-            "Business"
-          ]
-        },
-        {
-          "title": "URGENT: Do This In Notion Today",
-          "channel": "Matthias Frank",
-          "url": "https://www.youtube.com/watch?v=6xpOlmzoG4k",
-          "runtime_min": 26.8,
-          "category": [
-            "AI/ML",
-            "Agents",
-            "Business",
-            "No-Code"
-          ]
-        },
-        {
-          "title": "Notion Masterclass: Formulas & Automations (Complete Guide 2025)",
-          "channel": "Matthias Frank",
-          "url": "https://www.youtube.com/watch?v=5JaGJBPC0Q8",
-          "runtime_min": 209,
-          "category": [
-            "Automation",
-            "Business",
-            "No-Code"
-          ]
-        },
-        {
-          "title": "Notion Just Announced A Massive Shift (Big Update)",
-          "channel": "Matthias Frank",
-          "url": "https://www.youtube.com/watch?v=zCFlM2XhJJE",
-          "runtime_min": 31.8,
-          "category": [
-            "Agents",
-            "Automation",
-            "Business",
-            "No-Code"
-          ]
-        }
-      ],
+      "videos": [],
       "builds": [
         {
           "repo": "andrewwebber.dev",
@@ -108,6 +152,136 @@
     {
       "day": 142,
       "date": "2026-05-16",
+      "title": "Build Andrej Karpathy\u2019s LLM Knowledge Base\u00a0for Businesses (10x Output!)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Business",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 142,
+      "date": "2026-05-16",
+      "title": "Skill Issue: Andrej Karpathy on Code Agents, AutoResearch, and the Loopy Era of AI",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Design"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 142,
+      "date": "2026-05-16",
+      "title": "Stop Fixing Your Claude Skills. Autoresearch Does It For You",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Business"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 142,
+      "date": "2026-05-16",
+      "title": "The Complete Story Of Ash's Gengar",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 142,
+      "date": "2026-05-16",
+      "title": "The Very Best of Gengar So Far | Pok\u00e9mon Seasons 1-5",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 142,
+      "date": "2026-05-16",
+      "title": "This is The Most Powerful Tool to Give to Claude Code",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 142,
+      "date": "2026-05-16",
+      "title": "Android 17 Is the Biggest Upgrade in Years",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Design"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 142,
+      "date": "2026-05-16",
       "title": "Day 142 \u2014 Jimbo Curator Design \u2014 Hermes-Eater Sprint 2 & 35-Task Implementation Plan",
       "era": "Full Stack AI",
       "type": [
@@ -123,85 +297,7 @@
         "Security"
       ],
       "impact": "Critical",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
-      "videos": [
-        {
-          "title": "Build Andrej Karpathy\u2019s LLM Knowledge Base\u00a0for Businesses (10x Output!)",
-          "channel": "Dream Labs AI",
-          "url": "https://www.youtube.com/watch?v=FAWm7DuFSPc",
-          "runtime_min": 17.6,
-          "category": [
-            "AI/ML",
-            "Business",
-            "Open Source"
-          ]
-        },
-        {
-          "title": "Skill Issue: Andrej Karpathy on Code Agents, AutoResearch, and the Loopy Era of AI",
-          "channel": "No Priors: AI, Machine Learning, Tech, \\u0026 Startups",
-          "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
-          "runtime_min": 66.5,
-          "category": [
-            "AI/ML",
-            "Agents",
-            "Design"
-          ]
-        },
-        {
-          "title": "Stop Fixing Your Claude Skills. Autoresearch Does It For You",
-          "channel": "Nick Saraev",
-          "url": "https://www.youtube.com/watch?v=qKU-e0x2EmE",
-          "runtime_min": 16.5,
-          "category": [
-            "AI/ML",
-            "Agents",
-            "Automation",
-            "Business"
-          ]
-        },
-        {
-          "title": "The Complete Story Of Ash's Gengar",
-          "channel": "ThunderZolt",
-          "url": "https://www.youtube.com/watch?v=8Ym9r5S8vsQ",
-          "runtime_min": 10,
-          "category": [
-            "AI/ML"
-          ]
-        },
-        {
-          "title": "The Very Best of Gengar So Far | Pok\u00e9mon Seasons 1-5",
-          "channel": "Poke\u0301mon TV",
-          "url": "https://www.youtube.com/watch?v=zmkKteuKr10",
-          "runtime_min": 9,
-          "category": [
-            "AI/ML"
-          ]
-        },
-        {
-          "title": "This is The Most Powerful Tool to Give to Claude Code",
-          "channel": "Nate Herk | AI Automation",
-          "url": "https://www.youtube.com/watch?v=YHk45NEpspE",
-          "runtime_min": 14.8,
-          "category": [
-            "AI/ML",
-            "Agents",
-            "Automation",
-            "Open Source"
-          ]
-        },
-        {
-          "title": "Android 17 Is the Biggest Upgrade in Years",
-          "channel": "Mrwhosetheboss",
-          "url": "https://www.youtube.com/watch?v=j7i_4RokEIo",
-          "runtime_min": 17.6,
-          "category": [
-            "AI/ML",
-            "Design"
-          ]
-        }
-      ],
+      "videos": [],
       "builds": [
         {
           "repo": "forge",
@@ -229,6 +325,287 @@
     {
       "day": 141,
       "date": "2026-05-15",
+      "title": "Inside the Virtual Cyber War Training Used by Governments | Cyber Ranges Uncovered S1|E3",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Security"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 141,
+      "date": "2026-05-15",
+      "title": "Robert Kiyosaki: The American Empire Will Collapse In 2026",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 141,
+      "date": "2026-05-15",
+      "title": "Alex Hormozi: How To Make So Much Money You Question The Meaning Of It",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Security",
+        "Business"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 141,
+      "date": "2026-05-15",
+      "title": "The UNTHINKABLE is about to happen to Stocks",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Security",
+        "Business"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 141,
+      "date": "2026-05-15",
+      "title": "The Most Passive $104K/M Online Business You've Never Heard Of",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Business"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 141,
+      "date": "2026-05-15",
+      "title": "The Easiest Way to Actually Make Money With AI",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Business",
+        "No-Code"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 141,
+      "date": "2026-05-15",
+      "title": "Hermes Agent just got 10X Better (Agentic OS)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 141,
+      "date": "2026-05-15",
+      "title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Business"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 141,
+      "date": "2026-05-15",
+      "title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Security",
+        "Business",
+        "DevOps"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 141,
+      "date": "2026-05-15",
+      "title": "Ex-Google PM Builds God's Eye to Monitor Iran in 4D",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Agents",
+        "DevOps",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 141,
+      "date": "2026-05-15",
+      "title": "The Internet's Hidden 3D Model of the World",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Open Source"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 141,
+      "date": "2026-05-15",
+      "title": "OSINT Toolkit Every Investigator Needs in 2026",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Automation",
+        "Security",
+        "Design"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 141,
+      "date": "2026-05-15",
+      "title": "Top 7 OSINT tools REVEALED for 2026",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Security",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 141,
+      "date": "2026-05-15",
+      "title": "Hermes Agent: Zero to Personal AI Assistant (1 Hour Course)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 141,
+      "date": "2026-05-15",
+      "title": "Claude Code Just Got an Agent Dashboard",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 141,
+      "date": "2026-05-15",
       "title": "Day 141 \u2014 NTN Phase 0 Smoke Tests & SPECTRE Consolidation \u2014 Notion MCP Retired",
       "era": "Full Stack AI",
       "type": [
@@ -241,172 +618,7 @@
         "Security"
       ],
       "impact": "Critical",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
-      "videos": [
-        {
-          "title": "Inside the Virtual Cyber War Training Used by Governments | Cyber Ranges Uncovered S1|E3",
-          "channel": "Dawn of Cyberwarfare - Official Documentary",
-          "url": "https://www.youtube.com/watch?v=SBnhtjMA71w",
-          "runtime_min": 18.4,
-          "category": [
-            "Security"
-          ]
-        },
-        {
-          "title": "Robert Kiyosaki: The American Empire Will Collapse In 2026",
-          "channel": "Minority Mindset",
-          "url": "https://www.youtube.com/watch?v=Izn_DFVOHQs",
-          "runtime_min": 62.7,
-          "category": [
-            "AI/ML"
-          ]
-        },
-        {
-          "title": "Alex Hormozi: How To Make So Much Money You Question The Meaning Of It",
-          "channel": "Jay Shetty Podcast",
-          "url": "https://www.youtube.com/watch?v=gEF67-G9MO0",
-          "runtime_min": 122.9,
-          "category": [
-            "Security",
-            "Business"
-          ]
-        },
-        {
-          "title": "The UNTHINKABLE is about to happen to Stocks",
-          "channel": "Felix \\u0026 Friends (Goat Academy)",
-          "url": "https://www.youtube.com/watch?v=KgzthZdu8Rk",
-          "runtime_min": 22.1,
-          "category": [
-            "Security",
-            "Business"
-          ]
-        },
-        {
-          "title": "The Most Passive $104K/M Online Business You've Never Heard Of",
-          "channel": "Chris Koerner on The Koerner Office Podcast",
-          "url": "https://www.youtube.com/watch?v=xUZYy3hCRUM",
-          "runtime_min": 48,
-          "category": [
-            "Business"
-          ]
-        },
-        {
-          "title": "The Easiest Way to Actually Make Money With AI",
-          "channel": "Chris Koerner on The Koerner Office Podcast",
-          "url": "https://www.youtube.com/watch?v=03DjE7j0Suw",
-          "runtime_min": 36.7,
-          "category": [
-            "AI/ML",
-            "Agents",
-            "Automation",
-            "Business",
-            "No-Code"
-          ]
-        },
-        {
-          "title": "Hermes Agent just got 10X Better (Agentic OS)",
-          "channel": "Jack Roberts",
-          "url": "https://www.youtube.com/watch?v=7xuWZ-3lyQE",
-          "runtime_min": 31.1,
-          "category": [
-            "AI/ML",
-            "Agents",
-            "Automation",
-            "Open Source"
-          ]
-        },
-        {
-          "title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering",
-          "channel": "Sequoia Capital",
-          "url": "https://www.youtube.com/watch?v=96jN2OCOfLs",
-          "runtime_min": 29.8,
-          "category": [
-            "AI/ML",
-            "Agents",
-            "Automation",
-            "Business"
-          ]
-        },
-        {
-          "title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck",
-          "channel": "Sequoia Capital",
-          "url": "https://www.youtube.com/watch?v=bBS93A0BeNI",
-          "runtime_min": 28.4,
-          "category": [
-            "AI/ML",
-            "Agents",
-            "Security",
-            "Business",
-            "DevOps"
-          ]
-        },
-        {
-          "title": "Ex-Google PM Builds God's Eye to Monitor Iran in 4D",
-          "channel": "Bilawal Sidhu",
-          "url": "https://www.youtube.com/watch?v=0p8o7AeHDzg",
-          "runtime_min": 11.1,
-          "category": [
-            "Agents",
-            "DevOps",
-            "Open Source"
-          ]
-        },
-        {
-          "title": "The Internet's Hidden 3D Model of the World",
-          "channel": "Bilawal Sidhu",
-          "url": "https://www.youtube.com/watch?v=KWXuxfdZhwk",
-          "runtime_min": 15.5,
-          "category": [
-            "Open Source"
-          ]
-        },
-        {
-          "title": "OSINT Toolkit Every Investigator Needs in 2026",
-          "channel": "Shield Spectrum",
-          "url": "https://www.youtube.com/watch?v=iMD4R1LeqNg",
-          "runtime_min": 11,
-          "category": [
-            "Automation",
-            "Security",
-            "Design"
-          ]
-        },
-        {
-          "title": "Top 7 OSINT tools REVEALED for 2026",
-          "channel": "David Bombal",
-          "url": "https://www.youtube.com/watch?v=WHOgdsEiyew",
-          "runtime_min": 52.8,
-          "category": [
-            "Security",
-            "Open Source"
-          ]
-        },
-        {
-          "title": "Hermes Agent: Zero to Personal AI Assistant (1 Hour Course)",
-          "channel": "Nate Herk | AI Automation",
-          "url": "https://www.youtube.com/watch?v=gb5TlGw6Uks",
-          "runtime_min": 58.4,
-          "category": [
-            "AI/ML",
-            "Agents",
-            "Automation",
-            "Open Source"
-          ]
-        },
-        {
-          "title": "Claude Code Just Got an Agent Dashboard",
-          "channel": "Nate Herk | AI Automation",
-          "url": "https://www.youtube.com/watch?v=ZAaxx3qyT8g",
-          "runtime_min": 7.6,
-          "category": [
-            "AI/ML",
-            "Agents",
-            "Automation"
-          ]
-        }
-      ],
+      "videos": [],
       "builds": [
         {
           "repo": "andrewwebber.dev",
@@ -462,6 +674,137 @@
     {
       "day": 140,
       "date": "2026-05-14",
+      "title": "Illuminati AI: The Shadow World",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 140,
+      "date": "2026-05-14",
+      "title": "Anthropic Just Dethroned OpenAI. Here's What Happens Next.",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Automation",
+        "Business"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 140,
+      "date": "2026-05-14",
+      "title": "32 Tricks to Level Up Claude Code in 16 Mins",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 140,
+      "date": "2026-05-14",
+      "title": "Dan Martell: The AI Cheat Codes Every Founder Needs in 2026",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Business"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 140,
+      "date": "2026-05-14",
+      "title": "He Built a $725 Million Company in 255 Days. Here's What You're Doing Wrong",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Business",
+        "Design"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 140,
+      "date": "2026-05-14",
+      "title": "If We Had to Make $1M Fast, We\u2019d Start These Businesses",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Business",
+        "No-Code"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 140,
+      "date": "2026-05-14",
+      "title": "How Anyone Can Make $10K+/Month From the Government",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Automation",
+        "Business"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 140,
+      "date": "2026-05-14",
       "title": "Day 140 \u2014 Deep Research Day \u2014 ntn CLI Migration Strategy",
       "era": "Full Stack AI",
       "type": [
@@ -472,86 +815,7 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
-      "videos": [
-        {
-          "title": "Illuminati AI: The Shadow World",
-          "channel": "YouTube Movies",
-          "url": "https://www.youtube.com/watch?v=J-P3L5fy3NA",
-          "runtime_min": 63.1,
-          "category": [
-            "AI/ML"
-          ]
-        },
-        {
-          "title": "Anthropic Just Dethroned OpenAI. Here's What Happens Next.",
-          "channel": "Nate Herk | AI Automation",
-          "url": "https://www.youtube.com/watch?v=-nG-9vlSkho",
-          "runtime_min": 7.7,
-          "category": [
-            "AI/ML",
-            "Automation",
-            "Business"
-          ]
-        },
-        {
-          "title": "32 Tricks to Level Up Claude Code in 16 Mins",
-          "channel": "Nate Herk | AI Automation",
-          "url": "https://www.youtube.com/watch?v=jqoFP9QapXI",
-          "runtime_min": 16.2,
-          "category": [
-            "AI/ML",
-            "Agents",
-            "Automation"
-          ]
-        },
-        {
-          "title": "Dan Martell: The AI Cheat Codes Every Founder Needs in 2026",
-          "channel": "Open Residency",
-          "url": "https://www.youtube.com/watch?v=_24HzGNv-3A",
-          "runtime_min": 88.4,
-          "category": [
-            "AI/ML",
-            "Business"
-          ]
-        },
-        {
-          "title": "He Built a $725 Million Company in 255 Days. Here's What You're Doing Wrong",
-          "channel": "Open Residency",
-          "url": "https://www.youtube.com/watch?v=0OdHGliowm4",
-          "runtime_min": 118.8,
-          "category": [
-            "Business",
-            "Design"
-          ]
-        },
-        {
-          "title": "If We Had to Make $1M Fast, We\u2019d Start These Businesses",
-          "channel": "Chris Koerner on The Koerner Office Podcast",
-          "url": "https://www.youtube.com/watch?v=2B5dCquvK4c",
-          "runtime_min": 61.1,
-          "category": [
-            "AI/ML",
-            "Agents",
-            "Automation",
-            "Business",
-            "No-Code"
-          ]
-        },
-        {
-          "title": "How Anyone Can Make $10K+/Month From the Government",
-          "channel": "Chris Koerner on The Koerner Office Podcast",
-          "url": "https://www.youtube.com/watch?v=xrU6tVo-qME",
-          "runtime_min": 48.1,
-          "category": [
-            "AI/ML",
-            "Automation",
-            "Business"
-          ]
-        }
-      ],
+      "videos": [],
       "builds": [],
       "takeaway": "From zero to full-stack AI builder in 135 days. The learning curve was really a learning cliff \u2014 and I climbed it."
     },
@@ -568,12 +832,29 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": "From zero to full-stack AI builder in 135 days. The learning curve was really a learning cliff \u2014 and I climbed it."
+    },
+    {
+      "day": 138,
+      "date": "2026-05-12",
+      "title": "NEW Claude Update is a GAME CHANGER! \ud83e\udd2f",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Business"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
     },
     {
       "day": 138,
@@ -588,23 +869,7 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
-      "videos": [
-        {
-          "title": "NEW Claude Update is a GAME CHANGER! \ud83e\udd2f",
-          "channel": "Julian Goldie AI",
-          "url": "https://www.youtube.com/watch?v=NI1fU2z_TF4",
-          "runtime_min": 7.7,
-          "category": [
-            "AI/ML",
-            "Agents",
-            "Automation",
-            "Business"
-          ]
-        }
-      ],
+      "videos": [],
       "builds": [
         {
           "repo": "mighty",
@@ -628,9 +893,6 @@
         "Open Source"
       ],
       "impact": "Low",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -641,6 +903,99 @@
         }
       ],
       "takeaway": "Focused work on mighty. Small commits add up."
+    },
+    {
+      "day": 136,
+      "date": "2026-05-10",
+      "title": "The Truth About Graphify's 70x Token Saving Claim",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Automation",
+        "Business",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 136,
+      "date": "2026-05-10",
+      "title": "The $29 Trillion Gold Race Has Begun (Hint: Act Now!)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Security",
+        "Business"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 136,
+      "date": "2026-05-10",
+      "title": "Bobby Lee | This Past Weekend w/ Theo Von #657",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Design"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 136,
+      "date": "2026-05-10",
+      "title": "Leading in the Age of AI: A Conversation with NVIDIA CEO Jensen Huang | Global Conference 2026",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Business"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 136,
+      "date": "2026-05-10",
+      "title": "Claude Desktop Just Got Every Open-Source Model",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Business",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
     },
     {
       "day": 136,
@@ -656,64 +1011,7 @@
         "Frontend"
       ],
       "impact": "Low",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
-      "videos": [
-        {
-          "title": "The Truth About Graphify's 70x Token Saving Claim",
-          "channel": "Charlie Automates",
-          "url": "https://www.youtube.com/watch?v=Ro3Xf1AxVjs",
-          "runtime_min": 42.4,
-          "category": [
-            "AI/ML",
-            "Automation",
-            "Business",
-            "Open Source"
-          ]
-        },
-        {
-          "title": "The $29 Trillion Gold Race Has Begun (Hint: Act Now!)",
-          "channel": "Felix \\u0026 Friends (Goat Academy)",
-          "url": "https://www.youtube.com/watch?v=GQvr9w7n7W8",
-          "runtime_min": 18.1,
-          "category": [
-            "Security",
-            "Business"
-          ]
-        },
-        {
-          "title": "Bobby Lee | This Past Weekend w/ Theo Von #657",
-          "channel": "Theo Von",
-          "url": "https://www.youtube.com/watch?v=SLLCT-fYTTU",
-          "runtime_min": 113.7,
-          "category": [
-            "Design"
-          ]
-        },
-        {
-          "title": "Leading in the Age of AI: A Conversation with NVIDIA CEO Jensen Huang | Global Conference 2026",
-          "channel": "Milken Institute",
-          "url": "https://www.youtube.com/watch?v=dUFis1dte14",
-          "runtime_min": 46.3,
-          "category": [
-            "Business"
-          ]
-        },
-        {
-          "title": "Claude Desktop Just Got Every Open-Source Model",
-          "channel": "Nick Puru | AI Automation",
-          "url": "https://www.youtube.com/watch?v=qDaoP8ObaTo",
-          "runtime_min": 9.3,
-          "category": [
-            "AI/ML",
-            "Agents",
-            "Automation",
-            "Business",
-            "Open Source"
-          ]
-        }
-      ],
+      "videos": [],
       "builds": [
         {
           "repo": "graphify",
@@ -737,9 +1035,6 @@
         "AI/ML"
       ],
       "impact": "Critical",
-      "url": "https://www.youtube.com/watch?v=3Y8aq_ofEVs",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Robotics' End Game: Nvidia's Jim Fan",
@@ -780,9 +1075,6 @@
         "Agents"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=Bgxsx8slDEA",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Stop Using Claude Code Without an Agentic OS",
@@ -822,9 +1114,6 @@
         "Open Source"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=B6k_vAjndMo",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Code is Better at n8n than I am (Beginner's Guide)",
@@ -879,9 +1168,6 @@
         "Agents"
       ],
       "impact": "Critical",
-      "url": "https://www.youtube.com/watch?v=z6Xyzr_46bg",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "ServiceNow CEO on AI: Agents have picked up work that would have been done by ot",
@@ -920,9 +1206,6 @@
         "DevOps"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=17luirR0JBE",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Airsoft Pistol Fight",
@@ -966,9 +1249,6 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": "From zero to full-stack AI builder in 135 days. The learning curve was really a learning cliff \u2014 and I climbed it."
@@ -991,9 +1271,6 @@
         "Business"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=sn2d_eXeV9A",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "The Brilliant AI Social Media System Alex Hormozi Is Using to Win",
@@ -1048,9 +1325,6 @@
         "Design"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=FLcrvMfHUJM",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "MIT Explains the 12 Possible Endings for AI",
@@ -1095,9 +1369,6 @@
         "Security"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=tn7zXRv3Xmo",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "DeepSeekV4 + Claude Code = 100X Cheaper",
@@ -1146,9 +1417,6 @@
         "Business"
       ],
       "impact": "High",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -1185,9 +1453,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=AYQtRqW1xX4",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "How to Build & Sell AI Agents in 2026: Ultimate Beginner\u2019s Guide",
@@ -1255,9 +1520,6 @@
         "DevOps"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=cqMpTbTrMW4",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "AI Insider: The Fastest Way To Use AI Agents In Your Business, Content & Life (O",
@@ -1340,9 +1602,6 @@
         "Design"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=PwZtG6PL5-I",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "$25M AI Expert Explains: What to Sell Instead of Agentic Workflows",
@@ -1404,9 +1663,6 @@
         "DevOps"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=AArGhYdcJXk",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "The Most Profitable AI Business Isn\u2019t Software",
@@ -1448,9 +1704,6 @@
         "Frontend"
       ],
       "impact": "Critical",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -1499,9 +1752,6 @@
         "No-Code"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=H0x98XlsVzY",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Live Artifacts a new way to build Realtime Dashboards",
@@ -1566,9 +1816,6 @@
         "Business"
       ],
       "impact": "Critical",
-      "url": "https://www.youtube.com/watch?v=AhB7PKjMGK8",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "New Fed Chair\u2019s Plan to Cancel America\u2019s Debt",
@@ -1624,9 +1871,6 @@
         "Business"
       ],
       "impact": "Critical",
-      "url": "https://www.youtube.com/watch?v=D8K90hX4PrE",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Daft Punk - Technologic (Official Music Video Remastered)",
@@ -1726,9 +1970,6 @@
         "DevOps"
       ],
       "impact": "High",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -1771,9 +2012,6 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=iCUB7JZmmig",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "I Turned My iPhone Into an AI Productivity Machine.",
@@ -1810,9 +2048,6 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=ZNbgOhxhzXg",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Just Destroyed Every Video Editing Tool",
@@ -1862,9 +2097,6 @@
         "Business"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=efGXZselN64",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Code 2.0 Is Here... Automate Anything",
@@ -1943,9 +2175,6 @@
         "Frontend"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=7z3Jaf-oZ1w",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Camera to iPad Snappic Simple Setup",
@@ -2004,9 +2233,6 @@
         "Design"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=lbsKNMUxI50",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Someone build Claude code permanent memory",
@@ -2081,9 +2307,6 @@
         "Security"
       ],
       "impact": "Critical",
-      "url": "https://www.youtube.com/watch?v=t3cbS3aez6M",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Tasker - React To NFC Tag",
@@ -2217,9 +2440,6 @@
         "Security"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=99VHENEKA9o",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "100 Hours Testing Claude Code vs Antigravity (honest results)",
@@ -2281,9 +2501,6 @@
         "Security"
       ],
       "impact": "High",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -2368,9 +2585,6 @@
         "DevOps"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=Q1v4PXIEpDY",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "So\u2026..kinda? #hackreacts",
@@ -2424,9 +2638,6 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -2459,9 +2670,6 @@
         "Security"
       ],
       "impact": "High",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -2537,9 +2745,6 @@
         "Business"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=2BFN2DtcQMw",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "The Only Claude Skills You Need in 2026",
@@ -2605,9 +2810,6 @@
         "Business"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=oCuttuCQmZg",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Mythos Preview: Everything You Need to Know",
@@ -2674,9 +2876,6 @@
         "Business"
       ],
       "impact": "High",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -2731,9 +2930,6 @@
         "Business"
       ],
       "impact": "Critical",
-      "url": "https://www.youtube.com/watch?v=lyqk7zxbCKs",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "23 AI Trends keeping me up at night",
@@ -2831,9 +3027,6 @@
         "Business"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=sboNwYmH3AY",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Andrej Karpathy Just 10x\u2019d Everyone\u2019s Claude Code",
@@ -2908,9 +3101,6 @@
         "DevOps"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=XUaGCHBcqj0",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "The Best TINY Tech on the Internet!",
@@ -2983,9 +3173,6 @@
         "Design"
       ],
       "impact": "Critical",
-      "url": "https://www.youtube.com/watch?v=isjOj4QSaO8",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "5 INSANE Claude Cowork Use Cases... steal them",
@@ -3069,9 +3256,6 @@
         "Business"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=g6b5D44KVqI",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Mythos: The 1M Context Window, Agentic AI & The Cybersecurity Nightmare",
@@ -3131,9 +3315,6 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -3161,9 +3342,6 @@
         "Automation"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=UPtmKh1vMN8",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "CLAUDE CODE ADVANCED FULL COURSE (3 HOURS)",
@@ -3218,9 +3396,6 @@
         "DevOps"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=kZQD_W_XNkA",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Fuller French - Waves Against The Shore (DexMo Version) (Visualizer Video)",
@@ -3275,9 +3450,6 @@
         "Open Source"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=xT70z5bnQt4",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Vanilla - Say It Again",
@@ -3325,9 +3497,6 @@
         "Security"
       ],
       "impact": "Low",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -3395,9 +3564,6 @@
         "DevOps"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=grh7CMl960s",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Code vs Cowork Explained (which should you use?)",
@@ -3481,9 +3647,6 @@
         "Security"
       ],
       "impact": "Critical",
-      "url": "https://www.youtube.com/watch?v=6lxC487hYdI",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Claude + Firecrawl Just Changed How We Browse the Internet Forever! (Tutorial)",
@@ -3571,9 +3734,6 @@
         "Business"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=uSTGNHGFOAo",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "COLD EMAIL COPYWRITING & OUTREACH Full Course 2026",
@@ -3645,9 +3805,6 @@
         "Business"
       ],
       "impact": "Critical",
-      "url": "https://www.youtube.com/watch?v=CJrOMs4L-lc",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "ChatGPT vs MOSQUITO Trolley Problem #ai #ChatGPT",
@@ -3720,9 +3877,6 @@
         "DevOps"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=7D7IjS1rf1w",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "380 FREE Claude Code Skills You Need Right Now",
@@ -3798,9 +3952,6 @@
         "No-Code"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=QHfUAaIVfGE",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "NEW Claude Browser Use AI Agent: Automate ANYTHING!",
@@ -3846,9 +3997,6 @@
         "AI/ML"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=yMJcHcCbgi4",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Google Antigravity + Claude Code \ud83d\ude80 AI Coding Tips (Adding App Auth)",
@@ -3907,9 +4055,6 @@
         "Design"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=7CdeH1cYDkU",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "I Rebuilt My Notion Second Brain for the AI Era.",
@@ -3968,9 +4113,6 @@
         "Design"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=cY2wdvrPOvg",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Anthropic's $100M Partner Network: Free to Join #Shorts #AI",
@@ -4050,9 +4192,6 @@
         "Design"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=ZfYvv-0l9NA",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Code + Nano Banana 2 + Kling =  $15K Animated Sites",
@@ -4130,9 +4269,6 @@
         "Security"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=sI0ipDrrUz4",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Samsung Dex on the Z Fold 7 is POWERFUL! #galaxyzfold7 #samsungdex #zfold7",
@@ -4199,9 +4335,6 @@
         "DevOps"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=9owy-NV5l6k",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "How to Use Claude Code Better Than 99% of People",
@@ -4257,9 +4390,6 @@
         "No-Code"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=f95-O8C88uw",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "How to Use Claude Cowork Better Than 99% of People",
@@ -4309,9 +4439,6 @@
         "Security"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=h6Y0jRhqwqc",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "\u2018Trump R*P*D Underage Girls?\u2019: Rep Lieu Vs Bondi SHOUTING Match Over Trump\u2019s Eps",
@@ -4376,9 +4503,6 @@
         "DevOps"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=z1Qtq-v_W6Y",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "How to Leave Big Tech | The Ultimate Beginner\u2019s Guide (Browsers, Cloud, Social M",
@@ -4452,9 +4576,6 @@
         "Frontend"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=zQdd0hy2Ups",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Such a great experience Iris photography \ud83d\udc41\ufe0f #iris",
@@ -4507,9 +4628,6 @@
         "No-Code"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=E5B0cS6XRkg",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Dylan Patel: AI in War, Jobs are Cooked, Chinese Hacking, Microsoft Cope, and Su",
@@ -4556,9 +4674,6 @@
         "DevOps"
       ],
       "impact": "Medium",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -4591,9 +4706,6 @@
         "No-Code"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=u4r2wJst-uE",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Biggest Notion UI Update Ever? Dashboards Are Here!",
@@ -4660,9 +4772,6 @@
         "DevOps"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=kEO4V-ii7ak",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "\u201cBitcoin Is Going To DIE\u201d - Terrence Howard SOUNDS THE ALARM On Crypto's Collaps",
@@ -4725,9 +4834,6 @@
         "Security"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=759_m5RHMEM",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "LIVE: Haifa Explodes On Cam As Iran Hammers Israel | IRGC Launches \u2018Wave 17\u2019 | I",
@@ -4784,9 +4890,6 @@
         "DevOps"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=u5dBb96ogHg",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Why America Will Lose the War | Prof Jiang Explains",
@@ -4853,9 +4956,6 @@
         "Business"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=lO961HRQn5Q",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "they stole Claude\u2019s brain 16 million times",
@@ -4928,9 +5028,6 @@
         "Business"
       ],
       "impact": "Critical",
-      "url": "https://www.youtube.com/watch?v=Xj1Ld0BEBFY",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Iran Doesn't Need to Win the War \u2014 They Just Need to Crash the AI Bubble",
@@ -5004,9 +5101,6 @@
         "DevOps"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=usTeU4Uh0iM",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Code + NotebookLM = CHEAT CODE",
@@ -5072,9 +5166,6 @@
         "Open Source"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=Qvl9TTxW1j8",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Iran War: The US Is Secretly Bailing Out The Stock Market (Again)",
@@ -5130,9 +5221,6 @@
         "DevOps"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=qbv-FV1WM_Q",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Build this AI-Powered Social Dashboard (Loveable)",
@@ -5178,9 +5266,6 @@
         "No-Code"
       ],
       "impact": "Low",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -5209,9 +5294,6 @@
         "Design"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=qJsgQXpyM8M",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "How to Build a $10,000 App Design in Minutes (FREE)",
@@ -5267,9 +5349,6 @@
         "DevOps"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=1XF6Qe83OHo",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Pacific Rim - Trailer",
@@ -5323,9 +5402,6 @@
         "Agents"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=64Yo1Rz2b40",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Snow Particles Floating in the Air | 4K Relaxing Screensaver",
@@ -5370,9 +5446,6 @@
         "No-Code"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=LGQVUc777GU",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "NEW Claude Code Update is INSANE! \ud83e\udd2f",
@@ -5429,9 +5502,6 @@
         "Business"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=UR09nuSxGio",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "How I vibecode Beautiful $10,000 AI Websites (AntiGravity)",
@@ -5510,9 +5580,6 @@
         "Agents"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=EZdSVpgtjG0",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "5 INSANE Claude Cowork use cases (Build Anything)",
@@ -5544,9 +5611,6 @@
         "DevOps"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=dmjAfC0dgRg",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "It's Official: The Government Is Bailing Out The Stock Market (Again)",
@@ -5603,9 +5667,6 @@
         "Business"
       ],
       "impact": "Critical",
-      "url": "https://www.youtube.com/watch?v=r5iRGvRbHpk",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Wispr Flow Review - 2026 | Speak to Any App: AI Voice Commands + Auto-Editing Ma",
@@ -5670,9 +5731,6 @@
         "No-Code"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=RS9uOBSp_iU",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "EXPLAINED: Trump Just Crashed Gold, Silver, & Bitcoin",
@@ -5732,9 +5790,6 @@
         "No-Code"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=og6idpOqo9w",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Manus Agents VS OpenClaw: Who Wins?",
@@ -5797,9 +5852,6 @@
         "No-Code"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=pThKduJx96g",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "16 New Notion Updates In 17 Minutes (Quickly Explained)",
@@ -5846,9 +5898,6 @@
         "Business"
       ],
       "impact": "High",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -5886,9 +5935,6 @@
         "Design"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=75WeAadX_-o",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Torque turn with strong tail control",
@@ -5946,9 +5992,6 @@
         "Business"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=5rNu19PfgFg",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "how to transition from ai automation to agentic workflows",
@@ -6014,9 +6057,6 @@
         "DevOps"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=KNDJzPoXZhg",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Why Everyone's Buying a Mac Mini for Clawdbot (Watch This First Before Buying &",
@@ -6080,9 +6120,6 @@
         "AI/ML"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=FDsO6lGs6OI",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "The story behind scrub daddy",
@@ -6131,9 +6168,6 @@
         "Security"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=JKk77rzOL34",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Opus 4.6: The Biggest AI Jump I've Covered--It's Not Close. (Here's What",
@@ -6196,9 +6230,6 @@
         "Agents"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=CtfdGH6LmMQ",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "How to use Gemini API on Vertex AI (via ADC & Service Accounts)",
@@ -6263,9 +6294,6 @@
         "DevOps"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=C0sKvgu113U",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "NEW Claude Cowork Plugins Changed EVERYTHING!",
@@ -6309,9 +6337,6 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=haBy-Rhkl4g",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "AntiGravity + Stitch builds Insane Websites (NEW Skill)",
@@ -6345,9 +6370,6 @@
         "DevOps"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=SS4R5U6BiW0",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Create AI Powered Pitch Presentations with Claude, Figma & Canva \ud83d\ude80",
@@ -6392,9 +6414,6 @@
         "Open Source"
       ],
       "impact": "High",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -6426,9 +6445,6 @@
         "Open Source"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=hNMlUu-SFq8",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "NEW Claude AI Plugins Update Changed The World \ud83e\udd2f",
@@ -6486,9 +6502,6 @@
         "Security"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=BOclVsYwbaw",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Sonnet 5 is INSANE!",
@@ -6537,9 +6550,6 @@
         "DevOps"
       ],
       "impact": "Low",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -6567,9 +6577,6 @@
         "Automation"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=oC0mPBSmzfQ",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "How to Automate Your Work with Claude Code (Beginner Breakdown)",
@@ -6624,9 +6631,6 @@
         "DevOps"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=NTa6Xbzfq1U",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Super Mario Bros. Theme Song",
@@ -6677,9 +6681,6 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -6706,9 +6707,6 @@
         "Agents"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=lKKGUUAfTp8",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "AI Photo Booth Experiences",
@@ -6762,9 +6760,6 @@
         "No-Code"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=64Yo1Rz2b40",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Snow Particles Floating in the Air | 4K Relaxing Screensaver",
@@ -6806,9 +6801,6 @@
         "Automation"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=ylDDWYDMO-4",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Essential Mac Apps for 2026: Upgrade Your Workflow! #shorts",
@@ -6849,9 +6841,6 @@
         "Agents"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=_IK18goX4X8",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Ship working code while you sleep with the Ralph Wiggum technique",
@@ -6913,9 +6902,6 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=Qkqe-uRhQJE",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "OpenClaw is the most powerful AI tool I\u2019ve ever used in my life. Here\u2019s how to s",
@@ -6960,9 +6946,6 @@
         "AI/ML"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=l-EdCNjumvI",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Limp Bizkit - Faith",
@@ -6996,9 +6979,6 @@
         "AI/ML"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=p0sKineJmzI",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "\"...and then the Deer just took my car\"\ud83d\ude2d #gtaonline #gta5 #gta5online\u00a0#gtaviral",
@@ -7049,9 +7029,6 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -7079,9 +7056,6 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -7117,9 +7091,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=GOQq0sISD24",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Hairstyle tutorial \u2728 #hairstyle #tutorial #hairstyletutorial #glowup #hairtransf",
@@ -7177,9 +7148,6 @@
         "Security"
       ],
       "impact": "Medium",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -7206,9 +7174,6 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=F-4LUKo_W2I",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Sharp Focus for ADHD Brains | 90s Hip-Hop | ADHD High Focus Support",
@@ -7232,9 +7197,6 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=AkZebz0AHNI",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "MiniMax 2.1 AI SEO is INSANE!\ud83d\ude31",
@@ -7259,9 +7221,6 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=UR09nuSxGio",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "How I vibecode Beautiful $10,000 AI Websites (AntiGravity)",
@@ -7293,9 +7252,6 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=hqqorjXJQ8E",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "How to Rank #1 with Claude AI SEO (FREE!)",
@@ -7333,9 +7289,6 @@
         "Business"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=kKm_0eLmbzQ",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "AI Agents For Small Business - Mark Zuckerberg",
@@ -7380,9 +7333,6 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=7rI2tk5reCA",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "NEW ChatGPT Garlic is INSANE!",
@@ -7417,9 +7367,6 @@
         "DevOps"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=aKPvLjUHEPs",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Blitzit Explained: Simplify Your Tasks and Stay in Flow",
@@ -7460,9 +7407,6 @@
         "Agents"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=MgwjGpLHaWE",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Cowork: Anthropic's New AI Agent That Runs Code on Your Files (Max Featur",
@@ -7518,9 +7462,6 @@
         "No-Code"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=XP5Bkv0dRQs",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "How to Make Mockups with AI \u2014 Easy Mockup & Video Generator | Mocku.co",
@@ -7568,9 +7509,6 @@
         "Frontend"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=kD21HgBuq4o",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Google Gemini's NEW FREE Upgrades Are INSANE!",
@@ -7626,9 +7564,6 @@
         "Automation"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=cSbDSJ9IFpc",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "NotebookLM: Build & Automate ANYTHING!",
@@ -7661,9 +7596,6 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -7699,9 +7631,6 @@
         "Security"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=QgisBAqkJ4M",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "How I Build $8,000+ AI Websites in 33 Mins (Gemini 3 FULL Guide)",
@@ -7746,9 +7675,6 @@
         "Automation"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=AkG-BZ-708U",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "The creator of Claude Code just revealed his INSANE workflow (must watch)",
@@ -7782,9 +7708,6 @@
         "Agents"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=quVoGwHZdYI",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "How I Vibe Code Beautiful $10,000 AI Dashboards (AntiGravity)",
@@ -7847,9 +7770,6 @@
         "AI/ML"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=m7uy2Ay4UuU",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Opening 60 Matchbox Moving Parts Toy Cars!",
@@ -7907,9 +7827,6 @@
         "Automation"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=bFC1QGEQ2E8",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Skills Explained: 4 Skills to 10x Your Coding Workflow",
@@ -7954,9 +7871,6 @@
         "AI/ML"
       ],
       "impact": "Medium",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -7986,9 +7900,6 @@
         "Agents"
       ],
       "impact": "Medium",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -8017,9 +7928,6 @@
         "Agents"
       ],
       "impact": "Low",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -8048,9 +7956,6 @@
         "Automation"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=eo5Hje_Qc3c",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "Alphabet pulls ahead as the market reprices AI execution",
@@ -8090,9 +7995,6 @@
         "DevOps"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=MxyRjL7NG18",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "AGENTIC WORKFLOWS: Build & Sell AI Automations (2026)",
@@ -8136,9 +8038,6 @@
         "DevOps"
       ],
       "impact": "Medium",
-      "url": "https://www.youtube.com/watch?v=MxyRjL7NG18",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "AGENTIC WORKFLOWS: Build & Sell AI Automations (2026)",
@@ -8164,16 +8063,6 @@
           "title": "I was using Google AI Studio wrong. It\u2019s actually incredible",
           "channel": "Alex Finn",
           "url": "https://www.youtube.com/watch?v=EW5FidKUvkE"
-        },
-        {
-          "title": "AI Agent Oneshot Course - Nick Saraev",
-          "channel": "",
-          "url": "https://www.youtube.com/watch?v=MxyRjL7NG18&t=2s",
-          "runtime_min": null,
-          "category": [
-            "Automation",
-            "AI/ML"
-          ]
         }
       ],
       "builds": [
@@ -8206,9 +8095,6 @@
         "Business"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=r39kpNDtLxw",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "2025 AI-Curated 50s Christmas Love Songs",
@@ -8261,9 +8147,6 @@
         "Automation"
       ],
       "impact": "High",
-      "url": "https://www.youtube.com/watch?v=MxyRjL7NG18",
-      "channel": "",
-      "runtime_min": null,
       "videos": [
         {
           "title": "AGENTIC WORKFLOWS: Build & Sell AI Automations (2026)",
@@ -8305,64 +8188,6 @@
     },
     {
       "day": 0,
-      "date": "2026-02-15",
-      "title": "How to Grow Your Small Business",
-      "era": "",
-      "type": [
-        "Book"
-      ],
-      "source": "Audible",
-      "category": [
-        "Business"
-      ],
-      "impact": "Low",
-      "url": "https://www.audible.com/pd/1400228069",
-      "channel": "",
-      "runtime_min": null,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 0,
-      "date": "2026-01-21",
-      "title": "The Saint, the Surfer and the CEO",
-      "era": "",
-      "type": [
-        "Book"
-      ],
-      "source": "Audible",
-      "category": [],
-      "impact": "Low",
-      "url": "https://www.audible.com/pd/B07FF8HZT6",
-      "channel": "",
-      "runtime_min": null,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 0,
-      "date": "2026-01-12",
-      "title": "Coach Builder",
-      "era": "",
-      "type": [
-        "Book"
-      ],
-      "source": "Audible",
-      "category": [
-        "Business"
-      ],
-      "impact": "Low",
-      "url": "https://www.audible.com/pd/B0CJG1CFFP",
-      "channel": "",
-      "runtime_min": null,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 0,
       "date": "2024-05-28",
       "title": "Advanced LinkedIn for Photo Booth Owners",
       "era": "",
@@ -8374,9 +8199,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://photoboothmarketing.com/academy/courses/advanced-linkedin-for-photo-booth-owners/",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8392,9 +8214,6 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B09L5B6SQX",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8410,9 +8229,6 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B0B992BKJJ",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8428,9 +8244,6 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B00PHF6VNI",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8446,9 +8259,6 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B077S3C5F9",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8464,9 +8274,6 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B06VX22V89",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8482,9 +8289,6 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B0BN4Q789L",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8500,27 +8304,6 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B09DTJ7W3G",
-      "channel": "",
-      "runtime_min": null,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 0,
-      "date": "2024-12-24",
-      "title": "The Let Them Theory",
-      "era": "",
-      "type": [
-        "Book"
-      ],
-      "source": "Audible",
-      "category": [],
-      "impact": "Low",
-      "url": "https://www.audible.com/pd/B0DFMX1RT8",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8538,9 +8321,6 @@
         "Design"
       ],
       "impact": "Low",
-      "url": "https://www.skillshare.com/en/classes/capcut-for-desktop-the-ultimate-video-editing-course-for-reels-and-tiktok-creators/950814434/projects?via=watch-history",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8558,9 +8338,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.skillshare.com/en/classes/grow-your-business-a-google-business-profile-masterclass-for-all-levels/1111832790",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8578,9 +8355,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.skillshare.com/en/classes/taking-your-team-remote-people-process-and-tools/1013156925",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8598,9 +8372,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.skillshare.com/en/classes/productivity-today-managing-attention-in-the-digital-age-learn-with-todoist/1016846630",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8616,9 +8387,73 @@
       "source": "Conference",
       "category": [],
       "impact": "Low",
-      "url": null,
-      "channel": "",
-      "runtime_min": null,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
+      "date": "2025-12-28",
+      "title": "AI Agent Oneshot Course - Nick Saraev",
+      "era": "",
+      "type": [
+        "Course"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Automation",
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
+      "date": "2026-02-15",
+      "title": "How to Grow Your Small Business",
+      "era": "",
+      "type": [
+        "Book"
+      ],
+      "source": "Audible",
+      "category": [
+        "Business"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
+      "date": "2026-01-21",
+      "title": "The Saint, the Surfer and the CEO",
+      "era": "",
+      "type": [
+        "Book"
+      ],
+      "source": "Audible",
+      "category": [],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
+      "date": "2026-01-12",
+      "title": "Coach Builder",
+      "era": "",
+      "type": [
+        "Book"
+      ],
+      "source": "Audible",
+      "category": [
+        "Business"
+      ],
+      "impact": "Low",
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8636,9 +8471,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B0CZ59BB9B",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8656,9 +8488,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B07FXXWN3T",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8676,9 +8505,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B0F5528LJ5",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8696,9 +8522,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B004XINMIC",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8716,9 +8539,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B0056BDM1W",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8736,9 +8556,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B00FKCI3I4",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8756,9 +8573,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B077Z8S58Y",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8776,9 +8590,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/1469080966",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8796,9 +8607,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B0D9326131",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8816,9 +8624,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B09KTGFVD9",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8836,9 +8641,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B0C9N1WLYL",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8856,9 +8658,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B002V0RBMC",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8876,9 +8675,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B074VDVHZ5",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8894,9 +8690,6 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B0BKTRFNT9",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8914,9 +8707,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B0CBD6J2BY",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8934,9 +8724,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B07DKSPL43",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8954,9 +8741,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B0B2BGDRFV",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8974,9 +8758,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B09YMMFV2G",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8992,9 +8773,6 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B09S4VPXPJ",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9012,9 +8790,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B0CLLLG4M3",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9032,9 +8807,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B0C7WJXBRL",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9052,9 +8824,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B0189PX1RQ",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9072,9 +8841,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B0C6YM6Q41",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9092,9 +8858,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B012U7QOXC",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9112,9 +8875,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B0C6YK4917",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9132,9 +8892,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/0063097796",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9152,9 +8909,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B00TIY4PHI",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9172,9 +8926,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/1982648066",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9192,9 +8943,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B0C9NCLG9B",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9212,9 +8960,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/1250245788",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9232,9 +8977,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B00NMVQYNQ",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9252,9 +8994,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B002V1O6KQ",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9272,9 +9011,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/1524779261",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9292,9 +9028,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B082VK6Q8G",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9312,9 +9045,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/1549181270",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9332,9 +9062,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B07235B2FT",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9352,9 +9079,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/0593287088",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9370,9 +9094,6 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/1684038529",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9390,9 +9111,6 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B01CF5O89G",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9408,9 +9126,6 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/0593294181",
-      "channel": "",
-      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9428,9 +9143,21 @@
         "Business"
       ],
       "impact": "Low",
-      "url": "https://www.audible.com/pd/B002V5CZ5A",
-      "channel": "",
-      "runtime_min": null,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
+      "date": "2024-12-24",
+      "title": "The Let Them Theory",
+      "era": "",
+      "type": [
+        "Book"
+      ],
+      "source": "Audible",
+      "category": [],
+      "impact": "Low",
       "videos": [],
       "builds": [],
       "takeaway": ""
