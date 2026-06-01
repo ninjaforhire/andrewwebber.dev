@@ -2,11 +2,12 @@
 """Nightly journey sync — 11:59pm daily.
 
 Pipeline:
-  1. queue_to_ll_sync.py   — graduate completed CONTENT QUEUE items → LEARNING LIBRARY
-  2. sync-courses.py       — LEARNING LIBRARY → src/data/courses.json
-  3. sync-queue.py         — CONTENT QUEUE → src/data/queue.json
-  4. git commit + push     — if data files changed
-  5. vercel --prod         — deploy to production
+  1. queue_to_ll_sync.py    — graduate completed CONTENT QUEUE items → LEARNING LIBRARY
+  2. export-journey-json.py — LEARNING LIBRARY → src/data/journey-2026.json
+  3. sync-courses.py        — LEARNING LIBRARY → src/data/courses.json
+  4. sync-queue.py          — CONTENT QUEUE → src/data/queue.json
+  5. git commit + push      — if data files changed
+  6. vercel --prod          — deploy to production
 
 Usage:
     python3 scripts/nightly_journey_sync.py
@@ -26,12 +27,14 @@ SCRIPTS = ROOT / "scripts"
 LOG = logging.getLogger("nightly-journey")
 
 DATA_FILES = [
+    "src/data/journey-2026.json",
     "src/data/courses.json",
     "src/data/queue.json",
 ]
 
 GIT = "/usr/bin/git"
 PYTHON = "/usr/bin/python3"
+PYTHON_BREW = "/opt/homebrew/bin/python3.14"
 _vercel = shutil.which("vercel") or "/opt/homebrew/bin/vercel"
 VERCEL = _vercel
 
@@ -76,6 +79,7 @@ def main() -> None:
 
     steps = [
         ([PYTHON, str(SCRIPTS / "queue_to_ll_sync.py")], "graduate-to-ll"),
+        ([PYTHON_BREW, str(SCRIPTS / "export-journey-json.py")], "export-journey"),
         ([PYTHON, str(SCRIPTS / "sync-courses.py")], "sync-courses"),
         ([PYTHON, str(SCRIPTS / "sync-queue.py")], "sync-queue"),
     ]
