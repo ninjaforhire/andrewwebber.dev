@@ -1,119 +1,611 @@
 {
-  "lastUpdated": "2026-05-31T19:31:40",
+  "lastUpdated": "2026-05-31T21:43:38",
   "totalDays": 154,
   "currentEra": "Full Stack AI",
   "entries": [
     {
-      "day": 143,
-      "date": "2026-05-17",
-      "title": "At first it was awesome… #comedy #relatable #shorts",
+      "day": 154,
+      "date": "2026-05-28",
+      "title": "Day 154 - Insomniac Ship Day: Portrait, Music, Featured, About Rebuild",
       "era": "Full Stack AI",
       "type": [
-        "Video"
+        "Build",
+        "Milestone",
+        "Refactor",
+        "Design"
       ],
-      "source": "YouTube",
+      "source": "Claude Code",
       "category": [
-        "AI/ML"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 143,
-      "date": "2026-05-17",
-      "title": "How to set up Surveys in Booth.Events",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 143,
-      "date": "2026-05-17",
-      "title": "The AI Career Opportunity Nobody is Talking About in 2026",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
+        "Design",
+        "Frontend",
         "Automation",
-        "Business"
+        "Agents",
+        "DevOps"
       ],
-      "impact": "Low",
+      "impact": "High",
       "videos": [],
-      "builds": [],
-      "takeaway": ""
+      "certification": {
+        "title": "Advanced LinkedIn for Photo Booth Owners",
+        "issuer": "Photo Booth Marketing Academy",
+        "date": "2024-05-28"
+      },
+      "builds": [
+        {
+          "repo": "andrewwebber.dev",
+          "commits": [
+            "feat(library): merge LEARNING LIBRARY into AWD dossier + journey",
+            "feat(stats): refresh stats + 4 journey entries (150-153) + radar fix",
+            "Merge pull request #1 from ninjaforhire/learning-library-merge",
+            "feat(work): SPECTRE + PANDORA'S FORGE flagship Featured + Live·iterating badge",
+            "fix(audio): SoundPicker desktop menu pops upward in NavRail (direction prop)",
+            "feat(audio): 6 focus modes — Pink, Brown, Binaural γ, Lo-fi pad ♪, Cinematic drone ♪, Silence",
+            "feat(portrait): MatrixRain + PortraitFigure — TV-glitch loop, body-anchored embed",
+            "feat(scanner): top-level SPECTRE entry + PANDORA'S FORGE rebrand in scan-tools.py",
+            "feat(about): chaptered story, kill Character Sheet radar, plate Contact section",
+            "feat(formatter): file paths blue + URLs green in journey takeaways"
+          ]
+        }
+      ],
+      "takeaway": "Insomniac ship day — started 12:30am, ended ~9pm. Single session, four product surfaces overhauled.\n\n**PANDORA'S FORGE** + **SPECTRE** promoted to flagship status on /work. Old sub-module features pulled, replaced with the two top-level platforms. Cards bumped 2-col + larger, **Live · iterating** pulse badge added so the always-shipping nature reads at a glance. Scanner in `scripts/scan-tools.py` now emits a parent SPECTRE entry alongside the 13 modules. Forge copy rewritten to land the 11-wing creative AI suite; SPECTRE copy rewritten to land the full-spectrum recon + red/blue/purple + AI-sec stack.\n\nMusic focus picker overhauled. Dropped Isochronic α. Added Pink noise, Lo-fi pad ♪, Cinematic drone ♪ — 6 modes total, music-note icon for the musical ones. All synthesized in WebAudio in `src/components/animation/FocusAudio.tsx` (Paul Kellet pink filter, random-walk brown, 200/240Hz binaural, detuned-saw lo-fi, sub+air drone). Zero asset weight. Desktop NavRail SoundPicker was popping downward off-screen — added a `direction` prop, opens upward when anchored to viewport bottom now.\n\nAbout page rebuilt from the ground up. Replaced the wall of text with a chaptered 6-year story (1996 origin → Now) — each chapter a year marker + tag + bold hook + body line. Killed the giant Character Sheet radar; the strip stats up top are enough. Wired in the embedded portrait: fixed `src/components/portrait/MatrixRain.tsx` (46 columns mixing SPECTRE / business / agent words with binary) + scrollable `src/components/portrait/PortraitFigure.tsx` running a 3s lineart → 350ms TV-glitch transition → 3s photo loop. Photo + lineart anchored to bottom-right so the body rises from the viewport bottom. Contact section gets an 80% backdrop-blur plate. Image pipeline: Canny edges + CLAHE for right-side detail → SVG paths, Otsu body mask for the silhouette, all from a single 800px source headshot.\n\n**Refreshed stats: LOC 2.03M → 2.05M, tools 149 → 157, dayStreak 153 → 154.** PR pending for the portrait + about + music + featured combo. Read it live at [andrewwebber.dev/about](https://andrewwebber.dev/about) once it deploys.\n\n_YouTube watched today: none — pure build session. Pre-154 entries pending YouTube history backfill in a future update._"
     },
     {
-      "day": 143,
-      "date": "2026-05-17",
-      "title": "URGENT: Do This In Notion Today",
+      "day": 153,
+      "date": "2026-05-27",
+      "title": "Day 153 - Hardening Pass: inbox-agent + Jimbo Scheduler",
       "era": "Full Stack AI",
       "type": [
-        "Video"
+        "Build",
+        "Refactor"
       ],
-      "source": "YouTube",
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "DevOps"
+      ],
+      "impact": "Medium",
+      "videos": [],
+      "builds": [
+        {
+          "repo": "mighty",
+          "commits": [
+            "fix(inbox-agent): templatize auto-title date bug + fail-fast validation; add Phase 0 tests",
+            "fix(jimbo): on-demand SPECTRE tunnel, HTTP-based liveness check, scheduler null-schedule guard, disable stale missions",
+            "feat(templates): write-time validation for COMMUNICATION TEMPLATES",
+            "feat(inbox-agent): add review ask playbook directive + keyword wiring"
+          ]
+        },
+        {
+          "repo": "ctf-firecrawl",
+          "commits": [
+            "feat(build-pipeline): add Local Path URL prop + backfill voice plan",
+            "chore: add woody-update plan to index and active builds"
+          ]
+        }
+      ],
+      "takeaway": "Hardening + cleanup pass on the **mighty** stack.\n\n**inbox-agent** got a review-ask playbook directive, write-time validation for **COMMUNICATION TEMPLATES**, and a templatize auto-title date bug fix with **Phase 0** tests. **Jimbo** got on-demand **SPECTRE** tunnel, HTTP-based liveness check, **scheduler** null-schedule guard, and stale missions disabled.\n\n**Build-pipeline** (ctf-firecrawl) added a Local Path URL prop + woody-update plan to the index."
+    },
+    {
+      "day": 152,
+      "date": "2026-05-26",
+      "title": "Day 152 - COMMUNICATION TEMPLATES Live + Knowledge Coach Phase 0 + ntn Shim",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Milestone"
+      ],
+      "source": "Claude Code",
       "category": [
         "AI/ML",
         "Agents",
-        "Business",
-        "No-Code"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 143,
-      "date": "2026-05-17",
-      "title": "Notion Masterclass: Formulas & Automations (Complete Guide 2025)",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
         "Automation",
-        "Business",
-        "No-Code"
+        "DevOps"
       ],
-      "impact": "Low",
+      "impact": "Critical",
       "videos": [],
-      "builds": [],
-      "takeaway": ""
+      "builds": [
+        {
+          "repo": "mighty",
+          "commits": [
+            "fix(coach): notion-sync — use ntn pages create markdown for 2025-09-03 multi-source DB format",
+            "feat(coach): Phase 0 infrastructure — SQLite migration (coach tables), gmail_drafter body logging, Jimbo /coach command handler",
+            "feat(inbox-agent): add canonical directive files — daily rental matrix, drop-off rules, holiday playbook",
+            "fix(design-center-pipeline): bump Notion-Version + dedup re-flips + top anchor",
+            "feat(ntn): add 9 high-level helpers + pin Notion-Version 2025-09-03",
+            "feat(ntn): add USE_NTN_SHIM feature flag with urllib fallback",
+            "feat(inbox-agent): wire COMMUNICATION TEMPLATES DB into composer and templatize_email",
+            "feat(inbox-agent): load product directives and topic-matched memory rules in compose_reply",
+            "chore(submodule): bump agents — product directives, memory rules, COMMUNICATION TEMPLATES wiring",
+            "feat(draft-email): load apr-may voice delta and query COMMUNICATION TEMPLATES DB"
+          ]
+        },
+        {
+          "repo": "ctf-firecrawl",
+          "commits": [
+            "fix(build-pipeline): backfill Notion, fix slug extraction + PR hook",
+            "feat(build-pipeline): Phase 3 — GitHub PR status polling + Name fix",
+            "feat(build-pipeline): add GitHub + PR tracking to BUILD PIPELINE"
+          ]
+        }
+      ],
+      "takeaway": "Heaviest day of the stretch.\n\nThree major threads all **landed**: First, **COMMUNICATION TEMPLATES DB** wired end-to-end into **inbox-agent** — composer queries it at draft time, templatize_email writes to it, product directives and topic-matched memory rules load automatically. Plus the apr-may voice delta now loads on every draft.\n\nThe proven-asset playbook is live across all email outputs. Second, **MIGHTY** **Knowledge Coach** **Phase 0** — SQLite migration for coach tables, **gmail_drafter** body logging, and a **Jimbo** /coach command handler.\n\nThe self-curating product brain skeleton is in place. Third, ntn shim infrastructure — USE_NTN_SHIM feature flag with urllib fallback, 9 high-level helpers, and Notion-Version pinned to 2025-09-03 across the toolchain.\n\n**design-center-pipeline** got a dedup re-flip fix and top anchor. **Build-pipeline** (ctf-firecrawl) hit **Phase 3** with GitHub PR status polling and Notion backfill."
     },
     {
-      "day": 143,
-      "date": "2026-05-17",
-      "title": "Notion Just Announced A Massive Shift (Big Update)",
+      "day": 151,
+      "date": "2026-05-25",
+      "title": "Day 151 - Rest Day · Health Is Wealth",
       "era": "Full Stack AI",
       "type": [
-        "Video"
+        "Rest"
       ],
-      "source": "YouTube",
+      "source": "Other",
+      "category": [],
+      "impact": "Low",
+      "videos": [],
+      "builds": [
+        {
+          "repo": "ctf-firecrawl",
+          "commits": [
+            "chore: add notionapintnclimigration plan to index and active builds",
+            "fix(build-pipeline): correct Notion IDs + status options"
+          ]
+        }
+      ],
+      "takeaway": "Genuine rest day.\n\nLogged a lot of Claude hours this past week and the body called it — a migraine showed up early and shut the morning down. Spent the rest of the day with family.\n\nTwo tiny **build-pipeline** cleanup commits, then I closed the laptop. Health is quite literally wealth.\n\nIt is okay to slow down. If you are into AI right now, you are probably already ahead anyway.\n\nThe streak counts calendar days, not commit volume — and the work is always going to be there tomorrow."
+    },
+    {
+      "day": 150,
+      "date": "2026-05-24",
+      "title": "Day 150 - Rusty Absorbs Arlo + HFO MASTER_PLAN + Apify Activation",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Refactor"
+      ],
+      "source": "GitHub",
       "category": [
+        "AI/ML",
         "Agents",
-        "Automation",
-        "Business",
-        "No-Code"
+        "DevOps"
       ],
-      "impact": "Low",
+      "impact": "Medium",
       "videos": [],
-      "builds": [],
-      "takeaway": ""
+      "builds": [
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(jimbo): add filesystem + memory boundary rules (Rusty isolation)",
+            "fix: activate Apify — rename APIFY_API_TOKEN to APIFY_TOKEN, fix vault-sync registry path jimbo-v4.0 -> jimbo"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "docs(plan): align MASTER_PLAN to existing HFO HQ 7-room structure",
+            "docs(plan): add MASTER_PLAN.md + rename script for HFO unification"
+          ]
+        },
+        {
+          "repo": "ctf-firecrawl",
+          "commits": [
+            "chore: delete Arlo scripts; GitHub sync absorbed into Rusty",
+            "chore: add Arlo LaunchAgent plist and HFO DB naming feedback memory"
+          ]
+        }
+      ],
+      "takeaway": "Consolidation day.\n\nDeleted standalone Arlo scripts and folded GitHub sync into **Rusty** (**Apify**-driven). Activated **Apify** by fixing the APIFY_API_TOKEN to APIFY_TOKEN rename and correcting the vault-sync registry path (**jimbo**-**v4**.0 to **jimbo**).\n\nLocked filesystem and memory boundary rules into **Jimbo** so **Rusty** stays isolated. On the HFO side, wrote MASTER_PLAN.md and a rename script to start aligning HFO docs to the existing 7-room HQ structure.\n\nStarted drafting the Notion-API to ntn-CLI migration plan that would land Tuesday."
+    },
+    {
+      "day": 149,
+      "date": "2026-05-23",
+      "title": "Day 149 - DevOps Foundations: DevSecOps - CYBER THREATS DB Wired to All Producers",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Learn",
+        "Security"
+      ],
+      "source": "GitHub",
+      "category": [
+        "Security",
+        "DevOps",
+        "AI/ML"
+      ],
+      "impact": "High",
+      "videos": [
+        {
+          "title": "Build & Sell Claude Code Operating Systems (2+ Hour Course)",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=bCljOfCH8Ms"
+        },
+        {
+          "title": "The AI Offer You Can Sell Tomorrow Morning",
+          "channel": "AI Entrepreneur",
+          "url": "https://www.youtube.com/watch?v=Pi-m8R068r4"
+        }
+      ],
+      "certification": {
+        "title": "DevOps Foundations: DevSecOps",
+        "issuer": "LinkedIn Learning",
+        "date": "2026-05-23"
+      },
+      "builds": [
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "feat(spectre-core): add CYBER THREATS DB write helper",
+            "docs(security): add CYBER THREATS DB write protocol",
+            "chore(security): wire producer CLAUDE.md to CYBER THREATS DB"
+          ]
+        }
+      ],
+      "takeaway": "Completed LinkedIn Learning course: DevOps Foundations: DevSecOps — integrates security into every stage of the software delivery pipeline.\n\nOn the build side: wired all **SPECTRE** producers to the **CYBER THREATS DB** Notion sink — feat(**spectre**-core) adds the write helper, write protocol documented, and producer **CLAUDE.md** updated to enforce the pattern across all 10 producers."
+    },
+    {
+      "day": 148,
+      "date": "2026-05-22",
+      "title": "Day 148 - Penny Phase 4 Docs - Jimbo Scheduler Skip-Fix - Security DB Hardening",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "DevOps"
+      ],
+      "source": "GitHub",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Security",
+        "Finance"
+      ],
+      "impact": "High",
+      "videos": [
+        {
+          "title": "Design Systems, Pattern Libraries & Style Guides... Oh My!",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/watch?v=rO5dBA-avfw"
+        },
+        {
+          "title": "Create a Reusable UI Component Library with AI in Magic Patterns",
+          "channel": "Magic Patterns",
+          "url": "https://www.youtube.com/watch?v=JyqPXgm9vT8"
+        },
+        {
+          "title": "The greatest design system I've ever used (AntiGravity)",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=CpzZnudxSTM"
+        },
+        {
+          "title": "Claude Code just got 10X Better (Agentic OS)",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/watch?v=UQmmGnz6iVQ"
+        },
+        {
+          "title": "Karpathy's Skills just changed Everything (Claude Code)",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=pCqpuHA8kHM"
+        },
+        {
+          "title": "How I vibecode Beautiful $10,000 AI Websites (AntiGravity)",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=UR09nuSxGio"
+        },
+        {
+          "title": "Anthropic Just Dropped Claude for Small Businesses (31 Skills)",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/watch?v=zzo33HUOfxI"
+        },
+        {
+          "title": "Learn 97% of Claude in Under 16 Minutes",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/watch?v=wZeOwqmSw84"
+        },
+        {
+          "title": "Splice Now Inside Claude - Full Walkthrough",
+          "channel": "Splice",
+          "url": "https://www.youtube.com/watch?v=YrtnviwCJ2Q"
+        },
+        {
+          "title": "Meet Notion Workers: Here's How Syncs Work",
+          "channel": "Notion",
+          "url": "https://www.youtube.com/watch?v=iDNJXqiIglQ"
+        },
+        {
+          "title": "NEW NOTION UPDATE: Skills And Workers",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/watch?v=mfqpUrgO6ww"
+        },
+        {
+          "title": "Introducing Notion's Developer Platform: Keynote (Ivan Zhao)",
+          "channel": "Notion",
+          "url": "https://www.youtube.com/watch?v=rpE2rzKO6L0"
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(submodule): bump agents — jimbo scheduler skip-fix + meeting_prep dual-mode",
+            "chore(submodule): bump agents — penny phase 4 docs + hard rule",
+            "chore(submodule): bump agents to 0578f24"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "fix(code-council): correct JIMBO REPORTS ids + add all Security DB ids",
+            "docs(code-council): retire COUNCIL MEMBER UPDATES references"
+          ]
+        }
+      ],
+      "takeaway": "Infra hardening day: **Jimbo** **scheduler** skip-fix lands (no more double-fires on late crons), meeting_prep dual-mode **shipped**, **Penny** **Phase 4** docs and hard rule **merged**.\n\nCode Council cleanup: **JIMBO REPORTS** Notion IDs corrected, all Security DB IDs wired, COUNCIL MEMBER UPDATES references retired."
+    },
+    {
+      "day": 147,
+      "date": "2026-05-21",
+      "title": "Day 147 - andrewwebber.dev Major Push - SPECTRE + Code Council + Blog Polish",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Milestone",
+        "Security"
+      ],
+      "source": "GitHub",
+      "category": [
+        "AI/ML",
+        "Security",
+        "DevOps",
+        "Design"
+      ],
+      "impact": "Critical",
+      "videos": [
+        {
+          "title": "Claude Design Builds Beautiful 3D Websites Instantly (full tutorial)",
+          "channel": "YouTube",
+          "url": "https://www.youtube.com/watch?v=TcFeSjwTo7g"
+        }
+      ],
+      "builds": [
+        {
+          "repo": "andrewwebber.dev",
+          "commits": [
+            "feat(work): tools count rule + Design Forge/SPECTRE feature cards",
+            "feat(blog): polish Claude Code + Codex post — 8-min read, custom MDX styling",
+            "fix(stats): center stats + cap font so numbers stop bleeding columns",
+            "feat(blog): retitle to year-of-claude-code, add giscus comments + like button",
+            "feat(work): show all 108 tools w/ pagination + category filter",
+            "feat(blog): retitle to New Superpower Unlocked + rename slug",
+            "feat: SPECTRE descriptions + Code Council section + light mode + focus audio",
+            "feat(audio): minimalist focus picker — 4 modes",
+            "feat(work): map AI threat surface across all 12 Code Council hats",
+            "chore(pb-owners): add time-saved metrics to all 12 tools"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "feat(code-council): map AI threat surface across all 12 hats (v1.3)"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(submodule): bump agents — penny phase 4 sync engine (#2)",
+            "chore(submodule): bump agents to a30bba7"
+          ]
+        }
+      ],
+      "takeaway": "Massive andrewwebber.dev push: **SPECTRE** section live with full Code Council descriptions, focus audio picker **shipped**, blog posts polished with giscus comments, tools pagination with category filter. **10 commits** to the portfolio in one day.\n\nThreat surface mapped across all 12 Code Council hats — both on the site and in hotfixops."
+    },
+    {
+      "day": 146,
+      "date": "2026-05-20",
+      "title": "Day 146 - First Public Merge - Filesystem Consolidation - Jimbo Curator on Main",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Milestone",
+        "Video"
+      ],
+      "source": "GitHub",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "DevOps",
+        "Open Source"
+      ],
+      "impact": "Critical",
+      "videos": [
+        {
+          "title": "Content Masterclass: The Most Valuable 3 Hours For Any Business Owner in 2026",
+          "channel": "Open Residency",
+          "url": ""
+        },
+        {
+          "title": "Robert Greene on Ego Traps, The Art of Control, & How to Stay Irreplaceable",
+          "channel": "Open Residency",
+          "url": ""
+        },
+        {
+          "title": "The Psychology of Making People Respect You Instantly! | Robert Greene",
+          "channel": "Vassal",
+          "url": ""
+        },
+        {
+          "title": "Treat Social Media Like a Video Game and Get Rich",
+          "channel": "Neel Dhingra",
+          "url": ""
+        }
+      ],
+      "builds": [
+        {
+          "repo": "cli-printing-press (upstream)",
+          "commits": [
+            "PR #1597 merged by mvanhorn: feat(cli): add Quo (formerly OpenPhone) catalog entry and OpenAPI spec - first public open-source contribution"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore: snapshot pre-consolidation working state",
+            "refactor: rename _Code/Agents to _Code/agents for naming consistency (28 source file refs updated)",
+            "merge: integrate jimbo-curator-v1 (Hermes-Eater Sprint 2 implementation)",
+            "chore(submodule): bump agents to merged main HEAD (PR #5 c73199c)"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "feat(kie): provider updates + kie_models reference doc",
+            "chore(wip): impact-report compare layouts + assets + PDF exports"
+          ]
+        }
+      ],
+      "takeaway": "First public milestone: PR #1597 **merged** by mvanhorn into cli-printing-press -- Andrew's first accepted open-source contribution.\n\nFilesystem consolidation: **mighty** symlink replaced with real 8.5 GB directory, _Code/Agents renamed to _Code/agents, **Jimbo** Curator **v1** and **Penny** Finance **merged** to main. Watched 4 videos: business masterclass, Robert Greene on ego/control, social media strategy."
+    },
+    {
+      "day": 145,
+      "date": "2026-05-19",
+      "title": "Day 145 - VSCO Workspace CLI - Jimbo Curator Codex Pass - SDLC Cert - Inbox Hardening",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Skill",
+        "Learn",
+        "Video"
+      ],
+      "source": "GitHub",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "DevOps",
+        "Security"
+      ],
+      "impact": "Critical",
+      "videos": [
+        {
+          "title": "Build & Sell Claude Code Operating Systems (2+ Hour Course)",
+          "channel": "Nate Herk | AI Automation",
+          "url": ""
+        },
+        {
+          "title": "Developer Keynote (Google I/O 2026)",
+          "channel": "Google for Developers",
+          "url": ""
+        },
+        {
+          "title": "Unlock modern web capabilities in your AI coding workflows",
+          "channel": "Google for Developers",
+          "url": ""
+        },
+        {
+          "title": "Build next-gen AI experiences with Google AI Studio and Google Antigravity",
+          "channel": "Google for Developers",
+          "url": ""
+        },
+        {
+          "title": "The Real Reason Karpathy Joined Anthropic",
+          "channel": "Nate Herk | AI Automation",
+          "url": ""
+        },
+        {
+          "title": "How Social Media Algorithms Actually Work (And How to Beat Them)",
+          "channel": "Kallaway",
+          "url": ""
+        },
+        {
+          "title": "The NEW Era of Personal Brands is Here (and you're not ready)",
+          "channel": "Kallaway",
+          "url": ""
+        },
+        {
+          "title": "Claude Managed Agents Full Tutorial: How to Setup Your First AI Agent",
+          "channel": "Bart Slodyczka",
+          "url": ""
+        },
+        {
+          "title": "Trading Cards Photo Booth : Custom Cards Made On-Site",
+          "channel": "MIGHTY Photo Booths",
+          "url": "https://www.youtube.com/watch?v=RJJcd0A9p6k"
+        },
+        {
+          "title": "AI Fashion Sketch: Highlight Reel",
+          "channel": "MIGHTY Photo Booths",
+          "url": "https://www.youtube.com/watch?v=kHrYFka6-8o"
+        }
+      ],
+      "certifications": [
+        {
+          "title": "Software Development Life Cycle (SDLC)",
+          "issuer": "LinkedIn Learning",
+          "instructor": "Shashi Shekhar",
+          "date": "2026-05-19",
+          "duration": "1h 55m"
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "feat(inbox-agent): lead autoreply pipeline with scoring + quality gates",
+            "feat(inbox-agent): client autoreply pipeline scaffold",
+            "feat(inbox-agent): draft verification + draft_guard pre-send check",
+            "fix(inbox-agent): strict JSON compose_reply + scannable structure + multipart default",
+            "feat(aisec): tmux backend for safe_run",
+            "feat(post-event-pipeline): wire Phase 5 feedback retrieval",
+            "fix: curator skills scan handles non-dict frontmatter (codex P2)",
+            "fix: curator poll no longer demotes applied to approved (codex P1)",
+            "fix: curator plists declare CURATOR_* env vars (codex P1)"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "feat(vsco): browser + api + fast_quote pipeline updates",
+            "feat(seo): meta descriptions snapshot 2026-05-19",
+            "feat(skills): ops + sales + marketing + design-center skill refreshes + registry update",
+            "merge: integrate demographics-analytics (jimbo curator, ntn, graphify, skills, vsco)"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "feat(animation): add gif_maker tool for image-sequence GIF/MP4/WebP"
+          ]
+        }
+      ],
+      "takeaway": "30+ commits.\n\n**vsco-workspace-pp-cli** **shipped** (139 endpoints). **inbox-agent** hardened: autoreply pipelines, draft_guard, **compose_reply** strict JSON.\n\n**Jimbo** Curator cleared all Codex P0/P1/P2 flags. forge got gif_maker.\n\nLinkedIn Learning SDLC cert completed (1h 55m). Watched 10 videos: Google I/O 2026 developer keynote + 2 sessions, full **Claude Code** OS course, Karpathy/Anthropic, social media algorithm + personal brand strategy, Claude Managed Agents tutorial, two **MIGHTY** community videos."
+    },
+    {
+      "day": 144,
+      "date": "2026-05-18",
+      "title": "Day 144 - Quo CLI PR Submitted - First Open Source Contribution to cli-printing-press",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Video"
+      ],
+      "source": "GitHub",
+      "category": [
+        "AI/ML",
+        "DevOps",
+        "Automation"
+      ],
+      "impact": "High",
+      "videos": [
+        {
+          "title": "How to Use Your Claude Code Projects in Codex in 5 Mins",
+          "channel": "Nate Herk | AI Automation",
+          "url": ""
+        }
+      ],
+      "builds": [
+        {
+          "repo": "cli-printing-press",
+          "commits": [
+            "feat(cli): add Quo (formerly OpenPhone) catalog entry and OpenAPI spec - PR #1597 submitted to mvanhorn/cli-printing-press"
+          ]
+        }
+      ],
+      "takeaway": "Submitted PR #1597 to mvanhorn/cli-printing-press adding the full Quo (formerly OpenPhone) catalog entry and OpenAPI spec -- first open-source PR to a project Andrew did not create.\n\nIt would merge in **48 hours**. Watched 1 video: **Claude Code** Projects + Codex integration (Nate Herk)."
     },
     {
       "day": 143,
@@ -130,7 +622,72 @@
         "DevOps"
       ],
       "impact": "Low",
-      "videos": [],
+      "videos": [
+        {
+          "title": "At first it was awesome… #comedy #relatable #shorts",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "How to set up Surveys in Booth.Events",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "The AI Career Opportunity Nobody is Talking About in 2026",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "URGENT: Do This In Notion Today",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Business",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "Notion Masterclass: Formulas & Automations (Complete Guide 2025)",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "Automation",
+            "Business",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "Notion Just Announced A Massive Shift (Big Update)",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "Agents",
+            "Automation",
+            "Business",
+            "No-Code"
+          ]
+        }
+      ],
       "builds": [
         {
           "repo": "andrewwebber.dev",
@@ -152,136 +709,6 @@
     {
       "day": 142,
       "date": "2026-05-16",
-      "title": "Build Andrej Karpathy’s LLM Knowledge Base for Businesses (10x Output!)",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Business",
-        "Open Source"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 142,
-      "date": "2026-05-16",
-      "title": "Skill Issue: Andrej Karpathy on Code Agents, AutoResearch, and the Loopy Era of AI",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "Design"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 142,
-      "date": "2026-05-16",
-      "title": "Stop Fixing Your Claude Skills. Autoresearch Does It For You",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "Automation",
-        "Business"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 142,
-      "date": "2026-05-16",
-      "title": "The Complete Story Of Ash's Gengar",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 142,
-      "date": "2026-05-16",
-      "title": "The Very Best of Gengar So Far | Pokémon Seasons 1-5",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 142,
-      "date": "2026-05-16",
-      "title": "This is The Most Powerful Tool to Give to Claude Code",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "Automation",
-        "Open Source"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 142,
-      "date": "2026-05-16",
-      "title": "Android 17 Is the Biggest Upgrade in Years",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Design"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 142,
-      "date": "2026-05-16",
       "title": "Day 142 — Jimbo Curator Design — Hermes-Eater Sprint 2 & 35-Task Implementation Plan",
       "era": "Full Stack AI",
       "type": [
@@ -297,7 +724,82 @@
         "Security"
       ],
       "impact": "Critical",
-      "videos": [],
+      "videos": [
+        {
+          "title": "Build Andrej Karpathy’s LLM Knowledge Base for Businesses (10x Output!)",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Business",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Skill Issue: Andrej Karpathy on Code Agents, AutoResearch, and the Loopy Era of AI",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Design"
+          ]
+        },
+        {
+          "title": "Stop Fixing Your Claude Skills. Autoresearch Does It For You",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "The Complete Story Of Ash's Gengar",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "The Very Best of Gengar So Far | Pokémon Seasons 1-5",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "This is The Most Powerful Tool to Give to Claude Code",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Android 17 Is the Biggest Upgrade in Years",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Design"
+          ]
+        }
+      ],
       "builds": [
         {
           "repo": "forge",
@@ -325,287 +827,6 @@
     {
       "day": 141,
       "date": "2026-05-15",
-      "title": "Inside the Virtual Cyber War Training Used by Governments | Cyber Ranges Uncovered S1|E3",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "Security"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 141,
-      "date": "2026-05-15",
-      "title": "Robert Kiyosaki: The American Empire Will Collapse In 2026",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 141,
-      "date": "2026-05-15",
-      "title": "Alex Hormozi: How To Make So Much Money You Question The Meaning Of It",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "Security",
-        "Business"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 141,
-      "date": "2026-05-15",
-      "title": "The UNTHINKABLE is about to happen to Stocks",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "Security",
-        "Business"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 141,
-      "date": "2026-05-15",
-      "title": "The Most Passive $104K/M Online Business You've Never Heard Of",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "Business"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 141,
-      "date": "2026-05-15",
-      "title": "The Easiest Way to Actually Make Money With AI",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "Automation",
-        "Business",
-        "No-Code"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 141,
-      "date": "2026-05-15",
-      "title": "Hermes Agent just got 10X Better (Agentic OS)",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "Automation",
-        "Open Source"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 141,
-      "date": "2026-05-15",
-      "title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "Automation",
-        "Business"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 141,
-      "date": "2026-05-15",
-      "title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "Security",
-        "Business",
-        "DevOps"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 141,
-      "date": "2026-05-15",
-      "title": "Ex-Google PM Builds God's Eye to Monitor Iran in 4D",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "Agents",
-        "DevOps",
-        "Open Source"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 141,
-      "date": "2026-05-15",
-      "title": "The Internet's Hidden 3D Model of the World",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "Open Source"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 141,
-      "date": "2026-05-15",
-      "title": "OSINT Toolkit Every Investigator Needs in 2026",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "Automation",
-        "Security",
-        "Design"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 141,
-      "date": "2026-05-15",
-      "title": "Top 7 OSINT tools REVEALED for 2026",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "Security",
-        "Open Source"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 141,
-      "date": "2026-05-15",
-      "title": "Hermes Agent: Zero to Personal AI Assistant (1 Hour Course)",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "Automation",
-        "Open Source"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 141,
-      "date": "2026-05-15",
-      "title": "Claude Code Just Got an Agent Dashboard",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "Automation"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 141,
-      "date": "2026-05-15",
       "title": "Day 141 — NTN Phase 0 Smoke Tests & SPECTRE Consolidation — Notion MCP Retired",
       "era": "Full Stack AI",
       "type": [
@@ -618,7 +839,169 @@
         "Security"
       ],
       "impact": "Critical",
-      "videos": [],
+      "videos": [
+        {
+          "title": "Inside the Virtual Cyber War Training Used by Governments | Cyber Ranges Uncovered S1|E3",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "Security"
+          ]
+        },
+        {
+          "title": "Robert Kiyosaki: The American Empire Will Collapse In 2026",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "Alex Hormozi: How To Make So Much Money You Question The Meaning Of It",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "Security",
+            "Business"
+          ]
+        },
+        {
+          "title": "The UNTHINKABLE is about to happen to Stocks",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "Security",
+            "Business"
+          ]
+        },
+        {
+          "title": "The Most Passive $104K/M Online Business You've Never Heard Of",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "Business"
+          ]
+        },
+        {
+          "title": "The Easiest Way to Actually Make Money With AI",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "Hermes Agent just got 10X Better (Agentic OS)",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Security",
+            "Business",
+            "DevOps"
+          ]
+        },
+        {
+          "title": "Ex-Google PM Builds God's Eye to Monitor Iran in 4D",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "Agents",
+            "DevOps",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "The Internet's Hidden 3D Model of the World",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "Open Source"
+          ]
+        },
+        {
+          "title": "OSINT Toolkit Every Investigator Needs in 2026",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "Automation",
+            "Security",
+            "Design"
+          ]
+        },
+        {
+          "title": "Top 7 OSINT tools REVEALED for 2026",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "Security",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Hermes Agent: Zero to Personal AI Assistant (1 Hour Course)",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Claude Code Just Got an Agent Dashboard",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation"
+          ]
+        }
+      ],
       "builds": [
         {
           "repo": "andrewwebber.dev",
@@ -674,137 +1057,6 @@
     {
       "day": 140,
       "date": "2026-05-14",
-      "title": "Illuminati AI: The Shadow World",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 140,
-      "date": "2026-05-14",
-      "title": "Anthropic Just Dethroned OpenAI. Here's What Happens Next.",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Automation",
-        "Business"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 140,
-      "date": "2026-05-14",
-      "title": "32 Tricks to Level Up Claude Code in 16 Mins",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "Automation"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 140,
-      "date": "2026-05-14",
-      "title": "Dan Martell: The AI Cheat Codes Every Founder Needs in 2026",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Business"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 140,
-      "date": "2026-05-14",
-      "title": "He Built a $725 Million Company in 255 Days. Here's What You're Doing Wrong",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "Business",
-        "Design"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 140,
-      "date": "2026-05-14",
-      "title": "If We Had to Make $1M Fast, We’d Start These Businesses",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "Automation",
-        "Business",
-        "No-Code"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 140,
-      "date": "2026-05-14",
-      "title": "How Anyone Can Make $10K+/Month From the Government",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Automation",
-        "Business"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 140,
-      "date": "2026-05-14",
       "title": "Day 140 — Deep Research Day — ntn CLI Migration Strategy",
       "era": "Full Stack AI",
       "type": [
@@ -815,7 +1067,83 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "videos": [],
+      "videos": [
+        {
+          "title": "Illuminati AI: The Shadow World",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "Anthropic Just Dethroned OpenAI. Here's What Happens Next.",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "32 Tricks to Level Up Claude Code in 16 Mins",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation"
+          ]
+        },
+        {
+          "title": "Dan Martell: The AI Cheat Codes Every Founder Needs in 2026",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
+        },
+        {
+          "title": "He Built a $725 Million Company in 255 Days. Here's What You're Doing Wrong",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "Business",
+            "Design"
+          ]
+        },
+        {
+          "title": "If We Had to Make $1M Fast, We’d Start These Businesses",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "How Anyone Can Make $10K+/Month From the Government",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business"
+          ]
+        }
+      ],
       "builds": [],
       "takeaway": "From zero to full-stack AI builder in 135 days. The learning curve was really a learning cliff — and I climbed it."
     },
@@ -839,26 +1167,6 @@
     {
       "day": 138,
       "date": "2026-05-12",
-      "title": "NEW Claude Update is a GAME CHANGER! 🤯",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "Automation",
-        "Business"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 138,
-      "date": "2026-05-12",
       "title": "Day 138 — Skill-to-Command Sync — Unified Claude Code Skill Registry",
       "era": "Full Stack AI",
       "type": [
@@ -869,7 +1177,20 @@
         "AI/ML"
       ],
       "impact": "Low",
-      "videos": [],
+      "videos": [
+        {
+          "title": "NEW Claude Update is a GAME CHANGER! 🤯",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        }
+      ],
       "builds": [
         {
           "repo": "mighty",
@@ -907,99 +1228,6 @@
     {
       "day": 136,
       "date": "2026-05-10",
-      "title": "The Truth About Graphify's 70x Token Saving Claim",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Automation",
-        "Business",
-        "Open Source"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 136,
-      "date": "2026-05-10",
-      "title": "The $29 Trillion Gold Race Has Begun (Hint: Act Now!)",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "Security",
-        "Business"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 136,
-      "date": "2026-05-10",
-      "title": "Bobby Lee | This Past Weekend w/ Theo Von #657",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "Design"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 136,
-      "date": "2026-05-10",
-      "title": "Leading in the Age of AI: A Conversation with NVIDIA CEO Jensen Huang | Global Conference 2026",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "Business"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 136,
-      "date": "2026-05-10",
-      "title": "Claude Desktop Just Got Every Open-Source Model",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "Automation",
-        "Business",
-        "Open Source"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 136,
-      "date": "2026-05-10",
       "title": "Day 136 — Graphify Callflow Export — Mermaid Architecture Diagrams",
       "era": "Full Stack AI",
       "type": [
@@ -1011,7 +1239,61 @@
         "Frontend"
       ],
       "impact": "Low",
-      "videos": [],
+      "videos": [
+        {
+          "title": "The Truth About Graphify's 70x Token Saving Claim",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "The $29 Trillion Gold Race Has Begun (Hint: Act Now!)",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "Security",
+            "Business"
+          ]
+        },
+        {
+          "title": "Bobby Lee | This Past Weekend w/ Theo Von #657",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "Design"
+          ]
+        },
+        {
+          "title": "Leading in the Age of AI: A Conversation with NVIDIA CEO Jensen Huang | Global Conference 2026",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "Business"
+          ]
+        },
+        {
+          "title": "Claude Desktop Just Got Every Open-Source Model",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "Open Source"
+          ]
+        }
+      ],
       "builds": [
         {
           "repo": "graphify",
@@ -8063,6 +8345,16 @@
           "title": "I was using Google AI Studio wrong. It’s actually incredible",
           "channel": "Alex Finn",
           "url": "https://www.youtube.com/watch?v=EW5FidKUvkE"
+        },
+        {
+          "title": "AI Agent Oneshot Course - Nick Saraev",
+          "channel": "",
+          "url": "",
+          "runtime_min": null,
+          "category": [
+            "Automation",
+            "AI/ML"
+          ]
         }
       ],
       "builds": [
@@ -8188,6 +8480,55 @@
     },
     {
       "day": 0,
+      "date": "2026-02-15",
+      "title": "How to Grow Your Small Business",
+      "era": "",
+      "type": [
+        "Book"
+      ],
+      "source": "Audible",
+      "category": [
+        "Business"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
+      "date": "2026-01-21",
+      "title": "The Saint, the Surfer and the CEO",
+      "era": "",
+      "type": [
+        "Book"
+      ],
+      "source": "Audible",
+      "category": [],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
+      "date": "2026-01-12",
+      "title": "Coach Builder",
+      "era": "",
+      "type": [
+        "Book"
+      ],
+      "source": "Audible",
+      "category": [
+        "Business"
+      ],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
       "date": "2024-05-28",
       "title": "Advanced LinkedIn for Photo Booth Owners",
       "era": "",
@@ -8310,6 +8651,21 @@
     },
     {
       "day": 0,
+      "date": "2024-12-24",
+      "title": "The Let Them Theory",
+      "era": "",
+      "type": [
+        "Book"
+      ],
+      "source": "Audible",
+      "category": [],
+      "impact": "Low",
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
       "date": "2025-07-04T13:50:00.000-05:00",
       "title": "Capcut for Desktop: The Ultimate Video Editing Course for Reels and TikTok Creators",
       "era": "",
@@ -8386,73 +8742,6 @@
       ],
       "source": "Conference",
       "category": [],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 0,
-      "date": "2025-12-28",
-      "title": "AI Agent Oneshot Course - Nick Saraev",
-      "era": "",
-      "type": [
-        "Course"
-      ],
-      "source": "YouTube",
-      "category": [
-        "Automation",
-        "AI/ML"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 0,
-      "date": "2026-02-15",
-      "title": "How to Grow Your Small Business",
-      "era": "",
-      "type": [
-        "Book"
-      ],
-      "source": "Audible",
-      "category": [
-        "Business"
-      ],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 0,
-      "date": "2026-01-21",
-      "title": "The Saint, the Surfer and the CEO",
-      "era": "",
-      "type": [
-        "Book"
-      ],
-      "source": "Audible",
-      "category": [],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 0,
-      "date": "2026-01-12",
-      "title": "Coach Builder",
-      "era": "",
-      "type": [
-        "Book"
-      ],
-      "source": "Audible",
-      "category": [
-        "Business"
-      ],
       "impact": "Low",
       "videos": [],
       "builds": [],
@@ -9146,625 +9435,6 @@
       "videos": [],
       "builds": [],
       "takeaway": ""
-    },
-    {
-      "day": 0,
-      "date": "2024-12-24",
-      "title": "The Let Them Theory",
-      "era": "",
-      "type": [
-        "Book"
-      ],
-      "source": "Audible",
-      "category": [],
-      "impact": "Low",
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 154,
-      "date": "2026-05-28",
-      "title": "Day 154 - Insomniac Ship Day: Portrait, Music, Featured, About Rebuild",
-      "era": "Full Stack AI",
-      "type": [
-        "Build",
-        "Milestone",
-        "Refactor",
-        "Design"
-      ],
-      "source": "Claude Code",
-      "category": [
-        "Design",
-        "Frontend",
-        "Automation",
-        "Agents",
-        "DevOps"
-      ],
-      "impact": "High",
-      "videos": [],
-      "certification": {
-        "title": "Advanced LinkedIn for Photo Booth Owners",
-        "issuer": "Photo Booth Marketing Academy",
-        "date": "2024-05-28"
-      },
-      "builds": [
-        {
-          "repo": "andrewwebber.dev",
-          "commits": [
-            "feat(library): merge LEARNING LIBRARY into AWD dossier + journey",
-            "feat(stats): refresh stats + 4 journey entries (150-153) + radar fix",
-            "Merge pull request #1 from ninjaforhire/learning-library-merge",
-            "feat(work): SPECTRE + PANDORA'S FORGE flagship Featured + Live·iterating badge",
-            "fix(audio): SoundPicker desktop menu pops upward in NavRail (direction prop)",
-            "feat(audio): 6 focus modes — Pink, Brown, Binaural γ, Lo-fi pad ♪, Cinematic drone ♪, Silence",
-            "feat(portrait): MatrixRain + PortraitFigure — TV-glitch loop, body-anchored embed",
-            "feat(scanner): top-level SPECTRE entry + PANDORA'S FORGE rebrand in scan-tools.py",
-            "feat(about): chaptered story, kill Character Sheet radar, plate Contact section",
-            "feat(formatter): file paths blue + URLs green in journey takeaways"
-          ]
-        }
-      ],
-      "takeaway": "Insomniac ship day — started 12:30am, ended ~9pm. Single session, four product surfaces overhauled.\n\n**PANDORA'S FORGE** + **SPECTRE** promoted to flagship status on /work. Old sub-module features pulled, replaced with the two top-level platforms. Cards bumped 2-col + larger, **Live · iterating** pulse badge added so the always-shipping nature reads at a glance. Scanner in `scripts/scan-tools.py` now emits a parent SPECTRE entry alongside the 13 modules. Forge copy rewritten to land the 11-wing creative AI suite; SPECTRE copy rewritten to land the full-spectrum recon + red/blue/purple + AI-sec stack.\n\nMusic focus picker overhauled. Dropped Isochronic α. Added Pink noise, Lo-fi pad ♪, Cinematic drone ♪ — 6 modes total, music-note icon for the musical ones. All synthesized in WebAudio in `src/components/animation/FocusAudio.tsx` (Paul Kellet pink filter, random-walk brown, 200/240Hz binaural, detuned-saw lo-fi, sub+air drone). Zero asset weight. Desktop NavRail SoundPicker was popping downward off-screen — added a `direction` prop, opens upward when anchored to viewport bottom now.\n\nAbout page rebuilt from the ground up. Replaced the wall of text with a chaptered 6-year story (1996 origin → Now) — each chapter a year marker + tag + bold hook + body line. Killed the giant Character Sheet radar; the strip stats up top are enough. Wired in the embedded portrait: fixed `src/components/portrait/MatrixRain.tsx` (46 columns mixing SPECTRE / business / agent words with binary) + scrollable `src/components/portrait/PortraitFigure.tsx` running a 3s lineart → 350ms TV-glitch transition → 3s photo loop. Photo + lineart anchored to bottom-right so the body rises from the viewport bottom. Contact section gets an 80% backdrop-blur plate. Image pipeline: Canny edges + CLAHE for right-side detail → SVG paths, Otsu body mask for the silhouette, all from a single 800px source headshot.\n\n**Refreshed stats: LOC 2.03M → 2.05M, tools 149 → 157, dayStreak 153 → 154.** PR pending for the portrait + about + music + featured combo. Read it live at [andrewwebber.dev/about](https://andrewwebber.dev/about) once it deploys.\n\n_YouTube watched today: none — pure build session. Pre-154 entries pending YouTube history backfill in a future update._"
-    },
-    {
-      "day": 153,
-      "date": "2026-05-27",
-      "title": "Day 153 - Hardening Pass: inbox-agent + Jimbo Scheduler",
-      "era": "Full Stack AI",
-      "type": [
-        "Build",
-        "Refactor"
-      ],
-      "source": "Claude Code",
-      "category": [
-        "Agents",
-        "DevOps"
-      ],
-      "impact": "Medium",
-      "videos": [],
-      "builds": [
-        {
-          "repo": "mighty",
-          "commits": [
-            "fix(inbox-agent): templatize auto-title date bug + fail-fast validation; add Phase 0 tests",
-            "fix(jimbo): on-demand SPECTRE tunnel, HTTP-based liveness check, scheduler null-schedule guard, disable stale missions",
-            "feat(templates): write-time validation for COMMUNICATION TEMPLATES",
-            "feat(inbox-agent): add review ask playbook directive + keyword wiring"
-          ]
-        },
-        {
-          "repo": "ctf-firecrawl",
-          "commits": [
-            "feat(build-pipeline): add Local Path URL prop + backfill voice plan",
-            "chore: add woody-update plan to index and active builds"
-          ]
-        }
-      ],
-      "takeaway": "Hardening + cleanup pass on the **mighty** stack.\n\n**inbox-agent** got a review-ask playbook directive, write-time validation for **COMMUNICATION TEMPLATES**, and a templatize auto-title date bug fix with **Phase 0** tests. **Jimbo** got on-demand **SPECTRE** tunnel, HTTP-based liveness check, **scheduler** null-schedule guard, and stale missions disabled.\n\n**Build-pipeline** (ctf-firecrawl) added a Local Path URL prop + woody-update plan to the index."
-    },
-    {
-      "day": 152,
-      "date": "2026-05-26",
-      "title": "Day 152 - COMMUNICATION TEMPLATES Live + Knowledge Coach Phase 0 + ntn Shim",
-      "era": "Full Stack AI",
-      "type": [
-        "Build",
-        "Milestone"
-      ],
-      "source": "Claude Code",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "Automation",
-        "DevOps"
-      ],
-      "impact": "Critical",
-      "videos": [],
-      "builds": [
-        {
-          "repo": "mighty",
-          "commits": [
-            "fix(coach): notion-sync — use ntn pages create markdown for 2025-09-03 multi-source DB format",
-            "feat(coach): Phase 0 infrastructure — SQLite migration (coach tables), gmail_drafter body logging, Jimbo /coach command handler",
-            "feat(inbox-agent): add canonical directive files — daily rental matrix, drop-off rules, holiday playbook",
-            "fix(design-center-pipeline): bump Notion-Version + dedup re-flips + top anchor",
-            "feat(ntn): add 9 high-level helpers + pin Notion-Version 2025-09-03",
-            "feat(ntn): add USE_NTN_SHIM feature flag with urllib fallback",
-            "feat(inbox-agent): wire COMMUNICATION TEMPLATES DB into composer and templatize_email",
-            "feat(inbox-agent): load product directives and topic-matched memory rules in compose_reply",
-            "chore(submodule): bump agents — product directives, memory rules, COMMUNICATION TEMPLATES wiring",
-            "feat(draft-email): load apr-may voice delta and query COMMUNICATION TEMPLATES DB"
-          ]
-        },
-        {
-          "repo": "ctf-firecrawl",
-          "commits": [
-            "fix(build-pipeline): backfill Notion, fix slug extraction + PR hook",
-            "feat(build-pipeline): Phase 3 — GitHub PR status polling + Name fix",
-            "feat(build-pipeline): add GitHub + PR tracking to BUILD PIPELINE"
-          ]
-        }
-      ],
-      "takeaway": "Heaviest day of the stretch.\n\nThree major threads all **landed**: First, **COMMUNICATION TEMPLATES DB** wired end-to-end into **inbox-agent** — composer queries it at draft time, templatize_email writes to it, product directives and topic-matched memory rules load automatically. Plus the apr-may voice delta now loads on every draft.\n\nThe proven-asset playbook is live across all email outputs. Second, **MIGHTY** **Knowledge Coach** **Phase 0** — SQLite migration for coach tables, **gmail_drafter** body logging, and a **Jimbo** /coach command handler.\n\nThe self-curating product brain skeleton is in place. Third, ntn shim infrastructure — USE_NTN_SHIM feature flag with urllib fallback, 9 high-level helpers, and Notion-Version pinned to 2025-09-03 across the toolchain.\n\n**design-center-pipeline** got a dedup re-flip fix and top anchor. **Build-pipeline** (ctf-firecrawl) hit **Phase 3** with GitHub PR status polling and Notion backfill."
-    },
-    {
-      "day": 151,
-      "date": "2026-05-25",
-      "title": "Day 151 - Rest Day · Health Is Wealth",
-      "era": "Full Stack AI",
-      "type": [
-        "Rest"
-      ],
-      "source": "Other",
-      "category": [],
-      "impact": "Low",
-      "videos": [],
-      "builds": [
-        {
-          "repo": "ctf-firecrawl",
-          "commits": [
-            "chore: add notionapintnclimigration plan to index and active builds",
-            "fix(build-pipeline): correct Notion IDs + status options"
-          ]
-        }
-      ],
-      "takeaway": "Genuine rest day.\n\nLogged a lot of Claude hours this past week and the body called it — a migraine showed up early and shut the morning down. Spent the rest of the day with family.\n\nTwo tiny **build-pipeline** cleanup commits, then I closed the laptop. Health is quite literally wealth.\n\nIt is okay to slow down. If you are into AI right now, you are probably already ahead anyway.\n\nThe streak counts calendar days, not commit volume — and the work is always going to be there tomorrow."
-    },
-    {
-      "day": 150,
-      "date": "2026-05-24",
-      "title": "Day 150 - Rusty Absorbs Arlo + HFO MASTER_PLAN + Apify Activation",
-      "era": "Full Stack AI",
-      "type": [
-        "Build",
-        "Refactor"
-      ],
-      "source": "GitHub",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "DevOps"
-      ],
-      "impact": "Medium",
-      "videos": [],
-      "builds": [
-        {
-          "repo": "mighty",
-          "commits": [
-            "chore(jimbo): add filesystem + memory boundary rules (Rusty isolation)",
-            "fix: activate Apify — rename APIFY_API_TOKEN to APIFY_TOKEN, fix vault-sync registry path jimbo-v4.0 -> jimbo"
-          ]
-        },
-        {
-          "repo": "hotfixops",
-          "commits": [
-            "docs(plan): align MASTER_PLAN to existing HFO HQ 7-room structure",
-            "docs(plan): add MASTER_PLAN.md + rename script for HFO unification"
-          ]
-        },
-        {
-          "repo": "ctf-firecrawl",
-          "commits": [
-            "chore: delete Arlo scripts; GitHub sync absorbed into Rusty",
-            "chore: add Arlo LaunchAgent plist and HFO DB naming feedback memory"
-          ]
-        }
-      ],
-      "takeaway": "Consolidation day.\n\nDeleted standalone Arlo scripts and folded GitHub sync into **Rusty** (**Apify**-driven). Activated **Apify** by fixing the APIFY_API_TOKEN to APIFY_TOKEN rename and correcting the vault-sync registry path (**jimbo**-**v4**.0 to **jimbo**).\n\nLocked filesystem and memory boundary rules into **Jimbo** so **Rusty** stays isolated. On the HFO side, wrote MASTER_PLAN.md and a rename script to start aligning HFO docs to the existing 7-room HQ structure.\n\nStarted drafting the Notion-API to ntn-CLI migration plan that would land Tuesday."
-    },
-    {
-      "day": 149,
-      "date": "2026-05-23",
-      "title": "Day 149 - DevOps Foundations: DevSecOps - CYBER THREATS DB Wired to All Producers",
-      "era": "Full Stack AI",
-      "type": [
-        "Build",
-        "Learn",
-        "Security"
-      ],
-      "source": "GitHub",
-      "category": [
-        "Security",
-        "DevOps",
-        "AI/ML"
-      ],
-      "impact": "High",
-      "videos": [
-        {
-          "title": "Build & Sell Claude Code Operating Systems (2+ Hour Course)",
-          "channel": "Jack Roberts",
-          "url": "https://www.youtube.com/watch?v=bCljOfCH8Ms"
-        },
-        {
-          "title": "The AI Offer You Can Sell Tomorrow Morning",
-          "channel": "AI Entrepreneur",
-          "url": "https://www.youtube.com/watch?v=Pi-m8R068r4"
-        }
-      ],
-      "certification": {
-        "title": "DevOps Foundations: DevSecOps",
-        "issuer": "LinkedIn Learning",
-        "date": "2026-05-23"
-      },
-      "builds": [
-        {
-          "repo": "hotfixops",
-          "commits": [
-            "feat(spectre-core): add CYBER THREATS DB write helper",
-            "docs(security): add CYBER THREATS DB write protocol",
-            "chore(security): wire producer CLAUDE.md to CYBER THREATS DB"
-          ]
-        }
-      ],
-      "takeaway": "Completed LinkedIn Learning course: DevOps Foundations: DevSecOps — integrates security into every stage of the software delivery pipeline.\n\nOn the build side: wired all **SPECTRE** producers to the **CYBER THREATS DB** Notion sink — feat(**spectre**-core) adds the write helper, write protocol documented, and producer **CLAUDE.md** updated to enforce the pattern across all 10 producers."
-    },
-    {
-      "day": 148,
-      "date": "2026-05-22",
-      "title": "Day 148 - Penny Phase 4 Docs - Jimbo Scheduler Skip-Fix - Security DB Hardening",
-      "era": "Full Stack AI",
-      "type": [
-        "Build",
-        "DevOps"
-      ],
-      "source": "GitHub",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "Security",
-        "Finance"
-      ],
-      "impact": "High",
-      "videos": [
-        {
-          "title": "Design Systems, Pattern Libraries & Style Guides... Oh My!",
-          "channel": "YouTube",
-          "url": "https://www.youtube.com/watch?v=rO5dBA-avfw"
-        },
-        {
-          "title": "Create a Reusable UI Component Library with AI in Magic Patterns",
-          "channel": "Magic Patterns",
-          "url": "https://www.youtube.com/watch?v=JyqPXgm9vT8"
-        },
-        {
-          "title": "The greatest design system I've ever used (AntiGravity)",
-          "channel": "Jack Roberts",
-          "url": "https://www.youtube.com/watch?v=CpzZnudxSTM"
-        },
-        {
-          "title": "Claude Code just got 10X Better (Agentic OS)",
-          "channel": "YouTube",
-          "url": "https://www.youtube.com/watch?v=UQmmGnz6iVQ"
-        },
-        {
-          "title": "Karpathy's Skills just changed Everything (Claude Code)",
-          "channel": "Jack Roberts",
-          "url": "https://www.youtube.com/watch?v=pCqpuHA8kHM"
-        },
-        {
-          "title": "How I vibecode Beautiful $10,000 AI Websites (AntiGravity)",
-          "channel": "Jack Roberts",
-          "url": "https://www.youtube.com/watch?v=UR09nuSxGio"
-        },
-        {
-          "title": "Anthropic Just Dropped Claude for Small Businesses (31 Skills)",
-          "channel": "YouTube",
-          "url": "https://www.youtube.com/watch?v=zzo33HUOfxI"
-        },
-        {
-          "title": "Learn 97% of Claude in Under 16 Minutes",
-          "channel": "YouTube",
-          "url": "https://www.youtube.com/watch?v=wZeOwqmSw84"
-        },
-        {
-          "title": "Splice Now Inside Claude - Full Walkthrough",
-          "channel": "Splice",
-          "url": "https://www.youtube.com/watch?v=YrtnviwCJ2Q"
-        },
-        {
-          "title": "Meet Notion Workers: Here's How Syncs Work",
-          "channel": "Notion",
-          "url": "https://www.youtube.com/watch?v=iDNJXqiIglQ"
-        },
-        {
-          "title": "NEW NOTION UPDATE: Skills And Workers",
-          "channel": "YouTube",
-          "url": "https://www.youtube.com/watch?v=mfqpUrgO6ww"
-        },
-        {
-          "title": "Introducing Notion's Developer Platform: Keynote (Ivan Zhao)",
-          "channel": "Notion",
-          "url": "https://www.youtube.com/watch?v=rpE2rzKO6L0"
-        }
-      ],
-      "builds": [
-        {
-          "repo": "mighty",
-          "commits": [
-            "chore(submodule): bump agents — jimbo scheduler skip-fix + meeting_prep dual-mode",
-            "chore(submodule): bump agents — penny phase 4 docs + hard rule",
-            "chore(submodule): bump agents to 0578f24"
-          ]
-        },
-        {
-          "repo": "hotfixops",
-          "commits": [
-            "fix(code-council): correct JIMBO REPORTS ids + add all Security DB ids",
-            "docs(code-council): retire COUNCIL MEMBER UPDATES references"
-          ]
-        }
-      ],
-      "takeaway": "Infra hardening day: **Jimbo** **scheduler** skip-fix lands (no more double-fires on late crons), meeting_prep dual-mode **shipped**, **Penny** **Phase 4** docs and hard rule **merged**.\n\nCode Council cleanup: **JIMBO REPORTS** Notion IDs corrected, all Security DB IDs wired, COUNCIL MEMBER UPDATES references retired."
-    },
-    {
-      "day": 147,
-      "date": "2026-05-21",
-      "title": "Day 147 - andrewwebber.dev Major Push - SPECTRE + Code Council + Blog Polish",
-      "era": "Full Stack AI",
-      "type": [
-        "Build",
-        "Milestone",
-        "Security"
-      ],
-      "source": "GitHub",
-      "category": [
-        "AI/ML",
-        "Security",
-        "DevOps",
-        "Design"
-      ],
-      "impact": "Critical",
-      "videos": [
-        {
-          "title": "Claude Design Builds Beautiful 3D Websites Instantly (full tutorial)",
-          "channel": "YouTube",
-          "url": "https://www.youtube.com/watch?v=TcFeSjwTo7g"
-        }
-      ],
-      "builds": [
-        {
-          "repo": "andrewwebber.dev",
-          "commits": [
-            "feat(work): tools count rule + Design Forge/SPECTRE feature cards",
-            "feat(blog): polish Claude Code + Codex post — 8-min read, custom MDX styling",
-            "fix(stats): center stats + cap font so numbers stop bleeding columns",
-            "feat(blog): retitle to year-of-claude-code, add giscus comments + like button",
-            "feat(work): show all 108 tools w/ pagination + category filter",
-            "feat(blog): retitle to New Superpower Unlocked + rename slug",
-            "feat: SPECTRE descriptions + Code Council section + light mode + focus audio",
-            "feat(audio): minimalist focus picker — 4 modes",
-            "feat(work): map AI threat surface across all 12 Code Council hats",
-            "chore(pb-owners): add time-saved metrics to all 12 tools"
-          ]
-        },
-        {
-          "repo": "hotfixops",
-          "commits": [
-            "feat(code-council): map AI threat surface across all 12 hats (v1.3)"
-          ]
-        },
-        {
-          "repo": "mighty",
-          "commits": [
-            "chore(submodule): bump agents — penny phase 4 sync engine (#2)",
-            "chore(submodule): bump agents to a30bba7"
-          ]
-        }
-      ],
-      "takeaway": "Massive andrewwebber.dev push: **SPECTRE** section live with full Code Council descriptions, focus audio picker **shipped**, blog posts polished with giscus comments, tools pagination with category filter. **10 commits** to the portfolio in one day.\n\nThreat surface mapped across all 12 Code Council hats — both on the site and in hotfixops."
-    },
-    {
-      "day": 146,
-      "date": "2026-05-20",
-      "title": "Day 146 - First Public Merge - Filesystem Consolidation - Jimbo Curator on Main",
-      "era": "Full Stack AI",
-      "type": [
-        "Build",
-        "Milestone",
-        "Video"
-      ],
-      "source": "GitHub",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "DevOps",
-        "Open Source"
-      ],
-      "impact": "Critical",
-      "videos": [
-        {
-          "title": "Content Masterclass: The Most Valuable 3 Hours For Any Business Owner in 2026",
-          "channel": "Open Residency",
-          "url": ""
-        },
-        {
-          "title": "Robert Greene on Ego Traps, The Art of Control, & How to Stay Irreplaceable",
-          "channel": "Open Residency",
-          "url": ""
-        },
-        {
-          "title": "The Psychology of Making People Respect You Instantly! | Robert Greene",
-          "channel": "Vassal",
-          "url": ""
-        },
-        {
-          "title": "Treat Social Media Like a Video Game and Get Rich",
-          "channel": "Neel Dhingra",
-          "url": ""
-        }
-      ],
-      "builds": [
-        {
-          "repo": "cli-printing-press (upstream)",
-          "commits": [
-            "PR #1597 merged by mvanhorn: feat(cli): add Quo (formerly OpenPhone) catalog entry and OpenAPI spec - first public open-source contribution"
-          ]
-        },
-        {
-          "repo": "mighty",
-          "commits": [
-            "chore: snapshot pre-consolidation working state",
-            "refactor: rename _Code/Agents to _Code/agents for naming consistency (28 source file refs updated)",
-            "merge: integrate jimbo-curator-v1 (Hermes-Eater Sprint 2 implementation)",
-            "chore(submodule): bump agents to merged main HEAD (PR #5 c73199c)"
-          ]
-        },
-        {
-          "repo": "forge",
-          "commits": [
-            "feat(kie): provider updates + kie_models reference doc",
-            "chore(wip): impact-report compare layouts + assets + PDF exports"
-          ]
-        }
-      ],
-      "takeaway": "First public milestone: PR #1597 **merged** by mvanhorn into cli-printing-press -- Andrew's first accepted open-source contribution.\n\nFilesystem consolidation: **mighty** symlink replaced with real 8.5 GB directory, _Code/Agents renamed to _Code/agents, **Jimbo** Curator **v1** and **Penny** Finance **merged** to main. Watched 4 videos: business masterclass, Robert Greene on ego/control, social media strategy."
-    },
-    {
-      "day": 145,
-      "date": "2026-05-19",
-      "title": "Day 145 - VSCO Workspace CLI - Jimbo Curator Codex Pass - SDLC Cert - Inbox Hardening",
-      "era": "Full Stack AI",
-      "type": [
-        "Build",
-        "Skill",
-        "Learn",
-        "Video"
-      ],
-      "source": "GitHub",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "DevOps",
-        "Security"
-      ],
-      "impact": "Critical",
-      "videos": [
-        {
-          "title": "Build & Sell Claude Code Operating Systems (2+ Hour Course)",
-          "channel": "Nate Herk | AI Automation",
-          "url": ""
-        },
-        {
-          "title": "Developer Keynote (Google I/O 2026)",
-          "channel": "Google for Developers",
-          "url": ""
-        },
-        {
-          "title": "Unlock modern web capabilities in your AI coding workflows",
-          "channel": "Google for Developers",
-          "url": ""
-        },
-        {
-          "title": "Build next-gen AI experiences with Google AI Studio and Google Antigravity",
-          "channel": "Google for Developers",
-          "url": ""
-        },
-        {
-          "title": "The Real Reason Karpathy Joined Anthropic",
-          "channel": "Nate Herk | AI Automation",
-          "url": ""
-        },
-        {
-          "title": "How Social Media Algorithms Actually Work (And How to Beat Them)",
-          "channel": "Kallaway",
-          "url": ""
-        },
-        {
-          "title": "The NEW Era of Personal Brands is Here (and you're not ready)",
-          "channel": "Kallaway",
-          "url": ""
-        },
-        {
-          "title": "Claude Managed Agents Full Tutorial: How to Setup Your First AI Agent",
-          "channel": "Bart Slodyczka",
-          "url": ""
-        },
-        {
-          "title": "Trading Cards Photo Booth : Custom Cards Made On-Site",
-          "channel": "MIGHTY Photo Booths",
-          "url": "https://www.youtube.com/watch?v=RJJcd0A9p6k"
-        },
-        {
-          "title": "AI Fashion Sketch: Highlight Reel",
-          "channel": "MIGHTY Photo Booths",
-          "url": "https://www.youtube.com/watch?v=kHrYFka6-8o"
-        }
-      ],
-      "certifications": [
-        {
-          "title": "Software Development Life Cycle (SDLC)",
-          "issuer": "LinkedIn Learning",
-          "instructor": "Shashi Shekhar",
-          "date": "2026-05-19",
-          "duration": "1h 55m"
-        }
-      ],
-      "builds": [
-        {
-          "repo": "mighty/agents",
-          "commits": [
-            "feat(inbox-agent): lead autoreply pipeline with scoring + quality gates",
-            "feat(inbox-agent): client autoreply pipeline scaffold",
-            "feat(inbox-agent): draft verification + draft_guard pre-send check",
-            "fix(inbox-agent): strict JSON compose_reply + scannable structure + multipart default",
-            "feat(aisec): tmux backend for safe_run",
-            "feat(post-event-pipeline): wire Phase 5 feedback retrieval",
-            "fix: curator skills scan handles non-dict frontmatter (codex P2)",
-            "fix: curator poll no longer demotes applied to approved (codex P1)",
-            "fix: curator plists declare CURATOR_* env vars (codex P1)"
-          ]
-        },
-        {
-          "repo": "mighty",
-          "commits": [
-            "feat(vsco): browser + api + fast_quote pipeline updates",
-            "feat(seo): meta descriptions snapshot 2026-05-19",
-            "feat(skills): ops + sales + marketing + design-center skill refreshes + registry update",
-            "merge: integrate demographics-analytics (jimbo curator, ntn, graphify, skills, vsco)"
-          ]
-        },
-        {
-          "repo": "forge",
-          "commits": [
-            "feat(animation): add gif_maker tool for image-sequence GIF/MP4/WebP"
-          ]
-        }
-      ],
-      "takeaway": "30+ commits.\n\n**vsco-workspace-pp-cli** **shipped** (139 endpoints). **inbox-agent** hardened: autoreply pipelines, draft_guard, **compose_reply** strict JSON.\n\n**Jimbo** Curator cleared all Codex P0/P1/P2 flags. forge got gif_maker.\n\nLinkedIn Learning SDLC cert completed (1h 55m). Watched 10 videos: Google I/O 2026 developer keynote + 2 sessions, full **Claude Code** OS course, Karpathy/Anthropic, social media algorithm + personal brand strategy, Claude Managed Agents tutorial, two **MIGHTY** community videos."
-    },
-    {
-      "day": 144,
-      "date": "2026-05-18",
-      "title": "Day 144 - Quo CLI PR Submitted - First Open Source Contribution to cli-printing-press",
-      "era": "Full Stack AI",
-      "type": [
-        "Build",
-        "Video"
-      ],
-      "source": "GitHub",
-      "category": [
-        "AI/ML",
-        "DevOps",
-        "Automation"
-      ],
-      "impact": "High",
-      "videos": [
-        {
-          "title": "How to Use Your Claude Code Projects in Codex in 5 Mins",
-          "channel": "Nate Herk | AI Automation",
-          "url": ""
-        }
-      ],
-      "builds": [
-        {
-          "repo": "cli-printing-press",
-          "commits": [
-            "feat(cli): add Quo (formerly OpenPhone) catalog entry and OpenAPI spec - PR #1597 submitted to mvanhorn/cli-printing-press"
-          ]
-        }
-      ],
-      "takeaway": "Submitted PR #1597 to mvanhorn/cli-printing-press adding the full Quo (formerly OpenPhone) catalog entry and OpenAPI spec -- first open-source PR to a project Andrew did not create.\n\nIt would merge in **48 hours**. Watched 1 video: **Claude Code** Projects + Codex integration (Nate Herk)."
     }
   ]
 }
