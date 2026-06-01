@@ -79,7 +79,7 @@ def main() -> None:
 
     steps = [
         ([PYTHON, str(SCRIPTS / "queue_to_ll_sync.py")], "graduate-to-ll"),
-        ([PYTHON_BREW, str(SCRIPTS / "export-journey-json.py")], "export-journey"),
+        ([PYTHON_BREW, str(SCRIPTS / "export-journey-json.py"), "--no-push"], "export-journey"),
         ([PYTHON, str(SCRIPTS / "sync-courses.py")], "sync-courses"),
         ([PYTHON, str(SCRIPTS / "sync-queue.py")], "sync-queue"),
     ]
