@@ -15,6 +15,27 @@ load_dotenv(Path("/Users/mightydesigncenter/.claude/plugins/cache/mighty/mighty/
 
 NOTION_API_KEY = os.getenv("NOTION_API_KEY")
 DATABASE_ID = "2524ccca0f21429296a7c299abade1cb"
+DATA_SOURCE_ID = "25950df1-c088-451d-8002-f2eff57767a9"
+NTN_BINARY = os.path.expanduser("~/.local/bin/ntn")
+
+
+def _ntn_api(method: str, path: str, body: dict | None = None, timeout: int = 60) -> dict:
+    """Call the Notion API through the ntn CLI (keychain auth).
+
+    The raw NOTION_API_KEY integration token was revoked; the only valid
+    credential on this machine is ntn's keychain login. ntn treats
+    NOTION_API_TOKEN as higher priority than the keychain, so we strip it from
+    the subprocess env to avoid a stale dotenv value clobbering the good token.
+    """
+    cmd = [NTN_BINARY, "api", path, "-X", method.upper()]
+    if body is not None:
+        cmd.extend(["-d", json.dumps(body)])
+    env = {k: v for k, v in os.environ.items() if k not in ("NOTION_API_TOKEN", "NOTION_API_KEY")}
+    env.setdefault("NOTION_API_VERSION", "2025-09-03")
+    proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, env=env)
+    if proc.returncode != 0:
+        raise RuntimeError(f"ntn api {method} {path} failed: {(proc.stderr or proc.stdout).strip()[:300]}")
+    return json.loads(proc.stdout)
 HEADERS = {
     "Authorization": f"Bearer {NOTION_API_KEY}",
     "Notion-Version": "2022-06-28",
@@ -34,14 +55,7 @@ def fetch_all_pages() -> list[dict]:
         body: dict = {"page_size": 100, "sorts": [{"property": "Streak Day", "direction": "descending"}]}
         if start_cursor:
             body["start_cursor"] = start_cursor
-        resp = requests.post(
-            f"https://api.notion.com/v1/databases/{DATABASE_ID}/query",
-            headers=HEADERS,
-            json=body,
-            timeout=30,
-        )
-        resp.raise_for_status()
-        data = resp.json()
+        data = _ntn_api("POST", f"v1/data_sources/{DATA_SOURCE_ID}/query", body)
         pages.extend(data["results"])
         has_more = data.get("has_more", False)
         start_cursor = data.get("next_cursor")
@@ -53,12 +67,10 @@ def fetch_page_blocks(page_id: str) -> list[dict]:
     has_more = True
     start_cursor = None
     while has_more:
-        url = f"https://api.notion.com/v1/blocks/{page_id}/children?page_size=100"
+        path = f"v1/blocks/{page_id}/children?page_size=100"
         if start_cursor:
-            url += f"&start_cursor={start_cursor}"
-        resp = requests.get(url, headers=HEADERS, timeout=30)
-        resp.raise_for_status()
-        data = resp.json()
+            path += f"&start_cursor={start_cursor}"
+        data = _ntn_api("GET", path)
         blocks.extend(data["results"])
         has_more = data.get("has_more", False)
         start_cursor = data.get("next_cursor")
