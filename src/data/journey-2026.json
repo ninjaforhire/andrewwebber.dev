@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-31T21:43:38",
-  "totalDays": 154,
+  "lastUpdated": "2026-06-05T03:13:49",
+  "totalDays": 212,
   "currentEra": "Full Stack AI",
   "entries": [
     {
@@ -23,30 +23,21 @@
         "DevOps"
       ],
       "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
-      "certification": {
-        "title": "Advanced LinkedIn for Photo Booth Owners",
-        "issuer": "Photo Booth Marketing Academy",
-        "date": "2024-05-28"
-      },
       "builds": [
         {
           "repo": "andrewwebber.dev",
           "commits": [
             "feat(library): merge LEARNING LIBRARY into AWD dossier + journey",
             "feat(stats): refresh stats + 4 journey entries (150-153) + radar fix",
-            "Merge pull request #1 from ninjaforhire/learning-library-merge",
-            "feat(work): SPECTRE + PANDORA'S FORGE flagship Featured + Live·iterating badge",
-            "fix(audio): SoundPicker desktop menu pops upward in NavRail (direction prop)",
-            "feat(audio): 6 focus modes — Pink, Brown, Binaural γ, Lo-fi pad ♪, Cinematic drone ♪, Silence",
-            "feat(portrait): MatrixRain + PortraitFigure — TV-glitch loop, body-anchored embed",
-            "feat(scanner): top-level SPECTRE entry + PANDORA'S FORGE rebrand in scan-tools.py",
-            "feat(about): chaptered story, kill Character Sheet radar, plate Contact section",
-            "feat(formatter): file paths blue + URLs green in journey takeaways"
+            "Merge pull request #1 from ninjaforhire/learning-library-merge"
           ]
         }
       ],
-      "takeaway": "Insomniac ship day — started 12:30am, ended ~9pm. Single session, four product surfaces overhauled.\n\n**PANDORA'S FORGE** + **SPECTRE** promoted to flagship status on /work. Old sub-module features pulled, replaced with the two top-level platforms. Cards bumped 2-col + larger, **Live · iterating** pulse badge added so the always-shipping nature reads at a glance. Scanner in `scripts/scan-tools.py` now emits a parent SPECTRE entry alongside the 13 modules. Forge copy rewritten to land the 11-wing creative AI suite; SPECTRE copy rewritten to land the full-spectrum recon + red/blue/purple + AI-sec stack.\n\nMusic focus picker overhauled. Dropped Isochronic α. Added Pink noise, Lo-fi pad ♪, Cinematic drone ♪ — 6 modes total, music-note icon for the musical ones. All synthesized in WebAudio in `src/components/animation/FocusAudio.tsx` (Paul Kellet pink filter, random-walk brown, 200/240Hz binaural, detuned-saw lo-fi, sub+air drone). Zero asset weight. Desktop NavRail SoundPicker was popping downward off-screen — added a `direction` prop, opens upward when anchored to viewport bottom now.\n\nAbout page rebuilt from the ground up. Replaced the wall of text with a chaptered 6-year story (1996 origin → Now) — each chapter a year marker + tag + bold hook + body line. Killed the giant Character Sheet radar; the strip stats up top are enough. Wired in the embedded portrait: fixed `src/components/portrait/MatrixRain.tsx` (46 columns mixing SPECTRE / business / agent words with binary) + scrollable `src/components/portrait/PortraitFigure.tsx` running a 3s lineart → 350ms TV-glitch transition → 3s photo loop. Photo + lineart anchored to bottom-right so the body rises from the viewport bottom. Contact section gets an 80% backdrop-blur plate. Image pipeline: Canny edges + CLAHE for right-side detail → SVG paths, Otsu body mask for the silhouette, all from a single 800px source headshot.\n\n**Refreshed stats: LOC 2.03M → 2.05M, tools 149 → 157, dayStreak 153 → 154.** PR pending for the portrait + about + music + featured combo. Read it live at [andrewwebber.dev/about](https://andrewwebber.dev/about) once it deploys.\n\n_YouTube watched today: none — pure build session. Pre-154 entries pending YouTube history backfill in a future update._"
+      "takeaway": "_YouTube watched today: none \u2014 pure build session. Pre-154 entries pending YouTube history backfill in a future update._"
     },
     {
       "day": 153,
@@ -63,15 +54,17 @@
         "DevOps"
       ],
       "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
           "repo": "mighty",
           "commits": [
-            "fix(inbox-agent): templatize auto-title date bug + fail-fast validation; add Phase 0 tests",
-            "fix(jimbo): on-demand SPECTRE tunnel, HTTP-based liveness check, scheduler null-schedule guard, disable stale missions",
-            "feat(templates): write-time validation for COMMUNICATION TEMPLATES",
-            "feat(inbox-agent): add review ask playbook directive + keyword wiring"
+            "fix(inbox-agent): templatize auto-title date bug + fail-fast validation",
+            "add Phase 0 tests",
+            "fix(jimbo): on-demand SPECTRE tunnel, HTTP-based liveness check, scheduler null-schedule guard, disable stale missions"
           ]
         },
         {
@@ -82,7 +75,7 @@
           ]
         }
       ],
-      "takeaway": "Hardening + cleanup pass on the **mighty** stack.\n\n**inbox-agent** got a review-ask playbook directive, write-time validation for **COMMUNICATION TEMPLATES**, and a templatize auto-title date bug fix with **Phase 0** tests. **Jimbo** got on-demand **SPECTRE** tunnel, HTTP-based liveness check, **scheduler** null-schedule guard, and stale missions disabled.\n\n**Build-pipeline** (ctf-firecrawl) added a Local Path URL prop + woody-update plan to the index."
+      "takeaway": "**Build-pipeline** (ctf-firecrawl) added a Local Path URL prop + woody-update plan to the index."
     },
     {
       "day": 152,
@@ -101,38 +94,34 @@
         "DevOps"
       ],
       "impact": "Critical",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
           "repo": "mighty",
           "commits": [
-            "fix(coach): notion-sync — use ntn pages create markdown for 2025-09-03 multi-source DB format",
-            "feat(coach): Phase 0 infrastructure — SQLite migration (coach tables), gmail_drafter body logging, Jimbo /coach command handler",
-            "feat(inbox-agent): add canonical directive files — daily rental matrix, drop-off rules, holiday playbook",
-            "fix(design-center-pipeline): bump Notion-Version + dedup re-flips + top anchor",
-            "feat(ntn): add 9 high-level helpers + pin Notion-Version 2025-09-03",
-            "feat(ntn): add USE_NTN_SHIM feature flag with urllib fallback",
-            "feat(inbox-agent): wire COMMUNICATION TEMPLATES DB into composer and templatize_email",
-            "feat(inbox-agent): load product directives and topic-matched memory rules in compose_reply",
-            "chore(submodule): bump agents — product directives, memory rules, COMMUNICATION TEMPLATES wiring",
-            "feat(draft-email): load apr-may voice delta and query COMMUNICATION TEMPLATES DB"
+            "fix(coach): notion-sync \u2014 use ntn pages create markdown for 2025-09-03 multi-source DB format",
+            "feat(coach): Phase 0 infrastructure \u2014 SQLite migration (coach tables), gmail_drafter body logging, Jimbo /coach command handler",
+            "feat(inbox-agent): add canonical directive files \u2014 daily rental matrix, drop-off rules, holiday playbook"
           ]
         },
         {
           "repo": "ctf-firecrawl",
           "commits": [
             "fix(build-pipeline): backfill Notion, fix slug extraction + PR hook",
-            "feat(build-pipeline): Phase 3 — GitHub PR status polling + Name fix",
+            "feat(build-pipeline): Phase 3 \u2014 GitHub PR status polling + Name fix",
             "feat(build-pipeline): add GitHub + PR tracking to BUILD PIPELINE"
           ]
         }
       ],
-      "takeaway": "Heaviest day of the stretch.\n\nThree major threads all **landed**: First, **COMMUNICATION TEMPLATES DB** wired end-to-end into **inbox-agent** — composer queries it at draft time, templatize_email writes to it, product directives and topic-matched memory rules load automatically. Plus the apr-may voice delta now loads on every draft.\n\nThe proven-asset playbook is live across all email outputs. Second, **MIGHTY** **Knowledge Coach** **Phase 0** — SQLite migration for coach tables, **gmail_drafter** body logging, and a **Jimbo** /coach command handler.\n\nThe self-curating product brain skeleton is in place. Third, ntn shim infrastructure — USE_NTN_SHIM feature flag with urllib fallback, 9 high-level helpers, and Notion-Version pinned to 2025-09-03 across the toolchain.\n\n**design-center-pipeline** got a dedup re-flip fix and top anchor. **Build-pipeline** (ctf-firecrawl) hit **Phase 3** with GitHub PR status polling and Notion backfill."
+      "takeaway": "**design-center-pipeline** got a dedup re-flip fix and top anchor. **Build-pipeline** (ctf-firecrawl) hit **Phase 3** with GitHub PR status polling and Notion backfill."
     },
     {
       "day": 151,
       "date": "2026-05-25",
-      "title": "Day 151 - Rest Day · Health Is Wealth",
+      "title": "Day 151 - Rest Day \u00b7 Health Is Wealth",
       "era": "Full Stack AI",
       "type": [
         "Rest"
@@ -140,6 +129,9 @@
       "source": "Other",
       "category": [],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -150,7 +142,7 @@
           ]
         }
       ],
-      "takeaway": "Genuine rest day.\n\nLogged a lot of Claude hours this past week and the body called it — a migraine showed up early and shut the morning down. Spent the rest of the day with family.\n\nTwo tiny **build-pipeline** cleanup commits, then I closed the laptop. Health is quite literally wealth.\n\nIt is okay to slow down. If you are into AI right now, you are probably already ahead anyway.\n\nThe streak counts calendar days, not commit volume — and the work is always going to be there tomorrow."
+      "takeaway": "The streak counts calendar days, not commit volume \u2014 and the work is always going to be there tomorrow."
     },
     {
       "day": 150,
@@ -168,13 +160,16 @@
         "DevOps"
       ],
       "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
           "repo": "mighty",
           "commits": [
             "chore(jimbo): add filesystem + memory boundary rules (Rusty isolation)",
-            "fix: activate Apify — rename APIFY_API_TOKEN to APIFY_TOKEN, fix vault-sync registry path jimbo-v4.0 -> jimbo"
+            "fix: activate Apify \u2014 rename APIFY_API_TOKEN to APIFY_TOKEN, fix vault-sync registry path jimbo-v4.0 -> jimbo"
           ]
         },
         {
@@ -187,12 +182,13 @@
         {
           "repo": "ctf-firecrawl",
           "commits": [
-            "chore: delete Arlo scripts; GitHub sync absorbed into Rusty",
+            "chore: delete Arlo scripts",
+            "GitHub sync absorbed into Rusty",
             "chore: add Arlo LaunchAgent plist and HFO DB naming feedback memory"
           ]
         }
       ],
-      "takeaway": "Consolidation day.\n\nDeleted standalone Arlo scripts and folded GitHub sync into **Rusty** (**Apify**-driven). Activated **Apify** by fixing the APIFY_API_TOKEN to APIFY_TOKEN rename and correcting the vault-sync registry path (**jimbo**-**v4**.0 to **jimbo**).\n\nLocked filesystem and memory boundary rules into **Jimbo** so **Rusty** stays isolated. On the HFO side, wrote MASTER_PLAN.md and a rename script to start aligning HFO docs to the existing 7-room HQ structure.\n\nStarted drafting the Notion-API to ntn-CLI migration plan that would land Tuesday."
+      "takeaway": "Started drafting the Notion-API to ntn-CLI migration plan that would land Tuesday."
     },
     {
       "day": 149,
@@ -211,6 +207,9 @@
         "AI/ML"
       ],
       "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Build & Sell Claude Code Operating Systems (2+ Hour Course)",
@@ -223,11 +222,6 @@
           "url": "https://www.youtube.com/watch?v=Pi-m8R068r4"
         }
       ],
-      "certification": {
-        "title": "DevOps Foundations: DevSecOps",
-        "issuer": "LinkedIn Learning",
-        "date": "2026-05-23"
-      },
       "builds": [
         {
           "repo": "hotfixops",
@@ -238,7 +232,7 @@
           ]
         }
       ],
-      "takeaway": "Completed LinkedIn Learning course: DevOps Foundations: DevSecOps — integrates security into every stage of the software delivery pipeline.\n\nOn the build side: wired all **SPECTRE** producers to the **CYBER THREATS DB** Notion sink — feat(**spectre**-core) adds the write helper, write protocol documented, and producer **CLAUDE.md** updated to enforce the pattern across all 10 producers."
+      "takeaway": "On the build side: wired all **SPECTRE** producers to the **CYBER THREATS DB** Notion sink \u2014 feat(**spectre**-core) adds the write helper, write protocol documented, and producer **CLAUDE.md** updated to enforce the pattern across all 10 producers."
     },
     {
       "day": 148,
@@ -257,6 +251,9 @@
         "Finance"
       ],
       "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Design Systems, Pattern Libraries & Style Guides... Oh My!",
@@ -323,8 +320,8 @@
         {
           "repo": "mighty",
           "commits": [
-            "chore(submodule): bump agents — jimbo scheduler skip-fix + meeting_prep dual-mode",
-            "chore(submodule): bump agents — penny phase 4 docs + hard rule",
+            "chore(submodule): bump agents \u2014 jimbo scheduler skip-fix + meeting_prep dual-mode",
+            "chore(submodule): bump agents \u2014 penny phase 4 docs + hard rule",
             "chore(submodule): bump agents to 0578f24"
           ]
         },
@@ -336,7 +333,7 @@
           ]
         }
       ],
-      "takeaway": "Infra hardening day: **Jimbo** **scheduler** skip-fix lands (no more double-fires on late crons), meeting_prep dual-mode **shipped**, **Penny** **Phase 4** docs and hard rule **merged**.\n\nCode Council cleanup: **JIMBO REPORTS** Notion IDs corrected, all Security DB IDs wired, COUNCIL MEMBER UPDATES references retired."
+      "takeaway": "Code Council cleanup: **JIMBO REPORTS** Notion IDs corrected, all Security DB IDs wired, COUNCIL MEMBER UPDATES references retired."
     },
     {
       "day": 147,
@@ -356,6 +353,9 @@
         "Design"
       ],
       "impact": "Critical",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Design Builds Beautiful 3D Websites Instantly (full tutorial)",
@@ -368,15 +368,8 @@
           "repo": "andrewwebber.dev",
           "commits": [
             "feat(work): tools count rule + Design Forge/SPECTRE feature cards",
-            "feat(blog): polish Claude Code + Codex post — 8-min read, custom MDX styling",
-            "fix(stats): center stats + cap font so numbers stop bleeding columns",
-            "feat(blog): retitle to year-of-claude-code, add giscus comments + like button",
-            "feat(work): show all 108 tools w/ pagination + category filter",
-            "feat(blog): retitle to New Superpower Unlocked + rename slug",
-            "feat: SPECTRE descriptions + Code Council section + light mode + focus audio",
-            "feat(audio): minimalist focus picker — 4 modes",
-            "feat(work): map AI threat surface across all 12 Code Council hats",
-            "chore(pb-owners): add time-saved metrics to all 12 tools"
+            "feat(blog): polish Claude Code + Codex post \u2014 8-min read, custom MDX styling",
+            "fix(stats): center stats + cap font so numbers stop bleeding columns"
           ]
         },
         {
@@ -388,12 +381,12 @@
         {
           "repo": "mighty",
           "commits": [
-            "chore(submodule): bump agents — penny phase 4 sync engine (#2)",
+            "chore(submodule): bump agents \u2014 penny phase 4 sync engine (#2)",
             "chore(submodule): bump agents to a30bba7"
           ]
         }
       ],
-      "takeaway": "Massive andrewwebber.dev push: **SPECTRE** section live with full Code Council descriptions, focus audio picker **shipped**, blog posts polished with giscus comments, tools pagination with category filter. **10 commits** to the portfolio in one day.\n\nThreat surface mapped across all 12 Code Council hats — both on the site and in hotfixops."
+      "takeaway": "Threat surface mapped across all 12 Code Council hats \u2014 both on the site and in hotfixops."
     },
     {
       "day": 146,
@@ -413,26 +406,25 @@
         "Open Source"
       ],
       "impact": "Critical",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Content Masterclass: The Most Valuable 3 Hours For Any Business Owner in 2026",
-          "channel": "Open Residency",
-          "url": ""
+          "channel": "Open Residency"
         },
         {
           "title": "Robert Greene on Ego Traps, The Art of Control, & How to Stay Irreplaceable",
-          "channel": "Open Residency",
-          "url": ""
+          "channel": "Open Residency"
         },
         {
           "title": "The Psychology of Making People Respect You Instantly! | Robert Greene",
-          "channel": "Vassal",
-          "url": ""
+          "channel": "Vassal"
         },
         {
           "title": "Treat Social Media Like a Video Game and Get Rich",
-          "channel": "Neel Dhingra",
-          "url": ""
+          "channel": "Neel Dhingra"
         }
       ],
       "builds": [
@@ -447,8 +439,7 @@
           "commits": [
             "chore: snapshot pre-consolidation working state",
             "refactor: rename _Code/Agents to _Code/agents for naming consistency (28 source file refs updated)",
-            "merge: integrate jimbo-curator-v1 (Hermes-Eater Sprint 2 implementation)",
-            "chore(submodule): bump agents to merged main HEAD (PR #5 c73199c)"
+            "merge: integrate jimbo-curator-v1 (Hermes-Eater Sprint 2 implementation)"
           ]
         },
         {
@@ -459,7 +450,7 @@
           ]
         }
       ],
-      "takeaway": "First public milestone: PR #1597 **merged** by mvanhorn into cli-printing-press -- Andrew's first accepted open-source contribution.\n\nFilesystem consolidation: **mighty** symlink replaced with real 8.5 GB directory, _Code/Agents renamed to _Code/agents, **Jimbo** Curator **v1** and **Penny** Finance **merged** to main. Watched 4 videos: business masterclass, Robert Greene on ego/control, social media strategy."
+      "takeaway": "Filesystem consolidation: **mighty** symlink replaced with real 8.5 GB directory, _Code/Agents renamed to _Code/agents, **Jimbo** Curator **v1** and **Penny** Finance **merged** to main. Watched 4 videos: business masterclass, Robert Greene on ego/control, social media strategy."
     },
     {
       "day": 145,
@@ -480,46 +471,41 @@
         "Security"
       ],
       "impact": "Critical",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Build & Sell Claude Code Operating Systems (2+ Hour Course)",
-          "channel": "Nate Herk | AI Automation",
-          "url": ""
+          "channel": "Nate Herk | AI Automation"
         },
         {
           "title": "Developer Keynote (Google I/O 2026)",
-          "channel": "Google for Developers",
-          "url": ""
+          "channel": "Google for Developers"
         },
         {
           "title": "Unlock modern web capabilities in your AI coding workflows",
-          "channel": "Google for Developers",
-          "url": ""
+          "channel": "Google for Developers"
         },
         {
           "title": "Build next-gen AI experiences with Google AI Studio and Google Antigravity",
-          "channel": "Google for Developers",
-          "url": ""
+          "channel": "Google for Developers"
         },
         {
           "title": "The Real Reason Karpathy Joined Anthropic",
-          "channel": "Nate Herk | AI Automation",
-          "url": ""
+          "channel": "Nate Herk | AI Automation"
         },
         {
           "title": "How Social Media Algorithms Actually Work (And How to Beat Them)",
-          "channel": "Kallaway",
-          "url": ""
+          "channel": "Kallaway"
         },
         {
           "title": "The NEW Era of Personal Brands is Here (and you're not ready)",
-          "channel": "Kallaway",
-          "url": ""
+          "channel": "Kallaway"
         },
         {
           "title": "Claude Managed Agents Full Tutorial: How to Setup Your First AI Agent",
-          "channel": "Bart Slodyczka",
-          "url": ""
+          "channel": "Bart Slodyczka"
         },
         {
           "title": "Trading Cards Photo Booth : Custom Cards Made On-Site",
@@ -532,28 +518,13 @@
           "url": "https://www.youtube.com/watch?v=kHrYFka6-8o"
         }
       ],
-      "certifications": [
-        {
-          "title": "Software Development Life Cycle (SDLC)",
-          "issuer": "LinkedIn Learning",
-          "instructor": "Shashi Shekhar",
-          "date": "2026-05-19",
-          "duration": "1h 55m"
-        }
-      ],
       "builds": [
         {
           "repo": "mighty/agents",
           "commits": [
             "feat(inbox-agent): lead autoreply pipeline with scoring + quality gates",
             "feat(inbox-agent): client autoreply pipeline scaffold",
-            "feat(inbox-agent): draft verification + draft_guard pre-send check",
-            "fix(inbox-agent): strict JSON compose_reply + scannable structure + multipart default",
-            "feat(aisec): tmux backend for safe_run",
-            "feat(post-event-pipeline): wire Phase 5 feedback retrieval",
-            "fix: curator skills scan handles non-dict frontmatter (codex P2)",
-            "fix: curator poll no longer demotes applied to approved (codex P1)",
-            "fix: curator plists declare CURATOR_* env vars (codex P1)"
+            "feat(inbox-agent): draft verification + draft_guard pre-send check"
           ]
         },
         {
@@ -561,8 +532,7 @@
           "commits": [
             "feat(vsco): browser + api + fast_quote pipeline updates",
             "feat(seo): meta descriptions snapshot 2026-05-19",
-            "feat(skills): ops + sales + marketing + design-center skill refreshes + registry update",
-            "merge: integrate demographics-analytics (jimbo curator, ntn, graphify, skills, vsco)"
+            "feat(skills): ops + sales + marketing + design-center skill refreshes + registry update"
           ]
         },
         {
@@ -572,7 +542,7 @@
           ]
         }
       ],
-      "takeaway": "30+ commits.\n\n**vsco-workspace-pp-cli** **shipped** (139 endpoints). **inbox-agent** hardened: autoreply pipelines, draft_guard, **compose_reply** strict JSON.\n\n**Jimbo** Curator cleared all Codex P0/P1/P2 flags. forge got gif_maker.\n\nLinkedIn Learning SDLC cert completed (1h 55m). Watched 10 videos: Google I/O 2026 developer keynote + 2 sessions, full **Claude Code** OS course, Karpathy/Anthropic, social media algorithm + personal brand strategy, Claude Managed Agents tutorial, two **MIGHTY** community videos."
+      "takeaway": "LinkedIn Learning SDLC cert completed (1h 55m). Watched 10 videos: Google I/O 2026 developer keynote + 2 sessions, full **Claude Code** OS course, Karpathy/Anthropic, social media algorithm + personal brand strategy, Claude Managed Agents tutorial, two **MIGHTY** community videos."
     },
     {
       "day": 144,
@@ -590,11 +560,13 @@
         "Automation"
       ],
       "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "How to Use Your Claude Code Projects in Codex in 5 Mins",
-          "channel": "Nate Herk | AI Automation",
-          "url": ""
+          "channel": "Nate Herk | AI Automation"
         }
       ],
       "builds": [
@@ -605,12 +577,12 @@
           ]
         }
       ],
-      "takeaway": "Submitted PR #1597 to mvanhorn/cli-printing-press adding the full Quo (formerly OpenPhone) catalog entry and OpenAPI spec -- first open-source PR to a project Andrew did not create.\n\nIt would merge in **48 hours**. Watched 1 video: **Claude Code** Projects + Codex integration (Nate Herk)."
+      "takeaway": "It would merge in **48 hours**. Watched 1 video: **Claude Code** Projects + Codex integration (Nate Herk)."
     },
     {
       "day": 143,
       "date": "2026-05-17",
-      "title": "Day 143 — Terminal Concierge & Portfolio Stats — Live Agents Counter Goes Live",
+      "title": "Day 143 \u2014 Terminal Concierge & Portfolio Stats \u2014 Live Agents Counter Goes Live",
       "era": "Full Stack AI",
       "type": [
         "Build"
@@ -622,30 +594,33 @@
         "DevOps"
       ],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "At first it was awesome… #comedy #relatable #shorts",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "title": "At first it was awesome\u2026 #comedy #relatable #shorts",
+          "channel": "that's a bad idea",
+          "url": "https://www.youtube.com/watch?v=CZGvqKURtpQ",
+          "runtime_min": 3,
           "category": [
             "AI/ML"
           ]
         },
         {
           "title": "How to set up Surveys in Booth.Events",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Booth.Events",
+          "url": "https://www.youtube.com/watch?v=dmOlTzSXPl0",
+          "runtime_min": 5.2,
           "category": [
             "AI/ML"
           ]
         },
         {
           "title": "The AI Career Opportunity Nobody is Talking About in 2026",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=iIfOprq2kCM",
+          "runtime_min": 19.2,
           "category": [
             "AI/ML",
             "Automation",
@@ -654,9 +629,9 @@
         },
         {
           "title": "URGENT: Do This In Notion Today",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Matthias Frank",
+          "url": "https://www.youtube.com/watch?v=6xpOlmzoG4k",
+          "runtime_min": 26.8,
           "category": [
             "AI/ML",
             "Agents",
@@ -666,9 +641,9 @@
         },
         {
           "title": "Notion Masterclass: Formulas & Automations (Complete Guide 2025)",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Matthias Frank",
+          "url": "https://www.youtube.com/watch?v=5JaGJBPC0Q8",
+          "runtime_min": 209,
           "category": [
             "Automation",
             "Business",
@@ -677,9 +652,9 @@
         },
         {
           "title": "Notion Just Announced A Massive Shift (Big Update)",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Matthias Frank",
+          "url": "https://www.youtube.com/watch?v=zCFlM2XhJJE",
+          "runtime_min": 31.8,
           "category": [
             "Agents",
             "Automation",
@@ -692,7 +667,7 @@
         {
           "repo": "andrewwebber.dev",
           "commits": [
-            "feat: homepage stats — Live Agents + Tools Built, add /journey-update skill",
+            "feat: homepage stats \u2014 Live Agents + Tools Built, add /journey-update skill",
             "chore: update journey-2026.json"
           ]
         },
@@ -700,7 +675,7 @@
           "repo": "general-tools",
           "commits": [
             "feat: set default effort to High",
-            "feat: Terminal Concierge — model/effort/workdir prompts, fix corrupt .terminal plist"
+            "feat: Terminal Concierge \u2014 model/effort/workdir prompts, fix corrupt .terminal plist"
           ]
         }
       ],
@@ -709,7 +684,7 @@
     {
       "day": 142,
       "date": "2026-05-16",
-      "title": "Day 142 — Jimbo Curator Design — Hermes-Eater Sprint 2 & 35-Task Implementation Plan",
+      "title": "Day 142 \u2014 Jimbo Curator Design \u2014 Hermes-Eater Sprint 2 & 35-Task Implementation Plan",
       "era": "Full Stack AI",
       "type": [
         "Build",
@@ -724,12 +699,15 @@
         "Security"
       ],
       "impact": "Critical",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "Build Andrej Karpathy’s LLM Knowledge Base for Businesses (10x Output!)",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "title": "Build Andrej Karpathy\u2019s LLM Knowledge Base\u00a0for Businesses (10x Output!)",
+          "channel": "Dream Labs AI",
+          "url": "https://www.youtube.com/watch?v=FAWm7DuFSPc",
+          "runtime_min": 17.6,
           "category": [
             "AI/ML",
             "Business",
@@ -738,9 +716,9 @@
         },
         {
           "title": "Skill Issue: Andrej Karpathy on Code Agents, AutoResearch, and the Loopy Era of AI",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "No Priors: AI, Machine Learning, Tech, \\u0026 Startups",
+          "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
+          "runtime_min": 66.5,
           "category": [
             "AI/ML",
             "Agents",
@@ -749,9 +727,9 @@
         },
         {
           "title": "Stop Fixing Your Claude Skills. Autoresearch Does It For You",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Nick Saraev",
+          "url": "https://www.youtube.com/watch?v=qKU-e0x2EmE",
+          "runtime_min": 16.5,
           "category": [
             "AI/ML",
             "Agents",
@@ -761,27 +739,27 @@
         },
         {
           "title": "The Complete Story Of Ash's Gengar",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "ThunderZolt",
+          "url": "https://www.youtube.com/watch?v=8Ym9r5S8vsQ",
+          "runtime_min": 10,
           "category": [
             "AI/ML"
           ]
         },
         {
-          "title": "The Very Best of Gengar So Far | Pokémon Seasons 1-5",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "title": "The Very Best of Gengar So Far | Pok\u00e9mon Seasons 1-5",
+          "channel": "Poke\u0301mon TV",
+          "url": "https://www.youtube.com/watch?v=zmkKteuKr10",
+          "runtime_min": 9,
           "category": [
             "AI/ML"
           ]
         },
         {
           "title": "This is The Most Powerful Tool to Give to Claude Code",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=YHk45NEpspE",
+          "runtime_min": 14.8,
           "category": [
             "AI/ML",
             "Agents",
@@ -791,9 +769,9 @@
         },
         {
           "title": "Android 17 Is the Biggest Upgrade in Years",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Mrwhosetheboss",
+          "url": "https://www.youtube.com/watch?v=j7i_4RokEIo",
+          "runtime_min": 17.6,
           "category": [
             "AI/ML",
             "Design"
@@ -827,7 +805,7 @@
     {
       "day": 141,
       "date": "2026-05-15",
-      "title": "Day 141 — NTN Phase 0 Smoke Tests & SPECTRE Consolidation — Notion MCP Retired",
+      "title": "Day 141 \u2014 NTN Phase 0 Smoke Tests & SPECTRE Consolidation \u2014 Notion MCP Retired",
       "era": "Full Stack AI",
       "type": [
         "Build",
@@ -839,30 +817,33 @@
         "Security"
       ],
       "impact": "Critical",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Inside the Virtual Cyber War Training Used by Governments | Cyber Ranges Uncovered S1|E3",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Dawn of Cyberwarfare - Official Documentary",
+          "url": "https://www.youtube.com/watch?v=SBnhtjMA71w",
+          "runtime_min": 18.4,
           "category": [
             "Security"
           ]
         },
         {
           "title": "Robert Kiyosaki: The American Empire Will Collapse In 2026",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Minority Mindset",
+          "url": "https://www.youtube.com/watch?v=Izn_DFVOHQs",
+          "runtime_min": 62.7,
           "category": [
             "AI/ML"
           ]
         },
         {
           "title": "Alex Hormozi: How To Make So Much Money You Question The Meaning Of It",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Jay Shetty Podcast",
+          "url": "https://www.youtube.com/watch?v=gEF67-G9MO0",
+          "runtime_min": 122.9,
           "category": [
             "Security",
             "Business"
@@ -870,9 +851,9 @@
         },
         {
           "title": "The UNTHINKABLE is about to happen to Stocks",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Felix \\u0026 Friends (Goat Academy)",
+          "url": "https://www.youtube.com/watch?v=KgzthZdu8Rk",
+          "runtime_min": 22.1,
           "category": [
             "Security",
             "Business"
@@ -880,18 +861,18 @@
         },
         {
           "title": "The Most Passive $104K/M Online Business You've Never Heard Of",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Chris Koerner on The Koerner Office Podcast",
+          "url": "https://www.youtube.com/watch?v=xUZYy3hCRUM",
+          "runtime_min": 48,
           "category": [
             "Business"
           ]
         },
         {
           "title": "The Easiest Way to Actually Make Money With AI",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Chris Koerner on The Koerner Office Podcast",
+          "url": "https://www.youtube.com/watch?v=03DjE7j0Suw",
+          "runtime_min": 36.7,
           "category": [
             "AI/ML",
             "Agents",
@@ -902,9 +883,9 @@
         },
         {
           "title": "Hermes Agent just got 10X Better (Agentic OS)",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=7xuWZ-3lyQE",
+          "runtime_min": 31.1,
           "category": [
             "AI/ML",
             "Agents",
@@ -914,9 +895,9 @@
         },
         {
           "title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Sequoia Capital",
+          "url": "https://www.youtube.com/watch?v=96jN2OCOfLs",
+          "runtime_min": 29.8,
           "category": [
             "AI/ML",
             "Agents",
@@ -926,9 +907,9 @@
         },
         {
           "title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Sequoia Capital",
+          "url": "https://www.youtube.com/watch?v=bBS93A0BeNI",
+          "runtime_min": 28.4,
           "category": [
             "AI/ML",
             "Agents",
@@ -939,9 +920,9 @@
         },
         {
           "title": "Ex-Google PM Builds God's Eye to Monitor Iran in 4D",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Bilawal Sidhu",
+          "url": "https://www.youtube.com/watch?v=0p8o7AeHDzg",
+          "runtime_min": 11.1,
           "category": [
             "Agents",
             "DevOps",
@@ -950,18 +931,18 @@
         },
         {
           "title": "The Internet's Hidden 3D Model of the World",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Bilawal Sidhu",
+          "url": "https://www.youtube.com/watch?v=KWXuxfdZhwk",
+          "runtime_min": 15.5,
           "category": [
             "Open Source"
           ]
         },
         {
           "title": "OSINT Toolkit Every Investigator Needs in 2026",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Shield Spectrum",
+          "url": "https://www.youtube.com/watch?v=iMD4R1LeqNg",
+          "runtime_min": 11,
           "category": [
             "Automation",
             "Security",
@@ -970,9 +951,9 @@
         },
         {
           "title": "Top 7 OSINT tools REVEALED for 2026",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "David Bombal",
+          "url": "https://www.youtube.com/watch?v=WHOgdsEiyew",
+          "runtime_min": 52.8,
           "category": [
             "Security",
             "Open Source"
@@ -980,9 +961,9 @@
         },
         {
           "title": "Hermes Agent: Zero to Personal AI Assistant (1 Hour Course)",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=gb5TlGw6Uks",
+          "runtime_min": 58.4,
           "category": [
             "AI/ML",
             "Agents",
@@ -992,9 +973,9 @@
         },
         {
           "title": "Claude Code Just Got an Agent Dashboard",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=ZAaxx3qyT8g",
+          "runtime_min": 7.6,
           "category": [
             "AI/ML",
             "Agents",
@@ -1057,7 +1038,7 @@
     {
       "day": 140,
       "date": "2026-05-14",
-      "title": "Day 140 — Deep Research Day — ntn CLI Migration Strategy",
+      "title": "Day 140 \u2014 Deep Research Day \u2014 ntn CLI Migration Strategy",
       "era": "Full Stack AI",
       "type": [
         "Build"
@@ -1067,21 +1048,24 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Illuminati AI: The Shadow World",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "YouTube Movies",
+          "url": "https://www.youtube.com/watch?v=J-P3L5fy3NA",
+          "runtime_min": 63.1,
           "category": [
             "AI/ML"
           ]
         },
         {
           "title": "Anthropic Just Dethroned OpenAI. Here's What Happens Next.",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=-nG-9vlSkho",
+          "runtime_min": 7.7,
           "category": [
             "AI/ML",
             "Automation",
@@ -1090,9 +1074,9 @@
         },
         {
           "title": "32 Tricks to Level Up Claude Code in 16 Mins",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=jqoFP9QapXI",
+          "runtime_min": 16.2,
           "category": [
             "AI/ML",
             "Agents",
@@ -1101,9 +1085,9 @@
         },
         {
           "title": "Dan Martell: The AI Cheat Codes Every Founder Needs in 2026",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Open Residency",
+          "url": "https://www.youtube.com/watch?v=_24HzGNv-3A",
+          "runtime_min": 88.4,
           "category": [
             "AI/ML",
             "Business"
@@ -1111,19 +1095,19 @@
         },
         {
           "title": "He Built a $725 Million Company in 255 Days. Here's What You're Doing Wrong",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Open Residency",
+          "url": "https://www.youtube.com/watch?v=0OdHGliowm4",
+          "runtime_min": 118.8,
           "category": [
             "Business",
             "Design"
           ]
         },
         {
-          "title": "If We Had to Make $1M Fast, We’d Start These Businesses",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "title": "If We Had to Make $1M Fast, We\u2019d Start These Businesses",
+          "channel": "Chris Koerner on The Koerner Office Podcast",
+          "url": "https://www.youtube.com/watch?v=2B5dCquvK4c",
+          "runtime_min": 61.1,
           "category": [
             "AI/ML",
             "Agents",
@@ -1134,9 +1118,9 @@
         },
         {
           "title": "How Anyone Can Make $10K+/Month From the Government",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Chris Koerner on The Koerner Office Podcast",
+          "url": "https://www.youtube.com/watch?v=xrU6tVo-qME",
+          "runtime_min": 48.1,
           "category": [
             "AI/ML",
             "Automation",
@@ -1145,12 +1129,12 @@
         }
       ],
       "builds": [],
-      "takeaway": "From zero to full-stack AI builder in 135 days. The learning curve was really a learning cliff — and I climbed it."
+      "takeaway": "From zero to full-stack AI builder in 135 days. The learning curve was really a learning cliff \u2014 and I climbed it."
     },
     {
       "day": 139,
       "date": "2026-05-13",
-      "title": "Day 139 — Research & Planning — Jimbo Hermes-Eater Architecture",
+      "title": "Day 139 \u2014 Research & Planning \u2014 Jimbo Hermes-Eater Architecture",
       "era": "Full Stack AI",
       "type": [
         "Build"
@@ -1160,14 +1144,17 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
-      "takeaway": "From zero to full-stack AI builder in 135 days. The learning curve was really a learning cliff — and I climbed it."
+      "takeaway": "From zero to full-stack AI builder in 135 days. The learning curve was really a learning cliff \u2014 and I climbed it."
     },
     {
       "day": 138,
       "date": "2026-05-12",
-      "title": "Day 138 — Skill-to-Command Sync — Unified Claude Code Skill Registry",
+      "title": "Day 138 \u2014 Skill-to-Command Sync \u2014 Unified Claude Code Skill Registry",
       "era": "Full Stack AI",
       "type": [
         "Build"
@@ -1177,12 +1164,15 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "NEW Claude Update is a GAME CHANGER! 🤯",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "title": "NEW Claude Update is a GAME CHANGER! \ud83e\udd2f",
+          "channel": "Julian Goldie AI",
+          "url": "https://www.youtube.com/watch?v=NI1fU2z_TF4",
+          "runtime_min": 7.7,
           "category": [
             "AI/ML",
             "Agents",
@@ -1204,7 +1194,7 @@
     {
       "day": 137,
       "date": "2026-05-11",
-      "title": "Day 137 — Graphify v0.7.13 Deployed Across Agent Stack — AST Graphs + Hooks",
+      "title": "Day 137 \u2014 Graphify v0.7.13 Deployed Across Agent Stack \u2014 AST Graphs + Hooks",
       "era": "Full Stack AI",
       "type": [
         "Build"
@@ -1214,12 +1204,15 @@
         "Open Source"
       ],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
           "repo": "mighty",
           "commits": [
-            "feat: install graphify v0.7.13 — AST+semantic graph, PreToolUse hook, auto-rebuild hooks"
+            "feat: install graphify v0.7.13 \u2014 AST+semantic graph, PreToolUse hook, auto-rebuild hooks"
           ]
         }
       ],
@@ -1228,7 +1221,7 @@
     {
       "day": 136,
       "date": "2026-05-10",
-      "title": "Day 136 — Graphify Callflow Export — Mermaid Architecture Diagrams",
+      "title": "Day 136 \u2014 Graphify Callflow Export \u2014 Mermaid Architecture Diagrams",
       "era": "Full Stack AI",
       "type": [
         "Build"
@@ -1239,12 +1232,15 @@
         "Frontend"
       ],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "The Truth About Graphify's 70x Token Saving Claim",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Charlie Automates",
+          "url": "https://www.youtube.com/watch?v=Ro3Xf1AxVjs",
+          "runtime_min": 42.4,
           "category": [
             "AI/ML",
             "Automation",
@@ -1254,9 +1250,9 @@
         },
         {
           "title": "The $29 Trillion Gold Race Has Begun (Hint: Act Now!)",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Felix \\u0026 Friends (Goat Academy)",
+          "url": "https://www.youtube.com/watch?v=GQvr9w7n7W8",
+          "runtime_min": 18.1,
           "category": [
             "Security",
             "Business"
@@ -1264,27 +1260,27 @@
         },
         {
           "title": "Bobby Lee | This Past Weekend w/ Theo Von #657",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Theo Von",
+          "url": "https://www.youtube.com/watch?v=SLLCT-fYTTU",
+          "runtime_min": 113.7,
           "category": [
             "Design"
           ]
         },
         {
           "title": "Leading in the Age of AI: A Conversation with NVIDIA CEO Jensen Huang | Global Conference 2026",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Milken Institute",
+          "url": "https://www.youtube.com/watch?v=dUFis1dte14",
+          "runtime_min": 46.3,
           "category": [
             "Business"
           ]
         },
         {
           "title": "Claude Desktop Just Got Every Open-Source Model",
-          "channel": "",
-          "url": "",
-          "runtime_min": null,
+          "channel": "Nick Puru | AI Automation",
+          "url": "https://www.youtube.com/watch?v=qDaoP8ObaTo",
+          "runtime_min": 9.3,
           "category": [
             "AI/ML",
             "Agents",
@@ -1307,7 +1303,7 @@
     {
       "day": 135,
       "date": "2026-05-09",
-      "title": "Day 135 — AI Ascent 2026 Keynote — Sequoia AGI Talk",
+      "title": "Day 135 \u2014 AI Ascent 2026 Keynote \u2014 Sequoia AGI Talk",
       "era": "Full Stack AI",
       "type": [
         "Video"
@@ -1317,6 +1313,9 @@
         "AI/ML"
       ],
       "impact": "Critical",
+      "url": "https://www.youtube.com/watch?v=3Y8aq_ofEVs",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Robotics' End Game: Nvidia's Jim Fan",
@@ -1345,7 +1344,7 @@
     {
       "day": 134,
       "date": "2026-05-08",
-      "title": "Day 134 — HQ Launcher Update & Agentic OS Research",
+      "title": "Day 134 \u2014 HQ Launcher Update & Agentic OS Research",
       "era": "Full Stack AI",
       "type": [
         "Build",
@@ -1357,6 +1356,9 @@
         "Agents"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=Bgxsx8slDEA",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Stop Using Claude Code Without an Agentic OS",
@@ -1382,7 +1384,7 @@
     {
       "day": 133,
       "date": "2026-05-07",
-      "title": "Day 133 — MIGHTY AI-Gen Tool — Kling 3.0 Integration",
+      "title": "Day 133 \u2014 MIGHTY AI-Gen Tool \u2014 Kling 3.0 Integration",
       "era": "Full Stack AI",
       "type": [
         "Build",
@@ -1396,6 +1398,9 @@
         "Open Source"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=B6k_vAjndMo",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Code is Better at n8n than I am (Beginner's Guide)",
@@ -1438,7 +1443,7 @@
     {
       "day": 132,
       "date": "2026-05-06",
-      "title": "Day 132 — MIGHTY Studio — Initial Build",
+      "title": "Day 132 \u2014 MIGHTY Studio \u2014 Initial Build",
       "era": "Full Stack AI",
       "type": [
         "Build",
@@ -1450,6 +1455,9 @@
         "Agents"
       ],
       "impact": "Critical",
+      "url": "https://www.youtube.com/watch?v=z6Xyzr_46bg",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "ServiceNow CEO on AI: Agents have picked up work that would have been done by ot",
@@ -1475,7 +1483,7 @@
     {
       "day": 131,
       "date": "2026-05-05",
-      "title": "Day 131 — Gmail MCP Removal & Security Hardening",
+      "title": "Day 131 \u2014 Gmail MCP Removal & Security Hardening",
       "era": "Full Stack AI",
       "type": [
         "Video"
@@ -1488,6 +1496,9 @@
         "DevOps"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=17luirR0JBE",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Airsoft Pistol Fight",
@@ -1505,7 +1516,7 @@
           "url": "https://www.youtube.com/watch?v=ZFntoUGmQQI"
         },
         {
-          "title": "Change Desktop Icon Size with Just Your Keyboard – This Shortcut Will Blow Your",
+          "title": "Change Desktop Icon Size with Just Your Keyboard \u2013 This Shortcut Will Blow Your",
           "channel": "OviTech Gyan",
           "url": "https://www.youtube.com/watch?v=l7R-plLLj1Q"
         },
@@ -1516,12 +1527,12 @@
         }
       ],
       "builds": [],
-      "takeaway": "Deep research day — 21 AI videos consumed. Filling the mental model before the next build sprint."
+      "takeaway": "Deep research day \u2014 21 AI videos consumed. Filling the mental model before the next build sprint."
     },
     {
       "day": 130,
       "date": "2026-05-04",
-      "title": "Day 130 — Sunday Rest — Planning the Week Ahead",
+      "title": "Day 130 \u2014 Sunday Rest \u2014 Planning the Week Ahead",
       "era": "Full Stack AI",
       "type": [
         "Build"
@@ -1531,14 +1542,17 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
-      "takeaway": "From zero to full-stack AI builder in 135 days. The learning curve was really a learning cliff — and I climbed it."
+      "takeaway": "From zero to full-stack AI builder in 135 days. The learning curve was really a learning cliff \u2014 and I climbed it."
     },
     {
       "day": 129,
       "date": "2026-05-03",
-      "title": "Day 129 — Naming Conventions & Playbook Polish",
+      "title": "Day 129 \u2014 Naming Conventions & Playbook Polish",
       "era": "Full Stack AI",
       "type": [
         "Build",
@@ -1553,6 +1567,9 @@
         "Business"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=sn2d_eXeV9A",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "The Brilliant AI Social Media System Alex Hormozi Is Using to Win",
@@ -1571,7 +1588,7 @@
         },
         {
           "title": "Training Details Catch Spies #knowledge #youtube #science #story",
-          "channel": "Karen’s interesting knowledge",
+          "channel": "Karen\u2019s interesting knowledge",
           "url": "https://www.youtube.com/watch?v=b_IRjZHNRJo"
         },
         {
@@ -1584,7 +1601,7 @@
         {
           "repo": "mighty-playbook",
           "commits": [
-            "docs: fix naming conventions — date-first quotes/invoices, type prefix for projects"
+            "docs: fix naming conventions \u2014 date-first quotes/invoices, type prefix for projects"
           ]
         }
       ],
@@ -1593,7 +1610,7 @@
     {
       "day": 128,
       "date": "2026-05-02",
-      "title": "Day 128 — Event Refresh Skill Design Spec",
+      "title": "Day 128 \u2014 Event Refresh Skill Design Spec",
       "era": "Full Stack AI",
       "type": [
         "Build",
@@ -1607,6 +1624,9 @@
         "Design"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=FLcrvMfHUJM",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "MIT Explains the 12 Possible Endings for AI",
@@ -1637,7 +1657,7 @@
     {
       "day": 127,
       "date": "2026-05-01",
-      "title": "Day 127 — PLAYBOOK_UPDATE Mission & Agent Signature Fix",
+      "title": "Day 127 \u2014 PLAYBOOK_UPDATE Mission & Agent Signature Fix",
       "era": "Full Stack AI",
       "type": [
         "Build",
@@ -1651,6 +1671,9 @@
         "Security"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=tn7zXRv3Xmo",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "DeepSeekV4 + Claude Code = 100X Cheaper",
@@ -1668,14 +1691,14 @@
           "repo": "agents",
           "commits": [
             "fix: filter email signature images from asset pipeline",
-            "feat: PLAYBOOK_UPDATE mission — monthly auto-update on 1st 8PM CST, halts at x.9"
+            "feat: PLAYBOOK_UPDATE mission \u2014 monthly auto-update on 1st 8PM CST, halts at x.9"
           ]
         },
         {
           "repo": "mighty-playbook",
           "commits": [
-            "fix: correct skill/agent counts — 64 active skills, 55 agents (excluded archived)",
-            "feat: v1.21 — audit, version bump, accurate counts, path fixes,"
+            "fix: correct skill/agent counts \u2014 64 active skills, 55 agents (excluded archived)",
+            "feat: v1.21 \u2014 audit, version bump, accurate counts, path fixes,"
           ]
         }
       ],
@@ -1684,7 +1707,7 @@
     {
       "day": 126,
       "date": "2026-04-30",
-      "title": "Day 126 — Design-Center-Pipeline Batch & Agent Ecosystem Build",
+      "title": "Day 126 \u2014 Design-Center-Pipeline Batch & Agent Ecosystem Build",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -1699,12 +1722,15 @@
         "Business"
       ],
       "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
           "repo": "agents",
           "commits": [
-            "fix: health probes — correct Firecrawl endpoint, Phuryn port, VSCO env var, Square manual-only",
+            "fix: health probes \u2014 correct Firecrawl endpoint, Phuryn port, VSCO env var, Square manual-only",
             "feat: complete agent consolidation build (2026-04-3"
           ]
         },
@@ -1712,7 +1738,7 @@
           "repo": "mighty",
           "commits": [
             "docs: Add MIGHTY operations cheatsheet, update Jimbo routing",
-            "feat: agent ecosystem buildout — bump agents submodule + new skills"
+            "feat: agent ecosystem buildout \u2014 bump agents submodule + new skills"
           ]
         }
       ],
@@ -1721,7 +1747,7 @@
     {
       "day": 125,
       "date": "2026-04-29",
-      "title": "Day 125 — Agent Consolidation & Character Sheet Generator",
+      "title": "Day 125 \u2014 Agent Consolidation & Character Sheet Generator",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -1735,9 +1761,12 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=AYQtRqW1xX4",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "How to Build & Sell AI Agents in 2026: Ultimate Beginner’s Guide",
+          "title": "How to Build & Sell AI Agents in 2026: Ultimate Beginner\u2019s Guide",
           "channel": "Liam Ottley",
           "url": "https://www.youtube.com/watch?v=AYQtRqW1xX4"
         },
@@ -1761,7 +1790,7 @@
         {
           "repo": "forge",
           "commits": [
-            "feat: add characters/ — character sheet generator with judge, registry, prompts, style sheets"
+            "feat: add characters/ \u2014 character sheet generator with judge, registry, prompts, style sheets"
           ]
         },
         {
@@ -1788,7 +1817,7 @@
     {
       "day": 124,
       "date": "2026-04-28",
-      "title": "Day 124 — Agent Dashboard, Token Pulse & Forge Characters",
+      "title": "Day 124 \u2014 Agent Dashboard, Token Pulse & Forge Characters",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -1802,6 +1831,9 @@
         "DevOps"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=cqMpTbTrMW4",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "AI Insider: The Fastest Way To Use AI Agents In Your Business, Content & Life (O",
@@ -1834,7 +1866,7 @@
           "repo": "agents",
           "commits": [
             "fix: resolve security standup false findings and mission tool bugs (#2)",
-            "chore: sync agent state — Jimbo updates, dispatch registry, remove vsco-qu"
+            "chore: sync agent state \u2014 Jimbo updates, dispatch registry, remove vsco-qu"
           ]
         },
         {
@@ -1859,7 +1891,7 @@
         {
           "repo": "mighty",
           "commits": [
-            "chore: update agents submodule — dashboard routes, health probes, token_dash_helpers",
+            "chore: update agents submodule \u2014 dashboard routes, health probes, token_dash_helpers",
             "chore: archive event-checklist, add shell-cheatsheet skill, c"
           ]
         }
@@ -1869,7 +1901,7 @@
     {
       "day": 123,
       "date": "2026-04-27",
-      "title": "Day 123 — andrewwebber.dev Hero Motion & Dossier Hexagons",
+      "title": "Day 123 \u2014 andrewwebber.dev Hero Motion & Dossier Hexagons",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -1884,6 +1916,9 @@
         "Design"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=PwZtG6PL5-I",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "$25M AI Expert Explains: What to Sell Instead of Agentic Workflows",
@@ -1923,7 +1958,7 @@
         {
           "repo": "mighty",
           "commits": [
-            "feat: add huashu-design skill — 15x token savings vs Claude Design"
+            "feat: add huashu-design skill \u2014 15x token savings vs Claude Design"
           ]
         }
       ],
@@ -1932,7 +1967,7 @@
     {
       "day": 122,
       "date": "2026-04-26",
-      "title": "Day 122 — Weekend Video Research & Portfolio Polish",
+      "title": "Day 122 \u2014 Weekend Video Research & Portfolio Polish",
       "era": "Platform Architect",
       "type": [
         "Video"
@@ -1945,9 +1980,12 @@
         "DevOps"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=AArGhYdcJXk",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "The Most Profitable AI Business Isn’t Software",
+          "title": "The Most Profitable AI Business Isn\u2019t Software",
           "channel": "Brett Malinowski",
           "url": "https://www.youtube.com/watch?v=AArGhYdcJXk"
         },
@@ -1973,7 +2011,7 @@
     {
       "day": 121,
       "date": "2026-04-25",
-      "title": "Day 121 — andrewwebber.dev Portfolio Launch & Graphify Badge",
+      "title": "Day 121 \u2014 andrewwebber.dev Portfolio Launch & Graphify Badge",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -1986,6 +2024,9 @@
         "Frontend"
       ],
       "impact": "Critical",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -2020,7 +2061,7 @@
     {
       "day": 120,
       "date": "2026-04-24",
-      "title": "Day 120 — RAVEN OSINT Platform Merge (14 Steps)",
+      "title": "Day 120 \u2014 RAVEN OSINT Platform Merge (14 Steps)",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -2034,6 +2075,9 @@
         "No-Code"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=H0x98XlsVzY",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Live Artifacts a new way to build Realtime Dashboards",
@@ -2082,7 +2126,7 @@
     {
       "day": 119,
       "date": "2026-04-23",
-      "title": "Day 119 — THE MIGHTY PLAYBOOK v1.0 — Operations Bible",
+      "title": "Day 119 \u2014 THE MIGHTY PLAYBOOK v1.0 \u2014 Operations Bible",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -2098,9 +2142,12 @@
         "Business"
       ],
       "impact": "Critical",
+      "url": "https://www.youtube.com/watch?v=AhB7PKjMGK8",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "New Fed Chair’s Plan to Cancel America’s Debt",
+          "title": "New Fed Chair\u2019s Plan to Cancel America\u2019s Debt",
           "channel": "Felix & Friends (Goat Academy)",
           "url": "https://www.youtube.com/watch?v=AhB7PKjMGK8"
         },
@@ -2120,14 +2167,14 @@
         {
           "repo": "graphify",
           "commits": [
-            "release: bump to v0.5.0 — clone, merge-graphs, shrink guard, dedup, bug fixes",
+            "release: bump to v0.5.0 \u2014 clone, merge-graphs, shrink guard, dedup, bug fixes",
             "fix #479 #451: build_merge(), pre-write shrink guard, label dedup, c"
           ]
         },
         {
           "repo": "mighty-playbook",
           "commits": [
-            "feat: naming conventions page — Notion, Drive, codebase, git (with examples and callouts)",
+            "feat: naming conventions page \u2014 Notion, Drive, codebase, git (with examples and callouts)",
             "fix: logo 44px next to h2 section headers only, no runni"
           ]
         }
@@ -2137,7 +2184,7 @@
     {
       "day": 118,
       "date": "2026-04-22",
-      "title": "Day 118 — Terminal Karaoke Full Build — Shazam + Lyrics + FX",
+      "title": "Day 118 \u2014 Terminal Karaoke Full Build \u2014 Shazam + Lyrics + FX",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -2153,6 +2200,9 @@
         "Business"
       ],
       "impact": "Critical",
+      "url": "https://www.youtube.com/watch?v=D8K90hX4PrE",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Daft Punk - Technologic (Official Music Video Remastered)",
@@ -2237,7 +2287,7 @@
     {
       "day": 117,
       "date": "2026-04-21",
-      "title": "Day 117 — Graphify Multilingual READMEs (28 Languages)",
+      "title": "Day 117 \u2014 Graphify Multilingual READMEs (28 Languages)",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -2252,6 +2302,9 @@
         "DevOps"
       ],
       "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -2266,7 +2319,7 @@
           "repo": "graphify",
           "commits": [
             "make logo link to graphifylabs.ai",
-            "fix(report): complete empty-community fix — hubs, summary count, thin-community gaps",
+            "fix(report): complete empty-community fix \u2014 hubs, summary count, thin-community gaps",
             "add graph-query CLI rules"
           ]
         },
@@ -2283,7 +2336,7 @@
     {
       "day": 116,
       "date": "2026-04-20",
-      "title": "Day 116 — Graphify Logo & Branding",
+      "title": "Day 116 \u2014 Graphify Logo & Branding",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -2294,6 +2347,9 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=iCUB7JZmmig",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "I Turned My iPhone Into an AI Productivity Machine.",
@@ -2320,7 +2376,7 @@
     {
       "day": 115,
       "date": "2026-04-19",
-      "title": "Day 115 — Saturday Event — MIGHTY Photo Booths on Location",
+      "title": "Day 115 \u2014 Saturday Event \u2014 MIGHTY Photo Booths on Location",
       "era": "Platform Architect",
       "type": [
         "Video"
@@ -2330,6 +2386,9 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=ZNbgOhxhzXg",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Just Destroyed Every Video Editing Tool",
@@ -2363,7 +2422,7 @@
     {
       "day": 114,
       "date": "2026-04-18",
-      "title": "Day 114 — Graphify 200K+ Downloads & HexStrike to SPECTRE Rename",
+      "title": "Day 114 \u2014 Graphify 200K+ Downloads & HexStrike to SPECTRE Rename",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -2379,6 +2438,9 @@
         "Business"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=efGXZselN64",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Code 2.0 Is Here... Automate Anything",
@@ -2442,7 +2504,7 @@
     {
       "day": 113,
       "date": "2026-04-17",
-      "title": "Day 113 — Graphify 0.4.19-0.4.21 — Team Workflows & Fixes",
+      "title": "Day 113 \u2014 Graphify 0.4.19-0.4.21 \u2014 Team Workflows & Fixes",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -2457,6 +2519,9 @@
         "Frontend"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=7z3Jaf-oZ1w",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Camera to iPad Snappic Simple Setup",
@@ -2474,7 +2539,7 @@
           "url": "https://www.youtube.com/watch?v=YHx-E8NOg8s"
         },
         {
-          "title": "This One Plugin Just 10x’d Claude Code",
+          "title": "This One Plugin Just 10x\u2019d Claude Code",
           "channel": "Nate Herk | AI Automation",
           "url": "https://www.youtube.com/watch?v=4XqVR6xI6Kw"
         },
@@ -2499,7 +2564,7 @@
     {
       "day": 112,
       "date": "2026-04-16",
-      "title": "Day 112 — Terminal Gloss (Tauri v2) & Jimbo Model Routing",
+      "title": "Day 112 \u2014 Terminal Gloss (Tauri v2) & Jimbo Model Routing",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -2515,6 +2580,9 @@
         "Design"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=lbsKNMUxI50",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Someone build Claude code permanent memory",
@@ -2527,7 +2595,7 @@
           "url": "https://www.youtube.com/watch?v=hN58VkYLie4"
         },
         {
-          "title": "MacBook Neo Magic Board is INSANELY Small 😳🔥",
+          "title": "MacBook Neo Magic Board is INSANELY Small \ud83d\ude33\ud83d\udd25",
           "channel": "Tech Roasting",
           "url": "https://www.youtube.com/watch?v=gvdCUcQe8Yg"
         },
@@ -2537,7 +2605,7 @@
           "url": "https://www.youtube.com/watch?v=yuw01ljrkR8"
         },
         {
-          "title": "10 / 10 BAIT 🧠✍🏽#gaming #bestarcadegames #arcraiders #arcraidersgameplay #fyp #v",
+          "title": "10 / 10 BAIT \ud83e\udde0\u270d\ud83c\udffd#gaming #bestarcadegames #arcraiders #arcraidersgameplay #fyp #v",
           "channel": "Asa OTF",
           "url": "https://www.youtube.com/watch?v=4_B6yCVxbmw"
         }
@@ -2572,7 +2640,7 @@
     {
       "day": 111,
       "date": "2026-04-15",
-      "title": "Day 111 — Monorepo Split, SPECTRE Docker & Snappic Site",
+      "title": "Day 111 \u2014 Monorepo Split, SPECTRE Docker & Snappic Site",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -2589,10 +2657,13 @@
         "Security"
       ],
       "impact": "Critical",
+      "url": "https://www.youtube.com/watch?v=t3cbS3aez6M",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Tasker - React To NFC Tag",
-          "channel": "João Dias (joaomgcd)",
+          "channel": "Jo\u00e3o Dias (joaomgcd)",
           "url": "https://www.youtube.com/watch?v=t3cbS3aez6M"
         },
         {
@@ -2657,7 +2728,7 @@
         {
           "repo": "mighty-gallery",
           "commits": [
-            "test: expand coverage to 94.97% — all 49 tests passing",
+            "test: expand coverage to 94.97% \u2014 all 49 tests passing",
             "feat: add gallery CSS, full EJS templates, copy protection, and copyright notices",
             "feat: ad"
           ]
@@ -2706,7 +2777,7 @@
     {
       "day": 110,
       "date": "2026-04-14",
-      "title": "Day 110 — Graphify Verilog Support & CVE Server Audit",
+      "title": "Day 110 \u2014 Graphify Verilog Support & CVE Server Audit",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -2722,6 +2793,9 @@
         "Security"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=99VHENEKA9o",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "100 Hours Testing Claude Code vs Antigravity (honest results)",
@@ -2750,7 +2824,7 @@
           "repo": "cve-mcp-server",
           "commits": [
             "fix: lint tests/ directory and add .gitattributes for LF normalization",
-            "fix: resolve all ruff lint failures — sort imports, remove unused imports,"
+            "fix: resolve all ruff lint failures \u2014 sort imports, remove unused imports,"
           ]
         },
         {
@@ -2766,7 +2840,7 @@
     {
       "day": 109,
       "date": "2026-04-13",
-      "title": "Day 109 — CVE MCP, SPECTRE-core & Creative Coding Wing",
+      "title": "Day 109 \u2014 CVE MCP, SPECTRE-core & Creative Coding Wing",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -2783,6 +2857,9 @@
         "Security"
       ],
       "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -2852,7 +2929,7 @@
     {
       "day": 108,
       "date": "2026-04-12",
-      "title": "Day 108 — Graphify 0.4.3-0.4.5 — Google Antigravity & MCP Fix",
+      "title": "Day 108 \u2014 Graphify 0.4.3-0.4.5 \u2014 Google Antigravity & MCP Fix",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -2867,19 +2944,22 @@
         "DevOps"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=Q1v4PXIEpDY",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "So…..kinda? #hackreacts",
+          "title": "So\u2026..kinda? #hackreacts",
           "channel": "The Bearded Bard",
           "url": "https://www.youtube.com/watch?v=Q1v4PXIEpDY"
         },
         {
-          "title": "Does your TV know what you’re watching?",
+          "title": "Does your TV know what you\u2019re watching?",
           "channel": "Tech.Explain",
           "url": "https://www.youtube.com/watch?v=LqlFZeIw4Pc"
         },
         {
-          "title": "I Broke His 3000€ Airsoft Gun! #shorts",
+          "title": "I Broke His 3000\u20ac Airsoft Gun! #shorts",
           "channel": "Chinoir Airsoft",
           "url": "https://www.youtube.com/watch?v=L_f2tJF4n4c"
         },
@@ -2909,7 +2989,7 @@
     {
       "day": 107,
       "date": "2026-04-11",
-      "title": "Day 107 — Graphify 0.4.2 — Cherry-Pick PRs & LinkedIn Badge",
+      "title": "Day 107 \u2014 Graphify 0.4.2 \u2014 Cherry-Pick PRs & LinkedIn Badge",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -2920,6 +3000,9 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -2936,7 +3019,7 @@
     {
       "day": 106,
       "date": "2026-04-10",
-      "title": "Day 106 — Graphify v0.4.0 & Code Council + RAVEN Rename",
+      "title": "Day 106 \u2014 Graphify v0.4.0 & Code Council + RAVEN Rename",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -2952,6 +3035,9 @@
         "Security"
       ],
       "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -2982,7 +3068,7 @@
           ]
         },
         {
-          "repo": "HexStrike → RAVEN Rename",
+          "repo": "HexStrike \u2192 RAVEN Rename",
           "commits": [
             "OSINT module renamed from HexStrike to RAVEN"
           ]
@@ -3011,7 +3097,7 @@
     {
       "day": 105,
       "date": "2026-04-09",
-      "title": "Day 105 — Graphify Cursor/Gemini/OpenCode Support & Code Council",
+      "title": "Day 105 \u2014 Graphify Cursor/Gemini/OpenCode Support & Code Council",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -3027,6 +3113,9 @@
         "Business"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=2BFN2DtcQMw",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "The Only Claude Skills You Need in 2026",
@@ -3067,7 +3156,7 @@
           "commits": [
             "Remove Trendshift badge (API not available)",
             "Add Trendshift badge to README",
-            "Fix codex/opencode install idempotency — always run hook step (#153)"
+            "Fix codex/opencode install idempotency \u2014 always run hook step (#153)"
           ]
         }
       ],
@@ -3076,7 +3165,7 @@
     {
       "day": 104,
       "date": "2026-04-08",
-      "title": "Day 104 — Graphify v0.3.15-17 & Jimbo Telegram Integration",
+      "title": "Day 104 \u2014 Graphify v0.3.15-17 & Jimbo Telegram Integration",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -3092,6 +3181,9 @@
         "Business"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=oCuttuCQmZg",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Mythos Preview: Everything You Need to Know",
@@ -3142,7 +3234,7 @@
     {
       "day": 103,
       "date": "2026-04-07",
-      "title": "Day 103 — Design-Center-Pipeline v1.0 & Directory Submission",
+      "title": "Day 103 \u2014 Design-Center-Pipeline v1.0 & Directory Submission",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -3158,6 +3250,9 @@
         "Business"
       ],
       "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -3196,7 +3291,7 @@
     {
       "day": 102,
       "date": "2026-04-06",
-      "title": "Day 102 — Graphify v3 — MIT License & Multi-Platform",
+      "title": "Day 102 \u2014 Graphify v3 \u2014 MIT License & Multi-Platform",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -3212,6 +3307,9 @@
         "Business"
       ],
       "impact": "Critical",
+      "url": "https://www.youtube.com/watch?v=lyqk7zxbCKs",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "23 AI Trends keeping me up at night",
@@ -3293,7 +3391,7 @@
     {
       "day": 101,
       "date": "2026-04-05",
-      "title": "Day 101 — Graphify v2 — Confidence Scores & Hyperedges",
+      "title": "Day 101 \u2014 Graphify v2 \u2014 Confidence Scores & Hyperedges",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -3309,14 +3407,17 @@
         "Business"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=sboNwYmH3AY",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "Andrej Karpathy Just 10x’d Everyone’s Claude Code",
+          "title": "Andrej Karpathy Just 10x\u2019d Everyone\u2019s Claude Code",
           "channel": "Nate Herk | AI Automation",
           "url": "https://www.youtube.com/watch?v=sboNwYmH3AY"
         },
         {
-          "title": "Everyday Tech You’ll Actually Use",
+          "title": "Everyday Tech You\u2019ll Actually Use",
           "channel": "Mrwhosetheboss",
           "url": "https://www.youtube.com/watch?v=Ad3HP6iRyUE"
         },
@@ -3331,7 +3432,7 @@
           "url": "https://www.youtube.com/watch?v=XUaGCHBcqj0"
         },
         {
-          "title": "5 Coolest MINI Gadgets You Must See! 👀",
+          "title": "5 Coolest MINI Gadgets You Must See! \ud83d\udc40",
           "channel": "AuthenTech - Ben Schmanke",
           "url": "https://www.youtube.com/watch?v=Lb4FScsL1Tw"
         }
@@ -3367,7 +3468,7 @@
     {
       "day": 100,
       "date": "2026-04-04",
-      "title": "Day 100 — Graphify Security Hardening & Competitor Scan",
+      "title": "Day 100 \u2014 Graphify Security Hardening & Competitor Scan",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -3383,6 +3484,9 @@
         "DevOps"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=XUaGCHBcqj0",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "The Best TINY Tech on the Internet!",
@@ -3430,7 +3534,7 @@
           "repo": "graphify",
           "commits": [
             "docs: update surprising connections description, test count",
-            "feat: composite surprise score — cross-type, cross-repo, community distance, periphera"
+            "feat: composite surprise score \u2014 cross-type, cross-repo, community distance, periphera"
           ]
         }
       ],
@@ -3439,7 +3543,7 @@
     {
       "day": 99,
       "date": "2026-04-03",
-      "title": "Day 99 — Graphify Core Pipeline & Jimbo Coworker Brain",
+      "title": "Day 99 \u2014 Graphify Core Pipeline & Jimbo Coworker Brain",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -3455,6 +3559,9 @@
         "Design"
       ],
       "impact": "Critical",
+      "url": "https://www.youtube.com/watch?v=isjOj4QSaO8",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "5 INSANE Claude Cowork Use Cases... steal them",
@@ -3487,7 +3594,7 @@
           "repo": "agents",
           "commits": [
             "fix: Route all channels through CLI + MCP ($0), add session hooks to CLI path",
-            "feat: Jimbo Coworker Brain — memory unification, tool access, agent"
+            "feat: Jimbo Coworker Brain \u2014 memory unification, tool access, agent"
           ]
         },
         {
@@ -3523,7 +3630,7 @@
     {
       "day": 98,
       "date": "2026-04-02",
-      "title": "Day 98 — Booking Pipeline v2 — Full Client Intake",
+      "title": "Day 98 \u2014 Booking Pipeline v2 \u2014 Full Client Intake",
       "era": "Platform Architect",
       "type": [
         "Build",
@@ -3538,6 +3645,9 @@
         "Business"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=g6b5D44KVqI",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Mythos: The 1M Context Window, Agentic AI & The Cybersecurity Nightmare",
@@ -3545,7 +3655,7 @@
           "url": "https://www.youtube.com/watch?v=g6b5D44KVqI"
         },
         {
-          "title": "NEW Claude Mythos is INSANE! 😱",
+          "title": "NEW Claude Mythos is INSANE! \ud83d\ude31",
           "channel": "Julian Goldie SEO",
           "url": "https://www.youtube.com/watch?v=rCO8bV21iIw"
         },
@@ -3587,7 +3697,7 @@
     {
       "day": 97,
       "date": "2026-04-01",
-      "title": "Day 97 — Shannon Structured Outputs & April Sprint Kickoff",
+      "title": "Day 97 \u2014 Shannon Structured Outputs & April Sprint Kickoff",
       "era": "Platform Architect",
       "type": [
         "Build"
@@ -3597,6 +3707,9 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -3611,7 +3724,7 @@
     {
       "day": 96,
       "date": "2026-03-31",
-      "title": "Day 96 — Shared Memory Store — Wired to All 22 Agents",
+      "title": "Day 96 \u2014 Shared Memory Store \u2014 Wired to All 22 Agents",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -3624,6 +3737,9 @@
         "Automation"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=UPtmKh1vMN8",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "CLAUDE CODE ADVANCED FULL COURSE (3 HOURS)",
@@ -3664,7 +3780,7 @@
     {
       "day": 95,
       "date": "2026-03-30",
-      "title": "Day 95 — Decepticon C2 Infrastructure & Sliver Server",
+      "title": "Day 95 \u2014 Decepticon C2 Infrastructure & Sliver Server",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -3678,6 +3794,9 @@
         "DevOps"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=kZQD_W_XNkA",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Fuller French - Waves Against The Shore (DexMo Version) (Visualizer Video)",
@@ -3720,7 +3839,7 @@
     {
       "day": 94,
       "date": "2026-03-29",
-      "title": "Day 94 — Weekend Event — MIGHTY Photo Booths Booking",
+      "title": "Day 94 \u2014 Weekend Event \u2014 MIGHTY Photo Booths Booking",
       "era": "Agent Builder",
       "type": [
         "Video"
@@ -3732,6 +3851,9 @@
         "Open Source"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=xT70z5bnQt4",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Vanilla - Say It Again",
@@ -3760,12 +3882,12 @@
         }
       ],
       "builds": [],
-      "takeaway": "Deep research day — 14 AI videos consumed. Filling the mental model before the next build sprint."
+      "takeaway": "Deep research day \u2014 14 AI videos consumed. Filling the mental model before the next build sprint."
     },
     {
       "day": 93,
       "date": "2026-03-28",
-      "title": "Day 93 — Vault Sync, Snappic Monitor & HexStrike Hardening",
+      "title": "Day 93 \u2014 Vault Sync, Snappic Monitor & HexStrike Hardening",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -3779,12 +3901,15 @@
         "Security"
       ],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
           "repo": "agents",
           "commits": [
-            "feat: Add vault-sync-v1.0 — Bitwarden-backed secret management",
+            "feat: Add vault-sync-v1.0 \u2014 Bitwarden-backed secret management",
             "feat: Security gitignore hardening, VSCO scanner, design brief pipeline, forms syst"
           ]
         },
@@ -3830,7 +3955,7 @@
     {
       "day": 92,
       "date": "2026-03-27",
-      "title": "Day 92 — VSCO Cloud Browser & Firecrawl Tooling",
+      "title": "Day 92 \u2014 VSCO Cloud Browser & Firecrawl Tooling",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -3846,6 +3971,9 @@
         "DevOps"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=grh7CMl960s",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Code vs Cowork Explained (which should you use?)",
@@ -3853,7 +3981,7 @@
           "url": "https://www.youtube.com/watch?v=grh7CMl960s"
         },
         {
-          "title": "💻 212K Devs Use Vercel React Best Practices — AI Coding Agent Skill #Shorts",
+          "title": "\ud83d\udcbb 212K Devs Use Vercel React Best Practices \u2014 AI Coding Agent Skill #Shorts",
           "channel": "Pulse",
           "url": "https://www.youtube.com/watch?v=PsoUguA_H30"
         },
@@ -3912,7 +4040,7 @@
     {
       "day": 91,
       "date": "2026-03-26",
-      "title": "Day 91 — Design Forge v1.0, Jimbo v4.0 & HexStrike Arsenal",
+      "title": "Day 91 \u2014 Design Forge v1.0, Jimbo v4.0 & HexStrike Arsenal",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -3929,6 +4057,9 @@
         "Security"
       ],
       "impact": "Critical",
+      "url": "https://www.youtube.com/watch?v=6lxC487hYdI",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Claude + Firecrawl Just Changed How We Browse the Internet Forever! (Tutorial)",
@@ -3941,7 +4072,7 @@
           "url": "https://www.youtube.com/watch?v=9d5bzxVsocw"
         },
         {
-          "title": "“Replacing Themselves With AI” - Claude UNLEASHES Game-Changing Automation Tech",
+          "title": "\u201cReplacing Themselves With AI\u201d - Claude UNLEASHES Game-Changing Automation Tech",
           "channel": "Valuetainment",
           "url": "https://www.youtube.com/watch?v=K4sRvAKj6UY"
         },
@@ -4000,7 +4131,7 @@
     {
       "day": 90,
       "date": "2026-03-25",
-      "title": "Day 90 — MIGHTY CRM Phase 2+3 — Contracts & Square",
+      "title": "Day 90 \u2014 MIGHTY CRM Phase 2+3 \u2014 Contracts & Square",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -4016,6 +4147,9 @@
         "Business"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=uSTGNHGFOAo",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "COLD EMAIL COPYWRITING & OUTREACH Full Course 2026",
@@ -4038,7 +4172,7 @@
           "url": "https://www.youtube.com/watch?v=MM320sAhFoY"
         },
         {
-          "title": "I Gave Claude Cowork Full Access to TradingView… The Mobile Backtests Were Insan",
+          "title": "I Gave Claude Cowork Full Access to TradingView\u2026 The Mobile Backtests Were Insan",
           "channel": "Trading with DaviddTech",
           "url": "https://www.youtube.com/watch?v=uOC9vLRipsg"
         }
@@ -4047,8 +4181,8 @@
         {
           "repo": "agents",
           "commits": [
-            "feat: Add MIGHTY CRM Phase 2+3 — denormalized props, contract PDF, Square client",
-            "test: Add 96 tests for MIGHTY CRM Phase 1 — 100% coverage on fina"
+            "feat: Add MIGHTY CRM Phase 2+3 \u2014 denormalized props, contract PDF, Square client",
+            "test: Add 96 tests for MIGHTY CRM Phase 1 \u2014 100% coverage on fina"
           ]
         },
         {
@@ -4071,7 +4205,7 @@
     {
       "day": 89,
       "date": "2026-03-24",
-      "title": "Day 89 — MIGHTY CRM v1.0 & HexStrike OSINT Engine",
+      "title": "Day 89 \u2014 MIGHTY CRM v1.0 & HexStrike OSINT Engine",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -4087,6 +4221,9 @@
         "Business"
       ],
       "impact": "Critical",
+      "url": "https://www.youtube.com/watch?v=CJrOMs4L-lc",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "ChatGPT vs MOSQUITO Trolley Problem #ai #ChatGPT",
@@ -4134,7 +4271,7 @@
         {
           "repo": "general-tools",
           "commits": [
-            "feat: Add model-generator-v1.0 — synthetic model photo pipeline"
+            "feat: Add model-generator-v1.0 \u2014 synthetic model photo pipeline"
           ]
         }
       ],
@@ -4143,7 +4280,7 @@
     {
       "day": 88,
       "date": "2026-03-23",
-      "title": "Day 88 — Video Scraping Agent & Notion De-Dupe",
+      "title": "Day 88 \u2014 Video Scraping Agent & Notion De-Dupe",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -4159,6 +4296,9 @@
         "DevOps"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=7D7IjS1rf1w",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "380 FREE Claude Code Skills You Need Right Now",
@@ -4206,13 +4346,13 @@
         {
           "repo": "notion",
           "commits": [
-            "chore: initial commit — Notion de-dupe agent"
+            "chore: initial commit \u2014 Notion de-dupe agent"
           ]
         },
         {
           "repo": "video-agent",
           "commits": [
-            "chore: initial commit — video scraping agent"
+            "chore: initial commit \u2014 video scraping agent"
           ]
         }
       ],
@@ -4221,7 +4361,7 @@
     {
       "day": 87,
       "date": "2026-03-22",
-      "title": "Day 87 — Saturday Research — Agent Security Patterns",
+      "title": "Day 87 \u2014 Saturday Research \u2014 Agent Security Patterns",
       "era": "Agent Builder",
       "type": [
         "Video"
@@ -4234,6 +4374,9 @@
         "No-Code"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=QHfUAaIVfGE",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "NEW Claude Browser Use AI Agent: Automate ANYTHING!",
@@ -4246,7 +4389,7 @@
           "url": "https://www.youtube.com/watch?v=geIKyDaXwGg"
         },
         {
-          "title": "Claude Code + Karparthy’s AutoResearch = WILD Use Cases",
+          "title": "Claude Code + Karparthy\u2019s AutoResearch = WILD Use Cases",
           "channel": "Jack Roberts",
           "url": "https://www.youtube.com/watch?v=vXylQqxsGX0"
         },
@@ -4262,12 +4405,12 @@
         }
       ],
       "builds": [],
-      "takeaway": "Deep research day — 8 AI videos consumed. Filling the mental model before the next build sprint."
+      "takeaway": "Deep research day \u2014 8 AI videos consumed. Filling the mental model before the next build sprint."
     },
     {
       "day": 86,
       "date": "2026-03-21",
-      "title": "Day 86 — Weekend Code Cleanup & Documentation Sprint",
+      "title": "Day 86 \u2014 Weekend Code Cleanup & Documentation Sprint",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -4279,9 +4422,12 @@
         "AI/ML"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=yMJcHcCbgi4",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "Google Antigravity + Claude Code 🚀 AI Coding Tips (Adding App Auth)",
+          "title": "Google Antigravity + Claude Code \ud83d\ude80 AI Coding Tips (Adding App Auth)",
           "channel": "Wanderloots",
           "url": "https://www.youtube.com/watch?v=yMJcHcCbgi4"
         },
@@ -4292,7 +4438,7 @@
         },
         {
           "title": "Claude Just Changed Content Creation Forever! (Tutorial)",
-          "channel": "Sabrina Ramonov 🍄",
+          "channel": "Sabrina Ramonov \ud83c\udf44",
           "url": "https://www.youtube.com/watch?v=M4cmrdoUKxI"
         },
         {
@@ -4321,7 +4467,7 @@
     {
       "day": 85,
       "date": "2026-03-20",
-      "title": "Day 85 — Decepticon CLI Rewrite & Workspace Isolation",
+      "title": "Day 85 \u2014 Decepticon CLI Rewrite & Workspace Isolation",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -4337,6 +4483,9 @@
         "Design"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=7CdeH1cYDkU",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "I Rebuilt My Notion Second Brain for the AI Era.",
@@ -4379,7 +4528,7 @@
     {
       "day": 84,
       "date": "2026-03-19",
-      "title": "Day 84 — COI Automation & W9/ACH Admin Tools",
+      "title": "Day 84 \u2014 COI Automation & W9/ACH Admin Tools",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -4395,6 +4544,9 @@
         "Design"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=cY2wdvrPOvg",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Anthropic's $100M Partner Network: Free to Join #Shorts #AI",
@@ -4402,7 +4554,7 @@
           "url": "https://www.youtube.com/watch?v=cY2wdvrPOvg"
         },
         {
-          "title": "AI Is Driving CEOs to Do This ⚠️",
+          "title": "AI Is Driving CEOs to Do This \u26a0\ufe0f",
           "channel": "Leveling Up with Eric Siu",
           "url": "https://www.youtube.com/watch?v=uUfmBUy4H6I"
         },
@@ -4426,8 +4578,8 @@
         {
           "repo": "agents",
           "commits": [
-            "feat: Add completion awareness — mark done, reopen, auto-detect",
-            "feat: COI option 2 — browser opens with pre-filled form, Andrew clicks submit",
+            "feat: Add completion awareness \u2014 mark done, reopen, auto-detect",
+            "feat: COI option 2 \u2014 browser opens with pre-filled form, Andrew clicks submit",
             "wip"
           ]
         },
@@ -4458,7 +4610,7 @@
     {
       "day": 83,
       "date": "2026-03-18",
-      "title": "Day 83 — Decepticon 2.0 — Multi-Agent Red Team Framework",
+      "title": "Day 83 \u2014 Decepticon 2.0 \u2014 Multi-Agent Red Team Framework",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -4474,6 +4626,9 @@
         "Design"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=ZfYvv-0l9NA",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Code + Nano Banana 2 + Kling =  $15K Animated Sites",
@@ -4513,7 +4668,7 @@
         {
           "repo": "decepticon",
           "commits": [
-            "Decepticon 2.0 — deepagents-based multi-agent red team framework"
+            "Decepticon 2.0 \u2014 deepagents-based multi-agent red team framework"
           ]
         },
         {
@@ -4536,7 +4691,7 @@
     {
       "day": 82,
       "date": "2026-03-17",
-      "title": "Day 82 — claude-mem Timeline Reports & GWS Gmail HTML",
+      "title": "Day 82 \u2014 claude-mem Timeline Reports & GWS Gmail HTML",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -4551,6 +4706,9 @@
         "Security"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=sI0ipDrrUz4",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Samsung Dex on the Z Fold 7 is POWERFUL! #galaxyzfold7 #samsungdex #zfold7",
@@ -4568,7 +4726,7 @@
           "url": "https://www.youtube.com/watch?v=fRIH8qqLYyQ"
         },
         {
-          "title": "Samsung DeX is a slept on feature 😴#samsungdex #dex #samsunggalaxy #samsungs25ul",
+          "title": "Samsung DeX is a slept on feature \ud83d\ude34#samsungdex #dex #samsunggalaxy #samsungs25ul",
           "channel": "Johnny",
           "url": "https://www.youtube.com/watch?v=lcHtSEGRFgg"
         },
@@ -4590,7 +4748,7 @@
         {
           "repo": "gws",
           "commits": [
-            "feat(gmail): Gmail helpers rollup — mail-builder, --attachment, +read (#526)",
+            "feat(gmail): Gmail helpers rollup \u2014 mail-builder, --attachment, +read (#526)",
             "chore: release versions (#522)",
             "fix: stderr/output hygiene rollup (#5"
           ]
@@ -4601,7 +4759,7 @@
     {
       "day": 81,
       "date": "2026-03-16",
-      "title": "Day 81 — claude-mem README Updates & Process Supervisor",
+      "title": "Day 81 \u2014 claude-mem README Updates & Process Supervisor",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -4617,6 +4775,9 @@
         "DevOps"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=9owy-NV5l6k",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "How to Use Claude Code Better Than 99% of People",
@@ -4659,7 +4820,7 @@
     {
       "day": 80,
       "date": "2026-03-15",
-      "title": "Day 80 — Weekend Event — MIGHTY Photo Booths Gig",
+      "title": "Day 80 \u2014 Weekend Event \u2014 MIGHTY Photo Booths Gig",
       "era": "Agent Builder",
       "type": [
         "Video"
@@ -4672,6 +4833,9 @@
         "No-Code"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=f95-O8C88uw",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "How to Use Claude Cowork Better Than 99% of People",
@@ -4689,7 +4853,7 @@
           "url": "https://www.youtube.com/watch?v=W9AOkjmt-XU"
         },
         {
-          "title": "Claude AI + Google Drive Integration 🔗 | Organize Smarter with AI",
+          "title": "Claude AI + Google Drive Integration \ud83d\udd17 | Organize Smarter with AI",
           "channel": "Learn AI Tools",
           "url": "https://www.youtube.com/watch?v=EgLDTHEN0Ss"
         },
@@ -4700,12 +4864,12 @@
         }
       ],
       "builds": [],
-      "takeaway": "Deep research day — 36 AI videos consumed. Filling the mental model before the next build sprint."
+      "takeaway": "Deep research day \u2014 36 AI videos consumed. Filling the mental model before the next build sprint."
     },
     {
       "day": 79,
       "date": "2026-03-14",
-      "title": "Day 79 — Iris Studio Gallery & Offline Events",
+      "title": "Day 79 \u2014 Iris Studio Gallery & Offline Events",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -4721,15 +4885,18 @@
         "Security"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=h6Y0jRhqwqc",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "‘Trump R*P*D Underage Girls?’: Rep Lieu Vs Bondi SHOUTING Match Over Trump’s Eps",
+          "title": "\u2018Trump R*P*D Underage Girls?\u2019: Rep Lieu Vs Bondi SHOUTING Match Over Trump\u2019s Eps",
           "channel": "Oneindia News",
           "url": "https://www.youtube.com/watch?v=h6Y0jRhqwqc"
         },
         {
           "title": "The AI Banned at 3pm Was Selecting Targets by Midnight",
-          "channel": "Vanessa Wingårdh",
+          "channel": "Vanessa Wing\u00e5rdh",
           "url": "https://www.youtube.com/watch?v=zoY_-aRmPoM"
         },
         {
@@ -4770,7 +4937,7 @@
     {
       "day": 78,
       "date": "2026-03-13",
-      "title": "Day 78 — Iris Studio — AI Iris Enhancement Pipeline",
+      "title": "Day 78 \u2014 Iris Studio \u2014 AI Iris Enhancement Pipeline",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -4785,14 +4952,17 @@
         "DevOps"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=z1Qtq-v_W6Y",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "How to Leave Big Tech | The Ultimate Beginner’s Guide (Browsers, Cloud, Social M",
+          "title": "How to Leave Big Tech | The Ultimate Beginner\u2019s Guide (Browsers, Cloud, Social M",
           "channel": "Laura Malvoyante",
           "url": "https://www.youtube.com/watch?v=z1Qtq-v_W6Y"
         },
         {
-          "title": "AI Expert Tells Bernie: “The Humans will be Discarded”",
+          "title": "AI Expert Tells Bernie: \u201cThe Humans will be Discarded\u201d",
           "channel": "Senator Bernie Sanders",
           "url": "https://www.youtube.com/watch?v=1oS35oWWl28"
         },
@@ -4807,7 +4977,7 @@
           "url": "https://www.youtube.com/watch?v=YF2GDL1DDeE"
         },
         {
-          "title": "This news reporter said all of this while being live.. 👁️🤯",
+          "title": "This news reporter said all of this while being live.. \ud83d\udc41\ufe0f\ud83e\udd2f",
           "channel": "Conciousmb",
           "url": "https://www.youtube.com/watch?v=yz8MF9x0XIo"
         }
@@ -4843,7 +5013,7 @@
     {
       "day": 77,
       "date": "2026-03-12",
-      "title": "Day 77 — Blog Agent v1.0 — SEO Writer with Leonardo",
+      "title": "Day 77 \u2014 Blog Agent v1.0 \u2014 SEO Writer with Leonardo",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -4858,10 +5028,13 @@
         "Frontend"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=zQdd0hy2Ups",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "Such a great experience Iris photography 👁️ #iris",
-          "channel": "yasir qunais ياسر القنيص",
+          "title": "Such a great experience Iris photography \ud83d\udc41\ufe0f #iris",
+          "channel": "yasir qunais \u064a\u0627\u0633\u0631 \u0627\u0644\u0642\u0646\u064a\u0635",
           "url": "https://www.youtube.com/watch?v=zQdd0hy2Ups"
         },
         {
@@ -4874,7 +5047,7 @@
         {
           "repo": "agents",
           "commits": [
-            "feat: Add blog-agent-v1.0 — SEO article writer with Notion + Leonardo integration"
+            "feat: Add blog-agent-v1.0 \u2014 SEO article writer with Notion + Leonardo integration"
           ]
         },
         {
@@ -4898,7 +5071,7 @@
     {
       "day": 76,
       "date": "2026-03-11",
-      "title": "Day 76 — AI Video Marathon — Research & Learning Day",
+      "title": "Day 76 \u2014 AI Video Marathon \u2014 Research & Learning Day",
       "era": "Agent Builder",
       "type": [
         "Video"
@@ -4910,6 +5083,9 @@
         "No-Code"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=E5B0cS6XRkg",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Dylan Patel: AI in War, Jobs are Cooked, Chinese Hacking, Microsoft Cope, and Su",
@@ -4922,7 +5098,7 @@
           "url": "https://www.youtube.com/watch?v=I7EMaPWkc9Q"
         },
         {
-          "title": "Mike Tyson Just Ended the Aikido Debate in 10 Seconds 😂",
+          "title": "Mike Tyson Just Ended the Aikido Debate in 10 Seconds \ud83d\ude02",
           "channel": "Punchify",
           "url": "https://www.youtube.com/watch?v=V1-73dweqTI"
         },
@@ -4938,12 +5114,12 @@
         }
       ],
       "builds": [],
-      "takeaway": "Deep research day — 33 AI videos consumed. Filling the mental model before the next build sprint."
+      "takeaway": "Deep research day \u2014 33 AI videos consumed. Filling the mental model before the next build sprint."
     },
     {
       "day": 75,
       "date": "2026-03-10",
-      "title": "Day 75 — GWS Recipient Management & CI Optimization",
+      "title": "Day 75 \u2014 GWS Recipient Management & CI Optimization",
       "era": "Agent Builder",
       "type": [
         "Build"
@@ -4956,6 +5132,9 @@
         "DevOps"
       ],
       "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -4972,7 +5151,7 @@
     {
       "day": 74,
       "date": "2026-03-09",
-      "title": "Day 74 — GWS Gmail Reply/Forward Helpers & RFC 2047",
+      "title": "Day 74 \u2014 GWS Gmail Reply/Forward Helpers & RFC 2047",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -4988,6 +5167,9 @@
         "No-Code"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=u4r2wJst-uE",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Biggest Notion UI Update Ever? Dashboards Are Here!",
@@ -5040,7 +5222,7 @@
     {
       "day": 73,
       "date": "2026-03-08",
-      "title": "Day 73 — GWS Auth Fixes & Credential Store Hardening",
+      "title": "Day 73 \u2014 GWS Auth Fixes & Credential Store Hardening",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -5054,9 +5236,12 @@
         "DevOps"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=kEO4V-ii7ak",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "“Bitcoin Is Going To DIE” - Terrence Howard SOUNDS THE ALARM On Crypto's Collaps",
+          "title": "\u201cBitcoin Is Going To DIE\u201d - Terrence Howard SOUNDS THE ALARM On Crypto's Collaps",
           "channel": "Valuetainment",
           "url": "https://www.youtube.com/watch?v=kEO4V-ii7ak"
         },
@@ -5077,7 +5262,7 @@
         },
         {
           "title": "Fragments",
-          "channel": "AERØHEAD",
+          "channel": "AER\u00d8HEAD",
           "url": "https://www.youtube.com/watch?v=ixyBazRzql4"
         }
       ],
@@ -5102,7 +5287,7 @@
     {
       "day": 72,
       "date": "2026-03-07",
-      "title": "Day 72 — Code Review Day — Security PRs & Docs",
+      "title": "Day 72 \u2014 Code Review Day \u2014 Security PRs & Docs",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -5116,9 +5301,12 @@
         "Security"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=759_m5RHMEM",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "LIVE: Haifa Explodes On Cam As Iran Hammers Israel | IRGC Launches ‘Wave 17’ | I",
+          "title": "LIVE: Haifa Explodes On Cam As Iran Hammers Israel | IRGC Launches \u2018Wave 17\u2019 | I",
           "channel": "Times Now",
           "url": "https://www.youtube.com/watch?v=759_m5RHMEM"
         },
@@ -5128,7 +5316,7 @@
           "url": "https://www.youtube.com/watch?v=qK84eU7pYeQ"
         },
         {
-          "title": "“China Has 21 Days” - Strait Of Hormuz Crisis THREATENS China’s Oil Lifeline",
+          "title": "\u201cChina Has 21 Days\u201d - Strait Of Hormuz Crisis THREATENS China\u2019s Oil Lifeline",
           "channel": "Valuetainment",
           "url": "https://www.youtube.com/watch?v=Xomy9NqBICQ"
         },
@@ -5138,7 +5326,7 @@
           "url": "https://www.youtube.com/watch?v=d-SagPpEz80"
         },
         {
-          "title": "“21st Century Warfare” - U.S. BLASTS Iran Drones With LASER WEAPONS In Futuristi",
+          "title": "\u201c21st Century Warfare\u201d - U.S. BLASTS Iran Drones With LASER WEAPONS In Futuristi",
           "channel": "Valuetainment",
           "url": "https://www.youtube.com/watch?v=wgvHTC-ipfs"
         }
@@ -5157,7 +5345,7 @@
     {
       "day": 71,
       "date": "2026-03-06",
-      "title": "Day 71 — Shannon Security Tightening & Docker Isolation",
+      "title": "Day 71 \u2014 Shannon Security Tightening & Docker Isolation",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -5172,6 +5360,9 @@
         "DevOps"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=u5dBb96ogHg",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Why America Will Lose the War | Prof Jiang Explains",
@@ -5222,7 +5413,7 @@
     {
       "day": 70,
       "date": "2026-03-05",
-      "title": "Day 70 — Jimbo v3.0 Autonomy Engine & Voice Channels",
+      "title": "Day 70 \u2014 Jimbo v3.0 Autonomy Engine & Voice Channels",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -5238,9 +5429,12 @@
         "Business"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=lO961HRQn5Q",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "they stole Claude’s brain 16 million times",
+          "title": "they stole Claude\u2019s brain 16 million times",
           "channel": "NetworkChuck",
           "url": "https://www.youtube.com/watch?v=lO961HRQn5Q"
         },
@@ -5294,7 +5488,7 @@
     {
       "day": 69,
       "date": "2026-03-04",
-      "title": "Day 69 — Jimbo v3.0 Launch — 34 Tools, VPS Deploy",
+      "title": "Day 69 \u2014 Jimbo v3.0 Launch \u2014 34 Tools, VPS Deploy",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -5310,9 +5504,12 @@
         "Business"
       ],
       "impact": "Critical",
+      "url": "https://www.youtube.com/watch?v=Xj1Ld0BEBFY",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "Iran Doesn't Need to Win the War — They Just Need to Crash the AI Bubble",
+          "title": "Iran Doesn't Need to Win the War \u2014 They Just Need to Crash the AI Bubble",
           "channel": "Tom Bilyeu",
           "url": "https://www.youtube.com/watch?v=Xj1Ld0BEBFY"
         },
@@ -5342,7 +5539,7 @@
           "repo": "agents",
           "commits": [
             "feat: Add Jimbo v3.0 with 34 tools, VPS deployment, and model routing",
-            "feat: Add gdocs-library-v1.0 — Drive to Notion sync tool"
+            "feat: Add gdocs-library-v1.0 \u2014 Drive to Notion sync tool"
           ]
         },
         {
@@ -5367,7 +5564,7 @@
     {
       "day": 68,
       "date": "2026-03-03",
-      "title": "Day 68 — Subscription Tracker & GWS CLI Contributions",
+      "title": "Day 68 \u2014 Subscription Tracker & GWS CLI Contributions",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -5383,6 +5580,9 @@
         "DevOps"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=usTeU4Uh0iM",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Code + NotebookLM = CHEAT CODE",
@@ -5434,7 +5634,7 @@
     {
       "day": 67,
       "date": "2026-03-02",
-      "title": "Day 67 — GWS CLI — First Rust Open Source Contribution",
+      "title": "Day 67 \u2014 GWS CLI \u2014 First Rust Open Source Contribution",
       "era": "Agent Builder",
       "type": [
         "Build",
@@ -5448,6 +5648,9 @@
         "Open Source"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=Qvl9TTxW1j8",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Iran War: The US Is Secretly Bailing Out The Stock Market (Again)",
@@ -5490,7 +5693,7 @@
     {
       "day": 66,
       "date": "2026-03-01",
-      "title": "Day 66 — Weekend Research — Agent Frameworks & Patterns",
+      "title": "Day 66 \u2014 Weekend Research \u2014 Agent Frameworks & Patterns",
       "era": "Agent Builder",
       "type": [
         "Video"
@@ -5503,6 +5706,9 @@
         "DevOps"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=qbv-FV1WM_Q",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Build this AI-Powered Social Dashboard (Loveable)",
@@ -5510,7 +5716,7 @@
           "url": "https://www.youtube.com/watch?v=qbv-FV1WM_Q"
         },
         {
-          "title": "(🔨Co-Build) Automate Your Proposals with AI - 3rd February",
+          "title": "(\ud83d\udd28Co-Build) Automate Your Proposals with AI - 3rd February",
           "channel": "AI Automations by Jack",
           "url": "https://www.youtube.com/watch?v=-1jivQkOr_s"
         },
@@ -5531,12 +5737,12 @@
         }
       ],
       "builds": [],
-      "takeaway": "Deep research day — 13 AI videos consumed. Filling the mental model before the next build sprint."
+      "takeaway": "Deep research day \u2014 13 AI videos consumed. Filling the mental model before the next build sprint."
     },
     {
       "day": 65,
       "date": "2026-02-28",
-      "title": "Day 65 — Brand Analysis Pipeline & Google Tasks",
+      "title": "Day 65 \u2014 Brand Analysis Pipeline & Google Tasks",
       "era": "First Code",
       "type": [
         "Build"
@@ -5548,6 +5754,9 @@
         "No-Code"
       ],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -5563,7 +5772,7 @@
     {
       "day": 64,
       "date": "2026-02-27",
-      "title": "Day 64 — Action Toasts & One-Click UX Patterns",
+      "title": "Day 64 \u2014 Action Toasts & One-Click UX Patterns",
       "era": "First Code",
       "type": [
         "Build",
@@ -5576,6 +5785,9 @@
         "Design"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=qJsgQXpyM8M",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "How to Build a $10,000 App Design in Minutes (FREE)",
@@ -5598,7 +5810,7 @@
           "url": "https://www.youtube.com/watch?v=jCm08xE0HYY"
         },
         {
-          "title": "Here’s how to use Claude to create interactive web apps",
+          "title": "Here\u2019s how to use Claude to create interactive web apps",
           "channel": "Adam Stewart Marketing",
           "url": "https://www.youtube.com/watch?v=z0NPIbFth8A"
         }
@@ -5618,7 +5830,7 @@
     {
       "day": 63,
       "date": "2026-02-26",
-      "title": "Day 63 — Wedding Client Handling — CRM Split Logic",
+      "title": "Day 63 \u2014 Wedding Client Handling \u2014 CRM Split Logic",
       "era": "First Code",
       "type": [
         "Build",
@@ -5631,6 +5843,9 @@
         "DevOps"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=1XF6Qe83OHo",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Pacific Rim - Trailer",
@@ -5671,7 +5886,7 @@
     {
       "day": 62,
       "date": "2026-02-25",
-      "title": "Day 62 — Calendar Watcher & Print Events",
+      "title": "Day 62 \u2014 Calendar Watcher & Print Events",
       "era": "First Code",
       "type": [
         "Build",
@@ -5684,6 +5899,9 @@
         "Agents"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=64Yo1Rz2b40",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Snow Particles Floating in the Air | 4K Relaxing Screensaver",
@@ -5713,7 +5931,7 @@
     {
       "day": 61,
       "date": "2026-02-24",
-      "title": "Day 61 — Pipeline Config & Retry Settings",
+      "title": "Day 61 \u2014 Pipeline Config & Retry Settings",
       "era": "First Code",
       "type": [
         "Build",
@@ -5728,9 +5946,12 @@
         "No-Code"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=LGQVUc777GU",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "NEW Claude Code Update is INSANE! 🤯",
+          "title": "NEW Claude Code Update is INSANE! \ud83e\udd2f",
           "channel": "Julian Goldie SEO",
           "url": "https://www.youtube.com/watch?v=LGQVUc777GU"
         },
@@ -5768,7 +5989,7 @@
     {
       "day": 60,
       "date": "2026-02-23",
-      "title": "Day 60 — BoothBook Tools & Environment Setup",
+      "title": "Day 60 \u2014 BoothBook Tools & Environment Setup",
       "era": "First Code",
       "type": [
         "Build",
@@ -5784,6 +6005,9 @@
         "Business"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=UR09nuSxGio",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "How I vibecode Beautiful $10,000 AI Websites (AntiGravity)",
@@ -5851,7 +6075,7 @@
     {
       "day": 59,
       "date": "2026-02-22",
-      "title": "Day 59 — Weekend Build — Agent Architecture Whiteboard",
+      "title": "Day 59 \u2014 Weekend Build \u2014 Agent Architecture Whiteboard",
       "era": "First Code",
       "type": [
         "Video"
@@ -5862,6 +6086,9 @@
         "Agents"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=EZdSVpgtjG0",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "5 INSANE Claude Cowork use cases (Build Anything)",
@@ -5880,7 +6107,7 @@
     {
       "day": 58,
       "date": "2026-02-21",
-      "title": "Day 58 — Router Environment Passthrough & SDK Refactor",
+      "title": "Day 58 \u2014 Router Environment Passthrough & SDK Refactor",
       "era": "First Code",
       "type": [
         "Build",
@@ -5893,6 +6120,9 @@
         "DevOps"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=dmjAfC0dgRg",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "It's Official: The Government Is Bailing Out The Stock Market (Again)",
@@ -5915,7 +6145,7 @@
           "url": "https://www.youtube.com/watch?v=rGACP7D1EUM"
         },
         {
-          "title": "Don't Just Stare at the Icing: You’re Missing 80% of the AI Opportunity.",
+          "title": "Don't Just Stare at the Icing: You\u2019re Missing 80% of the AI Opportunity.",
           "channel": "InvestKaki",
           "url": "https://www.youtube.com/watch?v=p22tk6ni3a4"
         }
@@ -5934,7 +6164,7 @@
     {
       "day": 57,
       "date": "2026-02-20",
-      "title": "Day 57 — Woody (Jimbo v1.0) — First Agent Born",
+      "title": "Day 57 \u2014 Woody (Jimbo v1.0) \u2014 First Agent Born",
       "era": "First Code",
       "type": [
         "Build",
@@ -5949,6 +6179,9 @@
         "Business"
       ],
       "impact": "Critical",
+      "url": "https://www.youtube.com/watch?v=r5iRGvRbHpk",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Wispr Flow Review - 2026 | Speak to Any App: AI Voice Commands + Auto-Editing Ma",
@@ -5961,7 +6194,7 @@
           "url": "https://www.youtube.com/watch?v=sokdBNdjygg"
         },
         {
-          "title": "Why the Biggest AI Career Opportunity Just Appeared—and Almost Nobody Sees It.",
+          "title": "Why the Biggest AI Career Opportunity Just Appeared\u2014and Almost Nobody Sees It.",
           "channel": "AI News & Strategy Daily | Nate B Jones",
           "url": "https://www.youtube.com/watch?v=6r0UeMQE66I"
         },
@@ -5998,7 +6231,7 @@
     {
       "day": 56,
       "date": "2026-02-19",
-      "title": "Day 56 — Preflight Validation & Error Reporting",
+      "title": "Day 56 \u2014 Preflight Validation & Error Reporting",
       "era": "First Code",
       "type": [
         "Build",
@@ -6013,6 +6246,9 @@
         "No-Code"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=RS9uOBSp_iU",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "EXPLAINED: Trump Just Crashed Gold, Silver, & Bitcoin",
@@ -6025,7 +6261,7 @@
           "url": "https://www.youtube.com/watch?v=SK0SIERxlWw"
         },
         {
-          "title": "The Middle Class Will Never Build Wealth — Here’s How To Escape",
+          "title": "The Middle Class Will Never Build Wealth \u2014 Here\u2019s How To Escape",
           "channel": "Minority Mindset",
           "url": "https://www.youtube.com/watch?v=WIEZ9JtddB4"
         },
@@ -6057,7 +6293,7 @@
     {
       "day": 55,
       "date": "2026-02-18",
-      "title": "Day 55 — Chroma MCP Connection & Worker Daemon Safety",
+      "title": "Day 55 \u2014 Chroma MCP Connection & Worker Daemon Safety",
       "era": "First Code",
       "type": [
         "Build",
@@ -6072,6 +6308,9 @@
         "No-Code"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=og6idpOqo9w",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Manus Agents VS OpenClaw: Who Wins?",
@@ -6120,7 +6359,7 @@
     {
       "day": 54,
       "date": "2026-02-17",
-      "title": "Day 54 — Self-Healing Message Queue & Vector Backfill",
+      "title": "Day 54 \u2014 Self-Healing Message Queue & Vector Backfill",
       "era": "First Code",
       "type": [
         "Build",
@@ -6134,6 +6373,9 @@
         "No-Code"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=pThKduJx96g",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "16 New Notion Updates In 17 Minutes (Quickly Explained)",
@@ -6164,7 +6406,7 @@
     {
       "day": 53,
       "date": "2026-02-16",
-      "title": "Day 53 — Interactive CLI Installer & WASM Embeddings",
+      "title": "Day 53 \u2014 Interactive CLI Installer & WASM Embeddings",
       "era": "First Code",
       "type": [
         "Build",
@@ -6180,6 +6422,9 @@
         "Business"
       ],
       "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -6203,7 +6448,7 @@
     {
       "day": 52,
       "date": "2026-02-15",
-      "title": "Day 52 — Event Day — MIGHTY Photo Booths on Location",
+      "title": "Day 52 \u2014 Event Day \u2014 MIGHTY Photo Booths on Location",
       "era": "First Code",
       "type": [
         "Build",
@@ -6217,6 +6462,9 @@
         "Design"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=75WeAadX_-o",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Torque turn with strong tail control",
@@ -6224,7 +6472,7 @@
           "url": "https://www.youtube.com/watch?v=75WeAadX_-o"
         },
         {
-          "title": "Creating the most CLASSY color✨ 👑 (Gold + Silver + Bronze) #satisfying #paintmix",
+          "title": "Creating the most CLASSY color\u2728 \ud83d\udc51 (Gold + Silver + Bronze) #satisfying #paintmix",
           "channel": "Safe Space Studios",
           "url": "https://www.youtube.com/watch?v=CPHYpMD224w"
         },
@@ -6259,7 +6507,7 @@
     {
       "day": 51,
       "date": "2026-02-14",
-      "title": "Day 51 — Valentine's Day — Checkpoint Recovery System",
+      "title": "Day 51 \u2014 Valentine's Day \u2014 Checkpoint Recovery System",
       "era": "First Code",
       "type": [
         "Build",
@@ -6274,6 +6522,9 @@
         "Business"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=5rNu19PfgFg",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "how to transition from ai automation to agentic workflows",
@@ -6281,7 +6532,7 @@
           "url": "https://www.youtube.com/watch?v=5rNu19PfgFg"
         },
         {
-          "title": "Claude Just Took Over Figma AI Designs for You in Seconds! 🎨🤖",
+          "title": "Claude Just Took Over Figma AI Designs for You in Seconds! \ud83c\udfa8\ud83e\udd16",
           "channel": "Ali | AI & Tech",
           "url": "https://www.youtube.com/watch?v=sryx7tIlYzU"
         },
@@ -6291,12 +6542,12 @@
           "url": "https://www.youtube.com/watch?v=e4Vy-IAqrq4"
         },
         {
-          "title": "Notion Planning Routine💻✨ template from theflourishplanner.com🧚‍♀️",
+          "title": "Notion Planning Routine\ud83d\udcbb\u2728 template from theflourishplanner.com\ud83e\uddda\u200d\u2640\ufe0f",
           "channel": "Flourish Planner",
           "url": "https://www.youtube.com/watch?v=ySy_6JqzoYQ"
         },
         {
-          "title": "Notion Custom Agents: NEW AI — Worth It or Worrying?",
+          "title": "Notion Custom Agents: NEW AI \u2014 Worth It or Worrying?",
           "channel": "Better Creating",
           "url": "https://www.youtube.com/watch?v=27R0BNNVI6c"
         }
@@ -6324,7 +6575,7 @@
     {
       "day": 50,
       "date": "2026-02-13",
-      "title": "Day 50 — Named Workspaces & Workflow Resume",
+      "title": "Day 50 \u2014 Named Workspaces & Workflow Resume",
       "era": "First Code",
       "type": [
         "Build",
@@ -6339,6 +6590,9 @@
         "DevOps"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=KNDJzPoXZhg",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Why Everyone's Buying a Mac Mini for Clawdbot (Watch This First Before Buying &",
@@ -6361,7 +6615,7 @@
           "url": "https://www.youtube.com/watch?v=7IcQ0w80UvQ"
         },
         {
-          "title": "Don’t buy a Mac Mini for ClawdBot. You don’t need it. Get a VPS or use an unused",
+          "title": "Don\u2019t buy a Mac Mini for ClawdBot. You don\u2019t need it. Get a VPS or use an unused",
           "channel": "Kyle Balmer | AI with Kyle",
           "url": "https://www.youtube.com/watch?v=X-Ew43uaktc"
         }
@@ -6389,7 +6643,7 @@
     {
       "day": 49,
       "date": "2026-02-12",
-      "title": "Day 49 — Deliverable Management & Audit Trail System",
+      "title": "Day 49 \u2014 Deliverable Management & Audit Trail System",
       "era": "First Code",
       "type": [
         "Build",
@@ -6402,6 +6656,9 @@
         "AI/ML"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=FDsO6lGs6OI",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "The story behind scrub daddy",
@@ -6409,7 +6666,7 @@
           "url": "https://www.youtube.com/watch?v=FDsO6lGs6OI"
         },
         {
-          "title": "Samsung Actually Cooked This Time — Apple Should Be Worried",
+          "title": "Samsung Actually Cooked This Time \u2014 Apple Should Be Worried",
           "channel": "Tech Chat",
           "url": "https://www.youtube.com/watch?v=3f8KRkWH3e0"
         }
@@ -6435,7 +6692,7 @@
     {
       "day": 48,
       "date": "2026-02-11",
-      "title": "Day 48 — Large Report Handling & Chunked Writing",
+      "title": "Day 48 \u2014 Large Report Handling & Chunked Writing",
       "era": "First Code",
       "type": [
         "Build",
@@ -6450,6 +6707,9 @@
         "Security"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=JKk77rzOL34",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Opus 4.6: The Biggest AI Jump I've Covered--It's Not Close. (Here's What",
@@ -6499,7 +6759,7 @@
     {
       "day": 47,
       "date": "2026-02-10",
-      "title": "Day 47 — Issue Templates & GitHub Project Management",
+      "title": "Day 47 \u2014 Issue Templates & GitHub Project Management",
       "era": "First Code",
       "type": [
         "Build",
@@ -6512,6 +6772,9 @@
         "Agents"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=CtfdGH6LmMQ",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "How to use Gemini API on Vertex AI (via ADC & Service Accounts)",
@@ -6534,7 +6797,7 @@
           "url": "https://www.youtube.com/watch?v=d5kmbg2Cz9w"
         },
         {
-          "title": "It Ain’t the Same Without You (Nu-Disco / Soulful Deep House) - Monika XYZ",
+          "title": "It Ain\u2019t the Same Without You (Nu-Disco / Soulful Deep House) - Monika XYZ",
           "channel": "Monika XYZ",
           "url": "https://www.youtube.com/watch?v=_U5OvL8xFi0"
         }
@@ -6561,7 +6824,7 @@
     {
       "day": 46,
       "date": "2026-02-09",
-      "title": "Day 46 — Heartbeat Timeouts & Sub-Agent Execution",
+      "title": "Day 46 \u2014 Heartbeat Timeouts & Sub-Agent Execution",
       "era": "First Code",
       "type": [
         "Build",
@@ -6576,6 +6839,9 @@
         "DevOps"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=C0sKvgu113U",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "NEW Claude Cowork Plugins Changed EVERYTHING!",
@@ -6609,7 +6875,7 @@
     {
       "day": 45,
       "date": "2026-02-08",
-      "title": "Day 45 — Graceful Failures & Error Recovery Patterns",
+      "title": "Day 45 \u2014 Graceful Failures & Error Recovery Patterns",
       "era": "First Code",
       "type": [
         "Video"
@@ -6619,6 +6885,9 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=haBy-Rhkl4g",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "AntiGravity + Stitch builds Insane Websites (NEW Skill)",
@@ -6637,7 +6906,7 @@
     {
       "day": 44,
       "date": "2026-02-07",
-      "title": "Day 44 — Shannon Branding & Screenshot Workflow",
+      "title": "Day 44 \u2014 Shannon Branding & Screenshot Workflow",
       "era": "First Code",
       "type": [
         "Build",
@@ -6652,9 +6921,12 @@
         "DevOps"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=SS4R5U6BiW0",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "Create AI Powered Pitch Presentations with Claude, Figma & Canva 🚀",
+          "title": "Create AI Powered Pitch Presentations with Claude, Figma & Canva \ud83d\ude80",
           "channel": "Frederike Falke",
           "url": "https://www.youtube.com/watch?v=SS4R5U6BiW0"
         }
@@ -6664,7 +6936,7 @@
           "repo": "claude-mem",
           "commits": [
             "MAESTRO: Add Docker E2E test against real OpenClaw gateway",
-            "MAESTRO: Fix OpenClaw SDK API mismatch — use real PluginApi interface",
+            "MAESTRO: Fix OpenClaw SDK API mismatch \u2014 use real PluginApi interface",
             "MAESTRO: Add com"
           ]
         },
@@ -6681,7 +6953,7 @@
     {
       "day": 43,
       "date": "2026-02-06",
-      "title": "Day 43 — Email Investigation — Self-Healing Pipelines",
+      "title": "Day 43 \u2014 Email Investigation \u2014 Self-Healing Pipelines",
       "era": "First Code",
       "type": [
         "Build",
@@ -6696,6 +6968,9 @@
         "Open Source"
       ],
       "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -6712,7 +6987,7 @@
     {
       "day": 42,
       "date": "2026-02-05",
-      "title": "Day 42 — AI Video Research Day — Automation Workflows",
+      "title": "Day 42 \u2014 AI Video Research Day \u2014 Automation Workflows",
       "era": "First Code",
       "type": [
         "Build",
@@ -6727,9 +7002,12 @@
         "Open Source"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=hNMlUu-SFq8",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "NEW Claude AI Plugins Update Changed The World 🤯",
+          "title": "NEW Claude AI Plugins Update Changed The World \ud83e\udd2f",
           "channel": "Julian Goldie SEO",
           "url": "https://www.youtube.com/watch?v=hNMlUu-SFq8"
         },
@@ -6739,7 +7017,7 @@
           "url": "https://www.youtube.com/watch?v=-f2403Tr6M4"
         },
         {
-          "title": "I Made My Offline Raspberry Pi AI Chatbot WAY Faster — No Extra Hardware",
+          "title": "I Made My Offline Raspberry Pi AI Chatbot WAY Faster \u2014 No Extra Hardware",
           "channel": "Jdaie Lin",
           "url": "https://www.youtube.com/watch?v=xGzvFzdBAwc"
         },
@@ -6769,7 +7047,7 @@
     {
       "day": 41,
       "date": "2026-02-04",
-      "title": "Day 41 — XML Parsing & Stream Processing",
+      "title": "Day 41 \u2014 XML Parsing & Stream Processing",
       "era": "First Code",
       "type": [
         "Build",
@@ -6784,6 +7062,9 @@
         "Security"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=BOclVsYwbaw",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Sonnet 5 is INSANE!",
@@ -6796,12 +7077,12 @@
           "url": "https://www.youtube.com/watch?v=1Jqaj1KN5vA"
         },
         {
-          "title": "Xeneon Edge Review: Corsair’s Cleverest Gadget Yet",
+          "title": "Xeneon Edge Review: Corsair\u2019s Cleverest Gadget Yet",
           "channel": "KitGuruTech",
           "url": "https://www.youtube.com/watch?v=N-leBERjtkU"
         },
         {
-          "title": "Game changer setup upgrade 🔥 CORSAIR XENEON EDGE",
+          "title": "Game changer setup upgrade \ud83d\udd25 CORSAIR XENEON EDGE",
           "channel": "driggsy",
           "url": "https://www.youtube.com/watch?v=vT6LmKcNhqc"
         }
@@ -6821,7 +7102,7 @@
     {
       "day": 40,
       "date": "2026-02-03",
-      "title": "Day 40 — Database Init Sequencing & Process Safety",
+      "title": "Day 40 \u2014 Database Init Sequencing & Process Safety",
       "era": "First Code",
       "type": [
         "Build",
@@ -6832,6 +7113,9 @@
         "DevOps"
       ],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -6847,7 +7131,7 @@
     {
       "day": 39,
       "date": "2026-02-02",
-      "title": "Day 39 — Health Checks & Readiness Probes",
+      "title": "Day 39 \u2014 Health Checks & Readiness Probes",
       "era": "First Code",
       "type": [
         "Build",
@@ -6859,6 +7143,9 @@
         "Automation"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=oC0mPBSmzfQ",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "How to Automate Your Work with Claude Code (Beginner Breakdown)",
@@ -6900,7 +7187,7 @@
     {
       "day": 38,
       "date": "2026-02-01",
-      "title": "Day 38 — Plugin Architecture — First Production Code",
+      "title": "Day 38 \u2014 Plugin Architecture \u2014 First Production Code",
       "era": "First Code",
       "type": [
         "Build",
@@ -6913,6 +7200,9 @@
         "DevOps"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=NTa6Xbzfq1U",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Super Mario Bros. Theme Song",
@@ -6953,7 +7243,7 @@
     {
       "day": 37,
       "date": "2026-01-31",
-      "title": "Day 37 — Multi-Tenancy Architecture for AI Agents",
+      "title": "Day 37 \u2014 Multi-Tenancy Architecture for AI Agents",
       "era": "No-Code Era",
       "type": [
         "Build"
@@ -6963,6 +7253,9 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -6977,7 +7270,7 @@
     {
       "day": 36,
       "date": "2026-01-30",
-      "title": "Day 36 — Chroma Vector DB & Embedding Strategies",
+      "title": "Day 36 \u2014 Chroma Vector DB & Embedding Strategies",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -6989,6 +7282,9 @@
         "Agents"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=lKKGUUAfTp8",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "AI Photo Booth Experiences",
@@ -6996,7 +7292,7 @@
           "url": "https://www.youtube.com/watch?v=lKKGUUAfTp8"
         },
         {
-          "title": "Launching 100 AI AGENTS to GO VIRAL ON X with Kimi K2.5 📈",
+          "title": "Launching 100 AI AGENTS to GO VIRAL ON X with Kimi K2.5 \ud83d\udcc8",
           "channel": "SinaGPT",
           "url": "https://www.youtube.com/watch?v=qy-kvo_hps0"
         },
@@ -7029,7 +7325,7 @@
     {
       "day": 35,
       "date": "2026-01-29",
-      "title": "Day 35 — Credential Encryption & Token Storage",
+      "title": "Day 35 \u2014 Credential Encryption & Token Storage",
       "era": "No-Code Era",
       "type": [
         "Video"
@@ -7042,6 +7338,9 @@
         "No-Code"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=64Yo1Rz2b40",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Snow Particles Floating in the Air | 4K Relaxing Screensaver",
@@ -7070,7 +7369,7 @@
     {
       "day": 34,
       "date": "2026-01-28",
-      "title": "Day 34 — Resume Workspaces & Session Persistence",
+      "title": "Day 34 \u2014 Resume Workspaces & Session Persistence",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7083,6 +7382,9 @@
         "Automation"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=ylDDWYDMO-4",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Essential Mac Apps for 2026: Upgrade Your Workflow! #shorts",
@@ -7110,7 +7412,7 @@
     {
       "day": 33,
       "date": "2026-01-27",
-      "title": "Day 33 — ADHD Brain — Hip-Hop Focus Beats & AI Study",
+      "title": "Day 33 \u2014 ADHD Brain \u2014 Hip-Hop Focus Beats & AI Study",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7123,6 +7425,9 @@
         "Agents"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=_IK18goX4X8",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Ship working code while you sleep with the Ralph Wiggum technique",
@@ -7172,7 +7477,7 @@
     {
       "day": 32,
       "date": "2026-01-26",
-      "title": "Day 32 — Watching: MiniMax & AI SEO Experiments",
+      "title": "Day 32 \u2014 Watching: MiniMax & AI SEO Experiments",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7184,9 +7489,12 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=Qkqe-uRhQJE",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "OpenClaw is the most powerful AI tool I’ve ever used in my life. Here’s how to s",
+          "title": "OpenClaw is the most powerful AI tool I\u2019ve ever used in my life. Here\u2019s how to s",
           "channel": "Alex Finn",
           "url": "https://www.youtube.com/watch?v=Qkqe-uRhQJE"
         },
@@ -7216,7 +7524,7 @@
     {
       "day": 31,
       "date": "2026-01-25",
-      "title": "Day 31 — LLM Cost Optimization & Model Selection",
+      "title": "Day 31 \u2014 LLM Cost Optimization & Model Selection",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7228,6 +7536,9 @@
         "AI/ML"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=l-EdCNjumvI",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Limp Bizkit - Faith",
@@ -7250,7 +7561,7 @@
     {
       "day": 30,
       "date": "2026-01-24",
-      "title": "Day 30 — Event Prep & MIGHTY Photo Booth Maintenance",
+      "title": "Day 30 \u2014 Event Prep & MIGHTY Photo Booth Maintenance",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7261,9 +7572,12 @@
         "AI/ML"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=p0sKineJmzI",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "\"...and then the Deer just took my car\"😭 #gtaonline #gta5 #gta5online #gtaviral",
+          "title": "\"...and then the Deer just took my car\"\ud83d\ude2d #gtaonline #gta5 #gta5online\u00a0#gtaviral",
           "channel": "Gtacouzi",
           "url": "https://www.youtube.com/watch?v=p0sKineJmzI"
         },
@@ -7273,7 +7587,7 @@
           "url": "https://www.youtube.com/watch?v=8dfemKSoLcM"
         },
         {
-          "title": "IG he didn't like his new car😂 #gtaonline #gta5 #gta5online #gtaviral #fail",
+          "title": "IG he didn't like his new car\ud83d\ude02 #gtaonline #gta5 #gta5online\u00a0#gtaviral #fail",
           "channel": "Gtacouzi",
           "url": "https://www.youtube.com/watch?v=xF90h_hdlIo"
         },
@@ -7301,7 +7615,7 @@
     {
       "day": 29,
       "date": "2026-01-23",
-      "title": "Day 29 — MAESTRO — AI-Driven Triage & Bug Resolution",
+      "title": "Day 29 \u2014 MAESTRO \u2014 AI-Driven Triage & Bug Resolution",
       "era": "No-Code Era",
       "type": [
         "Build"
@@ -7311,6 +7625,9 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -7327,7 +7644,7 @@
     {
       "day": 28,
       "date": "2026-01-22",
-      "title": "Day 28 — TypeScript Migration Patterns & Workflows",
+      "title": "Day 28 \u2014 TypeScript Migration Patterns & Workflows",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7338,6 +7655,9 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -7361,7 +7681,7 @@
     {
       "day": 27,
       "date": "2026-01-21",
-      "title": "Day 27 — Claude-Mem Conductor — Run Scripts & Setup",
+      "title": "Day 27 \u2014 Claude-Mem Conductor \u2014 Run Scripts & Setup",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7373,9 +7693,12 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=GOQq0sISD24",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "Hairstyle tutorial ✨ #hairstyle #tutorial #hairstyletutorial #glowup #hairtransf",
+          "title": "Hairstyle tutorial \u2728 #hairstyle #tutorial #hairstyletutorial #glowup #hairtransf",
           "channel": "Glowhair",
           "url": "https://www.youtube.com/watch?v=GOQq0sISD24"
         },
@@ -7385,12 +7708,12 @@
           "url": "https://www.youtube.com/watch?v=-JtoiCRo9oo"
         },
         {
-          "title": "I’m sorry, I had to 🤣",
+          "title": "I\u2019m sorry, I had to \ud83e\udd23",
           "channel": "Brett Morse - Speed Development Coach",
           "url": "https://www.youtube.com/watch?v=rxGkxdW9i3U"
         },
         {
-          "title": "Always stay humble and kind#sports#nflfootball#respect#nflplayoffs#usa🇺🇸",
+          "title": "Always stay humble and kind#sports#nflfootball#respect#nflplayoffs#usa\ud83c\uddfa\ud83c\uddf8",
           "channel": "Husnain Study Vlogs",
           "url": "https://www.youtube.com/watch?v=LFsjox_9I64"
         }
@@ -7416,7 +7739,7 @@
     {
       "day": 26,
       "date": "2026-01-20",
-      "title": "Day 26 — Audit Logging & Container Permissions",
+      "title": "Day 26 \u2014 Audit Logging & Container Permissions",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7430,6 +7753,9 @@
         "Security"
       ],
       "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -7446,7 +7772,7 @@
     {
       "day": 25,
       "date": "2026-01-19",
-      "title": "Day 25 — Sunday Research — No-Code Platform Comparison",
+      "title": "Day 25 \u2014 Sunday Research \u2014 No-Code Platform Comparison",
       "era": "No-Code Era",
       "type": [
         "Video"
@@ -7456,6 +7782,9 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=F-4LUKo_W2I",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Sharp Focus for ADHD Brains | 90s Hip-Hop | ADHD High Focus Support",
@@ -7469,7 +7798,7 @@
     {
       "day": 24,
       "date": "2026-01-18",
-      "title": "Day 24 — ADHD Focus Strategies & AI Productivity Stacking",
+      "title": "Day 24 \u2014 ADHD Focus Strategies & AI Productivity Stacking",
       "era": "No-Code Era",
       "type": [
         "Video"
@@ -7479,9 +7808,12 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=AkZebz0AHNI",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "MiniMax 2.1 AI SEO is INSANE!😱",
+          "title": "MiniMax 2.1 AI SEO is INSANE!\ud83d\ude31",
           "channel": "Julian Goldie SEO",
           "url": "https://www.youtube.com/watch?v=AkZebz0AHNI"
         }
@@ -7492,7 +7824,7 @@
     {
       "day": 23,
       "date": "2026-01-17",
-      "title": "Day 23 — Process Monitoring & Worker Health Checks",
+      "title": "Day 23 \u2014 Process Monitoring & Worker Health Checks",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7503,6 +7835,9 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=UR09nuSxGio",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "How I vibecode Beautiful $10,000 AI Websites (AntiGravity)",
@@ -7523,7 +7858,7 @@
     {
       "day": 22,
       "date": "2026-01-16",
-      "title": "Day 22 — Billing Error Detection & API Rate Limits",
+      "title": "Day 22 \u2014 Billing Error Detection & API Rate Limits",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7534,6 +7869,9 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=hqqorjXJQ8E",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "How to Rank #1 with Claude AI SEO (FREE!)",
@@ -7555,7 +7893,7 @@
     {
       "day": 21,
       "date": "2026-01-15",
-      "title": "Day 21 — Shannon Router Mode — Multi-Model Testing",
+      "title": "Day 21 \u2014 Shannon Router Mode \u2014 Multi-Model Testing",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7571,6 +7909,9 @@
         "Business"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=kKm_0eLmbzQ",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "AI Agents For Small Business - Mark Zuckerberg",
@@ -7604,7 +7945,7 @@
     {
       "day": 20,
       "date": "2026-01-14",
-      "title": "Day 20 — MCP Servers & Tool Protocol Research",
+      "title": "Day 20 \u2014 MCP Servers & Tool Protocol Research",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7615,6 +7956,9 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=7rI2tk5reCA",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "NEW ChatGPT Garlic is INSANE!",
@@ -7636,7 +7980,7 @@
     {
       "day": 19,
       "date": "2026-01-13",
-      "title": "Day 19 — Context Windows & Token Management Study",
+      "title": "Day 19 \u2014 Context Windows & Token Management Study",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7649,6 +7993,9 @@
         "DevOps"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=aKPvLjUHEPs",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Blitzit Explained: Simplify Your Tasks and Stay in Flow",
@@ -7676,7 +8023,7 @@
     {
       "day": 18,
       "date": "2026-01-12",
-      "title": "Day 18 — Shannon Orchestration Layer Refactor",
+      "title": "Day 18 \u2014 Shannon Orchestration Layer Refactor",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7689,6 +8036,9 @@
         "Agents"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=MgwjGpLHaWE",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Cowork: Anthropic's New AI Agent That Runs Code on Your Files (Max Featur",
@@ -7731,7 +8081,7 @@
     {
       "day": 17,
       "date": "2026-01-11",
-      "title": "Day 17 — AI Video Binge — YouTube Automation Channels",
+      "title": "Day 17 \u2014 AI Video Binge \u2014 YouTube Automation Channels",
       "era": "No-Code Era",
       "type": [
         "Video"
@@ -7744,9 +8094,12 @@
         "No-Code"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=XP5Bkv0dRQs",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
-          "title": "How to Make Mockups with AI — Easy Mockup & Video Generator | Mocku.co",
+          "title": "How to Make Mockups with AI \u2014 Easy Mockup & Video Generator | Mocku.co",
           "channel": "Solt Wagner",
           "url": "https://www.youtube.com/watch?v=XP5Bkv0dRQs"
         },
@@ -7761,23 +8114,23 @@
           "url": "https://www.youtube.com/watch?v=MiSxcUaqrN0"
         },
         {
-          "title": "Google Gemini’s NEW Google Gems Builder is INSANE (new use cases)",
+          "title": "Google Gemini\u2019s NEW Google Gems Builder is INSANE (new use cases)",
           "channel": "Rob The AI Guy",
           "url": "https://www.youtube.com/watch?v=SBDddFAAInc"
         },
         {
           "title": "Lightweight and accesible! Chinese exoskeletons shine at CES 2026",
-          "channel": "ShanghaiEye魔都眼",
+          "channel": "ShanghaiEye\u9b54\u90fd\u773c",
           "url": "https://www.youtube.com/watch?v=E8qlqAe62pk"
         }
       ],
       "builds": [],
-      "takeaway": "Deep research day — 29 AI videos consumed. Filling the mental model before the next build sprint."
+      "takeaway": "Deep research day \u2014 29 AI videos consumed. Filling the mental model before the next build sprint."
     },
     {
       "day": 16,
       "date": "2026-01-10",
-      "title": "Day 16 — Docker Containers & Workspace Isolation",
+      "title": "Day 16 \u2014 Docker Containers & Workspace Isolation",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7791,6 +8144,9 @@
         "Frontend"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=kD21HgBuq4o",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Google Gemini's NEW FREE Upgrades Are INSANE!",
@@ -7803,7 +8159,7 @@
           "url": "https://www.youtube.com/watch?v=exVJM48nylw"
         },
         {
-          "title": "New Google Antigravity Update is INSANE! (FREE!) 🤯",
+          "title": "New Google Antigravity Update is INSANE! (FREE!) \ud83e\udd2f",
           "channel": "Julian Goldie AI",
           "url": "https://www.youtube.com/watch?v=wtEH0RFNcEU"
         },
@@ -7833,7 +8189,7 @@
     {
       "day": 15,
       "date": "2026-01-09",
-      "title": "Day 15 — Open Source Contribution Sprint — i18n & Docs",
+      "title": "Day 15 \u2014 Open Source Contribution Sprint \u2014 i18n & Docs",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7846,6 +8202,9 @@
         "Automation"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=cSbDSJ9IFpc",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "NotebookLM: Build & Automate ANYTHING!",
@@ -7868,7 +8227,7 @@
     {
       "day": 14,
       "date": "2026-01-08",
-      "title": "Day 14 — CLI Tools & Output Directory Patterns",
+      "title": "Day 14 \u2014 CLI Tools & Output Directory Patterns",
       "era": "No-Code Era",
       "type": [
         "Build"
@@ -7878,6 +8237,9 @@
         "AI/ML"
       ],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -7899,7 +8261,7 @@
     {
       "day": 13,
       "date": "2026-01-07",
-      "title": "Day 13 — Plugin Systems & Extension Points Research",
+      "title": "Day 13 \u2014 Plugin Systems & Extension Points Research",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7913,6 +8275,9 @@
         "Security"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=QgisBAqkJ4M",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "How I Build $8,000+ AI Websites in 33 Mins (Gemini 3 FULL Guide)",
@@ -7945,7 +8310,7 @@
     {
       "day": 12,
       "date": "2026-01-06",
-      "title": "Day 12 — AI Architecture Patterns — Monolith to Modular",
+      "title": "Day 12 \u2014 AI Architecture Patterns \u2014 Monolith to Modular",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7957,6 +8322,9 @@
         "Automation"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=AkG-BZ-708U",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "The creator of Claude Code just revealed his INSANE workflow (must watch)",
@@ -7977,7 +8345,7 @@
     {
       "day": 11,
       "date": "2026-01-05",
-      "title": "Day 11 — Shannon Security Scanner — First Deep Fork",
+      "title": "Day 11 \u2014 Shannon Security Scanner \u2014 First Deep Fork",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -7990,6 +8358,9 @@
         "Agents"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=quVoGwHZdYI",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "How I Vibe Code Beautiful $10,000 AI Dashboards (AntiGravity)",
@@ -8039,7 +8410,7 @@
     {
       "day": 10,
       "date": "2026-01-04",
-      "title": "Day 10 — Changelog Discipline & Semantic Versioning",
+      "title": "Day 10 \u2014 Changelog Discipline & Semantic Versioning",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -8052,6 +8423,9 @@
         "AI/ML"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=m7uy2Ay4UuU",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Opening 60 Matchbox Moving Parts Toy Cars!",
@@ -8059,7 +8433,7 @@
           "url": "https://www.youtube.com/watch?v=m7uy2Ay4UuU"
         },
         {
-          "title": "174 Hz • Nervous System Reset 🧬 Release Anxiety, Pain & Inner Tension | 8 Hour M",
+          "title": "174 Hz \u2022 Nervous System Reset \ud83e\uddec Release Anxiety, Pain & Inner Tension | 8 Hour M",
           "channel": "Neural Frequency Sounds",
           "url": "https://www.youtube.com/watch?v=scINF1oSbcY"
         },
@@ -8094,7 +8468,7 @@
     {
       "day": 9,
       "date": "2026-01-03",
-      "title": "Day 9 — Session Management & Worker Architecture Study",
+      "title": "Day 9 \u2014 Session Management & Worker Architecture Study",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -8109,6 +8483,9 @@
         "Automation"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=bFC1QGEQ2E8",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Claude Skills Explained: 4 Skills to 10x Your Coding Workflow",
@@ -8141,7 +8518,7 @@
     {
       "day": 8,
       "date": "2026-01-02",
-      "title": "Day 8 — claude-mem Contributions — Database Migrations",
+      "title": "Day 8 \u2014 claude-mem Contributions \u2014 Database Migrations",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -8153,6 +8530,9 @@
         "AI/ML"
       ],
       "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -8169,7 +8549,7 @@
     {
       "day": 7,
       "date": "2026-01-01",
-      "title": "Day 7 — New Year's Resolution — Build with AI Daily",
+      "title": "Day 7 \u2014 New Year's Resolution \u2014 Build with AI Daily",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -8182,6 +8562,9 @@
         "Agents"
       ],
       "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -8198,7 +8581,7 @@
     {
       "day": 6,
       "date": "2025-12-31",
-      "title": "Day 6 — New Year's Eve — Setting 2026 AI Goals",
+      "title": "Day 6 \u2014 New Year's Eve \u2014 Setting 2026 AI Goals",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -8210,6 +8593,9 @@
         "Agents"
       ],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [
         {
@@ -8226,7 +8612,7 @@
     {
       "day": 5,
       "date": "2025-12-30",
-      "title": "Day 5 — AI Memory Systems — How Agents Remember",
+      "title": "Day 5 \u2014 AI Memory Systems \u2014 How Agents Remember",
       "era": "No-Code Era",
       "type": [
         "Video"
@@ -8238,6 +8624,9 @@
         "Automation"
       ],
       "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=eo5Hje_Qc3c",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "Alphabet pulls ahead as the market reprices AI execution",
@@ -8250,7 +8639,7 @@
           "url": "https://www.youtube.com/watch?v=MxyRjL7NG18"
         },
         {
-          "title": "Josh said it best: You can either be the filter… or get a filter.",
+          "title": "Josh said it best: You can either be the filter\u2026 or get a filter.",
           "channel": "Rescue Air and Plumbing",
           "url": "https://www.youtube.com/watch?v=46Zn785UyJk"
         }
@@ -8261,7 +8650,7 @@
     {
       "day": 4,
       "date": "2025-12-29",
-      "title": "Day 4 — Open Source Deep Dive — claude-mem Contributions",
+      "title": "Day 4 \u2014 Open Source Deep Dive \u2014 claude-mem Contributions",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -8277,6 +8666,9 @@
         "DevOps"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=MxyRjL7NG18",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "AGENTIC WORKFLOWS: Build & Sell AI Automations (2026)",
@@ -8304,7 +8696,7 @@
     {
       "day": 3,
       "date": "2025-12-28",
-      "title": "Day 3 — Claude Code vs Antigravity — First Tool Comparisons",
+      "title": "Day 3 \u2014 Claude Code vs Antigravity \u2014 First Tool Comparisons",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -8320,6 +8712,9 @@
         "DevOps"
       ],
       "impact": "Medium",
+      "url": "https://www.youtube.com/watch?v=MxyRjL7NG18",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "AGENTIC WORKFLOWS: Build & Sell AI Automations (2026)",
@@ -8337,19 +8732,19 @@
           "url": "https://www.youtube.com/watch?v=nFB_YcEc0N0"
         },
         {
-          "title": "Optimized Vibecoding 💡 Google Antigravity + Claude Code + Testsprite #agent #ai",
+          "title": "Optimized Vibecoding \ud83d\udca1 Google Antigravity + Claude Code + Testsprite #agent #ai",
           "channel": "Wanderloots",
           "url": "https://www.youtube.com/watch?v=T2bd1kGEISo"
         },
         {
-          "title": "I was using Google AI Studio wrong. It’s actually incredible",
+          "title": "I was using Google AI Studio wrong. It\u2019s actually incredible",
           "channel": "Alex Finn",
           "url": "https://www.youtube.com/watch?v=EW5FidKUvkE"
         },
         {
           "title": "AI Agent Oneshot Course - Nick Saraev",
           "channel": "",
-          "url": "",
+          "url": "https://www.youtube.com/watch?v=MxyRjL7NG18&t=2s",
           "runtime_min": null,
           "category": [
             "Automation",
@@ -8371,7 +8766,7 @@
     {
       "day": 2,
       "date": "2025-12-27",
-      "title": "Day 2 — Christmas Break AI Binge — First YouTube Rabbit Hole",
+      "title": "Day 2 \u2014 Christmas Break AI Binge \u2014 First YouTube Rabbit Hole",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -8387,6 +8782,9 @@
         "Business"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=r39kpNDtLxw",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "2025 AI-Curated 50s Christmas Love Songs",
@@ -8424,7 +8822,7 @@
     {
       "day": 1,
       "date": "2025-12-26",
-      "title": "Day 1 — Discovering AI Automation — Day Zero",
+      "title": "Day 1 \u2014 Discovering AI Automation \u2014 Day Zero",
       "era": "No-Code Era",
       "type": [
         "Build",
@@ -8439,6 +8837,9 @@
         "Automation"
       ],
       "impact": "High",
+      "url": "https://www.youtube.com/watch?v=MxyRjL7NG18",
+      "channel": "",
+      "runtime_min": null,
       "videos": [
         {
           "title": "AGENTIC WORKFLOWS: Build & Sell AI Automations (2026)",
@@ -8451,7 +8852,7 @@
           "url": "https://www.youtube.com/watch?v=iEmTgKLpb0o"
         },
         {
-          "title": "NotebookLM is the BEST AI Tool for NEW USERS in 2026 🤯",
+          "title": "NotebookLM is the BEST AI Tool for NEW USERS in 2026 \ud83e\udd2f",
           "channel": "Corey McClain",
           "url": "https://www.youtube.com/watch?v=fJxm-n6MMv4"
         },
@@ -8491,6 +8892,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/1400228069",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8506,6 +8910,9 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B07FF8HZT6",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8523,6 +8930,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B0CJG1CFFP",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8540,6 +8950,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://photoboothmarketing.com/academy/courses/advanced-linkedin-for-photo-booth-owners/",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8555,6 +8968,9 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B09L5B6SQX",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8570,6 +8986,9 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B0B992BKJJ",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8585,6 +9004,9 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B00PHF6VNI",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8600,6 +9022,9 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B077S3C5F9",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8615,6 +9040,9 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B06VX22V89",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8630,6 +9058,9 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B0BN4Q789L",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8645,6 +9076,9 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B09DTJ7W3G",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8660,6 +9094,9 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B0DFMX1RT8",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8677,6 +9114,9 @@
         "Design"
       ],
       "impact": "Low",
+      "url": "https://www.skillshare.com/en/classes/capcut-for-desktop-the-ultimate-video-editing-course-for-reels-and-tiktok-creators/950814434/projects?via=watch-history",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8694,6 +9134,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.skillshare.com/en/classes/grow-your-business-a-google-business-profile-masterclass-for-all-levels/1111832790",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8711,6 +9154,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.skillshare.com/en/classes/taking-your-team-remote-people-process-and-tools/1013156925",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8728,6 +9174,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.skillshare.com/en/classes/productivity-today-managing-attention-in-the-digital-age-learn-with-todoist/1016846630",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8743,6 +9192,9 @@
       "source": "Conference",
       "category": [],
       "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8760,6 +9212,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B0CZ59BB9B",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8777,6 +9232,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B07FXXWN3T",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8794,6 +9252,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B0F5528LJ5",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8811,6 +9272,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B004XINMIC",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8828,6 +9292,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B0056BDM1W",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8845,6 +9312,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B00FKCI3I4",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8862,6 +9332,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B077Z8S58Y",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8879,6 +9352,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/1469080966",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8896,6 +9372,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B0D9326131",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8913,6 +9392,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B09KTGFVD9",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8930,6 +9412,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B0C9N1WLYL",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8947,6 +9432,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B002V0RBMC",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8964,6 +9452,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B074VDVHZ5",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8979,6 +9470,9 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B0BKTRFNT9",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -8996,6 +9490,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B0CBD6J2BY",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9013,6 +9510,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B07DKSPL43",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9030,6 +9530,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B0B2BGDRFV",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9047,6 +9550,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B09YMMFV2G",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9062,6 +9568,9 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B09S4VPXPJ",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9079,6 +9588,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B0CLLLG4M3",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9096,6 +9608,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B0C7WJXBRL",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9113,6 +9628,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B0189PX1RQ",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9130,6 +9648,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B0C6YM6Q41",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9147,6 +9668,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B012U7QOXC",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9164,6 +9688,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B0C6YK4917",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9181,6 +9708,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/0063097796",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9198,6 +9728,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B00TIY4PHI",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9215,6 +9748,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/1982648066",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9232,6 +9768,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B0C9NCLG9B",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9249,6 +9788,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/1250245788",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9266,6 +9808,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B00NMVQYNQ",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9283,6 +9828,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B002V1O6KQ",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9300,6 +9848,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/1524779261",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9317,6 +9868,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B082VK6Q8G",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9334,6 +9888,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/1549181270",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9351,6 +9908,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B07235B2FT",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9368,6 +9928,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/0593287088",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9383,6 +9946,9 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/1684038529",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9400,6 +9966,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B01CF5O89G",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9415,6 +9984,9 @@
       "source": "Audible",
       "category": [],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/0593294181",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
@@ -9432,6 +10004,9 @@
         "Business"
       ],
       "impact": "Low",
+      "url": "https://www.audible.com/pd/B002V5CZ5A",
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
       "builds": [],
       "takeaway": ""
