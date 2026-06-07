@@ -4,6 +4,7 @@ import { NavRail } from "@/components/layout/NavRail";
 import { MobileDock } from "@/components/layout/MobileDock";
 import { MobileTopBar } from "@/components/layout/MobileTopBar";
 import { InquiryPill } from "@/components/layout/InquiryPill";
+import { Footer } from "@/components/layout/Footer";
 import { LenisProvider } from "@/components/layout/LenisProvider";
 import { LoadingScreen } from "@/components/animation/LoadingScreen";
 import { FocusAudio } from "@/components/animation/FocusAudio";
@@ -66,6 +67,7 @@ export default function RootLayout({
           <MobileTopBar />
           <NavRail />
           <main className="relative z-10 pb-24 md:ml-20 md:pb-0">{children}</main>
+          <Footer />
           <InquiryPill />
           <MobileDock />
         </LenisProvider>
