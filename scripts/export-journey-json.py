@@ -132,7 +132,9 @@ def parse_blocks(blocks: list[dict]) -> dict:
                     if commits:
                         builds.append({"repo": repo, "commits": commits[:3]})
         elif btype == "paragraph" and current_section == "takeaway":
-            takeaway = extract_rich_text(block["paragraph"].get("rich_text", []))
+            _para = extract_rich_text(block["paragraph"].get("rich_text", []))
+            if _para.strip():
+                takeaway = (takeaway + chr(10)+chr(10) + _para) if takeaway else _para
 
     return {"videos": videos, "builds": builds, "takeaway": takeaway}
 

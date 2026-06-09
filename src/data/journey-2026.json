@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-08T22:23:48",
+  "lastUpdated": "2026-06-08T22:33:19",
   "totalDays": 223,
   "currentEra": "Full Stack AI",
   "entries": [
@@ -47,7 +47,7 @@
           ]
         }
       ],
-      "takeaway": "Also daemonized the VSCO sync and finished purging the revoked Notion key from those pipelines."
+      "takeaway": "**SEO Spy hit Phase 11 and went live:** threat-gated scan depth, a markdown dossier writer that picks Opus or Sonnet by threat tier, and a Maps fallback for review scraping.\n\nAlso daemonized the VSCO sync and finished purging the revoked Notion key from those pipelines."
     },
     {
       "day": 164,
@@ -91,7 +91,7 @@
           ]
         }
       ],
-      "takeaway": "The OSINT study from late May paid off directly here. Jimbo also got a CLI chat client wired into its live brain."
+      "takeaway": "**Built the SEO Competitor Spy from nothing to Phase 10 in a day.** A tiered checklist of 20-plus recon checks, threat scoring that gates how deep each scan goes, and an Opus synthesizer that turns raw signals into counter-plays.\n\nThe OSINT study from late May paid off directly here. Jimbo also got a CLI chat client wired into its live brain."
     },
     {
       "day": 163,
@@ -146,7 +146,7 @@
           ]
         }
       ],
-      "takeaway": "Spun design-center into a live dashboard with access governance, then built MIGHTY Productions end to end: brand, animated logo, site, and an honest media-transport page. Cross-linked the whole brand family in the footers."
+      "takeaway": "**Biggest single day of the stretch.** Stood up the GEO/LLM brand-mention pipeline for SEO, a full intake-learn decision engine that promotes my judgment calls into defaults, and a Keychain-backed secret vault.\n\nSpun design-center into a live dashboard with access governance, then built MIGHTY Productions end to end: brand, animated logo, site, and an honest media-transport page. Cross-linked the whole brand family in the footers."
     },
     {
       "day": 162,
@@ -254,7 +254,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "Kiyosaki's macro take is doom-heavy, but the underlying point on hard assets over idle cash held attention."
+      "takeaway": "**Business and finance intake day.** Martell's founder playbook on AI as leverage maps cleanly onto the agent-per-noun model I run MIGHTY on.\n\nKiyosaki's macro take is doom-heavy, but the underlying point on hard assets over idle cash held attention."
     },
     {
       "day": 159,
@@ -297,7 +297,7 @@
           ]
         }
       ],
-      "takeaway": "Also ripped out the revoked Notion token everywhere and moved to keychain auth. That had been a latent failure across sync jobs."
+      "takeaway": "**Built the refresh-event diff pipeline:** pull comms, extract proposed field values, diff against the live Notion schema before writing anything.\n\nAlso ripped out the revoked Notion token everywhere and moved to keychain auth. That had been a latent failure across sync jobs."
     },
     {
       "day": 158,
@@ -374,7 +374,7 @@
           ]
         }
       ],
-      "takeaway": "Launchd plists for the design-center pipeline were pointing at the wrong python and missing env vars. Quiet failures, now fixed."
+      "takeaway": "**Repaired the journey export** after a regen wiped Days 144-154, then wired it into the nightly sync so the timeline self-updates. Codex flagged three pipeline issues (P1-P3), all addressed.\n\nLaunchd plists for the design-center pipeline were pointing at the wrong python and missing env vars. Quiet failures, now fixed."
     },
     {
       "day": 156,
@@ -406,7 +406,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "Bombal's toolkit rundown seeded the check list that became the Spy's cheap-tier scans a week later."
+      "takeaway": "**Scouting OSINT tooling** ahead of the SEO Competitor Spy build. Mapped which recon moves port into a competitor-intel pipeline: handle enumeration, review scraping, tech-stack fingerprinting.\n\nBombal's toolkit rundown seeded the check list that became the Spy's cheap-tier scans a week later."
     },
     {
       "day": 155,
@@ -438,7 +438,7 @@
         }
       ],
       "builds": [],
-      "takeaway": "Jensen's leadership talk reframed AI adoption as an org problem, not a tooling one. The bottleneck is rarely the model."
+      "takeaway": "**Heads-down research day** between build sprints. Karpathy's framing of the move from vibe coding to agentic engineering lines up with where the MIGHTY agent stack is going: less hand-prompting, more autonomous dispatch.\n\nJensen's leadership talk reframed AI adoption as an org problem, not a tooling one. The bottleneck is rarely the model."
     },
     {
       "day": 154,
@@ -474,7 +474,7 @@
           ]
         }
       ],
-      "takeaway": "_YouTube watched today: none \u2014 pure build session. Pre-154 entries pending YouTube history backfill in a future update._"
+      "takeaway": "Insomniac ship day \u2014 started 12:30am, ended ~9pm. Single session, four product surfaces overhauled.\n\n**PANDORA'S FORGE** + **SPECTRE** promoted to flagship status on /work. Old sub-module features pulled, replaced with the two top-level platforms. Cards bumped 2-col + larger, **Live \u00b7 iterating** pulse badge added so the always-shipping nature reads at a glance. Scanner in `scripts/scan-tools.py` now emits a parent SPECTRE entry alongside the 13 modules. Forge copy rewritten to land the 11-wing creative AI suite; SPECTRE copy rewritten to land the full-spectrum recon + red/blue/purple + AI-sec stack.\n\nMusic focus picker overhauled. Dropped Isochronic \u03b1. Added Pink noise, Lo-fi pad \u266a, Cinematic drone \u266a \u2014 6 modes total, music-note icon for the musical ones. All synthesized in WebAudio in `src/components/animation/FocusAudio.tsx` (Paul Kellet pink filter, random-walk brown, 200/240Hz binaural, detuned-saw lo-fi, sub+air drone). Zero asset weight. Desktop NavRail SoundPicker was popping downward off-screen \u2014 added a `direction` prop, opens upward when anchored to viewport bottom now.\n\nAbout page rebuilt from the ground up. Replaced the wall of text with a chaptered 6-year story (1996 origin \u2192 Now) \u2014 each chapter a year marker + tag + bold hook + body line. Killed the giant Character Sheet radar; the strip stats up top are enough. Wired in the embedded portrait: fixed `src/components/portrait/MatrixRain.tsx` (46 columns mixing SPECTRE / business / agent words with binary) + scrollable `src/components/portrait/PortraitFigure.tsx` running a 3s lineart \u2192 350ms TV-glitch transition \u2192 3s photo loop. Photo + lineart anchored to bottom-right so the body rises from the viewport bottom. Contact section gets an 80% backdrop-blur plate. Image pipeline: Canny edges + CLAHE for right-side detail \u2192 SVG paths, Otsu body mask for the silhouette, all from a single 800px source headshot.\n\n**Refreshed stats: LOC 2.03M \u2192 2.05M, tools 149 \u2192 157, dayStreak 153 \u2192 154.** PR pending for the portrait + about + music + featured combo. Read it live at [andrewwebber.dev/about](https://andrewwebber.dev/about) once it deploys.\n\n_YouTube watched today: none \u2014 pure build session. Pre-154 entries pending YouTube history backfill in a future update._"
     },
     {
       "day": 153,
@@ -512,7 +512,7 @@
           ]
         }
       ],
-      "takeaway": "**Build-pipeline** (ctf-firecrawl) added a Local Path URL prop + woody-update plan to the index."
+      "takeaway": "Hardening + cleanup pass on the **mighty** stack.\n\n**inbox-agent** got a review-ask playbook directive, write-time validation for **COMMUNICATION TEMPLATES**, and a templatize auto-title date bug fix with **Phase 0** tests. **Jimbo** got on-demand **SPECTRE** tunnel, HTTP-based liveness check, **scheduler** null-schedule guard, and stale missions disabled.\n\n**Build-pipeline** (ctf-firecrawl) added a Local Path URL prop + woody-update plan to the index."
     },
     {
       "day": 152,
@@ -553,7 +553,7 @@
           ]
         }
       ],
-      "takeaway": "**design-center-pipeline** got a dedup re-flip fix and top anchor. **Build-pipeline** (ctf-firecrawl) hit **Phase 3** with GitHub PR status polling and Notion backfill."
+      "takeaway": "Heaviest day of the stretch.\n\nThree major threads all **landed**: First, **COMMUNICATION TEMPLATES DB** wired end-to-end into **inbox-agent** \u2014 composer queries it at draft time, templatize_email writes to it, product directives and topic-matched memory rules load automatically. Plus the apr-may voice delta now loads on every draft.\n\nThe proven-asset playbook is live across all email outputs. Second, **MIGHTY** **Knowledge Coach** **Phase 0** \u2014 SQLite migration for coach tables, **gmail_drafter** body logging, and a **Jimbo** /coach command handler.\n\nThe self-curating product brain skeleton is in place. Third, ntn shim infrastructure \u2014 USE_NTN_SHIM feature flag with urllib fallback, 9 high-level helpers, and Notion-Version pinned to 2025-09-03 across the toolchain.\n\n**design-center-pipeline** got a dedup re-flip fix and top anchor. **Build-pipeline** (ctf-firecrawl) hit **Phase 3** with GitHub PR status polling and Notion backfill."
     },
     {
       "day": 151,
@@ -579,7 +579,7 @@
           ]
         }
       ],
-      "takeaway": "The streak counts calendar days, not commit volume \u2014 and the work is always going to be there tomorrow."
+      "takeaway": "Genuine rest day.\n\nLogged a lot of Claude hours this past week and the body called it \u2014 a migraine showed up early and shut the morning down. Spent the rest of the day with family.\n\nTwo tiny **build-pipeline** cleanup commits, then I closed the laptop. Health is quite literally wealth.\n\nIt is okay to slow down. If you are into AI right now, you are probably already ahead anyway.\n\nThe streak counts calendar days, not commit volume \u2014 and the work is always going to be there tomorrow."
     },
     {
       "day": 150,
@@ -625,7 +625,7 @@
           ]
         }
       ],
-      "takeaway": "Started drafting the Notion-API to ntn-CLI migration plan that would land Tuesday."
+      "takeaway": "Consolidation day.\n\nDeleted standalone Arlo scripts and folded GitHub sync into **Rusty** (**Apify**-driven). Activated **Apify** by fixing the APIFY_API_TOKEN to APIFY_TOKEN rename and correcting the vault-sync registry path (**jimbo**-**v4**.0 to **jimbo**).\n\nLocked filesystem and memory boundary rules into **Jimbo** so **Rusty** stays isolated. On the HFO side, wrote MASTER_PLAN.md and a rename script to start aligning HFO docs to the existing 7-room HQ structure.\n\nStarted drafting the Notion-API to ntn-CLI migration plan that would land Tuesday."
     },
     {
       "day": 149,
@@ -669,7 +669,7 @@
           ]
         }
       ],
-      "takeaway": "On the build side: wired all **SPECTRE** producers to the **CYBER THREATS DB** Notion sink \u2014 feat(**spectre**-core) adds the write helper, write protocol documented, and producer **CLAUDE.md** updated to enforce the pattern across all 10 producers."
+      "takeaway": "Completed LinkedIn Learning course: DevOps Foundations: DevSecOps \u2014 integrates security into every stage of the software delivery pipeline.\n\nOn the build side: wired all **SPECTRE** producers to the **CYBER THREATS DB** Notion sink \u2014 feat(**spectre**-core) adds the write helper, write protocol documented, and producer **CLAUDE.md** updated to enforce the pattern across all 10 producers."
     },
     {
       "day": 148,
@@ -770,7 +770,7 @@
           ]
         }
       ],
-      "takeaway": "Code Council cleanup: **JIMBO REPORTS** Notion IDs corrected, all Security DB IDs wired, COUNCIL MEMBER UPDATES references retired."
+      "takeaway": "Infra hardening day: **Jimbo** **scheduler** skip-fix lands (no more double-fires on late crons), meeting_prep dual-mode **shipped**, **Penny** **Phase 4** docs and hard rule **merged**.\n\nCode Council cleanup: **JIMBO REPORTS** Notion IDs corrected, all Security DB IDs wired, COUNCIL MEMBER UPDATES references retired."
     },
     {
       "day": 147,
@@ -823,7 +823,7 @@
           ]
         }
       ],
-      "takeaway": "Threat surface mapped across all 12 Code Council hats \u2014 both on the site and in hotfixops."
+      "takeaway": "Massive andrewwebber.dev push: **SPECTRE** section live with full Code Council descriptions, focus audio picker **shipped**, blog posts polished with giscus comments, tools pagination with category filter. **10 commits** to the portfolio in one day.\n\nThreat surface mapped across all 12 Code Council hats \u2014 both on the site and in hotfixops."
     },
     {
       "day": 146,
@@ -887,7 +887,7 @@
           ]
         }
       ],
-      "takeaway": "Filesystem consolidation: **mighty** symlink replaced with real 8.5 GB directory, _Code/Agents renamed to _Code/agents, **Jimbo** Curator **v1** and **Penny** Finance **merged** to main. Watched 4 videos: business masterclass, Robert Greene on ego/control, social media strategy."
+      "takeaway": "First public milestone: PR #1597 **merged** by mvanhorn into cli-printing-press -- Andrew's first accepted open-source contribution.\n\nFilesystem consolidation: **mighty** symlink replaced with real 8.5 GB directory, _Code/Agents renamed to _Code/agents, **Jimbo** Curator **v1** and **Penny** Finance **merged** to main. Watched 4 videos: business masterclass, Robert Greene on ego/control, social media strategy."
     },
     {
       "day": 145,
@@ -979,7 +979,7 @@
           ]
         }
       ],
-      "takeaway": "LinkedIn Learning SDLC cert completed (1h 55m). Watched 10 videos: Google I/O 2026 developer keynote + 2 sessions, full **Claude Code** OS course, Karpathy/Anthropic, social media algorithm + personal brand strategy, Claude Managed Agents tutorial, two **MIGHTY** community videos."
+      "takeaway": "30+ commits.\n\n**vsco-workspace-pp-cli** **shipped** (139 endpoints). **inbox-agent** hardened: autoreply pipelines, draft_guard, **compose_reply** strict JSON.\n\n**Jimbo** Curator cleared all Codex P0/P1/P2 flags. forge got gif_maker.\n\nLinkedIn Learning SDLC cert completed (1h 55m). Watched 10 videos: Google I/O 2026 developer keynote + 2 sessions, full **Claude Code** OS course, Karpathy/Anthropic, social media algorithm + personal brand strategy, Claude Managed Agents tutorial, two **MIGHTY** community videos."
     },
     {
       "day": 144,
@@ -1014,7 +1014,7 @@
           ]
         }
       ],
-      "takeaway": "It would merge in **48 hours**. Watched 1 video: **Claude Code** Projects + Codex integration (Nate Herk)."
+      "takeaway": "Submitted PR #1597 to mvanhorn/cli-printing-press adding the full Quo (formerly OpenPhone) catalog entry and OpenAPI spec -- first open-source PR to a project Andrew did not create.\n\nIt would merge in **48 hours**. Watched 1 video: **Claude Code** Projects + Codex integration (Nate Herk)."
     },
     {
       "day": 143,
