@@ -59,11 +59,20 @@ const CHAPTERS = [
     hook: "Founded MIGHTY Photo Booths.",
     body: "Premium photo + video activations for corporate brands. Canon DSLRs. Custom designs from scratch. Self-powered battery setups.",
     accent: "text-creative",
-    stats: [
-      { n: "55+", k: "Brands served" },
-      { n: "80+", k: "Custom configs" },
-      { n: "9", k: "Years live" },
-    ],
+  },
+  {
+    year: "2018",
+    tag: "Met Vivian",
+    hook: "Met Vivian at a Fourth of July car show. Best thing that ever happened to me or MIGHTY.",
+    body: "Kaboomtown, a private airfield in Addison, fireworks over the runway. I was working the booth with my son Aidyn right next to me, and the two of us won her over without even trying. Vivian is the driving force at MIGHTY now. She inspects every piece of creative before it goes out and puts out fires before they start at our live events, all on instinct and a sharp analytical eye. Then in 2023 she brought us our son Adrian. Best partner I will ever have.",
+    accent: "text-warm",
+  },
+  {
+    year: "2023",
+    tag: "Full time",
+    hook: "Went full time. All in on the crazy idea.",
+    body: "January 1, 2023. I took the leap and let go of the AV clients I'd spent years building, the steady work and the safe money, and went all in on this crazy idea. That was the year we broke our first $100,000 in revenue, and it fueled the fire further. Every year since, the bar goes higher: learning how to scale a team, managing a full client list while attracting new ones, building new experiences constantly. This is the most fun I have ever had in business, and it only gets better.",
+    accent: "text-creative",
   },
   {
     year: "2023",
@@ -164,20 +173,6 @@ export default function AboutPage() {
                     <p className="mt-3 text-base md:text-lg leading-relaxed text-muted-foreground max-w-xl">
                       {c.body}
                     </p>
-                    {c.stats && (
-                      <div className="mt-5 grid grid-cols-3 gap-4 max-w-md">
-                        {c.stats.map((s) => (
-                          <div key={s.k}>
-                            <div className="font-mono text-xl md:text-2xl font-bold text-creative tabular-nums">
-                              {s.n}
-                            </div>
-                            <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground/70">
-                              {s.k}
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    )}
                   </div>
                   {i < CHAPTERS.length - 1 && (
                     <div className="md:col-span-2 mt-10 h-px bg-white/5" />
