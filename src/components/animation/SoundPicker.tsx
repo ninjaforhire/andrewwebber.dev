@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Volume2, VolumeOff, Music2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-type Mode = "off" | "pink" | "brown" | "binaural" | "lofi" | "drone" | "storm" | "laundry";
+type Mode = "off" | "pink" | "brown" | "binaural" | "lofi" | "drone";
 
 const MODES: { id: Mode; label: string; musical?: boolean }[] = [
   { id: "off", label: "Silence" },
@@ -13,11 +13,9 @@ const MODES: { id: Mode; label: string; musical?: boolean }[] = [
   { id: "binaural", label: "Binaural γ" },
   { id: "lofi", label: "Lo-fi pad", musical: true },
   { id: "drone", label: "Cinematic drone", musical: true },
-  { id: "storm", label: "Cozy Doom Rumble" },
-  { id: "laundry", label: "Sock Tornado" },
 ];
 
-const VALID_IDS = new Set<Mode>(["off", "pink", "brown", "binaural", "lofi", "drone", "storm", "laundry"]);
+const VALID_IDS = new Set<Mode>(["off", "pink", "brown", "binaural", "lofi", "drone"]);
 
 function readMode(): Mode {
   if (typeof window === "undefined") return "off";

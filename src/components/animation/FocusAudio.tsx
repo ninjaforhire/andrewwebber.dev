@@ -14,9 +14,9 @@ import { useEffect, useRef, useState } from "react";
  *   "lofi"     — warm pad: 3 detuned saws → lowpass w/ slow LFO + vinyl crackle
  *   "drone"    — cinematic: sub 55 Hz + detuned sine octave + filtered air pad
  */
-export type FocusMode = "off" | "pink" | "brown" | "binaural" | "lofi" | "drone" | "storm" | "laundry";
+export type FocusMode = "off" | "pink" | "brown" | "binaural" | "lofi" | "drone";
 
-const VALID_MODES: FocusMode[] = ["off", "pink", "brown", "binaural", "lofi", "drone", "storm", "laundry"];
+const VALID_MODES: FocusMode[] = ["off", "pink", "brown", "binaural", "lofi", "drone"];
 
 function readMode(): FocusMode {
   if (typeof window === "undefined") return "off";
@@ -330,128 +330,6 @@ export function FocusAudio() {
       lfoDepth.connect(bp.frequency);
       lfo.start();
       nodesToStop.push(lfo);
-    }
-
-    // ─── COZY DOOM RUMBLE (storm) ─────────────────────────────────
-    // Smooth, looping. Rain hiss bed + distant rolling rumble swelled by a
-    // slow LFO. No sharp thunder claps so the loop never seams.
-    if (mode === "storm") {
-      const stormGain = ctx.createGain();
-      stormGain.gain.value = 1.0;
-      stormGain.connect(master);
-
-      const rainBuf = ctx.createBuffer(1, 2 * ctx.sampleRate, ctx.sampleRate);
-      const rd = rainBuf.getChannelData(0);
-      for (let i = 0; i < rd.length; i++) rd[i] = Math.random() * 2 - 1;
-      const rain = ctx.createBufferSource();
-      rain.buffer = rainBuf;
-      rain.loop = true;
-      const rainHP = ctx.createBiquadFilter();
-      rainHP.type = "highpass";
-      rainHP.frequency.value = 700;
-      const rainLP = ctx.createBiquadFilter();
-      rainLP.type = "lowpass";
-      rainLP.frequency.value = 6500;
-      const rainGain = ctx.createGain();
-      rainGain.gain.value = 0.5;
-      rain.connect(rainHP);
-      rainHP.connect(rainLP);
-      rainLP.connect(rainGain);
-      rainGain.connect(stormGain);
-      rain.start();
-      nodesToStop.push(rain);
-
-      const rumbleBuf = ctx.createBuffer(1, 4 * ctx.sampleRate, ctx.sampleRate);
-      const rud = rumbleBuf.getChannelData(0);
-      let rlo = 0;
-      for (let i = 0; i < rud.length; i++) {
-        const w = Math.random() * 2 - 1;
-        rlo = (rlo + 0.02 * w) / 1.02;
-        rud[i] = rlo * 3.5;
-      }
-      const rumble = ctx.createBufferSource();
-      rumble.buffer = rumbleBuf;
-      rumble.loop = true;
-      const rumbleLP = ctx.createBiquadFilter();
-      rumbleLP.type = "lowpass";
-      rumbleLP.frequency.value = 110;
-      rumbleLP.Q.value = 0.7;
-      const rumbleGain = ctx.createGain();
-      rumbleGain.gain.value = 0.5;
-      rumble.connect(rumbleLP);
-      rumbleLP.connect(rumbleGain);
-      rumbleGain.connect(stormGain);
-      rumble.start();
-      nodesToStop.push(rumble);
-
-      const swell = ctx.createOscillator();
-      swell.type = "sine";
-      swell.frequency.value = 0.06;
-      const swellDepth = ctx.createGain();
-      swellDepth.gain.value = 0.45;
-      swell.connect(swellDepth);
-      swellDepth.connect(rumbleGain.gain);
-      swell.start();
-      nodesToStop.push(swell);
-    }
-
-    // ─── SOCK TORNADO (laundry) ───────────────────────────────────
-    // Warm motor hum + a midband whoosh amplitude-modulated by a ~0.8 Hz
-    // rotation LFO. Hypnotic tumble, seamless loop.
-    if (mode === "laundry") {
-      const laundryGain = ctx.createGain();
-      laundryGain.gain.value = 1.0;
-      laundryGain.connect(master);
-
-      const humBuf = ctx.createBuffer(1, 2 * ctx.sampleRate, ctx.sampleRate);
-      const hd = humBuf.getChannelData(0);
-      let hlo = 0;
-      for (let i = 0; i < hd.length; i++) {
-        const w = Math.random() * 2 - 1;
-        hlo = (hlo + 0.02 * w) / 1.02;
-        hd[i] = hlo * 3.5;
-      }
-      const hum = ctx.createBufferSource();
-      hum.buffer = humBuf;
-      hum.loop = true;
-      const humLP = ctx.createBiquadFilter();
-      humLP.type = "lowpass";
-      humLP.frequency.value = 320;
-      const humGain = ctx.createGain();
-      humGain.gain.value = 0.5;
-      hum.connect(humLP);
-      humLP.connect(humGain);
-      humGain.connect(laundryGain);
-      hum.start();
-      nodesToStop.push(hum);
-
-      const tumbleBuf = ctx.createBuffer(1, 2 * ctx.sampleRate, ctx.sampleRate);
-      const td = tumbleBuf.getChannelData(0);
-      for (let i = 0; i < td.length; i++) td[i] = Math.random() * 2 - 1;
-      const tumble = ctx.createBufferSource();
-      tumble.buffer = tumbleBuf;
-      tumble.loop = true;
-      const tumbleBP = ctx.createBiquadFilter();
-      tumbleBP.type = "bandpass";
-      tumbleBP.frequency.value = 480;
-      tumbleBP.Q.value = 0.8;
-      const tumbleGain = ctx.createGain();
-      tumbleGain.gain.value = 0.28;
-      tumble.connect(tumbleBP);
-      tumbleBP.connect(tumbleGain);
-      tumbleGain.connect(laundryGain);
-      tumble.start();
-      nodesToStop.push(tumble);
-
-      const spin = ctx.createOscillator();
-      spin.type = "sine";
-      spin.frequency.value = 0.8;
-      const spinDepth = ctx.createGain();
-      spinDepth.gain.value = 0.26;
-      spin.connect(spinDepth);
-      spinDepth.connect(tumbleGain.gain);
-      spin.start();
-      nodesToStop.push(spin);
     }
 
     const resume = () => {
