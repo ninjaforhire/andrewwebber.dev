@@ -319,6 +319,16 @@
     "domain": "Ops"
   },
   {
+    "slug": "client-montage",
+    "name": "client-montage",
+    "description": "Build a branded post-event photo montage video (intro + crossfaded photos + MADE WITH MIGHTY end card + music) from an event's photo outputs",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/client-montage",
+    "domain": "Ops"
+  },
+  {
     "slug": "coi-automation",
     "name": "coi-automation",
     "description": "Automates Hiscox COI requests: form submission, email monitoring, Drive storage, and delivery",
@@ -446,6 +456,16 @@
     "domain": "Admin"
   },
   {
+    "slug": "draft-assistant",
+    "name": "draft-assistant",
+    "description": "Alias entry point for the inbox-agent Drafts mode",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/admin/draft-assistant",
+    "domain": "Admin"
+  },
+  {
     "slug": "drive-event-dedup",
     "name": "drive-event-dedup",
     "description": ">",
@@ -464,6 +484,16 @@
     "source": "agent",
     "location": "mighty/agents/tools/dropbox-migrator",
     "domain": "Ops"
+  },
+  {
+    "slug": "email-assistant",
+    "name": "email-assistant",
+    "description": "Alias entry point for the inbox-agent Watch mode (and Label mode)",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/admin/email-assistant",
+    "domain": "Admin"
   },
   {
     "slug": "environment-framework",
@@ -493,6 +523,16 @@
     "source": "skill",
     "location": "mighty/skills/ops/event-folder",
     "domain": "Ops"
+  },
+  {
+    "slug": "find-email",
+    "name": "find-email",
+    "description": "Hunt a person's work email address from a name + company",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/sales/find-email",
+    "domain": "Sales"
   },
   {
     "slug": "follow-up-cadence",
@@ -582,6 +622,16 @@
     "source": "agent",
     "location": "mighty/agents/tools/inbox-therapist",
     "domain": "Ops"
+  },
+  {
+    "slug": "internal-request",
+    "name": "internal-request",
+    "description": "Create an INTERNAL Design Request for Matt from Andrew's own input (not a client event)",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/design-center/internal-request",
+    "domain": "Design"
   },
   {
     "slug": "iris-studio",
@@ -1059,6 +1109,16 @@
     "subcategory": "agent",
     "source": "agent",
     "location": "mighty/agents/agents-export/tools/prompt-reverse-engineer-v1.0"
+  },
+  {
+    "slug": "queue-add",
+    "name": "queue-add",
+    "description": "Add a book, TV show, movie, podcast, YouTube video, or any media recommendation to the CONTENT QUEUE Notion DB",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/admin/queue-add",
+    "domain": "Admin"
   },
   {
     "slug": "quo-scanner",
