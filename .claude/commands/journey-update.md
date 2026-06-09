@@ -16,7 +16,7 @@ Run the full journey update pipeline in this order. Do not skip steps.
 ### Step 1 — Pull from Notion
 
 ```bash
-cd /Users/mightydesigncenter/Desktop/_Code && python3 export-journey-json.py
+cd /Users/mightydesigncenter/Desktop/_Code/andrewwebber.dev && python3 scripts/export-journey-json.py
 ```
 
 The script writes `src/data/journey-2026.json` directly to this repo. If it errors on the git step, ignore that — the JSON file is already written and we'll commit it ourselves.

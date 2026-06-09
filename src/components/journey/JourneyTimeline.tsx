@@ -16,13 +16,6 @@ function getMonthKey(dateStr: string): string {
   return d.toLocaleDateString("en-US", { month: "long", year: "numeric" });
 }
 
-function getCurrentMonthKey(): string {
-  return new Date().toLocaleDateString("en-US", {
-    month: "long",
-    year: "numeric",
-  });
-}
-
 interface AnnotatedEntry {
   entry: JourneyEntry;
   showEra: boolean;
@@ -35,8 +28,6 @@ interface MonthGroup {
 }
 
 export function JourneyTimeline({ entries }: JourneyTimelineProps) {
-  const currentMonthKey = useMemo(() => getCurrentMonthKey(), []);
-
   const groups = useMemo<MonthGroup[]>(() => {
     const out: MonthGroup[] = [];
     let lastEra = "";
@@ -60,10 +51,12 @@ export function JourneyTimeline({ entries }: JourneyTimelineProps) {
     return out;
   }, [entries]);
 
+  const latestKey = groups[0]?.key ?? "";
+
   const [toggled, setToggled] = useState<Set<string>>(new Set());
 
   const isOpen = (key: string): boolean => {
-    const defaultOpen = key === currentMonthKey;
+    const defaultOpen = key === latestKey;
     return toggled.has(key) ? !defaultOpen : defaultOpen;
   };
 
@@ -83,7 +76,7 @@ export function JourneyTimeline({ entries }: JourneyTimelineProps) {
       <div className="space-y-0">
         {groups.map((group) => {
           const open = isOpen(group.key);
-          const isCurrent = group.key === currentMonthKey;
+          const isCurrent = group.key === latestKey;
 
           return (
             <div key={group.key}>

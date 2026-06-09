@@ -41,10 +41,10 @@ const MILESTONES = [
     link: "/about#credentials",
   },
   {
-    year: "2025",
+    year: "2023",
     title: "MIGHTY goes full-time.",
     description:
-      "January. Every contract expired — and I let them. Walked away from the safety net to bet everything on MIGHTY Photo Booths. Eyes open to eyes closed, usually 2 or 3am. A year of conviction, manual processes, and proving myself.",
+      "January 1. Every contract expired and I let them go. Walked away from the safety net to bet everything on MIGHTY Photo Booths, the year we broke our first $100,000 in revenue. Eyes open to eyes closed, usually 2 or 3am. A year of conviction, manual processes, and proving myself.",
     details: [
       "Hired a creative partner for design — Matt changed the game",
       "Tried to hire an executive assistant three times — all three quit",
@@ -126,7 +126,7 @@ export function JourneyTeaser() {
       </div>
 
       <div className="space-y-24 md:space-y-32">
-        {milestones.map((m) => (
+        {[...milestones].reverse().map((m) => (
           <div
             key={m.year}
             className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start"
