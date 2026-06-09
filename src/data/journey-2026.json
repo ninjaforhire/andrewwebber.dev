@@ -1,8 +1,445 @@
 {
-  "lastUpdated": "2026-06-05T03:13:49",
-  "totalDays": 212,
+  "lastUpdated": "2026-06-08T22:23:46",
+  "totalDays": 223,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 165,
+      "date": "2026-06-08",
+      "title": "Day 165 - SEO Spy Phase 11 + VSCO Daemon",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Refactor"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "DevOps"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck",
+          "channel": "Sequoia Capital"
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "feat(seo-spy): Phase 11 threat-gated depth + dossier writer + 7 new CF props",
+            "feat(seo-spy): Google Reviews Maps fallback",
+            "feat(seo-competitor-spy): go-live wiring"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "feat(vsco): launchd sync daemon entrypoint",
+            "refactor(vsco): drop NOTION_API_KEY dependency",
+            "fix(event-folder): repoint dead CRM data_source IDs"
+          ]
+        }
+      ],
+      "takeaway": "Also daemonized the VSCO sync and finished purging the revoked Notion key from those pipelines."
+    },
+    {
+      "day": 164,
+      "date": "2026-06-07",
+      "title": "Day 164 - SEO Competitor Spy: Zero to Phase 10",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Milestone"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Security"
+      ],
+      "impact": "Critical",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "32 Tricks to Level Up Claude Code in 16 Mins",
+          "channel": "Nate Herk | AI Automation"
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "feat(seo-agent): spy SQLite + notion_spy + scheduler + checklist runner",
+            "feat(seo-agent): 20+ competitor checks (cheap/mid/expensive) + Apify IG/TikTok",
+            "feat(seo-agent): threat scorer + change classifier + Opus synthesizer + 4 dashboard tabs"
+          ]
+        },
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "feat(jimbo-cli): add ask + chat client for live brain (POST /chat)"
+          ]
+        }
+      ],
+      "takeaway": "The OSINT study from late May paid off directly here. Jimbo also got a CLI chat client wired into its live brain."
+    },
+    {
+      "day": 163,
+      "date": "2026-06-06",
+      "title": "Day 163 - Ship Marathon: SEO GEO, Intake-Learn, Vault, MIGHTY Productions",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Milestone",
+        "Design"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Security",
+        "Frontend"
+      ],
+      "impact": "Critical",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "Anthropic Just Dethroned OpenAI. Here's What Happens Next.",
+          "channel": "Nate Herk | AI Automation"
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "feat(seo-agent): GEO/LLM brand-mention scan + competitor discovery + share-of-voice dashboard",
+            "feat(intake-learn): decision state machine + DECISION DEFAULTS DB + never-AUTO field resolver",
+            "feat(vault): Keychain-backed unlock + Hunter.io seeder + set_secret primitive"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "feat(design-center): live dashboard :8330 + access governance + backlog runway",
+            "feat(departments): 15-dept charter stubs + registry",
+            "feat(skill): /ops/client-montage + /find-email"
+          ]
+        },
+        {
+          "repo": "mighty-productions",
+          "commits": [
+            "feat: MIGHTY Productions brand identity (logo, vectors, animated sting)",
+            "feat(web): Next.js site + /transport-guide media policy"
+          ]
+        }
+      ],
+      "takeaway": "Spun design-center into a live dashboard with access governance, then built MIGHTY Productions end to end: brand, animated logo, site, and an honest media-transport page. Cross-linked the whole brand family in the footers."
+    },
+    {
+      "day": 162,
+      "date": "2026-06-05",
+      "title": "Day 162 - Gallery Highlights + AWD Reading Queue Covers",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Design"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Automation",
+        "Frontend",
+        "Design"
+      ],
+      "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "The $29 Trillion Gold Race Has Begun (Hint: Act Now!)",
+          "channel": "Felix & Friends"
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty",
+          "commits": [
+            "feat(gallery-analytics): balanced mixed-row photo highlights + ROI/gallery photo rows"
+          ]
+        },
+        {
+          "repo": "andrewwebber.dev",
+          "commits": [
+            "fix: render reading-queue covers (allow covers.openlibrary.org)",
+            "fix: route journey export through ntn CLI (keychain auth)",
+            "chore: refresh journey/courses/queue data from Notion"
+          ]
+        }
+      ],
+      "takeaway": "**Impact reports learned balanced photo-highlight rows** with ROI framing. On the site, reading-queue covers finally render (whitelisted OpenLibrary in next/image) and the journey export moved to keychain auth like everything else."
+    },
+    {
+      "day": 161,
+      "date": "2026-06-04",
+      "title": "Day 161 - Gallery Analytics: Cover Render + Moderation Ledger",
+      "era": "Full Stack AI",
+      "type": [
+        "Build"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Automation",
+        "Design",
+        "Frontend"
+      ],
+      "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "Android 17 Is the Biggest Upgrade in Years",
+          "channel": "Mrwhosetheboss"
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty",
+          "commits": [
+            "feat(gallery-analytics): standalone cover render + moderation ledger + demographics gate"
+          ]
+        }
+      ],
+      "takeaway": "**Gallery analytics got a standalone cover renderer** plus a moderation ledger and a demographics gate, so impact reports ship without exposing raw guest data. Privacy by default on the demographics cut."
+    },
+    {
+      "day": 160,
+      "date": "2026-06-03",
+      "title": "Day 160 - Founder & Finance Study Block",
+      "era": "Full Stack AI",
+      "type": [
+        "Video",
+        "Research"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Business",
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "Dan Martell: The AI Cheat Codes Every Founder Needs in 2026",
+          "channel": "Open Residency"
+        },
+        {
+          "title": "Robert Kiyosaki: The American Empire Will Collapse In 2026",
+          "channel": "Minority Mindset"
+        }
+      ],
+      "builds": [],
+      "takeaway": "Kiyosaki's macro take is doom-heavy, but the underlying point on hard assets over idle cash held attention."
+    },
+    {
+      "day": 159,
+      "date": "2026-06-02",
+      "title": "Day 159 - Refresh-Event Diff Pipeline + Notion Keychain Cutover",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Refactor"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "Automation",
+        "DevOps"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "URGENT: Do This In Notion Today",
+          "channel": "Matthias Frank"
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty",
+          "commits": [
+            "feat(refresh-event): wire diff pipeline + live schema + tests",
+            "feat(refresh-event): comms source collectors + proposed-value extractor",
+            "feat(dispatch): register email-assistant + draft-assistant aliases"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "fix(notion): use keychain auth, drop revoked-token bridge"
+          ]
+        }
+      ],
+      "takeaway": "Also ripped out the revoked Notion token everywhere and moved to keychain auth. That had been a latent failure across sync jobs."
+    },
+    {
+      "day": 158,
+      "date": "2026-06-01",
+      "title": "Day 158 - Design Request Agent: Internal-Input Mode",
+      "era": "Full Stack AI",
+      "type": [
+        "Build"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "Automation"
+      ],
+      "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "NEW Claude Update is a GAME CHANGER!",
+          "channel": "Julian Goldie AI"
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty",
+          "commits": [
+            "feat(design-request-agent): add internal-input DR mode"
+          ]
+        }
+      ],
+      "takeaway": "**Design-request agent learned an internal-input mode** so DRs can originate from inside the team, not just client intake. Small surface, big unblock: proactive design work for Matt without faking a client thread."
+    },
+    {
+      "day": 157,
+      "date": "2026-05-31",
+      "title": "Day 157 - Journey Pipeline Hardening + Launchd Fixes",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Refactor"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Frontend",
+        "Automation",
+        "DevOps"
+      ],
+      "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "This is The Most Powerful Tool to Give to Claude Code",
+          "channel": "Nate Herk | AI Automation"
+        }
+      ],
+      "builds": [
+        {
+          "repo": "andrewwebber.dev",
+          "commits": [
+            "fix(journey): restore Day 144-154 lost during regen",
+            "feat(journey): wire export-journey-json.py into nightly pipeline",
+            "fix(journey): pass --no-push to export-journey"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "fix(launchd): DC pipeline plist python3 + missing env vars",
+            "fix(launchd): curator notify/poll -m to run.py"
+          ]
+        }
+      ],
+      "takeaway": "Launchd plists for the design-center pipeline were pointing at the wrong python and missing env vars. Quiet failures, now fixed."
+    },
+    {
+      "day": 156,
+      "date": "2026-05-30",
+      "title": "Day 156 - OSINT Tooling Recon",
+      "era": "Full Stack AI",
+      "type": [
+        "Video",
+        "Research"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Security",
+        "Automation",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "OSINT Toolkit Every Investigator Needs in 2026",
+          "channel": "Shield Spectrum"
+        },
+        {
+          "title": "Top 7 OSINT tools REVEALED for 2026",
+          "channel": "David Bombal"
+        }
+      ],
+      "builds": [],
+      "takeaway": "Bombal's toolkit rundown seeded the check list that became the Spy's cheap-tier scans a week later."
+    },
+    {
+      "day": 155,
+      "date": "2026-05-29",
+      "title": "Day 155 - Agentic Engineering Study + Leadership Intake",
+      "era": "Full Stack AI",
+      "type": [
+        "Video",
+        "Research"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Business"
+      ],
+      "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "Andrej Karpathy: From Vibe Coding to Agentic Engineering",
+          "channel": "Sequoia Capital"
+        },
+        {
+          "title": "Leading in the Age of AI: A Conversation with NVIDIA CEO Jensen Huang",
+          "channel": "Milken Institute"
+        }
+      ],
+      "builds": [],
+      "takeaway": "Jensen's leadership talk reframed AI adoption as an org problem, not a tooling one. The bottleneck is rarely the model."
+    },
     {
       "day": 154,
       "date": "2026-05-28",
