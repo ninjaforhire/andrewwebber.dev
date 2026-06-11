@@ -3,8 +3,6 @@
 import { useMemo, useState, useEffect } from "react";
 import type { Project } from "@/lib/projects";
 import { ProjectCard } from "@/components/sections/ProjectCard";
-import { ConsultingSection } from "@/components/sections/ConsultingSection";
-import { ConsultationForm } from "@/components/forms/ConsultationForm";
 import { cn } from "@/lib/utils";
 import toolsData from "@/data/mighty-tools.json";
 
@@ -311,38 +309,6 @@ export function WorkPageContent() {
         />
       )}
 
-      {/* SERVICES */}
-      <div className="mt-20 md:mt-40 pt-16 md:pt-32 border-t border-white/5">
-        <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-warm mb-6">
-          § 02 — Services
-        </div>
-        <h2 className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] mb-8">
-          Hands-on <span className="text-warm">consulting</span>.
-        </h2>
-        <p className="text-2xl leading-relaxed text-muted-foreground max-w-3xl">
-          Limited engagements each quarter for businesses ready to level up.
-        </p>
-
-        <div className="mt-16">
-          <ConsultingSection />
-        </div>
-      </div>
-
-      {/* CONSULTATION FORM */}
-      <div className="mt-20 md:mt-40 pt-16 md:pt-32 border-t border-white/5">
-        <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-terminal mb-6">
-          § 03 — Book a call
-        </div>
-        <h2 className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] mb-8">
-          Tell me what
-          <br />
-          you&apos;re <span className="text-terminal">building</span>.
-        </h2>
-        <p className="text-2xl leading-relaxed text-muted-foreground max-w-3xl mb-12">
-          I respond within 24 hours.
-        </p>
-        <ConsultationForm />
-      </div>
     </div>
   );
 }

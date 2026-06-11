@@ -33,7 +33,7 @@ export function InquiryPill() {
               Contact Form →
             </a>
             <a
-              href="/work#consultation"
+              href="/engagements#consultation"
               className="rounded-md bg-data/10 px-3 py-2 text-center font-mono text-xs text-data transition-colors hover:bg-data/20"
             >
               Book Consultation →

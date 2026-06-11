@@ -10,6 +10,7 @@ import { SoundPicker } from "@/components/animation/SoundPicker";
 const NAV_ITEMS = [
   { label: "HOME", href: "/", accent: "terminal" },
   { label: "PROJECTS", href: "/work", accent: "data" },
+  { label: "ENGAGEMENTS", href: "/engagements", accent: "warm" },
   { label: "JOURNEY", href: "/journey", accent: "terminal" },
   { label: "DOSSIER", href: "/about", accent: "creative" },
   { label: "FIELD NOTES", href: "/blog", accent: "warm" },
