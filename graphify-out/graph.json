@@ -1282,10 +1282,19 @@
       "norm_label": "nightly_journey_sync.py"
     },
     {
+      "label": "notify()",
+      "file_type": "code",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L68",
+      "id": "scripts_nightly_journey_sync_notify",
+      "community": 95,
+      "norm_label": "notify()"
+    },
+    {
       "label": "run()",
       "file_type": "code",
       "source_file": "scripts/nightly_journey_sync.py",
-      "source_location": "L42",
+      "source_location": "L102",
       "id": "scripts_nightly_journey_sync_run",
       "community": 95,
       "norm_label": "run()"
@@ -1294,7 +1303,7 @@
       "label": "data_files_changed()",
       "file_type": "code",
       "source_file": "scripts/nightly_journey_sync.py",
-      "source_location": "L58",
+      "source_location": "L124",
       "id": "scripts_nightly_journey_sync_data_files_changed",
       "community": 95,
       "norm_label": "data_files_changed()"
@@ -1303,10 +1312,28 @@
       "label": "main()",
       "file_type": "code",
       "source_file": "scripts/nightly_journey_sync.py",
-      "source_location": "L66",
+      "source_location": "L130",
       "id": "scripts_nightly_journey_sync_main",
       "community": 95,
       "norm_label": "main()"
+    },
+    {
+      "label": "Best-effort multi-channel alert. Never raises.",
+      "file_type": "rationale",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L69",
+      "id": "scripts_nightly_journey_sync_rationale_69",
+      "community": 95,
+      "norm_label": "best-effort multi-channel alert. never raises."
+    },
+    {
+      "label": "Run a command, self-annealing up to `retries` times. Returns success.",
+      "file_type": "rationale",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L103",
+      "id": "scripts_nightly_journey_sync_rationale_103",
+      "community": 95,
+      "norm_label": "run a command, self-annealing up to `retries` times. returns success."
     },
     {
       "label": "count-stats.py",
@@ -2034,7 +2061,7 @@
       "source_file": "scripts/stats-checkpoint.json",
       "source_location": "L22",
       "id": "scripts_stats_checkpoint_per_repo",
-      "community": 34,
+      "community": 30,
       "norm_label": "per_repo"
     },
     {
@@ -2218,10 +2245,46 @@
       "norm_label": "commits"
     },
     {
-      "label": "ninjaforhire/cli-printing-press",
+      "label": "ninjaforhire/claude-usage",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
       "source_location": "L48",
+      "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_claude_usage",
+      "community": 94,
+      "norm_label": "ninjaforhire/claude-usage"
+    },
+    {
+      "label": "loc",
+      "file_type": "code",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L49",
+      "id": "scripts_stats_checkpoint_ninjaforhire_claude_usage_loc",
+      "community": 94,
+      "norm_label": "loc"
+    },
+    {
+      "label": "files",
+      "file_type": "code",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L50",
+      "id": "scripts_stats_checkpoint_ninjaforhire_claude_usage_files",
+      "community": 94,
+      "norm_label": "files"
+    },
+    {
+      "label": "commits",
+      "file_type": "code",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L51",
+      "id": "scripts_stats_checkpoint_ninjaforhire_claude_usage_commits",
+      "community": 94,
+      "norm_label": "commits"
+    },
+    {
+      "label": "ninjaforhire/cli-printing-press",
+      "file_type": "code",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L53",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_cli_printing_press",
       "community": 37,
       "norm_label": "ninjaforhire/cli-printing-press"
@@ -2230,7 +2293,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L49",
+      "source_location": "L54",
       "id": "scripts_stats_checkpoint_ninjaforhire_cli_printing_press_loc",
       "community": 37,
       "norm_label": "loc"
@@ -2239,7 +2302,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L50",
+      "source_location": "L55",
       "id": "scripts_stats_checkpoint_ninjaforhire_cli_printing_press_files",
       "community": 37,
       "norm_label": "files"
@@ -2248,7 +2311,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L51",
+      "source_location": "L56",
       "id": "scripts_stats_checkpoint_ninjaforhire_cli_printing_press_commits",
       "community": 37,
       "norm_label": "commits"
@@ -2257,7 +2320,7 @@
       "label": "ninjaforhire/deconstructed-studio",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L53",
+      "source_location": "L58",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_deconstructed_studio",
       "community": 39,
       "norm_label": "ninjaforhire/deconstructed-studio"
@@ -2266,7 +2329,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L54",
+      "source_location": "L59",
       "id": "scripts_stats_checkpoint_ninjaforhire_deconstructed_studio_loc",
       "community": 39,
       "norm_label": "loc"
@@ -2275,7 +2338,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L55",
+      "source_location": "L60",
       "id": "scripts_stats_checkpoint_ninjaforhire_deconstructed_studio_files",
       "community": 39,
       "norm_label": "files"
@@ -2284,7 +2347,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L56",
+      "source_location": "L61",
       "id": "scripts_stats_checkpoint_ninjaforhire_deconstructed_studio_commits",
       "community": 39,
       "norm_label": "commits"
@@ -2293,7 +2356,7 @@
       "label": "ninjaforhire/design-request-agent",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L58",
+      "source_location": "L63",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_design_request_agent",
       "community": 40,
       "norm_label": "ninjaforhire/design-request-agent"
@@ -2302,7 +2365,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L59",
+      "source_location": "L64",
       "id": "scripts_stats_checkpoint_ninjaforhire_design_request_agent_loc",
       "community": 40,
       "norm_label": "loc"
@@ -2311,7 +2374,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L60",
+      "source_location": "L65",
       "id": "scripts_stats_checkpoint_ninjaforhire_design_request_agent_files",
       "community": 40,
       "norm_label": "files"
@@ -2320,7 +2383,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L61",
+      "source_location": "L66",
       "id": "scripts_stats_checkpoint_ninjaforhire_design_request_agent_commits",
       "community": 40,
       "norm_label": "commits"
@@ -2329,7 +2392,7 @@
       "label": "ninjaforhire/dotfiles",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L63",
+      "source_location": "L68",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_dotfiles",
       "community": 41,
       "norm_label": "ninjaforhire/dotfiles"
@@ -2338,7 +2401,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L64",
+      "source_location": "L69",
       "id": "scripts_stats_checkpoint_ninjaforhire_dotfiles_loc",
       "community": 41,
       "norm_label": "loc"
@@ -2347,7 +2410,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L65",
+      "source_location": "L70",
       "id": "scripts_stats_checkpoint_ninjaforhire_dotfiles_files",
       "community": 41,
       "norm_label": "files"
@@ -2356,7 +2419,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L66",
+      "source_location": "L71",
       "id": "scripts_stats_checkpoint_ninjaforhire_dotfiles_commits",
       "community": 41,
       "norm_label": "commits"
@@ -2365,7 +2428,7 @@
       "label": "ninjaforhire/everything-claude-code",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L68",
+      "source_location": "L73",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_everything_claude_code",
       "community": 42,
       "norm_label": "ninjaforhire/everything-claude-code"
@@ -2374,7 +2437,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L69",
+      "source_location": "L74",
       "id": "scripts_stats_checkpoint_ninjaforhire_everything_claude_code_loc",
       "community": 42,
       "norm_label": "loc"
@@ -2383,7 +2446,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L70",
+      "source_location": "L75",
       "id": "scripts_stats_checkpoint_ninjaforhire_everything_claude_code_files",
       "community": 42,
       "norm_label": "files"
@@ -2392,7 +2455,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L71",
+      "source_location": "L76",
       "id": "scripts_stats_checkpoint_ninjaforhire_everything_claude_code_commits",
       "community": 42,
       "norm_label": "commits"
@@ -2401,7 +2464,7 @@
       "label": "ninjaforhire/forge",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L73",
+      "source_location": "L78",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_forge",
       "community": 43,
       "norm_label": "ninjaforhire/forge"
@@ -2410,7 +2473,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L74",
+      "source_location": "L79",
       "id": "scripts_stats_checkpoint_ninjaforhire_forge_loc",
       "community": 43,
       "norm_label": "loc"
@@ -2419,7 +2482,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L75",
+      "source_location": "L80",
       "id": "scripts_stats_checkpoint_ninjaforhire_forge_files",
       "community": 43,
       "norm_label": "files"
@@ -2428,7 +2491,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L76",
+      "source_location": "L81",
       "id": "scripts_stats_checkpoint_ninjaforhire_forge_commits",
       "community": 43,
       "norm_label": "commits"
@@ -2437,7 +2500,7 @@
       "label": "ninjaforhire/General-Tools",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L78",
+      "source_location": "L83",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_general_tools",
       "community": 44,
       "norm_label": "ninjaforhire/general-tools"
@@ -2446,7 +2509,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L79",
+      "source_location": "L84",
       "id": "scripts_stats_checkpoint_ninjaforhire_general_tools_loc",
       "community": 44,
       "norm_label": "loc"
@@ -2455,7 +2518,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L80",
+      "source_location": "L85",
       "id": "scripts_stats_checkpoint_ninjaforhire_general_tools_files",
       "community": 44,
       "norm_label": "files"
@@ -2464,7 +2527,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L81",
+      "source_location": "L86",
       "id": "scripts_stats_checkpoint_ninjaforhire_general_tools_commits",
       "community": 44,
       "norm_label": "commits"
@@ -2473,7 +2536,7 @@
       "label": "ninjaforhire/gstack",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L83",
+      "source_location": "L88",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_gstack",
       "community": 50,
       "norm_label": "ninjaforhire/gstack"
@@ -2482,7 +2545,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L84",
+      "source_location": "L89",
       "id": "scripts_stats_checkpoint_ninjaforhire_gstack_loc",
       "community": 50,
       "norm_label": "loc"
@@ -2491,7 +2554,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L85",
+      "source_location": "L90",
       "id": "scripts_stats_checkpoint_ninjaforhire_gstack_files",
       "community": 50,
       "norm_label": "files"
@@ -2500,7 +2563,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L86",
+      "source_location": "L91",
       "id": "scripts_stats_checkpoint_ninjaforhire_gstack_commits",
       "community": 50,
       "norm_label": "commits"
@@ -2509,7 +2572,7 @@
       "label": "ninjaforhire/hotfixops",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L88",
+      "source_location": "L93",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_hotfixops",
       "community": 51,
       "norm_label": "ninjaforhire/hotfixops"
@@ -2518,7 +2581,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L89",
+      "source_location": "L94",
       "id": "scripts_stats_checkpoint_ninjaforhire_hotfixops_loc",
       "community": 51,
       "norm_label": "loc"
@@ -2527,7 +2590,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L90",
+      "source_location": "L95",
       "id": "scripts_stats_checkpoint_ninjaforhire_hotfixops_files",
       "community": 51,
       "norm_label": "files"
@@ -2536,7 +2599,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L91",
+      "source_location": "L96",
       "id": "scripts_stats_checkpoint_ninjaforhire_hotfixops_commits",
       "community": 51,
       "norm_label": "commits"
@@ -2545,7 +2608,7 @@
       "label": "ninjaforhire/hotfixops-site",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L93",
+      "source_location": "L98",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_hotfixops_site",
       "community": 53,
       "norm_label": "ninjaforhire/hotfixops-site"
@@ -2554,7 +2617,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L94",
+      "source_location": "L99",
       "id": "scripts_stats_checkpoint_ninjaforhire_hotfixops_site_loc",
       "community": 53,
       "norm_label": "loc"
@@ -2563,7 +2626,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L95",
+      "source_location": "L100",
       "id": "scripts_stats_checkpoint_ninjaforhire_hotfixops_site_files",
       "community": 53,
       "norm_label": "files"
@@ -2572,7 +2635,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L96",
+      "source_location": "L101",
       "id": "scripts_stats_checkpoint_ninjaforhire_hotfixops_site_commits",
       "community": 53,
       "norm_label": "commits"
@@ -2581,7 +2644,7 @@
       "label": "ninjaforhire/Iris-Studio",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L98",
+      "source_location": "L103",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_iris_studio",
       "community": 55,
       "norm_label": "ninjaforhire/iris-studio"
@@ -2590,7 +2653,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L99",
+      "source_location": "L104",
       "id": "scripts_stats_checkpoint_ninjaforhire_iris_studio_loc",
       "community": 55,
       "norm_label": "loc"
@@ -2599,7 +2662,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L100",
+      "source_location": "L105",
       "id": "scripts_stats_checkpoint_ninjaforhire_iris_studio_files",
       "community": 55,
       "norm_label": "files"
@@ -2608,7 +2671,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L101",
+      "source_location": "L106",
       "id": "scripts_stats_checkpoint_ninjaforhire_iris_studio_commits",
       "community": 55,
       "norm_label": "commits"
@@ -2617,7 +2680,7 @@
       "label": "ninjaforhire/mighty",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L103",
+      "source_location": "L108",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_mighty",
       "community": 57,
       "norm_label": "ninjaforhire/mighty"
@@ -2626,7 +2689,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L104",
+      "source_location": "L109",
       "id": "scripts_stats_checkpoint_ninjaforhire_mighty_loc",
       "community": 57,
       "norm_label": "loc"
@@ -2635,7 +2698,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L105",
+      "source_location": "L110",
       "id": "scripts_stats_checkpoint_ninjaforhire_mighty_files",
       "community": 57,
       "norm_label": "files"
@@ -2644,7 +2707,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L106",
+      "source_location": "L111",
       "id": "scripts_stats_checkpoint_ninjaforhire_mighty_commits",
       "community": 57,
       "norm_label": "commits"
@@ -2653,7 +2716,7 @@
       "label": "ninjaforhire/MIGHTY-Apps",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L108",
+      "source_location": "L113",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_mighty_apps",
       "community": 56,
       "norm_label": "ninjaforhire/mighty-apps"
@@ -2662,7 +2725,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L109",
+      "source_location": "L114",
       "id": "scripts_stats_checkpoint_ninjaforhire_mighty_apps_loc",
       "community": 56,
       "norm_label": "loc"
@@ -2671,7 +2734,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L110",
+      "source_location": "L115",
       "id": "scripts_stats_checkpoint_ninjaforhire_mighty_apps_files",
       "community": 56,
       "norm_label": "files"
@@ -2680,7 +2743,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L111",
+      "source_location": "L116",
       "id": "scripts_stats_checkpoint_ninjaforhire_mighty_apps_commits",
       "community": 56,
       "norm_label": "commits"
@@ -2689,7 +2752,7 @@
       "label": "ninjaforhire/mighty-gallery",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L113",
+      "source_location": "L118",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_mighty_gallery",
       "community": 58,
       "norm_label": "ninjaforhire/mighty-gallery"
@@ -2698,7 +2761,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L114",
+      "source_location": "L119",
       "id": "scripts_stats_checkpoint_ninjaforhire_mighty_gallery_loc",
       "community": 58,
       "norm_label": "loc"
@@ -2707,7 +2770,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L115",
+      "source_location": "L120",
       "id": "scripts_stats_checkpoint_ninjaforhire_mighty_gallery_files",
       "community": 58,
       "norm_label": "files"
@@ -2716,7 +2779,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L116",
+      "source_location": "L121",
       "id": "scripts_stats_checkpoint_ninjaforhire_mighty_gallery_commits",
       "community": 58,
       "norm_label": "commits"
@@ -2725,7 +2788,7 @@
       "label": "ninjaforhire/mighty-gobbla",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L118",
+      "source_location": "L123",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_mighty_gobbla",
       "community": 59,
       "norm_label": "ninjaforhire/mighty-gobbla"
@@ -2734,7 +2797,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L119",
+      "source_location": "L124",
       "id": "scripts_stats_checkpoint_ninjaforhire_mighty_gobbla_loc",
       "community": 59,
       "norm_label": "loc"
@@ -2743,7 +2806,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L120",
+      "source_location": "L125",
       "id": "scripts_stats_checkpoint_ninjaforhire_mighty_gobbla_files",
       "community": 59,
       "norm_label": "files"
@@ -2752,7 +2815,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L121",
+      "source_location": "L126",
       "id": "scripts_stats_checkpoint_ninjaforhire_mighty_gobbla_commits",
       "community": 59,
       "norm_label": "commits"
@@ -2761,7 +2824,7 @@
       "label": "ninjaforhire/mighty-playbook",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L123",
+      "source_location": "L128",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_mighty_playbook",
       "community": 60,
       "norm_label": "ninjaforhire/mighty-playbook"
@@ -2770,7 +2833,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L124",
+      "source_location": "L129",
       "id": "scripts_stats_checkpoint_ninjaforhire_mighty_playbook_loc",
       "community": 60,
       "norm_label": "loc"
@@ -2779,7 +2842,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L125",
+      "source_location": "L130",
       "id": "scripts_stats_checkpoint_ninjaforhire_mighty_playbook_files",
       "community": 60,
       "norm_label": "files"
@@ -2788,16 +2851,52 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L126",
+      "source_location": "L131",
       "id": "scripts_stats_checkpoint_ninjaforhire_mighty_playbook_commits",
       "community": 60,
+      "norm_label": "commits"
+    },
+    {
+      "label": "ninjaforhire/mighty-productions",
+      "file_type": "code",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L133",
+      "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_mighty_productions",
+      "community": 96,
+      "norm_label": "ninjaforhire/mighty-productions"
+    },
+    {
+      "label": "loc",
+      "file_type": "code",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L134",
+      "id": "scripts_stats_checkpoint_ninjaforhire_mighty_productions_loc",
+      "community": 96,
+      "norm_label": "loc"
+    },
+    {
+      "label": "files",
+      "file_type": "code",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L135",
+      "id": "scripts_stats_checkpoint_ninjaforhire_mighty_productions_files",
+      "community": 96,
+      "norm_label": "files"
+    },
+    {
+      "label": "commits",
+      "file_type": "code",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L136",
+      "id": "scripts_stats_checkpoint_ninjaforhire_mighty_productions_commits",
+      "community": 96,
       "norm_label": "commits"
     },
     {
       "label": "ninjaforhire/mighty-skills",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L128",
+      "source_location": "L138",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_mighty_skills",
       "community": 61,
       "norm_label": "ninjaforhire/mighty-skills"
@@ -2806,7 +2905,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L129",
+      "source_location": "L139",
       "id": "scripts_stats_checkpoint_ninjaforhire_mighty_skills_loc",
       "community": 61,
       "norm_label": "loc"
@@ -2815,7 +2914,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L130",
+      "source_location": "L140",
       "id": "scripts_stats_checkpoint_ninjaforhire_mighty_skills_files",
       "community": 61,
       "norm_label": "files"
@@ -2824,7 +2923,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L131",
+      "source_location": "L141",
       "id": "scripts_stats_checkpoint_ninjaforhire_mighty_skills_commits",
       "community": 61,
       "norm_label": "commits"
@@ -2833,7 +2932,7 @@
       "label": "ninjaforhire/mightyphotobooths",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L133",
+      "source_location": "L143",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_mightyphotobooths",
       "community": 62,
       "norm_label": "ninjaforhire/mightyphotobooths"
@@ -2842,7 +2941,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L134",
+      "source_location": "L144",
       "id": "scripts_stats_checkpoint_ninjaforhire_mightyphotobooths_loc",
       "community": 62,
       "norm_label": "loc"
@@ -2851,7 +2950,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L135",
+      "source_location": "L145",
       "id": "scripts_stats_checkpoint_ninjaforhire_mightyphotobooths_files",
       "community": 62,
       "norm_label": "files"
@@ -2860,7 +2959,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L136",
+      "source_location": "L146",
       "id": "scripts_stats_checkpoint_ninjaforhire_mightyphotobooths_commits",
       "community": 62,
       "norm_label": "commits"
@@ -2869,7 +2968,7 @@
       "label": "ninjaforhire/mpb-ai-gen-tool",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L138",
+      "source_location": "L148",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_mpb_ai_gen_tool",
       "community": 63,
       "norm_label": "ninjaforhire/mpb-ai-gen-tool"
@@ -2878,7 +2977,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L139",
+      "source_location": "L149",
       "id": "scripts_stats_checkpoint_ninjaforhire_mpb_ai_gen_tool_loc",
       "community": 63,
       "norm_label": "loc"
@@ -2887,7 +2986,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L140",
+      "source_location": "L150",
       "id": "scripts_stats_checkpoint_ninjaforhire_mpb_ai_gen_tool_files",
       "community": 63,
       "norm_label": "files"
@@ -2896,7 +2995,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L141",
+      "source_location": "L151",
       "id": "scripts_stats_checkpoint_ninjaforhire_mpb_ai_gen_tool_commits",
       "community": 63,
       "norm_label": "commits"
@@ -2905,7 +3004,7 @@
       "label": "ninjaforhire/mpb-site",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L143",
+      "source_location": "L153",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_mpb_site",
       "community": 28,
       "norm_label": "ninjaforhire/mpb-site"
@@ -2914,7 +3013,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L144",
+      "source_location": "L154",
       "id": "scripts_stats_checkpoint_ninjaforhire_mpb_site_loc",
       "community": 28,
       "norm_label": "loc"
@@ -2923,7 +3022,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L145",
+      "source_location": "L155",
       "id": "scripts_stats_checkpoint_ninjaforhire_mpb_site_files",
       "community": 28,
       "norm_label": "files"
@@ -2932,7 +3031,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L146",
+      "source_location": "L156",
       "id": "scripts_stats_checkpoint_ninjaforhire_mpb_site_commits",
       "community": 28,
       "norm_label": "commits"
@@ -2941,7 +3040,7 @@
       "label": "ninjaforhire/Notion-Tools",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L148",
+      "source_location": "L158",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_notion_tools",
       "community": 64,
       "norm_label": "ninjaforhire/notion-tools"
@@ -2950,7 +3049,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L149",
+      "source_location": "L159",
       "id": "scripts_stats_checkpoint_ninjaforhire_notion_tools_loc",
       "community": 64,
       "norm_label": "loc"
@@ -2959,7 +3058,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L150",
+      "source_location": "L160",
       "id": "scripts_stats_checkpoint_ninjaforhire_notion_tools_files",
       "community": 64,
       "norm_label": "files"
@@ -2968,7 +3067,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L151",
+      "source_location": "L161",
       "id": "scripts_stats_checkpoint_ninjaforhire_notion_tools_commits",
       "community": 64,
       "norm_label": "commits"
@@ -2977,7 +3076,7 @@
       "label": "ninjaforhire/pp-libraries",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L153",
+      "source_location": "L163",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_pp_libraries",
       "community": 65,
       "norm_label": "ninjaforhire/pp-libraries"
@@ -2986,7 +3085,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L154",
+      "source_location": "L164",
       "id": "scripts_stats_checkpoint_ninjaforhire_pp_libraries_loc",
       "community": 65,
       "norm_label": "loc"
@@ -2995,7 +3094,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L155",
+      "source_location": "L165",
       "id": "scripts_stats_checkpoint_ninjaforhire_pp_libraries_files",
       "community": 65,
       "norm_label": "files"
@@ -3004,7 +3103,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L156",
+      "source_location": "L166",
       "id": "scripts_stats_checkpoint_ninjaforhire_pp_libraries_commits",
       "community": 65,
       "norm_label": "commits"
@@ -3013,7 +3112,7 @@
       "label": "ninjaforhire/Scrapers",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L158",
+      "source_location": "L168",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_scrapers",
       "community": 66,
       "norm_label": "ninjaforhire/scrapers"
@@ -3022,7 +3121,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L159",
+      "source_location": "L169",
       "id": "scripts_stats_checkpoint_ninjaforhire_scrapers_loc",
       "community": 66,
       "norm_label": "loc"
@@ -3031,7 +3130,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L160",
+      "source_location": "L170",
       "id": "scripts_stats_checkpoint_ninjaforhire_scrapers_files",
       "community": 66,
       "norm_label": "files"
@@ -3040,7 +3139,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L161",
+      "source_location": "L171",
       "id": "scripts_stats_checkpoint_ninjaforhire_scrapers_commits",
       "community": 66,
       "norm_label": "commits"
@@ -3049,7 +3148,7 @@
       "label": "ninjaforhire/snappic-site-builder",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L163",
+      "source_location": "L173",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_snappic_site_builder",
       "community": 67,
       "norm_label": "ninjaforhire/snappic-site-builder"
@@ -3058,7 +3157,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L164",
+      "source_location": "L174",
       "id": "scripts_stats_checkpoint_ninjaforhire_snappic_site_builder_loc",
       "community": 67,
       "norm_label": "loc"
@@ -3067,7 +3166,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L165",
+      "source_location": "L175",
       "id": "scripts_stats_checkpoint_ninjaforhire_snappic_site_builder_files",
       "community": 67,
       "norm_label": "files"
@@ -3076,7 +3175,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L166",
+      "source_location": "L176",
       "id": "scripts_stats_checkpoint_ninjaforhire_snappic_site_builder_commits",
       "community": 67,
       "norm_label": "commits"
@@ -3085,7 +3184,7 @@
       "label": "ninjaforhire/terminal-gloss",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L168",
+      "source_location": "L178",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_terminal_gloss",
       "community": 69,
       "norm_label": "ninjaforhire/terminal-gloss"
@@ -3094,7 +3193,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L169",
+      "source_location": "L179",
       "id": "scripts_stats_checkpoint_ninjaforhire_terminal_gloss_loc",
       "community": 69,
       "norm_label": "loc"
@@ -3103,7 +3202,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L170",
+      "source_location": "L180",
       "id": "scripts_stats_checkpoint_ninjaforhire_terminal_gloss_files",
       "community": 69,
       "norm_label": "files"
@@ -3112,7 +3211,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L171",
+      "source_location": "L181",
       "id": "scripts_stats_checkpoint_ninjaforhire_terminal_gloss_commits",
       "community": 69,
       "norm_label": "commits"
@@ -3121,7 +3220,7 @@
       "label": "ninjaforhire/terminal-karaoke",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L173",
+      "source_location": "L183",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_terminal_karaoke",
       "community": 70,
       "norm_label": "ninjaforhire/terminal-karaoke"
@@ -3130,7 +3229,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L174",
+      "source_location": "L184",
       "id": "scripts_stats_checkpoint_ninjaforhire_terminal_karaoke_loc",
       "community": 70,
       "norm_label": "loc"
@@ -3139,7 +3238,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L175",
+      "source_location": "L185",
       "id": "scripts_stats_checkpoint_ninjaforhire_terminal_karaoke_files",
       "community": 70,
       "norm_label": "files"
@@ -3148,7 +3247,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L176",
+      "source_location": "L186",
       "id": "scripts_stats_checkpoint_ninjaforhire_terminal_karaoke_commits",
       "community": 70,
       "norm_label": "commits"
@@ -3157,7 +3256,7 @@
       "label": "ninjaforhire/Video-Agent",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L178",
+      "source_location": "L188",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_video_agent",
       "community": 71,
       "norm_label": "ninjaforhire/video-agent"
@@ -3166,7 +3265,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L179",
+      "source_location": "L189",
       "id": "scripts_stats_checkpoint_ninjaforhire_video_agent_loc",
       "community": 71,
       "norm_label": "loc"
@@ -3175,7 +3274,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L180",
+      "source_location": "L190",
       "id": "scripts_stats_checkpoint_ninjaforhire_video_agent_files",
       "community": 71,
       "norm_label": "files"
@@ -3184,7 +3283,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L181",
+      "source_location": "L191",
       "id": "scripts_stats_checkpoint_ninjaforhire_video_agent_commits",
       "community": 71,
       "norm_label": "commits"
@@ -3193,7 +3292,7 @@
       "label": "ninjaforhire/workspace-config",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L183",
+      "source_location": "L193",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_workspace_config",
       "community": 54,
       "norm_label": "ninjaforhire/workspace-config"
@@ -3202,7 +3301,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L184",
+      "source_location": "L194",
       "id": "scripts_stats_checkpoint_ninjaforhire_workspace_config_loc",
       "community": 54,
       "norm_label": "loc"
@@ -3211,7 +3310,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L185",
+      "source_location": "L195",
       "id": "scripts_stats_checkpoint_ninjaforhire_workspace_config_files",
       "community": 54,
       "norm_label": "files"
@@ -3220,16 +3319,52 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L186",
+      "source_location": "L196",
       "id": "scripts_stats_checkpoint_ninjaforhire_workspace_config_commits",
       "community": 54,
+      "norm_label": "commits"
+    },
+    {
+      "label": "ninjaforhire/wraith",
+      "file_type": "code",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L198",
+      "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_wraith",
+      "community": 99,
+      "norm_label": "ninjaforhire/wraith"
+    },
+    {
+      "label": "loc",
+      "file_type": "code",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L199",
+      "id": "scripts_stats_checkpoint_ninjaforhire_wraith_loc",
+      "community": 99,
+      "norm_label": "loc"
+    },
+    {
+      "label": "files",
+      "file_type": "code",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L200",
+      "id": "scripts_stats_checkpoint_ninjaforhire_wraith_files",
+      "community": 99,
+      "norm_label": "files"
+    },
+    {
+      "label": "commits",
+      "file_type": "code",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L201",
+      "id": "scripts_stats_checkpoint_ninjaforhire_wraith_commits",
+      "community": 99,
       "norm_label": "commits"
     },
     {
       "label": "ninjaforhire/_Code",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L188",
+      "source_location": "L203",
       "id": "scripts_stats_checkpoint_per_repo_ninjaforhire_code",
       "community": 38,
       "norm_label": "ninjaforhire/_code"
@@ -3238,7 +3373,7 @@
       "label": "loc",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L189",
+      "source_location": "L204",
       "id": "scripts_stats_checkpoint_ninjaforhire_code_loc",
       "community": 38,
       "norm_label": "loc"
@@ -3247,7 +3382,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L190",
+      "source_location": "L205",
       "id": "scripts_stats_checkpoint_ninjaforhire_code_files",
       "community": 38,
       "norm_label": "files"
@@ -3256,7 +3391,7 @@
       "label": "commits",
       "file_type": "code",
       "source_file": "scripts/stats-checkpoint.json",
-      "source_location": "L191",
+      "source_location": "L206",
       "id": "scripts_stats_checkpoint_ninjaforhire_code_commits",
       "community": 38,
       "norm_label": "commits"
@@ -3681,79 +3816,97 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L1",
       "id": "scripts_export_journey_json_py",
-      "community": 0,
+      "community": 86,
       "norm_label": "export-journey-json.py"
+    },
+    {
+      "label": "_ntn_api()",
+      "file_type": "code",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L22",
+      "id": "scripts_export_journey_json_ntn_api",
+      "community": 86,
+      "norm_label": "_ntn_api()"
     },
     {
       "label": "fetch_all_pages()",
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
-      "source_location": "L29",
+      "source_location": "L50",
       "id": "scripts_export_journey_json_fetch_all_pages",
-      "community": 0,
+      "community": 86,
       "norm_label": "fetch_all_pages()"
     },
     {
       "label": "fetch_page_blocks()",
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
-      "source_location": "L51",
+      "source_location": "L65",
       "id": "scripts_export_journey_json_fetch_page_blocks",
-      "community": 0,
+      "community": 86,
       "norm_label": "fetch_page_blocks()"
     },
     {
       "label": "extract_rich_text()",
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
-      "source_location": "L68",
+      "source_location": "L80",
       "id": "scripts_export_journey_json_extract_rich_text",
-      "community": 0,
+      "community": 86,
       "norm_label": "extract_rich_text()"
     },
     {
       "label": "parse_blocks()",
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
-      "source_location": "L72",
+      "source_location": "L84",
       "id": "scripts_export_journey_json_parse_blocks",
-      "community": 0,
+      "community": 86,
       "norm_label": "parse_blocks()"
     },
     {
       "label": "props_to_entry()",
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
-      "source_location": "L128",
+      "source_location": "L142",
       "id": "scripts_export_journey_json_props_to_entry",
-      "community": 0,
+      "community": 86,
       "norm_label": "props_to_entry()"
     },
     {
       "label": "bundle_videos_into_journal()",
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
-      "source_location": "L170",
+      "source_location": "L184",
       "id": "scripts_export_journey_json_bundle_videos_into_journal",
-      "community": 0,
+      "community": 86,
       "norm_label": "bundle_videos_into_journal()"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
-      "source_location": "L221",
+      "source_location": "L235",
       "id": "scripts_export_journey_json_main",
-      "community": 0,
+      "community": 86,
       "norm_label": "main()"
+    },
+    {
+      "label": "Call the Notion API through the ntn CLI (keychain auth).      The raw NOTION_API",
+      "file_type": "rationale",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L23",
+      "id": "scripts_export_journey_json_rationale_23",
+      "community": 86,
+      "norm_label": "call the notion api through the ntn cli (keychain auth).      the raw notion_api"
     },
     {
       "label": "Merge per-video LL records (Source=YouTube or Type=Video) into each day's journa",
       "file_type": "rationale",
       "source_file": "scripts/export-journey-json.py",
-      "source_location": "L171",
-      "id": "scripts_export_journey_json_rationale_171",
-      "community": 0,
+      "source_location": "L185",
+      "id": "scripts_export_journey_json_rationale_185",
+      "community": 86,
       "norm_label": "merge per-video ll records (source=youtube or type=video) into each day's journa"
     },
     {
@@ -3933,7 +4086,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L1",
       "id": "scripts_sync_claude_stats_js",
-      "community": 76,
+      "community": 81,
       "norm_label": "sync-claude-stats.js"
     },
     {
@@ -3942,7 +4095,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L12",
       "id": "scripts_sync_claude_stats_code_root",
-      "community": 76,
+      "community": 81,
       "norm_label": "code_root"
     },
     {
@@ -3951,7 +4104,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L13",
       "id": "scripts_sync_claude_stats_out",
-      "community": 76,
+      "community": 81,
       "norm_label": "out"
     },
     {
@@ -3960,7 +4113,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L15",
       "id": "scripts_sync_claude_stats_run",
-      "community": 76,
+      "community": 81,
       "norm_label": "run()"
     },
     {
@@ -3969,7 +4122,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L21",
       "id": "scripts_sync_claude_stats_getclaudeusage",
-      "community": 76,
+      "community": 81,
       "norm_label": "getclaudeusage()"
     },
     {
@@ -3978,7 +4131,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L45",
       "id": "scripts_sync_claude_stats_walk",
-      "community": 76,
+      "community": 81,
       "norm_label": "walk()"
     },
     {
@@ -3987,7 +4140,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L58",
       "id": "scripts_sync_claude_stats_countagents",
-      "community": 76,
+      "community": 81,
       "norm_label": "countagents()"
     },
     {
@@ -3996,7 +4149,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L64",
       "id": "scripts_sync_claude_stats_countskills",
-      "community": 76,
+      "community": 81,
       "norm_label": "countskills()"
     },
     {
@@ -4005,7 +4158,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L70",
       "id": "scripts_sync_claude_stats_countlines",
-      "community": 76,
+      "community": 81,
       "norm_label": "countlines()"
     },
     {
@@ -4014,7 +4167,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L77",
       "id": "scripts_sync_claude_stats_countloc",
-      "community": 76,
+      "community": 81,
       "norm_label": "countloc()"
     },
     {
@@ -4023,7 +4176,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L87",
       "id": "scripts_sync_claude_stats_claude",
-      "community": 76,
+      "community": 81,
       "norm_label": "claude"
     },
     {
@@ -4032,7 +4185,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L91",
       "id": "scripts_sync_claude_stats_agents",
-      "community": 76,
+      "community": 81,
       "norm_label": "agents"
     },
     {
@@ -4041,7 +4194,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L95",
       "id": "scripts_sync_claude_stats_skills",
-      "community": 76,
+      "community": 81,
       "norm_label": "skills"
     },
     {
@@ -4050,7 +4203,7 @@
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L99",
       "id": "scripts_sync_claude_stats_loc",
-      "community": 76,
+      "community": 81,
       "norm_label": "loc"
     },
     {
@@ -4066,7 +4219,7 @@
       "label": "metadata",
       "file_type": "code",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L12",
+      "source_location": "L13",
       "id": "app_layout_metadata",
       "community": 5,
       "norm_label": "metadata"
@@ -4075,7 +4228,7 @@
       "label": "viewport",
       "file_type": "code",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L41",
+      "source_location": "L42",
       "id": "app_layout_viewport",
       "community": 5,
       "norm_label": "viewport"
@@ -4084,7 +4237,7 @@
       "label": "RootLayout()",
       "file_type": "code",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L51",
+      "source_location": "L52",
       "id": "app_layout_rootlayout",
       "community": 5,
       "norm_label": "rootlayout()"
@@ -4201,7 +4354,7 @@
       "label": "AboutPage()",
       "file_type": "code",
       "source_file": "src/app/about/page.tsx",
-      "source_location": "L84",
+      "source_location": "L93",
       "id": "about_page_aboutpage",
       "community": 77,
       "norm_label": "aboutpage()"
@@ -4554,7 +4707,7 @@
       "source_file": "src/app/work/WorkPageContent.tsx",
       "source_location": "L95",
       "id": "work_workpagecontent_workpagecontent",
-      "community": 91,
+      "community": 6,
       "norm_label": "workpagecontent()"
     },
     {
@@ -4590,7 +4743,7 @@
       "source_file": "src/app/work/page.tsx",
       "source_location": "L1",
       "id": "src_app_work_page_tsx",
-      "community": 91,
+      "community": 6,
       "norm_label": "page.tsx"
     },
     {
@@ -4599,7 +4752,7 @@
       "source_file": "src/app/work/page.tsx",
       "source_location": "L4",
       "id": "work_page_metadata",
-      "community": 91,
+      "community": 6,
       "norm_label": "metadata"
     },
     {
@@ -4608,7 +4761,7 @@
       "source_file": "src/app/work/page.tsx",
       "source_location": "L9",
       "id": "work_page_workpage",
-      "community": 91,
+      "community": 6,
       "norm_label": "workpage()"
     },
     {
@@ -4617,7 +4770,7 @@
       "source_file": "src/app/api/contact/route.ts",
       "source_location": "L1",
       "id": "src_app_api_contact_route_ts",
-      "community": 17,
+      "community": 91,
       "norm_label": "route.ts"
     },
     {
@@ -4626,7 +4779,7 @@
       "source_file": "src/app/api/contact/route.ts",
       "source_location": "L3",
       "id": "contact_route_post",
-      "community": 17,
+      "community": 91,
       "norm_label": "post()"
     },
     {
@@ -4635,7 +4788,7 @@
       "source_file": "src/app/api/consultation/route.ts",
       "source_location": "L1",
       "id": "src_app_api_consultation_route_ts",
-      "community": 17,
+      "community": 91,
       "norm_label": "route.ts"
     },
     {
@@ -4644,7 +4797,7 @@
       "source_file": "src/app/api/consultation/route.ts",
       "source_location": "L3",
       "id": "consultation_route_post",
-      "community": 17,
+      "community": 91,
       "norm_label": "post()"
     },
     {
@@ -4653,7 +4806,7 @@
       "source_file": "src/app/api/photo-booth-owners/inquiry/route.ts",
       "source_location": "L1",
       "id": "src_app_api_photo_booth_owners_inquiry_route_ts",
-      "community": 17,
+      "community": 91,
       "norm_label": "route.ts"
     },
     {
@@ -4662,7 +4815,7 @@
       "source_file": "src/app/api/photo-booth-owners/inquiry/route.ts",
       "source_location": "L3",
       "id": "inquiry_route_inquirybody",
-      "community": 17,
+      "community": 91,
       "norm_label": "inquirybody"
     },
     {
@@ -4671,7 +4824,7 @@
       "source_file": "src/app/api/photo-booth-owners/inquiry/route.ts",
       "source_location": "L11",
       "id": "inquiry_route_post",
-      "community": 17,
+      "community": 91,
       "norm_label": "post()"
     },
     {
@@ -4680,7 +4833,7 @@
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L1",
       "id": "src_app_api_stats_route_ts",
-      "community": 0,
+      "community": 17,
       "norm_label": "route.ts"
     },
     {
@@ -4689,7 +4842,7 @@
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L5",
       "id": "stats_route_statsoverrides",
-      "community": 0,
+      "community": 17,
       "norm_label": "statsoverrides"
     },
     {
@@ -4698,7 +4851,7 @@
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L16",
       "id": "stats_route_loadoverrides",
-      "community": 0,
+      "community": 17,
       "norm_label": "loadoverrides()"
     },
     {
@@ -4707,7 +4860,7 @@
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L24",
       "id": "stats_route_loaddaystreak",
-      "community": 0,
+      "community": 17,
       "norm_label": "loaddaystreak()"
     },
     {
@@ -4716,7 +4869,7 @@
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L37",
       "id": "stats_route_get",
-      "community": 0,
+      "community": 17,
       "norm_label": "get()"
     },
     {
@@ -5112,7 +5265,7 @@
       "source_file": "src/components/sections/ServiceTier.tsx",
       "source_location": "L1",
       "id": "src_components_sections_servicetier_tsx",
-      "community": 6,
+      "community": 7,
       "norm_label": "servicetier.tsx"
     },
     {
@@ -5121,7 +5274,7 @@
       "source_file": "src/components/sections/ServiceTier.tsx",
       "source_location": "L3",
       "id": "sections_servicetier_servicetierprops",
-      "community": 6,
+      "community": 7,
       "norm_label": "servicetierprops"
     },
     {
@@ -5130,7 +5283,7 @@
       "source_file": "src/components/sections/ServiceTier.tsx",
       "source_location": "L12",
       "id": "sections_servicetier_accent_classes",
-      "community": 6,
+      "community": 7,
       "norm_label": "accent_classes"
     },
     {
@@ -5139,7 +5292,7 @@
       "source_file": "src/components/sections/ServiceTier.tsx",
       "source_location": "L19",
       "id": "sections_servicetier_servicetier",
-      "community": 6,
+      "community": 7,
       "norm_label": "servicetier()"
     },
     {
@@ -5301,7 +5454,7 @@
       "source_file": "src/components/forms/ConsultationForm.tsx",
       "source_location": "L1",
       "id": "src_components_forms_consultationform_tsx",
-      "community": 94,
+      "community": 98,
       "norm_label": "consultationform.tsx"
     },
     {
@@ -5310,7 +5463,7 @@
       "source_file": "src/components/forms/ConsultationForm.tsx",
       "source_location": "L6",
       "id": "forms_consultationform_formdata",
-      "community": 94,
+      "community": 98,
       "norm_label": "formdata"
     },
     {
@@ -5319,7 +5472,7 @@
       "source_file": "src/components/forms/ConsultationForm.tsx",
       "source_location": "L14",
       "id": "forms_consultationform_services",
-      "community": 94,
+      "community": 98,
       "norm_label": "services"
     },
     {
@@ -5328,7 +5481,7 @@
       "source_file": "src/components/forms/ConsultationForm.tsx",
       "source_location": "L23",
       "id": "forms_consultationform_consultationform",
-      "community": 94,
+      "community": 98,
       "norm_label": "consultationform()"
     },
     {
@@ -5411,6 +5564,33 @@
       "id": "layout_lenisprovider_lenisprovider",
       "community": 5,
       "norm_label": "lenisprovider()"
+    },
+    {
+      "label": "Footer.tsx",
+      "file_type": "code",
+      "source_file": "src/components/layout/Footer.tsx",
+      "source_location": "L1",
+      "id": "src_components_layout_footer_tsx",
+      "community": 5,
+      "norm_label": "footer.tsx"
+    },
+    {
+      "label": "FAMILY",
+      "file_type": "code",
+      "source_file": "src/components/layout/Footer.tsx",
+      "source_location": "L1",
+      "id": "layout_footer_family",
+      "community": 5,
+      "norm_label": "family"
+    },
+    {
+      "label": "Footer()",
+      "file_type": "code",
+      "source_file": "src/components/layout/Footer.tsx",
+      "source_location": "L7",
+      "id": "layout_footer_footer",
+      "community": 5,
+      "norm_label": "footer()"
     },
     {
       "label": "NavRail.tsx",
@@ -5679,7 +5859,7 @@
       "source_file": "src/components/portrait/PortraitFigure.tsx",
       "source_location": "L1",
       "id": "src_components_portrait_portraitfigure_tsx",
-      "community": 92,
+      "community": 93,
       "norm_label": "portraitfigure.tsx"
     },
     {
@@ -5688,7 +5868,7 @@
       "source_file": "src/components/portrait/PortraitFigure.tsx",
       "source_location": "L5",
       "id": "portrait_portraitfigure_props",
-      "community": 92,
+      "community": 93,
       "norm_label": "props"
     },
     {
@@ -5697,7 +5877,7 @@
       "source_file": "src/components/portrait/PortraitFigure.tsx",
       "source_location": "L10",
       "id": "portrait_portraitfigure_phase",
-      "community": 92,
+      "community": 93,
       "norm_label": "phase"
     },
     {
@@ -5706,7 +5886,7 @@
       "source_file": "src/components/portrait/PortraitFigure.tsx",
       "source_location": "L12",
       "id": "portrait_portraitfigure_phase_ms",
-      "community": 92,
+      "community": 93,
       "norm_label": "phase_ms"
     },
     {
@@ -5715,7 +5895,7 @@
       "source_file": "src/components/portrait/PortraitFigure.tsx",
       "source_location": "L24",
       "id": "portrait_portraitfigure_portraitfigure",
-      "community": 92,
+      "community": 93,
       "norm_label": "portraitfigure()"
     },
     {
@@ -6039,7 +6219,7 @@
       "source_file": "src/components/journey/CurrentReading.tsx",
       "source_location": "L1",
       "id": "src_components_journey_currentreading_tsx",
-      "community": 18,
+      "community": 76,
       "norm_label": "currentreading.tsx"
     },
     {
@@ -6048,7 +6228,7 @@
       "source_file": "src/components/journey/CurrentReading.tsx",
       "source_location": "L4",
       "id": "journey_currentreading_queueitem",
-      "community": 18,
+      "community": 76,
       "norm_label": "queueitem"
     },
     {
@@ -6057,7 +6237,7 @@
       "source_file": "src/components/journey/CurrentReading.tsx",
       "source_location": "L14",
       "id": "journey_currentreading_queuemeta",
-      "community": 18,
+      "community": 76,
       "norm_label": "queuemeta"
     },
     {
@@ -6066,7 +6246,7 @@
       "source_file": "src/components/journey/CurrentReading.tsx",
       "source_location": "L22",
       "id": "journey_currentreading_stripsubtitle",
-      "community": 18,
+      "community": 76,
       "norm_label": "stripsubtitle()"
     },
     {
@@ -6075,7 +6255,7 @@
       "source_file": "src/components/journey/CurrentReading.tsx",
       "source_location": "L26",
       "id": "journey_currentreading_currentreading",
-      "community": 18,
+      "community": 76,
       "norm_label": "currentreading()"
     },
     {
@@ -6084,7 +6264,7 @@
       "source_file": "src/components/journey/TypeBadge.tsx",
       "source_location": "L1",
       "id": "src_components_journey_typebadge_tsx",
-      "community": 18,
+      "community": 92,
       "norm_label": "typebadge.tsx"
     },
     {
@@ -6093,7 +6273,7 @@
       "source_file": "src/components/journey/TypeBadge.tsx",
       "source_location": "L4",
       "id": "journey_typebadge_typebadgeprops",
-      "community": 18,
+      "community": 92,
       "norm_label": "typebadgeprops"
     },
     {
@@ -6102,7 +6282,7 @@
       "source_file": "src/components/journey/TypeBadge.tsx",
       "source_location": "L8",
       "id": "journey_typebadge_typebadge",
-      "community": 18,
+      "community": 92,
       "norm_label": "typebadge()"
     },
     {
@@ -6111,7 +6291,7 @@
       "source_file": "src/components/journey/DayCard.tsx",
       "source_location": "L1",
       "id": "src_components_journey_daycard_tsx",
-      "community": 18,
+      "community": 92,
       "norm_label": "daycard.tsx"
     },
     {
@@ -6120,7 +6300,7 @@
       "source_file": "src/components/journey/DayCard.tsx",
       "source_location": "L12",
       "id": "journey_daycard_daycardprops",
-      "community": 18,
+      "community": 92,
       "norm_label": "daycardprops"
     },
     {
@@ -6129,7 +6309,7 @@
       "source_file": "src/components/journey/DayCard.tsx",
       "source_location": "L16",
       "id": "journey_daycard_daycard",
-      "community": 18,
+      "community": 92,
       "norm_label": "daycard()"
     },
     {
@@ -6154,25 +6334,16 @@
       "label": "getMonthKey()",
       "file_type": "code",
       "source_file": "src/components/journey/JourneyTimeline.tsx",
-      "source_location": "L14",
+      "source_location": "L18",
       "id": "journey_journeytimeline_getmonthkey",
       "community": 18,
       "norm_label": "getmonthkey()"
     },
     {
-      "label": "getCurrentMonthKey()",
-      "file_type": "code",
-      "source_file": "src/components/journey/JourneyTimeline.tsx",
-      "source_location": "L19",
-      "id": "journey_journeytimeline_getcurrentmonthkey",
-      "community": 18,
-      "norm_label": "getcurrentmonthkey()"
-    },
-    {
       "label": "AnnotatedEntry",
       "file_type": "code",
       "source_file": "src/components/journey/JourneyTimeline.tsx",
-      "source_location": "L26",
+      "source_location": "L23",
       "id": "journey_journeytimeline_annotatedentry",
       "community": 18,
       "norm_label": "annotatedentry"
@@ -6181,7 +6352,7 @@
       "label": "MonthGroup",
       "file_type": "code",
       "source_file": "src/components/journey/JourneyTimeline.tsx",
-      "source_location": "L32",
+      "source_location": "L29",
       "id": "journey_journeytimeline_monthgroup",
       "community": 18,
       "norm_label": "monthgroup"
@@ -6190,7 +6361,7 @@
       "label": "JourneyTimeline()",
       "file_type": "code",
       "source_file": "src/components/journey/JourneyTimeline.tsx",
-      "source_location": "L37",
+      "source_location": "L34",
       "id": "journey_journeytimeline_journeytimeline",
       "community": 18,
       "norm_label": "journeytimeline()"
@@ -6201,7 +6372,7 @@
       "source_file": "src/components/journey/FormattedTakeaway.tsx",
       "source_location": "L1",
       "id": "src_components_journey_formattedtakeaway_tsx",
-      "community": 18,
+      "community": 92,
       "norm_label": "formattedtakeaway.tsx"
     },
     {
@@ -6210,7 +6381,7 @@
       "source_file": "src/components/journey/FormattedTakeaway.tsx",
       "source_location": "L12",
       "id": "journey_formattedtakeaway_isfilepath",
-      "community": 18,
+      "community": 92,
       "norm_label": "isfilepath()"
     },
     {
@@ -6219,7 +6390,7 @@
       "source_file": "src/components/journey/FormattedTakeaway.tsx",
       "source_location": "L19",
       "id": "journey_formattedtakeaway_renderinline",
-      "community": 18,
+      "community": 92,
       "norm_label": "renderinline()"
     },
     {
@@ -6228,7 +6399,7 @@
       "source_file": "src/components/journey/FormattedTakeaway.tsx",
       "source_location": "L74",
       "id": "journey_formattedtakeaway_formattedtakeaway",
-      "community": 18,
+      "community": 92,
       "norm_label": "formattedtakeaway()"
     },
     {
@@ -6237,7 +6408,7 @@
       "source_file": "src/components/journey/EraFilter.tsx",
       "source_location": "L1",
       "id": "src_components_journey_erafilter_tsx",
-      "community": 18,
+      "community": 92,
       "norm_label": "erafilter.tsx"
     },
     {
@@ -6246,7 +6417,7 @@
       "source_file": "src/components/journey/EraFilter.tsx",
       "source_location": "L6",
       "id": "journey_erafilter_erafilterprops",
-      "community": 18,
+      "community": 92,
       "norm_label": "erafilterprops"
     },
     {
@@ -6255,7 +6426,7 @@
       "source_file": "src/components/journey/EraFilter.tsx",
       "source_location": "L12",
       "id": "journey_erafilter_erafilter",
-      "community": 18,
+      "community": 92,
       "norm_label": "erafilter()"
     },
     {
@@ -6480,7 +6651,7 @@
       "source_file": "src/components/photo-booth-owners/GuideCard.tsx",
       "source_location": "L1",
       "id": "src_components_photo_booth_owners_guidecard_tsx",
-      "community": 93,
+      "community": 13,
       "norm_label": "guidecard.tsx"
     },
     {
@@ -6489,7 +6660,7 @@
       "source_file": "src/components/photo-booth-owners/GuideCard.tsx",
       "source_location": "L3",
       "id": "photo_booth_owners_guidecard_guide",
-      "community": 93,
+      "community": 13,
       "norm_label": "guide"
     },
     {
@@ -6498,7 +6669,7 @@
       "source_file": "src/components/photo-booth-owners/GuideCard.tsx",
       "source_location": "L14",
       "id": "photo_booth_owners_guidecard_accent",
-      "community": 93,
+      "community": 13,
       "norm_label": "accent"
     },
     {
@@ -6507,7 +6678,7 @@
       "source_file": "src/components/photo-booth-owners/GuideCard.tsx",
       "source_location": "L21",
       "id": "photo_booth_owners_guidecard_store_labels",
-      "community": 93,
+      "community": 13,
       "norm_label": "store_labels"
     },
     {
@@ -6516,7 +6687,7 @@
       "source_file": "src/components/photo-booth-owners/GuideCard.tsx",
       "source_location": "L27",
       "id": "photo_booth_owners_guidecard_guidecard",
-      "community": 93,
+      "community": 13,
       "norm_label": "guidecard()"
     },
     {
@@ -6597,7 +6768,7 @@
       "source_file": "src/components/photo-booth-owners/InquiryForm.tsx",
       "source_location": "L1",
       "id": "src_components_photo_booth_owners_inquiryform_tsx",
-      "community": 86,
+      "community": 7,
       "norm_label": "inquiryform.tsx"
     },
     {
@@ -6606,7 +6777,7 @@
       "source_file": "src/components/photo-booth-owners/InquiryForm.tsx",
       "source_location": "L6",
       "id": "photo_booth_owners_inquiryform_formdata",
-      "community": 86,
+      "community": 7,
       "norm_label": "formdata"
     },
     {
@@ -6615,7 +6786,7 @@
       "source_file": "src/components/photo-booth-owners/InquiryForm.tsx",
       "source_location": "L14",
       "id": "photo_booth_owners_inquiryform_services",
-      "community": 86,
+      "community": 7,
       "norm_label": "services"
     },
     {
@@ -6624,7 +6795,7 @@
       "source_file": "src/components/photo-booth-owners/InquiryForm.tsx",
       "source_location": "L29",
       "id": "photo_booth_owners_inquiryform_inquiryform",
-      "community": 86,
+      "community": 7,
       "norm_label": "inquiryform()"
     },
     {
@@ -6678,7 +6849,7 @@
       "source_file": "src/components/photo-booth-owners/ServiceCard.tsx",
       "source_location": "L1",
       "id": "src_components_photo_booth_owners_servicecard_tsx",
-      "community": 7,
+      "community": 13,
       "norm_label": "servicecard.tsx"
     },
     {
@@ -6687,7 +6858,7 @@
       "source_file": "src/components/photo-booth-owners/ServiceCard.tsx",
       "source_location": "L3",
       "id": "photo_booth_owners_servicecard_serviceitem",
-      "community": 7,
+      "community": 13,
       "norm_label": "serviceitem"
     },
     {
@@ -6696,7 +6867,7 @@
       "source_file": "src/components/photo-booth-owners/ServiceCard.tsx",
       "source_location": "L9",
       "id": "photo_booth_owners_servicecard_servicecardprops",
-      "community": 7,
+      "community": 13,
       "norm_label": "servicecardprops"
     },
     {
@@ -6705,7 +6876,7 @@
       "source_file": "src/components/photo-booth-owners/ServiceCard.tsx",
       "source_location": "L17",
       "id": "photo_booth_owners_servicecard_accent_classes",
-      "community": 7,
+      "community": 13,
       "norm_label": "accent_classes"
     },
     {
@@ -6714,7 +6885,7 @@
       "source_file": "src/components/photo-booth-owners/ServiceCard.tsx",
       "source_location": "L24",
       "id": "photo_booth_owners_servicecard_servicecard",
-      "community": 7,
+      "community": 13,
       "norm_label": "servicecard()"
     },
     {
@@ -6966,7 +7137,7 @@
       "source_file": "src/lib/journey.ts",
       "source_location": "L1",
       "id": "src_lib_journey_ts",
-      "community": 18,
+      "community": 92,
       "norm_label": "journey.ts"
     },
     {
@@ -6975,7 +7146,7 @@
       "source_file": "src/lib/journey.ts",
       "source_location": "L1",
       "id": "lib_journey_journeyvideo",
-      "community": 18,
+      "community": 92,
       "norm_label": "journeyvideo"
     },
     {
@@ -6984,7 +7155,7 @@
       "source_file": "src/lib/journey.ts",
       "source_location": "L7",
       "id": "lib_journey_journeybuild",
-      "community": 18,
+      "community": 92,
       "norm_label": "journeybuild"
     },
     {
@@ -6993,7 +7164,7 @@
       "source_file": "src/lib/journey.ts",
       "source_location": "L12",
       "id": "lib_journey_journeyentry",
-      "community": 18,
+      "community": 92,
       "norm_label": "journeyentry"
     },
     {
@@ -7011,7 +7182,7 @@
       "source_file": "src/lib/journey.ts",
       "source_location": "L33",
       "id": "lib_journey_era_colors",
-      "community": 18,
+      "community": 92,
       "norm_label": "era_colors"
     },
     {
@@ -7020,7 +7191,7 @@
       "source_file": "src/lib/journey.ts",
       "source_location": "L41",
       "id": "lib_journey_impact_colors",
-      "community": 18,
+      "community": 92,
       "norm_label": "impact_colors"
     },
     {
@@ -7029,7 +7200,7 @@
       "source_file": "src/lib/journey.ts",
       "source_location": "L48",
       "id": "lib_journey_type_colors",
-      "community": 18,
+      "community": 92,
       "norm_label": "type_colors"
     },
     {
@@ -7038,7 +7209,7 @@
       "source_file": "src/lib/journey.ts",
       "source_location": "L61",
       "id": "lib_journey_eras",
-      "community": 18,
+      "community": 92,
       "norm_label": "eras"
     },
     {
@@ -7128,7 +7299,7 @@
       "source_file": "src/data/courses.json",
       "source_location": "L1",
       "id": "src_data_courses_json",
-      "community": 32,
+      "community": 76,
       "norm_label": "courses.json"
     },
     {
@@ -7137,7 +7308,7 @@
       "source_file": "src/data/courses.json",
       "source_location": "L2",
       "id": "data_courses_lastupdated",
-      "community": 32,
+      "community": 76,
       "norm_label": "lastupdated"
     },
     {
@@ -7146,7 +7317,7 @@
       "source_file": "src/data/courses.json",
       "source_location": "L3",
       "id": "data_courses_total",
-      "community": 32,
+      "community": 76,
       "norm_label": "total"
     },
     {
@@ -7155,7 +7326,7 @@
       "source_file": "src/data/courses.json",
       "source_location": "L4",
       "id": "data_courses_items",
-      "community": 32,
+      "community": 76,
       "norm_label": "items"
     },
     {
@@ -7164,7 +7335,7 @@
       "source_file": "src/data/queue.json",
       "source_location": "L1",
       "id": "src_data_queue_json",
-      "community": 81,
+      "community": 76,
       "norm_label": "queue.json"
     },
     {
@@ -7173,7 +7344,7 @@
       "source_file": "src/data/queue.json",
       "source_location": "L2",
       "id": "data_queue_lastupdated",
-      "community": 81,
+      "community": 76,
       "norm_label": "lastupdated"
     },
     {
@@ -7182,7 +7353,7 @@
       "source_file": "src/data/queue.json",
       "source_location": "L3",
       "id": "data_queue_meta",
-      "community": 81,
+      "community": 76,
       "norm_label": "meta"
     },
     {
@@ -7191,7 +7362,7 @@
       "source_file": "src/data/queue.json",
       "source_location": "L4",
       "id": "data_queue_meta_totalbooks",
-      "community": 81,
+      "community": 76,
       "norm_label": "totalbooks"
     },
     {
@@ -7200,7 +7371,7 @@
       "source_file": "src/data/queue.json",
       "source_location": "L5",
       "id": "data_queue_meta_totalcompleted",
-      "community": 81,
+      "community": 76,
       "norm_label": "totalcompleted"
     },
     {
@@ -7209,7 +7380,7 @@
       "source_file": "src/data/queue.json",
       "source_location": "L6",
       "id": "data_queue_meta_totalinprogress",
-      "community": 81,
+      "community": 76,
       "norm_label": "totalinprogress"
     },
     {
@@ -7218,7 +7389,7 @@
       "source_file": "src/data/queue.json",
       "source_location": "L7",
       "id": "data_queue_meta_totalinqueue",
-      "community": 81,
+      "community": 76,
       "norm_label": "totalinqueue"
     },
     {
@@ -7227,7 +7398,7 @@
       "source_file": "src/data/queue.json",
       "source_location": "L8",
       "id": "data_queue_meta_displaycap",
-      "community": 81,
+      "community": 76,
       "norm_label": "displaycap"
     },
     {
@@ -7236,7 +7407,7 @@
       "source_file": "src/data/queue.json",
       "source_location": "L10",
       "id": "data_queue_items",
-      "community": 81,
+      "community": 76,
       "norm_label": "items"
     },
     {
@@ -7492,13 +7663,13 @@
       "norm_label": "step 1 \u2014 pull from notion"
     },
     {
-      "label": "code:bash (cd /Users/mightydesigncenter/Desktop/_Code && python3 export)",
+      "label": "code:bash (cd /Users/mightydesigncenter/Desktop/_Code/andrewwebber.dev )",
       "file_type": "document",
       "source_file": ".claude/commands/journey-update.md",
       "source_location": "L18",
       "id": "commands_journey_update_codeblock_1",
       "community": 25,
-      "norm_label": "code:bash (cd /users/mightydesigncenter/desktop/_code && python3 export)"
+      "norm_label": "code:bash (cd /users/mightydesigncenter/desktop/_code/andrewwebber.dev )"
     },
     {
       "label": "Step 2 \u2014 Report new entries",
@@ -7717,11 +7888,119 @@
       "norm_label": "what's covered"
     },
     {
+      "label": "Best-effort multi-channel alert. Never raises.",
+      "file_type": "rationale",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L68",
+      "community": 95,
+      "norm_label": "best-effort multi-channel alert. never raises.",
+      "id": "scripts_nightly_journey_sync_rationale_68"
+    },
+    {
+      "label": "Run a command, self-annealing up to `retries` times. Returns success.",
+      "file_type": "rationale",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L102",
+      "community": 95,
+      "norm_label": "run a command, self-annealing up to `retries` times. returns success.",
+      "id": "scripts_nightly_journey_sync_rationale_102"
+    },
+    {
+      "label": "_backfill_155_165.py",
+      "file_type": "code",
+      "source_file": "scripts/_backfill_155_165.py",
+      "source_location": "L1",
+      "community": 97,
+      "norm_label": "_backfill_155_165.py",
+      "id": "scripts_backfill_155_165_py"
+    },
+    {
+      "label": "ntn_api()",
+      "file_type": "code",
+      "source_file": "scripts/_backfill_155_165.py",
+      "source_location": "L5",
+      "community": 97,
+      "norm_label": "ntn_api()",
+      "id": "scripts_backfill_155_165_ntn_api"
+    },
+    {
+      "label": "H()",
+      "file_type": "code",
+      "source_file": "scripts/_backfill_155_165.py",
+      "source_location": "L14",
+      "community": 97,
+      "norm_label": "h()",
+      "id": "scripts_backfill_155_165_h"
+    },
+    {
+      "label": "B()",
+      "file_type": "code",
+      "source_file": "scripts/_backfill_155_165.py",
+      "source_location": "L15",
+      "community": 97,
+      "norm_label": "b()",
+      "id": "scripts_backfill_155_165_b"
+    },
+    {
+      "label": "VID()",
+      "file_type": "code",
+      "source_file": "scripts/_backfill_155_165.py",
+      "source_location": "L16",
+      "community": 97,
+      "norm_label": "vid()",
+      "id": "scripts_backfill_155_165_vid"
+    },
+    {
+      "label": "P()",
+      "file_type": "code",
+      "source_file": "scripts/_backfill_155_165.py",
+      "source_location": "L20",
+      "community": 97,
+      "norm_label": "p()",
+      "id": "scripts_backfill_155_165_p"
+    },
+    {
+      "label": "page()",
+      "file_type": "code",
+      "source_file": "scripts/_backfill_155_165.py",
+      "source_location": "L22",
+      "community": 97,
+      "norm_label": "page()",
+      "id": "scripts_backfill_155_165_page"
+    },
+    {
+      "label": "Merge per-video LL records (Source=YouTube or Type=Video) into each day's journa",
+      "file_type": "rationale",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L183",
+      "community": 86,
+      "norm_label": "merge per-video ll records (source=youtube or type=video) into each day's journa",
+      "id": "scripts_export_journey_json_rationale_183"
+    },
+    {
+      "label": "getCurrentMonthKey()",
+      "file_type": "code",
+      "source_file": "src/components/journey/JourneyTimeline.tsx",
+      "source_location": "L19",
+      "community": 18,
+      "norm_label": "getcurrentmonthkey()",
+      "id": "journey_journeytimeline_getcurrentmonthkey"
+    },
+    {
+      "label": "Merge per-video LL records (Source=YouTube or Type=Video) into each day's journa",
+      "file_type": "rationale",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L171",
+      "community": 86,
+      "norm_label": "merge per-video ll records (source=youtube or type=video) into each day's journa",
+      "id": "scripts_export_journey_json_rationale_171"
+    },
+    {
       "label": "fetch_all_pages()",
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L29",
-      "community": 0,
+      "community": 17,
       "norm_label": "fetch_all_pages()",
       "id": "export_journey_json_fetch_all_pages"
     },
@@ -7730,7 +8009,7 @@
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L51",
-      "community": 0,
+      "community": 17,
       "norm_label": "fetch_page_blocks()",
       "id": "export_journey_json_fetch_page_blocks"
     },
@@ -7739,7 +8018,7 @@
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L68",
-      "community": 0,
+      "community": 17,
       "norm_label": "extract_rich_text()",
       "id": "export_journey_json_extract_rich_text"
     },
@@ -7748,7 +8027,7 @@
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L72",
-      "community": 0,
+      "community": 17,
       "norm_label": "parse_blocks()",
       "id": "export_journey_json_parse_blocks"
     },
@@ -7757,7 +8036,7 @@
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L128",
-      "community": 0,
+      "community": 17,
       "norm_label": "props_to_entry()",
       "id": "export_journey_json_props_to_entry"
     },
@@ -7766,7 +8045,7 @@
       "file_type": "code",
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L162",
-      "community": 0,
+      "community": 17,
       "norm_label": "main()",
       "id": "export_journey_json_main"
     },
@@ -7793,7 +8072,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L74",
-      "community": 76,
+      "community": 0,
       "norm_label": "shallow_clone()",
       "id": "refresh_stats_shallow_clone"
     },
@@ -7829,7 +8108,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L159",
-      "community": 0,
+      "community": 17,
       "norm_label": "fetch_claude_2026()",
       "id": "refresh_stats_fetch_claude_2026"
     },
@@ -7838,7 +8117,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L195",
-      "community": 76,
+      "community": 0,
       "norm_label": "count_tools()",
       "id": "refresh_stats_count_tools"
     },
@@ -7856,7 +8135,7 @@
       "file_type": "code",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L248",
-      "community": 0,
+      "community": 17,
       "norm_label": "count_live_agents()",
       "id": "refresh_stats_count_live_agents"
     },
@@ -7883,7 +8162,7 @@
       "file_type": "rationale",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L75",
-      "community": 76,
+      "community": 0,
       "norm_label": "treeless clone: full commit history (cheap), no blobs until checkout.",
       "id": "refresh_stats_rationale_75"
     },
@@ -7901,7 +8180,7 @@
       "file_type": "rationale",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L160",
-      "community": 0,
+      "community": 17,
       "norm_label": "scoped to calendar year 2026. honest sum across non-gap blocks.",
       "id": "refresh_stats_rationale_160"
     },
@@ -7910,7 +8189,7 @@
       "file_type": "rationale",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L196",
-      "community": 76,
+      "community": 0,
       "norm_label": "tools = entries in src/data/mighty-tools.json, written by scan-tools.py.      th",
       "id": "refresh_stats_rationale_196"
     },
@@ -7928,7 +8207,7 @@
       "file_type": "rationale",
       "source_file": "scripts/refresh-stats.py",
       "source_location": "L249",
-      "community": 0,
+      "community": 17,
       "norm_label": "canonical 'live agents' = registry entries with status active or production.",
       "id": "refresh_stats_rationale_249"
     },
@@ -7937,7 +8216,7 @@
       "file_type": "code",
       "source_file": "src/components/journey/CurrentReading.tsx",
       "source_location": "L4",
-      "community": 18,
+      "community": 76,
       "norm_label": "courseitem",
       "id": "journey_currentreading_courseitem"
     },
@@ -7946,7 +8225,7 @@
       "file_type": "code",
       "source_file": "src/components/journey/CurrentReading.tsx",
       "source_location": "L21",
-      "community": 18,
+      "community": 76,
       "norm_label": "year()",
       "id": "journey_currentreading_year"
     },
@@ -8162,7 +8441,7 @@
       "file_type": "code",
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L15",
-      "community": 76,
+      "community": 81,
       "norm_label": "run()",
       "id": "sync_claude_stats_run"
     },
@@ -8171,7 +8450,7 @@
       "file_type": "code",
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L21",
-      "community": 76,
+      "community": 81,
       "norm_label": "getclaudeusage()",
       "id": "sync_claude_stats_getclaudeusage"
     },
@@ -8180,7 +8459,7 @@
       "file_type": "code",
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L45",
-      "community": 76,
+      "community": 81,
       "norm_label": "walk()",
       "id": "sync_claude_stats_walk"
     },
@@ -8189,7 +8468,7 @@
       "file_type": "code",
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L58",
-      "community": 76,
+      "community": 81,
       "norm_label": "countagents()",
       "id": "sync_claude_stats_countagents"
     },
@@ -8198,7 +8477,7 @@
       "file_type": "code",
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L64",
-      "community": 76,
+      "community": 81,
       "norm_label": "countskills()",
       "id": "sync_claude_stats_countskills"
     },
@@ -8207,7 +8486,7 @@
       "file_type": "code",
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L70",
-      "community": 76,
+      "community": 81,
       "norm_label": "countlines()",
       "id": "sync_claude_stats_countlines"
     },
@@ -8216,7 +8495,7 @@
       "file_type": "code",
       "source_file": "scripts/sync-claude-stats.js",
       "source_location": "L77",
-      "community": 76,
+      "community": 81,
       "norm_label": "countloc()",
       "id": "sync_claude_stats_countloc"
     },
@@ -8342,7 +8621,7 @@
       "file_type": "code",
       "source_file": "src/app/work/page.tsx",
       "source_location": "L9",
-      "community": 91,
+      "community": 6,
       "norm_label": "workpage()",
       "id": "page_workpage"
     },
@@ -8351,7 +8630,7 @@
       "file_type": "code",
       "source_file": "src/app/api/photo-booth-owners/inquiry/route.ts",
       "source_location": "L11",
-      "community": 17,
+      "community": 91,
       "norm_label": "post()",
       "id": "route_post"
     },
@@ -8360,7 +8639,7 @@
       "file_type": "code",
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L16",
-      "community": 0,
+      "community": 17,
       "norm_label": "loadoverrides()",
       "id": "route_loadoverrides"
     },
@@ -8369,7 +8648,7 @@
       "file_type": "code",
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L24",
-      "community": 0,
+      "community": 17,
       "norm_label": "loaddaystreak()",
       "id": "route_loaddaystreak"
     },
@@ -8378,7 +8657,7 @@
       "file_type": "code",
       "source_file": "src/app/api/stats/route.ts",
       "source_location": "L37",
-      "community": 0,
+      "community": 17,
       "norm_label": "get()",
       "id": "route_get"
     },
@@ -8468,7 +8747,7 @@
       "file_type": "code",
       "source_file": "src/components/forms/ConsultationForm.tsx",
       "source_location": "L23",
-      "community": 94,
+      "community": 98,
       "norm_label": "consultationform()",
       "id": "consultationform_consultationform"
     },
@@ -8639,7 +8918,7 @@
       "file_type": "code",
       "source_file": "src/components/journey/TypeBadge.tsx",
       "source_location": "L8",
-      "community": 18,
+      "community": 92,
       "norm_label": "typebadge()",
       "id": "typebadge_typebadge"
     },
@@ -8720,7 +8999,7 @@
       "file_type": "code",
       "source_file": "src/components/photo-booth-owners/GuideCard.tsx",
       "source_location": "L47",
-      "community": 93,
+      "community": 13,
       "norm_label": "cn()",
       "id": "guidecard_cn"
     },
@@ -8738,7 +9017,7 @@
       "file_type": "code",
       "source_file": "src/components/photo-booth-owners/InquiryForm.tsx",
       "source_location": "L40",
-      "community": 86,
+      "community": 7,
       "norm_label": "handlesubmit()",
       "id": "inquiryform_handlesubmit"
     },
@@ -10031,9 +10310,9 @@
       "source_file": "scripts/youtube_enrich.py",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_enrich_py",
-      "target": "scripts_youtube_enrich_load_raw",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_enrich_load_raw"
     },
     {
       "relation": "contains",
@@ -10041,9 +10320,9 @@
       "source_file": "scripts/youtube_enrich.py",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_enrich_py",
-      "target": "scripts_youtube_enrich_fetch_watch_page",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_enrich_fetch_watch_page"
     },
     {
       "relation": "contains",
@@ -10051,9 +10330,9 @@
       "source_file": "scripts/youtube_enrich.py",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_enrich_py",
-      "target": "scripts_youtube_enrich_extract_meta",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_enrich_extract_meta"
     },
     {
       "relation": "contains",
@@ -10061,9 +10340,9 @@
       "source_file": "scripts/youtube_enrich.py",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_enrich_py",
-      "target": "scripts_youtube_enrich_classify_topics",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_enrich_classify_topics"
     },
     {
       "relation": "contains",
@@ -10071,9 +10350,9 @@
       "source_file": "scripts/youtube_enrich.py",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_enrich_py",
-      "target": "scripts_youtube_enrich_should_skip",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_enrich_should_skip"
     },
     {
       "relation": "contains",
@@ -10081,9 +10360,9 @@
       "source_file": "scripts/youtube_enrich.py",
       "source_location": "L133",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_enrich_py",
-      "target": "scripts_youtube_enrich_enrich_one",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_enrich_enrich_one"
     },
     {
       "relation": "contains",
@@ -10091,9 +10370,9 @@
       "source_file": "scripts/youtube_enrich.py",
       "source_location": "L152",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_enrich_py",
-      "target": "scripts_youtube_enrich_main",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_enrich_main"
     },
     {
       "relation": "calls",
@@ -10102,9 +10381,9 @@
       "source_file": "scripts/youtube_enrich.py",
       "source_location": "L158",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_enrich_main",
-      "target": "scripts_youtube_enrich_load_raw",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_enrich_load_raw"
     },
     {
       "relation": "calls",
@@ -10113,9 +10392,9 @@
       "source_file": "scripts/youtube_enrich.py",
       "source_location": "L138",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_enrich_enrich_one",
-      "target": "scripts_youtube_enrich_fetch_watch_page",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_enrich_fetch_watch_page"
     },
     {
       "relation": "calls",
@@ -10124,9 +10403,9 @@
       "source_file": "scripts/youtube_enrich.py",
       "source_location": "L142",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_enrich_enrich_one",
-      "target": "scripts_youtube_enrich_extract_meta",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_enrich_extract_meta"
     },
     {
       "relation": "calls",
@@ -10135,9 +10414,9 @@
       "source_file": "scripts/youtube_enrich.py",
       "source_location": "L147",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_enrich_enrich_one",
-      "target": "scripts_youtube_enrich_classify_topics",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_enrich_classify_topics"
     },
     {
       "relation": "calls",
@@ -10146,9 +10425,9 @@
       "source_file": "scripts/youtube_enrich.py",
       "source_location": "L143",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_enrich_enrich_one",
-      "target": "scripts_youtube_enrich_should_skip",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_enrich_should_skip"
     },
     {
       "relation": "calls",
@@ -10157,9 +10436,9 @@
       "source_file": "scripts/youtube_enrich.py",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_enrich_main",
-      "target": "scripts_youtube_enrich_enrich_one",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_enrich_enrich_one"
     },
     {
       "relation": "contains",
@@ -10289,11 +10568,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_nightly_journey_sync_py",
+      "target": "scripts_nightly_journey_sync_notify"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/nightly_journey_sync.py",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_nightly_journey_sync_py",
-      "target": "scripts_nightly_journey_sync_run",
-      "confidence_score": 1.0
+      "target": "scripts_nightly_journey_sync_run"
     },
     {
       "relation": "contains",
@@ -10301,9 +10590,9 @@
       "source_file": "scripts/nightly_journey_sync.py",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_nightly_journey_sync_py",
-      "target": "scripts_nightly_journey_sync_data_files_changed",
-      "confidence_score": 1.0
+      "target": "scripts_nightly_journey_sync_data_files_changed"
     },
     {
       "relation": "contains",
@@ -10311,9 +10600,51 @@
       "source_file": "scripts/nightly_journey_sync.py",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_nightly_journey_sync_py",
-      "target": "scripts_nightly_journey_sync_main",
-      "confidence_score": 1.0
+      "target": "scripts_nightly_journey_sync_main"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_nightly_journey_sync_notify",
+      "target": "scripts_nightly_journey_sync_run"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L174",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_nightly_journey_sync_main",
+      "target": "scripts_nightly_journey_sync_notify"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_nightly_journey_sync_rationale_69",
+      "target": "scripts_nightly_journey_sync_notify"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_nightly_journey_sync_rationale_68",
+      "target": "scripts_nightly_journey_sync_notify"
     },
     {
       "relation": "calls",
@@ -10322,9 +10653,9 @@
       "source_file": "scripts/nightly_journey_sync.py",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_nightly_journey_sync_data_files_changed",
-      "target": "scripts_nightly_journey_sync_run",
-      "confidence_score": 1.0
+      "target": "scripts_nightly_journey_sync_run"
     },
     {
       "relation": "calls",
@@ -10333,9 +10664,29 @@
       "source_file": "scripts/nightly_journey_sync.py",
       "source_location": "L88",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_nightly_journey_sync_main",
-      "target": "scripts_nightly_journey_sync_run",
-      "confidence_score": 1.0
+      "target": "scripts_nightly_journey_sync_run"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_nightly_journey_sync_rationale_103",
+      "target": "scripts_nightly_journey_sync_run"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/nightly_journey_sync.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_nightly_journey_sync_rationale_102",
+      "target": "scripts_nightly_journey_sync_run"
     },
     {
       "relation": "calls",
@@ -10344,9 +10695,9 @@
       "source_file": "scripts/nightly_journey_sync.py",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_nightly_journey_sync_main",
-      "target": "scripts_nightly_journey_sync_data_files_changed",
-      "confidence_score": 1.0
+      "target": "scripts_nightly_journey_sync_data_files_changed"
     },
     {
       "relation": "contains",
@@ -11634,6 +11985,16 @@
       "source_file": "scripts/stats-checkpoint.json",
       "source_location": "L48",
       "weight": 1.0,
+      "source": "scripts_stats_checkpoint_per_repo",
+      "target": "scripts_stats_checkpoint_per_repo_ninjaforhire_claude_usage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L48",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "scripts_stats_checkpoint_per_repo",
       "target": "scripts_stats_checkpoint_per_repo_ninjaforhire_cli_printing_press"
@@ -11792,6 +12153,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "scripts_stats_checkpoint_per_repo",
+      "target": "scripts_stats_checkpoint_per_repo_ninjaforhire_mighty_productions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/stats-checkpoint.json",
       "source_location": "L128",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -11907,6 +12278,16 @@
       "confidence_score": 1.0,
       "source": "scripts_stats_checkpoint_per_repo",
       "target": "scripts_stats_checkpoint_per_repo_ninjaforhire_workspace_config"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L198",
+      "weight": 1.0,
+      "source": "scripts_stats_checkpoint_per_repo",
+      "target": "scripts_stats_checkpoint_per_repo_ninjaforhire_wraith",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -12067,6 +12448,36 @@
       "confidence_score": 1.0,
       "source": "scripts_stats_checkpoint_per_repo_ninjaforhire_claude_config",
       "target": "scripts_stats_checkpoint_ninjaforhire_claude_config_commits"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "scripts_stats_checkpoint_per_repo_ninjaforhire_claude_usage",
+      "target": "scripts_stats_checkpoint_ninjaforhire_claude_usage_loc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "scripts_stats_checkpoint_per_repo_ninjaforhire_claude_usage",
+      "target": "scripts_stats_checkpoint_ninjaforhire_claude_usage_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "scripts_stats_checkpoint_per_repo_ninjaforhire_claude_usage",
+      "target": "scripts_stats_checkpoint_ninjaforhire_claude_usage_commits",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -12552,6 +12963,36 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L134",
+      "weight": 1.0,
+      "source": "scripts_stats_checkpoint_per_repo_ninjaforhire_mighty_productions",
+      "target": "scripts_stats_checkpoint_ninjaforhire_mighty_productions_loc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "scripts_stats_checkpoint_per_repo_ninjaforhire_mighty_productions",
+      "target": "scripts_stats_checkpoint_ninjaforhire_mighty_productions_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "scripts_stats_checkpoint_per_repo_ninjaforhire_mighty_productions",
+      "target": "scripts_stats_checkpoint_ninjaforhire_mighty_productions_commits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/stats-checkpoint.json",
       "source_location": "L129",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -12912,6 +13353,36 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L199",
+      "weight": 1.0,
+      "source": "scripts_stats_checkpoint_per_repo_ninjaforhire_wraith",
+      "target": "scripts_stats_checkpoint_ninjaforhire_wraith_loc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "scripts_stats_checkpoint_per_repo_ninjaforhire_wraith",
+      "target": "scripts_stats_checkpoint_ninjaforhire_wraith_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/stats-checkpoint.json",
+      "source_location": "L201",
+      "weight": 1.0,
+      "source": "scripts_stats_checkpoint_per_repo_ninjaforhire_wraith",
+      "target": "scripts_stats_checkpoint_ninjaforhire_wraith_commits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/stats-checkpoint.json",
       "source_location": "L184",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -12944,9 +13415,9 @@
       "source_file": "scripts/youtube_history_extract.js",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_extract_js",
-      "target": "scripts_youtube_history_extract_target_start",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_extract_target_start"
     },
     {
       "relation": "contains",
@@ -12954,9 +13425,9 @@
       "source_file": "scripts/youtube_history_extract.js",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_extract_js",
-      "target": "scripts_youtube_history_extract_target_end",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_extract_target_end"
     },
     {
       "relation": "contains",
@@ -12964,9 +13435,9 @@
       "source_file": "scripts/youtube_history_extract.js",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_extract_js",
-      "target": "scripts_youtube_history_extract_parseheader",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_extract_parseheader"
     },
     {
       "relation": "contains",
@@ -12974,9 +13445,9 @@
       "source_file": "scripts/youtube_history_extract.js",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_extract_js",
-      "target": "scripts_youtube_history_extract_scrolluntilcovered",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_extract_scrolluntilcovered"
     },
     {
       "relation": "contains",
@@ -12984,9 +13455,9 @@
       "source_file": "scripts/youtube_history_extract.js",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_extract_js",
-      "target": "scripts_youtube_history_extract_sections",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_extract_sections"
     },
     {
       "relation": "contains",
@@ -12994,9 +13465,9 @@
       "source_file": "scripts/youtube_history_extract.js",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_extract_js",
-      "target": "scripts_youtube_history_extract_out",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_extract_out"
     },
     {
       "relation": "contains",
@@ -13004,9 +13475,9 @@
       "source_file": "scripts/youtube_history_extract.js",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_extract_js",
-      "target": "scripts_youtube_history_extract_hel",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_extract_hel"
     },
     {
       "relation": "contains",
@@ -13014,9 +13485,9 @@
       "source_file": "scripts/youtube_history_extract.js",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_extract_js",
-      "target": "scripts_youtube_history_extract_d",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_extract_d"
     },
     {
       "relation": "contains",
@@ -13024,9 +13495,9 @@
       "source_file": "scripts/youtube_history_extract.js",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_extract_js",
-      "target": "scripts_youtube_history_extract_datestr",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_extract_datestr"
     },
     {
       "relation": "contains",
@@ -13034,9 +13505,9 @@
       "source_file": "scripts/youtube_history_extract.js",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_extract_js",
-      "target": "scripts_youtube_history_extract_titleel",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_extract_titleel"
     },
     {
       "relation": "contains",
@@ -13044,9 +13515,9 @@
       "source_file": "scripts/youtube_history_extract.js",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_extract_js",
-      "target": "scripts_youtube_history_extract_a",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_extract_a"
     },
     {
       "relation": "contains",
@@ -13054,9 +13525,9 @@
       "source_file": "scripts/youtube_history_extract.js",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_extract_js",
-      "target": "scripts_youtube_history_extract_channelel",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_extract_channelel"
     },
     {
       "relation": "contains",
@@ -13064,9 +13535,9 @@
       "source_file": "scripts/youtube_history_extract.js",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_extract_js",
-      "target": "scripts_youtube_history_extract_meta",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_extract_meta"
     },
     {
       "relation": "contains",
@@ -13074,9 +13545,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_py",
-      "target": "scripts_youtube_to_ll_ntn_api",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_ntn_api"
     },
     {
       "relation": "contains",
@@ -13084,9 +13555,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_py",
-      "target": "scripts_youtube_to_ll_fetch_schema",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_fetch_schema"
     },
     {
       "relation": "contains",
@@ -13094,9 +13565,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_py",
-      "target": "scripts_youtube_to_ll_preflight",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_preflight"
     },
     {
       "relation": "contains",
@@ -13104,9 +13575,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_py",
-      "target": "scripts_youtube_to_ll_existing_urls",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_existing_urls"
     },
     {
       "relation": "contains",
@@ -13114,9 +13585,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_py",
-      "target": "scripts_youtube_to_ll_build_props",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_build_props"
     },
     {
       "relation": "contains",
@@ -13124,9 +13595,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L124",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_py",
-      "target": "scripts_youtube_to_ll_body_blocks",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_body_blocks"
     },
     {
       "relation": "contains",
@@ -13134,9 +13605,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L141",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_py",
-      "target": "scripts_youtube_to_ll_create_page",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_create_page"
     },
     {
       "relation": "contains",
@@ -13144,9 +13615,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L156",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_py",
-      "target": "scripts_youtube_to_ll_main",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_main"
     },
     {
       "relation": "calls",
@@ -13155,9 +13626,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_fetch_schema",
-      "target": "scripts_youtube_to_ll_ntn_api",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_ntn_api"
     },
     {
       "relation": "calls",
@@ -13166,9 +13637,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L150",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_create_page",
-      "target": "scripts_youtube_to_ll_ntn_api",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_ntn_api"
     },
     {
       "relation": "calls",
@@ -13177,9 +13648,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_main",
-      "target": "scripts_youtube_to_ll_fetch_schema",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_fetch_schema"
     },
     {
       "relation": "rationale_for",
@@ -13187,9 +13658,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_rationale_55",
-      "target": "scripts_youtube_to_ll_fetch_schema",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_fetch_schema"
     },
     {
       "relation": "calls",
@@ -13198,9 +13669,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L171",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_main",
-      "target": "scripts_youtube_to_ll_preflight",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_preflight"
     },
     {
       "relation": "rationale_for",
@@ -13208,9 +13679,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_rationale_63",
-      "target": "scripts_youtube_to_ll_preflight",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_preflight"
     },
     {
       "relation": "calls",
@@ -13219,9 +13690,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L189",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_main",
-      "target": "scripts_youtube_to_ll_existing_urls",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_existing_urls"
     },
     {
       "relation": "rationale_for",
@@ -13229,9 +13700,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_rationale_71",
-      "target": "scripts_youtube_to_ll_existing_urls",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_existing_urls"
     },
     {
       "relation": "calls",
@@ -13240,9 +13711,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L144",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_create_page",
-      "target": "scripts_youtube_to_ll_build_props",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_build_props"
     },
     {
       "relation": "calls",
@@ -13251,9 +13722,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L146",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_create_page",
-      "target": "scripts_youtube_to_ll_body_blocks",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_body_blocks"
     },
     {
       "relation": "calls",
@@ -13262,9 +13733,9 @@
       "source_file": "scripts/youtube_to_ll.py",
       "source_location": "L214",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_to_ll_main",
-      "target": "scripts_youtube_to_ll_create_page",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_to_ll_create_page"
     },
     {
       "relation": "contains",
@@ -13272,9 +13743,9 @@
       "source_file": "scripts/youtube_history_scrape.py",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_scrape_py",
-      "target": "scripts_youtube_history_scrape_parse_header_date",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_scrape_parse_header_date"
     },
     {
       "relation": "contains",
@@ -13282,9 +13753,9 @@
       "source_file": "scripts/youtube_history_scrape.py",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_scrape_py",
-      "target": "scripts_youtube_history_scrape_text",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_scrape_text"
     },
     {
       "relation": "contains",
@@ -13292,9 +13763,9 @@
       "source_file": "scripts/youtube_history_scrape.py",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_scrape_py",
-      "target": "scripts_youtube_history_scrape_parse_duration",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_scrape_parse_duration"
     },
     {
       "relation": "contains",
@@ -13302,9 +13773,9 @@
       "source_file": "scripts/youtube_history_scrape.py",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_scrape_py",
-      "target": "scripts_youtube_history_scrape_extract_from_video_renderer",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_scrape_extract_from_video_renderer"
     },
     {
       "relation": "contains",
@@ -13312,9 +13783,9 @@
       "source_file": "scripts/youtube_history_scrape.py",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_scrape_py",
-      "target": "scripts_youtube_history_scrape_extract_from_lockup",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_scrape_extract_from_lockup"
     },
     {
       "relation": "contains",
@@ -13322,9 +13793,9 @@
       "source_file": "scripts/youtube_history_scrape.py",
       "source_location": "L191",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_scrape_py",
-      "target": "scripts_youtube_history_scrape_parse_browse_response",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_scrape_parse_browse_response"
     },
     {
       "relation": "contains",
@@ -13332,9 +13803,9 @@
       "source_file": "scripts/youtube_history_scrape.py",
       "source_location": "L255",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_scrape_py",
-      "target": "scripts_youtube_history_scrape_is_signed_in",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_scrape_is_signed_in"
     },
     {
       "relation": "contains",
@@ -13342,9 +13813,9 @@
       "source_file": "scripts/youtube_history_scrape.py",
       "source_location": "L266",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_scrape_py",
-      "target": "scripts_youtube_history_scrape_scrape",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_scrape_scrape"
     },
     {
       "relation": "contains",
@@ -13352,9 +13823,9 @@
       "source_file": "scripts/youtube_history_scrape.py",
       "source_location": "L397",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_scrape_py",
-      "target": "scripts_youtube_history_scrape_main",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_scrape_main"
     },
     {
       "relation": "calls",
@@ -13363,9 +13834,9 @@
       "source_file": "scripts/youtube_history_scrape.py",
       "source_location": "L124",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_scrape_extract_from_video_renderer",
-      "target": "scripts_youtube_history_scrape_text",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_scrape_text"
     },
     {
       "relation": "calls",
@@ -13374,9 +13845,9 @@
       "source_file": "scripts/youtube_history_scrape.py",
       "source_location": "L147",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_scrape_extract_from_lockup",
-      "target": "scripts_youtube_history_scrape_text",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_scrape_text"
     },
     {
       "relation": "calls",
@@ -13385,9 +13856,9 @@
       "source_file": "scripts/youtube_history_scrape.py",
       "source_location": "L127",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_scrape_extract_from_video_renderer",
-      "target": "scripts_youtube_history_scrape_parse_duration",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_scrape_parse_duration"
     },
     {
       "relation": "calls",
@@ -13396,9 +13867,9 @@
       "source_file": "scripts/youtube_history_scrape.py",
       "source_location": "L162",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_scrape_extract_from_lockup",
-      "target": "scripts_youtube_history_scrape_parse_duration",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_scrape_parse_duration"
     },
     {
       "relation": "rationale_for",
@@ -13406,9 +13877,9 @@
       "source_file": "scripts/youtube_history_scrape.py",
       "source_location": "L192",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_scrape_rationale_192",
-      "target": "scripts_youtube_history_scrape_parse_browse_response",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_scrape_parse_browse_response"
     },
     {
       "relation": "calls",
@@ -13417,9 +13888,9 @@
       "source_file": "scripts/youtube_history_scrape.py",
       "source_location": "L287",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_scrape_scrape",
-      "target": "scripts_youtube_history_scrape_is_signed_in",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_scrape_is_signed_in"
     },
     {
       "relation": "calls",
@@ -13428,9 +13899,9 @@
       "source_file": "scripts/youtube_history_scrape.py",
       "source_location": "L406",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_youtube_history_scrape_main",
-      "target": "scripts_youtube_history_scrape_scrape",
-      "confidence_score": 1.0
+      "target": "scripts_youtube_history_scrape_scrape"
     },
     {
       "relation": "contains",
@@ -13582,11 +14053,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/export-journey-json.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_export_journey_json_py",
+      "target": "scripts_export_journey_json_ntn_api"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_export_journey_json_py",
-      "target": "scripts_export_journey_json_fetch_all_pages",
-      "confidence_score": 1.0
+      "target": "scripts_export_journey_json_fetch_all_pages"
     },
     {
       "relation": "contains",
@@ -13594,9 +14075,9 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_export_journey_json_py",
-      "target": "scripts_export_journey_json_fetch_page_blocks",
-      "confidence_score": 1.0
+      "target": "scripts_export_journey_json_fetch_page_blocks"
     },
     {
       "relation": "contains",
@@ -13604,9 +14085,9 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_export_journey_json_py",
-      "target": "scripts_export_journey_json_extract_rich_text",
-      "confidence_score": 1.0
+      "target": "scripts_export_journey_json_extract_rich_text"
     },
     {
       "relation": "contains",
@@ -13614,9 +14095,9 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_export_journey_json_py",
-      "target": "scripts_export_journey_json_parse_blocks",
-      "confidence_score": 1.0
+      "target": "scripts_export_journey_json_parse_blocks"
     },
     {
       "relation": "contains",
@@ -13624,9 +14105,9 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_export_journey_json_py",
-      "target": "scripts_export_journey_json_props_to_entry",
-      "confidence_score": 1.0
+      "target": "scripts_export_journey_json_props_to_entry"
     },
     {
       "relation": "contains",
@@ -13634,9 +14115,9 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L170",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_export_journey_json_py",
-      "target": "scripts_export_journey_json_bundle_videos_into_journal",
-      "confidence_score": 1.0
+      "target": "scripts_export_journey_json_bundle_videos_into_journal"
     },
     {
       "relation": "contains",
@@ -13644,9 +14125,9 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L221",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_export_journey_json_py",
-      "target": "scripts_export_journey_json_main",
-      "confidence_score": 1.0
+      "target": "scripts_export_journey_json_main"
     },
     {
       "relation": "contains",
@@ -13713,11 +14194,43 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/export-journey-json.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_export_journey_json_fetch_all_pages",
+      "target": "scripts_export_journey_json_ntn_api"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_export_journey_json_fetch_page_blocks",
+      "target": "scripts_export_journey_json_ntn_api"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_export_journey_json_rationale_23",
+      "target": "scripts_export_journey_json_ntn_api"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
       "source_location": "L229",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_export_journey_json_main",
-      "target": "scripts_export_journey_json_fetch_all_pages",
-      "confidence_score": 1.0
+      "target": "scripts_export_journey_json_fetch_all_pages"
     },
     {
       "relation": "calls",
@@ -13726,9 +14239,9 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L236",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_export_journey_json_main",
-      "target": "scripts_export_journey_json_fetch_page_blocks",
-      "confidence_score": 1.0
+      "target": "scripts_export_journey_json_fetch_page_blocks"
     },
     {
       "relation": "calls",
@@ -13737,9 +14250,9 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L81",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_export_journey_json_parse_blocks",
-      "target": "scripts_export_journey_json_extract_rich_text",
-      "confidence_score": 1.0
+      "target": "scripts_export_journey_json_extract_rich_text"
     },
     {
       "relation": "calls",
@@ -13748,9 +14261,9 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L132",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_export_journey_json_props_to_entry",
-      "target": "scripts_export_journey_json_extract_rich_text",
-      "confidence_score": 1.0
+      "target": "scripts_export_journey_json_extract_rich_text"
     },
     {
       "relation": "calls",
@@ -13759,9 +14272,9 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L237",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_export_journey_json_main",
-      "target": "scripts_export_journey_json_parse_blocks",
-      "confidence_score": 1.0
+      "target": "scripts_export_journey_json_parse_blocks"
     },
     {
       "relation": "calls",
@@ -13770,9 +14283,9 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L238",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_export_journey_json_main",
-      "target": "scripts_export_journey_json_props_to_entry",
-      "confidence_score": 1.0
+      "target": "scripts_export_journey_json_props_to_entry"
     },
     {
       "relation": "calls",
@@ -13781,9 +14294,29 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L241",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_export_journey_json_main",
-      "target": "scripts_export_journey_json_bundle_videos_into_journal",
-      "confidence_score": 1.0
+      "target": "scripts_export_journey_json_bundle_videos_into_journal"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L185",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_export_journey_json_rationale_185",
+      "target": "scripts_export_journey_json_bundle_videos_into_journal"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/export-journey-json.py",
+      "source_location": "L183",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_export_journey_json_rationale_183",
+      "target": "scripts_export_journey_json_bundle_videos_into_journal"
     },
     {
       "relation": "rationale_for",
@@ -13791,9 +14324,9 @@
       "source_file": "scripts/export-journey-json.py",
       "source_location": "L171",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_export_journey_json_rationale_171",
-      "target": "scripts_export_journey_json_bundle_videos_into_journal",
-      "confidence_score": 1.0
+      "target": "scripts_export_journey_json_bundle_videos_into_journal"
     },
     {
       "relation": "contains",
@@ -14907,6 +15440,28 @@
       "confidence_score": 1.0,
       "source": "src_app_layout_tsx",
       "target": "layout_inquirypill_inquirypill"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_layout_tsx",
+      "target": "src_components_layout_footer_tsx"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_layout_tsx",
+      "target": "layout_footer_footer"
     },
     {
       "relation": "imports_from",
@@ -16489,9 +17044,9 @@
       "source_file": "src/app/work/WorkPageContent.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_work_workpagecontent_tsx",
-      "target": "src_components_sections_consultingsection_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_sections_consultingsection_tsx"
     },
     {
       "relation": "imports",
@@ -16500,9 +17055,9 @@
       "source_file": "src/app/work/WorkPageContent.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_work_workpagecontent_tsx",
-      "target": "sections_consultingsection_consultingsection",
-      "confidence_score": 1.0
+      "target": "sections_consultingsection_consultingsection"
     },
     {
       "relation": "imports_from",
@@ -17489,9 +18044,9 @@
       "source_file": "src/components/sections/ConsultingSection.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_sections_consultingsection_tsx",
-      "target": "src_lib_utils_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_utils_ts"
     },
     {
       "relation": "imports",
@@ -17500,9 +18055,9 @@
       "source_file": "src/components/sections/ConsultingSection.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_sections_consultingsection_tsx",
-      "target": "lib_utils_cn",
-      "confidence_score": 1.0
+      "target": "lib_utils_cn"
     },
     {
       "relation": "contains",
@@ -17510,9 +18065,9 @@
       "source_file": "src/components/sections/ConsultingSection.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_sections_consultingsection_tsx",
-      "target": "sections_consultingsection_graphicintro",
-      "confidence_score": 1.0
+      "target": "sections_consultingsection_graphicintro"
     },
     {
       "relation": "contains",
@@ -17520,9 +18075,9 @@
       "source_file": "src/components/sections/ConsultingSection.tsx",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_sections_consultingsection_tsx",
-      "target": "sections_consultingsection_graphicowner",
-      "confidence_score": 1.0
+      "target": "sections_consultingsection_graphicowner"
     },
     {
       "relation": "contains",
@@ -17530,9 +18085,9 @@
       "source_file": "src/components/sections/ConsultingSection.tsx",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_sections_consultingsection_tsx",
-      "target": "sections_consultingsection_graphicdiscovery",
-      "confidence_score": 1.0
+      "target": "sections_consultingsection_graphicdiscovery"
     },
     {
       "relation": "contains",
@@ -17540,9 +18095,9 @@
       "source_file": "src/components/sections/ConsultingSection.tsx",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_sections_consultingsection_tsx",
-      "target": "sections_consultingsection_graphicimplementation",
-      "confidence_score": 1.0
+      "target": "sections_consultingsection_graphicimplementation"
     },
     {
       "relation": "contains",
@@ -17550,9 +18105,9 @@
       "source_file": "src/components/sections/ConsultingSection.tsx",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_sections_consultingsection_tsx",
-      "target": "sections_consultingsection_architecturegraphic",
-      "confidence_score": 1.0
+      "target": "sections_consultingsection_architecturegraphic"
     },
     {
       "relation": "contains",
@@ -17560,9 +18115,9 @@
       "source_file": "src/components/sections/ConsultingSection.tsx",
       "source_location": "L201",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_sections_consultingsection_tsx",
-      "target": "sections_consultingsection_accent",
-      "confidence_score": 1.0
+      "target": "sections_consultingsection_accent"
     },
     {
       "relation": "contains",
@@ -17570,9 +18125,9 @@
       "source_file": "src/components/sections/ConsultingSection.tsx",
       "source_location": "L236",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_sections_consultingsection_tsx",
-      "target": "sections_consultingsection_consultingcardprops",
-      "confidence_score": 1.0
+      "target": "sections_consultingsection_consultingcardprops"
     },
     {
       "relation": "contains",
@@ -17580,9 +18135,9 @@
       "source_file": "src/components/sections/ConsultingSection.tsx",
       "source_location": "L250",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_sections_consultingsection_tsx",
-      "target": "sections_consultingsection_consultingcard",
-      "confidence_score": 1.0
+      "target": "sections_consultingsection_consultingcard"
     },
     {
       "relation": "contains",
@@ -17590,9 +18145,9 @@
       "source_file": "src/components/sections/ConsultingSection.tsx",
       "source_location": "L307",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_sections_consultingsection_tsx",
-      "target": "sections_consultingsection_consultingsection",
-      "confidence_score": 1.0
+      "target": "sections_consultingsection_consultingsection"
     },
     {
       "relation": "calls",
@@ -18352,6 +18907,26 @@
       "confidence_score": 1.0,
       "source": "src_components_layout_lenisprovider_tsx",
       "target": "lenisprovider_lenisprovider"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/Footer.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_layout_footer_tsx",
+      "target": "layout_footer_family"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/Footer.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_layout_footer_tsx",
+      "target": "layout_footer_footer"
     },
     {
       "relation": "imports_from",
@@ -19713,16 +20288,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/journey/JourneyTimeline.tsx",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_components_journey_journeytimeline_tsx",
-      "target": "journey_journeytimeline_getcurrentmonthkey"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/journey/JourneyTimeline.tsx",
       "source_location": "L26",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -19748,6 +20313,16 @@
       "confidence_score": 1.0,
       "source": "src_components_journey_journeytimeline_tsx",
       "target": "journey_journeytimeline_journeytimeline"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/journey/JourneyTimeline.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_journey_journeytimeline_tsx",
+      "target": "journey_journeytimeline_getcurrentmonthkey"
     },
     {
       "relation": "contains",
@@ -21678,6 +22253,110 @@
       "target": "vlogs_seo_without_ads_what_s_covered"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/_backfill_155_165.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_backfill_155_165_py",
+      "target": "scripts_backfill_155_165_ntn_api"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/_backfill_155_165.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_backfill_155_165_py",
+      "target": "scripts_backfill_155_165_h"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/_backfill_155_165.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_backfill_155_165_py",
+      "target": "scripts_backfill_155_165_b"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/_backfill_155_165.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_backfill_155_165_py",
+      "target": "scripts_backfill_155_165_vid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/_backfill_155_165.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_backfill_155_165_py",
+      "target": "scripts_backfill_155_165_p"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/_backfill_155_165.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_backfill_155_165_py",
+      "target": "scripts_backfill_155_165_page"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/_backfill_155_165.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_backfill_155_165_page",
+      "target": "scripts_backfill_155_165_h"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/_backfill_155_165.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_backfill_155_165_page",
+      "target": "scripts_backfill_155_165_b"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/_backfill_155_165.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_backfill_155_165_page",
+      "target": "scripts_backfill_155_165_vid"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/_backfill_155_165.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_backfill_155_165_page",
+      "target": "scripts_backfill_155_165_p"
+    },
+    {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "scripts/export-journey-json.py",
@@ -22560,5 +23239,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "03212ef62d1069624c6b69011acfd360989ca145"
+  "built_at_commit": "49e456c8365257e3e7ba72b4cbb85dc28ed8bb4f"
 }
