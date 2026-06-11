@@ -251,6 +251,16 @@
     "domain": "Ops"
   },
   {
+    "slug": "blitz-event",
+    "name": "blitz-event",
+    "description": "Rush-event mode \u2014 crank out a fully-built, fully-linked event in one pass when all the data is already in hand",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/sales/blitz-event",
+    "domain": "Sales"
+  },
+  {
     "slug": "blog",
     "name": "blog",
     "description": "Blog Agent \u2014 write SEO-optimized industry articles with backlinks to MIGHTYphotobooths.com",
@@ -766,7 +776,7 @@
   {
     "slug": "mighty-doc",
     "name": "mighty-doc",
-    "description": "Author professional service agreements, sponsorships, partner agreements, NDAs, and other business documents for MIGHTY Photo Booths",
+    "description": "[RETIRED 2026-06-09 \u2014 superseded by agreement-flow] Author professional service agreements, sponsorships, partner agreements, NDAs, and other business documents for MIGHTY Photo Booths",
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",

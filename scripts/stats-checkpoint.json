@@ -1,34 +1,34 @@
 {
   "methodology": "github_clone_wc_l",
-  "countedAt": "2026-05-28T08:28:43.184624+00:00",
-  "github_loc": 2033807,
-  "github_commits": 1436,
-  "live_agents_registry": 39,
-  "repos_count": 34,
-  "agents_live": 39,
-  "ratchet_loc": 2033807,
-  "ratchet_commits": 1436,
-  "ratchet_agents": 39,
-  "claude_hours": 1227,
-  "claude_tokens": 12915049164,
-  "claude_sessions": 347,
-  "ratchet_claude_hours": 1227,
-  "ratchet_claude_tokens": 12915049164,
-  "skills": 372,
-  "ratchet_skills": 372,
-  "ratchet_repos": 34,
-  "tools": 149,
-  "ratchet_tools": 149,
+  "countedAt": "2026-06-10T09:31:36.258755+00:00",
+  "github_loc": 2280662,
+  "github_commits": 2063,
+  "live_agents_registry": 40,
+  "repos_count": 37,
+  "agents_live": 40,
+  "ratchet_loc": 2280662,
+  "ratchet_commits": 2063,
+  "ratchet_agents": 40,
+  "claude_hours": 1407,
+  "claude_tokens": 15705805950,
+  "claude_sessions": 395,
+  "ratchet_claude_hours": 1407,
+  "ratchet_claude_tokens": 15705805950,
+  "skills": 390,
+  "ratchet_skills": 390,
+  "ratchet_repos": 37,
+  "tools": 170,
+  "ratchet_tools": 170,
   "per_repo": {
     "ninjaforhire/Agents": {
-      "loc": 442605,
-      "files": 2129,
-      "commits": 553
+      "loc": 456499,
+      "files": 2254,
+      "commits": 794
     },
     "ninjaforhire/andrewwebber.dev": {
-      "loc": 17551,
-      "files": 99,
-      "commits": 61
+      "loc": 26593,
+      "files": 123,
+      "commits": 108
     },
     "ninjaforhire/Biometric-Lab": {
       "loc": 11,
@@ -41,9 +41,14 @@
       "commits": 7
     },
     "ninjaforhire/claude-config": {
-      "loc": 27214,
-      "files": 761,
-      "commits": 29
+      "loc": 40330,
+      "files": 843,
+      "commits": 57
+    },
+    "ninjaforhire/claude-usage": {
+      "loc": 8068,
+      "files": 44,
+      "commits": 9
     },
     "ninjaforhire/cli-printing-press": {
       "loc": 324996,
@@ -51,9 +56,9 @@
       "commits": 3
     },
     "ninjaforhire/deconstructed-studio": {
-      "loc": 3012,
+      "loc": 3079,
       "files": 28,
-      "commits": 13
+      "commits": 14
     },
     "ninjaforhire/design-request-agent": {
       "loc": 6101,
@@ -71,14 +76,14 @@
       "commits": 1
     },
     "ninjaforhire/forge": {
-      "loc": 39877,
-      "files": 211,
-      "commits": 12
+      "loc": 43281,
+      "files": 302,
+      "commits": 21
     },
     "ninjaforhire/General-Tools": {
-      "loc": 23416,
+      "loc": 23427,
       "files": 110,
-      "commits": 47
+      "commits": 49
     },
     "ninjaforhire/gstack": {
       "loc": 129692,
@@ -88,7 +93,7 @@
     "ninjaforhire/hotfixops": {
       "loc": 63485,
       "files": 527,
-      "commits": 51
+      "commits": 95
     },
     "ninjaforhire/hotfixops-site": {
       "loc": 9403,
@@ -101,9 +106,9 @@
       "commits": 8
     },
     "ninjaforhire/mighty": {
-      "loc": 101741,
-      "files": 401,
-      "commits": 200
+      "loc": 110484,
+      "files": 468,
+      "commits": 302
     },
     "ninjaforhire/MIGHTY-Apps": {
       "loc": 743,
@@ -121,9 +126,14 @@
       "commits": 28
     },
     "ninjaforhire/mighty-playbook": {
-      "loc": 2294,
+      "loc": 2896,
       "files": 2,
-      "commits": 28
+      "commits": 45
+    },
+    "ninjaforhire/mighty-productions": {
+      "loc": 2218,
+      "files": 30,
+      "commits": 6
     },
     "ninjaforhire/mighty-skills": {
       "loc": 9321,
@@ -138,12 +148,12 @@
     "ninjaforhire/mpb-ai-gen-tool": {
       "loc": 2151,
       "files": 22,
-      "commits": 9
+      "commits": 17
     },
     "ninjaforhire/mpb-site": {
-      "loc": 11820,
+      "loc": 11560,
       "files": 133,
-      "commits": 14
+      "commits": 17
     },
     "ninjaforhire/Notion-Tools": {
       "loc": 837,
@@ -181,9 +191,14 @@
       "commits": 2
     },
     "ninjaforhire/workspace-config": {
-      "loc": 210130,
-      "files": 117,
-      "commits": 11
+      "loc": 256800,
+      "files": 234,
+      "commits": 121
+    },
+    "ninjaforhire/wraith": {
+      "loc": 141280,
+      "files": 1243,
+      "commits": 0
     },
     "ninjaforhire/_Code": {
       "loc": 103906,
