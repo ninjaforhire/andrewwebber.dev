@@ -11,6 +11,10 @@ interface JourneyTimelineProps {
   entries: JourneyEntry[];
 }
 
+// Journey shows only recent history: Dec 26 2025 forward. ISO date strings
+// (YYYY-MM-DD) compare lexically, so a plain >= is a correct date filter.
+const JOURNEY_CUTOFF = "2025-12-26";
+
 function getMonthKey(dateStr: string): string {
   const d = new Date(dateStr + "T12:00:00");
   return d.toLocaleDateString("en-US", { month: "long", year: "numeric" });
@@ -34,6 +38,7 @@ export function JourneyTimeline({ entries }: JourneyTimelineProps) {
     let seenAny = false;
 
     for (const entry of entries) {
+      if (entry.date < JOURNEY_CUTOFF) continue;
       const showEra = seenAny && entry.era !== lastEra;
       const isFirstEverEra = !seenAny;
       lastEra = entry.era;
