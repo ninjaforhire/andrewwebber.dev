@@ -63,6 +63,11 @@ VERCEL = shutil.which("vercel") or "/opt/homebrew/bin/vercel"
 
 RETRIES = 3
 BACKOFF_BASE = 5  # seconds: 5, 10, 20
+# Deploy gets patient retries: midnight thrash windows last 30+ min (2026-06-12
+# failure: refresh-stats took 33 min, vercel died 3x in 40s with errno -11).
+DEPLOY_RETRIES = 4
+DEPLOY_BACKOFF = 120  # seconds: 120, 240, 480
+DEPLOY_PENDING = Path.home() / ".claude" / "daemon-registry" / "journey-deploy-pending"
 
 
 def notify(title: str, message: str) -> None:
@@ -99,7 +104,8 @@ def notify(title: str, message: str) -> None:
             pass
 
 
-def run(cmd: list[str], *, label: str, dry_run: bool, retries: int = RETRIES) -> bool:
+def run(cmd: list[str], *, label: str, dry_run: bool, retries: int = RETRIES,
+        backoff: int = BACKOFF_BASE) -> bool:
     """Run a command, self-annealing up to `retries` times. Returns success."""
     LOG.info("[%s] %s", label, " ".join(cmd))
     if dry_run:
@@ -116,7 +122,7 @@ def run(cmd: list[str], *, label: str, dry_run: bool, retries: int = RETRIES) ->
         LOG.warning("[%s] attempt %d/%d failed (exit %d): %s",
                     label, attempt, retries, r.returncode, (r.stderr or "").strip()[:300])
         if attempt < retries:
-            time.sleep(BACKOFF_BASE * (2 ** (attempt - 1)))
+            time.sleep(backoff * (2 ** (attempt - 1)))
     LOG.error("[%s] FAILED after %d attempts", label, retries)
     return False
 
@@ -183,8 +189,10 @@ def main() -> None:
         LOG.info("=== nightly journey sync END (dry run) ===")
         return
 
-    # ── PUBLISH (only if data actually changed) ──────────────────────────
-    if not data_files_changed():
+    # ── PUBLISH (only if data actually changed, or a deploy is still owed) ─
+    changed = data_files_changed()
+    deploy_pending = DEPLOY_PENDING.exists()
+    if not changed and not deploy_pending:
         LOG.info("No data changes — skipping commit + deploy")
         if disconnected:
             notify("andrewwebber.dev nightly: source disconnected",
@@ -193,14 +201,23 @@ def main() -> None:
         return
 
     pub_fail: list[str] = []
-    if not run([GIT, "add"] + DATA_FILES, label="git-add", dry_run=False):
-        pub_fail.append("git-add")
-    if not run([GIT, "commit", "-m", "chore(data): nightly auto-sync"], label="git-commit", dry_run=False):
-        pub_fail.append("git-commit")
-    if not run([GIT, "push", "origin", "main"], label="git-push", dry_run=False):
-        pub_fail.append("git-push")
-    if not run([VERCEL, "--prod", "--yes"], label="vercel-deploy", dry_run=False):
+    if changed:
+        if not run([GIT, "add"] + DATA_FILES, label="git-add", dry_run=False):
+            pub_fail.append("git-add")
+        if not run([GIT, "commit", "-m", "chore(data): nightly auto-sync"], label="git-commit", dry_run=False):
+            pub_fail.append("git-commit")
+        if not run([GIT, "push", "origin", "main"], label="git-push", dry_run=False):
+            pub_fail.append("git-push")
+    else:
+        LOG.info("No data changes, but previous deploy failed — retrying deploy only")
+
+    if run([VERCEL, "--prod", "--yes"], label="vercel-deploy", dry_run=False,
+           retries=DEPLOY_RETRIES, backoff=DEPLOY_BACKOFF):
+        DEPLOY_PENDING.unlink(missing_ok=True)
+    else:
         pub_fail.append("vercel-deploy")
+        DEPLOY_PENDING.parent.mkdir(parents=True, exist_ok=True)
+        DEPLOY_PENDING.touch()
 
     if pub_fail or disconnected:
         notify("andrewwebber.dev nightly: attention",
