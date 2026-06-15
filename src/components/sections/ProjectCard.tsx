@@ -25,7 +25,28 @@ const ACCENT_BG = {
   warm: "bg-warm/10 text-warm",
 };
 
-export function ProjectCard({ project, featured = false }: { project: Project; featured?: boolean }) {
+const ACCENT_DOT = {
+  terminal: "bg-terminal",
+  data: "bg-data",
+  creative: "bg-creative",
+  warm: "bg-warm",
+};
+
+export interface ProjectDetail {
+  blurb: string;
+  highlights: { label: string; text: string }[];
+  footnote?: string;
+}
+
+export function ProjectCard({
+  project,
+  featured = false,
+  detail,
+}: {
+  project: Project;
+  featured?: boolean;
+  detail?: ProjectDetail;
+}) {
   const Wrapper = project.link ? "a" : "div";
   const wrapperProps = project.link
     ? { href: project.link, target: "_blank", rel: "noopener noreferrer" }
@@ -74,14 +95,49 @@ export function ProjectCard({ project, featured = false }: { project: Project; f
           )}
         </div>
       </div>
-      <p
-        className={cn(
-          "leading-relaxed text-muted-foreground",
-          featured ? "mt-4 text-base md:text-[17px]" : "mt-2 text-sm"
-        )}
-      >
-        {project.description}
-      </p>
+      {featured && detail ? (
+        <div className="mt-4">
+          <p className="text-base md:text-[17px] leading-relaxed text-foreground/90">
+            {detail.blurb}
+          </p>
+          <ul className="mt-5 space-y-2.5">
+            {detail.highlights.map((h) => (
+              <li
+                key={h.label}
+                className="flex items-start gap-3 text-sm md:text-[15px] leading-relaxed text-muted-foreground"
+              >
+                <span
+                  className={cn(
+                    "mt-2 h-1.5 w-1.5 shrink-0 rounded-full",
+                    ACCENT_DOT[project.accent]
+                  )}
+                  aria-hidden
+                />
+                <span>
+                  <span className={cn("font-semibold", ACCENT_TEXT[project.accent])}>
+                    {h.label}
+                  </span>
+                  <span className="text-muted-foreground"> — {h.text}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
+          {detail.footnote && (
+            <p className="mt-5 border-t border-white/5 pt-4 text-sm leading-relaxed text-muted-foreground/80">
+              {detail.footnote}
+            </p>
+          )}
+        </div>
+      ) : (
+        <p
+          className={cn(
+            "leading-relaxed text-muted-foreground",
+            featured ? "mt-4 text-base md:text-[17px]" : "mt-2 text-sm"
+          )}
+        >
+          {project.description}
+        </p>
+      )}
       <div className={cn("flex flex-wrap gap-1.5", featured ? "mt-5" : "mt-3")}>
         {project.tags.map((tag) => (
           <span

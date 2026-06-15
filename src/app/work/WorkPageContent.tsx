@@ -73,6 +73,34 @@ const FEATURED = FEATURED_SLUGS
   .map((slug) => RAW_TOOLS.find((t) => t.slug === slug))
   .filter((t): t is Tool => Boolean(t));
 
+// Curated structured copy for the two flagship cards (kept here, not in
+// mighty-tools.json, so scan-tools regen never clobbers it).
+const FEATURED_DETAILS: Record<string, import("@/components/sections/ProjectCard").ProjectDetail> = {
+  "design-forge": {
+    blurb:
+      "My full creative-AI suite. 11 specialist wings that take a brief from idea to finished asset.",
+    highlights: [
+      { label: "Generate", text: "image and video across every major model" },
+      { label: "Brand", text: "brand-aware template engine, font and style libraries" },
+      { label: "Compose", text: "scene composers plus post-production" },
+      { label: "Ship", text: "Notion-driven pipeline → posters, animated reels, client decks, impact reports" },
+    ],
+    footnote: "Actively iterating. New wings ship every few weeks.",
+  },
+  spectre: {
+    blurb:
+      "My full-spectrum security platform. 13 modules that run an engagement end to end: discover the surface, hammer it, detect what should have caught it, ship a branded report.",
+    highlights: [
+      { label: "Recon", text: "Raven, Blackthorn" },
+      { label: "Red-team", text: "Gauntlet, Ember" },
+      { label: "Blue + Purple", text: "Bastion, Watchtower, Shannon" },
+      { label: "Cloud + AI-sec", text: "Cloudbreak, Ghost (computer-use)" },
+      { label: "Report", text: "Dossier, Code Council, REST API" },
+    ],
+    footnote: "Actively iterating. New tools and detections land every sprint.",
+  },
+};
+
 const TOOLS = [...RAW_TOOLS].sort((a, b) => a.name.localeCompare(b.name));
 const CATEGORY_ORDER: Tool["category"][] = [
   "photo-booth",
@@ -123,6 +151,7 @@ export function WorkPageContent() {
   );
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setPage(1);
     if (activeCategory !== "photo-booth") setActiveDomain(null);
   }, [activeCategory]);
@@ -214,6 +243,7 @@ export function WorkPageContent() {
                 key={`featured-${tool.slug}`}
                 project={toolToProject(tool)}
                 featured
+                detail={FEATURED_DETAILS[tool.slug]}
               />
             ))}
           </div>
