@@ -85,8 +85,9 @@ def existing_urls() -> set[str]:
             cmd.extend(["--start-cursor", cursor])
         r = subprocess.run(cmd, capture_output=True, text=True, timeout=60, env=NTN_ENV)
         if r.returncode != 0:
-            log.warning("query failed: %s", r.stderr[:200])
-            return urls
+            # Fail closed: a partial/empty URL inventory would make the dedupe
+            # gate fail open and duplicate videos. Abort the run instead.
+            raise RuntimeError(f"existing_urls query failed: {r.stderr[:200]}")
         data = json.loads(r.stdout)
         for page in data.get("results", []):
             url = (page.get("properties", {}).get("Links") or {}).get("url")
