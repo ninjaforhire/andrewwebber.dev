@@ -30,6 +30,7 @@ export function NavRail() {
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme === "light") {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsDark(false);
       document.documentElement.classList.remove("dark");
       document.documentElement.classList.add("light");

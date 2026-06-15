@@ -55,7 +55,7 @@ export function ConsultationForm() {
   if (status === "sent") {
     return (
       <div className="rounded-lg border border-terminal/30 bg-terminal/5 p-8 text-center">
-        <p className="font-mono text-sm text-terminal">$ echo "received"</p>
+        <p className="font-mono text-sm text-terminal">$ echo &quot;received&quot;</p>
         <p className="mt-2 text-muted-foreground">
           Got it. I&apos;ll be in touch within 24 hours.
         </p>

@@ -5,7 +5,7 @@ export function VlogIndex({ posts }: { posts: VlogPost[] }) {
   if (posts.length === 0) {
     return (
       <div className="text-center py-16">
-        <p className="font-mono text-sm text-muted-foreground">$ echo "first recording coming soon"</p>
+        <p className="font-mono text-sm text-muted-foreground">$ echo &quot;first recording coming soon&quot;</p>
       </div>
     );
   }

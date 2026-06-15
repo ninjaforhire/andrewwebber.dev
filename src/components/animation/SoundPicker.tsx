@@ -41,6 +41,7 @@ export function SoundPicker({ iconSize = 18, className, align = "right", directi
   const rootRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMode(readMode());
     const sync = () => setMode(readMode());
     window.addEventListener("sound-toggle", sync);

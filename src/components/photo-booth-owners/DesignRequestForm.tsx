@@ -34,7 +34,7 @@ export function DesignRequestForm() {
       </div>
 
       <div className="mt-6 rounded-md border border-warm/20 bg-warm/5 px-4 py-3 font-mono text-xs text-warm">
-        Form wiring coming soon. Email andrew@mightyphotobooths.com with subject "Design Request" to
+        Form wiring coming soon. Email andrew@mightyphotobooths.com with subject &quot;Design Request&quot; to
         submit now.
       </div>
     </div>

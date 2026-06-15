@@ -66,7 +66,7 @@ export function InquiryForm() {
   if (status === "sent") {
     return (
       <div className="rounded-lg border border-warm/30 bg-warm/5 p-8 text-center max-w-2xl">
-        <p className="font-mono text-sm text-warm">$ echo "received"</p>
+        <p className="font-mono text-sm text-warm">$ echo &quot;received&quot;</p>
         <p className="mt-2 text-muted-foreground">Got it. I&apos;ll reply within 24 hours.</p>
       </div>
     );

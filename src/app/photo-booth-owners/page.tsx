@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Hero } from "@/components/photo-booth-owners/Hero";
 import { ToolsGrid } from "@/components/photo-booth-owners/ToolsGrid";
 import { ServicesGrid } from "@/components/photo-booth-owners/ServicesGrid";
@@ -110,12 +111,12 @@ export default function PhotoBoothOwnersPage() {
           Walkthroughs, build logs, and operator breakdowns. Supercut recordings and YouTube sessions
           — no fluff.
         </p>
-        <a
+        <Link
           href="/photo-booth-owners/vlogs"
           className="inline-block font-mono text-sm uppercase tracking-wider text-data border border-data/30 px-6 py-3 hover:bg-data/5 transition-colors"
         >
           → Browse all deep dives
-        </a>
+        </Link>
       </section>
 
       {/* CONSULT + GUIDES */}

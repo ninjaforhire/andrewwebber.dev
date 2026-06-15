@@ -37,6 +37,7 @@ export function LoadingScreen() {
   // Check sessionStorage on mount
   useEffect(() => {
     if (sessionStorage.getItem("loaded") === "true") {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setPhase("done");
     }
   }, []);

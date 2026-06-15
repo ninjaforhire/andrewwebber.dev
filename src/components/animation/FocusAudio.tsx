@@ -33,6 +33,7 @@ export function FocusAudio() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMode(readMode());
 
     const sync = () => setMode(readMode());

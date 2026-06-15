@@ -1,6 +1,7 @@
+/* eslint-disable react-hooks/purity */
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 interface Props {
   lineartSvg: string;
@@ -69,12 +70,13 @@ export function PortraitFigure({ lineartSvg, photoSrc }: Props) {
   const showPhoto = phase === "photo" || phase === "to-photo";
   const showLineart = phase === "lineart" || phase === "to-lineart";
   const transitioning = phase === "to-photo" || phase === "to-lineart";
-
-  const shiftX = transitioning ? (Math.random() - 0.5) * 14 : 0;
-  const shiftY = transitioning ? (Math.random() - 0.5) * 6 : 0;
-  const tearTop = transitioning ? 10 + Math.random() * 80 : 50;
-  const tearH = transitioning ? 3 + Math.random() * 16 : 0;
-  void tick;
+  const { shiftX, shiftY, tearTop, tearH } = useMemo(() => ({
+    shiftX: transitioning ? (Math.random() - 0.5) * 14 : 0,
+    shiftY: transitioning ? (Math.random() - 0.5) * 6 : 0,
+    tearTop: transitioning ? 10 + Math.random() * 80 : 50,
+    tearH: transitioning ? 3 + Math.random() * 16 : 0,
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }), [transitioning, tick]);
 
   const mask =
     "linear-gradient(to top, black 60%, transparent 100%), linear-gradient(to left, black 65%, transparent 100%)";

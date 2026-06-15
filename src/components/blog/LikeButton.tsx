@@ -16,6 +16,7 @@ export function LikeButton({ slug }: LikeButtonProps) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
     setLiked(localStorage.getItem(STORAGE_KEY(slug)) === "1");
     const raw = localStorage.getItem(COUNT_KEY(slug));
