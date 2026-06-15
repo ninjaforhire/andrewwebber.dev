@@ -54,6 +54,11 @@ DATA_FILES = [
     "src/data/courses.json",
     "src/data/queue.json",
     "overrides.json",
+    # Hardcoded stat fallbacks patched by refresh-stats.py — tracked, so a
+    # stats change here triggers commit + prod deploy (no-JS/SEO views stay
+    # fresh and we never silently skip a deploy).
+    "src/components/sections/JourneyTeaser.tsx",
+    "src/app/layout.tsx",
 ]
 
 GIT = "/usr/bin/git"

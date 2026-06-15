@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import json
 import pathlib
+import re
 import subprocess
 import sys
 import tempfile
@@ -274,6 +275,64 @@ def load_prev() -> dict:
         return {}
 
 
+def _patch_source_fallbacks(*, loc: int, agents: int, skills: int, repos: int) -> None:
+    """Rewrite the hardcoded stat constants in tracked source files.
+
+    ``JourneyTeaser.tsx`` (``STATS_FALLBACK``) and ``layout.tsx`` (the SEO meta
+    description) render before the client fetches ``/api/stats``, so crawlers,
+    social cards, and the first paint show whatever is compiled in. They are not
+    wired to ``overrides.json``, so they go stale. This keeps them in lockstep
+    with the freshly written numbers. Idempotent: a no-op when already current.
+    """
+    journey = ROOT / "src" / "data" / "journey-2026.json"
+    try:
+        day_streak = int(json.loads(journey.read_text()).get("totalDays", 0))
+    except (OSError, json.JSONDecodeError, ValueError):
+        day_streak = 0
+
+    teaser = ROOT / "src" / "components" / "sections" / "JourneyTeaser.tsx"
+    if teaser.exists():
+        block = (
+            "const STATS_FALLBACK: Stats = {\n"
+            f"  agentsLive: {agents},\n"
+            f"  dayStreak: {day_streak},\n"
+            f"  skills: {skills},\n"
+            f"  repos: {repos},\n"
+            f"  linesOfCode: {loc},\n"
+            "};"
+        )
+        text = teaser.read_text()
+        new = re.sub(
+            r"const STATS_FALLBACK: Stats = \{.*?\};",
+            block,
+            text,
+            count=1,
+            flags=re.DOTALL,
+        )
+        if new != text:
+            teaser.write_text(new)
+            print(
+                f"Patched STATS_FALLBACK -> agents={agents} days={day_streak} "
+                f"skills={skills} repos={repos} loc={loc}"
+            )
+
+    layout = ROOT / "src" / "app" / "layout.tsx"
+    if layout.exists():
+        sentence = (
+            f"{agents} autonomous agents, {skills} skills, "
+            f"{loc // 1_000_000}M+ lines of code"
+        )
+        text = layout.read_text()
+        new = re.sub(
+            r"\d[\d,]* autonomous agents, [\d,]+ skills, \d+M\+ lines of code",
+            sentence,
+            text,
+        )
+        if new != text:
+            layout.write_text(new)
+            print(f"Patched layout.tsx meta -> {sentence}")
+
+
 def main() -> None:
     print("Listing repos...", file=sys.stderr)
     repos = list_repos()
@@ -378,6 +437,19 @@ def main() -> None:
     overrides["repos"] = final_repos
     overrides["tools"] = final_tools
     OVERRIDES.write_text(json.dumps(overrides, indent=2) + "\n")
+
+    # Keep no-JS / SEO / pre-hydration views honest. JourneyTeaser.tsx and
+    # layout.tsx hold compile-time stat constants that render in server HTML
+    # before client hydration (and to crawlers + social cards that never run
+    # JS). They are NOT served from overrides.json, so they drift. Patch them
+    # to the fresh numbers. These files are tracked + in the nightly commit
+    # set, so this also guarantees a prod deploy whenever stats move.
+    _patch_source_fallbacks(
+        loc=final_loc,
+        agents=final_agents,
+        skills=final_skills,
+        repos=final_repos,
+    )
 
     # Sync CONTENT QUEUE → queue.json so AWD Reading Queue stays fresh
     sync_queue = ROOT / "scripts" / "sync-queue.py"
