@@ -18,7 +18,7 @@ import json
 import logging
 import re
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 from playwright.async_api import async_playwright
@@ -28,7 +28,10 @@ log = logging.getLogger(__name__)
 
 PROFILE_DIR = Path("/tmp/yt-backfill/playwright-profile")
 DATA_DIR = Path(__file__).resolve().parent / "data"
-OUTPUT_DEFAULT = DATA_DIR / "youtube-day-136-143.json"
+# Rolling output: nightly always refreshes the same file with a moving window.
+OUTPUT_DEFAULT = DATA_DIR / "youtube-recent.json"
+# How many days back the rolling window reaches when --start is omitted.
+ROLLING_WINDOW_DAYS = 12
 
 HISTORY_URL = "https://www.youtube.com/feed/history"
 
@@ -396,14 +399,21 @@ async def scrape(start: str, end: str, output: Path, max_batches: int, headless:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--start", default="2026-05-10")
-    ap.add_argument("--end", default="2026-05-18")
+    ap.add_argument("--start", default=None,
+                    help="YYYY-MM-DD (default: today - ROLLING_WINDOW_DAYS)")
+    ap.add_argument("--end", default=None,
+                    help="YYYY-MM-DD exclusive (default: tomorrow, so today is included)")
     ap.add_argument("--output", type=Path, default=OUTPUT_DEFAULT)
     ap.add_argument("--max-batches", type=int, default=40)
     ap.add_argument("--headless", action="store_true")
     args = ap.parse_args()
 
-    rc = asyncio.run(scrape(args.start, args.end, args.output, args.max_batches, args.headless))
+    today = date.today()
+    start = args.start or (today - timedelta(days=ROLLING_WINDOW_DAYS)).isoformat()
+    end = args.end or (today + timedelta(days=1)).isoformat()
+    log.info("scrape window %s .. %s -> %s", start, end, args.output)
+
+    rc = asyncio.run(scrape(start, end, args.output, args.max_batches, args.headless))
     sys.exit(rc)
 
 

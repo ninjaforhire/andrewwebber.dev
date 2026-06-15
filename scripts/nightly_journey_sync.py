@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
-"""Nightly auto-updating portfolio sync — 11:59pm daily via LaunchAgent.
+"""awd-site-updater — nightly auto-updating portfolio sync (11:59pm via LaunchAgent).
 
-Goal: andrewwebber.dev keeps itself current with zero manual work.
+Goal: andrewwebber.dev keeps itself current with zero manual work. This is the
+umbrella "awd-site-updater" mission (launchd: com.workspace-config.journey-nightly);
+generate_journey_entry.py is its journal-source module. Other site sections get
+added as source/render steps here over time.
 
 Pipeline (each step self-anneals up to 3x with backoff):
   SOURCES  (pull new content from every upstream, flag any that disconnect)
@@ -9,6 +12,7 @@ Pipeline (each step self-anneals up to 3x with backoff):
     2. youtube_enrich.py          — enrich scraped videos (titles/runtime/topics)
     3. youtube_to_ll.py           — push enriched videos -> LEARNING LIBRARY (Notion)
     4. queue_to_ll_sync.py        — graduate CONTENT QUEUE -> LEARNING LIBRARY
+    5. generate_journey_entry.py  — yesterday's "Day NNN" journal (git + claude -p)
   RENDER   (LEARNING LIBRARY -> site data files)
     5. export-journey-json.py     -> src/data/journey-2026.json
     6. sync-courses.py            -> src/data/courses.json
@@ -165,6 +169,10 @@ def main() -> None:
         ]
     sources += [
         ([PYTHON, str(SCRIPTS / "queue_to_ll_sync.py")], "queue-to-ll"),
+        # Daily "Day NNN" journal entry from yesterday's git commits + claude -p
+        # takeaway. Runs after the video/book feeds so the day's records exist to
+        # bundle. Best-effort: a miss flags disconnected, never blocks the deploy.
+        ([PYTHON_BREW, str(SCRIPTS / "generate_journey_entry.py")], "journal-entry"),
     ]
     for cmd, label in sources:
         if not run(cmd, label=label, dry_run=args.dry_run):

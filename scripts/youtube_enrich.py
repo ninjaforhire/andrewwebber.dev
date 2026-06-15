@@ -25,8 +25,8 @@ logging.basicConfig(level=logging.INFO, format="%(message)s")
 log = logging.getLogger(__name__)
 
 DATA_DIR = Path(__file__).resolve().parent / "data"
-INPUT = DATA_DIR / "youtube-day-136-143.json"
-OUTPUT = DATA_DIR / "youtube-day-136-143-enriched.json"
+INPUT = DATA_DIR / "youtube-recent.json"
+OUTPUT = DATA_DIR / "youtube-recent-enriched.json"
 
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
@@ -46,7 +46,21 @@ CATEGORY_KEYWORDS: dict[str, list[str]] = {
 SKIP_KEYWORDS = [
     "music video", "official audio", "official video", "lyrics",
     "gaming", "gameplay", "let's play", "speedrun", "minecraft", "fortnite",
-    "politic", "election", "trump", "biden", "harris",
+    "politic", "election", "trump", "biden", "harris", "invasion",
+    # music / chill mixes
+    "lofi", "lo-fi", "jazzhop", "jazz hop", "chillhop", "original mix",
+    "(instrumental", "beats to", "study mix", "radio mix",
+    # finance / stock-pump
+    "stock", "stocks", "wealth opportunity", "ziptrader", "invest now",
+    "best stock", "buy now", "explosive potential",
+    # recipes / lifestyle noise
+    "recipe", "baked potato", "easy dinner",
+]
+
+# Channels that only ever produce off-topic content for this portfolio.
+SKIP_CHANNELS = [
+    "oxen", "fantastic music", "ziptrader", "goat academy",
+    "felix & friends", "ciao bella", "chase garsee",
 ]
 
 
@@ -120,7 +134,11 @@ def classify_topics(title: str, description: str, keywords: list[str]) -> list[s
     return hits or ["AI/ML"]
 
 
-def should_skip(title: str, description: str, yt_category: str | None) -> str | None:
+def should_skip(title: str, description: str, yt_category: str | None, channel: str = "") -> str | None:
+    ch = (channel or "").lower()
+    for bad in SKIP_CHANNELS:
+        if bad in ch:
+            return f"skip-channel:{bad}"
     blob = (title + " " + description).lower()
     for kw in SKIP_KEYWORDS:
         if kw in blob:
@@ -140,7 +158,7 @@ def enrich_one(video: dict[str, Any]) -> dict[str, Any]:
         return {**video, "skipped": "fetch-failed"}
 
     meta = extract_meta(html)
-    skip = should_skip(video.get("title", ""), meta.get("description", ""), meta.get("yt_category"))
+    skip = should_skip(video.get("title", ""), meta.get("description", ""), meta.get("yt_category"), meta.get("channel_full") or video.get("channel", ""))
     if skip:
         return {**video, **meta, "skipped": skip}
 

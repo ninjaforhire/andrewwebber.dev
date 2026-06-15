@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import os
 import subprocess
 import sys
 import time
@@ -28,9 +29,16 @@ from typing import Any
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 log = logging.getLogger(__name__)
 
+# The raw NOTION_API_KEY/TOKEN integration creds were revoked; ntn's keychain
+# login is the only valid credential. Strip stale env values so they cannot
+# clobber the good keychain token.
+NTN_ENV = {k: v for k, v in os.environ.items()
+           if k not in ("NOTION_API_TOKEN", "NOTION_API_KEY")}
+NTN_ENV.setdefault("NOTION_API_VERSION", "2025-09-03")
+
 NTN = "/Users/mightydesigncenter/.local/bin/ntn"
 DATA_DIR = Path(__file__).resolve().parent / "data"
-INPUT = DATA_DIR / "youtube-day-136-143-enriched.json"
+INPUT = DATA_DIR / "youtube-recent-enriched.json"
 
 LL_DB_ID = "2524ccca0f21429296a7c299abade1cb"
 LL_DSID = "25950df1-c088-451d-8002-f2eff57767a9"
@@ -41,7 +49,7 @@ ERA_FULL_STACK = "Full Stack AI"
 
 def ntn_api(args: list[str], *, timeout: int = 30) -> dict | None:
     cmd = [NTN, "api"] + args
-    r = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
+    r = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, env=NTN_ENV)
     if r.returncode != 0:
         log.warning("  ntn api error: %s", r.stderr.strip()[:200])
         return None
@@ -75,7 +83,7 @@ def existing_urls() -> set[str]:
         cmd = [NTN, "datasources", "query", LL_DSID, "--json", "--limit", "100"]
         if cursor:
             cmd.extend(["--start-cursor", cursor])
-        r = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=60, env=NTN_ENV)
         if r.returncode != 0:
             log.warning("query failed: %s", r.stderr[:200])
             return urls
