@@ -44,6 +44,7 @@ import shutil
 import subprocess
 import sys
 import time
+from datetime import date
 import urllib.request
 import urllib.parse
 from pathlib import Path
@@ -156,6 +157,7 @@ def main() -> None:
     )
 
     LOG.info("=== nightly journey sync START ===")
+    journal_date = date.today().isoformat()  # captured at run start
     disconnected: list[str] = []
     fatal: list[str] = []
 
@@ -172,7 +174,7 @@ def main() -> None:
         # Daily "Day NNN" journal entry from yesterday's git commits + claude -p
         # takeaway. Runs after the video/book feeds so the day's records exist to
         # bundle. Best-effort: a miss flags disconnected, never blocks the deploy.
-        ([PYTHON_BREW, str(SCRIPTS / "generate_journey_entry.py")], "journal-entry"),
+        ([PYTHON_BREW, str(SCRIPTS / "generate_journey_entry.py"), "--date", journal_date], "journal-entry"),
     ]
     for cmd, label in sources:
         if not run(cmd, label=label, dry_run=args.dry_run):
