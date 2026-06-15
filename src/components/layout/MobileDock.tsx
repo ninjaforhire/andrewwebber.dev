@@ -3,12 +3,13 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import { Home, Briefcase, Compass, FileText, User } from "lucide-react";
+import { Home, Briefcase, Handshake, Compass, FileText, User } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const ITEMS = [
   { label: "Home", href: "/", icon: Home, accent: "terminal" },
   { label: "Work", href: "/work", icon: Briefcase, accent: "data" },
+  { label: "Engage", href: "/engagements", icon: Handshake, accent: "warm" },
   { label: "Journey", href: "/journey", icon: Compass, accent: "creative" },
   { label: "Notes", href: "/blog", icon: FileText, accent: "warm" },
   { label: "About", href: "/about", icon: User, accent: "terminal" },
@@ -36,7 +37,7 @@ export function MobileDock() {
       className="fixed bottom-0 left-0 right-0 z-40 border-t border-[#222233] bg-[#0f0f1a]/85 backdrop-blur-xl safe-bottom md:hidden"
       aria-label="Primary"
     >
-      <ul className="grid grid-cols-5">
+      <ul className="grid grid-cols-6">
         {ITEMS.map((item) => {
           const isActive =
             item.href === "/"
