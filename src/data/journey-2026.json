@@ -1,8 +1,1084 @@
 {
-  "lastUpdated": "2026-06-15T00:08:20",
-  "totalDays": 223,
+  "lastUpdated": "2026-06-15T03:07:29",
+  "totalDays": 230,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 172,
+      "date": "2026-06-15",
+      "title": "Day 172 - Usage Orbs and Drive-Graph Hardening",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "DevOps",
+        "Security",
+        "Automation"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "100 hours of Hermes Agent lessons in 23 minutes",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=k5NhsF7t68M",
+          "runtime_min": 23.3,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "The Next $100B Market: Selling to AI Agents",
+          "channel": "Greg Isenberg",
+          "url": "https://www.youtube.com/watch?v=MlptIfpoLlw",
+          "runtime_min": 14,
+          "category": [
+            "Agents",
+            "Business",
+            "DevOps",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "I Turned Claude Into the Ultimate Second Brain",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=8QQ_INxAhRs",
+          "runtime_min": 34.3,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "Learn To Think In Systems, It'll Put You Ahead Of 99% Of People",
+          "channel": "Sandeep Swadia | theMITmonk",
+          "url": "https://www.youtube.com/watch?v=mjTgkm-h__M",
+          "runtime_min": 19.9,
+          "category": [
+            "Business"
+          ]
+        },
+        {
+          "title": "Why Hermes Agent Memory Could Change AI Automation Forever - Summary",
+          "channel": "Blunt AI",
+          "url": "https://www.youtube.com/watch?v=fgidQzl0mEg",
+          "runtime_min": 1.9,
+          "category": [
+            "Agents",
+            "Automation"
+          ]
+        },
+        {
+          "title": "Hermes Agent Memory Tutorial",
+          "channel": "MMX",
+          "url": "https://www.youtube.com/watch?v=s6RZ5_cnQ0g",
+          "runtime_min": 1.8,
+          "category": [
+            "Agents"
+          ]
+        },
+        {
+          "title": "I Built The Best Claude Memory System (Beats Hermes)",
+          "channel": "Simon Scrapes",
+          "url": "https://www.youtube.com/watch?v=H9BUkgDf5Y4",
+          "runtime_min": 13.4,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Business"
+          ]
+        },
+        {
+          "title": "Can My AI Agent Handle Drama? \ud83d\udc85 It Made the Sale Anyway",
+          "channel": "Hermes Castano",
+          "url": "https://www.youtube.com/watch?v=ndNrCf9AyU0",
+          "runtime_min": 0.9,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        }
+      ],
+      "builds": [
+        {
+          "repo": "general-tools",
+          "commits": [
+            "fix: drive-graph full walk purges rows for files deleted from Drive (codex P2)",
+            "fix: drive-graph cap same-event clique to bound O(n^2) edge growth (codex P1)",
+            "fix: drive-graph capture sync token before scan"
+          ]
+        },
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "fix(memory): capture transcript day at turn time + tidy transcript tests",
+            "feat(jimbo): system health panel + quick actions on /usage",
+            "feat(memory): per-turn rolling transcript capture (Haiku, daemon thread)"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "feat(pbo): Cmd+Shift drag-edge quick-crop gesture",
+            "feat(copy): wire copy wing into the super tool server (Task 5d)",
+            "feat(copy): add blog_write job runner + export-to-job_dir (Task 5c)"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(plugin): bump marketplace.json to 2.1.1",
+            "chore(plugin): bump mighty 2.1.0 -> 2.1.1 (sync skills incl /admin/system-optimizer)",
+            "feat(skills): add /admin/system-optimizer skill"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped a usage cockpit for Jimbo:** I wired up master orbs, a combined all-usage view, Codex 5h/weekly rate-limit orbs, and per-account Claude cost on the /usage tab, plus a system health panel with quick actions. Memory now captures a rolling transcript every turn on Haiku in a daemon thread, so the record builds itself while I work.\n\nMost of the rest was closing codex review gaps and tightening the plumbing. Drive-graph now purges rows for files deleted from Drive, caps same-event edge growth so it stops blowing up O(n^2), captures its sync token before scanning, and posts to Slack on its own. I also locked down the CI secret scanner with least-privilege workflows and hardened the legal agreement clauses."
+    },
+    {
+      "day": 171,
+      "date": "2026-06-14",
+      "title": "Day 171 - Porting the Design Planner Into Forge",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix",
+        "Refactor"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Design",
+        "Agents",
+        "Security",
+        "Finance"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "What Are You Passionate About?- Negotiation Simulation",
+          "channel": "Chris Voss \\u0026 The Black Swan Group",
+          "url": "https://www.youtube.com/watch?v=GiPsPT_PyhU",
+          "runtime_min": 77.5,
+          "category": [
+            "Business"
+          ]
+        },
+        {
+          "title": "What Medical School Never Taught You About Debt Payoff \ud83d\udc40",
+          "channel": "Korean Atlanta Mentorship",
+          "url": "https://www.youtube.com/watch?v=0YWmKBMvhG4",
+          "runtime_min": 18.4,
+          "category": [
+            "Business"
+          ]
+        },
+        {
+          "title": "The US Government Just Banned Claude Fable 5... (Full Breakdown)",
+          "channel": "Brock Mesarich | AI for Non Techies",
+          "url": "https://www.youtube.com/watch?v=l-w8yWuPzOA",
+          "runtime_min": 9.1,
+          "category": [
+            "AI/ML",
+            "Security"
+          ]
+        },
+        {
+          "title": "Anthropic Disables Fable 5 and Mythos 5 Worldwide After US National Security Order",
+          "channel": "India Today Global",
+          "url": "https://www.youtube.com/watch?v=tOW_kXamf9M",
+          "runtime_min": 2.6,
+          "category": [
+            "AI/ML",
+            "Security",
+            "DevOps"
+          ]
+        },
+        {
+          "title": "Why Anthropic's Claude Fable 5 & Mythos 5 Are Now Illegal (+15 AI Updates)",
+          "channel": "Vaibhav Sisinty",
+          "url": "https://www.youtube.com/watch?v=ACjwmGeDHFc",
+          "runtime_min": 25.9,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Business"
+          ]
+        },
+        {
+          "title": "hi everyone \ud83d\udc4b\ud83d\udc9c\ud83e\ude75",
+          "channel": "RAPUNZELC88",
+          "url": "https://www.youtube.com/watch?v=BZ9cuVa0Y3k",
+          "runtime_min": 142.5,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "I got a private lesson on Claude Cowork & Claude Code",
+          "channel": "Greg Isenberg",
+          "url": "https://www.youtube.com/watch?v=DW4a1Cm8nG4",
+          "runtime_min": 42.1,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "Chris Voss on The Art of Control, Tactical Empathy, & How to Win Any Negotiation",
+          "channel": "Open Residency",
+          "url": "https://www.youtube.com/watch?v=S9N_DJoEAmU",
+          "runtime_min": 137.3,
+          "category": [
+            "Security"
+          ]
+        },
+        {
+          "title": "Premium Isn\u2019t About Price - It\u2019s About Positioning",
+          "channel": "Open Residency",
+          "url": "https://www.youtube.com/watch?v=GaIsWb9Hatg",
+          "runtime_min": 103.8,
+          "category": [
+            "AI/ML",
+            "Business",
+            "Design"
+          ]
+        },
+        {
+          "title": "Claude Fable 5 is BANNED. What to do?",
+          "channel": "Greg Isenberg",
+          "url": "https://www.youtube.com/watch?v=bdhUBBACglw",
+          "runtime_min": 24.9,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Business"
+          ]
+        },
+        {
+          "title": "The AI Agent Map For Business (What to Build First)",
+          "channel": "Adham Alkhaja",
+          "url": "https://www.youtube.com/watch?v=F1_72dxPahg",
+          "runtime_min": 12.2,
+          "category": [
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "STOP Using Claude Code Without This Fable 5 Agentic OS",
+          "channel": "Chase AI",
+          "url": "https://www.youtube.com/watch?v=PW0sgog3kXY",
+          "runtime_min": 20.7,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Business"
+          ]
+        },
+        {
+          "title": "Type This Into Claude, It'll Make You Build 10x Faster.",
+          "channel": "Austin Marchese",
+          "url": "https://www.youtube.com/watch?v=TP73qyFWDcY",
+          "runtime_min": 15.2,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "Hermes Agent Desktop: Full Setup + Real Use Cases",
+          "channel": "Greg Isenberg",
+          "url": "https://www.youtube.com/watch?v=EJm8Ka-gVOc",
+          "runtime_min": 43.8,
+          "category": [
+            "Agents",
+            "Automation",
+            "Business",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "Become AI Native in less than 60 mins",
+          "channel": "Greg Isenberg",
+          "url": "https://www.youtube.com/watch?v=LztPaNmcWGU",
+          "runtime_min": 56.7,
+          "category": [
+            "Agents",
+            "Automation",
+            "Business",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "Make ANY Model Think Like Fable in Minutes",
+          "channel": "Mark Kashef",
+          "url": "https://www.youtube.com/watch?v=B95cu7seTm8",
+          "runtime_min": 9.6,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "WTF Is an \"AI Agent Loop\"? Genius or Hype?",
+          "channel": "Greg Isenberg",
+          "url": "https://www.youtube.com/watch?v=7clJ8IH784Q",
+          "runtime_min": 22.5,
+          "category": [
+            "Agents",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "The $1M+ Solo AI Agent Business (Full Course)",
+          "channel": "Greg Isenberg",
+          "url": "https://www.youtube.com/watch?v=BI-MNjm1tTQ",
+          "runtime_min": 47.9,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Business",
+            "Design",
+            "No-Code"
+          ]
+        }
+      ],
+      "builds": [
+        {
+          "repo": "forge",
+          "commits": [
+            "fix(planner): acquire import semaphore inside worker thread (codex P2)",
+            "fix(planner): isolate self-test nodes per test to stop headless cascade",
+            "test(planner): opt-in Playwright browser test (self-tests + iframe route)"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(plugin): bump mighty 2.0.1 -> 2.1.0 (sync skills built since June 1)",
+            "chore(submodule): bump studio",
+            "chore(submodule): bump mpb-site"
+          ]
+        },
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "refactor(design-center): repoint spec-builder to forge design_planner wing",
+            "fix: harden Distance Matrix element parsing (codex non-blocking note)",
+            "fix: address codex re-review (suppress key cause-chain, guard manual inputs)"
+          ]
+        }
+      ],
+      "takeaway": "**Ported the design planner into Forge:** I moved the whole design_planner wing into the Forge SPA, registered it as a wing, and wired up the iframe builder plus the save, import, push-pdf, ai-refine, and save-order handlers. Then I repointed the spec-builder agent at it, so the two finally share one home instead of drifting into siblings.\n\nOn the side I fixed a planner concurrency bug by grabbing the import semaphore inside the worker thread, added a secret-scan CI workflow, and closed an API key leak that Codex caught in the travel utility. The finance bookkeeping reconciliation dashboard landed too, so the books and the build pipeline both got a little more honest."
+    },
+    {
+      "day": 170,
+      "date": "2026-06-13",
+      "title": "Day 170 - Voice Composer Fixes And Site Rebuild",
+      "era": "Full Stack AI",
+      "type": [
+        "Fix",
+        "Build",
+        "Refactor"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "Design",
+        "Frontend"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "Anthropic CEO Dario Amodei calls for stronger regulation of AI",
+          "channel": "ABC7 News Bay Area",
+          "url": "https://www.youtube.com/watch?v=Bq1CdYinct8",
+          "runtime_min": 1.9,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
+        },
+        {
+          "title": "POV: What You Would See During an AI Takeover",
+          "channel": "Species | Documenting AGI",
+          "url": "https://www.youtube.com/watch?v=D8RtMHuFsUw",
+          "runtime_min": 29.7,
+          "category": [
+            "AI/ML",
+            "Security"
+          ]
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "feat: travel-cost calculator shared utility (mileage + labor + x1.5 markup)",
+            "fix(jimbo): correct inbox-agent path so voice composer actually loads (codex P1)",
+            "fix(jimbo): reply-draft composer failure fails the op, never downgrades (codex P1+P2)"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "refactor(planner): relocate spec-sheets pipeline into design_planner wing",
+            "fix(pbo): stop busy scrim from trapping canvas pointer events",
+            "fix(pbo): canvas drag/select overhaul + upload bomb guard + model previews"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(submodule): bump agents",
+            "chore(assets): real Fashion Sketch / Caricature / watercolor outputs + matched before for morph",
+            "feat(mpb-fable): wire real Fashion Sketch + Caricature, true matched morph pair, remove Iris (no public mention yet)"
+          ]
+        }
+      ],
+      "takeaway": "**Made Jimbo's drafts trustworthy:** there was a quiet path where reply drafts could skip the voice composer and ship AI tells like em dashes. I made that path fail loud instead of quietly degrading, fixed the inbox-agent import so the voice rules actually load, and got slash-commands like /done and /skip working everywhere they should. Also added a travel-cost calculator so quotes account for mileage and labor.\n\nForge's photo booth editor finally got a real canvas. Drag, select, freeform layering, per-layer opacity, plus guards against upload bombs and a busy overlay that was trapping pointer events. The reimagined MIGHTY site also picked up real imagery and its signature GSAP moments, the exploding booth and morph mirror, instead of placeholder stand-ins."
+    },
+    {
+      "day": 169,
+      "date": "2026-06-12",
+      "title": "Day 169 - Photo Booth Editor and QuickBooks Sync",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Frontend",
+        "Design",
+        "Finance",
+        "CRM"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "AI Motion graphics just got 10x better (Hyperframes inspector)",
+          "channel": "Maciej Dziuba",
+          "url": "https://www.youtube.com/watch?v=5GXaFwxF_3A",
+          "runtime_min": 16.4,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Business"
+          ]
+        },
+        {
+          "title": "Claude Design 2 HOUR COURSE (Beginner to Pro)",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=ovabeVoWrA0",
+          "runtime_min": 117.9,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Design",
+            "DevOps",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Claude Fable 5 Just Changed Website Design Forever",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=2ZwO6LhC0SU",
+          "runtime_min": 16.8,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Design"
+          ]
+        },
+        {
+          "title": "Claude Code + Graphify = Insane Agentic OS",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=Owv503rTqYY",
+          "runtime_min": 10.3,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "I Let Claude Code Run My Entire Ad Campaign... Here's What Happened",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=zswO-Wuo0E0",
+          "runtime_min": 21.1,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "I Replaced Claude Design\u2026 100% UNLIMITED",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=ju-T6uQNPSg",
+          "runtime_min": 15.9,
+          "category": [
+            "AI/ML",
+            "Design",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Top 5 Claude Code Skills... 100,000+ github stars",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=WR-kVYU-lBU",
+          "runtime_min": 22.1,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Design",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Karpathy's Skills just changed Everything (Claude Code)",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=pCqpuHA8kHM",
+          "runtime_min": 22.5,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Claude Video Editing Just Became Unrecognizable",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=Aw3BkmhYu4I",
+          "runtime_min": 28.2,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Inside Anthropic, the $965 Billion AI Juggernaut | The Circuit",
+          "channel": "Bloomberg Originals",
+          "url": "https://www.youtube.com/watch?v=v1wZwxY3CMg",
+          "runtime_min": 47.7,
+          "category": [
+            "AI/ML",
+            "Security",
+            "Business"
+          ]
+        },
+        {
+          "title": "Why This Dev Ships 100x Faster Than 99% of Engineers",
+          "channel": "David Ondrej",
+          "url": "https://www.youtube.com/watch?v=PzVV4X37ihg",
+          "runtime_min": 53.9,
+          "category": [
+            "AI/ML",
+            "Agents"
+          ]
+        },
+        {
+          "title": "Claude Fable 5 Made This Entire Video By Itself.",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=ONmaDdOBGig",
+          "runtime_min": 5.8,
+          "category": [
+            "AI/ML",
+            "Automation"
+          ]
+        }
+      ],
+      "builds": [
+        {
+          "repo": "forge",
+          "commits": [
+            "fix(planner): env-driven port + test path cleanup",
+            "feat(planner): design_planner wing scaffold + CLI registration",
+            "feat(pbo): wire Photo Booth Output Generator into super tool + psd-tools dep"
+          ]
+        },
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "test(mighty-crm): QBO suite \u2014 invoice lifecycle, payment sync, PDF, payments mirror, buildout queue, drive backup, telegram, schema",
+            "feat(mighty-crm): QBO setup \u2014 schema setup + token mint",
+            "feat(mighty-crm): QBO pipelines \u2014 poll, payment sync, quote-to-invoice"
+          ]
+        },
+        {
+          "repo": "general-tools/cli-printing-press",
+          "commits": [
+            "feat(cli): add quickbooks read-only catalog entry + spec"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped the Photo Booth Output Generator:** a layered Konva editor on the front with a Python backend that flattens PSD templates, manages backdrops, and handles uploads and projects. I scraped a 31-backdrop library to seed it and wired the whole thing into the Forge super tool, plus scaffolded a design planner wing alongside it.\n\nOn the money side I stood up the full QuickBooks Online integration for the CRM. Quote to invoice, payment sync, PDF generation, and Drive backup all run through it now, with a Telegram notifier and a test suite covering the invoice lifecycle end to end."
+    },
+    {
+      "day": 168,
+      "date": "2026-06-11",
+      "title": "Day 168 - Clients Module, Mission Control, Async Queue",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix",
+        "Refactor"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "CRM",
+        "Automation",
+        "Frontend"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "AI Agency Challenge KICKOFF LIVE (Entry Closes Now)",
+          "channel": "James Bonadies",
+          "url": "https://www.youtube.com/watch?v=Nzgii5GZ9CQ",
+          "runtime_min": 101.2,
+          "category": [
+            "Agents",
+            "Business"
+          ]
+        },
+        {
+          "title": "I Made Opus 4.8 and Fable 5 Build the Same App (RAW RESULTS)",
+          "channel": "Pat Simmons",
+          "url": "https://www.youtube.com/watch?v=TzJCly4YgDQ",
+          "runtime_min": 21.2,
+          "category": [
+            "AI/ML",
+            "Design"
+          ]
+        },
+        {
+          "title": "I Cancelled Higgsfield & Built This Claude Skill Instead",
+          "channel": "Systems by Vic",
+          "url": "https://www.youtube.com/watch?v=P7Aruo5J3BQ",
+          "runtime_min": 9.7,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Frontend"
+          ]
+        },
+        {
+          "title": "I Gave Claude $500 To Make a Better Film than Me",
+          "channel": "Joseph Martin",
+          "url": "https://www.youtube.com/watch?v=eg8XnarOAUM",
+          "runtime_min": 9.7,
+          "category": [
+            "AI/ML",
+            "Agents"
+          ]
+        },
+        {
+          "title": "Claude Fable 5 UI/UX One-Shots - 5 Tests",
+          "channel": "DesignCourse",
+          "url": "https://www.youtube.com/watch?v=tSg3FAdWvzI",
+          "runtime_min": 8.3,
+          "category": [
+            "AI/ML",
+            "Frontend",
+            "Business",
+            "Design"
+          ]
+        },
+        {
+          "title": "Anthropic is starting to panic\u2026",
+          "channel": "Fireship",
+          "url": "https://www.youtube.com/watch?v=0pgCBV8CTZY",
+          "runtime_min": 5,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "Claude Code + SeedDance 2.0 = Cinematic $10k Websites",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=ExL35N8RPjA",
+          "runtime_min": 13.2,
+          "category": [
+            "AI/ML",
+            "Business",
+            "Design",
+            "DevOps",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "You are using Claude Fable 5 wrong",
+          "channel": "Greg Isenberg",
+          "url": "https://www.youtube.com/watch?v=vjdHAWvVCP4",
+          "runtime_min": 33.1,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "Code with Claude Tokyo 2026: Opening Keynote",
+          "channel": "Claude",
+          "url": "https://www.youtube.com/watch?v=N4efO8viXXo",
+          "runtime_min": 42.4,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "NEW Claude Model Just Dropped. Watch us use it\u26a1\ufe0f",
+          "channel": "Stefi Lane | Embody Society",
+          "url": "https://www.youtube.com/watch?v=6gV95PsT0Pg",
+          "runtime_min": 70.8,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "8 Insane Claude Fable Use Cases! (endless possibilities)",
+          "channel": "Samin Yasar",
+          "url": "https://www.youtube.com/watch?v=o7NLUk1wTUo",
+          "runtime_min": 37.9,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "Claude Fable 5 Just Changed How We Get Customers Forever\u2026",
+          "channel": "Brock Mesarich | AI for Non Techies",
+          "url": "https://www.youtube.com/watch?v=54V7sYq5FNg",
+          "runtime_min": 15.4,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation"
+          ]
+        },
+        {
+          "title": "AI Fashion Sketch: Highlight Reel",
+          "channel": "MIGHTY Photo Booths",
+          "url": "https://www.youtube.com/watch?v=kHrYFka6-8o",
+          "runtime_min": 0.3,
+          "category": [
+            "Business",
+            "Design",
+            "DevOps"
+          ]
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "fix: harden telegram reply race, spam partial-fail, dispatch claim",
+            "feat(coach): seed curated backlog + extend coverage matrix",
+            "feat(coach): ops_health question source"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "feat(server): PB TEMPLATES Notion fetch with TTL cache",
+            "fix(server): queue review fixes \u2014 test loop hygiene, docs",
+            "feat(server): async job queue with persistence + restart recovery"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "feat(mighty-os): lead card triage toggles + timestamps",
+            "feat(mighty-os): inbox-sourced Lead column, test-quote filter, cleanup banners",
+            "fix(mighty-os): replace mailpro_scanner with gws-backed inbox refresh"
+          ]
+        },
+        {
+          "repo": "general-tools",
+          "commits": [
+            "fix: normalize EQ banner bar heights to each build's own max density",
+            "feat: replace image banner with animated data-driven EQ banner + hover effects",
+            "fix: regenerate hero banner without baked-in hex-code text"
+          ]
+        },
+        {
+          "repo": "apps/terminal-gloss",
+          "commits": [
+            "fix: codex review findings \u2014 sanitize CLI flag values, clamp plist slug, atomic seed (race-safe)",
+            "fix: match Terminal windows by settings-set name for placement + live smoke example",
+            "refactor: remove unused duplicate SlotPicker/TaskTypeCard components"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "fix(code-council): tolerate fenced/prose-wrapped JSON tails from hats"
+          ]
+        },
+        {
+          "repo": "apps/vivianzoe",
+          "commits": [
+            "feat: vivianzoe.com hub site + coming-soon launch gate"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped a real Clients tab into mighty-os:** the M3 module now pulls the CRM roster, opens a detail drawer, and triages leads with toggles and timestamps. I also pulled out the old mailpro scanner and put a gws-backed inbox refresh in its place, so the Lead column fills from actual email instead of a stale scrape.\n\nOutside the CRM the day stretched across six other repos. Forge got an async job queue that recovers after a restart plus a wing registry with rail status checks, terminal-gloss got a Mission Control launcher for picking task types and models, and general-tools got a trumpet-transcribe pipeline that turns audio into notation right in the browser. The Telegram coach came back online reply-driven, and Jimbo now asks before it does anything destructive to your inbox."
+    },
+    {
+      "day": 167,
+      "date": "2026-06-10",
+      "title": "Day 167 - MIGHTY OS Gets Its First Tabs",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Milestone",
+        "Fix"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "Automation",
+        "CRM",
+        "Frontend"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "Claude just dropped UltraCode... its Insane",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=_xTvejNLhyk",
+          "runtime_min": 19.6,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Business"
+          ]
+        },
+        {
+          "title": "Claude Code just Changed Website Design Forever",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=Q_K3k_ge8NA",
+          "runtime_min": 26.4,
+          "category": [
+            "AI/ML",
+            "Business",
+            "Design",
+            "DevOps",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Claude Mythos is Finally Here.",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=dYrrEKXtttk",
+          "runtime_min": 8.7,
+          "category": [
+            "AI/ML",
+            "Automation"
+          ]
+        },
+        {
+          "title": "AGI is Here. Anthropic Just Proved It.",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=NDeyhGnNECc",
+          "runtime_min": 12.6,
+          "category": [
+            "AI/ML",
+            "Automation"
+          ]
+        },
+        {
+          "title": "WWDC 2026 - Siri AI Impressions!",
+          "channel": "Mrwhosetheboss",
+          "url": "https://www.youtube.com/watch?v=c6HGJJabr_4",
+          "runtime_min": 14.8,
+          "category": [
+            "Design"
+          ]
+        },
+        {
+          "title": "The Ultimate AI Battle!",
+          "channel": "Mrwhosetheboss",
+          "url": "https://www.youtube.com/watch?v=cMuif_hJGPI",
+          "runtime_min": 27.2,
+          "category": [
+            "AI/ML",
+            "Design"
+          ]
+        },
+        {
+          "title": "Here's how I rebuilt our landing page using Claude Code",
+          "channel": "Lina Founder of Capsules Ink",
+          "url": "https://www.youtube.com/watch?v=oLWs0l_eZGg",
+          "runtime_min": 8.4,
+          "category": [
+            "AI/ML",
+            "Frontend",
+            "Business",
+            "Design"
+          ]
+        },
+        {
+          "title": "I Tested Every Claude Code Feature, These 12 Are the Best",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=vfWTyEreOEc",
+          "runtime_min": 20.2,
+          "category": [
+            "AI/ML",
+            "Automation"
+          ]
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "feat(jimbo): add event_status_advancer mission \u2014 EVENT STATUS auto-writer",
+            "test(jimbo): cover event_status_advancer whitelist, guards, dry-run, idempotency",
+            "feat(research-agent): add company subject \u2014 researcher + notion builder + rewrite shim (#18)"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "feat(mockup): booth-scene picks angled front ref + 3/4 orientation prompt",
+            "fix(mockup): rank booth-look refs by angle quality (front picks clean front booth)",
+            "docs(mockup): per-run pro/flash model flag + models.py + 92 tests"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "fix(mighty-os): date-aware pipeline \u2014 only upcoming deals on the board",
+            "docs(mighty-os): README reflects live Inbox tab (M2)",
+            "fix(mighty-os): address codex review of Inbox tab (M2)"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "fix(code-council): JIMBO REPORTS prop names \u2014 Report Title + Type"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped the first two tabs of MIGHTY OS:** a branded multi-tab shell with a pipeline board that only surfaces upcoming deals, plus an Inbox tab that triages email right inside the app. It reads from Notion and writes back through gated calls, so nothing changes without a guard checking it first. Three rounds of review caught a path bug, a truncation issue, and a stale-date crash before any of it went live.\n\nOn the agent side I taught Jimbo to advance EVENT STATUS on its own and hardened its self-repair to fail closed instead of guessing. The research agent picked up two new subjects, company and org, each with its own researcher and Notion builder. One agent per noun, no siblings."
+    },
+    {
+      "day": 166,
+      "date": "2026-06-09",
+      "title": "Day 166 - Ghost Sessions and Overlay Mockups",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix",
+        "Refactor"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "Design",
+        "Security",
+        "AI/ML"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "How secure is the Galaxy S26 Ultra? Security & Privacy features explained",
+          "channel": "SamMobile",
+          "url": "https://www.youtube.com/watch?v=mrH31fW3Am8",
+          "runtime_min": 5.4,
+          "category": [
+            "Security",
+            "Frontend"
+          ]
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(graphify): refresh subdir graphs + register 4 skills (audit-templates, loom-library-sync, sync-indexes, triple-review)",
+            "feat(skills): add /blitz-event rush buildout pipeline (#10)",
+            "feat(skills): add /blitz-event rush buildout pipeline"
+          ]
+        },
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "fix(inbox-agent): stop _strip_signoff eating real closing lines",
+            "fix(post-event-pipeline): repair Phase 4-7 bugs found in MC Mahjong run",
+            "chore(graphify): refresh catalog + skills registry + propagate node count"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "fix: harden ghost session launcher per triple-review",
+            "fix: lazy ghost_core import so ghost session runs standalone",
+            "feat: add ghost session --web FastAPI launcher + static stub"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "docs(mockup): booth-look reference manifest + track booth_looks docs",
+            "fix(mockup): overlays hardening \u2014 path-traversal guards, sandbox via is_relative_to, empty-candidates guard, PIL resource leaks, atomic project save + regression tests",
+            "feat(mockup): overlays review UI page + wing docs/registry/manifest"
+          ]
+        },
+        {
+          "repo": "general-tools",
+          "commits": [
+            "feat(hq): add Fable 5 to model picker as flagship [2]"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped a full overlays wing in Forge:** I built the booth mockup overlay system end to end in one day. Window detection, backdrop fill, the compositor, a subject engine running on Nano Banana Pro, project state with Drive sync, a FastAPI backend, and a review UI all landed together. Then I went back and hardened it with path-traversal guards and a sandbox check before calling it done.\n\nOver in HotFixOps I stood up Ghost sessions with a CLI and a web launcher, plus a TTL watchdog so they clean themselves up. The agreement-flow refactor felt just as good. I pulled out every hardcoded N.M subsection number and let a Jinja loop counter handle it, so sections renumber themselves when I add or move one."
+    },
     {
       "day": 165,
       "date": "2026-06-08",
