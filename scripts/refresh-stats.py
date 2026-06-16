@@ -197,7 +197,7 @@ def count_tools() -> int:
     """Tools = entries in src/data/mighty-tools.json, written by scan-tools.py.
 
     The rule (also documented in scripts/scan-tools.py docstring):
-      - Walk ~/Desktop/_Code/ subtrees Andrew authored.
+      - Walk ~/_Code/ subtrees Andrew authored.
       - mighty/** = photo-booth (agents + skills + apps, recursive).
       - forge/ = design-forge (parent + each wing in execution/wings/).
       - hotfixops/security/** = spectre (each suite tool + each aisec sub).

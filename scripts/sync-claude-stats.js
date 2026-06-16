@@ -9,7 +9,7 @@ import { spawnSync } from "node:child_process";
 import { readdirSync, statSync, writeFileSync, readFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 
-const CODE_ROOT = resolve(process.env.HOME, "Desktop/_Code");
+const CODE_ROOT = resolve(process.env.HOME, "_Code");
 const OUT = resolve(process.cwd(), "public/claude-stats.json");
 
 function run(cmd, args, opts = {}) {

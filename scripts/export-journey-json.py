@@ -41,7 +41,7 @@ HEADERS = {
     "Notion-Version": "2022-06-28",
     "Content-Type": "application/json",
 }
-SITE_ROOT = Path("/Users/mightydesigncenter/Desktop/_Code/andrewwebber.dev")
+SITE_ROOT = Path("/Users/mightydesigncenter/_Code/andrewwebber.dev")
 OUTPUT_PATH = SITE_ROOT / "src" / "data" / "journey-2026.json"
 
 ERA_ORDER = ["No-Code Era", "First Code", "Agent Builder", "Platform Architect", "Full Stack AI"]

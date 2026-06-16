@@ -1,7 +1,7 @@
-"""Scan ~/Desktop/_Code for tools Andrew built.
+"""Scan ~/_Code for tools Andrew built.
 
 A "tool" = a discrete thing Andrew built. Discovered by walking these
-subtrees of ~/Desktop/_Code. Each row in the output = exactly one tool.
+subtrees of ~/_Code. Each row in the output = exactly one tool.
 Categories are derived from location, not content.
 
 | Subtree                                        | What counts                        | Category     |

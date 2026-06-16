@@ -57,7 +57,7 @@ No em dashes. No "so/or/but" sentence-starts. No AI vocab (delve, crucial, robus
 
 ## Stats / Tools Count
 
-Counts are **monotonic ratchets** — never decrease. Andrew-authored only, walk full `~/Desktop/_Code`. Every SPECTRE module + Forge wing = 1 tool. huashu/upstream excluded. Methodology: see memory `feedback_awd_tools_count_rule.md` + `feedback_awd_stats_honest.md`. Any AWD edit must refresh `JourneyTeaser` + layout meta — see `feedback_awd_timeline_refresh.md`.
+Counts are **monotonic ratchets** — never decrease. Andrew-authored only, walk full `~/_Code`. Every SPECTRE module + Forge wing = 1 tool. huashu/upstream excluded. Methodology: see memory `feedback_awd_tools_count_rule.md` + `feedback_awd_stats_honest.md`. Any AWD edit must refresh `JourneyTeaser` + layout meta — see `feedback_awd_timeline_refresh.md`.
 
 ## Hard Rules
 

@@ -7,7 +7,7 @@ import subprocess
 import sys
 from datetime import datetime, timezone
 
-CODE_ROOT = pathlib.Path.home() / "Desktop/_Code"
+CODE_ROOT = pathlib.Path.home() / "_Code"
 OVERRIDES = pathlib.Path(__file__).parent.parent / "overrides.json"
 CHECKPOINT = pathlib.Path(__file__).parent / "stats-checkpoint.json"
 

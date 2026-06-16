@@ -12,7 +12,7 @@ Pipeline (each step self-anneals up to 3x with backoff):
     2. youtube_enrich.py          — enrich scraped videos (titles/runtime/topics)
     3. youtube_to_ll.py           — push enriched videos -> LEARNING LIBRARY (Notion)
     4. queue_to_ll_sync.py        — graduate CONTENT QUEUE -> LEARNING LIBRARY
-    5. generate_journey_entry.py  — yesterday's "Day NNN" journal (git + claude -p)
+    5. generate_journey_entry.py  — today's "Day NNN" journal (git + claude -p)
   RENDER   (LEARNING LIBRARY -> site data files)
     5. export-journey-json.py     -> src/data/journey-2026.json
     6. sync-courses.py            -> src/data/courses.json
@@ -171,9 +171,9 @@ def main() -> None:
         ]
     sources += [
         ([PYTHON, str(SCRIPTS / "queue_to_ll_sync.py")], "queue-to-ll"),
-        # Daily "Day NNN" journal entry from yesterday's git commits + claude -p
-        # takeaway. Runs after the video/book feeds so the day's records exist to
-        # bundle. Best-effort: a miss flags disconnected, never blocks the deploy.
+        # Daily "Day NNN" journal entry from today's git commits + claude -p (date
+        # captured at run start). Runs after the video/book feeds so the day's records
+        # exist to bundle. Best-effort: a miss flags disconnected, never blocks deploy.
         ([PYTHON_BREW, str(SCRIPTS / "generate_journey_entry.py"), "--date", journal_date], "journal-entry"),
     ]
     for cmd, label in sources:

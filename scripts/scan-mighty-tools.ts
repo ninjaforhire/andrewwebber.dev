@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-const MIGHTY_ROOT = path.resolve(process.env.HOME ?? "~", "Desktop/_Code/mighty");
+const MIGHTY_ROOT = path.resolve(process.env.HOME ?? "~", "_Code/mighty");
 const OUTPUT = path.resolve(process.cwd(), "src/data/mighty-tools.json");
 
 interface ToolEntry {
