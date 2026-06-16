@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Andrew Webber.dev Brand Kit</title>
+    <style>
+      :root {
+        --bg: #0f0f1a;
+        --panel: #1a1a2e;
+        --line: rgba(255, 255, 255, 0.1);
+        --text: #e0e0e0;
+        --muted: #8f909a;
+        --terminal: #00ff41;
+        --data: #00e5ff;
+        --creative: #b44aff;
+        --warm: #ffb000;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background:
+          repeating-linear-gradient(
+            90deg,
+            transparent 0,
+            transparent 39px,
+            rgba(255, 255, 255, 0.02) 39px,
+            rgba(255, 255, 255, 0.02) 40px
+          ),
+          repeating-linear-gradient(
+            0deg,
+            transparent 0,
+            transparent 39px,
+            rgba(255, 255, 255, 0.02) 39px,
+            rgba(255, 255, 255, 0.02) 40px
+          ),
+          var(--bg);
+        color: var(--text);
+        font-family: Inter, Arial, sans-serif;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .page {
+        padding: 72px clamp(20px, 6vw, 96px) 96px;
+      }
+
+      .eyebrow,
+      .tag,
+      .download,
+      code {
+        font-family: "Andale Mono", "Geist Mono", ui-monospace, monospace;
+      }
+
+      .eyebrow {
+        color: var(--terminal);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.36em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 980px;
+        margin: 28px 0 0;
+        font-size: clamp(64px, 12vw, 156px);
+        line-height: 0.86;
+        letter-spacing: -0.05em;
+      }
+
+      .shine {
+        background:
+          repeating-linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.18) 0 1px,
+            transparent 1px 3px
+          ),
+          linear-gradient(180deg, #00b830 0%, #00ff5c 24%, #aaffc0 48%, #00d83a 64%, #006e1d 100%);
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .rules {
+        display: grid;
+        gap: 14px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        max-width: 980px;
+        margin-top: 42px;
+      }
+
+      .rule {
+        border-left: 1px solid var(--terminal);
+        color: var(--muted);
+        font-family: "Andale Mono", ui-monospace, monospace;
+        font-size: 12px;
+        letter-spacing: 0.2em;
+        line-height: 1.6;
+        padding-left: 16px;
+        text-transform: uppercase;
+      }
+
+      .grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        margin-top: 80px;
+      }
+
+      .card {
+        background: rgba(26, 26, 46, 0.72);
+        border: 1px solid var(--line);
+        padding: 22px;
+      }
+
+      .wide {
+        grid-column: span 3;
+      }
+
+      .compact {
+        grid-column: span 2;
+      }
+
+      .media {
+        align-items: center;
+        background: rgba(15, 15, 26, 0.82);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        display: grid;
+        min-height: 210px;
+        margin-top: 20px;
+        overflow: hidden;
+        padding: 22px;
+        place-items: center;
+      }
+
+      .media img {
+        max-height: 210px;
+        max-width: 100%;
+      }
+
+      .wide .media img {
+        width: 100%;
+      }
+
+      .card-head {
+        align-items: flex-start;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+      }
+
+      h2 {
+        font-size: 30px;
+        letter-spacing: -0.03em;
+        margin: 6px 0 0;
+      }
+
+      p {
+        color: var(--muted);
+        font-size: 17px;
+        line-height: 1.6;
+      }
+
+      .tag,
+      .download {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+      }
+
+      .tag {
+        color: var(--terminal);
+      }
+
+      .download {
+        color: var(--terminal);
+        text-decoration: none;
+      }
+
+      .split {
+        display: grid;
+        gap: 28px;
+        grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+        margin-top: 80px;
+      }
+
+      video {
+        aspect-ratio: 16 / 9;
+        border: 1px solid rgba(0, 255, 65, 0.22);
+        display: block;
+        width: 100%;
+      }
+
+      .variant-list {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        margin-top: 24px;
+      }
+
+      .variant {
+        background: rgba(15, 15, 26, 0.78);
+        border: 1px solid var(--line);
+        color: var(--muted);
+        font-family: "Andale Mono", ui-monospace, monospace;
+        font-size: 12px;
+        letter-spacing: 0.2em;
+        padding: 14px;
+        text-transform: uppercase;
+      }
+
+      .swatches {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        margin-top: 24px;
+      }
+
+      .swatch {
+        background: rgba(26, 26, 46, 0.72);
+        border: 1px solid var(--line);
+        padding: 16px;
+      }
+
+      .chip {
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        height: 96px;
+      }
+
+      .swatch-row {
+        align-items: flex-start;
+        display: flex;
+        gap: 12px;
+        justify-content: space-between;
+        margin-top: 16px;
+      }
+
+      .swatch h3 {
+        margin: 0;
+      }
+
+      code {
+        color: var(--terminal);
+        font-size: 12px;
+      }
+
+      @media (max-width: 920px) {
+        .grid,
+        .split {
+          grid-template-columns: 1fr;
+        }
+
+        .wide,
+        .compact {
+          grid-column: span 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section>
+        <div class="eyebrow">Andrew Webber.dev</div>
+        <h1>Brand kit<br /><span class="shine">logo system.</span></h1>
+        <div class="rules">
+          <div class="rule">Vector printables: use flat or gradient SVG only.</div>
+          <div class="rule">Glow works on screen and MP4, not as the source for print.</div>
+          <div class="rule">Stacked lockup keeps .dev on the right middle of the name stack.</div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card wide">
+          <div class="card-head">
+            <div><div class="tag">Gradient SVG</div><h2>Main Logo</h2></div>
+            <a class="download" href="awdev-wordmark-main.svg" download>SVG</a>
+          </div>
+          <div class="media"><img src="awdev-wordmark-main.svg" alt="Main logo" /></div>
+          <p>Website-style stack with .dev kicked to the right middle.</p>
+        </article>
+        <article class="card wide">
+          <div class="card-head">
+            <div><div class="tag">Hero SVG</div><h2>Stacked Hero</h2></div>
+            <a class="download" href="awdev-stacked-hero.svg" download>SVG</a>
+          </div>
+          <div class="media"><img src="awdev-stacked-hero.svg" alt="Stacked hero logo" /></div>
+          <p>Closest match to the homepage lockup.</p>
+        </article>
+        <article class="card wide">
+          <div class="card-head">
+            <div><div class="tag">Header SVG</div><h2>Horizontal</h2></div>
+            <a class="download" href="awdev-horizontal.svg" download>SVG</a>
+          </div>
+          <div class="media"><img src="awdev-horizontal.svg" alt="Horizontal logo" /></div>
+          <p>For nav, deck footers, and narrow placements.</p>
+        </article>
+        <article class="card wide">
+          <div class="card-head">
+            <div><div class="tag">Print SVG</div><h2>Wordmark Flat</h2></div>
+            <a class="download" href="awdev-wordmark-flat.svg" download>SVG</a>
+          </div>
+          <div class="media"><img src="awdev-wordmark-flat.svg" alt="Flat wordmark logo" /></div>
+          <p>Flat vector, no blur, no raster, printable-safe.</p>
+        </article>
+        <article class="card compact">
+          <div class="card-head">
+            <div><div class="tag">Avatar SVG</div><h2>Monogram</h2></div>
+            <a class="download" href="awdev-monogram.svg" download>SVG</a>
+          </div>
+          <div class="media"><img src="awdev-monogram.svg" alt="AW monogram" /></div>
+          <p>Compact AW mark for profile and badge use.</p>
+        </article>
+        <article class="card compact">
+          <div class="card-head">
+            <div><div class="tag">Icon SVG</div><h2>Favicon</h2></div>
+            <a class="download" href="awdev-favicon.svg" download>SVG</a>
+          </div>
+          <div class="media"><img src="awdev-favicon.svg" alt="AW favicon" /></div>
+          <p>Small-size browser and shortcut mark.</p>
+        </article>
+      </section>
+
+      <section class="split">
+        <article class="card">
+          <div class="card-head">
+            <div><div class="tag">Screen only</div><h2>Animated MP4 Version</h2></div>
+            <div>
+              <a class="download" href="awdev-logo-animated.svg" download>SVG</a>
+              <span class="tag"> / </span>
+              <a class="download" href="awdev-logo-glow.mp4" download>MP4</a>
+            </div>
+          </div>
+          <div class="media">
+            <video
+              src="awdev-logo-glow.mp4"
+              poster="awdev-glow-background.png"
+              autoplay
+              muted
+              loop
+              playsinline
+              controls
+            ></video>
+          </div>
+          <p>Raster and glow are welcome here because this is a motion asset. Do not use it as printable artwork.</p>
+        </article>
+        <article class="card">
+          <div class="tag">Wordmark variants</div>
+          <h2>Usage Set</h2>
+          <div class="variant-list">
+            <div class="variant">Gradient on dark</div>
+            <div class="variant">Flat on dark</div>
+            <div class="variant">Flat one-color</div>
+            <div class="variant">Horizontal lockup</div>
+            <div class="variant">Stacked hero</div>
+            <div class="variant">Icon-only monogram</div>
+          </div>
+          <p>
+            SVG gradients stay vector. Blur and glow filters can render as raster effects in print pipelines, so the flat
+            SVG is the clean source for decals, printables, embroidery, and cut vinyl.
+          </p>
+        </article>
+      </section>
+
+      <section class="split">
+        <article class="card">
+          <div class="card-head">
+            <div><div class="tag">Transparent raster kit</div><h2>PNG + WebP Exports</h2></div>
+            <a class="download" href="awdev-raster-logo-kit.zip" download>ZIP</a>
+          </div>
+          <div class="media">
+            <img src="awdev-brand-kit-proof.png" alt="Andrew Webber.dev raster logo kit proof sheet" />
+          </div>
+          <p>
+            Includes horizontal, stacked, monochrome white, monochrome black, high-res flat print convenience exports,
+            padded exports, monogram, favicon, transparent PNG, and compressed WebP.
+          </p>
+        </article>
+        <article class="card">
+          <div class="tag">Iteration notes</div>
+          <h2>Current Direction</h2>
+          <p>
+            This pass keeps the current website identity: stacked Andrew over Webber, steel top word, green lower word,
+            and .dev kicked out to the right middle. The horizontal version is a derived utility lockup.
+          </p>
+          <p>
+            Strongest candidate is the stacked gradient mark. The horizontal version is functional, but the stacked hero
+            feels more ownable and closer to the site.
+          </p>
+          <div class="variant-list">
+            <a class="variant" href="exports/awdev-stacked-gradient-transparent-4096.png" download>Stacked PNG</a>
+            <a class="variant" href="exports/awdev-horizontal-gradient-transparent-4096.png" download>Horizontal PNG</a>
+            <a class="variant" href="exports/awdev-print-flat-transparent-6000.png" download>Print PNG</a>
+            <a class="variant" href="exports/awdev-monogram-transparent-2048.png" download>Monogram PNG</a>
+          </div>
+        </article>
+      </section>
+
+      <section style="margin-top: 80px">
+        <div class="tag">Brand color swatches</div>
+        <h2>Palette</h2>
+        <div class="swatches">
+          <div class="swatch"><div class="chip" style="background:#00ff41"></div><div class="swatch-row"><h3>Terminal</h3><code>#00ff41</code></div></div>
+          <div class="swatch"><div class="chip" style="background:#f5f5f9"></div><div class="swatch-row"><h3>Steel Light</h3><code>#f5f5f9</code></div></div>
+          <div class="swatch"><div class="chip" style="background:#8f909a"></div><div class="swatch-row"><h3>Steel Mid</h3><code>#8f909a</code></div></div>
+          <div class="swatch"><div class="chip" style="background:#0f0f1a"></div><div class="swatch-row"><h3>Night</h3><code>#0f0f1a</code></div></div>
+          <div class="swatch"><div class="chip" style="background:#1a1a2e"></div><div class="swatch-row"><h3>Panel</h3><code>#1a1a2e</code></div></div>
+          <div class="swatch"><div class="chip" style="background:#00e5ff"></div><div class="swatch-row"><h3>Data</h3><code>#00e5ff</code></div></div>
+          <div class="swatch"><div class="chip" style="background:#b44aff"></div><div class="swatch-row"><h3>Creative</h3><code>#b44aff</code></div></div>
+          <div class="swatch"><div class="chip" style="background:#ffb000"></div><div class="swatch-row"><h3>Warm</h3><code>#ffb000</code></div></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

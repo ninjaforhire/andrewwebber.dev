@@ -1,0 +1,68 @@
+{
+  "brand": "Andrew Webber.dev",
+  "generated": "2026-06-12",
+  "source_direction": "Match current website stacked Andrew/Webber/.dev identity",
+  "print_note": "SVG is the production print master. The 6000px PNGs are high-resolution raster convenience exports.",
+  "files": [
+    {
+      "name": "awdev-horizontal-gradient-transparent-4096",
+      "formats": ["png", "webp"],
+      "use": "Transparent horizontal logo for headers and wide placements"
+    },
+    {
+      "name": "awdev-horizontal-gradient-padded-4096",
+      "formats": ["png", "webp"],
+      "use": "Padded horizontal logo for social, decks, and CMS uploads"
+    },
+    {
+      "name": "awdev-horizontal-mono-white-transparent-4096",
+      "formats": ["png", "webp"],
+      "use": "White horizontal logo for dark backgrounds"
+    },
+    {
+      "name": "awdev-horizontal-mono-black-transparent-4096",
+      "formats": ["png", "webp"],
+      "use": "Black horizontal logo for light backgrounds"
+    },
+    {
+      "name": "awdev-stacked-gradient-transparent-4096",
+      "formats": ["png", "webp"],
+      "use": "Primary transparent stacked logo"
+    },
+    {
+      "name": "awdev-stacked-gradient-padded-4096",
+      "formats": ["png", "webp"],
+      "use": "Padded primary stacked logo"
+    },
+    {
+      "name": "awdev-stacked-mono-white-transparent-4096",
+      "formats": ["png", "webp"],
+      "use": "White stacked logo for dark backgrounds"
+    },
+    {
+      "name": "awdev-stacked-mono-black-transparent-4096",
+      "formats": ["png", "webp"],
+      "use": "Black stacked logo for light backgrounds"
+    },
+    {
+      "name": "awdev-print-flat-transparent-6000",
+      "formats": ["png", "webp"],
+      "use": "High-resolution flat raster export"
+    },
+    {
+      "name": "awdev-print-flat-padded-6000",
+      "formats": ["png", "webp"],
+      "use": "High-resolution padded flat raster export"
+    },
+    {
+      "name": "awdev-monogram-transparent-2048",
+      "formats": ["png", "webp"],
+      "use": "Transparent AW monogram"
+    },
+    {
+      "name": "awdev-favicon-transparent-1024",
+      "formats": ["png", "webp"],
+      "use": "High-resolution favicon source"
+    }
+  ]
+}
