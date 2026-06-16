@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600&display=swap');
+  html,body{margin:0;background:#0f0f1a;color:#888}
+  body{font-family:'Geist Mono',monospace;padding:16px}
+</style>
+</head>
+<body>
+<div id="status">loading fonts…</div>
+<canvas id="c"></canvas>
+<script>
+const TOK = {
+  steel: [[0,'#b8b8c4'],[.22,'#f5f5f9'],[.48,'#ffffff'],[.60,'#d8d8e0'],[1,'#6c6c78']],
+  steelDark: [[0,'#1a1a22'],[.22,'#3a3a45'],[.48,'#5a5a68'],[.60,'#3a3a45'],[1,'#0d0d12']],
+  green: [[0,'#00b830'],[.22,'#00ff5c'],[.48,'#aaffc0'],[.60,'#00ff5c'],[1,'#006e1d']],
+  greenFlat: '#00ff41', muted:'#888888', bg:'#0f0f1a'
+};
+function mkGrad(ctx, stops, top, bottom){
+  const g = ctx.createLinearGradient(0, top, 0, bottom);
+  stops.forEach(s=>g.addColorStop(s[0], s[1]));
+  return g;
+}
+// Measure helper with a given font
+function setFont(ctx, weight, size, fam){ ctx.font = `${weight} ${size}px ${fam}`; }
+
+// Returns {dataURL,w,h}. spec: {type, variant, S(scale px multiplier base), glow}
+function render(type, variant, S, glow){
+  const sans="'Geist'", mono="'Geist Mono'";
+  const cap = c=> (variant==='white'?'#ffffff':variant==='black'?'#0f0f1a':c);
+  const pad = 0.18; // fraction of size
+  const cv = document.getElementById('c');
+  const ctx = cv.getContext('2d');
+  // base sizes
+  let size = 200*S;
+  let P = size*pad;
+  ctx.textBaseline='alphabetic';
+
+  function measure(txt,weight,fs,fam,ls){ setFont(ctx,weight,fs,fam); ctx.letterSpacing=(ls||0)+'px'; return ctx.measureText(txt).width; }
+
+  if(type==='monogram'){
+    const ls=-0.05*size;
+    const awW = measure('AW',800,size,sans,ls);
+    const usSize=size*0.5, gap=size*0.06;
+    setFont(ctx,600,usSize,mono); ctx.letterSpacing='0px';
+    const usW=ctx.measureText('_').width;
+    const W=Math.ceil(awW+gap+usW+P*2), H=Math.ceil(size*1.0+P*2);
+    cv.width=W; cv.height=H;
+    const base=P+size*0.78;
+    // glow
+    if(glow){ctx.shadowColor='rgba(0,255,65,0.55)';ctx.shadowBlur=size*0.18;}
+    // AW
+    setFont(ctx,800,size,sans); ctx.letterSpacing=ls+'px';
+    ctx.fillStyle = variant==='color'? mkGrad(ctx,TOK.steel,P,base+size*0.05) : cap('#fff');
+    ctx.shadowColor='transparent';
+    ctx.fillText('AW',P,base);
+    // underscore
+    setFont(ctx,600,usSize,mono); ctx.letterSpacing='0px';
+    if(glow){ctx.shadowColor='rgba(0,255,65,0.7)';ctx.shadowBlur=size*0.16;}
+    ctx.fillStyle = variant==='color'? TOK.greenFlat : cap('#fff');
+    ctx.fillText('_',P+awW+gap,base);
+    return {dataURL:cv.toDataURL('image/png'),w:W,h:H};
+  }
+
+  if(type==='horizontal'){
+    size=120*S; P=size*0.20;
+    const ls=-0.03*size;
+    const aW=measure('Andrew',800,size,sans,ls);
+    const wW=measure('Webber',800,size,sans,ls);
+    const devS=size*0.42;
+    setFont(ctx,500,devS,mono); ctx.letterSpacing='0px';
+    const devW=ctx.measureText('.dev').width, usW=ctx.measureText('_').width;
+    const W=Math.ceil(aW+wW+devS*0.18+devW+usW+P*2), H=Math.ceil(size*1.05+P*2);
+    cv.width=W; cv.height=H;
+    const base=P+size*0.80, devBase=base-size*0.30;
+    // Andrew
+    setFont(ctx,800,size,sans); ctx.letterSpacing=ls+'px';
+    if(glow){ctx.shadowColor='rgba(255,255,255,0.18)';ctx.shadowBlur=size*0.10;}
+    ctx.fillStyle=variant==='color'?mkGrad(ctx,TOK.steel,P,base+size*0.05):cap('#fff');
+    ctx.fillText('Andrew',P,base);
+    // Webber
+    if(glow){ctx.shadowColor='rgba(0,255,65,0.5)';ctx.shadowBlur=size*0.16;}
+    ctx.fillStyle=variant==='color'?mkGrad(ctx,TOK.green,P,base+size*0.05):cap('#fff');
+    ctx.fillText('Webber',P+aW,base);
+    ctx.shadowColor='transparent';
+    // .dev
+    setFont(ctx,500,devS,mono); ctx.letterSpacing='0px';
+    ctx.fillStyle=variant==='color'?TOK.muted:cap('#fff');
+    ctx.fillText('.dev',P+aW+wW+devS*0.18,devBase);
+    // _
+    if(glow){ctx.shadowColor='rgba(0,255,65,0.6)';ctx.shadowBlur=size*0.12;}
+    ctx.fillStyle=variant==='color'?TOK.greenFlat:cap('#fff');
+    ctx.fillText('_',P+aW+wW+devS*0.18+devW,devBase);
+    return {dataURL:cv.toDataURL('image/png'),w:W,h:H};
+  }
+
+  if(type==='stacked'){
+    size=150*S; P=size*0.20; const lh=size*0.86;
+    const ls=-0.05*size;
+    const aW=measure('Andrew',800,size,sans,ls);
+    const wW=measure('Webber',800,size,sans,ls);
+    const devS=size*0.40;
+    setFont(ctx,500,devS,mono); ctx.letterSpacing='0px';
+    const devW=ctx.measureText('.dev').width, usW=ctx.measureText('_').width;
+    const line2=wW+devS*0.22+devW+usW;
+    const content=Math.max(aW,line2);
+    const W=Math.ceil(content+P*2), H=Math.ceil(lh+size+P*2);
+    cv.width=W; cv.height=H;
+    const base1=P+size*0.78, base2=base1+lh, devBase=base2-size*0.52;
+    setFont(ctx,800,size,sans); ctx.letterSpacing=ls+'px';
+    if(glow){ctx.shadowColor='rgba(255,255,255,0.15)';ctx.shadowBlur=size*0.10;}
+    ctx.fillStyle=variant==='color'?mkGrad(ctx,TOK.steel,P,base1+size*0.05):cap('#fff');
+    ctx.fillText('Andrew',P,base1);
+    if(glow){ctx.shadowColor='rgba(0,255,65,0.5)';ctx.shadowBlur=size*0.16;}
+    ctx.fillStyle=variant==='color'?mkGrad(ctx,TOK.green,base2-size*0.78,base2+size*0.05):cap('#fff');
+    ctx.fillText('Webber',P,base2);
+    ctx.shadowColor='transparent';
+    setFont(ctx,500,devS,mono); ctx.letterSpacing='0px';
+    ctx.fillStyle=variant==='color'?TOK.muted:cap('#fff');
+    ctx.fillText('.dev',P+wW+devS*0.22,devBase);
+    if(glow){ctx.shadowColor='rgba(0,255,65,0.6)';ctx.shadowBlur=size*0.12;}
+    ctx.fillStyle=variant==='color'?TOK.greenFlat:cap('#fff');
+    ctx.fillText('_',P+wW+devS*0.22+devW,devBase);
+    return {dataURL:cv.toDataURL('image/png'),w:W,h:H};
+  }
+
+  if(type==='favicon'){
+    const s=512*S; cv.width=s; cv.height=s;
+    const r=s*0.22;
+    function rr(x,y,w,h,rad){ctx.beginPath();ctx.moveTo(x+rad,y);ctx.arcTo(x+w,y,x+w,y+h,rad);ctx.arcTo(x+w,y+h,x,y+h,rad);ctx.arcTo(x,y+h,x,y,rad);ctx.arcTo(x,y,x+w,y,rad);ctx.closePath();}
+    let awFill,usFill;
+    if(variant==='dark'){ rr(0,0,s,s,r); ctx.fillStyle='#0f0f1a'; ctx.fill(); awFill='#ffffff'; usFill=TOK.greenFlat; }
+    else if(variant==='green'){ rr(0,0,s,s,r); ctx.fillStyle='#00ff41'; ctx.fill(); awFill='#06210d'; usFill='#06210d'; }
+    else { awFill=null; usFill=TOK.greenFlat; } // transparent + steel
+    const fs=s*0.42; const ls=-0.05*s*0.1;
+    setFont(ctx,800,fs,sans); ctx.letterSpacing=(-fs*0.05)+'px';
+    const awW=ctx.measureText('AW').width;
+    setFont(ctx,600,fs*0.55,mono); ctx.letterSpacing='0px';
+    const usW=ctx.measureText('_').width;
+    const total=awW+fs*0.04+usW; let x=(s-total)/2; const base=s/2+fs*0.34;
+    setFont(ctx,800,fs,sans); ctx.letterSpacing=(-fs*0.05)+'px';
+    ctx.fillStyle= awFill? awFill : mkGrad(ctx,TOK.steel,s*0.28,s*0.72);
+    ctx.fillText('AW',x,base);
+    setFont(ctx,600,fs*0.55,mono); ctx.letterSpacing='0px';
+    ctx.fillStyle=usFill;
+    ctx.fillText('_',x+awW+fs*0.04,base);
+    return {dataURL:cv.toDataURL('image/png'),w:s,h:s};
+  }
+}
+window.render = render;
+document.fonts.ready.then(async ()=>{
+  // ensure specific weights loaded
+  await Promise.all([
+    document.fonts.load("800 200px Geist"),
+    document.fonts.load("500 80px 'Geist Mono'"),
+    document.fonts.load("600 80px 'Geist Mono'")
+  ]);
+  document.getElementById('status').textContent='READY';
+  window.__ready=true;
+});
+</script>
+</body>
+</html>

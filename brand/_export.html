@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AW Brand Kit Exporter</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600&display=swap');
+  html,body{margin:0;background:#0f0f1a;color:#e0e0e0;font-family:'Geist Mono',monospace;min-height:100vh}
+  .wrap{max-width:720px;margin:0 auto;padding:48px 24px}
+  h1{font-family:'Geist',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:28px}
+  .accent{color:#00ff41}
+  button{font-family:'Geist',sans-serif;font-weight:700;font-size:18px;background:#00ff41;color:#06210d;border:0;border-radius:12px;padding:18px 28px;cursor:pointer;box-shadow:0 0 28px rgba(0,255,65,.35)}
+  button:disabled{opacity:.5;cursor:default;box-shadow:none}
+  #log{white-space:pre-wrap;font-size:13px;color:#9aa39d;margin-top:24px;line-height:1.6;max-height:46vh;overflow:auto;border:1px solid #222233;border-radius:10px;padding:14px;background:#12121f}
+  .muted{color:#888}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>AndrewWebber<span class="accent">.dev_</span> &nbsp;brand-kit exporter</h1>
+  <p class="muted">Click the button, then choose your <b>brand</b> folder. All true-Geist assets write directly into it.</p>
+  <button id="go">⤓ Export brand kit → choose /brand folder</button>
+  <div id="log">idle. waiting for fonts…</div>
+</div>
+<script>
+const TOK={steel:[[0,'#b8b8c4'],[.22,'#f5f5f9'],[.48,'#ffffff'],[.60,'#d8d8e0'],[1,'#6c6c78']],
+green:[[0,'#00b830'],[.22,'#00ff5c'],[.48,'#aaffc0'],[.60,'#00ff5c'],[1,'#006e1d']],
+greenFlat:'#00ff41',muted:'#888888',bg:'#0f0f1a'};
+const log=m=>{document.getElementById('log').textContent+='\n'+m;document.getElementById('log').scrollTop=1e9;};
+function newCanvas(){return document.createElement('canvas');}
+function gradOn(ctx,st,t,b){const g=ctx.createLinearGradient(0,t,0,b);st.forEach(s=>g.addColorStop(s[0],s[1]));return g;}
+
+// Core lockup drawer. Returns canvas sized to content (transparent unless bg given).
+function draw(type,variant,S,opt){
+  opt=opt||{}; const glow=opt.glow; const sans="'Geist'",mono="'Geist Mono'";
+  const cap=c=>(variant==='white'?'#fff':variant==='black'?'#0f0f1a':c);
+  const cv=newCanvas(),ctx=cv.getContext('2d');ctx.textBaseline='alphabetic';
+  let size,P,ls;
+  const useColor=(variant==='color');
+  function setup(W,H){cv.width=Math.ceil(W);cv.height=Math.ceil(H);if(opt.bg){ctx.fillStyle=opt.bg;ctx.fillRect(0,0,cv.width,cv.height);}}
+  if(type==='monogram'){
+    size=200*S;P=size*0.18;ls=-0.05*size;
+    ctx.font=`800 ${size}px ${sans}`;ctx.letterSpacing=ls+'px';const awW=ctx.measureText('AW').width;
+    const us=size*0.5,gap=size*0.06;ctx.font=`600 ${us}px ${mono}`;ctx.letterSpacing='0px';const usW=ctx.measureText('_').width;
+    setup(awW+gap+usW+P*2,size+P*2);const b=P+size*0.78;
+    if(glow){ctx.shadowColor='rgba(0,255,65,.55)';ctx.shadowBlur=size*0.18;}
+    ctx.font=`800 ${size}px ${sans}`;ctx.letterSpacing=ls+'px';ctx.shadowColor='transparent';
+    ctx.fillStyle=useColor?gradOn(ctx,TOK.steel,P,b+size*0.05):cap('#fff');ctx.fillText('AW',P,b);
+    ctx.font=`600 ${us}px ${mono}`;ctx.letterSpacing='0px';
+    if(glow){ctx.shadowColor='rgba(0,255,65,.7)';ctx.shadowBlur=size*0.16;}
+    ctx.fillStyle=useColor?TOK.greenFlat:cap('#fff');ctx.fillText('_',P+awW+gap,b);
+  } else if(type==='horizontal'){
+    size=120*S;P=size*0.20;ls=-0.03*size;
+    ctx.font=`800 ${size}px ${sans}`;ctx.letterSpacing=ls+'px';const aW=ctx.measureText('Andrew').width,wW=ctx.measureText('Webber').width;
+    const dS=size*0.42;ctx.font=`500 ${dS}px ${mono}`;ctx.letterSpacing='0px';const dW=ctx.measureText('.dev').width,uW=ctx.measureText('_').width;
+    setup(aW+wW+dS*0.18+dW+uW+P*2,size*1.05+P*2);const b=P+size*0.80,db=b-size*0.30;
+    ctx.font=`800 ${size}px ${sans}`;ctx.letterSpacing=ls+'px';
+    if(glow){ctx.shadowColor='rgba(255,255,255,.18)';ctx.shadowBlur=size*0.10;}
+    ctx.fillStyle=useColor?gradOn(ctx,TOK.steel,P,b+size*0.05):cap('#fff');ctx.fillText('Andrew',P,b);
+    if(glow){ctx.shadowColor='rgba(0,255,65,.5)';ctx.shadowBlur=size*0.16;}
+    ctx.fillStyle=useColor?gradOn(ctx,TOK.green,P,b+size*0.05):cap('#fff');ctx.fillText('Webber',P+aW,b);
+    ctx.shadowColor='transparent';ctx.font=`500 ${dS}px ${mono}`;ctx.letterSpacing='0px';
+    ctx.fillStyle=useColor?TOK.muted:cap('#fff');ctx.fillText('.dev',P+aW+wW+dS*0.18,db);
+    if(glow){ctx.shadowColor='rgba(0,255,65,.6)';ctx.shadowBlur=size*0.12;}
+    ctx.fillStyle=useColor?TOK.greenFlat:cap('#fff');ctx.fillText('_',P+aW+wW+dS*0.18+dW,db);
+  } else if(type==='stacked'){
+    size=150*S;P=size*0.20;const lh=size*0.86;ls=-0.05*size;
+    ctx.font=`800 ${size}px ${sans}`;ctx.letterSpacing=ls+'px';const aW=ctx.measureText('Andrew').width,wW=ctx.measureText('Webber').width;
+    const dS=size*0.40;ctx.font=`500 ${dS}px ${mono}`;ctx.letterSpacing='0px';const dW=ctx.measureText('.dev').width,uW=ctx.measureText('_').width;
+    const content=Math.max(aW,wW+dS*0.22+dW+uW);setup(content+P*2,lh+size+P*2);
+    const b1=P+size*0.78,b2=b1+lh,db=b2-size*0.52;
+    ctx.font=`800 ${size}px ${sans}`;ctx.letterSpacing=ls+'px';
+    if(glow){ctx.shadowColor='rgba(255,255,255,.15)';ctx.shadowBlur=size*0.10;}
+    ctx.fillStyle=useColor?gradOn(ctx,TOK.steel,P,b1+size*0.05):cap('#fff');ctx.fillText('Andrew',P,b1);
+    if(glow){ctx.shadowColor='rgba(0,255,65,.5)';ctx.shadowBlur=size*0.16;}
+    ctx.fillStyle=useColor?gradOn(ctx,TOK.green,b2-size*0.78,b2+size*0.05):cap('#fff');ctx.fillText('Webber',P,b2);
+    ctx.shadowColor='transparent';ctx.font=`500 ${dS}px ${mono}`;ctx.letterSpacing='0px';
+    ctx.fillStyle=useColor?TOK.muted:cap('#fff');ctx.fillText('.dev',P+wW+dS*0.22,db);
+    if(glow){ctx.shadowColor='rgba(0,255,65,.6)';ctx.shadowBlur=size*0.12;}
+    ctx.fillStyle=useColor?TOK.greenFlat:cap('#fff');ctx.fillText('_',P+wW+dS*0.22+dW,db);
+  } else if(type==='favicon'){
+    const s=512*S;setup(s,s);const r=s*0.22;
+    function rr(x,y,w,h,rad){ctx.beginPath();ctx.moveTo(x+rad,y);ctx.arcTo(x+w,y,x+w,y+h,rad);ctx.arcTo(x+w,y+h,x,y+h,rad);ctx.arcTo(x,y+h,x,y,rad);ctx.arcTo(x,y,x+w,y,rad);ctx.closePath();}
+    let awFill,usFill;
+    if(variant==='dark'){rr(0,0,s,s,r);ctx.fillStyle='#0f0f1a';ctx.fill();awFill='#fff';usFill=TOK.greenFlat;}
+    else if(variant==='green'){rr(0,0,s,s,r);ctx.fillStyle='#00ff41';ctx.fill();awFill='#06210d';usFill='#06210d';}
+    else{awFill=null;usFill=TOK.greenFlat;}
+    const fs=s*0.42;ctx.font=`800 ${fs}px ${sans}`;ctx.letterSpacing=(-fs*0.05)+'px';const awW=ctx.measureText('AW').width;
+    ctx.font=`600 ${fs*0.55}px ${mono}`;ctx.letterSpacing='0px';const usW=ctx.measureText('_').width;
+    const total=awW+fs*0.04+usW;let x=(s-total)/2;const b=s/2+fs*0.34;
+    ctx.font=`800 ${fs}px ${sans}`;ctx.letterSpacing=(-fs*0.05)+'px';
+    ctx.fillStyle=awFill?awFill:gradOn(ctx,TOK.steel,s*0.28,s*0.72);ctx.fillText('AW',x,b);
+    ctx.font=`600 ${fs*0.55}px ${mono}`;ctx.letterSpacing='0px';ctx.fillStyle=usFill;ctx.fillText('_',x+awW+fs*0.04,b);
+  }
+  return cv;
+}
+
+// Animated frame: dark 16:9, stacked logo centered + glow pulse + scan bar + caret blink
+function drawFrame(W,H,t){
+  const cv=newCanvas();cv.width=W;cv.height=H;const ctx=cv.getContext('2d');
+  ctx.fillStyle='#0f0f1a';ctx.fillRect(0,0,W,H);
+  // subtle grid
+  ctx.strokeStyle='rgba(255,255,255,0.02)';ctx.lineWidth=1;
+  for(let x=0;x<W;x+=40){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke();}
+  for(let y=0;y<H;y+=40){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();}
+  // radial glow behind
+  const rg=ctx.createRadialGradient(W/2,H*0.55,0,W/2,H*0.55,W*0.5);
+  const pulse=0.06+0.05*(0.5+0.5*Math.sin(t*2*Math.PI));
+  rg.addColorStop(0,`rgba(0,255,65,${pulse})`);rg.addColorStop(1,'rgba(0,255,65,0)');
+  ctx.fillStyle=rg;ctx.fillRect(0,0,W,H);
+  // build stacked logo into temp at scale, then center
+  const lk=draw('stacked','color',H/ (150*5.0) ,{glow:true}); // scale so it fits
+  const scale=Math.min((W*0.74)/lk.width,(H*0.7)/lk.height);
+  const dw=lk.width*scale,dh=lk.height*scale,dx=(W-dw)/2,dy=(H-dh)/2;
+  ctx.drawImage(lk,dx,dy,dw,dh);
+  // caret blink overlay: redraw a black-then-green underscore? simpler: dim a region. Skip; underscore already drawn.
+  if((t*2)%1<0.5){ /* caret on (already drawn) */ } else {
+    // caret off: paint bg-colored rect over underscore area (approx bottom-right of logo)
+    ctx.fillStyle='#0f0f1a';
+    ctx.fillRect(dx+dw*0.62,dy+dh*0.30,dw*0.16,dh*0.22);
+  }
+  // scan bar sweep
+  const sy=(-0.2+1.4*t)*H;const bandH=H*0.16;
+  const sg=ctx.createLinearGradient(0,sy,0,sy+bandH);
+  sg.addColorStop(0,'rgba(0,255,65,0)');sg.addColorStop(0.5,'rgba(0,255,65,0.12)');sg.addColorStop(1,'rgba(0,255,65,0)');
+  ctx.fillStyle=sg;ctx.fillRect(0,sy,W,bandH);
+  return cv;
+}
+
+const toBlob=(cv,type,q)=>new Promise(r=>cv.toBlob(r,type,q));
+async function writeFile(dir,name,blob){const fh=await dir.getFileHandle(name,{create:true});const w=await fh.createWritable();await w.write(blob);await w.close();}
+
+async function run(){
+  const root=await window.showDirectoryPicker({mode:'readwrite'});
+  document.getElementById('go').disabled=true;
+  const png=await root.getDirectoryHandle('png',{create:true});
+  const webp=await root.getDirectoryHandle('webp',{create:true});
+  const fav=await root.getDirectoryHandle('favicon',{create:true});
+  const vid=await root.getDirectoryHandle('video',{create:true});
+  const frames=await vid.getDirectoryHandle('frames',{create:true});
+  const SCALE={monogram:10,horizontal:7,stacked:8};
+  const types=['monogram','horizontal','stacked'];
+  const variants=['color','white','black'];
+  for(const t of types){for(const v of variants){
+    const cv=draw(t,v,SCALE[t],{glow:false});
+    await writeFile(png,`aw-${t}-${v}.png`, await toBlob(cv,'image/png'));
+    if(v==='color'){await writeFile(webp,`aw-${t}-color.webp`, await toBlob(cv,'image/webp',0.92));
+      const cg=draw(t,v,SCALE[t],{glow:true});
+      await writeFile(png,`aw-${t}-color-glow.png`, await toBlob(cg,'image/png'));}
+    log(`png/aw-${t}-${v}.png  (${cv.width}x${cv.height})`);
+  }}
+  // favicons
+  const favSizes=[16,32,48,64,128,180,192,256,512];
+  for(const s of favSizes){
+    const cv=draw('favicon','dark',s/512,{}); // dark rounded tile
+    await writeFile(fav,`favicon-${s}.png`, await toBlob(cv,'image/png'));
+  }
+  for(const v of ['dark','green','transparent']){
+    const cv=draw('favicon',v,1,{});await writeFile(fav,`favicon-${v}-512.png`, await toBlob(cv,'image/png'));
+  }
+  log('favicon set written');
+  // OG / social 1200x630 dark with stacked logo
+  (async()=>{})();
+  const og=newCanvas();og.width=1200;og.height=630;const oc=og.getContext('2d');
+  oc.fillStyle='#0f0f1a';oc.fillRect(0,0,1200,630);
+  const rg=oc.createRadialGradient(600,360,0,600,360,650);rg.addColorStop(0,'rgba(0,255,65,0.10)');rg.addColorStop(1,'rgba(0,255,65,0)');oc.fillStyle=rg;oc.fillRect(0,0,1200,630);
+  const lk=draw('stacked','color',6,{glow:true});const sc=Math.min(820/lk.width,430/lk.height);
+  oc.drawImage(lk,(1200-lk.width*sc)/2,(630-lk.height*sc)/2,lk.width*sc,lk.height*sc);
+  await writeFile(png,'aw-og-1200x630.png', await toBlob(og,'image/png'));
+  log('og image written');
+  // animation frames
+  const NF=75,W=1600,H=900;
+  for(let i=0;i<NF;i++){const t=i/NF;const cv=drawFrame(W,H,t);
+    const n=String(i+1).padStart(4,'0');
+    await writeFile(frames,`f${n}.png`, await toBlob(cv,'image/png'));
+    if(i%15===0)log(`frame ${i+1}/${NF}`);}
+  log(`\\n✅ DONE. ${NF} frames + stills written. You can close this tab.`);
+  window.__exportDone=true;
+}
+document.getElementById('go').addEventListener('click',()=>run().catch(e=>log('ERROR: '+e)));
+document.fonts.ready.then(async()=>{await Promise.all([document.fonts.load("800 200px Geist"),document.fonts.load("500 80px 'Geist Mono'"),document.fonts.load("600 80px 'Geist Mono'")]);document.getElementById('log').textContent='READY — click the button above.';});
+</script>
+</body>
+</html>
