@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T03:07:29",
+  "lastUpdated": "2026-06-16T00:28:02",
   "totalDays": 230,
   "currentEra": "Full Stack AI",
   "entries": [
@@ -24,6 +24,72 @@
       "channel": "",
       "runtime_min": null,
       "videos": [
+        {
+          "title": "This New 'Fusion' AI Beats Claude Fable 5 \u2014 Here's How To Use It (OpenRouter Fusion Tutorial)",
+          "channel": "TheAIGRID",
+          "url": "https://www.youtube.com/watch?v=5g4QUlypsdQ",
+          "runtime_min": 9.7,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "Firecrawl AI clearly explained (and how to make $$)",
+          "channel": "Greg Isenberg",
+          "url": "https://www.youtube.com/watch?v=eH8JdttKIdA",
+          "runtime_min": 27.5,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "DevOps"
+          ]
+        },
+        {
+          "title": "Build Unstoppable Local AI... Never get banned",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=BvjkywaIC1A",
+          "runtime_min": 22.5,
+          "category": [
+            "AI/ML",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "How AI agents & Claude skills work (Clearly Explained)",
+          "channel": "Greg Isenberg",
+          "url": "https://www.youtube.com/watch?v=S_oN3vlzpMw",
+          "runtime_min": 35.4,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation"
+          ]
+        },
+        {
+          "title": "The First 48 Hours of an AI Civil War - A Realistic Scenario",
+          "channel": "Species | Documenting AGI",
+          "url": "https://www.youtube.com/watch?v=gwfCWDO4LbM",
+          "runtime_min": 35.2,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Security"
+          ]
+        },
+        {
+          "title": "Type This Into Claude To Make $1,000 This Weekend",
+          "channel": "Patrick Dang",
+          "url": "https://www.youtube.com/watch?v=qsUksdDNbv0",
+          "runtime_min": 28.1,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business",
+            "Design"
+          ]
+        },
         {
           "title": "100 hours of Hermes Agent lessons in 23 minutes",
           "channel": "Jack Roberts",
@@ -1103,6 +1169,57 @@
         {
           "title": "OpenAI's Greg Brockman: Why Human Attention Is the New Bottleneck",
           "channel": "Sequoia Capital"
+        },
+        {
+          "title": "Photographing Corporate Events, with Gustavo Fernandez",
+          "channel": "This Week in Photo (TWiP)",
+          "url": "https://www.youtube.com/watch?v=oIcYC-JHTuA",
+          "runtime_min": 42.7,
+          "category": [
+            "Business"
+          ]
+        },
+        {
+          "title": "#1 Communication Expert: If You Get Anxious Around Other People WATCH THIS!",
+          "channel": "Jay Shetty Podcast",
+          "url": "https://www.youtube.com/watch?v=ru44DngJYoA",
+          "runtime_min": 104.6,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "Anthropic Head of Design on Why the UI Is Just a Medium and the Output Is All That Matters",
+          "channel": "Product School",
+          "url": "https://www.youtube.com/watch?v=mvIAbe-sLK0",
+          "runtime_min": 1,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Frontend",
+            "Design"
+          ]
+        },
+        {
+          "title": "This Open Source Repo Just Solved Claude Code's #1 Problem",
+          "channel": "Chase AI",
+          "url": "https://www.youtube.com/watch?v=ChskqGovoHg",
+          "runtime_min": 13.4,
+          "category": [
+            "AI/ML",
+            "Business",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "10 Claude AI Side Hustles That Can Pay A Full-Time Income",
+          "channel": "Shane Hummus",
+          "url": "https://www.youtube.com/watch?v=nkf8SP71wo4",
+          "runtime_min": 22.5,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
         }
       ],
       "builds": [
@@ -1149,6 +1266,283 @@
         {
           "title": "32 Tricks to Level Up Claude Code in 16 Mins",
           "channel": "Nate Herk | AI Automation"
+        },
+        {
+          "title": "The Top 10 Claude Code Plugins to 10x Your Next Project (June '26)",
+          "channel": "Chase AI",
+          "url": "https://www.youtube.com/watch?v=IShdbDP4Jgg",
+          "runtime_min": 12.4,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "How To Create Irresistible Hooks With Claude (and blow up your content)",
+          "channel": "Kallaway",
+          "url": "https://www.youtube.com/watch?v=a7VjpIqq8Xk",
+          "runtime_min": 27.6,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation"
+          ]
+        },
+        {
+          "title": "How Senior Engineers Actually Build With AI in 2026 | Build a Full Stack Systems Architecture App",
+          "channel": "JavaScript Mastery",
+          "url": "https://www.youtube.com/watch?v=14RP8liACqo",
+          "runtime_min": 238.3,
+          "category": [
+            "Agents",
+            "Automation",
+            "Security",
+            "Frontend",
+            "Business"
+          ]
+        },
+        {
+          "title": "Body of missing Alabama student found in Japan, his mother says",
+          "channel": "CBS Evening News",
+          "url": "https://www.youtube.com/watch?v=_XatWHmPViI",
+          "runtime_min": 1.4,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "Cut LLM cost by 95%, replace ElevenLabs, and 10 top GitHub repos",
+          "channel": "The Next New Thing",
+          "url": "https://www.youtube.com/watch?v=n8rP6Ceskm4",
+          "runtime_min": 35.4,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "AI News: The Entire Industry Just Dropped Huge Updates",
+          "channel": "TECHTALK-AI",
+          "url": "https://www.youtube.com/watch?v=QK3KdsmiaC8",
+          "runtime_min": 26.8,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Fall Asleep to Napoleon Hill for 7 Days and Tell No One About The Results",
+          "channel": "Napoleon Hill's Wisdom",
+          "url": "https://www.youtube.com/watch?v=-HvT9aSg8JA",
+          "runtime_min": 102.4,
+          "category": [
+            "Design"
+          ]
+        },
+        {
+          "title": "Husband Cheats On His Wife With Her MOM",
+          "channel": "Derrick Branch",
+          "url": "https://www.youtube.com/watch?v=ik4rrEyprg4",
+          "runtime_min": 19.8,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "He Went From $20K to $70M Using a Strategy Anyone Can Learn",
+          "channel": "My First Million",
+          "url": "https://www.youtube.com/watch?v=rdChG9FPs80",
+          "runtime_min": 79.5,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
+        },
+        {
+          "title": "Start a 1-Person Business with Claude (4 HOUR COURSE 2026)",
+          "channel": "Albert Olgaard",
+          "url": "https://www.youtube.com/watch?v=mKyaNr3jK-E",
+          "runtime_min": 218.4,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "How to get SO many leads you don\u2019t know what to do with them",
+          "channel": "Nick Saraev",
+          "url": "https://www.youtube.com/watch?v=2XHgJXX49Jk",
+          "runtime_min": 32.6,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "Jim Rohn - Great Advice - Learn These Skills or Live a Mediocre Life",
+          "channel": "Lubomir Zumpalov",
+          "url": "https://www.youtube.com/watch?v=J1lqSxDDaTc",
+          "runtime_min": 124.7,
+          "category": [
+            "Security",
+            "Business"
+          ]
+        },
+        {
+          "title": "I Tried to Sell a New AI Service in 3 Hours (RAW RESULTS)",
+          "channel": "Nick Saraev",
+          "url": "https://www.youtube.com/watch?v=LQMAnCIIPgM",
+          "runtime_min": 154.8,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "Design"
+          ]
+        },
+        {
+          "title": "Even Realities G1 Rx Review \u2013 I Bought Them, and You Should Too! (Not Sponsored)",
+          "channel": "HotshotTek",
+          "url": "https://www.youtube.com/watch?v=Nk_0LD3EkCk",
+          "runtime_min": 22.3,
+          "category": [
+            "AI/ML",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "3 Hours of Napoleon Hill to REMOVE All Limiting Beliefs | Napoleon Hill",
+          "channel": "Napoleon Hill's Wisdom",
+          "url": "https://www.youtube.com/watch?v=BthsZFBdXUE",
+          "runtime_min": 195.7,
+          "category": [
+            "Design"
+          ]
+        },
+        {
+          "title": "How To Articulate Your Thoughts Intelligently (Talk Like This)",
+          "channel": "Dan Koe",
+          "url": "https://www.youtube.com/watch?v=DKT6m_8vCkA",
+          "runtime_min": 19.4,
+          "category": [
+            "Agents",
+            "Business"
+          ]
+        },
+        {
+          "title": "I Built an AI Trading System With Claude + TradingView",
+          "channel": "Humbled Trader",
+          "url": "https://www.youtube.com/watch?v=IqvnryFzZD4",
+          "runtime_min": 31.3,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation"
+          ]
+        },
+        {
+          "title": "Palantir. IT\u2019S WORSE Than You Think",
+          "channel": "Double Down News",
+          "url": "https://www.youtube.com/watch?v=6H7VOoFwDtU",
+          "runtime_min": 24,
+          "category": [
+            "Security"
+          ]
+        },
+        {
+          "title": "How to Talk Like a Leader | Full Audiobook",
+          "channel": "BlackCrown Audiobooks",
+          "url": "https://www.youtube.com/watch?v=MNCPQ7QF6i0",
+          "runtime_min": 146.3,
+          "category": [
+            "Security",
+            "Business"
+          ]
+        },
+        {
+          "title": "This ONE Psychological Trigger Gets Clients to Chase You",
+          "channel": "Adam Erhart",
+          "url": "https://www.youtube.com/watch?v=VjyDi69NbVc",
+          "runtime_min": 16.6,
+          "category": [
+            "Automation",
+            "Frontend",
+            "Business"
+          ]
+        },
+        {
+          "title": "Dai Dai \u26bd\ufe0f #shakira #worldcup2026",
+          "channel": "Mia Racikova",
+          "url": "https://www.youtube.com/watch?v=RjQm6SlhU9E",
+          "runtime_min": 0.6,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "12 New Notion Updates In 15 Minutes (Quickly Explained)",
+          "channel": "Matthias Frank",
+          "url": "https://www.youtube.com/watch?v=9zYXsn8rnZk",
+          "runtime_min": 15,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Design",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "Claude Code Google Ads: Automate Everything ($730K Earned)",
+          "channel": "Jono Catliff",
+          "url": "https://www.youtube.com/watch?v=-EInjdpjKy0",
+          "runtime_min": 68.3,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "How it feels to turn on Privacy Display on your Galaxy S26 Ultra",
+          "channel": "Samsung Canada",
+          "url": "https://www.youtube.com/watch?v=1uUYpQQ6hpE",
+          "runtime_min": 0.2,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "the most POWERFUL claude code feature in months",
+          "channel": "Chase AI",
+          "url": "https://www.youtube.com/watch?v=6cmi7qyFwEE",
+          "runtime_min": 15.2,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "Do These Things Before, During, and After an Event (Event Photography Checklist)",
+          "channel": "Mik Milman",
+          "url": "https://www.youtube.com/watch?v=H8v5GagYT9I",
+          "runtime_min": 17.8,
+          "category": [
+            "AI/ML"
+          ]
         }
       ],
       "builds": [
@@ -1195,6 +1589,310 @@
         {
           "title": "Anthropic Just Dethroned OpenAI. Here's What Happens Next.",
           "channel": "Nate Herk | AI Automation"
+        },
+        {
+          "title": "Event Photography Tips and Tricks (6 Shot Types)",
+          "channel": "Mik Milman",
+          "url": "https://www.youtube.com/watch?v=-Pxy9P_ytiM",
+          "runtime_min": 9.5,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "The Complete Event Photography Guide for Beginners",
+          "channel": "Mik Milman",
+          "url": "https://www.youtube.com/watch?v=8r0Qfmp0py4",
+          "runtime_min": 41.4,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "Exposure 101",
+          "channel": "Alberta Film School",
+          "url": "https://www.youtube.com/watch?v=QmC1GEy6JiA",
+          "runtime_min": 69.4,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "Samsung S26 Ultra Review - Breaking Point.",
+          "channel": "Mrwhosetheboss",
+          "url": "https://www.youtube.com/watch?v=AmNVQQ-YOoE",
+          "runtime_min": 16.8,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "How I Automated 91% Of My Outreach Using AI",
+          "channel": "Michael Whitney",
+          "url": "https://www.youtube.com/watch?v=3tocIQKyzT8",
+          "runtime_min": 50.6,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business",
+            "Design"
+          ]
+        },
+        {
+          "title": "Make your own MEDIA PASS. Legal and free.",
+          "channel": "MAKE. ART. NOW.",
+          "url": "https://www.youtube.com/watch?v=Xa3ikaKr5a0",
+          "runtime_min": 11.5,
+          "category": [
+            "Business"
+          ]
+        },
+        {
+          "title": "How (and WHY) to Get a Media Badge | Easier Flights and Traveling with Gear",
+          "channel": "Shaun Hautly",
+          "url": "https://www.youtube.com/watch?v=-XBMOGMkVHY",
+          "runtime_min": 10.9,
+          "category": [
+            "Frontend"
+          ]
+        },
+        {
+          "title": "How to Get a Photo Pass for Concerts & Sporting Events!",
+          "channel": "Always Creating",
+          "url": "https://www.youtube.com/watch?v=Ig0LtfqpDy0",
+          "runtime_min": 18.7,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "Event Photography Tips on Buying Gear",
+          "channel": "Mik Milman",
+          "url": "https://www.youtube.com/watch?v=uT-m6uLpSK0",
+          "runtime_min": 14,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "Event Photography Tips and Tricks: Putting It All Together to Maximize Your Coverage!",
+          "channel": "Mik Milman",
+          "url": "https://www.youtube.com/watch?v=t-MnkEjFoCc",
+          "runtime_min": 11.9,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "Build & Sell Claude Code Operating Systems (2+ Hour Course)",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=bCljOfCH8Ms",
+          "runtime_min": 153.3,
+          "category": [
+            "AI/ML",
+            "Automation"
+          ]
+        },
+        {
+          "title": "Creating fake drivers licenses in seconds - Heists worth billions",
+          "channel": "The Conversation",
+          "url": "https://www.youtube.com/watch?v=pYciy7UL2Cc",
+          "runtime_min": 0.4,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "I Tested Every Major AI Video Subscription\u2026 Here\u2019s the Best One",
+          "channel": "Curious Refuge",
+          "url": "https://www.youtube.com/watch?v=FiDw4cqVppc",
+          "runtime_min": 22.3,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "Why My AI Videos look Ultra Realistic - Higgsfield AI",
+          "channel": "Dan Kieft",
+          "url": "https://www.youtube.com/watch?v=0B_xyflXrwc",
+          "runtime_min": 16.7,
+          "category": [
+            "Business"
+          ]
+        },
+        {
+          "title": "MemPalace: The Tool That Makes Claude Stop Forgetting",
+          "channel": "Better Stack",
+          "url": "https://www.youtube.com/watch?v=kRACHOx1p8s",
+          "runtime_min": 7.1,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Security",
+            "Design"
+          ]
+        },
+        {
+          "title": "How To Stop Sounding Unprofessional At Work",
+          "channel": "Vinh Giang",
+          "url": "https://www.youtube.com/watch?v=vfu2zKpQjfE",
+          "runtime_min": 29.8,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "Claude is Building Itself...",
+          "channel": "Prompt Engineering",
+          "url": "https://www.youtube.com/watch?v=AoiGZl1Pc-E",
+          "runtime_min": 15.8,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Design"
+          ]
+        },
+        {
+          "title": "Anthropic Just Warned Everyone About Claude (It\u2019s Evolving)",
+          "channel": "AI Revolution",
+          "url": "https://www.youtube.com/watch?v=JlwwyNtHsCI",
+          "runtime_min": 17.2,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "Design"
+          ]
+        },
+        {
+          "title": "Is Claude Mythos Coming?",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=lkR6mvqQQlk",
+          "runtime_min": 12.4,
+          "category": [
+            "AI/ML",
+            "Automation"
+          ]
+        },
+        {
+          "title": "How This Mom Makes $48K/Month With Claude",
+          "channel": "Sabrina Ramonov \ud83c\udf44",
+          "url": "https://www.youtube.com/watch?v=lDHrmDAD9y4",
+          "runtime_min": 40,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business",
+            "Design",
+            "DevOps"
+          ]
+        },
+        {
+          "title": "How To Land Your First AI Client As A Freelancer (100+ Beginners Did This)",
+          "channel": "Jono Catliff",
+          "url": "https://www.youtube.com/watch?v=jzq3FUrQ-u0",
+          "runtime_min": 60.3,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business",
+            "Design"
+          ]
+        },
+        {
+          "title": "I\u2019ve Built 500 AI Workflows, This is What Businesses Want in 2026",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=Y3PcRp5RFzk",
+          "runtime_min": 14.8,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "CLAUDE CODE FULL COURSE 4 HOURS: Build & Sell (2026)",
+          "channel": "Nick Saraev",
+          "url": "https://www.youtube.com/watch?v=QoQBzR1NIqI",
+          "runtime_min": 250.7,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "Build Your First AI Business in 6 Hours (Ultimate Beginner Guide)",
+          "channel": "Nick Saraev",
+          "url": "https://www.youtube.com/watch?v=r0c7RhMFcww",
+          "runtime_min": 348.7,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "DevOps"
+          ]
+        },
+        {
+          "title": "The Playbook for a $100M AI Agency",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=8ktcSaSTvxk",
+          "runtime_min": 104,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "these new Claude skills are saving me hundreds (skills and prompts in description)",
+          "channel": "JOEY",
+          "url": "https://www.youtube.com/watch?v=4TXaAnittHs",
+          "runtime_min": 19.1,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Design"
+          ]
+        },
+        {
+          "title": "I Turned Claude Opus 4.8 Into My Entire AI Operating System",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=0WDkwMxj13s",
+          "runtime_min": 28.9,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "Claude Code Workflows Are A Gift From The AI Gods",
+          "channel": "Sean Kochel",
+          "url": "https://www.youtube.com/watch?v=XZautQfr3HU",
+          "runtime_min": 26.9,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Claude Code Dynamic Workflows Clearly Explained",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=jZgcWCzxh1I",
+          "runtime_min": 16.5,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation"
+          ]
         }
       ],
       "builds": [
@@ -1247,6 +1945,110 @@
         {
           "title": "The $29 Trillion Gold Race Has Begun (Hint: Act Now!)",
           "channel": "Felix & Friends"
+        },
+        {
+          "title": "I Escaped the Apple Ecosystem - It Backfired",
+          "channel": "Mrwhosetheboss",
+          "url": "https://www.youtube.com/watch?v=lE_11_paGoA",
+          "runtime_min": 16.2,
+          "category": [
+            "Design"
+          ]
+        },
+        {
+          "title": "The Skill That 10x\u2019d My Claude Code Projects",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=c0kaKxM2pHg",
+          "runtime_min": 7.4,
+          "category": [
+            "AI/ML",
+            "Automation"
+          ]
+        },
+        {
+          "title": "18 Claude Code Token Hacks in 18 Minutes",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=49V-5Ock8LU",
+          "runtime_min": 18.9,
+          "category": [
+            "AI/ML",
+            "Automation"
+          ]
+        },
+        {
+          "title": "I Updated /grill-me And Solved Claude Code",
+          "channel": "Chase AI",
+          "url": "https://www.youtube.com/watch?v=ENCRw5-uJBA",
+          "runtime_min": 12.7,
+          "category": [
+            "AI/ML",
+            "Business",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "5 \"Low Status\" Speaking Habits That Make You Sound Weak",
+          "channel": "Vinh Giang",
+          "url": "https://www.youtube.com/watch?v=35Q4krRIz9o",
+          "runtime_min": 21.9,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "You're Making These Communication Mistakes (Without Knowing)",
+          "channel": "Vinh Giang",
+          "url": "https://www.youtube.com/watch?v=aA3O-mczM_8",
+          "runtime_min": 17.3,
+          "category": [
+            "Security"
+          ]
+        },
+        {
+          "title": "How to Speak When All Eyes Are On You...",
+          "channel": "Vinh Giang",
+          "url": "https://www.youtube.com/watch?v=HYNXzKU92Qs",
+          "runtime_min": 24.3,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "The Best Wedding Entrance Ever!",
+          "channel": "Paradise Weddings",
+          "url": "https://www.youtube.com/watch?v=9PS8VU0ieUs",
+          "runtime_min": 0.7,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "THE CHAMPAGNE MONTAGE",
+          "channel": "Ivory House Studios | Video Production Company",
+          "url": "https://www.youtube.com/watch?v=8BQrdKqzCIs",
+          "runtime_min": 0.5,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "But first champagne! w#bridetobeb#bridesb#bridaltiktokb#bridet... #Shorts #followthebride",
+          "channel": "FOLLOW THE BRIDE",
+          "url": "https://www.youtube.com/watch?v=QFCPmUYOlNs",
+          "runtime_min": 0.3,
+          "category": [
+            "Security",
+            "Design"
+          ]
+        },
+        {
+          "title": "Chinese National Caught Buying $101,000 Tesla Fraudulently at Dealership",
+          "channel": "BodyCam K9",
+          "url": "https://www.youtube.com/watch?v=8hcP6j5HB-s",
+          "runtime_min": 26.6,
+          "category": [
+            "Business"
+          ]
         }
       ],
       "builds": [
@@ -1289,6 +2091,101 @@
         {
           "title": "Android 17 Is the Biggest Upgrade in Years",
           "channel": "Mrwhosetheboss"
+        },
+        {
+          "title": "The Simplest AI Side Hustle for Beginners",
+          "channel": "Chris Koerner on The Koerner Office Podcast",
+          "url": "https://www.youtube.com/watch?v=DKqQe0MqDTs",
+          "runtime_min": 33,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "30-year-old AI founder who followed the FIRE movement is now a billionaire #billionaire #AI",
+          "channel": "Fortune Magazine",
+          "url": "https://www.youtube.com/watch?v=qmKadKv39aA",
+          "runtime_min": 1.4,
+          "category": [
+            "Business"
+          ]
+        },
+        {
+          "title": "When Stupid Cops Mess With FBI Agent ",
+          "channel": "PolicecamStory",
+          "url": "https://www.youtube.com/watch?v=LZHMNJa4L7s",
+          "runtime_min": 23,
+          "category": [
+            "Agents",
+            "Business"
+          ]
+        },
+        {
+          "title": "When Smart Cops Turn The Tables on Disrespectful Cops",
+          "channel": "Ex Cop",
+          "url": "https://www.youtube.com/watch?v=H9LVXkvM4Dk",
+          "runtime_min": 53.7,
+          "category": [
+            "Security",
+            "Business"
+          ]
+        },
+        {
+          "title": "How to Build Mobile Apps with Claude Code: Full Course (2026)",
+          "channel": "Nick Saraev",
+          "url": "https://www.youtube.com/watch?v=BMMcmmnjrM8",
+          "runtime_min": 243.3,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Security",
+            "Frontend"
+          ]
+        },
+        {
+          "title": "Google\u2019s AI Search Just Exposed The Whole Sh*tshow",
+          "channel": "House of El - AI",
+          "url": "https://www.youtube.com/watch?v=jQyKd1_e3Xg",
+          "runtime_min": 19.5,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
+        },
+        {
+          "title": "Learn 97% of Claude in Under 16 Minutes",
+          "channel": "Dan Martell",
+          "url": "https://www.youtube.com/watch?v=wZeOwqmSw84",
+          "runtime_min": 15.2,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
+        },
+        {
+          "title": "7 Insane Use Cases For Manus AI (with Zero Code)",
+          "channel": "Dan Martell",
+          "url": "https://www.youtube.com/watch?v=-5DylM1EdI4",
+          "runtime_min": 21.9,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
+        },
+        {
+          "title": "I Tested 500+ AI Tools, These Will Make You Rich",
+          "channel": "Dan Martell",
+          "url": "https://www.youtube.com/watch?v=np6CwvTYTAM",
+          "runtime_min": 22.8,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
         }
       ],
       "builds": [
@@ -1327,6 +2224,29 @@
         {
           "title": "Robert Kiyosaki: The American Empire Will Collapse In 2026",
           "channel": "Minority Mindset"
+        },
+        {
+          "title": "Hermes Agentic OS is Insane... just watch",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=zqUdtL5l9yM",
+          "runtime_min": 18.8,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Claude Code's New Billing Model Changes Everything (not hype)",
+          "channel": "Mansel Scheffel",
+          "url": "https://www.youtube.com/watch?v=2iCwLJhwslg",
+          "runtime_min": 9.2,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Security",
+            "Business"
+          ]
         }
       ],
       "builds": [],
