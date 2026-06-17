@@ -1,8 +1,450 @@
 {
-  "lastUpdated": "2026-06-16T00:28:02",
-  "totalDays": 230,
+  "lastUpdated": "2026-06-17T00:43:42",
+  "totalDays": 250,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "Learn These 6 AI Skills Now (Before AI Replaces You)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Business"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=3XIGcM7VICc",
+      "channel": "Nate Herk | AI Automation",
+      "runtime_min": 20.2,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "Every Level of Claude Explained in 21 Minutes",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Design"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=ZRb7D6R64hM",
+      "channel": "Nate Herk | AI Automation",
+      "runtime_min": 21.7,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "Claude Fable 5 Suspension and Refunds",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Security",
+        "Business"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=x6UHPS1YRo4",
+      "channel": "Codevolution",
+      "runtime_min": 0.6,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "How a TJ Maxx Cashier Built a $200K App With AI",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Business",
+        "Design"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=LYomocq6Dpo",
+      "channel": "Greg Isenberg",
+      "runtime_min": 48.1,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "We Might Actually Need to Stop AI",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Automation"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=CvA8-aScqio",
+      "channel": "Nate Herk | AI Automation",
+      "runtime_min": 12.4,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "100 Hours Testing Claude Code vs ChatGPT Codex (honest results)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=RLjaUES9P8A",
+      "channel": "Nate Herk | AI Automation",
+      "runtime_min": 26.6,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "What Happens When You Turn Off Desktop & Documents Folders for iCloud Drive?",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=qupSGawY_EU",
+      "channel": "macmostvideo",
+      "runtime_min": 10.8,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "How to STOP Using iCloud (Safely) \u2014 Turn Off iCloud Sync Without Losing Data",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=gWF-3XSqYyk",
+      "channel": "Learn with Joel Feld",
+      "runtime_min": 14.7,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "14 GENIUS Ways to Give Claude Code SUPERPOWERS",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Business"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=mNawxNjrR_E",
+      "channel": "Simon Scrapes",
+      "runtime_min": 28.5,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "How to Set Up Claude Code GitHub Integration (Complete Guide)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Frontend",
+        "Business",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=SJoLSsxJCoY",
+      "channel": "This Week in AI",
+      "runtime_min": 4.4,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "Claude Code + GitHub WORKFLOW for Complex Apps",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "DevOps",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=FjHtZnjNEBU",
+      "channel": "Greg Baugues",
+      "runtime_min": 18.7,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "The Only GitHub Guide You\u2019ll Ever Need",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Agents",
+        "Frontend",
+        "Business",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=pJYOG6klqj8",
+      "channel": "corbin",
+      "runtime_min": 46.2,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "China's GLM 5.2: Automate ANYTHING!",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Business"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=yK_YRj0kcuI",
+      "channel": "Julian Goldie SEO",
+      "runtime_min": 274.8,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "Claude AI SEO: Live Ranking Session + DnB Vibes",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Business",
+        "DevOps"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=ngdNoImKW8s",
+      "channel": "Julian Goldie SEO",
+      "runtime_min": 55.8,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "The Briefing: Financial Services",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=H3XQeGNia8o",
+      "channel": "Claude",
+      "runtime_min": 1.4,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "Firecrawl Map: Discover Every Page Without Scraping",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Open Source"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=TPFBSdgItRc",
+      "channel": "Firecrawl",
+      "runtime_min": 1.8,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "How to build a sales AI agent for better follow\u2011up emails with Notion Custom Agents (full tutorial)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Agents",
+        "Business",
+        "No-Code"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=OR2zYx842Q4",
+      "channel": "Notion",
+      "runtime_min": 5,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "AI Agents Full Course 2026: Master Agentic AI (2 Hours)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Business"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=EsTrWCV0Ph4",
+      "channel": "Nick Saraev",
+      "runtime_min": 133.2,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "I Built a $1M/y SaaS with Claude Code, Here's How",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Business"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=K65vd9EYbDU",
+      "channel": "Nick Saraev",
+      "runtime_min": 22.4,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 173,
+      "date": "2026-06-16",
+      "title": "Stop vibe coding. Use this repeatable AI framework instead",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=BYazAplOiNA",
+      "channel": "Leon van Zyl",
+      "runtime_min": 2.4,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
     {
       "day": 172,
       "date": "2026-06-15",
@@ -551,6 +993,27 @@
       "channel": "",
       "runtime_min": null,
       "videos": [
+        {
+          "title": "Remotion VS Hyperframes | React vs HTML for Video Editing #claudeai #remotion #hyperframes",
+          "channel": "AILoop",
+          "url": "https://www.youtube.com/watch?v=7LCj2U_PphI",
+          "runtime_min": 0.9,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Frontend"
+          ]
+        },
+        {
+          "title": "HeyGen Hyperframes & Three.js Showcase for T2 [85/100]",
+          "channel": "Review Ai Videos",
+          "url": "https://www.youtube.com/watch?v=JruzJjQONJI",
+          "runtime_min": 0.3,
+          "category": [
+            "Business",
+            "Design"
+          ]
+        },
         {
           "title": "AI Motion graphics just got 10x better (Hyperframes inspector)",
           "channel": "Maciej Dziuba",
