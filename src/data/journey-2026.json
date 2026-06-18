@@ -1,8 +1,746 @@
 {
-  "lastUpdated": "2026-06-17T00:43:42",
-  "totalDays": 250,
+  "lastUpdated": "2026-06-18T01:01:09",
+  "totalDays": 286,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "The Most Profitable Side Hustle to Start With No Money",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Business"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=_1DziIwKyGk",
+      "channel": "Chris Koerner on The Koerner Office Podcast",
+      "runtime_min": 75.2,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "The Laziest AI Side Hustle Anyone Can Start Right Now",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Agents",
+        "Automation",
+        "Business"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=trdHxY1UMF0",
+      "channel": "Chris Koerner on The Koerner Office Podcast",
+      "runtime_min": 14.9,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "This Business Makes Vending Machines Look Dumb",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Business"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=YoD0hFqX9W8",
+      "channel": "Chris Koerner on The Koerner Office Podcast",
+      "runtime_min": 74.7,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "Every Level of a Claude Second Brain Explained",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=DTCyvo6cC54",
+      "channel": "Nate Herk | AI Automation",
+      "runtime_min": 31,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "Zero Limits",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=oEXwZ1U495M",
+      "channel": "YouTube Movies",
+      "runtime_min": 101.3,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "Claude Fable 5 Built This in Claude Code and I'm Blown Away",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=I3PYGi_tGy0",
+      "channel": "Leon van Zyl",
+      "runtime_min": 11.5,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "Aliens Didn't Scare Me Until I Learned This.. | Joe Rogan",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=9xPK-H9IplM",
+      "channel": "JRE Vault",
+      "runtime_min": 31.9,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "The Pigeon Mafia: How high-priced pigeons became an organized crime target | 60 Minutes",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Design"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=WUg3qOeDNME",
+      "channel": "60 Minutes",
+      "runtime_min": 13.2,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "Americans find new ways to survive higher prices: \u201cIt\u2019s crazy\u201d",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Business"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=_H1CJal2IEc",
+      "channel": "CBS News",
+      "runtime_min": 11.7,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "The $2.5 Trillion Credit Wave Nobody Sees Coming",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Business",
+        "Design"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=YEhsWyY_WKQ",
+      "channel": "Casual Finance",
+      "runtime_min": 17.6,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "Andrew Maxwell Debating Viewers",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=3WqBljsVIaM",
+      "channel": "Andrew Maxwell",
+      "runtime_min": 133.5,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "\ud83d\udca5\ud83d\udd34LIVE\uff1aThe factory is packing the products. 2026-06-18",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=HmEo95-7wkg",
+      "channel": "Factory Views",
+      "runtime_min": 211.2,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "\u2764\ufe0f\ud83c\udfb6She Makes Thousands of Roof Tiles by Hand Every Day \u2014 Factory Live\uacf5\uc7a5 \uc218\uba85\u5de5\u5834\u3067\u306e\u751f\u6d3b-03",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Security"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=QmuxhDQqSTk",
+      "channel": "FACTORY LIFE",
+      "runtime_min": 617.3,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "water powered Corn Pounder Mill LIVE - EP - 60",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Security"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=i7hpZJFzgEU",
+      "channel": "Rustic Motion TV",
+      "runtime_min": 0,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "\ud83d\udcb0\ud83d\ude33 400-Pound Man Goes Sponsor Hunting... Will Anyone Say YES? (LIVE)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Business"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=RuCBIMPpgx4",
+      "channel": "KingLive2025",
+      "runtime_min": 622.2,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "PNW CIGAR LIVE ROLLING LESSONS \ud83d\udd25#pnwcigars #cigarsdaily #howtorollacigar #cigars",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Design"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=5p-PGJdYYIw",
+      "channel": "PNW CIGAR LIVE ROLLS \ud83d\udd25",
+      "runtime_min": 92.4,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "6-17-2026",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=yUjnDqUAxnM",
+      "channel": "Gary Zhang",
+      "runtime_min": 213.2,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "Street food Live Streaming 2026-06-18 07:08:13",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=MwwwhYdrt4g",
+      "channel": "Street Food Records",
+      "runtime_min": 127.3,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "New York Skyscrapers ",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=1ej8g82W21I",
+      "channel": "FelixtheExplorer",
+      "runtime_min": 15,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "\ud83d\ude97\ud83d\udce6 Immersive Toy Car Packing ASMR! Satisfying & Stress Relief Live \ud83c\udfa7\u2728",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=S7fNqHY1Thk",
+      "channel": "Sevda Ywys",
+      "runtime_min": 232.5,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "Motivate a vivir mejor",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=ks0LOmh0dZs",
+      "channel": "Finca Sobre Ruedas",
+      "runtime_min": 57.5,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "HIGH LEVELS OF HOMOSEXUALITY DETECTED!!!",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=_GEgBCDyhNE",
+      "channel": "Pappy",
+      "runtime_min": 197.1,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "90 Days Go Live Challenge \ud83d\udcf1",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Business"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=HDErSvxAqd8",
+      "channel": "Rosielyn Adkins",
+      "runtime_min": 24.2,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "\u2b55\ufe0f#chinese /Noodle Master#food #live \u2668\ufe0f",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=SlTUSHL1GxM",
+      "channel": "\u7f8e\u5473\u63a8\u85a6\u5b98",
+      "runtime_min": 49.5,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "\u3010LIVE\u3011Live stream of Chinese street food: beef pancakes",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=EkBK8DBoq8A",
+      "channel": "Chinese hamburger",
+      "runtime_min": 106.8,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "Life Stories Of Survival Live \ud83d\udd34",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=_Is1FLCsfR4",
+      "channel": "Life Stories of Survival",
+      "runtime_min": 175.2,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "water powered pounder corn mill live",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=6kN1XkvFAz4",
+      "channel": "Nisu \\u0026 Farmhouse",
+      "runtime_min": 148.9,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "Amazing in China | \ub180\ub77c\uc6b4 \uc911\uad6d | \u9a5a\u304d\u306e\u4e2d\u56fd 2026-06-18 08:35:13",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=Eip0mr0MqXs",
+      "channel": "MuMu-China",
+      "runtime_min": 33,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "ASMR | Let's Relax \ud83d\udc9a \ud83d\ude0c",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=dYYgYxSlxw8",
+      "channel": "AgapeLove ASMR",
+      "runtime_min": 121.1,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "ASMR Brain Power Test | Can You Solve This? Live 1009",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=OwuDjDbsrDE",
+      "channel": "S H $\u2022\u2022\u2022\u00a9",
+      "runtime_min": 117.1,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "VAN LIFE IN VEGAS LIVING ALONE IN A VAN || starving, ride with me",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=2hSUxlL4qcE",
+      "channel": "VANESSA\u2019S VANLIFE JOURNEY",
+      "runtime_min": 189.4,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "NEW GPT 5.6 is INSANE!",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Business",
+        "Design"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=qvRcl9uoZNU",
+      "channel": "Julian Goldie SEO",
+      "runtime_min": 7.1,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "The New AI prompting Method Everyone Is Talking About: Loops (And How To Use Them)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Business"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=Ry3YyG22EUc",
+      "channel": "Upgraded",
+      "runtime_min": 19.3,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "5 NEW Vibe Coding Repos You Haven't Heard of Yet",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Business",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=UnzD_bwylWs",
+      "channel": "Sean Kochel",
+      "runtime_min": 27.5,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "The Only Man Japan Couldn't Convict. He Left in a Box.",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Business"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=EIQBiIXhQZE",
+      "channel": "Sorv",
+      "runtime_min": 15.7,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 174,
+      "date": "2026-06-17",
+      "title": "How Heidi Blake documented Andrew Tate's \u2018Empire of Abuse\u2019",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "DevOps"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=oNg2svDb1eo",
+      "channel": "CNN",
+      "runtime_min": 13,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
     {
       "day": 173,
       "date": "2026-06-16",
