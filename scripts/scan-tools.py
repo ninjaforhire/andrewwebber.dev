@@ -34,7 +34,7 @@ import json
 import pathlib
 import sys
 
-CODE_ROOT = pathlib.Path.home() / "Desktop" / "_Code"
+CODE_ROOT = pathlib.Path.home() / "_Code"
 OUTPUT = (
     pathlib.Path(__file__).resolve().parent.parent / "src" / "data" / "mighty-tools.json"
 )

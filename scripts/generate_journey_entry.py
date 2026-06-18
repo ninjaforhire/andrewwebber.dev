@@ -29,7 +29,7 @@ from pathlib import Path
 
 LOG = logging.getLogger("journey-entry")
 
-CODE_ROOT = Path.home() / "Desktop" / "_Code"
+CODE_ROOT = Path.home() / "_Code"
 NTN = Path.home() / ".local" / "bin" / "ntn"
 DATA_SOURCE_ID = "25950df1-c088-451d-8002-f2eff57767a9"
 

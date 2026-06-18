@@ -232,7 +232,7 @@ def count_tools() -> int:
 
 def count_skills() -> int:
     """Skills registry sibling to agent registry. One row = one skill."""
-    registry = pathlib.Path.home() / "Desktop" / "_Code" / "mighty" / "agents" / "_shared" / "dispatch" / "skills_registry.json"
+    registry = pathlib.Path.home() / "_Code" / "mighty" / "agents" / "_shared" / "dispatch" / "skills_registry.json"
     if not registry.exists():
         return 0
     try:
@@ -253,7 +253,7 @@ def count_live_agents() -> int:
     own registry). Excludes early-stage/in-development/unknown — those aren't
     shipping. Honest count of agents currently in service.
     """
-    registry = pathlib.Path.home() / "Desktop" / "_Code" / "mighty" / "agents" / "_shared" / "dispatch" / "registry.json"
+    registry = pathlib.Path.home() / "_Code" / "mighty" / "agents" / "_shared" / "dispatch" / "registry.json"
     if not registry.exists():
         return 0
     try:
