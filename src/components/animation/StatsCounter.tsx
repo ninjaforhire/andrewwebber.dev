@@ -174,21 +174,19 @@ export function StatsCounter() {
           </span>
         </figcaption>
 
-        {/* 5-up on desktop; 2-up below lg with the wide Lines of Code count
-            centered full-width on its own row so nothing orphans left. */}
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-y-8 sm:gap-y-10 gap-x-4 sm:gap-x-8 lg:gap-x-6 items-start justify-items-center">
+        {/* Top row: four headline counts, centered. 2-up on mobile, 4-up on desktop. */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-8 sm:gap-y-10 gap-x-4 sm:gap-x-8 items-start justify-items-center">
           <Stat value={data.tools} label="Tools" />
           <Stat value={data.skills} label="Skills" />
           <Stat value={data.agentsLive} label="Agents" />
           <Stat value={data.commitsShipped} label="Commits" />
-          <div className="col-span-2 lg:col-span-1 flex justify-center">
-            <Stat value={data.linesOfCode} label="Lines of Code" />
-          </div>
         </div>
 
-        <div className="mt-10 pt-8 sm:mt-14 sm:pt-10 border-t border-white/10 grid grid-cols-2 gap-x-4 sm:gap-x-8 place-items-center">
+        {/* Bottom row: the two Claude counts + Lines of Code last, centered. */}
+        <div className="mt-10 pt-8 sm:mt-14 sm:pt-10 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-y-8 gap-x-4 sm:gap-x-8 items-start justify-items-center">
           <Stat value={data.claudeHours} label="Hours with Claude" />
           <SubStat value={data.claudeTokens} label="Tokens through Claude" format="compact" />
+          <Stat value={data.linesOfCode} label="Lines of Code" />
         </div>
       </figure>
     </section>
