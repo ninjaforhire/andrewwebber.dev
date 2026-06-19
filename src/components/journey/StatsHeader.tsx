@@ -25,9 +25,9 @@ export function StatsHeader({ data }: StatsHeaderProps) {
 
   return (
     <div className="relative mb-16 md:mb-24">
-      {/* OPERATOR CARD — desktop only, top-right of the hero */}
+      {/* OPERATOR CARD — centered above the hero on mobile, pinned top-right on lg+ */}
       <motion.div
-        className="absolute right-0 top-0 hidden lg:block w-[260px] xl:w-[300px]"
+        className="relative mx-auto mb-10 w-[210px] sm:w-[240px] lg:absolute lg:right-0 lg:top-0 lg:mx-0 lg:mb-0 lg:w-[260px] xl:w-[300px]"
         initial={{ opacity: 0, y: -12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
