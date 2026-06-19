@@ -1,8 +1,158 @@
 {
-  "lastUpdated": "2026-06-18T01:01:09",
-  "totalDays": 286,
+  "lastUpdated": "2026-06-19T00:13:35",
+  "totalDays": 293,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 175,
+      "date": "2026-06-18",
+      "title": "Claude Fable 5 Is Banned\u2026 But The Business Opportunity Just Got Bigger (Do This ASAP)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Automation",
+        "Business"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=etvbGa9MlkU",
+      "channel": "Nick Ponte",
+      "runtime_min": 41.4,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 175,
+      "date": "2026-06-18",
+      "title": "Your AI Agents Are Useless. Build Claude Employees Instead.",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Business"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=cRM_PzpmFEY",
+      "channel": "Luuk Alleman",
+      "runtime_min": 7.5,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 175,
+      "date": "2026-06-18",
+      "title": "Live Fashion Show | Outfit Try-On\ud83d\udd34",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=OyN2D9jQidw",
+      "channel": "live careworn",
+      "runtime_min": 118.7,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 175,
+      "date": "2026-06-18",
+      "title": "CZECHIA vs SOUTH AFRICA | FIFA WORLD CUP 2026 Watchalong!",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Frontend"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=WFt_yRFKtcA",
+      "channel": "That's Football",
+      "runtime_min": 134.7,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 175,
+      "date": "2026-06-18",
+      "title": "\ud83d\udd34LIVE : Minnesota Twins Vs Texas Rangers | MLB 2026 | MLB Live Baseball Score",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=I_7oYRlcnO0",
+      "channel": "Sports With BayZid Hossain",
+      "runtime_min": 0,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 175,
+      "date": "2026-06-18",
+      "title": "GLM 5.2 in Claude Code is Blowing My Mind",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Automation",
+        "Security",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=2OD14-0cot4",
+      "channel": "Nate Herk | AI Automation",
+      "runtime_min": 15.7,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 175,
+      "date": "2026-06-18",
+      "title": "I Gave Claude Cowork a Memory. Now It Runs My Work.",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Automation",
+        "Business",
+        "No-Code"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=8ZRqKp0uWMk",
+      "channel": "ICOR with Tom | AI Productivity",
+      "runtime_min": 26.6,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
     {
       "day": 174,
       "date": "2026-06-17",
