@@ -13,8 +13,57 @@ interface DayCardProps {
   entry: JourneyEntry;
 }
 
+const FEATURED_VIDEOS = 3;
+
+function formatRuntime(min?: number | null): string | null {
+  if (!min || min <= 0) return null;
+  if (min < 60) return `${Math.round(min)}m`;
+  const h = Math.floor(min / 60);
+  const m = Math.round(min % 60);
+  return m ? `${h}h ${m}m` : `${h}h`;
+}
+
+function VideoRow({ video, featured }: { video: JourneyEntry["videos"][number]; featured?: boolean }) {
+  const runtime = formatRuntime(video.runtime_min);
+  return (
+    <div className="flex items-start gap-2 text-sm">
+      <Play size={12} className="mt-1 shrink-0 text-red-400" />
+      <div className="min-w-0 flex-1">
+        <div className="flex flex-wrap items-baseline gap-x-2">
+          {video.url ? (
+            <a
+              href={video.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(
+                "text-foreground transition-colors hover:text-red-400",
+                featured
+                  ? "font-medium underline decoration-white/20 hover:decoration-red-400"
+                  : "underline decoration-white/10 hover:decoration-red-400"
+              )}
+            >
+              {video.title}
+            </a>
+          ) : (
+            <span className="text-foreground">{video.title}</span>
+          )}
+          {runtime && (
+            <span className="shrink-0 rounded-full bg-red-400/10 px-1.5 py-0.5 font-mono text-[10px] text-red-400/90">
+              {runtime}
+            </span>
+          )}
+        </div>
+        {video.channel && (
+          <span className="text-xs text-muted-foreground">{video.channel}</span>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export function DayCard({ entry }: DayCardProps) {
   const [open, setOpen] = useState(false);
+  const [showAllVideos, setShowAllVideos] = useState(false);
   const eraColors = ERA_COLORS[entry.era] ?? "text-zinc-400 bg-zinc-400/10 border-zinc-400/20";
   const impactColor = IMPACT_COLORS[entry.impact] ?? "text-zinc-400";
   const hasDetails = entry.videos.length > 0 || entry.builds.length > 0 || entry.takeaway;
@@ -119,29 +168,47 @@ export function DayCard({ entry }: DayCardProps) {
               <div className="border-t border-white/5 px-4 py-3 md:px-5 md:py-4 space-y-3">
                 {entry.videos.length > 0 && (
                   <div>
-                    <div className="font-mono text-[11px] uppercase tracking-wider text-red-400 mb-1.5">
-                      Videos
+                    <div className="font-mono text-[11px] uppercase tracking-wider text-red-400 mb-2">
+                      Watched
                     </div>
-                    {entry.videos.map((v, i) => (
-                      <div key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <Play size={12} className="mt-0.5 shrink-0 text-red-400" />
-                        <div>
-                          {v.url ? (
-                            <a
-                              href={v.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-foreground hover:text-red-400 transition-colors underline decoration-white/20 hover:decoration-red-400"
+                    <div className="space-y-2">
+                      {entry.videos.slice(0, FEATURED_VIDEOS).map((v, i) => (
+                        <VideoRow key={i} video={v} featured />
+                      ))}
+                    </div>
+                    {entry.videos.length > FEATURED_VIDEOS && (
+                      <>
+                        <AnimatePresence initial={false}>
+                          {showAllVideos && (
+                            <motion.div
+                              initial={{ height: 0, opacity: 0 }}
+                              animate={{ height: "auto", opacity: 1 }}
+                              exit={{ height: 0, opacity: 0 }}
+                              transition={{ duration: 0.2, ease: "easeInOut" }}
+                              className="overflow-hidden"
                             >
-                              {v.title}
-                            </a>
-                          ) : (
-                            <span className="text-foreground">{v.title}</span>
+                              <div className="mt-2 space-y-2 border-l border-white/5 pl-3">
+                                {entry.videos.slice(FEATURED_VIDEOS).map((v, i) => (
+                                  <VideoRow key={i} video={v} />
+                                ))}
+                              </div>
+                            </motion.div>
                           )}
-                          <span className="text-muted-foreground"> — {v.channel}</span>
-                        </div>
-                      </div>
-                    ))}
+                        </AnimatePresence>
+                        <button
+                          onClick={() => setShowAllVideos((s) => !s)}
+                          className="mt-2 inline-flex items-center gap-1 font-mono text-[11px] uppercase tracking-wider text-muted-foreground transition-colors hover:text-red-400"
+                        >
+                          <ChevronDown
+                            size={12}
+                            className={cn("transition-transform duration-200", showAllVideos && "rotate-180")}
+                          />
+                          {showAllVideos
+                            ? "See less"
+                            : `See ${entry.videos.length - FEATURED_VIDEOS} more`}
+                        </button>
+                      </>
+                    )}
                   </div>
                 )}
 
