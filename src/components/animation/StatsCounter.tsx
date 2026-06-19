@@ -135,6 +135,7 @@ function SubStat({ value, label, format = "default" }: StatProps) {
 
 interface LiveStats {
   tools: number;
+  skills: number;
   linesOfCode: number;
   commitsShipped: number;
   agentsLive: number;
@@ -144,6 +145,7 @@ interface LiveStats {
 
 const ZERO: LiveStats = {
   tools: 0,
+  skills: 0,
   linesOfCode: 0,
   commitsShipped: 0,
   agentsLive: 0,
@@ -171,11 +173,12 @@ export function StatsCounter() {
           </span>
         </figcaption>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-4 sm:gap-x-6 lg:gap-x-8 place-items-center">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-y-10 gap-x-4 sm:gap-x-6 lg:gap-x-8 place-items-center">
           <Stat value={data.tools} label="Tools Shipped" />
-          <Stat value={data.linesOfCode} label="Lines of Code" />
-          <Stat value={data.commitsShipped} label="Commits Shipped" />
+          <Stat value={data.skills} label="Skills" />
           <Stat value={data.agentsLive} label="Live Agents" />
+          <Stat value={data.commitsShipped} label="Commits Shipped" />
+          <Stat value={data.linesOfCode} label="Lines of Code" />
         </div>
 
         <div className="mt-10 pt-8 sm:mt-14 sm:pt-10 border-t border-white/10 grid grid-cols-2 gap-x-4 sm:gap-x-8 place-items-center">
