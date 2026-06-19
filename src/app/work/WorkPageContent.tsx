@@ -181,8 +181,8 @@ export function WorkPageContent() {
   return (
     <div className="page-x py-16 md:py-32">
       {/* HEADER */}
-      <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-data mb-6">
-        § 01 — Projects
+      <div className="font-mono text-xs font-bold tracking-[0.4em] uppercase text-data mb-6">
+        Projects
       </div>
       <h1 className="crop font-extrabold text-[clamp(56px,10vw,140px)] leading-[0.88] mb-8">
         A selection of <span className="text-data">things</span>

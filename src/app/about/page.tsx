@@ -115,10 +115,10 @@ export default function AboutPage() {
           >
             {/* HEADER */}
             <div
-              className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-creative mb-6"
+              className="font-mono text-xs font-bold tracking-[0.4em] uppercase text-creative mb-6"
               style={{ textShadow: HERO_LABEL_SHADOW }}
             >
-              § 01 — Dossier
+              Dossier
             </div>
             <h1
               className="crop font-extrabold text-[clamp(56px,9vw,128px)] leading-[0.88]"
@@ -198,7 +198,7 @@ export default function AboutPage() {
             className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-data mb-6"
             style={{ textShadow: HERO_LABEL_SHADOW }}
           >
-            § 02 — Credentials
+            § 01 — Credentials
           </div>
           <h2
             className="crop font-extrabold text-[clamp(40px,7vw,96px)] leading-[0.9] mb-6"
@@ -256,7 +256,7 @@ export default function AboutPage() {
             className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-terminal mb-6"
             style={{ textShadow: HERO_LABEL_SHADOW }}
           >
-            § 03 — Get in touch
+            § 02 — Get in touch
           </div>
           <h2
             className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] mb-8"

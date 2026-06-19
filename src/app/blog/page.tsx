@@ -12,8 +12,8 @@ export default function BlogPage() {
 
   return (
     <div className="page-x py-16 md:py-32">
-      <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-warm mb-6">
-        § 01 — Field Notes
+      <div className="font-mono text-xs font-bold tracking-[0.4em] uppercase text-warm mb-6">
+        Field Notes
       </div>
       <h1 className="crop font-extrabold text-[clamp(56px,10vw,140px)] leading-[0.88]">
         Thoughts from<br />
