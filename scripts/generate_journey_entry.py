@@ -272,7 +272,23 @@ def entry_exists(n: int) -> bool:
     env = {k: v for k, v in os.environ.items()
            if k not in ("NOTION_API_TOKEN", "NOTION_API_KEY")}
     env.setdefault("NOTION_API_VERSION", "2025-09-03")
-    body = {"page_size": 1, "filter": {"property": "Streak Day", "number": {"equals": n}}}
+    # Match only real journal pages, not the per-video YouTube records that also
+    # carry this Streak Day. Without the Source clause, a single watched video
+    # made entry_exists() return True and the day's journal was never created
+    # (root cause of the "one post per video, all labeled Day 173" regression).
+    # Match by the "Day N - ..." title convention, not Source: real journals
+    # are written under several sources (Claude Code, GitHub, Other) and only
+    # the title is a reliable journal marker. The video records that share this
+    # Streak Day are titled with the video name, so they never match.
+    body = {
+        "page_size": 3,
+        "filter": {
+            "and": [
+                {"property": "Streak Day", "number": {"equals": n}},
+                {"property": "Title", "title": {"starts_with": "Day "}},
+            ]
+        },
+    }
     r = subprocess.run(
         [str(NTN), "api", f"v1/data_sources/{DATA_SOURCE_ID}/query", "-X", "POST",
          "-d", json.dumps(body)],
@@ -284,7 +300,16 @@ def entry_exists(n: int) -> bool:
         raise RuntimeError(
             f"entry_exists check failed for Day {n}: {(r.stderr or r.stdout).strip()[:200]}"
         )
-    return bool(json.loads(r.stdout).get("results"))
+    # Confirm a result actually opens with "Day <number>" (guards the rare
+    # watched video literally titled e.g. "Day in the Life ...").
+    for page in json.loads(r.stdout).get("results", []):
+        title_parts = (page.get("properties", {}).get("Title", {}).get("title", [])
+                       or page.get("properties", {}).get("Day", {}).get("title", []))
+        title = "".join(p.get("plain_text", "")
+                        or p.get("text", {}).get("content", "") for p in title_parts)
+        if re.match(r"Day \d+\b", title):
+            return True
+    return False
 
 
 def process_day(day: date, *, dry_run: bool, force: bool = False) -> None:

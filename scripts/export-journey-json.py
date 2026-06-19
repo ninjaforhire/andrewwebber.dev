@@ -46,6 +46,90 @@ OUTPUT_PATH = SITE_ROOT / "src" / "data" / "journey-2026.json"
 
 ERA_ORDER = ["No-Code Era", "First Code", "Agent Builder", "Platform Architect", "Full Stack AI"]
 
+# ── Video curation ───────────────────────────────────────────────────────
+# The Notion Category field is unreliable (YouTube enrichment mis-tags ASMR,
+# sports streams, and vlogs as "AI/ML"), so we curate off the title/channel
+# instead. Only genuine AI / Agents / Business / DevOps / SDLC learning videos
+# survive; the day card then features the top few and tucks the rest behind a
+# "See more" toggle. Filtering lives here so every nightly export self-cleans.
+import re as _re
+
+_LEARN_RE = _re.compile(
+    r"(claude|gpt|gemini|llm|\bai\b|agent|agentic|\bcode\b|coding|codex|cursor|"
+    r"copilot|prompt|github|saas|automat|workflow|vibe ?cod|framework|\bseo\b|"
+    r"n8n|\brag\b|\bmcp\b|notion|firecrawl|glm|deepseek|openai|anthropic|"
+    r"second brain|skill|build (a|an|your|unstoppable)|sales ai|fable|cowork)",
+    _re.I,
+)
+_DENY_RE = _re.compile(
+    r"(asmr|🔴|live ?stream|livestream|watchalong|going live|world cup|fifa|"
+    r"\bmlb\b|\bnba\b|van life|street food|factory|cigar|roof tile|toy car|"
+    r"joe rogan|jre vault|andrew tate|pigeon|fashion show|outfit|noodle|"
+    r"hamburger|corn (mill|pounder)|survival|debating viewers|sponsor hunting|"
+    r"homosexual|\bvlog|youtube movies|skyscraper|side hustle|trillion|"
+    r"credit wave|empire of abuse|higher prices|aliens|go live challenge|"
+    r"vivir mejor|amazing in china)",
+    _re.I,
+)
+_EMOJI_RE = _re.compile(
+    "[\U0001F000-\U0001FAFF☀-➿⬀-⯿\U0001F1E6-\U0001F1FF]"
+)
+_SCORE_KW = [
+    "claude code", "claude", "agent", "agentic", "automat", "workflow",
+    "framework", "saas", "github", "prompt", "skill", "mcp", "course",
+    "second brain", "codex", "vibe cod", "build",
+]
+
+# Videos ranked at or above this score are featured on the day card; the rest
+# stay linked behind "See more". Mirrored in DayCard.tsx as FEATURED_VIDEOS.
+FEATURED_VIDEO_COUNT = 3
+
+
+def _is_learning_video(v: dict) -> bool:
+    title = v.get("title") or ""
+    channel = v.get("channel") or ""
+    if _DENY_RE.search(title) or _DENY_RE.search(channel):
+        return False
+    if _EMOJI_RE.search(title):
+        return False
+    return bool(_LEARN_RE.search(title) or _LEARN_RE.search(channel))
+
+
+def _video_score(v: dict) -> float:
+    """Higher = more featurable. Rewards keyword density and the 8-45 min
+    tutorial sweet spot; penalises >90 min livestream-length filler."""
+    title = (v.get("title") or "").lower()
+    kw = sum(1 for k in _SCORE_KW if k in title)
+    score = kw * 9.0
+    rt = v.get("runtime_min") or 0
+    if 8 <= rt <= 45:
+        score += 14
+    elif 45 < rt <= 90:
+        score += 5
+    elif rt > 90:
+        score -= 10
+    elif 0 < rt < 8:
+        score += 3
+    score += min(rt, 45) * 0.3
+    return score
+
+
+def curate_videos(videos: list[dict]) -> list[dict]:
+    """Dedupe, drop non-learning videos, and order best-first so the day card
+    can feature the strongest few. Order is the ranking — no data is dropped
+    from the rendered list beyond the non-learning filter."""
+    seen: set[str] = set()
+    deduped: list[dict] = []
+    for v in videos:
+        key = (v.get("url") or v.get("title") or "").strip().lower()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        deduped.append(v)
+    learning = [v for v in deduped if _is_learning_video(v)]
+    learning.sort(key=_video_score, reverse=True)
+    return learning
+
 
 def fetch_all_pages() -> list[dict]:
     pages = []
@@ -220,7 +304,7 @@ def bundle_videos_into_journal(entries: list[dict]) -> list[dict]:
                     "runtime_min": v.get("runtime_min"),
                     "category": v.get("category") or [],
                 })
-            journal["videos"] = existing
+            journal["videos"] = curate_videos(existing)
             out.append(journal)
             # Keep any other non-journal, non-video entries (e.g. books, courses)
             out.extend(other)

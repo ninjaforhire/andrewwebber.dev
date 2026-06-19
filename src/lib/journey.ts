@@ -2,6 +2,8 @@ export interface JourneyVideo {
   title: string;
   channel: string;
   url?: string;
+  runtime_min?: number | null;
+  category?: string[];
 }
 
 export interface JourneyBuild {
