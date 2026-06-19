@@ -99,10 +99,15 @@ export default function AboutPage() {
       <div className="page-x py-24 md:py-32 relative">
         {/* HERO + STORY — left content column; PortraitFigure pins to the right 40vw of the viewport. */}
         <section className="relative">
-          <PortraitFigure
-            lineartSvg={LINEART_SVG}
-            photoSrc="/images/portrait/andrew-display.jpg"
-          />
+          {/* Desktop: the fixed glitch portrait pins to the right 40vw. On
+              mobile it collapses to a sliver behind the backplates, so we hide
+              it here and surface a centered portrait in the contact section. */}
+          <div className="hidden lg:block">
+            <PortraitFigure
+              lineartSvg={LINEART_SVG}
+              photoSrc="/images/portrait/andrew-display.jpg"
+            />
+          </div>
 
           <div
             className="relative z-10 rounded-2xl px-5 py-8 backdrop-blur-sm md:px-8 md:py-10 lg:mr-[40%]"
@@ -110,10 +115,10 @@ export default function AboutPage() {
           >
             {/* HEADER */}
             <div
-              className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-creative mb-6"
+              className="font-mono text-xs font-bold tracking-[0.4em] uppercase text-creative mb-6"
               style={{ textShadow: HERO_LABEL_SHADOW }}
             >
-              § 01 — Dossier
+              Dossier
             </div>
             <h1
               className="crop font-extrabold text-[clamp(56px,9vw,128px)] leading-[0.88]"
@@ -193,7 +198,7 @@ export default function AboutPage() {
             className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-data mb-6"
             style={{ textShadow: HERO_LABEL_SHADOW }}
           >
-            § 02 — Credentials
+            § 01 — Credentials
           </div>
           <h2
             className="crop font-extrabold text-[clamp(40px,7vw,96px)] leading-[0.9] mb-6"
@@ -228,11 +233,30 @@ export default function AboutPage() {
           className="relative z-10 mt-32 md:mt-48 rounded-2xl border border-white/5 px-6 md:px-10 py-16 md:py-24 backdrop-blur-sm"
           style={{ background: "color-mix(in oklab, var(--background) 80%, transparent)" }}
         >
+          {/* Mobile-only portrait: centered behind the contact copy so Andrew is
+              visible here (the fixed desktop portrait is hidden on mobile).
+              Negative z keeps it above the backplate but under the text. */}
+          <img
+            src="/images/portrait/andrew-display.jpg"
+            alt=""
+            aria-hidden
+            className="lg:hidden pointer-events-none absolute left-1/2 top-[150px] w-[88%] max-w-[340px] -translate-x-1/2 -translate-y-1/2 object-contain mix-blend-screen"
+            style={{
+              zIndex: -1,
+              opacity: 0.65,
+              filter:
+                "grayscale(1) brightness(0.95) contrast(1.2) sepia(1) hue-rotate(60deg) saturate(4.5)",
+              maskImage:
+                "radial-gradient(closest-side, black 62%, transparent 100%)",
+              WebkitMaskImage:
+                "radial-gradient(closest-side, black 62%, transparent 100%)",
+            }}
+          />
           <div
             className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-terminal mb-6"
             style={{ textShadow: HERO_LABEL_SHADOW }}
           >
-            § 03 — Get in touch
+            § 02 — Get in touch
           </div>
           <h2
             className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] mb-8"

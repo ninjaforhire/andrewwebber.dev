@@ -12,8 +12,8 @@ export default function EngagementsPage() {
   return (
     <div className="page-x section-y">
       {/* HERO */}
-      <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-warm mb-8">
-        Engagements · Limited each quarter
+      <div className="font-mono text-xs font-normal tracking-[0.4em] uppercase text-warm mb-8">
+        <span className="font-bold">Engagements</span> · Limited each quarter
       </div>
       <h1 className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] max-w-5xl">
         Hands-on
