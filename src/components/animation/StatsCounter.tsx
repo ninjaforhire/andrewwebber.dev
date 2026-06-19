@@ -102,15 +102,16 @@ function AnimatedNumber({
 }
 
 function Stat({ value, suffix, label, format = "default" }: StatProps) {
-  // Font max capped so a 9-digit number (1,801,003) fits a 4-col desktop slot
-  // without bleeding into the next column. text-center keeps number visually
-  // anchored above its label at every breakpoint.
+  // Font max capped so the widest number (7-digit LOC, 2,459,266) fits a 5-col
+  // desktop slot without bleeding into the next column. text-center anchors the
+  // number above its label; the parent grid is items-start so every number
+  // shares one baseline even when a label wraps to two lines.
   return (
     <div className="min-w-0 text-center">
-      <div className="crop text-[clamp(22px,4vw,40px)] font-extrabold leading-none text-data tabular-nums whitespace-nowrap">
+      <div className="crop text-[clamp(20px,3.3vw,34px)] font-extrabold leading-none text-data tabular-nums whitespace-nowrap">
         <AnimatedNumber target={value} suffix={suffix} format={format} />
       </div>
-      <div className="font-mono text-[10px] sm:text-xs md:text-sm font-medium tracking-[0.2em] text-muted-foreground mt-3 sm:mt-5 uppercase">
+      <div className="font-mono text-[10px] sm:text-xs md:text-sm font-medium tracking-[0.18em] text-muted-foreground mt-3 sm:mt-4 uppercase leading-tight">
         {label}
       </div>
     </div>
@@ -135,6 +136,7 @@ function SubStat({ value, label, format = "default" }: StatProps) {
 
 interface LiveStats {
   tools: number;
+  skills: number;
   linesOfCode: number;
   commitsShipped: number;
   agentsLive: number;
@@ -144,6 +146,7 @@ interface LiveStats {
 
 const ZERO: LiveStats = {
   tools: 0,
+  skills: 0,
   linesOfCode: 0,
   commitsShipped: 0,
   agentsLive: 0,
@@ -171,11 +174,16 @@ export function StatsCounter() {
           </span>
         </figcaption>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-4 sm:gap-x-6 lg:gap-x-8 place-items-center">
-          <Stat value={data.tools} label="Tools Shipped" />
-          <Stat value={data.linesOfCode} label="Lines of Code" />
-          <Stat value={data.commitsShipped} label="Commits Shipped" />
-          <Stat value={data.agentsLive} label="Live Agents" />
+        {/* 5-up on desktop; 2-up below lg with the wide Lines of Code count
+            centered full-width on its own row so nothing orphans left. */}
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-y-8 sm:gap-y-10 gap-x-4 sm:gap-x-8 lg:gap-x-6 items-start justify-items-center">
+          <Stat value={data.tools} label="Tools" />
+          <Stat value={data.skills} label="Skills" />
+          <Stat value={data.agentsLive} label="Agents" />
+          <Stat value={data.commitsShipped} label="Commits" />
+          <div className="col-span-2 lg:col-span-1 flex justify-center">
+            <Stat value={data.linesOfCode} label="Lines of Code" />
+          </div>
         </div>
 
         <div className="mt-10 pt-8 sm:mt-14 sm:pt-10 border-t border-white/10 grid grid-cols-2 gap-x-4 sm:gap-x-8 place-items-center">

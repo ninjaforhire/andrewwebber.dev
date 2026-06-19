@@ -70,6 +70,7 @@ GIT = "/usr/bin/git"
 PYTHON = "/usr/bin/python3"
 PYTHON_BREW = shutil.which("python3.14") or "/opt/homebrew/bin/python3.14"
 VERCEL = shutil.which("vercel") or "/opt/homebrew/bin/vercel"
+NODE = shutil.which("node") or "/opt/homebrew/bin/node"
 
 RETRIES = 3
 BACKOFF_BASE = 5  # seconds: 5, 10, 20
@@ -186,6 +187,10 @@ def main() -> None:
         ([PYTHON, str(SCRIPTS / "sync-courses.py")], "sync-courses"),
         ([PYTHON, str(SCRIPTS / "sync-queue.py")], "sync-queue"),
         ([PYTHON, str(SCRIPTS / "refresh-stats.py")], "refresh-stats"),
+        # Fatal drift guard: refuse to publish if any hardcoded "N tools/agents/
+        # skills" literal crept back into src/ (portfolio numbers must come from
+        # the live source). Runs after refresh-stats so it checks fresh data.
+        ([NODE, str(SCRIPTS / "check-stat-literals.mjs")], "stat-literals"),
     ]
     for cmd, label in render:
         if not run(cmd, label=label, dry_run=args.dry_run):

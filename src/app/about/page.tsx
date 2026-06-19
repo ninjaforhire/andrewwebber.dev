@@ -7,6 +7,7 @@ import { CharacterStatsStrip } from "@/components/sections/CharacterStats";
 import { LearningLibrary } from "@/components/sections/LearningLibrary";
 import { MatrixRain } from "@/components/portrait/MatrixRain";
 import { PortraitFigure } from "@/components/portrait/PortraitFigure";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const metadata: Metadata = {
   title: "Dossier",
@@ -78,7 +79,7 @@ const CHAPTERS = [
     year: "2023",
     tag: "ADHD ≠ bug",
     hook: "Figured out the thing people called a weakness was actually the engine.",
-    body: "143+ tools. Multiple businesses. Hyperfocus until the problem dies. Stopped fighting it. Started pointing it at code.",
+    body: `${SITE_STATS.tools}+ tools. Multiple businesses. Hyperfocus until the problem dies. Stopped fighting it. Started pointing it at code.`,
     accent: "text-terminal",
   },
   {
