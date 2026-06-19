@@ -10,7 +10,7 @@ const BRANDS: { name: string; href: string; logo: string | null }[] = [
   {
     name: "MIGHTY Productions",
     href: "https://web-delta-ten-78.vercel.app",
-    logo: "/images/mighty-productions-logo.png",
+    logo: "/images/mighty-productions-logo.svg",
   },
   {
     name: "HotFix Ops",
