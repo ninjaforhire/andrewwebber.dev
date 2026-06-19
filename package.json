@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "check:stats": "node scripts/check-stat-literals.mjs",
     "scan-tools": "npx tsx scripts/scan-mighty-tools.ts"
   },
   "dependencies": {

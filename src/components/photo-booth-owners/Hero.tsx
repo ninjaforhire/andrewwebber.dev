@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export function Hero() {
   return (
@@ -26,7 +27,7 @@ export function Hero() {
         </h1>
 
         <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground max-w-3xl mt-8 md:mt-12">
-          10 years running MIGHTY Photo Booths. 39 autonomous agents. 370+ skills. Everything on
+          10 years running MIGHTY Photo Booths. {SITE_STATS.agentsLive} autonomous agents. {SITE_STATS.skills}+ skills. Everything on
           this page exists because I needed it — and built it myself.
         </p>
 
@@ -61,7 +62,7 @@ export function Hero() {
             Fort Worth, TX
           </span>
           <span>10 yrs operating</span>
-          <span>39 agents in production</span>
+          <span>{SITE_STATS.agentsLive} agents in production</span>
           <span>500+ events</span>
         </div>
       </div>

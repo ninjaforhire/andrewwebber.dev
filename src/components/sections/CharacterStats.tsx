@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { SITE_STATS } from "@/lib/site-stats";
 
 export const DISCIPLINES = [
   { label: "Coding", value: 92, lore: "Python, TS, daily shipping" },
-  { label: "Automation", value: 91, lore: "143+ AI tools in production" },
+  { label: "Automation", value: 91, lore: `${SITE_STATS.tools}+ AI tools in production` },
   { label: "Design", value: 78, lore: "Premium event experiences" },
   { label: "Systems", value: 94, lore: "Perfect organization energy" },
   { label: "Security", value: 90, lore: "Pentests, SPECTRE, audits" },
