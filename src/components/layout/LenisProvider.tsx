@@ -2,6 +2,11 @@
 
 import { useEffect, useRef } from "react";
 import Lenis from "lenis";
+// Required Lenis stylesheet. Without it, `html.lenis { height: auto }` never
+// applies, so the layout's `h-full` (height:100%) on <html> caps the scroll
+// area at one viewport and the wheel/trackpad can't reach the bottom of the
+// page (native scrollTo still works, which masked the bug).
+import "lenis/dist/lenis.css";
 
 export function LenisProvider({ children }: { children: React.ReactNode }) {
   const lenisRef = useRef<Lenis | null>(null);
