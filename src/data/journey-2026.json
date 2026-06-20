@@ -1,8 +1,116 @@
 {
-  "lastUpdated": "2026-06-19T01:16:47",
-  "totalDays": 233,
+  "lastUpdated": "2026-06-20T00:23:56",
+  "totalDays": 234,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 176,
+      "date": "2026-06-19",
+      "title": "Day 176 - Cast UI, Cockpit Tabs, BoothLogic Brand",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix",
+        "Refactor"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Frontend",
+        "Agents",
+        "Design",
+        "AI/ML"
+      ],
+      "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "I Tried 100+ Claude Code Skills. These 6 Are The Best",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=eRS3CmvrOvA",
+          "runtime_min": 13.7,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Frontend",
+            "Business"
+          ]
+        },
+        {
+          "title": "Anthropic Just Dropped Claude Code Artifacts (endless possibilities)",
+          "channel": "Brock Mesarich | AI for Non Techies",
+          "url": "https://www.youtube.com/watch?v=uVKr50faO7E",
+          "runtime_min": 9.7,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation"
+          ]
+        }
+      ],
+      "builds": [
+        {
+          "repo": "forge",
+          "commits": [
+            "style(gen): drop oversized 300px HFO footer logo + keep GENERATE lime when disabled",
+            "style(gen): re-skin Gen Studio bar to the approved Higgsfield Cinema Studio design (lime \u2726 GENERATE)",
+            "fix(character): prevent nav-race + concurrent-upload race in Cast UI"
+          ]
+        },
+        {
+          "repo": "mighty/mighty-music-box",
+          "commits": [
+            "feat(scraper): add hi-energy one-off Soundstripe grab runner",
+            "feat: song queue + on-player controls + footer + marquee (#4)",
+            "fix(hero): marquee repeats its unit to fill the strip width"
+          ]
+        },
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "feat(jimbo): split Memory+Chat into separate Chat and Memory tabs",
+            "fix(jimbo): hide legacy nav in /chat-ui chat iframe (codex P2 \u2014 prevents nested cockpit)",
+            "refactor(jimbo): remove dead _INLINE_DASHBOARD + orphan overview.html"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "docs(specs): add photo booth opportunity-landscape map (BoothLogic strategy)",
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "chore(submodule): carve summer-boot-camp into private repo mighty-boot-camp"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(submodule): bump mighty-playbook to 9f37810",
+            "fix(blog-agent): repoint dead ~/Desktop/_Code jimbo env-file fallback to ~/_Code"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "fix(ghost): harden ChromeSession lifecycle"
+          ]
+        },
+        {
+          "repo": "hotfixops-spectre",
+          "commits": [
+            "fix(ghost): harden ChromeSession lifecycle"
+          ]
+        },
+        {
+          "repo": "boothlogic",
+          "commits": [
+            "feat: BoothLogic brand kit + logo v1 (aperture-chip mark, app icon, previews)"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped a Create-Character flow and Cast library in Forge:** the grid now lets you build characters and pull them into generations, and I re-skinned the Gen Studio bar to the Higgsfield Cinema look with the lime GENERATE accent. Most of the day went to killing races, the nav-race and concurrent-upload bug in the Cast UI, plus binding cast photos to real files on disk before they ever touch the database.\n\nElsewhere I split Jimbo's cockpit into proper Chat and Memory tabs with a native Overview glance, gave the Music Box a slide-up queue drawer and a seamless hero marquee, and stood up the BoothLogic brand kit. Different apps, same lesson: validate the state before you render it, and the UI stops fighting you."
+    },
     {
       "day": 175,
       "date": "2026-06-18",
