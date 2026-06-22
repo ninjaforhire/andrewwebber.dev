@@ -1,34 +1,34 @@
 {
   "methodology": "github_clone_wc_l",
-  "countedAt": "2026-06-16T05:37:02.149979+00:00",
-  "github_loc": 2403019,
-  "github_commits": 2794,
-  "live_agents_registry": 0,
-  "repos_count": 37,
-  "agents_live": 37,
-  "ratchet_loc": 2403019,
-  "ratchet_commits": 2794,
-  "ratchet_agents": 40,
-  "claude_hours": 1523,
-  "claude_tokens": 18465958000,
-  "claude_sessions": 420,
-  "ratchet_claude_hours": 1523,
-  "ratchet_claude_tokens": 18465958000,
-  "skills": 0,
+  "countedAt": "2026-06-22T05:57:47.676794+00:00",
+  "github_loc": 2531539,
+  "github_commits": 3465,
+  "live_agents_registry": 41,
+  "repos_count": 41,
+  "agents_live": 41,
+  "ratchet_loc": 2531539,
+  "ratchet_commits": 3465,
+  "ratchet_agents": 41,
+  "claude_hours": 1652,
+  "claude_tokens": 21256875625,
+  "claude_sessions": 447,
+  "ratchet_claude_hours": 1652,
+  "ratchet_claude_tokens": 21256875625,
+  "skills": 2,
   "ratchet_skills": 390,
-  "ratchet_repos": 37,
-  "tools": 0,
-  "ratchet_tools": 170,
+  "ratchet_repos": 41,
+  "tools": 180,
+  "ratchet_tools": 180,
   "per_repo": {
     "ninjaforhire/Agents": {
-      "loc": 448371,
-      "files": 2255,
-      "commits": 1003
+      "loc": 458881,
+      "files": 2323,
+      "commits": 1154
     },
     "ninjaforhire/andrewwebber.dev": {
-      "loc": 28330,
-      "files": 125,
-      "commits": 128
+      "loc": 29095,
+      "files": 136,
+      "commits": 141
     },
     "ninjaforhire/Biometric-Lab": {
       "loc": 11,
@@ -41,19 +41,19 @@
       "commits": 7
     },
     "ninjaforhire/claude-config": {
-      "loc": 40999,
-      "files": 849,
+      "loc": 41666,
+      "files": 851,
       "commits": 67
     },
     "ninjaforhire/claude-usage": {
-      "loc": 11583,
-      "files": 58,
-      "commits": 49
+      "loc": 12015,
+      "files": 59,
+      "commits": 55
     },
     "ninjaforhire/cli-printing-press": {
       "loc": 324996,
       "files": 871,
-      "commits": 3
+      "commits": 4
     },
     "ninjaforhire/deconstructed-studio": {
       "loc": 3079,
@@ -76,14 +76,14 @@
       "commits": 1
     },
     "ninjaforhire/forge": {
-      "loc": 82673,
-      "files": 498,
-      "commits": 181
+      "loc": 127678,
+      "files": 658,
+      "commits": 305
     },
     "ninjaforhire/General-Tools": {
-      "loc": 56154,
-      "files": 149,
-      "commits": 76
+      "loc": 56748,
+      "files": 155,
+      "commits": 92
     },
     "ninjaforhire/gstack": {
       "loc": 129692,
@@ -93,7 +93,7 @@
     "ninjaforhire/hotfixops": {
       "loc": 63485,
       "files": 527,
-      "commits": 105
+      "commits": 134
     },
     "ninjaforhire/hotfixops-site": {
       "loc": 9403,
@@ -106,14 +106,19 @@
       "commits": 8
     },
     "ninjaforhire/mighty": {
-      "loc": 121681,
+      "loc": 121781,
       "files": 643,
-      "commits": 384
+      "commits": 403
     },
     "ninjaforhire/MIGHTY-Apps": {
       "loc": 743,
       "files": 10,
       "commits": 2
+    },
+    "ninjaforhire/mighty-boot-camp": {
+      "loc": 15131,
+      "files": 61,
+      "commits": 49
     },
     "ninjaforhire/mighty-gallery": {
       "loc": 2080,
@@ -125,10 +130,15 @@
       "files": 48,
       "commits": 28
     },
+    "ninjaforhire/mighty-music-box": {
+      "loc": 39454,
+      "files": 64,
+      "commits": 80
+    },
     "ninjaforhire/mighty-playbook": {
-      "loc": 2896,
+      "loc": 3169,
       "files": 2,
-      "commits": 45
+      "commits": 48
     },
     "ninjaforhire/mighty-productions": {
       "loc": 2218,
@@ -148,17 +158,17 @@
     "ninjaforhire/mpb-ai-gen-tool": {
       "loc": 2151,
       "files": 22,
-      "commits": 17
+      "commits": 18
     },
     "ninjaforhire/mpb-site": {
-      "loc": 11560,
-      "files": 133,
-      "commits": 17
+      "loc": 13455,
+      "files": 142,
+      "commits": 41
     },
     "ninjaforhire/Notion-Tools": {
-      "loc": 837,
-      "files": 7,
-      "commits": 4
+      "loc": 1107,
+      "files": 9,
+      "commits": 7
     },
     "ninjaforhire/pp-libraries": {
       "loc": 70731,
@@ -171,29 +181,39 @@
       "commits": 1
     },
     "ninjaforhire/snappic-site-builder": {
-      "loc": 5269,
+      "loc": 5318,
       "files": 39,
-      "commits": 5
+      "commits": 6
+    },
+    "ninjaforhire/system-medic": {
+      "loc": 1352,
+      "files": 29,
+      "commits": 17
     },
     "ninjaforhire/terminal-gloss": {
       "loc": 7760,
       "files": 55,
-      "commits": 41
+      "commits": 42
     },
     "ninjaforhire/terminal-karaoke": {
       "loc": 3921,
       "files": 42,
-      "commits": 41
+      "commits": 42
     },
     "ninjaforhire/Video-Agent": {
       "loc": 748,
       "files": 5,
       "commits": 2
     },
+    "ninjaforhire/vivianzoe": {
+      "loc": 1983,
+      "files": 27,
+      "commits": 2
+    },
     "ninjaforhire/workspace-config": {
-      "loc": 296279,
-      "files": 351,
-      "commits": 289
+      "loc": 306319,
+      "files": 359,
+      "commits": 419
     },
     "ninjaforhire/wraith": {
       "loc": 141280,
