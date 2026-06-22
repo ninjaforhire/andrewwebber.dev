@@ -1,8 +1,114 @@
 {
-  "lastUpdated": "2026-06-21T22:17:34",
-  "totalDays": 235,
+  "lastUpdated": "2026-06-22T00:52:19",
+  "totalDays": 236,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 178,
+      "date": "2026-06-21",
+      "title": "Day 178 - One Kill Authority, Warden Error Sink",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Refactor",
+        "Fix",
+        "Milestone"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Security",
+        "DevOps",
+        "Agents",
+        "Infra"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "My exact upscale workflow + mixing real footage with AI characters",
+          "channel": "JOEY",
+          "url": "https://www.youtube.com/watch?v=5HQwoEZ41G8",
+          "runtime_min": 8,
+          "category": [
+            "AI/ML",
+            "Automation"
+          ]
+        },
+        {
+          "title": "We Had the Best AI Model for 72 Hours",
+          "channel": "Stacked Podcast",
+          "url": "https://www.youtube.com/watch?v=pay8cCzs2Ao",
+          "runtime_min": 56.7,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "No-Code"
+          ]
+        }
+      ],
+      "builds": [
+        {
+          "repo": "forge",
+          "commits": [
+            "feat(warden): Errors tab with click-to-copy formatted blob",
+            "feat(warden): frontend onerror/unhandledrejection -> POST /api/warden/error",
+            "feat(warden): record uncaught request exceptions as backend error_events"
+          ]
+        },
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "fix(coach): repoint ops-health scanner to canonical daemon registry",
+            "feat(jimbo): cockpit shell iframe tab router + build-pipeline tab",
+            "fix(otis): read claude-usage via scanner/SQLite instead of retired :8080 dashboard"
+          ]
+        },
+        {
+          "repo": "system-medic",
+          "commits": [
+            "fix(kill): full-path identity comparison in med kill reuse guard (codex P1 r2)",
+            "fix(kill): add --expect PID-reuse identity guard to med kill (codex P1)",
+            "feat(kill): med kill <pid> \u2014 the single human-confirmed kill authority"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "fix(ghost): only cancel watchdog after Chrome exit is confirmed on teardown (fail-closed)",
+            "fix(ghost): terminate Chrome before cancelling the watchdog on teardown so /kill never drops the kill guarantee early",
+            "fix(ghost): +30m extends from the current deadline (never shortens), still capped at 24h"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(daemon-registry): annotate 11 previously-unknown daemons",
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "docs(plans): add jimbo cockpit + daemon overhaul master plan"
+          ]
+        },
+        {
+          "repo": "mighty/mighty-music-box",
+          "commits": [
+            "fix(scraper): keep bucket-priority order for backfilled picks (codex P2)",
+            "feat(scraper): drop forced instrumental + backfill genres on underfill",
+            "fix(ui): reset quote guard on player close so replay rerolls (codex P2)"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(blog-agent): bump model to opus-4-8",
+            "feat: add /medic Claude Code skill (System Medic NL entry)"
+          ]
+        }
+      ],
+      "takeaway": "**Made Medic the single kill authority:** kill logic was scattered across Ghost, the phone button, and Jimbo, which is a bad spot when the whole point is shutting a runaway process down fast. I routed all of them through `med kill <pid>`, added a PID-reuse identity guard so we never stop the wrong process, and made the path fail closed when it can't confirm what it's about to kill. Shipped as PR #39, one kill owner.\n\n**Stood up Warden error tracking on Forge:** frontend crashes and backend job failures now POST into an error_events table with secrets scrubbed and payloads size-capped before they land. There's an Errors tab with click-to-copy so I can grab a formatted blob instead of hunting through logs. Hardening Ghost's teardown so a kill never drops its guarantee early ate the rest of the day."
+    },
     {
       "day": 177,
       "date": "2026-06-20",
@@ -19,7 +125,44 @@
       "url": null,
       "channel": "",
       "runtime_min": null,
-      "videos": [],
+      "videos": [
+        {
+          "title": "How to Sign Your First AI Automation Client (Without Starting an Agency)",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=9dA1VB8V8oo",
+          "runtime_min": 14.8,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "Finally. Agent Loops Clearly Explained.",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=EuzYhzB0vbI",
+          "runtime_min": 14.6,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation"
+          ]
+        },
+        {
+          "title": "GLM-5.2 is Basically Opus (For 1/5 the Price)",
+          "channel": "Nick Saraev",
+          "url": "https://www.youtube.com/watch?v=KAnDbJhNJ4E",
+          "runtime_min": 14.6,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Security",
+            "Business",
+            "Design"
+          ]
+        }
+      ],
       "builds": [
         {
           "repo": "mighty/mighty-music-box",
