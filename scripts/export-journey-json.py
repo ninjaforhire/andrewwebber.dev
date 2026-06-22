@@ -5,6 +5,7 @@ import json
 import os
 import subprocess
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
 
@@ -32,10 +33,25 @@ def _ntn_api(method: str, path: str, body: dict | None = None, timeout: int = 60
         cmd.extend(["-d", json.dumps(body)])
     env = {k: v for k, v in os.environ.items() if k not in ("NOTION_API_TOKEN", "NOTION_API_KEY")}
     env.setdefault("NOTION_API_VERSION", "2025-09-03")
-    proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, env=env)
-    if proc.returncode != 0:
-        raise RuntimeError(f"ntn api {method} {path} failed: {(proc.stderr or proc.stdout).strip()[:300]}")
-    return json.loads(proc.stdout)
+    # Retry with exponential backoff. ~500 sequential ntn calls per run; a single
+    # transient Notion blip (429, timeout, truncated stdout) used to kill the whole
+    # nightly export. Retrying each call in place fixes that vs restarting page 1.
+    last_err = ""
+    for attempt in range(5):
+        try:
+            proc = subprocess.run(
+                cmd, capture_output=True, text=True, timeout=timeout, env=env
+            )
+            if proc.returncode == 0:
+                return json.loads(proc.stdout)
+            last_err = (proc.stderr or proc.stdout).strip()[:300]
+        except subprocess.TimeoutExpired:
+            last_err = f"timeout after {timeout}s"
+        except json.JSONDecodeError as e:
+            last_err = f"bad JSON from ntn: {e}"
+        if attempt < 4:
+            time.sleep(2 ** attempt)
+    raise RuntimeError(f"ntn api {method} {path} failed after 5 attempts: {last_err}")
 HEADERS = {
     "Authorization": f"Bearer {NOTION_API_KEY}",
     "Notion-Version": "2022-06-28",
