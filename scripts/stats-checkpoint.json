@@ -1,19 +1,19 @@
 {
   "methodology": "github_clone_wc_l",
-  "countedAt": "2026-06-22T05:57:47.676794+00:00",
-  "github_loc": 2531539,
-  "github_commits": 3465,
+  "countedAt": "2026-06-23T05:23:58.081618+00:00",
+  "github_loc": 2508219,
+  "github_commits": 3564,
   "live_agents_registry": 41,
   "repos_count": 41,
   "agents_live": 41,
   "ratchet_loc": 2531539,
-  "ratchet_commits": 3465,
+  "ratchet_commits": 3564,
   "ratchet_agents": 41,
-  "claude_hours": 1652,
-  "claude_tokens": 21256875625,
-  "claude_sessions": 447,
-  "ratchet_claude_hours": 1652,
-  "ratchet_claude_tokens": 21256875625,
+  "claude_hours": 1666,
+  "claude_tokens": 21548792366,
+  "claude_sessions": 451,
+  "ratchet_claude_hours": 1666,
+  "ratchet_claude_tokens": 21548792366,
   "skills": 2,
   "ratchet_skills": 390,
   "ratchet_repos": 41,
@@ -21,14 +21,14 @@
   "ratchet_tools": 180,
   "per_repo": {
     "ninjaforhire/Agents": {
-      "loc": 458881,
-      "files": 2323,
-      "commits": 1154
+      "loc": 421575,
+      "files": 2141,
+      "commits": 1193
     },
     "ninjaforhire/andrewwebber.dev": {
-      "loc": 29095,
+      "loc": 31002,
       "files": 136,
-      "commits": 141
+      "commits": 143
     },
     "ninjaforhire/Biometric-Lab": {
       "loc": 11,
@@ -41,9 +41,9 @@
       "commits": 7
     },
     "ninjaforhire/claude-config": {
-      "loc": 41666,
-      "files": 851,
-      "commits": 67
+      "loc": 41919,
+      "files": 853,
+      "commits": 70
     },
     "ninjaforhire/claude-usage": {
       "loc": 12015,
@@ -91,9 +91,9 @@
       "commits": 0
     },
     "ninjaforhire/hotfixops": {
-      "loc": 63485,
-      "files": 527,
-      "commits": 134
+      "loc": 70242,
+      "files": 587,
+      "commits": 145
     },
     "ninjaforhire/hotfixops-site": {
       "loc": 9403,
@@ -106,9 +106,9 @@
       "commits": 8
     },
     "ninjaforhire/mighty": {
-      "loc": 121781,
-      "files": 643,
-      "commits": 403
+      "loc": 122625,
+      "files": 650,
+      "commits": 412
     },
     "ninjaforhire/MIGHTY-Apps": {
       "loc": 743,
@@ -186,9 +186,9 @@
       "commits": 6
     },
     "ninjaforhire/system-medic": {
-      "loc": 1352,
-      "files": 29,
-      "commits": 17
+      "loc": 4405,
+      "files": 49,
+      "commits": 40
     },
     "ninjaforhire/terminal-gloss": {
       "loc": 7760,
@@ -211,9 +211,9 @@
       "commits": 2
     },
     "ninjaforhire/workspace-config": {
-      "loc": 306319,
-      "files": 359,
-      "commits": 419
+      "loc": 307491,
+      "files": 367,
+      "commits": 431
     },
     "ninjaforhire/wraith": {
       "loc": 141280,

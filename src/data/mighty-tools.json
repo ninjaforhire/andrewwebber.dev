@@ -554,7 +554,7 @@
   {
     "slug": "email-assistant",
     "name": "email-assistant",
-    "description": "Alias entry point for the inbox-agent Watch mode (and Label mode)",
+    "description": "[RETIRED 2026-06-22 \u2014 superseded by /cockpit and /admin/inbox-agent Watch mode] Former alias entry point for the inbox-agent Watch / Label modes",
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
