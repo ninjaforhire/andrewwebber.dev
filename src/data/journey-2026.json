@@ -1,8 +1,115 @@
 {
-  "lastUpdated": "2026-06-22T00:52:19",
-  "totalDays": 236,
+  "lastUpdated": "2026-06-23T00:15:49",
+  "totalDays": 237,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 179,
+      "date": "2026-06-22",
+      "title": "Day 179 - Failure Recovery and Causation Edges",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix",
+        "Refactor"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "Security",
+        "DevOps",
+        "Automation"
+      ],
+      "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "fix(jimbo): wire failure_recovery directive into ops loader (codex P2)",
+            "feat(jimbo): auto-populate dispatch causation edge from chat loop",
+            "docs(seo): add launch-pages + action plan refs 2026-06-22"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(submodule): bump agents -> seo launch-page refs",
+            "feat(blog): mine SEO_brief into a voice-layer reference system + SERP/on-page directives",
+            "fix(blog): repoint dead blog-agent-v1.0 paths + drop arch -arm64 in /blog skill"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "fix(ci): make advisory ruff-lint report green via --exit-zero",
+            "fix(rusty): normalize claude-cli error sentinel before replying to chat",
+            "fix(ci): scan pushes in range mode + ignore deletions in denied-filename check"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "docs(references): add hooks-30-events ref + agent-security baseline + regex-first pattern",
+            "fix(boot-camp): repoint dead Desktop/_Code paths to _Code (generated HTML)"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "chore(forge): gitignore QA scratch (_qa-prod + _clicktest)",
+            "fix(forge): repoint dead Desktop/_Code paths to _Code"
+          ]
+        },
+        {
+          "repo": "echo",
+          "commits": [
+            "chore: gitignore coverage + disable marker"
+          ]
+        },
+        {
+          "repo": "mighty/mighty-music-box",
+          "commits": [
+            "chore: retag music library to 432 tracks"
+          ]
+        },
+        {
+          "repo": "mighty/studio",
+          "commits": [
+            "chore: gitignore tsbuildinfo + dataless bak"
+          ]
+        },
+        {
+          "repo": "general-tools/graphify",
+          "commits": [
+            "test: update Fortran sample fixture"
+          ]
+        },
+        {
+          "repo": "general-tools",
+          "commits": [
+            "chore: gitignore embedded sub-repos"
+          ]
+        },
+        {
+          "repo": "general-tools/cli-printing-press",
+          "commits": [
+            "test: add golden expected outputs for quickbooks-catalog"
+          ]
+        },
+        {
+          "repo": "system-medic",
+          "commits": [
+            "chore: gitignore runtime queue + .superpowers"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped a failure-recovery loop for Jimbo:** my chat orchestrator now has a directive for when it loops, makes no progress, or bloats its own context, and the ops loader finally wires it in. Every dispatch also records a causation edge now, so I can trace which tool call triggered which agent. That turns the dispatch log from a flat list into something I can actually walk backwards.\n\nRusty picked up a Telegram inbound channel, so I can poke the security bot from my phone. The rest was cleanup. I repointed a pile of dead Desktop/_Code paths to the new flat layout, fixed the secret scanner to actually run in CI, and ran a ruff sweep across Jimbo. Boring work, but that path rot was going to bite a fresh clone sooner or later."
+    },
     {
       "day": 178,
       "date": "2026-06-21",
