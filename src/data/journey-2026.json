@@ -1,8 +1,105 @@
 {
-  "lastUpdated": "2026-06-23T00:15:49",
-  "totalDays": 237,
+  "lastUpdated": "2026-06-24T00:20:02",
+  "totalDays": 238,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 180,
+      "date": "2026-06-23",
+      "title": "Day 180 - Leaddesk Backend Live, todo-cli Hardened",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix",
+        "Milestone"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "Automation",
+        "AI/ML",
+        "Security"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [
+        {
+          "repo": "general-tools",
+          "commits": [
+            "fix(todo-cli): close SIGKILL create-orphan window via adopt-by-title on recovery",
+            "fix(todo-cli): codex review -- gate _resume_pending behind --dry-run, rm archives Notion first (retryable)",
+            "fix(todo-cli): address adversarial review -- payload guard, build_slug on reuse, sync resume"
+          ]
+        },
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "fix(leaddesk): Gmail gatherer get-arg + thread-grouping (live smoke)",
+            "tests to thread model",
+            "fix(leaddesk): match real quo-pp-cli API in gather (live smoke)"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "docs(plan): model-gen output controls shipped + gender merged + key-fix",
+            "docs: design spec for model generator output controls v2"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(submodule): bump agents to ded74058 (leaddesk backend live)",
+            "fix(leaddesk): correct cs.handled_thread_ids/set_last_outbound signatures, import path, compose_reply ref, registry mode (Wave 3 review)",
+            "chore(security): add gitleaks config + pre-commit hook"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "docs(wings): add \"Editing a Wing Safely\" workflow + Codex bridge",
+            "fix(forge-server): clear stale GEMINI key + log loudly when vault fetch fails",
+            "fix(model-gen): address adversarial review of the output-controls change"
+          ]
+        },
+        {
+          "repo": "hotfixops-spectre",
+          "commits": [
+            "fix(ci): add missing third-party test deps (requests, pyyaml)",
+            "fix(ci): make ruff import-sort deterministic across checkout dirs",
+            "fix(ci): run spectre_core orchestrator tests"
+          ]
+        },
+        {
+          "repo": "mighty/mighty-music-box",
+          "commits": [
+            "chore(library): rebuild music library to 491 tracks",
+            "fix(scraper): correct stale ledger note for clean passes",
+            "feat(scraper): tiered genre depletion cascade + unblock rap"
+          ]
+        },
+        {
+          "repo": "general-tools/cli-printing-press",
+          "commits": [
+            "test(cli): remove stale orphan golden fixtures",
+            "fix(catalog): use HTTP Basic client auth for quickbooks token exchange",
+            "feat(cli): support OAuth2 client_secret_basic via x-oauth-client-auth"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "chore(security): add gitleaks config + pre-commit hook",
+            "chore(models): pin Opus selection to claude-opus-4-8"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped the leaddesk backend live:** Renamed /cockpit to /leaddesk and wired in the real multi-channel gatherer. It pulls Gmail threads and Quo texts into one worklist, builds a lead view, and shows the original message next to the draft so I can act in one spot. A gated learning loop routes durable lessons to a directive PR and softer ones to memory.\n\nThe rest of the day was hardening. todo-cli got idempotent adds and a fix for the SIGKILL window that could orphan a task, plus a resume command and Notion-first archive on delete. The Forge model generator picked up aspect ratio, output size, framing, and a no-backdrop cutout option, and I dropped gitleaks pre-commit hooks across every repo so secrets never slip into a commit."
+    },
     {
       "day": 179,
       "date": "2026-06-22",
