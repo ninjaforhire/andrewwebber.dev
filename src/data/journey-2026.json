@@ -1,8 +1,64 @@
 {
-  "lastUpdated": "2026-06-26T00:20:14",
-  "totalDays": 239,
+  "lastUpdated": "2026-06-27T00:19:37",
+  "totalDays": 240,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 183,
+      "date": "2026-06-26",
+      "title": "Day 183 - Quote Engine Tax and Legal Routing",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "CRM",
+        "Finance",
+        "Security"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "feat(seo-agent): Notion progress tracker reader + operating policy",
+            "fix(mighty-crm): honor wedding flat deposit + cap expiry day before event",
+            "feat(mighty-crm): add sales tax to quote engine"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "fix(warden): address codex review \u2014 redaction + suspended-user gate",
+            "chore(security): allowlist static KIE model catalog in gitleaks (#5)",
+            "fix(security): constrain KIE allowlist to slug-shaped values"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "feat(agreement-flow): venue-TBD + pay-by-check clauses, Koch config, legal routing (#24)",
+            "feat(agreement-flow): venue-TBD + pay-by-check clauses, Koch config, legal routing",
+            "docs(inbox-agent): drafts-first, sent cross-check, relay-recipient + beyond-inbox rules (#23)"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "chore(sync): plans updates (2 paths)"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped sales tax in the quote engine:** the CRM now honors a flat wedding deposit and caps quote expiry to the day before the event, so a quote can't go stale the morning of a booking. I also wired the SEO agent to read its own Notion progress tracker and gave it a weekly content cadence with a real article backlog.\n\nThe bigger cleanup was routing. Every legal and contract path in Jimbo now points at agreement-flow as the one source of truth, and I added venue-TBD and pay-by-check clauses plus the Koch config there. On the security side I tightened the Forge warden with redaction and a suspended-user gate, and scoped the gitleaks allowlist to slug-shaped KIE model names so the scanner stops crying wolf."
+    },
     {
       "day": 182,
       "date": "2026-06-25",
