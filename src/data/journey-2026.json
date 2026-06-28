@@ -1,8 +1,68 @@
 {
-  "lastUpdated": "2026-06-27T00:19:37",
-  "totalDays": 240,
+  "lastUpdated": "2026-06-28T00:26:57",
+  "totalDays": 241,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 184,
+      "date": "2026-06-27",
+      "title": "Day 184 - War Room V1 and Group Threads",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix",
+        "Milestone"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "CRM",
+        "Automation",
+        "Frontend"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "docs(jimbo): correct voice to sharp ops operator, not cowboy",
+            "feat(quo): surface group threads in read layer",
+            "feat(quo): add group compose and event-thread helper"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "docs(plan): hardcode non-secret data_source_id, no .env (Bitwarden rule)",
+            "docs: war-room system design spec (v1 build pending)"
+          ]
+        },
+        {
+          "repo": "mighty/mighty-music-box",
+          "commits": [
+            "fix(audio): honest 502 on non-audio fallback + cache-poisoning fix (#13)"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(submodule): bump agents to pull dispatcher dead-path fix (#25)"
+          ]
+        },
+        {
+          "repo": "war-room",
+          "commits": [
+            "feat: war-room v1 slice \u2014 profiles CRUD + projects + corkboard (FastAPI+Svelte, offline, TDD)"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped War Room v1:** the first real slice landed with profiles CRUD, projects, and a corkboard, all built on FastAPI and Svelte, offline-first and test-driven from the start. Building it TDD meant the corkboard actually behaved the way I wanted before I ever opened a browser. Felt good to have a foundation instead of a demo.\n\nOn the agent side I taught Quo to see and write group threads, so a single event can finally hold one conversation instead of a tangle of one-to-ones. I also fixed the dispatcher still reaching for a dead Desktop/_Code path, and gave the music box an honest 502 instead of poisoning the cache when it got handed a non-audio file."
+    },
     {
       "day": 183,
       "date": "2026-06-26",
