@@ -78,11 +78,11 @@ interface Stats {
 }
 
 const STATS_FALLBACK: Stats = {
-  agentsLive: 41,
-  dayStreak: 241,
+  agentsLive: 42,
+  dayStreak: 242,
   skills: 390,
-  repos: 41,
-  linesOfCode: 2706269,
+  repos: 42,
+  linesOfCode: 2719219,
 };
 
 export function JourneyTeaser() {

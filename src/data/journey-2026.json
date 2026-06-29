@@ -1,8 +1,72 @@
 {
-  "lastUpdated": "2026-06-28T00:26:57",
-  "totalDays": 241,
+  "lastUpdated": "2026-06-29T01:00:49",
+  "totalDays": 242,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 185,
+      "date": "2026-06-28",
+      "title": "Day 185 - War Room Charts and Radar Hardening",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "Frontend",
+        "Automation",
+        "Security"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [
+        {
+          "repo": "war-room",
+          "commits": [
+            "fix(charts): codex review \u2014 clearCharts invalidates in-flight render token",
+            "fix(charts): codex review \u2014 render-seq guard against overlapping renders, clear charts on no-project",
+            "fix(charts): codex review \u2014 count layers by id (not name), clear stale charts on fetch error"
+          ]
+        },
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "chore(jimbo): hydrate ANTHROPIC_API_KEY from vault",
+            "fix(matt-radar): codex R9 \u2014 radar runs on first-seen DRs, persist DM cursor across restarts",
+            "fix(matt-radar): codex R8 \u2014 wire opt:1 send/edit/cancel approval flow, Slack thread_ts, Notion property types"
+          ]
+        },
+        {
+          "repo": "mighty/mighty-music-box",
+          "commits": [
+            "fix: address codex review on Shuffle Random (2 P1, 2 P2)",
+            "feat: Shuffle Random \u2014 continuous random playback pill (#14)",
+            "feat: default Shuffle Random to the rainbow look"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "docs(index): add front-door bleed-stop runbook",
+            "docs(runbook): live front-door SEO/NAP bleed-stop walkthrough (Phase 0)",
+            "chore(sync): pull Notion edits to ACTIVE.md"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(submodule): bump agents",
+            "chore(submodule): bump mpb-site"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped the War Room Charts tab:** Chart.js panels that read straight from the board, fully hideable, fully offline. I vendored Chart.js v4.5.1 as a local UMD so the app never phones home, then wrote the board aggregation and a /charts endpoint to feed it, with tests covering both. Codex flagged a few race conditions in the render path, so I added a sequence guard, made stale charts clear on project switch or fetch error, and started counting layers by id instead of name. OSINT and Excalidraw tabs landed the same day as offline islands.\n\nMatt Radar got a long hardening pass on top of that. It now fires on first-seen design requests, holds its DM cursor across restarts, and wires up the send, edit, and cancel approval flow with real Slack threads and grounded replies. Music Box picked up a continuous Shuffle Random pill, and I fixed the dead cold tap by resuming the AudioContext before the first real track plays."
+    },
     {
       "day": 184,
       "date": "2026-06-27",
