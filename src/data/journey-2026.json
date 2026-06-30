@@ -1,8 +1,80 @@
 {
-  "lastUpdated": "2026-06-29T01:00:49",
-  "totalDays": 242,
+  "lastUpdated": "2026-06-30T00:58:34",
+  "totalDays": 243,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 186,
+      "date": "2026-06-29",
+      "title": "Day 186 - AI Fashion Sketch Ships At The Apex",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix",
+        "Milestone"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Frontend",
+        "Infra",
+        "CRM",
+        "Agents"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "chore(gitignore): ignore OAuth token backups (any suffix) + stray PII data",
+            "fix(jimbo): build-pipeline tab 401 on every load (clobbered auth sentinel) (#81)",
+            "feat(mighty-crm): add AI Fashion Sketch pricing ladder to quote catalog"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "docs(references): add launch pages + SEO hunting brief (2026-06-29)",
+            "docs(plans): add property-scan + telegram-noise-diet plans"
+          ]
+        },
+        {
+          "repo": "apps/ai-fashion-sketch",
+          "commits": [
+            "chore: add package-lock for reproducible installs",
+            "feat: noindex direct vercel origin so only the apex ranks",
+            "fix(worker): harden proxy per codex review (host/cookie strip, origin validation)"
+          ]
+        },
+        {
+          "repo": "war-room",
+          "commits": [
+            "style: black-format chart test fixtures",
+            "docs(brief): document Case Brief + mark Charts shipped",
+            "feat(brief): Case Brief action in Evidence pane"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(agreement-flow): recursively ignore render/output build artifacts",
+            "chore(agreement-flow): Mavericks 2026-07-08 fashion-sketch one-off config",
+            "feat(agreement-flow): AI Fashion Sketch print policy + client-NDA-honoring clauses"
+          ]
+        },
+        {
+          "repo": "mighty/mighty-music-box",
+          "commits": [
+            "feat: full-width Shuffle Random pill on mobile (<=620px)"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped AI Fashion Sketch end to end:** the new microsite went live as a Next.js app, and the real trick was serving it at mightyphotobooths.com/ai-fashion-sketch instead of on its own domain. A Cloudflare worker reverse-proxies the apex subdirectory, strips the host and cookie headers, validates the origin, and noindexes the raw Vercel URL so only the apex ranks. The pricing ladder dropped into the quote catalog and the agreement flow picked up a print policy plus NDA-honoring clauses, so a quote can go out the same day a lead comes in.\n\nWar Room also got its Case Brief feature, a grounded generator wired to a /brief endpoint and a wr CLI command with unit, API, and CLI coverage. Two clean ships in one day, one a public product and one an internal investigation tool."
+    },
     {
       "day": 185,
       "date": "2026-06-28",
@@ -2065,6 +2137,19 @@
             "AI/ML",
             "Automation",
             "Business"
+          ]
+        },
+        {
+          "title": "INTERACTIVE CLAUDE FULL COURSE 4 HOURS: Build & Sell (2026)",
+          "channel": "Samin Yasar",
+          "url": "https://www.youtube.com/watch?v=KTEe5705RHw",
+          "runtime_min": 258.4,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "Open Source"
           ]
         },
         {
