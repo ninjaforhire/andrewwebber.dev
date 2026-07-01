@@ -1,8 +1,87 @@
 {
-  "lastUpdated": "2026-06-30T00:58:34",
-  "totalDays": 243,
+  "lastUpdated": "2026-07-01T00:58:47",
+  "totalDays": 244,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 187,
+      "date": "2026-06-30",
+      "title": "Day 187 - Tempest STORM Pipeline Feeds War Room",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "AI/ML",
+        "Security",
+        "Agents",
+        "Automation"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [
+        {
+          "repo": "general-tools",
+          "commits": [
+            "fix(tempest): cap card body length",
+            "adversarially test adapter guard",
+            "feat(tempest): board-write adapter (untrusted STORM output -> wr calls)"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(sync): add medic skill row + archive stale entries",
+            "chore(submodule): bump agents (published-works-sync) (#27)",
+            "chore(submodule): bump agents (published-works-sync)"
+          ]
+        },
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "chore(sync): regen skills registry (+medic) + refresh graph counts",
+            "feat(osint): auto-hydrate BW_SESSION from Keychain at OSINT entry (#86)",
+            "test(osint): assert _reset_vault_cache fires on successful hydration"
+          ]
+        },
+        {
+          "repo": "war-room",
+          "commits": [
+            "docs(claims): document the ACH ledger feature",
+            "fix(claims): fence-safe credibility in prompt",
+            "clear pane on project switch (codex round 3)"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "fix(raven): harden playbook resolver + broaden fingerprint matching (codex review)",
+            "feat(raven): tech-fingerprint dispatch to harvested offensive playbooks",
+            "chore(vendor): harvest 18 DarkMoon tech playbooks (GPL v3)"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): refresh merged-graph counts (183,883 nodes / 287,276 edges)",
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "chore(sync): plans updates (1 paths)"
+          ]
+        },
+        {
+          "repo": "apps/ai-fashion-sketch",
+          "commits": [
+            "docs(runbook): add aifashionsketch.com 301 funnel step"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped Tempest:** a STORM runner that turns messy web results into a synthesized article, then pulls cards, strings, and a timeline straight out of it and writes them onto the War Room board. It runs on claude -p with investigative persona packs, so every pass works the story from a different angle. A test locks the zero-snippet-drop invariant, so nothing the research gathers quietly disappears.\n\nThe whole thing assumes the web is hostile. The Serper retriever scrubs prompt injection out of every result, the board-write adapter guards untrusted STORM output before it can become real wr calls, and the JSON loader degrades to empty instead of blowing up on malformed data. On the side I wired an ACH ledger into War Room claims and taught the OSINT entry point to auto-hydrate its Bitwarden session from Keychain, so no more locked-vault stalls."
+    },
     {
       "day": 186,
       "date": "2026-06-29",
