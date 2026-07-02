@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-02T05:04:56",
-  "totalDays": 245,
+  "lastUpdated": "2026-07-02T16:28:23",
+  "totalDays": 254,
   "currentEra": "Full Stack AI",
   "entries": [
     {
@@ -20,7 +20,86 @@
       "url": null,
       "channel": "",
       "runtime_min": null,
-      "videos": [],
+      "videos": [
+        {
+          "title": "How Spotify runs agents across 20M+ lines of code, with Niklas Gustavsson",
+          "channel": "Claude",
+          "url": "https://www.youtube.com/watch?v=9DHZLw5653E",
+          "runtime_min": 26.2,
+          "category": [
+            "AI/ML",
+            "Agents"
+          ]
+        },
+        {
+          "title": "Claude Design 2.0 Just Changed Everything...",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=58CQM6I6DZg",
+          "runtime_min": 15,
+          "category": [
+            "AI/ML",
+            "Design",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Claude Fable 5 Use Cases You Must Do NOW (Or Lose Thousands in 1 Week)",
+          "channel": "Chase AI",
+          "url": "https://www.youtube.com/watch?v=lplVBFr0Ndc",
+          "runtime_min": 12,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
+        },
+        {
+          "title": "Claude Fable 5 Is Back! How To Start Using It",
+          "channel": "AI Automation Station",
+          "url": "https://www.youtube.com/watch?v=avgG3VtN2C4",
+          "runtime_min": 11.1,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Security",
+            "DevOps"
+          ]
+        },
+        {
+          "title": "Fable 5 Is Coming Back: Here's What Actually Changed",
+          "channel": "Stacked Podcast",
+          "url": "https://www.youtube.com/watch?v=iAZ47UYedvg",
+          "runtime_min": 56,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "This New Notion Update Is CRAZY! (the \"anything\" block)",
+          "channel": "Matthias Frank",
+          "url": "https://www.youtube.com/watch?v=podGYdN76pw",
+          "runtime_min": 12.4,
+          "category": [
+            "Frontend",
+            "Business",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "Scott Galloway: The Rich Are Quietly Preparing For The AI Collapse",
+          "channel": "The Diary Of A CEO",
+          "url": "https://www.youtube.com/watch?v=NdU6UdUKaYc",
+          "runtime_min": 118.2,
+          "category": [
+            "Security",
+            "Business"
+          ]
+        }
+      ],
       "builds": [
         {
           "repo": ".",
@@ -30,6 +109,49 @@
         }
       ],
       "takeaway": "**Synced the plans workspace:** today's only commit was a housekeeping sync that landed plan updates across two paths. Nothing flashy, just keeping the planning docs in git honest.\n\nDays like this are the pipeline working as intended. Plans changed during sessions, the sync picked them up, and the record stayed current without me having to think about it."
+    },
+    {
+      "day": 188,
+      "date": "2026-07-01",
+      "title": "We Hacked Flock Safety Cameras in under 30 Seconds. \ud83e\udee5",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Security",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=uB0gr7Fh6lY",
+      "channel": "Benn Jordan",
+      "runtime_min": 43.8,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 188,
+      "date": "2026-07-01",
+      "title": "m4 mac mini power draw is negligible",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Frontend"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=0Nc5sxlwZWY",
+      "channel": "Alex Ziskind",
+      "runtime_min": 0.3,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
     },
     {
       "day": 187,
@@ -51,7 +173,51 @@
       "url": null,
       "channel": "",
       "runtime_min": null,
-      "videos": [],
+      "videos": [
+        {
+          "title": "Claude\u2019s New Trading Agent Is Insane! (Tutorial)",
+          "channel": "Samin Yasar",
+          "url": "https://www.youtube.com/watch?v=x2pY9kI0zBY",
+          "runtime_min": 27.5,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "GLM-5.2 vs Claude Opus 4.8 \u2013 Does GLM REALLY Beat Claude?",
+          "channel": "Bijan Bowen",
+          "url": "https://www.youtube.com/watch?v=zdhY9ZXn410",
+          "runtime_min": 44.3,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
+        },
+        {
+          "title": "Build a Self Improving Claude Knowledge Base",
+          "channel": "Paul J Lipsky",
+          "url": "https://www.youtube.com/watch?v=0-QDPnEIkvw",
+          "runtime_min": 14.1,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation"
+          ]
+        },
+        {
+          "title": "Turn Claude Into the Ultimate Research Team (Stanford's Method)",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=Tj3018n5MVg",
+          "runtime_min": 12.1,
+          "category": [
+            "AI/ML",
+            "Automation"
+          ]
+        }
+      ],
       "builds": [
         {
           "repo": "general-tools",
@@ -202,7 +368,43 @@
       "url": null,
       "channel": "",
       "runtime_min": null,
-      "videos": [],
+      "videos": [
+        {
+          "title": "The Agentic OS Setup That Will 10x Claude Code",
+          "channel": "Chase AI",
+          "url": "https://www.youtube.com/watch?v=HRw-vP0j8OM",
+          "runtime_min": 31.3,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Business"
+          ]
+        },
+        {
+          "title": "Claude Certified Architect (CCA-F): Study Guide to Pass First Try",
+          "channel": "Preporato | AI for Engineers",
+          "url": "https://www.youtube.com/watch?v=akzKBQVyFEI",
+          "runtime_min": 24.8,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Design"
+          ]
+        },
+        {
+          "title": "Why Is China's Free AI Beating Claude?",
+          "channel": "Stacked Podcast",
+          "url": "https://www.youtube.com/watch?v=iB-IBCywrXQ",
+          "runtime_min": 58.2,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "No-Code"
+          ]
+        }
+      ],
       "builds": [
         {
           "repo": "war-room",
@@ -267,7 +469,31 @@
       "url": null,
       "channel": "",
       "runtime_min": null,
-      "videos": [],
+      "videos": [
+        {
+          "title": "Fork Claude Code conversations \u2014 parallel multitasking trick",
+          "channel": "datons",
+          "url": "https://www.youtube.com/watch?v=AkvcIaHP4Uw",
+          "runtime_min": 1.3,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "I Made an AI Character Sit With Me and Have a Conversation (Full Tutorial)",
+          "channel": "Prompt Mastery",
+          "url": "https://www.youtube.com/watch?v=KLswOquhsM8",
+          "runtime_min": 18.2,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Frontend",
+            "Design"
+          ]
+        }
+      ],
       "builds": [
         {
           "repo": "mighty/agents",
@@ -326,7 +552,60 @@
       "url": null,
       "channel": "",
       "runtime_min": null,
-      "videos": [],
+      "videos": [
+        {
+          "title": "Building a REAL feature with Claude Code: every step explained",
+          "channel": "Matt Pocock",
+          "url": "https://www.youtube.com/watch?v=hX7yG1KVYhI",
+          "runtime_min": 44.3,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Claude Code Crash Course For Developers",
+          "channel": "Traversy Media",
+          "url": "https://www.youtube.com/watch?v=C2GpeepcmYs",
+          "runtime_min": 63.4,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "/handoff is my new favourite skill",
+          "channel": "Matt Pocock",
+          "url": "https://www.youtube.com/watch?v=dtAJ2dOd3ko",
+          "runtime_min": 12.4,
+          "category": [
+            "Agents",
+            "Automation",
+            "Design"
+          ]
+        },
+        {
+          "title": "\"Learn AI\u201d Is Bad Advice. Learn This Instead",
+          "channel": "Greg Isenberg",
+          "url": "https://www.youtube.com/watch?v=jJIOA4GroBw",
+          "runtime_min": 29.9,
+          "category": [
+            "Agents",
+            "Design"
+          ]
+        },
+        {
+          "title": "LIVE: Watch me build a brand-new project from scratch",
+          "channel": "Matt Pocock",
+          "url": "https://www.youtube.com/watch?v=K-mA3MZ_EzU",
+          "runtime_min": 107.5,
+          "category": [
+            "Design"
+          ]
+        }
+      ],
       "builds": [
         {
           "repo": "mighty/agents",
@@ -383,7 +662,33 @@
       "url": null,
       "channel": "",
       "runtime_min": null,
-      "videos": [],
+      "videos": [
+        {
+          "title": "I asked Claude Code to make me as much money as possible",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=iTY8Q449YNQ",
+          "runtime_min": 28.2,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "Claude Design just got MASSIVE Upgrades (2.0 Update)",
+          "channel": "Jay E | RoboNuggets",
+          "url": "https://www.youtube.com/watch?v=JYZ7i1NFiyM",
+          "runtime_min": 12.8,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "Design"
+          ]
+        }
+      ],
       "builds": [
         {
           "repo": "forge",
@@ -426,6 +731,161 @@
       "takeaway": "**Taught Jimbo to recover from its own failures:** I added a causation edge to the dispatch graph and a failure-recovery directive, so when a step breaks the agent can trace what caused it instead of stalling out. While I was in there I dropped some dead weight, pulling the quo-pp-mcp registration and layer_cache junk that had been cluttering the registries.\n\nThe rest of the day was guardrails and housekeeping. I locked down Forge's warden redaction engine with a .secretscanignore and allowlisted the static KIE model catalog in gitleaks, so the scanner stops flagging files that were never secrets. The music box library also jumped from 491 to 586 tracks once I repointed it at the right Drive folder."
     },
     {
+      "day": 181,
+      "date": "2026-06-24",
+      "title": "\u0628\u062f\u0623\u062a \u0642\u0646\u0627\u0629 \"\u0639\u0627\u0626\u0644\u0629 \u0623\u0628\u0648 \u0645\u062d\u0645\u062f \u0648\u0641\u0637\u0648\u0645 \u0645\u0646 \u063a\u0632\u0629 \" \u0628\u062b\u064b\u0627 \u0645\u0628\u0627\u0634\u0631\u064b\u0627",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=L5NxXBMmW7A",
+      "channel": "\u0639\u0627\u0626\u0644\u0629 \u0623\u0628\u0648 \u0645\u062d\u0645\u062f \u0648\u0641\u0637\u0648\u0645 \u0645\u0646 \u063a\u0632\u0629",
+      "runtime_min": 145.3,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 181,
+      "date": "2026-06-24",
+      "title": "The Pi Coding Agent: The ONLY REAL Claude Code COMPETITOR",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Business",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=f8cfH5XX-XU",
+      "channel": "IndyDevDan",
+      "runtime_min": 51.6,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 181,
+      "date": "2026-06-24",
+      "title": "7 Gimbal Tricks for Instant Cinematic Shots",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=Xk-3A9lMcsU",
+      "channel": "Learn Online Video",
+      "runtime_min": 10.8,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 181,
+      "date": "2026-06-24",
+      "title": "One on One with Mark Forss of Vintage Party Cam",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=LNXob5HI5JA",
+      "channel": "Rex's Photo Booth Reviews and Tutorials",
+      "runtime_min": 15.4,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 181,
+      "date": "2026-06-24",
+      "title": "New Notion Update: External Agents In Notion",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Business",
+        "No-Code"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=ws3H6Yoabx0",
+      "channel": "Matthias Frank",
+      "runtime_min": 24.4,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 181,
+      "date": "2026-06-24",
+      "title": "Seedance 2.0 4k Officially Public! Full Prompting Tutorial (Claude + Higgsfield)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Business",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=NkFIeQhhgXk",
+      "channel": "Samin Yasar",
+      "runtime_min": 28.1,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 181,
+      "date": "2026-06-24",
+      "title": "Google Just Dropped a Masterclass on Agentic Engineering (It's SO Good)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Automation",
+        "Business",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=zbmuiaPuiNM",
+      "channel": "Cole Medin",
+      "runtime_min": 21.9,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
       "day": 180,
       "date": "2026-06-23",
       "title": "Day 180 - Leaddesk Backend Live, todo-cli Hardened",
@@ -446,7 +906,45 @@
       "url": null,
       "channel": "",
       "runtime_min": null,
-      "videos": [],
+      "videos": [
+        {
+          "title": "Pi Coding Agent (Free Course)",
+          "channel": "Owain Lewis",
+          "url": "https://www.youtube.com/watch?v=BZ0w0JhPQ9o",
+          "runtime_min": 28,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Frontend",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "I Used Claude to Optimise My Site for AI Search & SEO!",
+          "channel": "Systems Made Better",
+          "url": "https://www.youtube.com/watch?v=kpvA-bDD180",
+          "runtime_min": 28.4,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Business",
+            "No-Code",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "How I\u2019d Start a 1-Person Local SEO Business With Claude AI in 30 Days",
+          "channel": "Nico | AI Ranking",
+          "url": "https://www.youtube.com/watch?v=OgPrkwqPsko",
+          "runtime_min": 53.4,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business"
+          ]
+        }
+      ],
       "builds": [
         {
           "repo": "general-tools",
@@ -543,7 +1041,261 @@
       "url": null,
       "channel": "",
       "runtime_min": null,
-      "videos": [],
+      "videos": [
+        {
+          "title": "Agent Loops: Complete Guide (Claude Code + Codex)",
+          "channel": "Owain Lewis",
+          "url": "https://www.youtube.com/watch?v=RVEaDvh6f5A",
+          "runtime_min": 20.7,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Claude Code Agentic OS\u2026 It Remembers Everything",
+          "channel": "Simon Scrapes",
+          "url": "https://www.youtube.com/watch?v=F4At4St1iH8",
+          "runtime_min": 15.3,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Design"
+          ]
+        },
+        {
+          "title": "Claude Code's NEW Open Source Repo Builds Effective AI Agents in MINUTES!",
+          "channel": "Duncan Rogoff | Learn Claude Code",
+          "url": "https://www.youtube.com/watch?v=D6Cfjy83MQA",
+          "runtime_min": 15.1,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Design",
+            "DevOps",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "How to Build Effective Claude Code Agents in 2026",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=RzLV8sfFdMM",
+          "runtime_min": 68.2,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Security"
+          ]
+        },
+        {
+          "title": "Matt Pocock\u2019s Agentic Engineering Workflow (just copy him)",
+          "channel": "David Ondrej",
+          "url": "https://www.youtube.com/watch?v=nQwJVHCtDDY",
+          "runtime_min": 62.4,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Claude Code WordPress SEO: Automate Everything ($500K+ Earned)",
+          "channel": "Jono Catliff",
+          "url": "https://www.youtube.com/watch?v=LabRBZp2ODk",
+          "runtime_min": 68.4,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "8 Insane Claude Code Use Cases (code anything!)",
+          "channel": "9x",
+          "url": "https://www.youtube.com/watch?v=akIHv-n--io",
+          "runtime_min": 31.6,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "8 Insane Claude Cowork Use Cases! (automate anything)",
+          "channel": "9x",
+          "url": "https://www.youtube.com/watch?v=gp3d7RAgFME",
+          "runtime_min": 28.1,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "Design"
+          ]
+        },
+        {
+          "title": "Claude Code SEO: How I Got 50,000 Clicks Per Month (Steal This)",
+          "channel": "Jono Catliff",
+          "url": "https://www.youtube.com/watch?v=4IyJm1i__ag",
+          "runtime_min": 68.2,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "Stop Prompting Claude. Start Loop Engineering.",
+          "channel": "Austin Marchese",
+          "url": "https://www.youtube.com/watch?v=YAS4ojuhbW4",
+          "runtime_min": 12.2,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "Claude Code Artifacts Just Dropped (changes everything)",
+          "channel": "9x",
+          "url": "https://www.youtube.com/watch?v=Hz8z1i97s-U",
+          "runtime_min": 10.2,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
+        },
+        {
+          "title": "Claude Routines Just Dropped, And It's Perfect",
+          "channel": "Nick Saraev",
+          "url": "https://www.youtube.com/watch?v=j3aXJNu9804",
+          "runtime_min": 18.1,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Security",
+            "Business"
+          ]
+        },
+        {
+          "title": "Google\u2019s new AI agent stack from I/O 2026",
+          "channel": "Google Cloud Tech",
+          "url": "https://www.youtube.com/watch?v=pg6TOXyiIuo",
+          "runtime_min": 17,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "DevOps"
+          ]
+        },
+        {
+          "title": "So You Learned Claude, Now What?",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=-zL_trhnQaI",
+          "runtime_min": 16.9,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "Claude is your insider threat now -  Dan Tentler - Security Fest 2026",
+          "channel": "Security Fest",
+          "url": "https://www.youtube.com/watch?v=yvJYw2gR0cU",
+          "runtime_min": 52,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Security",
+            "Business"
+          ]
+        },
+        {
+          "title": "Using Claude Cowork SEO to Rank #1 in 24 hours ($10k/mo)",
+          "channel": "Sarvesh Shrivastava",
+          "url": "https://www.youtube.com/watch?v=0V961ciuuko",
+          "runtime_min": 10.9,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "8 Insane Gemini 3 Use Cases! (do anything)",
+          "channel": "9x",
+          "url": "https://www.youtube.com/watch?v=65C5VSSqWZk",
+          "runtime_min": 25.4,
+          "category": [
+            "AI/ML",
+            "Business",
+            "Design"
+          ]
+        },
+        {
+          "title": "CLAUDE COWORK FULL COURSE 3 HOURS For Beginners (2026)",
+          "channel": "9x",
+          "url": "https://www.youtube.com/watch?v=0UFSZ_5OSIk",
+          "runtime_min": 199.8,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "wtf is Loop Engineer & how to setup for real",
+          "channel": "AI Jason",
+          "url": "https://www.youtube.com/watch?v=W6x-hb44C0c",
+          "runtime_min": 20.1,
+          "category": [
+            "Agents",
+            "Design",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "100 Years of Artificial Intelligence Explained",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=NHFbAg2b54U",
+          "runtime_min": 17.4,
+          "category": [
+            "AI/ML",
+            "Automation"
+          ]
+        },
+        {
+          "title": "I Finally Found the AI Coding Tool That Fits Me! Orca",
+          "channel": "Abdullah U\u011fra\u015fkan",
+          "url": "https://www.youtube.com/watch?v=ZgB4ZviRQUg",
+          "runtime_min": 15.8,
+          "category": [
+            "Agents"
+          ]
+        },
+        {
+          "title": "I Tried 325 AI Tools, These Are The Best.",
+          "channel": "9x",
+          "url": "https://www.youtube.com/watch?v=huariiK4_us",
+          "runtime_min": 13.8,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "No-Code"
+          ]
+        }
+      ],
       "builds": [
         {
           "repo": "mighty/agents",
