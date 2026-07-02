@@ -48,6 +48,12 @@ export function Footer() {
             </a>
           ))}
         </nav>
+        <a
+          href="/photo-booth-owners"
+          className="font-mono text-xs uppercase tracking-[0.2em] text-white/45 underline decoration-white/20 underline-offset-4 transition-colors hover:text-warm hover:decoration-warm/50"
+        >
+          For Photo Booth Operators →
+        </a>
         <span className="font-mono tracking-wide">
           Copyright {new Date().getFullYear()} MIGHTY Enterprises
         </span>

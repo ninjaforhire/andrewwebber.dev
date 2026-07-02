@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { ProductizedOffers } from "@/components/sections/ProductizedOffers";
-import { ConsultingSection } from "@/components/sections/ConsultingSection";
+import { OffersSection } from "@/components/sections/OffersSection";
 import { ConsultationForm } from "@/components/forms/ConsultationForm";
+import { OFFERS, CALL_TIERS } from "@/lib/offers";
 
 export const metadata: Metadata = {
   title: "Engagements",
@@ -27,12 +27,28 @@ export default function EngagementsPage() {
 
       {/* PRODUCTIZED OFFERS — fixed-scope, Stripe checkout */}
       <div className="mt-20 md:mt-32">
-        <ProductizedOffers />
+        <OffersSection
+          id="offers"
+          eyebrow="Productized · fixed scope, fixed price"
+          headingTop="Buy an outcome,"
+          headingAccent="not an hour."
+          accent="data"
+          sub="Three ways to put the stack to work — a fast audit, a built-to-order agent, or an AI receptionist that never sleeps. Clear price, clear deliverable."
+          offers={OFFERS}
+        />
       </div>
 
-      {/* CONSULTING TIERS — book a working session */}
+      {/* CALL TIERS — book a working session */}
       <div className="mt-20 md:mt-40 pt-16 md:pt-32 border-t border-white/5">
-        <ConsultingSection />
+        <OffersSection
+          id="sessions"
+          eyebrow="Or book a working session"
+          headingTop="Pick my brain."
+          headingAccent="Or build with me."
+          accent="warm"
+          sub="Prefer to talk it through first? Book time directly. From a free intro to a live build on your systems."
+          offers={CALL_TIERS}
+        />
       </div>
 
       {/* BOOK A CALL */}

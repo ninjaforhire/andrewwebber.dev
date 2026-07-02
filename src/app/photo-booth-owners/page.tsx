@@ -6,6 +6,8 @@ import { ServicesGrid } from "@/components/photo-booth-owners/ServicesGrid";
 import { CalcomEmbed } from "@/components/photo-booth-owners/CalcomEmbed";
 import { GuideCard } from "@/components/photo-booth-owners/GuideCard";
 import { InquiryForm } from "@/components/photo-booth-owners/InquiryForm";
+import { OffersSection } from "@/components/sections/OffersSection";
+import { BOOTH_OFFERS } from "@/lib/offers";
 import toolsData from "@/data/mighty-tools.json";
 import overridesData from "@/data/tools-overrides.json";
 import guidesData from "@/data/guides.json";
@@ -121,19 +123,19 @@ export default function PhotoBoothOwnersPage() {
 
       {/* CONSULT + GUIDES */}
       <section id="consult" className="page-x pb-20 md:pb-40 border-t border-white/5 pt-16 md:pt-32">
-        <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-terminal mb-6">
-          § 04 — Consult + Guides
-        </div>
-        <h2 className="crop font-extrabold text-[clamp(48px,8vw,120px)] leading-[0.9] mb-6">
-          Pick my brain.
-          <br />
-          <span className="text-terminal">Or read the playbook.</span>
-        </h2>
-        <p className="text-xl leading-relaxed text-muted-foreground max-w-3xl mb-12 md:mb-16">
-          10-minute discovery calls and 1-hour AMAs. PDF guides for operators who want to move at
-          their own pace.
-        </p>
+        <OffersSection
+          id="booth-consult"
+          eyebrow="§ 04 — Consultation for operators"
+          headingTop="Put the stack"
+          headingAccent="in your shop."
+          accent="terminal"
+          sub="Booth-specific help at a fixed price. Whatever platform you run, whatever you wish were automated — I've probably already built it for MIGHTY."
+          offers={BOOTH_OFFERS}
+        />
 
+        <h3 className="font-heading text-2xl font-bold mt-20 md:mt-32 mb-8">
+          Rather talk first?
+        </h3>
         <div className="grid gap-6 md:grid-cols-2 max-w-4xl mb-12 md:mb-16">
           <CalcomEmbed
             label="10-min Discovery Call"

@@ -55,13 +55,23 @@ export function OfferCard({ offer }: { offer: Offer }) {
           >
             {offer.ctaLabel} →
           </a>
+        ) : offer.bookingUrl ? (
+          // BOOK card — routes to Cal.com / contact form, no payment up front
+          <a
+            href={offer.bookingUrl}
+            className={cn(
+              "block rounded-md py-3 text-center font-mono text-xs uppercase tracking-wider transition-opacity hover:opacity-80",
+              a.bg,
+              a.text
+            )}
+          >
+            {offer.ctaLabel} →
+          </a>
         ) : (
+          // BUY card with no Stripe link yet — graceful fallback
           <a
             href={offer.bookCallUrl}
-            className={cn(
-              "block rounded-md border py-3 text-center font-mono text-xs uppercase tracking-wider transition-colors",
-              "border-border hover:border-white/30"
-            )}
+            className="block rounded-md border border-border py-3 text-center font-mono text-xs uppercase tracking-wider transition-colors hover:border-white/30"
           >
             Request invoice →
           </a>
