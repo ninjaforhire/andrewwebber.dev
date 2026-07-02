@@ -32,7 +32,7 @@ export function OffersSection({
     offers.length === 4 ? "md:grid-cols-2 lg:grid-cols-4" : "md:grid-cols-3";
 
   return (
-    <section aria-labelledby={headingId}>
+    <section id={id} aria-labelledby={headingId} className="scroll-mt-24">
       <div className={`font-mono text-xs font-medium tracking-[0.4em] uppercase ${ACCENT_TEXT[accent]} mb-6`}>
         {eyebrow}
       </div>
