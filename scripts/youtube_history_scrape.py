@@ -26,7 +26,11 @@ from playwright.async_api import async_playwright
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 log = logging.getLogger(__name__)
 
-PROFILE_DIR = Path("/tmp/yt-backfill/playwright-profile")
+# Persistent auth profile. MUST live outside /tmp — macOS clears /tmp on reboot,
+# which wipes the YouTube login cookies and silently breaks the nightly scrape
+# (0 videos → empty journey entries). Home-dir cache survives reboots. Keep this
+# OUT of the repo: it holds session cookies (secrets).
+PROFILE_DIR = Path.home() / ".local" / "share" / "awd-journey" / "yt-profile"
 DATA_DIR = Path(__file__).resolve().parent / "data"
 # Rolling output: nightly always refreshes the same file with a moving window.
 OUTPUT_DEFAULT = DATA_DIR / "youtube-recent.json"
