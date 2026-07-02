@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ProductizedOffers } from "@/components/sections/ProductizedOffers";
 import { ConsultingSection } from "@/components/sections/ConsultingSection";
 import { ConsultationForm } from "@/components/forms/ConsultationForm";
 
@@ -24,8 +25,13 @@ export default function EngagementsPage() {
         A handful of slots each quarter for businesses ready to level up. AI implementation, custom dashboards, automation that compounds.
       </p>
 
-      {/* OFFER */}
-      <div className="mt-16">
+      {/* PRODUCTIZED OFFERS — fixed-scope, Stripe checkout */}
+      <div className="mt-20 md:mt-32">
+        <ProductizedOffers />
+      </div>
+
+      {/* CONSULTING TIERS — book a working session */}
+      <div className="mt-20 md:mt-40 pt-16 md:pt-32 border-t border-white/5">
         <ConsultingSection />
       </div>
 
