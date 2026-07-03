@@ -252,6 +252,16 @@
     "location": "mighty/skills/legal/w9-creator"
   },
   {
+    "slug": "agent-architecture-audit",
+    "name": "agent-architecture-audit",
+    "description": "Severity-ranked, code-first diagnostic of a SINGLE agent's 12-layer runtime stack \u2014 system prompt, session history, long-term memory, distillation, recall, tool selection/execution/interpretation, answer shaping, platform rendering, hidden repair loops, persistence \u2014 plus 5 named failure patterns, each with ready-to-run rg anti-pattern queries",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/admin/agent-architecture-audit",
+    "domain": "Admin"
+  },
+  {
     "slug": "agent-audit",
     "name": "agent-audit",
     "description": "Weekly governance audit",
@@ -404,7 +414,7 @@
   {
     "slug": "cockpit",
     "name": "cockpit",
-    "description": "Alias entry point for the inbox-agent Cockpit mode",
+    "description": "[RETIRED 2026-06-23 \u2014 superseded by /leaddesk] Former alias entry point for the inbox-agent Cockpit mode",
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
@@ -631,6 +641,16 @@
     "domain": "Ops"
   },
   {
+    "slug": "gan-build-loop",
+    "name": "gan-build-loop",
+    "description": "Bounded Generator<->Evaluator design loop that drives a MIGHTY design asset past the AI-slop line",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/design-center/gan-build-loop",
+    "domain": "Design"
+  },
+  {
     "slug": "gbp-manager",
     "name": "gbp-manager",
     "description": "Google Business Profile post manager \u2014 writes GBP-optimized content, publishes via API, tracks in Notion CONTENT DATABASE, verifies with screenshot proof",
@@ -758,6 +778,16 @@
     "source": "agent",
     "location": "mighty/agents/tools/lead-score-agent",
     "domain": "Ops"
+  },
+  {
+    "slug": "leaddesk",
+    "name": "leaddesk",
+    "description": "Alias entry point for the inbox-agent Leaddesk mode",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/admin/leaddesk",
+    "domain": "Admin"
   },
   {
     "slug": "loom-library-sync",
@@ -1199,6 +1229,16 @@
     "domain": "Ops"
   },
   {
+    "slug": "property-return",
+    "name": "Property Return",
+    "description": "Standalone app under mighty/apps.",
+    "category": "photo-booth",
+    "subcategory": "app",
+    "source": "app",
+    "location": "mighty/apps/property-return",
+    "domain": "Apps"
+  },
+  {
     "slug": "queue-add",
     "name": "queue-add",
     "description": "Add a book, TV show, movie, podcast, YouTube video, or any media recommendation to the CONTENT QUEUE Notion DB",
@@ -1267,6 +1307,16 @@
     "source": "agent",
     "location": "mighty/agents/tools/research-agent",
     "domain": "Ops"
+  },
+  {
+    "slug": "rule-comply",
+    "name": "rule-comply",
+    "description": "Measure whether the agent actually OBEYS a MIGHTY rule/skill/agent .md \u2014 not whether it claims to",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/admin/rule-comply",
+    "domain": "Admin"
   },
   {
     "slug": "sales-lesson",
