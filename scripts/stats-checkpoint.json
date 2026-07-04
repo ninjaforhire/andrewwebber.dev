@@ -1,34 +1,34 @@
 {
   "methodology": "github_clone_wc_l",
-  "countedAt": "2026-07-03T06:12:58.355611+00:00",
-  "github_loc": 2796338,
-  "github_commits": 4153,
+  "countedAt": "2026-07-04T05:36:09.479281+00:00",
+  "github_loc": 2816135,
+  "github_commits": 4246,
   "live_agents_registry": 41,
-  "repos_count": 43,
-  "agents_live": 43,
-  "ratchet_loc": 2796338,
-  "ratchet_commits": 4153,
-  "ratchet_agents": 43,
-  "claude_hours": 1872,
-  "claude_tokens": 25735509293,
-  "claude_sessions": 496,
-  "ratchet_claude_hours": 1872,
-  "ratchet_claude_tokens": 25735509293,
+  "repos_count": 46,
+  "agents_live": 46,
+  "ratchet_loc": 2816135,
+  "ratchet_commits": 4246,
+  "ratchet_agents": 46,
+  "claude_hours": 1895,
+  "claude_tokens": 25985519791,
+  "claude_sessions": 501,
+  "ratchet_claude_hours": 1895,
+  "ratchet_claude_tokens": 25985519791,
   "skills": 2,
   "ratchet_skills": 390,
-  "ratchet_repos": 43,
+  "ratchet_repos": 46,
   "tools": 185,
   "ratchet_tools": 185,
   "per_repo": {
-    "ninjaforhire/Agents": {
-      "loc": 454960,
-      "files": 2269,
-      "commits": 1293
+    "ninjaforhire/ai-fashion-sketch": {
+      "loc": 613,
+      "files": 15,
+      "commits": 8
     },
     "ninjaforhire/andrewwebber.dev": {
-      "loc": 32803,
+      "loc": 32863,
       "files": 139,
-      "commits": 158
+      "commits": 160
     },
     "ninjaforhire/Biometric-Lab": {
       "loc": 11,
@@ -38,7 +38,12 @@
     "ninjaforhire/BoothBook": {
       "loc": 16570,
       "files": 79,
-      "commits": 7
+      "commits": 9
+    },
+    "ninjaforhire/boothlogic": {
+      "loc": 263,
+      "files": 2,
+      "commits": 1
     },
     "ninjaforhire/claude-config": {
       "loc": 47266,
@@ -70,20 +75,20 @@
       "files": 4,
       "commits": 1
     },
+    "ninjaforhire/echo": {
+      "loc": 586,
+      "files": 14,
+      "commits": 11
+    },
     "ninjaforhire/everything-claude-code": {
       "loc": 345130,
       "files": 1823,
       "commits": 1
     },
     "ninjaforhire/forge": {
-      "loc": 137616,
-      "files": 692,
-      "commits": 405
-    },
-    "ninjaforhire/General-Tools": {
-      "loc": 63862,
-      "files": 223,
-      "commits": 162
+      "loc": 143708,
+      "files": 711,
+      "commits": 439
     },
     "ninjaforhire/gstack": {
       "loc": 129692,
@@ -106,9 +111,9 @@
       "commits": 8
     },
     "ninjaforhire/mighty": {
-      "loc": 125892,
+      "loc": 125944,
       "files": 680,
-      "commits": 456
+      "commits": 466
     },
     "ninjaforhire/MIGHTY-Apps": {
       "loc": 743,
@@ -131,9 +136,9 @@
       "commits": 28
     },
     "ninjaforhire/mighty-music-box": {
-      "loc": 47493,
+      "loc": 57628,
       "files": 67,
-      "commits": 95
+      "commits": 96
     },
     "ninjaforhire/mighty-playbook": {
       "loc": 3169,
@@ -163,7 +168,7 @@
     "ninjaforhire/mpb-site": {
       "loc": 13992,
       "files": 151,
-      "commits": 65
+      "commits": 66
     },
     "ninjaforhire/Notion-Tools": {
       "loc": 1107,
@@ -221,9 +226,9 @@
       "commits": 79
     },
     "ninjaforhire/workspace-config": {
-      "loc": 334336,
-      "files": 469,
-      "commits": 499
+      "loc": 335738,
+      "files": 481,
+      "commits": 517
     },
     "ninjaforhire/wraith": {
       "loc": 141280,
@@ -234,6 +239,16 @@
       "loc": 103906,
       "files": 463,
       "commits": 206
+    },
+    "ninjaforhire/mighty-agents": {
+      "loc": 455554,
+      "files": 2270,
+      "commits": 1298
+    },
+    "ninjaforhire/general-tools": {
+      "loc": 63862,
+      "files": 223,
+      "commits": 162
     }
   }
 }
