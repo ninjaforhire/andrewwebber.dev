@@ -1,8 +1,172 @@
 {
-  "lastUpdated": "2026-07-03T01:03:29",
-  "totalDays": 254,
+  "lastUpdated": "2026-07-04T00:29:34",
+  "totalDays": 261,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 191,
+      "date": "2026-07-04",
+      "title": "Claude Design 2.0 Just Became Unstoppable (Here's Why)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Agents",
+        "Business",
+        "Design",
+        "DevOps"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=wG4UN0gpB6E",
+      "channel": "Zinho Automates",
+      "runtime_min": 12.7,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 191,
+      "date": "2026-07-04",
+      "title": "AI Agents are the new SaaS",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Agents",
+        "Automation",
+        "Business"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=83fWzQSWB10",
+      "channel": "Greg Isenberg",
+      "runtime_min": 26.1,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 191,
+      "date": "2026-07-04",
+      "title": "Fable 5 + Karpathy\u2019s LLM Wiki is Basically Cheating",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Automation",
+        "Business",
+        "Open Source"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=hQvwMj7IJe4",
+      "channel": "Nate Herk | AI Automation",
+      "runtime_min": 14.6,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 191,
+      "date": "2026-07-04",
+      "title": "This Etsy Shop Made $3.8 Million - I Rebuilt It With AI in 20 Minutes",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Automation",
+        "Business",
+        "Design"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=BDDGq3_murA",
+      "channel": "Print On Demand - RJ Martinez",
+      "runtime_min": 27.8,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 191,
+      "date": "2026-07-04",
+      "title": "Claude Fable 5 Just Changed Web Design Forever!",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Design"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=_JF_s-ZRTyY",
+      "channel": "Viktor Oddy",
+      "runtime_min": 16.8,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 191,
+      "date": "2026-07-04",
+      "title": "Midjourney Just Revealed Its Secret Hardware",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=iO7S0KlSf5o",
+      "channel": "Future Tech Pilot",
+      "runtime_min": 4.7,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 190,
+      "date": "2026-07-03",
+      "title": "Day 4: Building a Recursively Self-Improving Company ($4.8K ARR)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=XfiXYsYWkZ4",
+      "channel": "Neil - Accelerate",
+      "runtime_min": 188.1,
+      "videos": [
+        {
+          "title": "Notion Dashboards 101 Course (2026 Masterclass)",
+          "channel": "Matthias Frank",
+          "url": "https://www.youtube.com/watch?v=cEjlwOskFdU",
+          "runtime_min": 76.7,
+          "category": [
+            "Business",
+            "No-Code"
+          ]
+        }
+      ],
+      "builds": [],
+      "takeaway": ""
+    },
     {
       "day": 189,
       "date": "2026-07-02",

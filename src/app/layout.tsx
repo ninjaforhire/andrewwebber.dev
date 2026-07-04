@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     template: "%s | andrewwebber.dev",
   },
   description:
-    "Systems architect, agentic engineer, and cybersecurity expert. 43 autonomous agents, 390 skills, 2M+ lines of code in 2026. Fort Worth, TX.",
+    "Systems architect, agentic engineer, and cybersecurity expert. 46 autonomous agents, 390 skills, 2M+ lines of code in 2026. Fort Worth, TX.",
   metadataBase: new URL("https://andrewwebber.dev"),
   openGraph: {
     title: "Andrew Webber — Systems Architect · Agentic Engineer · Cybersecurity Expert",
     description:
-      "Systems architect, agentic engineer, and cybersecurity expert. 43 autonomous agents, 390 skills, 2M+ lines of code in 2026. Fort Worth, TX.",
+      "Systems architect, agentic engineer, and cybersecurity expert. 46 autonomous agents, 390 skills, 2M+ lines of code in 2026. Fort Worth, TX.",
     url: "https://andrewwebber.dev",
     siteName: "andrewwebber.dev",
     locale: "en_US",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Andrew Webber — Systems Architect · Agentic Engineer · Cybersecurity Expert",
     description:
-      "Systems architect, agentic engineer, and cybersecurity expert. 43 autonomous agents, 390 skills, 2M+ lines of code in 2026. Fort Worth, TX.",
+      "Systems architect, agentic engineer, and cybersecurity expert. 46 autonomous agents, 390 skills, 2M+ lines of code in 2026. Fort Worth, TX.",
   },
   robots: {
     index: true,
