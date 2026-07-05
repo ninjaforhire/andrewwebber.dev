@@ -1,140 +1,329 @@
 {
-  "lastUpdated": "2026-07-04T00:29:34",
-  "totalDays": 261,
+  "lastUpdated": "2026-07-05T00:19:38",
+  "totalDays": 256,
   "currentEra": "Full Stack AI",
   "entries": [
     {
       "day": 191,
       "date": "2026-07-04",
-      "title": "Claude Design 2.0 Just Became Unstoppable (Here's Why)",
+      "title": "Day 191 - MIGHTY OS Cadence Runners Go Live",
       "era": "Full Stack AI",
       "type": [
-        "Video"
+        "Build",
+        "Fix"
       ],
-      "source": "YouTube",
+      "source": "Claude Code",
       "category": [
-        "AI/ML",
+        "Automation",
         "Agents",
-        "Business",
-        "Design",
-        "DevOps"
+        "DevOps",
+        "Infra"
       ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=wG4UN0gpB6E",
-      "channel": "Zinho Automates",
-      "runtime_min": 12.7,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 191,
-      "date": "2026-07-04",
-      "title": "AI Agents are the new SaaS",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "How I Build Professional Local Business Websites in 2026 (SEO optimised - Claude code)",
+          "channel": "Nico | AI Ranking",
+          "url": "https://www.youtube.com/watch?v=2Rj69MhAyds",
+          "runtime_min": 44,
+          "category": [
+            "AI/ML",
+            "Business",
+            "Design",
+            "DevOps"
+          ]
+        },
+        {
+          "title": "Building Beautiful Websites with Claude Code Is Too Easy",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=86HM0RUWhCk",
+          "runtime_min": 27.9,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Frontend",
+            "Design"
+          ]
+        },
+        {
+          "title": "Build A Claude Knowledge Base That Self-Improves!",
+          "channel": "Systems Made Better",
+          "url": "https://www.youtube.com/watch?v=ib74sLgjIBM",
+          "runtime_min": 36.2,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Business",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "AI Agents are the new SaaS",
+          "channel": "Greg Isenberg",
+          "url": "https://www.youtube.com/watch?v=83fWzQSWB10",
+          "runtime_min": 26.1,
+          "category": [
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "The 5-Tool Fix for Claude Code's Worst Habits",
+          "channel": "Sean Kochel",
+          "url": "https://www.youtube.com/watch?v=hqcZZuvBUSY",
+          "runtime_min": 18.5,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Frontend",
+            "Business",
+            "DevOps"
+          ]
+        },
+        {
+          "title": "Graphify + Obsidian + Claude Code = CHEAT CODE",
+          "channel": "Chase AI",
+          "url": "https://www.youtube.com/watch?v=mWLDn49_8HA",
+          "runtime_min": 16.6,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
+        },
+        {
+          "title": "Claude Code Web Design: 10 Years Covered In 66 Minutes",
+          "channel": "Jono Catliff",
+          "url": "https://www.youtube.com/watch?v=2Gda_ZvV1V4",
+          "runtime_min": 67,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Frontend",
+            "Design",
+            "DevOps"
+          ]
+        },
+        {
+          "title": "I Built an AI Operating System with Claude Code AND Notion",
+          "channel": "Daniel Canosa",
+          "url": "https://www.youtube.com/watch?v=edd9hz5k0E0",
+          "runtime_min": 10.8,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "The Claude + Notion System That Runs My Business",
+          "channel": "Systems Made Better",
+          "url": "https://www.youtube.com/watch?v=k06CtnONgWE",
+          "runtime_min": 37.1,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Business",
+            "Design",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "The Claude Systems That Work While I Sleep",
+          "channel": "Systems Made Better",
+          "url": "https://www.youtube.com/watch?v=sHdI9wULytQ",
+          "runtime_min": 27.1,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "Design"
+          ]
+        },
+        {
+          "title": "Claude Fable 5 Just Changed Web Design Forever!",
+          "channel": "Viktor Oddy",
+          "url": "https://www.youtube.com/watch?v=_JF_s-ZRTyY",
+          "runtime_min": 16.8,
+          "category": [
+            "AI/ML",
+            "Design"
+          ]
+        },
+        {
+          "title": "Claude Design 2.0 Just Became Unstoppable (Here's Why)",
+          "channel": "Zinho Automates",
+          "url": "https://www.youtube.com/watch?v=wG4UN0gpB6E",
+          "runtime_min": 12.7,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Business",
+            "Design",
+            "DevOps"
+          ]
+        },
+        {
+          "title": "Turn Books Into AI Business Advisors (Full Notion Demo)",
+          "channel": "Systems Made Better",
+          "url": "https://www.youtube.com/watch?v=OAgU6sOmih0",
+          "runtime_min": 38.9,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Business",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "The Ultimate VS Code Setup for Data & AI Projects",
+          "channel": "Dave Ebbelaar",
+          "url": "https://www.youtube.com/watch?v=mpk4Q5feWaw",
+          "runtime_min": 32,
+          "category": [
+            "AI/ML",
+            "Business",
+            "Design",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "This Etsy Shop Made $3.8 Million - I Rebuilt It With AI in 20 Minutes",
+          "channel": "Print On Demand - RJ Martinez",
+          "url": "https://www.youtube.com/watch?v=BDDGq3_murA",
+          "runtime_min": 27.8,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business",
+            "Design"
+          ]
+        },
+        {
+          "title": "Fable 5 Disappears In 5 Days \u2014 Do These 3 Things First",
+          "channel": "Sean Kochel",
+          "url": "https://www.youtube.com/watch?v=1Ynhg4673P4",
+          "runtime_min": 23.9,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
+        },
+        {
+          "title": "Fable 5 Dies in 4 Days... Do these 5 Things RIGHT NOW",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=1DOLq8xy0qI",
+          "runtime_min": 17.4,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Security",
+            "Design",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "I spent $1,486 on Fable tokens so you don't have to",
+          "channel": "Nick Saraev",
+          "url": "https://www.youtube.com/watch?v=aif87UYCxOo",
+          "runtime_min": 15,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Security",
+            "Business",
+            "Design"
+          ]
+        },
+        {
+          "title": "VS Code for Absolute Beginners | 2026",
+          "channel": "Coder Coder",
+          "url": "https://www.youtube.com/watch?v=lWEKiak0WVU",
+          "runtime_min": 48.5,
+          "category": [
+            "Frontend",
+            "Design"
+          ]
+        },
+        {
+          "title": "Fable 5 + Karpathy\u2019s LLM Wiki is Basically Cheating",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=hQvwMj7IJe4",
+          "runtime_min": 14.6,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Learn How to Code for DevOps Engineers in 2026",
+          "channel": "Mischa van den Burg",
+          "url": "https://www.youtube.com/watch?v=cdJCzQ9A_W4",
+          "runtime_min": 9.3,
+          "category": [
+            "Automation",
+            "DevOps",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "VS Code setup as Devops Engineer",
+          "channel": "TheCloudChronicles",
+          "url": "https://www.youtube.com/watch?v=Ddtu2S78Jz0",
+          "runtime_min": 6.7,
+          "category": [
+            "Automation",
+            "DevOps"
+          ]
+        }
       ],
-      "source": "YouTube",
-      "category": [
-        "Agents",
-        "Automation",
-        "Business"
+      "builds": [
+        {
+          "repo": "mighty",
+          "commits": [
+            "fix(os): record cadence runs via POST /api/runs so reports populate",
+            "fix(os): hydrate QUO_API_KEY from Bitwarden + parse live quo-pp-cli shape",
+            "fix(os): fable final-review round \u2014 health port, jimbo origin guard, port fallbacks, fail-closed apply, form plist, calendar intervals"
+          ]
+        },
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "fix(registry): attribute _vendor gws skills to general-tools repo",
+            "fix(registry): scan gws skills from _vendor after vendor move",
+            "chore(sync): regen registries after vendor moves (dispatch only)"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "docs: worktree-lane concurrency discipline runbook",
+            "chore: ACTIVE.md workspace-cleanup row \u2014 Phase 3 complete"
+          ]
+        },
+        {
+          "repo": "general-tools",
+          "commits": [
+            "chore(submodule): pin graphify at 5289807 (preserves local commit + stashes)",
+            "chore(vendor): move 8 third-party clones to _vendor/"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "chore(submodule): pin shannon at a66625f (preserves local commit + stash)"
+          ]
+        }
       ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=83fWzQSWB10",
-      "channel": "Greg Isenberg",
-      "runtime_min": 26.1,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 191,
-      "date": "2026-07-04",
-      "title": "Fable 5 + Karpathy\u2019s LLM Wiki is Basically Cheating",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Automation",
-        "Business",
-        "Open Source"
-      ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=hQvwMj7IJe4",
-      "channel": "Nate Herk | AI Automation",
-      "runtime_min": 14.6,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 191,
-      "date": "2026-07-04",
-      "title": "This Etsy Shop Made $3.8 Million - I Rebuilt It With AI in 20 Minutes",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Automation",
-        "Business",
-        "Design"
-      ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=BDDGq3_murA",
-      "channel": "Print On Demand - RJ Martinez",
-      "runtime_min": 27.8,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 191,
-      "date": "2026-07-04",
-      "title": "Claude Fable 5 Just Changed Web Design Forever!",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Design"
-      ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=_JF_s-ZRTyY",
-      "channel": "Viktor Oddy",
-      "runtime_min": 16.8,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 191,
-      "date": "2026-07-04",
-      "title": "Midjourney Just Revealed Its Secret Hardware",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML"
-      ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=iO7S0KlSf5o",
-      "channel": "Future Tech Pilot",
-      "runtime_min": 4.7,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
+      "takeaway": "**Shipped the MIGHTY OS cadence runners:** morning-brief, inbox, form, quo, and nightly now fire on their own launchd schedules, each writing a heartbeat and recording its run through POST /api/runs so the reports actually populate. Ran a final review round with Fable and cleaned up the boring stuff that kills you in production. Executable bits on the wrapper scripts, port fallbacks after 8787 turned out to be squatted by war_room, fail-closed apply logic, and pulling QUO_API_KEY from Bitwarden instead of anywhere it shouldn't live.\n\nThe other half of the day was cleanup. Moved the third-party clones into _vendor/ and gitignored it, then fixed the registry so vendored gws skills get attributed to the right repo. Exact-pinned every dependency and wrote a worktree-lane concurrency runbook so parallel sessions stop stepping on each other."
     },
     {
       "day": 190,
@@ -635,6 +824,15 @@
       "runtime_min": null,
       "videos": [
         {
+          "title": "Make Claude Code give you answers, not essays",
+          "channel": "Matt Pocock",
+          "url": "https://www.youtube.com/watch?v=I12Mf8KBT1I",
+          "runtime_min": 1.5,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
           "title": "Fork Claude Code conversations \u2014 parallel multitasking trick",
           "channel": "datons",
           "url": "https://www.youtube.com/watch?v=AkvcIaHP4Uw",
@@ -1106,6 +1304,19 @@
             "AI/ML",
             "Automation",
             "Business"
+          ]
+        },
+        {
+          "title": "This tool saves Claude from reading your entire codebase #aitools",
+          "channel": "DIY Smart Code",
+          "url": "https://www.youtube.com/watch?v=XlDDhoD7dcA",
+          "runtime_min": 2,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Security",
+            "Open Source"
           ]
         }
       ],
