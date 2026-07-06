@@ -1,8 +1,165 @@
 {
-  "lastUpdated": "2026-07-05T00:19:38",
-  "totalDays": 256,
+  "lastUpdated": "2026-07-06T00:17:05",
+  "totalDays": 268,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 192,
+      "date": "2026-07-05",
+      "title": "Day 192 - Ranked Memory Retrieval and Fleet Secret Guards",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix",
+        "Milestone"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "AI/ML",
+        "Security",
+        "DevOps"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "Quick Guide: AI Ads",
+          "channel": "Chase AI Community",
+          "url": "https://www.skool.com/chase-ai-community/classroom/0b2422ab?md=6ce5f8a6b79c484692c8266f16a7abe8",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
+        },
+        {
+          "title": "Cinematic AI Ads with Nano Banana Pro",
+          "channel": "Chase AI Community",
+          "url": "https://www.skool.com/chase-ai-community/classroom/0b2422ab?md=5e147f37447f44c1a88ce9ab3a36ce85",
+          "runtime_min": null,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "fix(memory): explicit Phase-3 section budget + correct episodic cap test",
+            "feat(memory): token-cap episodic session block in injector",
+            "fix(memory): savepoint-scoped FTS DDL + run-preserving query sanitizer"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "docs: add jimbo-memory-v2 implementation plan (13 tasks, 5 phases)",
+            "docs: add jimbo-memory-v2 design spec (FTS5 retrieval, episodic recall, dream cycle)",
+            "chore(sync): pull Notion edits to ACTIVE.md"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "feat(os): System Pulse gets its own /pulse page",
+            "sidebar shrinks to summary",
+            "chore(submodule): bump 5 submodules \u2014 pre-commit guard rollout"
+          ]
+        },
+        {
+          "repo": "general-tools/cli-printing-press",
+          "commits": [
+            "chore(ci): allowlist OAuth field-name surfaces in secret scan",
+            "chore: add gitleaks + large-file pre-commit guard",
+            "docs(catalog): document upload domain divergence on KIE upload endpoints"
+          ]
+        },
+        {
+          "repo": "mighty-productions",
+          "commits": [
+            "chore: add gitleaks + large-file pre-commit guard"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "chore: add gitleaks + large-file pre-commit guard"
+          ]
+        },
+        {
+          "repo": "mighty/mighty-music-box",
+          "commits": [
+            "chore: add gitleaks + large-file pre-commit guard"
+          ]
+        },
+        {
+          "repo": "mighty/studio",
+          "commits": [
+            "chore: add gitleaks + large-file pre-commit guard"
+          ]
+        },
+        {
+          "repo": "mighty/notion",
+          "commits": [
+            "chore: add gitleaks + large-file pre-commit guard"
+          ]
+        },
+        {
+          "repo": "mighty/snappic",
+          "commits": [
+            "chore: add gitleaks + large-file pre-commit guard"
+          ]
+        },
+        {
+          "repo": "general-tools",
+          "commits": [
+            "chore: add gitleaks + large-file pre-commit guard"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "chore: add gitleaks + large-file pre-commit guard"
+          ]
+        },
+        {
+          "repo": "system-medic",
+          "commits": [
+            "chore: add gitleaks + large-file pre-commit guard"
+          ]
+        },
+        {
+          "repo": "war-room",
+          "commits": [
+            "chore: add gitleaks + large-file pre-commit guard"
+          ]
+        },
+        {
+          "repo": "apps/terminal-karaoke",
+          "commits": [
+            "chore: add gitleaks + large-file pre-commit guard"
+          ]
+        },
+        {
+          "repo": "apps/terminal-gloss",
+          "commits": [
+            "chore: add gitleaks + large-file pre-commit guard"
+          ]
+        },
+        {
+          "repo": "apps/vivianzoe",
+          "commits": [
+            "chore: add gitleaks + large-file pre-commit guard"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped ranked memory retrieval for Jimbo:** I moved the agent's memory off flat lookups onto FTS5 full-text search. Migration 007 builds the search tables, and the injector now pulls ranked facts plus a token-capped block of recent session history. Codex flagged two transaction-safety bugs and a tenant-scoping leak before any of it went live, so I fixed those first.\n\nThen I rolled a gitleaks and large-file pre-commit guard across fifteen repos in one pass. Every commit gets scanned now before it can push a key. Dull work to wire up, but it's the kind of guard you only miss once."
+    },
     {
       "day": 191,
       "date": "2026-07-04",
@@ -12500,6 +12657,228 @@
         }
       ],
       "takeaway": "Massive build day across 1 repos with 28 commits. This is what flow state looks like in the No-Code Era."
+    },
+    {
+      "day": 0,
+      "date": "2026-07-05",
+      "title": "AI Video Camera Angle Library",
+      "era": "Full Stack AI",
+      "type": [
+        "Learn"
+      ],
+      "source": "Skool",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.skool.com/chase-ai-community/classroom/0b2422ab?md=89ec14e7ef73464a9de22c3bf1e1ff22",
+      "channel": "Chase AI Community",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
+      "date": "2026-07-05",
+      "title": "Higgsfield Discount",
+      "era": "Full Stack AI",
+      "type": [
+        "Tool"
+      ],
+      "source": "Skool",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.skool.com/chase-ai-community/classroom/0b2422ab?md=8519d0564a624d1eada54dd5e09f7297",
+      "channel": "Chase AI Community",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
+      "date": "2026-07-05",
+      "title": "Web Design System Prompt",
+      "era": "Full Stack AI",
+      "type": [
+        "Learn"
+      ],
+      "source": "Skool",
+      "category": [
+        "AI/ML",
+        "Design",
+        "Frontend"
+      ],
+      "impact": "Low",
+      "url": "https://www.skool.com/chase-ai-community/classroom/0b2422ab?md=351510c209784fe6b04852a4e5ba404f",
+      "channel": "Chase AI Community",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
+      "date": "2026-07-05",
+      "title": "'Behind the Scenes' Movie Sets",
+      "era": "Full Stack AI",
+      "type": [
+        "Learn"
+      ],
+      "source": "Skool",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.skool.com/chase-ai-community/classroom/0b2422ab?md=179f70aa717c4103b416c57294bca77c",
+      "channel": "Chase AI Community",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
+      "date": "2026-07-05",
+      "title": "Mini Minecraft Character Prompt",
+      "era": "Full Stack AI",
+      "type": [
+        "Learn"
+      ],
+      "source": "Skool",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.skool.com/chase-ai-community/classroom/0b2422ab?md=c42a3e87559f4836ba3bb70de89be991",
+      "channel": "Chase AI Community",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
+      "date": "2026-07-05",
+      "title": "8K Macro \u2014 Insect Faces (Add-on)",
+      "era": "Full Stack AI",
+      "type": [
+        "Learn"
+      ],
+      "source": "Skool",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.skool.com/chase-ai-community/classroom/0b2422ab?md=d564464f3acb41e1a1f73ae3df11f49c",
+      "channel": "Chase AI Community",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
+      "date": "2026-07-05",
+      "title": "Space Knight Prompts",
+      "era": "Full Stack AI",
+      "type": [
+        "Learn"
+      ],
+      "source": "Skool",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.skool.com/chase-ai-community/classroom/0b2422ab?md=c554d5602dcc4fee87a7ded74bbc1d40",
+      "channel": "Chase AI Community",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
+      "date": "2026-07-05",
+      "title": "Transforming Cars",
+      "era": "Full Stack AI",
+      "type": [
+        "Learn"
+      ],
+      "source": "Skool",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.skool.com/chase-ai-community/classroom/0b2422ab?md=18e8f214a2d349aca25aa3f26cdc8ae5",
+      "channel": "Chase AI Community",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
+      "date": "2026-07-05",
+      "title": "8K Ultra Realism Photos",
+      "era": "Full Stack AI",
+      "type": [
+        "Learn"
+      ],
+      "source": "Skool",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.skool.com/chase-ai-community/classroom/0b2422ab?md=d564464f3acb41e1a1f73ae3df11f49c",
+      "channel": "Chase AI Community",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
+      "date": "2026-07-05",
+      "title": "Hyper Realism Selfie Photos",
+      "era": "Full Stack AI",
+      "type": [
+        "Learn"
+      ],
+      "source": "Skool",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.skool.com/chase-ai-community/classroom/0b2422ab?md=22624ed5386d4b2eb4691dfbe0409a77",
+      "channel": "Chase AI Community",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 0,
+      "date": "2026-07-05",
+      "title": "Ultra Realism AI Video",
+      "era": "Full Stack AI",
+      "type": [
+        "Learn"
+      ],
+      "source": "Skool",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.skool.com/chase-ai-community/classroom/0b2422ab?md=bae7dfacc7ae4972b3e8ebd063b6fc26",
+      "channel": "Chase AI Community",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
     },
     {
       "day": 0,
