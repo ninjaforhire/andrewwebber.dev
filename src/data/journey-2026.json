@@ -1,8 +1,65 @@
 {
-  "lastUpdated": "2026-07-06T00:17:05",
-  "totalDays": 268,
+  "lastUpdated": "2026-07-07T00:17:11",
+  "totalDays": 269,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 193,
+      "date": "2026-07-06",
+      "title": "Day 193 - Self-Running Build Loop Ships",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Automation",
+        "Agents",
+        "DevOps",
+        "Design"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [
+        {
+          "repo": ".",
+          "commits": [
+            "fix: address final adversarial review (debug prompt, run_id/token/pgrep/vault hardening, review scope)",
+            "feat: add Telegram halt notification (notify.py + tests)",
+            "docs: add build-loop README + note forge-grind relationship"
+          ]
+        },
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "fix: unstick clears last_status",
+            "internal Slack failure raises",
+            "headless accepts pdf_path"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "fix(deck): address codex review \u2014 brand_lib slug guard, profile shape check, scope PDF except",
+            "feat(deck): wire deck_generate as a live wizard tool",
+            "feat(deck): deck_generate job runner with best-effort PDF"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(submodule): bump agents \u2014 inbox-agent HTML fallback fix",
+            "fix(ci): restore workflow header clobbered by fc054259",
+            "chore(submodule): bump agents \u2014 jimbo-memory-v2 merged (mighty-agents#96)"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped a self-running build loop:** I wired up three phase contracts for plan, impl, and review so one run can go from idea to reviewed code without me babysitting each step. It now halts and pings me on Telegram when something needs a human, and it falls back to a backup model if the impl model goes dark.\n\nThe rest of the day was hardening and reach. I taught the design-request agent a headless mode with a template drift tripwire, turned the Forge deck generator into a live wizard tool that spits out a PDF, and closed out the adversarial review with fixes to the vault, token, and process checks."
+    },
     {
       "day": 192,
       "date": "2026-07-05",
