@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Hero } from "@/components/photo-booth-owners/Hero";
 import { ToolsGrid } from "@/components/photo-booth-owners/ToolsGrid";
-import { ServicesGrid } from "@/components/photo-booth-owners/ServicesGrid";
+import { ServicesExplorer } from "@/components/photo-booth-owners/services/ServicesExplorer";
 import { CalcomEmbed } from "@/components/photo-booth-owners/CalcomEmbed";
 import { GuideCard } from "@/components/photo-booth-owners/GuideCard";
 import { InquiryForm } from "@/components/photo-booth-owners/InquiryForm";
@@ -80,7 +80,7 @@ export default function PhotoBoothOwnersPage() {
           Software builds, brand design, SEO, competitive intel, security, and ops tools. Everything
           is priced honestly. If it&apos;s not listed, ask.
         </p>
-        <ServicesGrid />
+        <ServicesExplorer />
 
         <div className="mt-10 md:mt-16 rounded-lg border border-warm/20 bg-warm/5 p-6">
           <p className="font-mono text-xs uppercase tracking-wider text-warm mb-2">

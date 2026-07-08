@@ -1,50 +1,112 @@
 [
   {
     "group": "Software Builds",
+    "key": "software",
+    "folder": "software-builds",
     "accent": "terminal",
-    "icon": "⚙️",
-    "description": "Custom software for photo booth operators — features, integrations, and tools built to spec.",
+    "description": "Custom software for photo booth operators \u2014 features, integrations, and tools built to spec.",
     "items": [
-      { "name": "Snappic Feature Builds", "description": "Custom modules and workflow extensions for the Snappic platform." },
-      { "name": "booth.events Feature Builds", "description": "Custom reporting, workflow, and automation extensions for booth.events." },
-      { "name": "Twilio Setup", "description": "SMS notifications, review requests, and automated messaging for your events." },
-      { "name": "Custom Webhooks", "description": "Connect your booth software to any third-party platform via webhook pipelines." },
-      { "name": "Custom Microsites", "description": "Branded guest experience pages that match your event design, not a generic URL." },
-      { "name": "Custom Analytics", "description": "Event performance dashboards — prints, shares, peak times, engagement metrics." },
-      { "name": "Branded Impact Reports", "description": "Post-event reports for corporate clients: attendee stats, engagement data, social reach." },
-      { "name": "Gamified Microsites", "description": "Interactive experiences built around your booth — custom per-event, high engagement." },
-      { "name": "Online Voting / Leaderboards", "description": "Per-event interactive features that extend the booth experience. Methods stay private." },
-      { "name": "Review-Hunter SMS Tool", "description": "Automated post-event review request sequences. Built and in production at MIGHTY." }
+      {
+        "name": "Snappic Feature Builds",
+        "slug": "snappic-feature-builds",
+        "ext": "build",
+        "description": "Custom modules and workflow extensions for the Snappic platform."
+      },
+      {
+        "name": "booth.events Feature Builds",
+        "slug": "booth-events-feature-builds",
+        "ext": "build",
+        "description": "Custom reporting, workflow, and automation extensions for booth.events."
+      },
+      {
+        "name": "Twilio Setup",
+        "slug": "twilio-setup",
+        "ext": "build",
+        "description": "SMS notifications, review requests, and automated messaging for your events."
+      },
+      {
+        "name": "Custom Webhooks",
+        "slug": "custom-webhooks",
+        "ext": "build",
+        "description": "Connect your booth software to any third-party platform via webhook pipelines."
+      },
+      {
+        "name": "Custom Microsites",
+        "slug": "custom-microsites",
+        "ext": "build",
+        "description": "Branded guest experience pages that match your event design, not a generic URL."
+      },
+      {
+        "name": "Custom Analytics",
+        "slug": "custom-analytics",
+        "ext": "build",
+        "description": "Event performance dashboards \u2014 prints, shares, peak times, engagement metrics."
+      },
+      {
+        "name": "Branded Impact Reports",
+        "slug": "branded-impact-reports",
+        "ext": "build",
+        "description": "Post-event reports for corporate clients: attendee stats, engagement data, social reach."
+      },
+      {
+        "name": "Gamified Microsites",
+        "slug": "gamified-microsites",
+        "ext": "build",
+        "description": "Interactive experiences built around your booth \u2014 custom per-event, high engagement."
+      },
+      {
+        "name": "Online Voting / Leaderboards",
+        "slug": "online-voting-leaderboards",
+        "ext": "build",
+        "description": "Per-event interactive features that extend the booth experience. Methods stay private."
+      },
+      {
+        "name": "Review-Hunter SMS Tool",
+        "slug": "review-hunter-sms-tool",
+        "ext": "build",
+        "description": "Automated post-event review request sequences. Built and in production at MIGHTY."
+      }
     ]
   },
   {
     "group": "Brand + Design",
+    "key": "brand",
+    "folder": "brand-design",
     "accent": "creative",
-    "icon": "🎨",
     "description": "Small team, real-agency creatives. Not a design factory. Every project gets a human designer.",
     "items": [
       {
         "name": "Basic Photo Booth Event Package",
+        "slug": "basic-photo-booth-event-package",
+        "ext": "pkg",
         "price": "$150",
         "description": "Welcome screen + 2 matching overlays + microsite background with custom-coded CSS + 2 edit requests."
       },
       {
         "name": "Backdrop Design Only",
+        "slug": "backdrop-design-only",
+        "ext": "pkg",
         "price": "$150",
         "description": "Any size. Single or double-sided. Step-and-repeat OK. Logo integration OK."
       },
       {
         "name": "Backdrop Full Package",
+        "slug": "backdrop-full-package",
+        "ext": "pkg",
         "price": "$400 / $475 rush",
-        "description": "Design + delivery + frame + custom fabric + carry bag. 48 contiguous states only. Standard 2–3 weeks. Rush (3–7 days) adds $75."
+        "description": "Design + delivery + frame + custom fabric + carry bag. 48 contiguous states only. Standard 2\u20133 weeks. Rush (3\u20137 days) adds $75."
       },
       {
-        "name": "Custom 2×3 Attract Signage w/ QR",
+        "name": "Custom 2\u00d73 Attract Signage w/ QR",
+        "slug": "custom-2-3-attract-signage-w-qr",
+        "ext": "pkg",
         "price": "$125",
         "description": "Eye-catching signage with your QR code. Client prints locally."
       },
       {
         "name": "Custom Crew / Product Checklists",
+        "slug": "custom-crew-product-checklists",
+        "ext": "pkg",
         "price": "Quote-based",
         "description": "Mobile-friendly and printer-friendly. Tailored to your gear and workflow."
       }
@@ -52,68 +114,93 @@
   },
   {
     "group": "SEO + Competitive Intel",
+    "key": "seo",
+    "folder": "seo-intel",
     "accent": "data",
-    "icon": "📊",
     "description": "Proof: mightyphotobooths.com ranks page 1 for photo booth rental Dallas and surrounding clusters. Zero paid ads. Years sustained.",
     "items": [
       {
         "name": "Website SEO Review + Report",
+        "slug": "website-seo-review-report",
+        "ext": "report",
         "description": "Keyword mapping, on-page analysis, GBP audit, and a prioritized fix list."
       },
       {
         "name": "Competitor Report",
-        "description": "Up to 10 named competitors — or full area discovery via passive OSINT. Per competitor: strengths, weaknesses, pricing, venues, contact info, years active, easy wins. Color-coded service-area map included."
+        "slug": "competitor-report",
+        "ext": "report",
+        "description": "Up to 10 named competitors \u2014 or full area discovery via passive OSINT. Per competitor: strengths, weaknesses, pricing, venues, contact info, years active, easy wins. Color-coded service-area map included."
       },
       {
         "name": "Social Media Intel Add-On",
+        "slug": "social-media-intel-add-on",
+        "ext": "report",
         "description": "Actionable social intel: market share signals, bot-follower detection, upload patterns, post-style breakdown (BTS / highlight / educational), and engagement analysis."
       }
     ]
   },
   {
     "group": "Security + Tech",
-    "accent": "creative",
-    "icon": "🔒",
+    "key": "security",
+    "folder": "security-tech",
+    "accent": "warm",
     "description": "Professional-grade security work for photo booth operators who take their business seriously.",
     "items": [
       {
         "name": "Security / Vulnerability Scan",
+        "slug": "security-vulnerability-scan",
+        "ext": "scan",
         "description": "Professional cybersecurity stack. Signed engagement letter required. Comprehensive report delivered."
       },
       {
         "name": "Implementation / Hardening",
+        "slug": "implementation-hardening",
+        "ext": "scan",
         "description": "Add-on after scan. Remediation, configuration hardening, and follow-up verification."
       },
       {
         "name": "Remote Server Setup",
+        "slug": "remote-server-setup",
+        "ext": "scan",
         "description": "VPS provisioning, DNS, firewall rules, SSH hardening, and monitoring hooks."
       },
       {
         "name": "IDE / Claude / ChatGPT Setup",
+        "slug": "ide-claude-chatgpt-setup",
+        "ext": "scan",
         "description": "Hands-on AI tooling setup for operators who want to start building but don't know where to start."
       },
       {
         "name": "DNS Configuration",
+        "slug": "dns-configuration",
+        "ext": "scan",
         "description": "Domain, subdomain, email authentication (SPF/DKIM/DMARC), and CDN wiring."
       },
       {
         "name": "Anything Nerdy and Difficult",
+        "slug": "anything-nerdy-and-difficult",
+        "ext": "scan",
         "description": "Probably can help. Drop a line."
       }
     ]
   },
   {
     "group": "Ops Tools",
-    "accent": "warm",
-    "icon": "🤖",
+    "key": "ops",
+    "folder": "ops-tools",
+    "accent": "neutral",
     "description": "Already built and running at MIGHTY Photo Booths. Available for other operators.",
     "items": [
       {
         "name": "W9 Generator",
+        "slug": "w9-generator",
+        "ext": "tool",
         "description": "Generates a complete W9 request package for any vendor or sub. Pre-filled, signed, filed."
       },
       {
         "name": "Inbox Agent",
+        "slug": "inbox-agent",
+        "ext": "tool",
         "description": "Trains on your sent email. Learns your voice and tone. Drafts responses, surfaces leads, sends a morning action brief. Audience-aware directives."
       }
     ]
