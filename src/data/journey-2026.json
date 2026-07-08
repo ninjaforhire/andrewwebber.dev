@@ -1,8 +1,28 @@
 {
-  "lastUpdated": "2026-07-07T00:17:11",
-  "totalDays": 269,
+  "lastUpdated": "2026-07-08T00:18:15",
+  "totalDays": 270,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 194,
+      "date": "2026-07-07",
+      "title": "Booth.Events announces AI Custom Prompts at PBX Amsterdam 2025",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=UcCJmG9ZqsY",
+      "channel": "Booth.Events",
+      "runtime_min": 5.4,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
     {
       "day": 193,
       "date": "2026-07-06",
