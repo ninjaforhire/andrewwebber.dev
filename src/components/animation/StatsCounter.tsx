@@ -142,6 +142,7 @@ interface LiveStats {
   agentsLive: number;
   claudeHours: number;
   claudeTokens: number;
+  aiTokens: number;
 }
 
 const ZERO: LiveStats = {
@@ -152,6 +153,7 @@ const ZERO: LiveStats = {
   agentsLive: 0,
   claudeHours: 0,
   claudeTokens: 0,
+  aiTokens: 0,
 };
 
 export function StatsCounter() {
@@ -185,7 +187,7 @@ export function StatsCounter() {
         {/* Bottom row: the two Claude counts + Lines of Code last, centered. */}
         <div className="mt-10 pt-8 sm:mt-14 sm:pt-10 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-y-8 gap-x-4 sm:gap-x-8 items-start justify-items-center">
           <Stat value={data.claudeHours} label="Hours with Claude" />
-          <SubStat value={data.claudeTokens} label="Tokens through Claude" format="compact" />
+          <SubStat value={data.aiTokens} label="AI Tokens Spent" format="compact" />
           <Stat value={data.linesOfCode} label="Lines of Code" />
         </div>
       </figure>

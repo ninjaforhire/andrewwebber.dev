@@ -18,6 +18,7 @@ export interface SiteStats {
   commitsShipped: number;
   claudeHours: number;
   claudeTokens: number;
+  aiTokens: number;
   repos: number;
   yearsBuilding: number;
 }

@@ -193,6 +193,35 @@ def fetch_claude_2026() -> dict:
     }
 
 
+def fetch_codex_2026() -> dict:
+    """Codex CLI usage for calendar year 2026.
+
+    Source: ~/.codex/usage.db (sqlite), maintained by the claude-usage
+    dashboard's Codex ingester over ~/.codex/sessions/**.jsonl. Tokens =
+    input + output + cache_read + cache_creation, same accounting ccusage
+    uses for Claude Code (totalTokens includes cache).
+    """
+    db = pathlib.Path.home() / ".codex" / "usage.db"
+    if not db.exists():
+        return {"tokens": 0, "sessions": 0}
+    query = (
+        "SELECT COUNT(*), COALESCE(SUM(total_input_tokens + total_output_tokens "
+        "+ total_cache_read + total_cache_creation), 0) FROM sessions "
+        "WHERE first_timestamp >= '2026-01-01' AND first_timestamp < '2027-01-01'"
+    )
+    try:
+        out = subprocess.check_output(
+            ["sqlite3", str(db), query],
+            text=True,
+            stderr=subprocess.DEVNULL,
+            timeout=30,
+        )
+        sessions_s, tokens_s = out.strip().split("|")
+        return {"tokens": int(tokens_s), "sessions": int(sessions_s)}
+    except (subprocess.CalledProcessError, subprocess.TimeoutExpired, FileNotFoundError, ValueError):
+        return {"tokens": 0, "sessions": 0}
+
+
 def count_tools() -> int:
     """Tools = entries in src/data/mighty-tools.json, written by scan-tools.py.
 
@@ -231,7 +260,11 @@ def count_tools() -> int:
 
 
 def count_skills() -> int:
-    """Skills registry sibling to agent registry. One row = one skill."""
+    """Skills registry sibling to agent registry. One row = one skill.
+
+    Registry shape (rebuild_skills_registry.py): {"_meta": {...}, "skills": {...}}.
+    Count the entries under "skills", not the top-level keys.
+    """
     registry = pathlib.Path.home() / "_Code" / "mighty" / "agents" / "_shared" / "dispatch" / "skills_registry.json"
     if not registry.exists():
         return 0
@@ -240,7 +273,8 @@ def count_skills() -> int:
     except json.JSONDecodeError:
         return 0
     if isinstance(data, dict):
-        return len(data)
+        skills = data.get("skills", data)
+        return len(skills) if isinstance(skills, (dict, list)) else 0
     if isinstance(data, list):
         return len(data)
     return 0
@@ -370,6 +404,11 @@ def main() -> None:
     claude = fetch_claude_2026()
     print(f"  hours={claude['hours']} sessions={claude['sessions']} tokens={claude['tokens']:,}", file=sys.stderr)
 
+    print("Reading Codex 2026 usage...", file=sys.stderr)
+    codex = fetch_codex_2026()
+    print(f"  sessions={codex['sessions']} tokens={codex['tokens']:,}", file=sys.stderr)
+    ai_tokens_now = claude["tokens"] + codex["tokens"]
+
     prev = load_prev()
     prev_method = prev.get("methodology")
     if prev_method == METHOD:
@@ -381,18 +420,22 @@ def main() -> None:
         prev_agents = int(prev.get("ratchet_agents", prev.get("agents_live", 0)))
         prev_hours = int(prev.get("ratchet_claude_hours", prev.get("claude_hours", 0)))
         prev_tokens = int(prev.get("ratchet_claude_tokens", prev.get("claude_tokens", 0)))
+        # First combined run has no ratchet_ai_tokens; seed from the Claude-only
+        # ratchet (combined >= claude-only, so the floor stays honest).
+        prev_ai_tokens = int(prev.get("ratchet_ai_tokens", prev.get("ratchet_claude_tokens", 0)))
         prev_skills = int(prev.get("ratchet_skills", prev.get("skills", 0)))
         prev_repos = int(prev.get("ratchet_repos", prev.get("repos_count", 0)))
         prev_tools = int(prev.get("ratchet_tools", prev.get("tools", 0)))
     else:
         prev_loc = prev_commits = prev_agents = prev_hours = prev_tokens = 0
-        prev_skills = prev_repos = prev_tools = 0
+        prev_skills = prev_repos = prev_tools = prev_ai_tokens = 0
 
     final_loc = max(total_loc, prev_loc)
     final_commits = max(total_commits, prev_commits)
     final_agents = max(agents_live_now, prev_agents)
     final_hours = max(claude["hours"], prev_hours)
     final_tokens = max(claude["tokens"], prev_tokens)
+    final_ai_tokens = max(ai_tokens_now, prev_ai_tokens)
     final_skills = max(skills_now, prev_skills)
     final_repos = max(len(repos), prev_repos)
     final_tools = max(tools_now, prev_tools)
@@ -413,6 +456,10 @@ def main() -> None:
         "claude_sessions": claude["sessions"],
         "ratchet_claude_hours": final_hours,
         "ratchet_claude_tokens": final_tokens,
+        "codex_tokens": codex["tokens"],
+        "codex_sessions": codex["sessions"],
+        "ai_tokens": ai_tokens_now,
+        "ratchet_ai_tokens": final_ai_tokens,
         "skills": skills_now,
         "ratchet_skills": final_skills,
         "ratchet_repos": final_repos,
@@ -433,6 +480,7 @@ def main() -> None:
     overrides["agentsLive"] = final_agents
     overrides["claudeHours"] = final_hours
     overrides["claudeTokens"] = final_tokens
+    overrides["aiTokens"] = final_ai_tokens
     overrides["skills"] = final_skills
     overrides["repos"] = final_repos
     overrides["tools"] = final_tools
@@ -465,6 +513,7 @@ def main() -> None:
         "agentsLive": final_agents,
         "claudeHours": final_hours,
         "claudeTokens": final_tokens,
+        "aiTokens": final_ai_tokens,
         "repos": len(repos),
         "registry_live": live_agents,
     }
