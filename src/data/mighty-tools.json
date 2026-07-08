@@ -234,15 +234,6 @@
     "location": "mighty/agents/finance/penny/agents/penny"
   },
   {
-    "slug": "subscription-tracker",
-    "name": "subscription-tracker",
-    "description": "Subscription and bill tracker that connects to bank accounts via Plaid, detects recurring charges, shows a bill calendar, and flags waste",
-    "category": "finance",
-    "subcategory": "finance-agent",
-    "source": "finance-agent",
-    "location": "mighty/agents/finance/subscription-tracker-v1.0"
-  },
-  {
     "slug": "w9-creator",
     "name": "w9-creator",
     "description": "Generate and send W-9 tax forms for MIGHTY Photo Booths",
