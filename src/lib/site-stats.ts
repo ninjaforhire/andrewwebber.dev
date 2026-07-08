@@ -24,5 +24,3 @@ export interface SiteStats {
 }
 
 export const SITE_STATS = overrides as SiteStats;
-
-// deploy-hook check c400c38
