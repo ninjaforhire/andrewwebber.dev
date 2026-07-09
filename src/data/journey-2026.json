@@ -1,27 +1,99 @@
 {
-  "lastUpdated": "2026-07-08T00:18:15",
-  "totalDays": 270,
+  "lastUpdated": "2026-07-09T06:29:48",
+  "totalDays": 271,
   "currentEra": "Full Stack AI",
   "entries": [
     {
-      "day": 194,
-      "date": "2026-07-07",
-      "title": "Booth.Events announces AI Custom Prompts at PBX Amsterdam 2025",
+      "day": 196,
+      "date": "2026-07-09",
+      "title": "Day 196 - Plan And Map Sync Housekeeping",
       "era": "Full Stack AI",
       "type": [
-        "Video"
+        "Refactor"
       ],
-      "source": "YouTube",
+      "source": "Claude Code",
       "category": [
-        "AI/ML"
+        "Automation",
+        "DevOps"
       ],
       "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=UcCJmG9ZqsY",
-      "channel": "Booth.Events",
-      "runtime_min": 5.4,
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
-      "builds": [],
-      "takeaway": ""
+      "builds": [
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): plans updates (2 paths)",
+            "chore(sync): maps updates (2 paths)"
+          ]
+        }
+      ],
+      "takeaway": "**Synced plans and maps:** Two quiet housekeeping commits, one nudging plan files and one nudging the maps directory. Nothing shipped to users, nothing broke.\n\nDays like this matter more than they look. The plan index and the graph maps are what every future session reads first, so letting them drift means tomorrow's work starts from a stale picture."
+    },
+    {
+      "day": 194,
+      "date": "2026-07-07",
+      "title": "Day 194 - Square Invoices and SEO Dashboard Tabs",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "CRM",
+        "Agents",
+        "Automation"
+      ],
+      "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "Booth.Events announces AI Custom Prompts at PBX Amsterdam 2025",
+          "channel": "Booth.Events",
+          "url": "https://www.youtube.com/watch?v=UcCJmG9ZqsY",
+          "runtime_min": 5.4,
+          "category": [
+            "AI/ML"
+          ]
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "fix(mighty-crm): stable Square idempotency key independent of label",
+            "feat(mighty-crm): invoice template + Square checkout label override",
+            "fix(mighty-crm): balance due 7 days before event, never at event"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "fix: make codex pre-push hook non-interactive-safe",
+            "docs: correct roadmap \u00a74 + continuations #3 to Woody protocol + /handoffs naming"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "fix(deck): close Chromium in try/finally on PPTX render failure (codex P1)",
+            "feat(deck): image-per-slide PPTX export for deck_generate"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(submodule): bump agents"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped Square invoice hardening:** The CRM's checkout flow got a stable idempotency key that no longer depends on the label, plus an invoice template with a label override. I also fixed the balance due logic so it lands 7 days before the event instead of day-of, which is how it should have worked from the start.\n\nThe SEO agent dashboard grew up a bit too. The /geo and /spy tabs now ride on the shared shell, with escaped chart labels and the missing CSS classes patched in. Over in Forge, the deck generator learned image-per-slide PPTX export and now closes Chromium in a try/finally so a failed render can't leak a browser process."
     },
     {
       "day": 193,
