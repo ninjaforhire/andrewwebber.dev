@@ -1,12 +1,12 @@
 {
   "tools": 185,
-  "linesOfCode": 2858239,
+  "linesOfCode": 2883729,
   "skills": 399,
   "yearsBuilding": 20,
   "agentsLive": 47,
-  "commitsShipped": 4509,
-  "claudeHours": 2008,
-  "claudeTokens": 27430841455,
+  "commitsShipped": 4660,
+  "claudeHours": 2025,
+  "claudeTokens": 27830410882,
   "repos": 47,
-  "aiTokens": 28226917691
+  "aiTokens": 28679622646
 }
