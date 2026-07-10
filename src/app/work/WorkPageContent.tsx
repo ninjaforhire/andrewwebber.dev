@@ -5,6 +5,8 @@ import type { Project } from "@/lib/projects";
 import { ProjectCard } from "@/components/sections/ProjectCard";
 import { cn } from "@/lib/utils";
 import toolsData from "@/data/mighty-tools.json";
+import { SignatureCard } from "@/components/photo-booth-owners/SignatureCard";
+import { getSignatureBuilds } from "@/lib/signature-builds";
 
 interface Tool {
   slug: string;
@@ -66,49 +68,16 @@ function toolToProject(t: Tool): Project {
 
 const PAGE_SIZE = 24;
 const RAW_TOOLS = toolsData as Tool[];
-const FEATURED_SLUGS = ["design-forge", "spectre"];
 
-// Featured callouts always render first. Everything else is paginated.
-const FEATURED = FEATURED_SLUGS
-  .map((slug) => RAW_TOOLS.find((t) => t.slug === slug))
-  .filter((t): t is Tool => Boolean(t));
+// SPECTRE + Design Forge modules live inside the expandable Signature Build
+// cards up top — their child entries stay out of the paginated grid.
+const SIGNATURE_CATEGORIES = new Set<Tool["category"]>(["spectre", "design-forge"]);
+const SIGNATURE_BUILDS = getSignatureBuilds();
 
-// Curated structured copy for the two flagship cards (kept here, not in
-// mighty-tools.json, so scan-tools regen never clobbers it).
-const FEATURED_DETAILS: Record<string, import("@/components/sections/ProjectCard").ProjectDetail> = {
-  "design-forge": {
-    blurb:
-      "My full creative-AI suite. 11 specialist wings that take a brief from idea to finished asset.",
-    highlights: [
-      { label: "Generate", text: "image and video across every major model" },
-      { label: "Brand", text: "brand-aware template engine, font and style libraries" },
-      { label: "Compose", text: "scene composers plus post-production" },
-      { label: "Ship", text: "Notion-driven pipeline → posters, animated reels, client decks, impact reports" },
-    ],
-    footnote: "Actively iterating. New wings ship every few weeks.",
-  },
-  spectre: {
-    blurb:
-      "My full-spectrum security platform. 13 modules that run an engagement end to end: discover the surface, hammer it, detect what should have caught it, ship a branded report.",
-    highlights: [
-      { label: "Recon", text: "Raven, Blackthorn" },
-      { label: "Red-team", text: "Gauntlet, Ember" },
-      { label: "Blue + Purple", text: "Bastion, Watchtower, Shannon" },
-      { label: "Cloud + AI-sec", text: "Cloudbreak, Ghost (computer-use)" },
-      { label: "Report", text: "Dossier, Code Council, REST API" },
-    ],
-    footnote: "Actively iterating. New tools and detections land every sprint.",
-  },
-};
-
-const TOOLS = [...RAW_TOOLS].sort((a, b) => a.name.localeCompare(b.name));
-const CATEGORY_ORDER: Tool["category"][] = [
-  "photo-booth",
-  "design-forge",
-  "spectre",
-  "finance",
-  "tooling",
-];
+const TOOLS = RAW_TOOLS.filter((t) => !SIGNATURE_CATEGORIES.has(t.category)).sort((a, b) =>
+  a.name.localeCompare(b.name),
+);
+const CATEGORY_ORDER: Tool["category"][] = ["photo-booth", "finance", "tooling"];
 
 const PHOTO_BOOTH_DOMAINS = Array.from(
   new Set(
@@ -164,7 +133,7 @@ export function WorkPageContent() {
       finance: 0,
       tooling: 0,
     };
-    for (const t of TOOLS) out[t.category]++;
+    for (const t of RAW_TOOLS) out[t.category]++;
     return out;
   }, []);
 
@@ -231,24 +200,20 @@ export function WorkPageContent() {
         </span>
       </div>
 
-      {/* FEATURED — PANDORA'S FORGE + SPECTRE flagships */}
-      {FEATURED.length > 0 && (
-        <div className="mt-16 md:mt-24">
-          <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-creative mb-6">
-            Featured · Flagship systems
-          </div>
-          <div className="grid gap-6 md:gap-8 md:grid-cols-2">
-            {FEATURED.map((tool) => (
-              <ProjectCard
-                key={`featured-${tool.slug}`}
-                project={toolToProject(tool)}
-                featured
-                detail={FEATURED_DETAILS[tool.slug]}
-              />
-            ))}
-          </div>
+      {/* SIGNATURE BUILDS — PANDORA'S FORGE + SPECTRE flagships, expandable */}
+      <div className="mt-16 md:mt-24">
+        <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-creative mb-2">
+          ★ Signature Builds
         </div>
-      )}
+        <p className="mb-6 text-sm text-muted-foreground">
+          The flagship systems. Each card holds its full module roster — click to explore.
+        </p>
+        <div className="grid gap-6 md:gap-8 md:grid-cols-2">
+          {SIGNATURE_BUILDS.map((build) => (
+            <SignatureCard key={build.slug} build={build} />
+          ))}
+        </div>
+      </div>
 
       {/* CODE COUNCIL — the 12-hat discipline that inspired the SPECTRE stack */}
       <CodeCouncilSection />
