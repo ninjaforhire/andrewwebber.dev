@@ -1,86 +1,381 @@
 [
   {
-    "slug": "jimbo",
-    "name": "Jimbo — AI Orchestrator",
-    "blurb": "Master dispatcher. Routes tasks to specialist agents, manages shared memory, and runs 22 autonomous missions overnight without supervision. Runs the business near-autonomously — Andrew reviews, approves, and redirects.",
-    "time_saved_per_day": "3-4 hrs/day",
-    "category": "ops"
-  },
-  {
     "slug": "inbox-agent",
     "name": "Inbox Agent",
-    "blurb": "Reads every inbound inquiry, classifies it, and drafts a response in Andrew's voice. Trained on 3+ years of sent email. Morning brief surfaces leads with action items. Nothing slips.",
-    "time_saved_per_day": "~1.5 hrs/day",
-    "category": "ops"
+    "category": "ops",
+    "group": "ops-automation",
+    "body": [
+      "Leads go cold in hours, and they always land while you're mid-event or asleep. Inbox Agent reads every inbound inquiry, classifies it, and drafts a response in your voice, trained on __3+ years of sent email__.",
+      "You wake up to replies waiting for approval instead of an inbox full of guilt. Nothing sits, nothing slips."
+    ],
+    "time_saved_per_day": "~1.5 hrs/day"
   },
   {
     "slug": "morning-brief",
     "name": "Morning Brief",
-    "blurb": "Daily 06:00 intelligence report: new leads ranked by score, overdue tasks, upcoming events, Snappic anomalies, and one priority action. Lands in Slack before coffee is done.",
-    "time_saved_per_day": "~30 min/day",
-    "category": "ops"
+    "category": "ops",
+    "group": "ops-automation",
+    "body": [
+      "Most operators start the day with an hour of tab-checking: email, calendar, CRM, socials. That hour is gone before real work starts.",
+      "The brief lands in Slack at 06:00 with new leads ranked by score, overdue tasks, upcoming events, and *one priority action*. The day starts decided, not discovered."
+    ],
+    "time_saved_per_day": "~30 min/day"
   },
   {
-    "slug": "lead-score-agent",
-    "name": "Lead Score Agent",
-    "blurb": "Scores every inquiry across 13 weighted signals — event proximity, guest count, upsell potential, repeat-client flags, price sensitivity. Hot leads surface before you even open Gmail.",
-    "time_saved_per_day": "~15 min/day",
-    "category": "sales"
-  },
-  {
-    "slug": "design-request-agent",
-    "name": "Design Request Pipeline",
-    "blurb": "End-to-end design intake. Scans email for brand assets, builds a structured brief, links to Drive, and queues it for the creative team — no back-and-forth needed.",
-    "time_saved_per_day": "~45 min/day",
-    "category": "design"
+    "slug": "teach",
+    "name": "Teach — Coach Feedback Loop",
+    "category": "ops",
+    "group": "ops-automation",
+    "body": [
+      "Every automation drifts: it guesses wrong, you correct it, and next week it makes the same mistake. Corrections that don't stick are wasted breath.",
+      "Teach feeds the orchestrator agent's memory directly. He queues his biggest open questions, you answer once, and the answer becomes __permanent operating knowledge__. Errors drop, drift stops, operations keep flowing."
+    ]
   },
   {
     "slug": "post-event-pipeline",
     "name": "Post-Event Pipeline",
-    "blurb": "Day after every event, auto-downloads the media archive, uploads to Drive, updates the project record with gallery links and stats, and drafts the thank-you email. Zero manual steps.",
-    "time_saved_per_event": "45 min/event",
-    "category": "ops"
+    "category": "ops",
+    "group": "ops-automation",
+    "body": [
+      "The day after an event is admin quicksand: download the archive, upload to Drive, dig up gallery links, write the thank-you. It's the work you're too tired to do well.",
+      "This runs the whole sequence automatically: media archived, project record updated with gallery links and stats, thank-you email drafted. You sleep in; the client still gets same-day polish."
+    ],
+    "time_saved_per_event": "45 min/event"
   },
   {
-    "slug": "event-details",
-    "name": "Event Details Builder",
-    "blurb": "Pulls CRM data and builds a fully-structured Notion Event Details page — timeline, venue logistics, equipment list, design brief, staff assignments — in one shot.",
-    "time_saved_per_event": "45 min/event",
-    "category": "ops"
+    "slug": "design-request-agent",
+    "name": "Design Request Pipeline",
+    "category": "design",
+    "group": "ops-automation",
+    "body": [
+      "Design briefs assembled over eight back-and-forth emails burn days and client goodwill, and the designer still starts with half the assets missing.",
+      "This scans email for brand assets, builds a *structured brief*, links everything to Drive, and queues it complete. The designer opens a finished brief every single time."
+    ],
+    "time_saved_per_day": "~45 min/day"
   },
   {
-    "slug": "snappic-microsite",
-    "name": "Snappic Microsite Builder",
-    "blurb": "Generates custom CSS for the Snappic guest gallery on a per-event basis. Color-matches the event's design package. Clients open a branded experience, not a generic URL.",
-    "time_saved_per_event": "20 min/event",
-    "category": "design"
+    "slug": "osint",
+    "name": "OSINT Research Pipeline",
+    "category": "sales",
+    "group": "sales-leads",
+    "body": [
+      "Big accounts don't go to the cheapest booth; they go to the vendor who *understood the account*. Walking into a pitch blind is how you stay a commodity.",
+      "This runs deep research on the client, their company, and the venue before you ever reply: who decides, what they've booked, what they care about. It builds the Notion records and generates a tailored pitch design request. Knowledge is what lands the larger accounts."
+    ]
+  },
+  {
+    "slug": "newclient",
+    "name": "New Client Buildout",
+    "category": "sales",
+    "group": "sales-leads",
+    "body": [
+      "Every booking kicks off an hour of setup drudgery: records, folders, checklists, links. Skip a step and it bites you the week of the event.",
+      "One command builds the full event infrastructure in Notion: Client, Company, Venue, Design Request, Event Details, and Project records, all cross-linked, plus the Google Drive folder and equipment checklist. Booked to fully-staged in minutes."
+    ],
+    "time_saved_per_event": "~1 hr/event"
+  },
+  {
+    "slug": "lead-score-agent",
+    "name": "Lead Score Agent",
+    "category": "sales",
+    "group": "sales-leads",
+    "body": [
+      "Treating every inquiry equally means the $5k corporate lead waits in line behind a price shopper. First-come-first-served is a terrible sales strategy.",
+      "Every inquiry gets scored across __13 weighted signals__: event proximity, guest count, upsell potential, repeat-client flags, price sensitivity. The hot ones surface before you even open Gmail."
+    ],
+    "time_saved_per_day": "~15 min/day"
+  },
+  {
+    "slug": "gmail-lead-scanner",
+    "name": "Gmail Lead Scanner",
+    "category": "sales",
+    "group": "sales-leads",
+    "body": [
+      "A missed lead doesn't complain; it just books your competitor. You never find out what that buried email cost you.",
+      "The scanner watches the inbox for booth inquiries on a schedule and flags every one for follow-up. Missing a lead becomes nearly impossible."
+    ]
   },
   {
     "slug": "seo-agent",
     "name": "SEO Agent",
-    "blurb": "Monitors ranking positions for photo booth rental keywords across DFW markets. Surfaces drops and competitor gains before they compound. Built the page-1 position at mightyphotobooths.com with zero paid ads.",
-    "time_saved_per_day": "~30 min/day",
-    "category": "marketing"
+    "category": "marketing",
+    "group": "sales-leads",
+    "body": [
+      "Rankings slip quietly, and by the time bookings dip it's been months. Paid ads are the expensive apology for not watching.",
+      "This monitors booth-rental keywords across local markets and surfaces drops and competitor gains before they compound. It's the system behind a __page-1 position with zero ad spend__."
+    ],
+    "time_saved_per_day": "~30 min/day"
   },
   {
     "slug": "market-intel",
     "name": "Competitor Intel Engine",
-    "blurb": "Passive OSINT on every area competitor. Tracks pricing, venue relationships, social velocity, and GBP signals. Color-coded service-area map. No more flying blind on local competition.",
-    "time_saved_per_event": "~30 min/report",
-    "category": "marketing"
+    "category": "marketing",
+    "group": "sales-leads",
+    "body": [
+      "Pricing blind against local competitors costs you one of two things: margin you didn't need to give up, or deals you didn't need to lose.",
+      "Passive OSINT tracks every area competitor: pricing, venue relationships, social velocity, review signals, all on a color-coded service-area map. You quote knowing the field."
+    ]
+  },
+  {
+    "slug": "blog",
+    "name": "Blog Agent",
+    "category": "marketing",
+    "group": "sales-leads",
+    "body": [
+      "Content marketing works, and nobody running events has time to do it. The blog that was going to bring in organic leads has three posts from two years ago.",
+      "This researches, outlines, writes, and formats SEO-optimized industry articles with matched cover images, on a schedule. The content engine runs whether you're busy or not."
+    ]
+  },
+  {
+    "slug": "penny",
+    "name": "Penny — Finance Platform",
+    "category": "finance",
+    "group": "back-office",
+    "body": [
+      "Booth money is messy: deposits, balances, contractor pay, gear costs, all scattered across apps. Tax season becomes archaeology.",
+      "Penny is the money brain: ledger, invoices, payment tracking, and QuickBooks dual-write in one platform. Every dollar in and out is *queryable in seconds*."
+    ]
+  },
+  {
+    "slug": "gift-card-gen",
+    "name": "Gift Card Generator",
+    "category": "finance",
+    "group": "back-office",
+    "body": [
+      "Discounting to close a deal trains clients to expect discounts. You win the booking and cheapen the brand in the same move.",
+      "Branded gift cards with tracked codes close the same deals while *protecting your list price*. The client feels they won something; your pricing integrity survives."
+    ]
+  },
+  {
+    "slug": "ach-sender",
+    "name": "ACH Info Sender",
+    "category": "finance",
+    "group": "back-office",
+    "body": [
+      "Corporate clients want to pay by bank transfer, and retyping account details into email is both tedious and one typo away from a payment lost in limbo.",
+      "One step packages and sends verified payment instructions. Fast for them, safe for you."
+    ],
+    "time_saved_per_event": "10 min/request"
+  },
+  {
+    "slug": "coi-creator",
+    "name": "COI Creator",
+    "category": "finance",
+    "group": "back-office",
+    "body": [
+      "\"The venue needs a COI by Friday\" usually means days of waiting on an insurance agent while your load-in approval hangs in the balance.",
+      "This generates the ACORD certificate with additional-insured language and sends it in minutes. Venue requirement handled before the call ends."
+    ],
+    "time_saved_per_event": "20 min/request"
   },
   {
     "slug": "w9-creator",
     "name": "W9 Generator",
-    "blurb": "Generates a pre-filled W9 request package for any vendor or subcontractor. Signs it, attaches it, and drops it into the right Drive folder.",
-    "time_saved_per_event": "15 min/request",
-    "category": "finance"
+    "category": "finance",
+    "group": "back-office",
+    "body": [
+      "Corporate procurement won't cut a check until the W-9 clears, and every day it sits unfiled is a day your payment doesn't move.",
+      "One command generates the pre-filled, signed W-9 package and delivers it. Vendor onboarding stops stalling your cash flow."
+    ],
+    "time_saved_per_event": "15 min/request"
   },
   {
-    "slug": "blog-agent",
-    "name": "Blog Agent",
-    "blurb": "Researches, outlines, writes, and formats SEO-optimized articles for the photo booth industry. Generates matched cover images. Publishes to Notion on a schedule.",
-    "time_saved_per_event": "~2 hrs/article",
-    "category": "marketing"
+    "slug": "pdf-copy",
+    "name": "Invoice PDF Fetcher",
+    "category": "finance",
+    "group": "back-office",
+    "body": [
+      "\"Can you resend my invoice?\" arrives at the worst possible moment, every time, and hunting through the billing system mid-event is nobody's idea of service.",
+      "This pulls a clean PDF invoice for any client or event, booked or pre-payment lead, in about 30 seconds."
+    ]
+  },
+  {
+    "slug": "event-details-agent",
+    "name": "Event Details Builder",
+    "category": "ops",
+    "group": "logistics",
+    "body": [
+      "Event details scattered across email threads guarantee a day-of surprise: wrong load-in door, missing timeline, unassigned staff.",
+      "This pulls CRM data and builds a fully structured Event Details page in one shot: timeline, venue logistics, equipment list, design brief, staff assignments. Everything the event needs, one page."
+    ],
+    "time_saved_per_event": "45 min/event"
+  },
+  {
+    "slug": "mpb-event-logistics",
+    "name": "Event Logistics Analyzer",
+    "category": "ops",
+    "group": "logistics",
+    "body": [
+      "Double-booking Saturdays is where booth businesses either grow or implode. Guessing drive times is how you end up apologizing to a bride.",
+      "This calculates drive times with *real traffic buffers*, builds staff schedules, checks calendar conflicts, and scores multi-event feasibility. \"Can we pull off both?\" gets answered with data."
+    ]
+  },
+  {
+    "slug": "print-checklist",
+    "name": "Equipment Checklist Printer",
+    "category": "ops",
+    "group": "logistics",
+    "body": [
+      "Every operator has left something at a venue: a cable, a light, once in a while the printer. The 11pm teardown is where gear goes to disappear.",
+      "This prints any equipment checklist as a clean PDF grouped by case and bag, with charge-after flags and pocket tags. Pack-out and pack-away run off the same sheet."
+    ]
+  },
+  {
+    "slug": "event-folder",
+    "name": "Event Folder Builder",
+    "category": "ops",
+    "group": "logistics",
+    "body": [
+      "\"It's somewhere in Drive\" is a sentence that costs minutes daily and hours weekly. Inconsistent folders make every handoff a scavenger hunt.",
+      "This creates the same standardized Drive tree for every event: design files, client previews, event output, admin docs. Anyone on the team finds anything, instantly."
+    ]
+  },
+  {
+    "slug": "drive-event-dedup",
+    "name": "Drive Event Dedup",
+    "category": "ops",
+    "group": "logistics",
+    "body": [
+      "Duplicate event folders breed silently until nobody knows which copy holds the real files. Cleaning it up by hand risks deleting the wrong one.",
+      "This finds duplicates by date and fuzzy event name, then archives confirmed dupes safely. It *never deletes*. Years of event storage, kept clean."
+    ]
+  },
+  {
+    "slug": "staffing-events",
+    "name": "Event Staffing Agent",
+    "category": "ops",
+    "group": "staffing",
+    "body": [
+      "Staffing a month of events means a week of group texts, no-replies, and double-checking three calendars. It's the chore that never ends.",
+      "This discovers upcoming events that need staff, cross-verifies across Notion, Calendar, and Gmail, then sends personalized briefing texts to your chosen people. A month staffed in one sitting."
+    ]
+  },
+  {
+    "slug": "mpb-event-briefing",
+    "name": "Staff Briefing Sheets",
+    "category": "ops",
+    "group": "staffing",
+    "body": [
+      "Staff who show up under-briefed make the brand look improvised, and no one reads a forwarded email chain in the parking lot.",
+      "This generates a *one-page PDF briefing* per person per event: timeline, venue, contacts, setup notes. Everyone walks in knowing exactly what the day looks like."
+    ],
+    "time_saved_per_event": "20 min/event"
+  },
+  {
+    "slug": "mpb-staff-dispatch",
+    "name": "Staff Dispatch",
+    "category": "ops",
+    "group": "staffing",
+    "body": [
+      "Who-goes-where lives in your head until the weekend two events collide and it doesn't. Verbal assignments evaporate.",
+      "Dispatch coordinates assignments across the event calendar and gets each person their marching orders. Pairs with the briefing sheets so dispatch and prep happen together."
+    ]
+  },
+  {
+    "slug": "mighty-music",
+    "name": "360-Music-Box",
+    "category": "design",
+    "group": "booth-features",
+    "body": [
+      "360 videos live or die on the track, and hunting music one download at a time wastes the subscription you're already paying for.",
+      "This scrapes daily on autopilot, squeezing __maximum value from the subscription of your choice__, filing everything into an organized Google Drive plus a Notion/Excel sheet for agent progress tracking.",
+      "The built-in audio trimmer adds fade effects and exports in every format your booth software wants. Every 360 video ships with a clean, event-ready track."
+    ]
+  },
+  {
+    "slug": "watermark-app",
+    "name": "Watermark App",
+    "category": "design",
+    "group": "booth-utility",
+    "body": [
+      "Unbranded gallery photos are free advertising you never collect on, and hand-watermarking hundreds of files after midnight is not a marketing plan.",
+      "This batch-marks everything with real controls: positioning, opacity, per-batch presets. Multi-format export including *compressed WebP* keeps galleries fast while every share carries your brand."
+    ]
+  },
+  {
+    "slug": "snappic-microsite",
+    "name": "Snappic Microsite Builder",
+    "category": "design",
+    "group": "booth-utility",
+    "body": [
+      "The default guest gallery looks the same for every operator in town. Your best branding moment, the link every guest opens, shows up generic.",
+      "This generates custom CSS per event, color-matched to the design package. Guests open a *branded experience*, and corporate clients notice the difference."
+    ],
+    "time_saved_per_event": "20 min/event"
+  },
+  {
+    "slug": "pbt-content-scraper",
+    "name": "Template Resource Scraper",
+    "category": "design",
+    "group": "booth-utility",
+    "body": [
+      "Building a template library one manual download at a time means your design options stay thin and your late nights stay long.",
+      "This automated scraper collects industry template resources (welcome screens, print overlays, 360 overlays, PSD templates) into an organized asset library, deduplicated against what you already own. The library grows itself."
+    ]
+  },
+  {
+    "slug": "property-return",
+    "name": "Property Return",
+    "category": "ops",
+    "group": "booth-utility",
+    "body": [
+      "Gear left at a venue usually stays lost. Whoever finds it has no idea whose it is or how to reach you, so a $2,000 kit becomes someone's shelf decoration.",
+      "Every piece of equipment carries a QR code. A finder scans it, lands on a branded found-property page, and you get an __instant alert with the scanner's location__. They get a contact form with photo upload, routed to your email and SMS. Lost gear finds its way home."
+    ]
+  },
+  {
+    "slug": "client-montage",
+    "name": "Client Montage Builder",
+    "category": "design",
+    "group": "upsells",
+    "body": [
+      "After the event, the client's excitement peaks and then fades daily. A highlight video is the perfect strike-while-hot upsell, except editing one takes a night you don't have.",
+      "This builds a branded montage from the event's photos automatically: intro, crossfades, end card, music. Renders in minutes, *prices like an add-on*, and lands while the event is still the talk of their office."
+    ]
+  },
+  {
+    "slug": "booth-events-report",
+    "name": "Analytics Report — Booth.Events",
+    "category": "marketing",
+    "group": "upsells",
+    "body": [
+      "Corporate clients spend five figures on activations and get back a link and a shrug. When budget season comes, the booth is the line item nobody can defend.",
+      "This turns Booth.Events gallery data into a deliverable that defends the spend: __branded cover, executive-level briefing__, engagement and share activity, peak-time analysis, and a contacts CSV. Computer vision picks the *highlight photos of the event*, a QR code links straight to the gallery, and a branded final page carries the rebooking CTA.",
+      "It performs better than what either booth software company offers out of the box. Guaranteed to blow your corporate clients away and set you apart from your competition.",
+      "Not for sale in DFW :)"
+    ],
+    "time_saved_per_event": "~1 hr/report"
+  },
+  {
+    "slug": "snappic-export",
+    "name": "Gallery Export — Snappic",
+    "category": "ops",
+    "group": "booth-utility",
+    "body": [
+      "Pulling the full photo and GIF archive out of the Snappic dashboard after every event is click-click-click busywork, and skipping it means client media lives on someone else's servers.",
+      "This downloads the complete event zip and files it straight into the event's Drive folder automatically. Every gallery archived, owned, and organized without touching the dashboard."
+    ],
+    "time_saved_per_event": "15 min/event"
+  },
+  {
+    "slug": "booth-events-export",
+    "name": "Gallery Export — Booth.Events",
+    "category": "ops",
+    "group": "booth-utility",
+    "body": [
+      "Every Booth.Events gallery you don't archive is client media you don't control. The manual download-and-file routine is exactly the chore that gets skipped on busy weeks.",
+      "This grabs the full event media zip, uploads it to the event's Drive folder, and captures the public gallery URL for the post-event email. Delivery-ready the morning after."
+    ],
+    "time_saved_per_event": "15 min/event"
+  },
+  {
+    "slug": "video-to-website",
+    "name": "Video-to-Website",
+    "category": "design",
+    "group": "web-design",
+    "body": [
+      "Video on a website usually just sits in a player, ignored. All that production value, one thumbnail deep.",
+      "This turns video into the site itself: *parallax scroll effects that intertwine scrolling with video playback*. Exploding objects, before/after transformations, diagram pop-outs. The visitor's scroll drives the story, and nobody clicks away mid-scroll."
+    ]
   }
 ]

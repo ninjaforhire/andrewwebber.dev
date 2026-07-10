@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "ops-dashboard",
+    "name": "Ops Dashboard — AI Operating System",
+    "description": "Custom-built business command center.",
+    "category": "ops",
+    "source": "agent",
+    "group": "ops-automation",
+    "badge": "Custom Build",
+    "body": [
+      "Running a booth business means flying blind between five browser tabs, wondering what actually needs you today. The important signal drowns in the noise.",
+      "The Ops Dashboard is a *custom-built overview of your business performance*, designed to streamline operations and keep you focused where the business needs you most: your __Daily Focus__, CRM insights, inbox alerts with interactive buttons, financials and forecasts, and an Overall Business Health view that confirms every system is healthy and humming.",
+      "Every build is custom to your business. Starts at __$6,500__ for a fully connected dashboard system.",
+      "Limited to *one build per quarter*, 90-day turnaround on average. Serious inquiries only."
+    ]
+  },
+  {
+    "slug": "mighty-crm",
+    "name": "MIGHTY-CRM",
+    "description": "Purpose-built photo booth CRM.",
+    "category": "sales",
+    "source": "agent",
+    "group": "back-office",
+    "badge": "In Development",
+    "body": [
+      "Generic CRMs make booth operators fight their assumptions: no event dates, no venue records, pipelines built for SaaS sales instead of Saturday bookings.",
+      "MIGHTY-CRM is *purpose-built for photo booths*: leads, quotes, invoicing rails, and a pipeline board that matches how bookings actually flow. Cloud Postgres underneath, a real quote builder on top."
+    ]
+  },
+  {
+    "slug": "snappic-analytics-report",
+    "name": "Analytics Report — Snappic",
+    "description": "Branded post-event analytics report for Snappic events.",
+    "category": "marketing",
+    "source": "agent",
+    "group": "upsells",
+    "body": [
+      "The event ends, the gallery link goes out, and the client's boss asks \"was it worth it?\" with nothing to point at. That silence kills rebookings.",
+      "This turns Snappic event data into a deliverable that answers the question: __branded cover, executive-level briefing__, engagement stats, and peak-time analysis. Computer vision selects the *highlight photos of the event*, a QR code drops the reader into the gallery, and the branded final page closes with a rebooking CTA.",
+      "It performs better than what either booth software company offers out of the box. Guaranteed to blow your corporate clients away and set you apart from your competition.",
+      "Not for sale in DFW :)"
+    ]
+  },
+  {
+    "slug": "remote-monitor-snappic",
+    "name": "Remote Event Monitoring — Snappic",
+    "category": "ops",
+    "group": "booth-features",
+    "badge": "Coming Soon",
+    "body": [
+      "A drop-off booth that dies at hour one earns you a furious email at hour five. You can't stand next to every activation, so every unattended event is a slow-motion gamble.",
+      "Monitoring agents watch the live Snappic feed and alert you the moment it matters: *idle-booth alerts* when sessions stall, *hype alerts* when the floor heats up, and __system overwatch__ for the quiet killers like an iPad not charging or dropping connection.",
+      "You act while the event is still saveable, instead of reading about it in a review."
+    ],
+    "description": "Live booth monitoring agents.",
+    "source": "agent"
+  },
+  {
+    "slug": "remote-monitor-booth-events",
+    "name": "Remote Event Monitoring — Booth.Events",
+    "category": "ops",
+    "group": "booth-features",
+    "badge": "Coming Soon",
+    "body": [
+      "Sending staff out alone or dropping a booth means hours of wondering whether anything is actually happening. Silence is not reassurance.",
+      "Monitoring agents watch the live Booth.Events feed and send custom alerts: *idle-booth* when activity stalls, *hype* during the rush, and __system overwatch__ for hardware trouble like charging or connectivity failures.",
+      "Rest easy while gear is in the field. You take action when it matters instead of waiting for the bad news."
+    ],
+    "description": "Live booth monitoring agents.",
+    "source": "agent"
+  }
+]
