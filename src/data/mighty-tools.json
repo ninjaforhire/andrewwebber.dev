@@ -1142,7 +1142,7 @@
   {
     "slug": "pbt-content-scraper",
     "name": "pbt-content-scraper",
-    "description": "Scrapes PhotoBoothTalk.com download resources (welcome screens, 4x6/6x4/glam/square/360 overlays, PSD templates) into a clean Google Drive hierarchy under 20_mighty-design-center/22_templates/pbt-templates/",
+    "description": "Automated scraper that collects industry template resources (welcome screens, print overlays, 360 overlays, PSD templates) into an organized asset library",
     "category": "photo-booth",
     "subcategory": "agent",
     "source": "agent",
