@@ -10,8 +10,10 @@ import { OffersSection } from "@/components/sections/OffersSection";
 import { BOOTH_OFFERS } from "@/lib/offers";
 import toolsData from "@/data/mighty-tools.json";
 import overridesData from "@/data/tools-overrides.json";
+import extraData from "@/data/tools-extra.json";
 import guidesData from "@/data/guides.json";
 import type { MightyTool } from "@/components/photo-booth-owners/ToolCard";
+import { getSignatureBuilds } from "@/lib/signature-builds";
 
 export const metadata: Metadata = {
   title: "For Photo Booth Operators",
@@ -19,31 +21,49 @@ export const metadata: Metadata = {
     "Tools, automation, and consulting for photo booth business owners. Built by a 10-year operator. Available for hire.",
 };
 
-function mergeTools(): MightyTool[] {
-  const overrides = overridesData as Array<{
-    slug: string;
-    name?: string;
-    blurb?: string;
-    time_saved_per_event?: string;
-    category?: string;
-  }>;
-  const overrideMap = new Map(overrides.map((o) => [o.slug, o]));
+interface ToolOverride {
+  slug: string;
+  name?: string;
+  category?: string;
+  group?: string;
+  badge?: string;
+  body?: string[];
+  blurb?: string;
+  time_saved_per_event?: string;
+  time_saved_per_day?: string;
+}
 
-  return (toolsData as MightyTool[]).map((tool) => {
-    const override = overrideMap.get(tool.slug);
-    if (!override) return tool;
-    return {
-      ...tool,
-      name: override.name ?? tool.name,
-      category: override.category ?? tool.category,
-      blurb: override.blurb,
-      time_saved_per_event: override.time_saved_per_event,
-    };
-  });
+// Curated grid: only tools with an override (they carry group + real copy),
+// plus hand-added extras not in the scan (MIGHTY-CRM, Remote Event Monitoring).
+function curatedTools(): MightyTool[] {
+  const toolMap = new Map((toolsData as MightyTool[]).map((t) => [t.slug, t]));
+
+  // Iterate the overrides array (not the scan) so card order inside each
+  // group is curated, not alphabetical.
+  const curated = (overridesData as ToolOverride[])
+    .filter((o) => toolMap.has(o.slug))
+    .map((o) => {
+      const tool = toolMap.get(o.slug)!;
+      return {
+        ...tool,
+        name: o.name ?? tool.name,
+        category: o.category ?? tool.category,
+        group: o.group,
+        badge: o.badge,
+        body: o.body,
+        blurb: o.blurb,
+        time_saved_per_event: o.time_saved_per_event,
+        time_saved_per_day: o.time_saved_per_day,
+      };
+    });
+
+  return [...curated, ...(extraData as MightyTool[])];
 }
 
 export default function PhotoBoothOwnersPage() {
-  const tools = mergeTools();
+  const tools = curatedTools();
+  const signatureBuilds = getSignatureBuilds();
+  const totalCount = (toolsData as MightyTool[]).length;
 
   return (
     <>
@@ -63,7 +83,7 @@ export default function PhotoBoothOwnersPage() {
           Every tool below runs at MIGHTY Photo Booths. Built to solve a real problem, not a
           hypothetical one. Capability and time savings — no implementation details published.
         </p>
-        <ToolsGrid tools={tools} />
+        <ToolsGrid tools={tools} signatureBuilds={signatureBuilds} totalCount={totalCount} />
       </section>
 
       {/* SERVICES */}

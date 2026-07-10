@@ -8,9 +8,13 @@ export interface MightyTool {
   name: string;
   description: string;
   category: string;
-  source: "skill" | "agent";
+  source: "skill" | "agent" | "app";
   blurb?: string;
+  body?: string[];
+  badge?: string;
+  group?: string;
   time_saved_per_event?: string;
+  time_saved_per_day?: string;
 }
 
 const CATEGORY_ACCENT: Record<string, { border: string; text: string; bg: string }> = {
@@ -50,38 +54,92 @@ function accent(category: string) {
   return CATEGORY_ACCENT[category] ?? CATEGORY_ACCENT.ops;
 }
 
+// Curated blurb markup: __underline__ for truly important facts (sparing),
+// *italic* for light emphasis. No bold in body copy by design.
+function Italics({ text }: { text: string }) {
+  const parts = text.split(/\*(.+?)\*/g);
+  return (
+    <>
+      {parts.map((part, i) =>
+        i % 2 === 1 ? (
+          <em key={i} className="text-foreground/85">
+            {part}
+          </em>
+        ) : (
+          <span key={i}>{part}</span>
+        )
+      )}
+    </>
+  );
+}
+
+export function RichText({ text, accentClass }: { text: string; accentClass?: string }) {
+  const parts = text.split(/__(.+?)__/g);
+  return (
+    <>
+      {parts.map((part, i) =>
+        i % 2 === 1 ? (
+          <span
+            key={i}
+            className={cn("underline decoration-1 underline-offset-4 text-foreground/90", accentClass)}
+          >
+            <Italics text={part} />
+          </span>
+        ) : (
+          <Italics key={i} text={part} />
+        )
+      )}
+    </>
+  );
+}
+
 export function ToolCard({ tool, index }: { tool: MightyTool; index: number }) {
   const a = accent(tool.category);
-  const body = tool.blurb ?? tool.description;
+  const paragraphs = tool.body ?? (tool.blurb ? [tool.blurb] : [tool.description]);
+  const saved = tool.time_saved_per_event ?? tool.time_saved_per_day;
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: index * 0.04, duration: 0.4 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-40px" }}
+      transition={{ delay: (index % 6) * 0.05, duration: 0.4 }}
       className={cn(
-        "group rounded-lg border border-border bg-card/50 p-5 transition-all duration-300",
+        "group flex flex-col rounded-lg border border-border bg-card/50 p-5 transition-all duration-300",
         a.border
       )}
     >
       <div className="flex items-start justify-between gap-2">
         <h3 className="font-heading text-base font-bold leading-snug">{tool.name}</h3>
-        <span
-          className={cn(
-            "shrink-0 rounded-full px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider",
-            a.bg,
-            a.text
+        <div className="flex shrink-0 items-center gap-1.5">
+          {tool.badge && (
+            <span className="rounded-full border border-warm/40 bg-warm/10 px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider text-warm">
+              {tool.badge}
+            </span>
           )}
-        >
-          {tool.category}
-        </span>
+          <span
+            className={cn(
+              "rounded-full px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider",
+              a.bg,
+              a.text
+            )}
+          >
+            {tool.category}
+          </span>
+        </div>
       </div>
 
-      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{body}</p>
+      <div className="mt-2 space-y-2.5">
+        {paragraphs.map((p, i) => (
+          <p key={i} className="text-[15px] leading-relaxed text-muted-foreground">
+            <RichText text={p} />
+          </p>
+        ))}
+      </div>
 
-      {tool.time_saved_per_event && tool.time_saved_per_event !== "0 min" && (
-        <div className={cn("mt-3 font-mono text-[10px] uppercase tracking-wider", a.text)}>
-          ≈ {tool.time_saved_per_event} saved / event
+      {saved && saved !== "0 min" && (
+        <div className={cn("mt-auto pt-3 font-mono text-[10px] uppercase tracking-wider", a.text)}>
+          ≈ {saved} saved
         </div>
       )}
     </motion.div>
