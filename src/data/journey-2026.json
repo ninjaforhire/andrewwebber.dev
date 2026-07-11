@@ -1,8 +1,64 @@
 {
-  "lastUpdated": "2026-07-10T00:13:53",
-  "totalDays": 271,
+  "lastUpdated": "2026-07-11T00:14:34",
+  "totalDays": 272,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 197,
+      "date": "2026-07-10",
+      "title": "Day 197 - Staff Pay Reconciliation Engine",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Finance",
+        "Automation",
+        "Agents",
+        "AI/ML"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "feat: staff-pay read-only views + OS surface contract",
+            "docs: document greedy matcher limitation + 1:1 invariant test",
+            "feat: staff pay reconciliation engine + event-labor matrix"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "fix: reject reference sent to text-only models (explicit 400, no silent modality drop)",
+            "fix: clear all cast state together when hiding reference control (no stale paid job)",
+            "fix: only nano_banana_2 offers a reference"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "docs: add finance payments-hub implementation plan",
+            "docs: add finance payments-hub design spec"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(submodule): bump agents to 8bf33fd (grading-agent v1 + registration)",
+            "feat(grade): add /grade design-center skill for color-rescue CLI"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped a staff pay reconciliation engine:** it reads Chase statements, then parses PayPal, Venmo, and Zelle exports into one event-labor matrix so every payout maps back to who worked which event. I hardened the Zelle parser with defensive date handling and utf-8, scrubbed the test fixtures of real PII, and locked in a 1:1 invariant test so the greedy matcher can't silently double-count. Read-only views sit on top with an OS surface contract, and the raw reconstruction data stays gitignored and local.\n\nOn the side I tightened Forge so a reference image never gets sent to a text-only model. It now throws an explicit 400 instead of quietly dropping the modality, clears all cast state together when the reference control hides, and only exposes reference and character UI on models that actually support i2i or i2v. Also stood up a /grade design-center skill for the new color-rescue CLI."
+    },
     {
       "day": 196,
       "date": "2026-07-09",
