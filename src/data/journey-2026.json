@@ -1,8 +1,93 @@
 {
-  "lastUpdated": "2026-07-11T00:14:34",
-  "totalDays": 272,
+  "lastUpdated": "2026-07-12T04:23:09",
+  "totalDays": 276,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 198,
+      "date": "2026-07-11",
+      "title": "I Tested GPT 5.6 Sol vs Fable 5. What You Need To Know.",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML",
+        "Automation",
+        "Business"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=EthxaDswUFo",
+      "channel": "Nate Herk | AI Automation",
+      "runtime_min": 20.4,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 198,
+      "date": "2026-07-11",
+      "title": "Notion Can Finally... Print?! (New Superpower Update)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Business",
+        "No-Code"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=dlf274Q2nGg",
+      "channel": "Matthias Frank",
+      "runtime_min": 15.2,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 198,
+      "date": "2026-07-11",
+      "title": "16 New Notion Updates (in just 16 minutes)",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "Automation",
+        "Business",
+        "No-Code"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=GnonRPjbzZY",
+      "channel": "Matthias Frank",
+      "runtime_min": 16.2,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
+    {
+      "day": 198,
+      "date": "2026-07-11",
+      "title": "H-E-B in Fort Worth closed after catching fire",
+      "era": "Full Stack AI",
+      "type": [
+        "Video"
+      ],
+      "source": "YouTube",
+      "category": [
+        "AI/ML"
+      ],
+      "impact": "Low",
+      "url": "https://www.youtube.com/watch?v=42sP0r4jVtA",
+      "channel": "FOX 4 Dallas-Fort Worth",
+      "runtime_min": 2.7,
+      "videos": [],
+      "builds": [],
+      "takeaway": ""
+    },
     {
       "day": 197,
       "date": "2026-07-10",
