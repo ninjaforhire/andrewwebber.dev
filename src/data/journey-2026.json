@@ -1,8 +1,267 @@
 {
-  "lastUpdated": "2026-07-12T04:23:09",
-  "totalDays": 276,
+  "lastUpdated": "2026-07-13T00:14:19",
+  "totalDays": 277,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 199,
+      "date": "2026-07-12",
+      "title": "Day 199 - Nightly Stats And Tools Sync",
+      "era": "Full Stack AI",
+      "type": [
+        "Build"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Automation",
+        "DevOps",
+        "Frontend"
+      ],
+      "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "How to Use Your Claude Code Projects in Codex in 5 Mins",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=kB9iMD0EjT8",
+          "runtime_min": 8.7,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation"
+          ]
+        },
+        {
+          "title": "Stop Using Fable 5 in Claude Code (It\u2019s Holding You Back)",
+          "channel": "Simon Scrapes",
+          "url": "https://www.youtube.com/watch?v=d9XCX0PcOq0",
+          "runtime_min": 20.3,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Business",
+            "Design"
+          ]
+        },
+        {
+          "title": "Fable 5 Agentic OS is Insane... just watch",
+          "channel": "Jack Roberts",
+          "url": "https://www.youtube.com/watch?v=3ujOdi9W1EI",
+          "runtime_min": 19,
+          "category": [
+            "AI/ML",
+            "Agents"
+          ]
+        },
+        {
+          "title": "Claude Code + Clay Makes Lead Generation Actually Fun",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=zyvdl__Ywfk",
+          "runtime_min": 18,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "When Stupid Cops Arrest An FBI Agent",
+          "channel": "Caught on Tape",
+          "url": "https://www.youtube.com/watch?v=WzyzX7RY1js",
+          "runtime_min": 41.5,
+          "category": [
+            "Agents",
+            "Security"
+          ]
+        },
+        {
+          "title": "Claude & Codex Agents in VS Code",
+          "channel": "Visual Studio Code",
+          "url": "https://www.youtube.com/watch?v=OWYQ8Mn7KqE",
+          "runtime_min": 5.7,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "GPT-5.6 vs Claude Fable 5: I Tested 6 Real Use Cases (Here\u2019s the Winner)",
+          "channel": "Peter Yang",
+          "url": "https://www.youtube.com/watch?v=8mY9wx_iMSU",
+          "runtime_min": 28.5,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
+        },
+        {
+          "title": "#4 Set Up VS Code for Codex and Claude Code",
+          "channel": "LetsVibeCode",
+          "url": "https://www.youtube.com/watch?v=rGms0rq1Xuo",
+          "runtime_min": 4.3,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Design",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "What Happens When You Combine GPT-5.6 + Claude Fable 5?",
+          "channel": "Nick Puru | AI Automation",
+          "url": "https://www.youtube.com/watch?v=jEa_rEUL-vA",
+          "runtime_min": 26,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "DevOps"
+          ]
+        },
+        {
+          "title": "Your REST API Was Already an MCP Server (You Just Didn't Know It)",
+          "channel": "Code With Ease - By Varsha",
+          "url": "https://www.youtube.com/watch?v=DpWuqAKEnyE",
+          "runtime_min": 25.5,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Business",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Unreal Engine MCP - Full Beginners Tutorial",
+          "channel": "Maciej Dziuba",
+          "url": "https://www.youtube.com/watch?v=frscujXAenE",
+          "runtime_min": 19.9,
+          "category": [
+            "Agents",
+            "Business"
+          ]
+        },
+        {
+          "title": "OpenAI Just Merged ChatGPT and Codex. This Changes Everything. ",
+          "channel": "Riley Brown",
+          "url": "https://www.youtube.com/watch?v=Fv0XfyLT3xU",
+          "runtime_min": 47.9,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "Claude Cowork Finally Clicked When I Learned This",
+          "channel": "Paul J Lipsky",
+          "url": "https://www.youtube.com/watch?v=szWBwfPX30M",
+          "runtime_min": 14.6,
+          "category": [
+            "AI/ML",
+            "Automation"
+          ]
+        },
+        {
+          "title": "This Free Tool Runs 5 AI Coding Agents at Once",
+          "channel": "Sean Kochel",
+          "url": "https://www.youtube.com/watch?v=rhHjSrsv8as",
+          "runtime_min": 11.7,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Business"
+          ]
+        },
+        {
+          "title": "This Skill Turns Fable 5 & GPT 5.6 Into Web Design MONSTERS",
+          "channel": "Chase AI",
+          "url": "https://www.youtube.com/watch?v=KBH8P0z2AL8",
+          "runtime_min": 9.8,
+          "category": [
+            "AI/ML",
+            "Business",
+            "Design",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "I Gave GPT-5.6-Sol Unlimited Money to Make Ads (+ Results)",
+          "channel": "Nick Saraev",
+          "url": "https://www.youtube.com/watch?v=rbUFFMtKcaQ",
+          "runtime_min": 20.2,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Security",
+            "Business",
+            "Design"
+          ]
+        },
+        {
+          "title": "ChatGPT 5.6 just KILLED Fable 5",
+          "channel": "Alex Finn",
+          "url": "https://www.youtube.com/watch?v=r0TLqUwsB28",
+          "runtime_min": 19.7,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "Don't Hang Up On AI Scammers. Do THIS Instead.",
+          "channel": "Kitboga",
+          "url": "https://www.youtube.com/watch?v=lk3jCuITwcE",
+          "runtime_min": 16.9,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "Grok 4.5 is a bigger deal than Fable 5",
+          "channel": "Greg Isenberg",
+          "url": "https://www.youtube.com/watch?v=LvsQR7Vc4fQ",
+          "runtime_min": 56,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "The Truth About Fable 5's Comeback",
+          "channel": "Stacked Podcast",
+          "url": "https://www.youtube.com/watch?v=Q1fet-jtVpo",
+          "runtime_min": 56.6,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "Fable 5 + GPT 5.6 Sol = CHEAT CODE",
+          "channel": "Chase AI",
+          "url": "https://www.youtube.com/watch?v=gsvZn4nbFus",
+          "runtime_min": 9.6,
+          "category": [
+            "AI/ML",
+            "Business",
+            "Open Source"
+          ]
+        }
+      ],
+      "builds": [],
+      "takeaway": "**Shipped a quiet day:** the only thing that moved was the nightly auto-sync running on its own, refreshing the stats checkpoint and the tools JSON that feed the site. No hand-written code went out, and that is the point of the automation.\n\nThe real build work landed a couple days earlier with the tool cards, Signature Builds, and the Ops Dashboard. Days like this are the system doing its job while I stay off the keyboard."
+    },
     {
       "day": 198,
       "date": "2026-07-11",
