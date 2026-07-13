@@ -1,28 +1,28 @@
 {
   "methodology": "github_clone_wc_l",
-  "countedAt": "2026-07-08T05:27:18.091267+00:00",
-  "github_loc": 2858239,
-  "github_commits": 4509,
-  "live_agents_registry": 41,
-  "repos_count": 46,
-  "agents_live": 46,
-  "ratchet_loc": 2858239,
-  "ratchet_commits": 4509,
-  "ratchet_agents": 46,
-  "claude_hours": 1981,
-  "claude_tokens": 27036990360,
-  "claude_sessions": 519,
-  "ratchet_claude_hours": 1981,
-  "ratchet_claude_tokens": 27036990360,
-  "codex_tokens": 772796886,
-  "codex_sessions": 894,
-  "ai_tokens": 27809787246,
-  "ratchet_ai_tokens": 27809787246,
+  "countedAt": "2026-07-13T05:19:54.002058+00:00",
+  "github_loc": 2909653,
+  "github_commits": 4866,
+  "live_agents_registry": 39,
+  "repos_count": 47,
+  "agents_live": 47,
+  "ratchet_loc": 2909653,
+  "ratchet_commits": 4866,
+  "ratchet_agents": 47,
+  "claude_hours": 1955,
+  "claude_tokens": 27624175270,
+  "claude_sessions": 494,
+  "ratchet_claude_hours": 2025,
+  "ratchet_claude_tokens": 27830410882,
+  "codex_tokens": 1462052306,
+  "codex_sessions": 1542,
+  "ai_tokens": 29086227576,
+  "ratchet_ai_tokens": 29086227576,
   "skills": 399,
   "ratchet_skills": 399,
-  "ratchet_repos": 46,
-  "tools": 184,
-  "ratchet_tools": 185,
+  "ratchet_repos": 47,
+  "tools": 187,
+  "ratchet_tools": 187,
   "per_repo": {
     "ninjaforhire/ai-fashion-sketch": {
       "loc": 613,
@@ -30,9 +30,9 @@
       "commits": 8
     },
     "ninjaforhire/andrewwebber.dev": {
-      "loc": 33705,
-      "files": 140,
-      "commits": 166
+      "loc": 35746,
+      "files": 148,
+      "commits": 182
     },
     "ninjaforhire/Biometric-Lab": {
       "loc": 11,
@@ -50,19 +50,19 @@
       "commits": 1
     },
     "ninjaforhire/claude-config": {
-      "loc": 47266,
-      "files": 1056,
-      "commits": 104
+      "loc": 49070,
+      "files": 1126,
+      "commits": 118
     },
     "ninjaforhire/claude-usage": {
-      "loc": 12144,
-      "files": 60,
-      "commits": 61
+      "loc": 12947,
+      "files": 62,
+      "commits": 69
     },
     "ninjaforhire/cli-printing-press": {
-      "loc": 469328,
-      "files": 1165,
-      "commits": 13
+      "loc": 469849,
+      "files": 1166,
+      "commits": 23
     },
     "ninjaforhire/deconstructed-studio": {
       "loc": 3095,
@@ -90,9 +90,9 @@
       "commits": 2
     },
     "ninjaforhire/forge": {
-      "loc": 145136,
-      "files": 722,
-      "commits": 453
+      "loc": 145788,
+      "files": 724,
+      "commits": 462
     },
     "ninjaforhire/general-tools": {
       "loc": 63878,
@@ -107,7 +107,7 @@
     "ninjaforhire/hotfixops": {
       "loc": 91530,
       "files": 636,
-      "commits": 171
+      "commits": 173
     },
     "ninjaforhire/hotfixops-site": {
       "loc": 9403,
@@ -120,14 +120,14 @@
       "commits": 9
     },
     "ninjaforhire/mighty": {
-      "loc": 144671,
-      "files": 827,
-      "commits": 521
+      "loc": 146239,
+      "files": 834,
+      "commits": 548
     },
     "ninjaforhire/mighty-agents": {
-      "loc": 465944,
-      "files": 2320,
-      "commits": 1383
+      "loc": 485012,
+      "files": 2448,
+      "commits": 1543
     },
     "ninjaforhire/MIGHTY-Apps": {
       "loc": 743,
@@ -138,6 +138,11 @@
       "loc": 24772,
       "files": 64,
       "commits": 51
+    },
+    "ninjaforhire/mighty-crm": {
+      "loc": 809,
+      "files": 5,
+      "commits": 4
     },
     "ninjaforhire/mighty-gallery": {
       "loc": 2099,
@@ -150,9 +155,9 @@
       "commits": 28
     },
     "ninjaforhire/mighty-music-box": {
-      "loc": 57644,
-      "files": 68,
-      "commits": 97
+      "loc": 69394,
+      "files": 84,
+      "commits": 107
     },
     "ninjaforhire/mighty-playbook": {
       "loc": 3188,
@@ -180,9 +185,9 @@
       "commits": 20
     },
     "ninjaforhire/mpb-site": {
-      "loc": 15304,
-      "files": 156,
-      "commits": 70
+      "loc": 15563,
+      "files": 157,
+      "commits": 71
     },
     "ninjaforhire/Notion-Tools": {
       "loc": 1126,
@@ -240,9 +245,9 @@
       "commits": 80
     },
     "ninjaforhire/workspace-config": {
-      "loc": 344840,
-      "files": 518,
-      "commits": 585
+      "loc": 356979,
+      "files": 559,
+      "commits": 681
     },
     "ninjaforhire/wraith": {
       "loc": 141280,

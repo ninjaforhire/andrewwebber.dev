@@ -273,6 +273,16 @@
     "domain": "Apps"
   },
   {
+    "slug": "ai-report-card",
+    "name": "ai-report-card",
+    "description": "Score an AI photo booth event's outputs against the client reference + eval profile and produce a private MIGHTY-branded HTML report card",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/ops/ai-report-card",
+    "domain": "Ops"
+  },
+  {
     "slug": "analyze-video",
     "name": "analyze-video",
     "description": ">",
@@ -385,12 +395,12 @@
   {
     "slug": "client-lookup",
     "name": "client-lookup",
-    "description": "Compat shim -> research-agent --subject client",
+    "description": "Look up a client in the MIGHTY Photo Booths Notion CRM",
     "category": "photo-booth",
-    "subcategory": "agent",
-    "source": "agent",
-    "location": "mighty/agents/tools/client-lookup",
-    "domain": "Ops"
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/sales/client-lookup",
+    "domain": "Sales"
   },
   {
     "slug": "client-montage",
@@ -415,12 +425,12 @@
   {
     "slug": "company-lookup",
     "name": "company-lookup",
-    "description": "Compat shim -> research-agent --subject company",
+    "description": "Look up a company or organization in the MIGHTY Photo Booths Notion CRM",
     "category": "photo-booth",
-    "subcategory": "agent",
-    "source": "agent",
-    "location": "mighty/agents/tools/company-lookup",
-    "domain": "Ops"
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/sales/company-lookup",
+    "domain": "Sales"
   },
   {
     "slug": "creating-skills",
@@ -680,6 +690,26 @@
     "source": "skill",
     "location": "mighty/skills/sales/gmail-lead-scanner",
     "domain": "Sales"
+  },
+  {
+    "slug": "grade",
+    "name": "grade",
+    "description": "Interactive color-grading rescue for MIGHTY booth media (video + stills)",
+    "category": "photo-booth",
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/design-center/grade",
+    "domain": "Design"
+  },
+  {
+    "slug": "grading-agent",
+    "name": "grading-agent",
+    "description": "Deterministic, profile-driven color grading (grade-cli) for overcast/evening booth media rescues",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/grading-agent",
+    "domain": "Ops"
   },
   {
     "slug": "inbox-agent",
@@ -1110,16 +1140,6 @@
     "domain": "Ops"
   },
   {
-    "slug": "org-lookup",
-    "name": "org-lookup",
-    "description": "Compat shim -> research-agent --subject org",
-    "category": "photo-booth",
-    "subcategory": "agent",
-    "source": "agent",
-    "location": "mighty/agents/tools/org-lookup",
-    "domain": "Ops"
-  },
-  {
     "slug": "osint",
     "name": "osint",
     "description": "Full OSINT pipeline: research client + company + venue, create Notion records, generate pitch design request",
@@ -1128,6 +1148,16 @@
     "source": "skill",
     "location": "mighty/skills/sales/osint",
     "domain": "Sales"
+  },
+  {
+    "slug": "output-evaluator",
+    "name": "output-evaluator",
+    "description": "Photo booth AI-output QA: dual-judge vision evals (Codex + Claude) against client reference images, per-event eval profiles, branded HTML report cards + SQLite scan history",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/output-evaluator",
+    "domain": "Ops"
   },
   {
     "slug": "overlay-batch-fixer",
@@ -1472,12 +1502,12 @@
   {
     "slug": "venue-lookup",
     "name": "venue-lookup",
-    "description": "Compat shim -> research-agent --subject venue",
+    "description": "Look up a venue in the MIGHTY Photo Booths Notion database or research a new venue",
     "category": "photo-booth",
-    "subcategory": "agent",
-    "source": "agent",
-    "location": "mighty/agents/tools/venue-lookup",
-    "domain": "Ops"
+    "subcategory": "skill",
+    "source": "skill",
+    "location": "mighty/skills/sales/venue-lookup",
+    "domain": "Sales"
   },
   {
     "slug": "video-teacher",
