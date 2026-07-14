@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-14T00:15:25",
-  "totalDays": 278,
+  "lastUpdated": "2026-07-14T09:48:04",
+  "totalDays": 269,
   "currentEra": "Full Stack AI",
   "entries": [
     {
@@ -374,87 +374,92 @@
     {
       "day": 198,
       "date": "2026-07-11",
-      "title": "I Tested GPT 5.6 Sol vs Fable 5. What You Need To Know.",
+      "title": "Day 198 - AI Report Card Passes Codex Gauntlet",
       "era": "Full Stack AI",
       "type": [
-        "Video"
+        "Build",
+        "Fix"
       ],
-      "source": "YouTube",
+      "source": "Claude Code",
       "category": [
         "AI/ML",
-        "Automation",
-        "Business"
+        "Agents",
+        "CRM",
+        "Security"
       ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=EthxaDswUFo",
-      "channel": "Nate Herk | AI Automation",
-      "runtime_min": 20.4,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 198,
-      "date": "2026-07-11",
-      "title": "Notion Can Finally... Print?! (New Superpower Update)",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "I Tested GPT 5.6 Sol vs Fable 5. What You Need To Know.",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=EthxaDswUFo",
+          "runtime_min": 20.4,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "16 New Notion Updates (in just 16 minutes)",
+          "channel": "Matthias Frank",
+          "url": "https://www.youtube.com/watch?v=GnonRPjbzZY",
+          "runtime_min": 16.2,
+          "category": [
+            "Automation",
+            "Business",
+            "No-Code"
+          ]
+        },
+        {
+          "title": "Notion Can Finally... Print?! (New Superpower Update)",
+          "channel": "Matthias Frank",
+          "url": "https://www.youtube.com/watch?v=dlf274Q2nGg",
+          "runtime_min": 15.2,
+          "category": [
+            "Business",
+            "No-Code"
+          ]
+        }
       ],
-      "source": "YouTube",
-      "category": [
-        "Business",
-        "No-Code"
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "fix(output-evaluator): weight completeness, path-traversal guard, bad_generation scoring, drive_folder hint, color escaping (codex review 4)",
+            "fix(output-evaluator): reject non-dict verdicts, hash reference contents, validate variants, always release log handler, scope claude reads (codex review 3)",
+            "fix(grading-agent): address codex round 14 \u2014 master gamma lift-only (invariant 3)"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "feat: VSCO daemon reserves quote sequence from Neon (closes builder-daemon race)",
+            "feat(skills): /ai-report-card skill routing to output-evaluator",
+            "chore(submodule): bump agents to a23c3d7 (quote-ID convention MIGHTY-QUOTE-YYMMDD-##)"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "docs(forge): mark D15 fully SHIPPED in FORGE-ROADMAP.md",
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "docs: quote naming convention + one-writer conform rule amendment (2026-07-11)"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "fix(warden): skip CSRF gate for D15 agent service account tokens",
+            "fix: require reference for i2i-only image models (promotion-safety gate)",
+            "chore(submodule): add TheGallery (gallery-fable) style corpus"
+          ]
+        }
       ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=dlf274Q2nGg",
-      "channel": "Matthias Frank",
-      "runtime_min": 15.2,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 198,
-      "date": "2026-07-11",
-      "title": "16 New Notion Updates (in just 16 minutes)",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "Automation",
-        "Business",
-        "No-Code"
-      ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=GnonRPjbzZY",
-      "channel": "Matthias Frank",
-      "runtime_min": 16.2,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 198,
-      "date": "2026-07-11",
-      "title": "H-E-B in Fort Worth closed after catching fire",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML"
-      ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=42sP0r4jVtA",
-      "channel": "FOX 4 Dallas-Fort Worth",
-      "runtime_min": 2.7,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
+      "takeaway": "**Shipped the AI report card hardened:** I ran the output-evaluator and grading-agent through four rounds of Codex review and fixed everything it caught. Path traversal guards, non-dict verdict rejection, one-sided tweak clamps, gamma lift-only on the master image. Each round found something real, so I closed it and ran the review again.\n\nThe CRM side got a race fix too. Two writers could grab the same quote number, so now the VSCO daemon reserves the sequence from Neon before anyone builds, with a single owner for the conform step. That is the kind of bug that only shows up when two things run at once."
     },
     {
       "day": 197,
@@ -540,6 +545,72 @@
         }
       ],
       "takeaway": "**Synced plans and maps:** Two quiet housekeeping commits, one nudging plan files and one nudging the maps directory. Nothing shipped to users, nothing broke.\n\nDays like this matter more than they look. The plan index and the graph maps are what every future session reads first, so letting them drift means tomorrow's work starts from a stale picture."
+    },
+    {
+      "day": 195,
+      "date": "2026-07-08",
+      "title": "Day 195 - Moved MIGHTY's Money to Neon Postgres",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix",
+        "Milestone"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Finance",
+        "Infra",
+        "Security",
+        "Agents"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "fix: hub/map refresh on any dataset change, not just watcher patches",
+            "docs(master): add lane-master-tracker to Merge Map as workstream B SHIPPED"
+          ]
+        },
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "fix: neon_db Decimal money math + single-commit per write",
+            "clarify parity docstring",
+            "feat: income parity harness \u2014 Neon payments vs frozen VSCO fixture"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "fix(generator.js): null-init GEN.concurrency",
+            "guard stepper against pre-fetch clicks",
+            "fix(queue): enforce gen concurrency cap at dispatch via asyncio.Condition gate"
+          ]
+        },
+        {
+          "repo": "general-tools/cli-printing-press",
+          "commits": [
+            "test: update toolchain pin expectations to go1.26.5",
+            "chore(golden): refresh fixtures for go1.26.5 toolchain pin",
+            "fix(build): bump Go toolchain to 1.26.5 for stdlib crypto/tls advisory"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "docs: route QuickBooks reads through quickbooks-pp-cli",
+            "chore: mount mighty-crm submodule at crm/app (#35)",
+            "docs(newclient): add template hard rule and headless DR fallback"
+          ]
+        }
+      ],
+      "takeaway": "**Moved the money onto Postgres:** MIGHTY's quote engine and VSCO payment history now live in Neon Postgres, with SQLite kept as an escape hatch. I built a parity harness that checks Neon payments against a frozen VSCO fixture so the numbers can't drift, and switched all money math to Decimal so nothing rounds wrong.\n\nThe other half of the day went to agent security in Forge. Warden now mints owner-only tokens and stamps each agent with its own identity header, so a bot running on localhost never quietly inherits my owner rights."
     },
     {
       "day": 194,
@@ -1281,45 +1352,65 @@
     {
       "day": 188,
       "date": "2026-07-01",
-      "title": "We Hacked Flock Safety Cameras in under 30 Seconds. \ud83e\udee5",
+      "title": "Day 188 - TEMPEST Reframes STORM Into Dossiers",
       "era": "Full Stack AI",
       "type": [
-        "Video"
+        "Build",
+        "Fix",
+        "Milestone"
       ],
-      "source": "YouTube",
+      "source": "Claude Code",
       "category": [
         "AI/ML",
-        "Security",
-        "Open Source"
+        "Automation",
+        "Security"
       ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=uB0gr7Fh6lY",
-      "channel": "Benn Jordan",
-      "runtime_min": 43.8,
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
       "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 188,
-      "date": "2026-07-01",
-      "title": "m4 mac mini power draw is negligible",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
+      "builds": [
+        {
+          "repo": "general-tools",
+          "commits": [
+            "feat(tempest): reframe STORM synthesis as investigative dossier (#5)",
+            "feat(tempest): record framed payload in ClaudePLM history",
+            "feat(tempest): reframe STORM synthesis as investigative dossier"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "sales: HPUMC HotFix Ops engagement agreement + quote + Texas enforceability review",
+            "style: ruff format raven playbooks for CI format gate",
+            "style: ruff format darkmoon harvest files for CI format gate"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "docs: all-green Texas-enforceable HPUMC engagement (conspicuous fair-notice clauses, narrowed indemnity, DTPA/UETA/CFAA/521.053 fixes)",
+            "docs: HPUMC engagement to legalese + one-page quote + 5 legal-review fixes",
+            "rename to HotFixOps_ convention"
+          ]
+        },
+        {
+          "repo": "war-room",
+          "commits": [
+            "fix(cli): expanduser on TEMPEST_STORM_PYTHON override",
+            "fix(cli): configurable+validated storm interpreter path",
+            "document --color intent"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "fix(vsco): source sync daemon token from CLI config, not stale .env.sync"
+          ]
+        }
       ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Frontend"
-      ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=0Nc5sxlwZWY",
-      "channel": "Alex Ziskind",
-      "runtime_min": 0.3,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
+      "takeaway": "**Shipped TEMPEST v1:** I took Stanford's STORM research engine and reframed its raw synthesis into an investigative dossier, then wired it straight into War Room with a new `wr storm` subcommand. Most of the day went to hardening the untrusted paths, rejecting leading-dash argv, coercing non-string fields, guarding malformed JSON, and serializing the stateful Serper retrieval so parallel runs stop stepping on each other.\n\nOn the security side I closed out the HPUMC HotFix Ops engagement, an all-green Texas-enforceable agreement with a one-page quote, and added a clean-room command gatekeeper plus a standards-tagging schema for findings. Quiet win at the end: the VSCO sync daemon now pulls its token from the CLI config instead of a stale .env file."
     },
     {
       "day": 187,
@@ -1910,157 +2001,129 @@
     {
       "day": 181,
       "date": "2026-06-24",
-      "title": "\u0628\u062f\u0623\u062a \u0642\u0646\u0627\u0629 \"\u0639\u0627\u0626\u0644\u0629 \u0623\u0628\u0648 \u0645\u062d\u0645\u062f \u0648\u0641\u0637\u0648\u0645 \u0645\u0646 \u063a\u0632\u0629 \" \u0628\u062b\u064b\u0627 \u0645\u0628\u0627\u0634\u0631\u064b\u0627",
+      "title": "Day 181 - Design pipeline routes full-thread assets",
       "era": "Full Stack AI",
       "type": [
-        "Video"
+        "Build",
+        "Fix"
       ],
-      "source": "YouTube",
+      "source": "Claude Code",
       "category": [
-        "AI/ML"
-      ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=L5NxXBMmW7A",
-      "channel": "\u0639\u0627\u0626\u0644\u0629 \u0623\u0628\u0648 \u0645\u062d\u0645\u062f \u0648\u0641\u0637\u0648\u0645 \u0645\u0646 \u063a\u0632\u0629",
-      "runtime_min": 145.3,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 181,
-      "date": "2026-06-24",
-      "title": "The Pi Coding Agent: The ONLY REAL Claude Code COMPETITOR",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
         "Agents",
         "Automation",
-        "Business",
-        "Open Source"
+        "Design",
+        "CRM"
       ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=f8cfH5XX-XU",
-      "channel": "IndyDevDan",
-      "runtime_min": 51.6,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 181,
-      "date": "2026-06-24",
-      "title": "7 Gimbal Tricks for Instant Cinematic Shots",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
+      "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "The Pi Coding Agent: The ONLY REAL Claude Code COMPETITOR",
+          "channel": "IndyDevDan",
+          "url": "https://www.youtube.com/watch?v=f8cfH5XX-XU",
+          "runtime_min": 51.6,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Seedance 2.0 4k Officially Public! Full Prompting Tutorial (Claude + Higgsfield)",
+          "channel": "Samin Yasar",
+          "url": "https://www.youtube.com/watch?v=NkFIeQhhgXk",
+          "runtime_min": 28.1,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Google Just Dropped a Masterclass on Agentic Engineering (It's SO Good)",
+          "channel": "Cole Medin",
+          "url": "https://www.youtube.com/watch?v=zbmuiaPuiNM",
+          "runtime_min": 21.9,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "New Notion Update: External Agents In Notion",
+          "channel": "Matthias Frank",
+          "url": "https://www.youtube.com/watch?v=ws3H6Yoabx0",
+          "runtime_min": 24.4,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Business",
+            "No-Code"
+          ]
+        }
       ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML"
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "feat(gallery-analytics): rebuild womens-symposium impact report",
+            "fix(design-center-pipeline): strip signature links from reference capture (#58)",
+            "fix(design-center-pipeline): address codex on signature-link filter"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "chore(gitignore): untrack auto-regenerated skill-ecosystem dashboard",
+            "chore(registry): nightly skill-ecosystem regen 2026-06-24"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(submodule): bump agents",
+            "chore(submodule): bump agents (sysopt single-core runaway detect + launchd self-heal",
+            "#56)"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "fix(ci): add missing aisec test deps (rich, fastapi, uvicorn, httpx)",
+            "style: ruff-clean merged tree for the strict Phase-6 gate"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "wip(image_forge): collage maker editor static assets",
+            "wip(image_forge): collage maker tool \u2014 engine, server, store, presets + wing registration"
+          ]
+        },
+        {
+          "repo": "general-tools",
+          "commits": [
+            "feat(gif-and-text): add photos-to-text skill with Quo web send"
+          ]
+        },
+        {
+          "repo": "general-tools/cli-printing-press",
+          "commits": [
+            "chore(ci): add .secretscanignore for generated golden fixtures"
+          ]
+        }
       ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=Xk-3A9lMcsU",
-      "channel": "Learn Online Video",
-      "runtime_min": 10.8,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 181,
-      "date": "2026-06-24",
-      "title": "One on One with Mark Forss of Vintage Party Cam",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML"
-      ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=LNXob5HI5JA",
-      "channel": "Rex's Photo Booth Reviews and Tutorials",
-      "runtime_min": 15.4,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 181,
-      "date": "2026-06-24",
-      "title": "New Notion Update: External Agents In Notion",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "Business",
-        "No-Code"
-      ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=ws3H6Yoabx0",
-      "channel": "Matthias Frank",
-      "runtime_min": 24.4,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 181,
-      "date": "2026-06-24",
-      "title": "Seedance 2.0 4k Officially Public! Full Prompting Tutorial (Claude + Higgsfield)",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "Automation",
-        "Business",
-        "Open Source"
-      ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=NkFIeQhhgXk",
-      "channel": "Samin Yasar",
-      "runtime_min": 28.1,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
-    },
-    {
-      "day": 181,
-      "date": "2026-06-24",
-      "title": "Google Just Dropped a Masterclass on Agentic Engineering (It's SO Good)",
-      "era": "Full Stack AI",
-      "type": [
-        "Video"
-      ],
-      "source": "YouTube",
-      "category": [
-        "AI/ML",
-        "Agents",
-        "Automation",
-        "Business",
-        "Open Source"
-      ],
-      "impact": "Low",
-      "url": "https://www.youtube.com/watch?v=zbmuiaPuiNM",
-      "channel": "Cole Medin",
-      "runtime_min": 21.9,
-      "videos": [],
-      "builds": [],
-      "takeaway": ""
+      "takeaway": "**Taught the design pipeline to read the whole thread:** when a client asks for edits, it now pulls reference assets from every message in the conversation instead of just the latest reply. I also stopped it from scooping up signature links, so logos and social icons buried in email footers no longer pollute the reference set.\n\nCodex flagged gaps in both changes and I patched them before merge. On the side I kicked off a collage maker inside Image Forge and rebuilt the women's symposium impact report."
     },
     {
       "day": 180,
