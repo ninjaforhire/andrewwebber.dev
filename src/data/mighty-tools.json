@@ -1170,6 +1170,16 @@
     "domain": "Design"
   },
   {
+    "slug": "payment-reminder-cadence",
+    "name": "payment-reminder-cadence",
+    "description": "Automated payment-reminder cadence \u2014 deposit/retainer nudges and a balance-due escalation ladder (reminder/warning/release), draft-only via compose_reply and a dedicated billing@ Gmail alias",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/payment-reminder-cadence",
+    "domain": "Ops"
+  },
+  {
     "slug": "pbt-content-scraper",
     "name": "pbt-content-scraper",
     "description": "Automated scraper that collects industry template resources (welcome screens, print overlays, 360 overlays, PSD templates) into an organized asset library",

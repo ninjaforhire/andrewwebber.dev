@@ -1,28 +1,28 @@
 {
   "methodology": "github_clone_wc_l",
-  "countedAt": "2026-07-13T05:19:54.002058+00:00",
-  "github_loc": 2909653,
-  "github_commits": 4866,
-  "live_agents_registry": 39,
+  "countedAt": "2026-07-14T05:21:27.385148+00:00",
+  "github_loc": 2916521,
+  "github_commits": 4976,
+  "live_agents_registry": 40,
   "repos_count": 47,
   "agents_live": 47,
-  "ratchet_loc": 2909653,
-  "ratchet_commits": 4866,
+  "ratchet_loc": 2916521,
+  "ratchet_commits": 4976,
   "ratchet_agents": 47,
-  "claude_hours": 1955,
-  "claude_tokens": 27624175270,
-  "claude_sessions": 494,
+  "claude_hours": 1973,
+  "claude_tokens": 27757233894,
+  "claude_sessions": 498,
   "ratchet_claude_hours": 2025,
   "ratchet_claude_tokens": 27830410882,
-  "codex_tokens": 1462052306,
-  "codex_sessions": 1542,
-  "ai_tokens": 29086227576,
-  "ratchet_ai_tokens": 29086227576,
+  "codex_tokens": 1491287349,
+  "codex_sessions": 1558,
+  "ai_tokens": 29248521243,
+  "ratchet_ai_tokens": 29248521243,
   "skills": 399,
   "ratchet_skills": 399,
   "ratchet_repos": 47,
-  "tools": 187,
-  "ratchet_tools": 187,
+  "tools": 188,
+  "ratchet_tools": 188,
   "per_repo": {
     "ninjaforhire/ai-fashion-sketch": {
       "loc": 613,
@@ -30,9 +30,9 @@
       "commits": 8
     },
     "ninjaforhire/andrewwebber.dev": {
-      "loc": 35746,
+      "loc": 36040,
       "files": 148,
-      "commits": 182
+      "commits": 184
     },
     "ninjaforhire/Biometric-Lab": {
       "loc": 11,
@@ -55,9 +55,9 @@
       "commits": 118
     },
     "ninjaforhire/claude-usage": {
-      "loc": 12947,
-      "files": 62,
-      "commits": 69
+      "loc": 13642,
+      "files": 64,
+      "commits": 76
     },
     "ninjaforhire/cli-printing-press": {
       "loc": 469849,
@@ -90,9 +90,9 @@
       "commits": 2
     },
     "ninjaforhire/forge": {
-      "loc": 145788,
-      "files": 724,
-      "commits": 462
+      "loc": 146340,
+      "files": 726,
+      "commits": 518
     },
     "ninjaforhire/general-tools": {
       "loc": 63878,
@@ -107,7 +107,7 @@
     "ninjaforhire/hotfixops": {
       "loc": 91530,
       "files": 636,
-      "commits": 173
+      "commits": 174
     },
     "ninjaforhire/hotfixops-site": {
       "loc": 9403,
@@ -120,14 +120,14 @@
       "commits": 9
     },
     "ninjaforhire/mighty": {
-      "loc": 146239,
-      "files": 834,
-      "commits": 548
+      "loc": 146419,
+      "files": 835,
+      "commits": 552
     },
     "ninjaforhire/mighty-agents": {
-      "loc": 485012,
-      "files": 2448,
-      "commits": 1543
+      "loc": 489314,
+      "files": 2491,
+      "commits": 1567
     },
     "ninjaforhire/MIGHTY-Apps": {
       "loc": 743,
@@ -190,9 +190,9 @@
       "commits": 71
     },
     "ninjaforhire/Notion-Tools": {
-      "loc": 1126,
-      "files": 10,
-      "commits": 8
+      "loc": 1620,
+      "files": 11,
+      "commits": 9
     },
     "ninjaforhire/pp-libraries": {
       "loc": 70731,
@@ -245,9 +245,9 @@
       "commits": 80
     },
     "ninjaforhire/workspace-config": {
-      "loc": 356979,
-      "files": 559,
-      "commits": 681
+      "loc": 357330,
+      "files": 563,
+      "commits": 696
     },
     "ninjaforhire/wraith": {
       "loc": 141280,
