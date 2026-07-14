@@ -282,7 +282,7 @@ def props_to_entry(page: dict, body_data: dict) -> dict:
 
 
 def bundle_videos_into_journal(entries: list[dict]) -> list[dict]:
-    """Merge per-video LL records (Source=YouTube or Type=Video) into each day's journal entry's videos[] list."""
+    """Bundle videos into journals while preserving only historic day-0 records."""
     from collections import defaultdict
     by_date: dict[str, list[dict]] = defaultdict(list)
     for e in entries:
@@ -305,6 +305,9 @@ def bundle_videos_into_journal(entries: list[dict]) -> list[dict]:
             types = e.get("type") or []
             return any(t in {"Video", "YouTube"} for t in types)
 
+        def is_journey_record(e: dict) -> bool:
+            return int(e.get("day") or 0) > 0
+
         journals = [e for e in day_entries if is_journal(e)]
         videos = [e for e in day_entries if is_video_record(e) and not is_journal(e)]
         other = [e for e in day_entries if e not in journals and e not in videos]
@@ -322,12 +325,13 @@ def bundle_videos_into_journal(entries: list[dict]) -> list[dict]:
                 })
             journal["videos"] = curate_videos(existing)
             out.append(journal)
-            # Keep any other non-journal, non-video entries (e.g. books, courses)
-            out.extend(other)
+            out.extend(e for e in other if not is_journey_record(e))
             out.extend(journals[1:])  # in case of multiple journals same day
         else:
-            # No journal entry that day — keep video records as-is (won't show as bundled)
-            out.extend(day_entries)
+            out.extend(
+                e for e in day_entries
+                if not is_journey_record(e) and not is_video_record(e)
+            )
 
     return out
 
