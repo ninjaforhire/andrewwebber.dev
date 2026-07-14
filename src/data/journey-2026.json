@@ -1,8 +1,117 @@
 {
-  "lastUpdated": "2026-07-13T00:14:19",
-  "totalDays": 277,
+  "lastUpdated": "2026-07-14T00:15:25",
+  "totalDays": 278,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 200,
+      "date": "2026-07-13",
+      "title": "Day 200 - Codex Review Rounds Harden Two Pipelines",
+      "era": "Full Stack AI",
+      "type": [
+        "Fix",
+        "Build"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "Automation",
+        "AI/ML"
+      ],
+      "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "Google Antigravity Tutorial for Beginners: Build Your First App (Step-by-Step)",
+          "channel": "Teacher's Tech",
+          "url": "https://www.youtube.com/watch?v=-0Irz8G0PEE",
+          "runtime_min": 13.5,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Frontend",
+            "Design",
+            "DevOps"
+          ]
+        },
+        {
+          "title": "Learn To Code Like a GENIUS and Not Waste Time",
+          "channel": "The Coding Sloth",
+          "url": "https://www.youtube.com/watch?v=q-_ezD9Swz4",
+          "runtime_min": 9.7,
+          "category": [
+            "Business",
+            "Design",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Claude just got another superpower...",
+          "channel": "Fireship",
+          "url": "https://www.youtube.com/watch?v=jeA-KBv0b68",
+          "runtime_min": 5.2,
+          "category": [
+            "AI/ML",
+            "Frontend",
+            "Design",
+            "DevOps"
+          ]
+        },
+        {
+          "title": "Vibe Coding With GPT 5.6",
+          "channel": "BridgeMind",
+          "url": "https://www.youtube.com/watch?v=MkeyOv0P7TY",
+          "runtime_min": 124.7,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation"
+          ]
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "chore: remove dead cadence_config.yaml, drop 'tunable' claim",
+            "docs: log accepted residual race window (FOLLOWUP #6)",
+            "fix: address codex round-2 \u2014 neutral greeting fallback, whitespace-only body guard"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "Excalidraw update.",
+            "updating excalidraw according to plan"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(submodule): bump agents to origin/main (3b27a1a4)",
+            "chore(submodule): bump agents to pushed origin/main (4fb221d)",
+            "General push to get caught up. Might need to come back to this. July 13"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "fix(video): scope i2v resolvability gate to direct-inspection mode \u2014 route vouches via reference_present (codex round 2)",
+            "fix(queue): enforce gen lane-pairing invariant at queue boundary \u2014 retry/recovery refuse stored mismatched rows (codex round 3)"
+          ]
+        },
+        {
+          "repo": "mighty/notion",
+          "commits": [
+            "Event burnouts."
+          ]
+        }
+      ],
+      "takeaway": "**Shipped three rounds of codex fixes on the payment-reminder agent:** a stage-aware race guard, contact-name greetings with a neutral fallback, and guards against empty or whitespace-only bodies. I also cleaned out a dead cadence config, logged the one race window I decided to accept instead of chasing, and corrected some SDD reports that pointed at the wrong content.\n\nForge got the same treatment on the video side. The i2v resolvability gate now only applies in direct-inspection mode, and the queue refuses to retry rows where the gen lanes got mismatched. Adversarial review earned its keep today since almost every commit came out of a codex round."
+    },
     {
       "day": 199,
       "date": "2026-07-12",
