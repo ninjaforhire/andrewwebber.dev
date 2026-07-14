@@ -44,7 +44,7 @@ import shutil
 import subprocess
 import sys
 import time
-from datetime import date
+from datetime import date, timedelta
 import urllib.request
 import urllib.parse
 from pathlib import Path
@@ -158,7 +158,9 @@ def main() -> None:
     )
 
     LOG.info("=== nightly journey sync START ===")
-    journal_date = date.today().isoformat()  # captured at run start
+    journal_end = date.today()  # captured at run start
+    journal_start_date = (journal_end - timedelta(days=6)).isoformat()
+    journal_end_date = journal_end.isoformat()
     disconnected: list[str] = []
     fatal: list[str] = []
 
@@ -172,10 +174,10 @@ def main() -> None:
         ]
     sources += [
         ([PYTHON, str(SCRIPTS / "queue_to_ll_sync.py")], "queue-to-ll"),
-        # Daily "Day NNN" journal entry from today's git commits + claude -p (date
-        # captured at run start). Runs after the video/book feeds so the day's records
-        # exist to bundle. Best-effort: a miss flags disconnected, never blocks deploy.
-        ([PYTHON_BREW, str(SCRIPTS / "generate_journey_entry.py"), "--date", journal_date], "journal-entry"),
+        # Backfill the trailing 7 days so a missed night auto-recovers. Runs after the
+        # video/book feeds so each day's records exist to bundle. Best-effort: a miss
+        # flags disconnected, never blocks deploy.
+        ([PYTHON_BREW, str(SCRIPTS / "generate_journey_entry.py"), "--backfill", journal_start_date, journal_end_date], "journal-entry"),
     ]
     for cmd, label in sources:
         if not run(cmd, label=label, dry_run=args.dry_run):
