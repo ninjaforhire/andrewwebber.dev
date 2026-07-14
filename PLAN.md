@@ -54,12 +54,21 @@ Rewrite the grouping so, per calendar date:
     as-is (defensive; rare to coincide).
   - Preserve the existing "multiple journals same day" defense (`journals[1:]`).
 - **If the day has NO journal:**
-  - Emit only same-day records with `day == 0` (historic reading log — unchanged).
-  - **Drop** every same-day record with `day > 0` (in-journey strays with no journal — the junk
-    class; they will re-fold once the journal is backfilled).
+  - Emit only same-day records that are BOTH `day == 0` AND `not is_video_record(e)` — i.e. the
+    historic reading log (books/courses), unchanged.
+  - **Drop** everything else: every `day > 0` record (in-journey strays), AND every video record
+    regardless of `day`. This closes the residual where a Content-Queue-graduated video (Source
+    "Content Queue", no Streak Day → `day == 0`) would otherwise survive standalone on a
+    journal-less day. A dropped in-journey video re-folds once the journal is backfilled; a
+    journal-less video is never a legitimate standalone timeline card.
 
-Net: journey-range strays never stand alone; historic day-0 records are never dropped. Keep the
-function's docstring accurate to the new behavior. No other function changes.
+Net: journey-range strays and stray videos never stand alone; genuine historic day-0
+book/course records are never dropped. Keep the function's docstring accurate to the new behavior.
+No other function changes.
+
+Out-of-scope pre-existing quirk (DO NOT fix): `is_journal()` treats any title starting `"Day "`
+as a journal, so a video literally titled e.g. "Day in the Life ..." could be misread. This
+predates the fix, is not in the confirmed defect set, and must be left untouched.
 
 ## Change 2 — `scripts/nightly_journey_sync.py` : self-heal a trailing 7-day window
 
@@ -78,10 +87,25 @@ Keep the label `"journal-entry"`. Nothing else in the orchestrator changes.
 
 ## Change 3 — `tests/test_export_bundling.py` : pytest proving the invariants
 
-Create the test (pytest, per house standards). Import `bundle_videos_into_journal` and
-`curate_videos` from `scripts/export-journey-json.py` (add a `sys.path` insert to the scripts dir;
-the module imports `requests`/`dotenv` at top level — if that import is heavy or side-effecting,
-guard the module import so tests still run, e.g. ensure importing does not perform network I/O).
+Create the test (pytest, per house standards). The target file name is hyphenated
+(`export-journey-json.py`) so it is NOT importable as a normal module — a bare `sys.path` +
+`import` fails, and renaming the script is FORBIDDEN (the orchestrator calls it by that exact
+path). Load it via `importlib.util.spec_from_file_location`:
+
+```python
+import importlib.util, pathlib
+_p = pathlib.Path(__file__).resolve().parents[1] / "scripts" / "export-journey-json.py"
+_spec = importlib.util.spec_from_file_location("export_journey_json", _p)
+export_mod = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(export_mod)
+bundle_videos_into_journal = export_mod.bundle_videos_into_journal
+curate_videos = export_mod.curate_videos
+```
+
+(The module's top-level `load_dotenv()` no-ops on a missing path and `import requests` does no
+network I/O, so `exec_module` is import-safe as-is; no guard needed. Do NOT change the module's
+runtime behavior to accommodate the test.)
+
 Cover, with synthetic in-memory entries (no network):
 
 1. **Journal day folds videos, drops resource strays** — a day with 1 journal + 2 YouTube video
@@ -98,6 +122,10 @@ Cover, with synthetic in-memory entries (no network):
    assorted video/resource strays) → assert exactly one journal entry survives per date and no
    surviving entry is a bare video record (`is_video_record` false for all non-journal survivors, or
    simpler: every surviving journey-range entry (`day>0`) has a title starting with "Day ").
+6. **Journal-less day-0 video dropped** — a day with NO journal + 1 video record with `day==0`
+   (a Content-Queue-graduated video, `source="Content Queue"`, `type=["YouTube"]`) → output has 0
+   entries for that day (proves the residual is closed: video records never stand alone regardless
+   of `day`).
 
 Tests must pass offline and deterministically.
 
