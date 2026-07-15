@@ -1,8 +1,66 @@
 {
-  "lastUpdated": "2026-07-14T09:48:04",
-  "totalDays": 269,
+  "lastUpdated": "2026-07-15T00:16:18",
+  "totalDays": 270,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 201,
+      "date": "2026-07-14",
+      "title": "Day 201 - Guardrails Across Agents And Forge",
+      "era": "Full Stack AI",
+      "type": [
+        "Fix",
+        "Refactor",
+        "Build"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "Automation",
+        "Security",
+        "DevOps"
+      ],
+      "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "fix: exclude software-artifact junk from atticus scans, cap videohash cost",
+            "index on codex/atticus-surface-scope-videohash-cap: 955ff1ba feat: mandatory research protocol + OSINT in meeting-prep mission",
+            "fix: let migration 012 self-create lessons on minimal DBs"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "docs: align KIE routing reference",
+            "fix: serialize KIE cost attribution windows",
+            "docs: add collage test photos design"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(submodule): revert agents pointer to last pushed SHA (8b59dc3c)",
+            "chore(submodule): bump agents",
+            "refactor: route Event Details skills through coded builder CLI"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "chore(sync): plans updates (1 paths)",
+            "chore(sync): maps updates (2 paths)"
+          ]
+        }
+      ],
+      "takeaway": "**Spent the day tightening guardrails instead of adding features:** I scoped the atticus scans so they stop chewing on software-artifact junk, capped videohash cost, and made the builder post-check fail closed rather than shrug and pass. Mission spawns now get proper no-tools encoding with hooks disabled, and drafts that already went through the voice pass skip re-composition.\n\nOver in Forge I serialized the KIE cost attribution windows, routed AI reviews to run independently, and required a trusted PR base before anything publishes. Also added a mandatory research protocol to the meeting-prep mission, because a prep doc built on guesses is worse than no prep doc.\n\nThe pattern I keep landing on is that agents get dangerous when they're allowed to be vague. Every fix here was really just forcing a decision to be explicit somewhere it used to be implied."
+    },
     {
       "day": 200,
       "date": "2026-07-13",
