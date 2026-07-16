@@ -1,8 +1,185 @@
 {
-  "lastUpdated": "2026-07-15T00:16:18",
-  "totalDays": 270,
+  "lastUpdated": "2026-07-16T04:30:59",
+  "totalDays": 272,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 203,
+      "date": "2026-07-16",
+      "title": "Day 203 - Quiet Day of Automated Housekeeping",
+      "era": "Full Stack AI",
+      "type": [
+        "Build"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Automation",
+        "DevOps",
+        "Infra"
+      ],
+      "impact": "Low",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): ops updates (1 paths)",
+            "chore(sync): maps updates (2 paths)"
+          ]
+        }
+      ],
+      "takeaway": "**Let the robots run the shop:** Today was a light one on the commit log. The nightly sync daemons did their thing, pushing ops updates and refreshing the cross-project maps without me touching a keyboard.\n\nDays like this are the payoff for all the automation work. The workspace stays current, the graphs stay fresh, and I get to spend the day thinking instead of tidying."
+    },
+    {
+      "day": 202,
+      "date": "2026-07-15",
+      "title": "Day 202 - Oneshot Site Rebuild Plus Forge Exports",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Frontend",
+        "Design",
+        "Agents",
+        "CRM"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "Steal My Actual AI Agent Workflow (2027)",
+          "channel": "Nick Saraev",
+          "url": "https://www.youtube.com/watch?v=8rVQuZlRaqo",
+          "runtime_min": 19.4,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Security",
+            "Business"
+          ]
+        },
+        {
+          "title": "Linear Agent Demos \u2013 Product",
+          "channel": "Linear",
+          "url": "https://www.youtube.com/watch?v=RcltvZFEJZA",
+          "runtime_min": 7.2,
+          "category": [
+            "Agents"
+          ]
+        },
+        {
+          "title": "Introducing the Codex Micro",
+          "channel": "OpenAI",
+          "url": "https://www.youtube.com/watch?v=m8uUUUsMD3Y",
+          "runtime_min": 2.2,
+          "category": [
+            "AI/ML"
+          ]
+        },
+        {
+          "title": "Claude Fable 5's Return Costs Twice as Much to Run",
+          "channel": "ByteMonk",
+          "url": "https://www.youtube.com/watch?v=fayC4T9NGlw",
+          "runtime_min": 1.6,
+          "category": [
+            "AI/ML",
+            "Security",
+            "Design",
+            "DevOps"
+          ]
+        },
+        {
+          "title": "Code reviews in Linear: Guided reviews + coding agent",
+          "channel": "Linear",
+          "url": "https://www.youtube.com/watch?v=o_FRV_H_NVE",
+          "runtime_min": 1.1,
+          "category": [
+            "Agents",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Code review with Linear Diffs",
+          "channel": "Linear",
+          "url": "https://www.youtube.com/watch?v=YBxVdWNZtPA",
+          "runtime_min": 2.6,
+          "category": [
+            "Agents",
+            "Automation",
+            "Security"
+          ]
+        },
+        {
+          "title": "Schedule tasks with ChatGPT",
+          "channel": "OpenAI",
+          "url": "https://www.youtube.com/watch?v=CToxp125mhc",
+          "runtime_min": 1.8,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation"
+          ]
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "fix: preserve conditional pipeline transitions",
+            "fix: close pipeline parser review gaps",
+            "fix: honor inactive pipeline transitions"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "feat: build interactive export controls",
+            "feat: add pose and output preview galleries",
+            "feat: add themed prop selection"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "docs: normalize DFW Flower Wall metadata",
+            "chore(submodule): bump agents to shared QBO coordination",
+            "chore(submodule): bump mighty-crm to merged P2.5 schema \u2014 0004 ledger + outbox + crm_payment_writer (e93fb15)"
+          ]
+        },
+        {
+          "repo": "mighty/mpb-site-oneshot",
+          "commits": [
+            "feat(oneshot): iteration pass 1 \u2014 hero montage, setup photos, 11 design-review fixes",
+            "feat(oneshot): Phase D \u2014 7 city pages, style quiz, live-painters blog, SEO wiring",
+            "feat(oneshot): Phase C \u2014 glam rebuild, iris trade-show page, solutions, about, hybrid booth, hub polish"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "docs(atticus): 2026-07-14 pick runs + propose-apply and surface-scope plans",
+            "docs(plans): hermes P0 codex spec + review log, content-placement H1 log"
+          ]
+        },
+        {
+          "repo": "hotfixops",
+          "commits": [
+            "docs: add Drew Zavala lead playbook"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped the mpb-site oneshot rebuild:** four full phases in one day, from the design system core and Flash Wall hero through the Live Artist Series hub, glam rebuild, seven city pages, and a style quiz. Then an iteration pass added the hero montage and knocked out 11 design review fixes. Forge kept pace with a format-aware watermark engine, secure export folder picker, and new pose and prop galleries.\n\nOn the plumbing side I closed out eight pipeline parser gaps in the agents repo, mostly around conditional and inactive transitions the review had flagged. The CRM also landed its P2 Task 0 atomic VSCO ingest and the P2.5 payment sync schema with ledger and outbox tables. A lot of surface area for one day, but each lane had a frozen spec going in."
+    },
     {
       "day": 201,
       "date": "2026-07-14",
