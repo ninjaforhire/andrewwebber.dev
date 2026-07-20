@@ -79,7 +79,7 @@ interface Stats {
 
 const STATS_FALLBACK: Stats = {
   agentsLive: 47,
-  dayStreak: 273,
+  dayStreak: 275,
   skills: 399,
   repos: 47,
   linesOfCode: 2916521,

@@ -1,8 +1,101 @@
 {
-  "lastUpdated": "2026-07-19T01:02:14",
-  "totalDays": 273,
+  "lastUpdated": "2026-07-20T01:02:13",
+  "totalDays": 275,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 206,
+      "date": "2026-07-19",
+      "title": "Day 206 - Cardsmith Wing, Review UIs, Refund Baseline",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "Design",
+        "CRM",
+        "AI/ML"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [
+        {
+          "repo": "forge",
+          "commits": [
+            "fix(image-wing): aim-high margin and centering language in gen prompt",
+            "docs(image-wing): wing directives, stage billing contract, registry row",
+            "test(tools): cover gate and grader UI security and proof binding"
+          ]
+        },
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "fix: enforce CRM Square refund baseline (#146)",
+            "fix: enforce CRM Square refund baseline",
+            "feat(gallery-analytics): subjects-only demographics filter"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "fix: restore parent Ruff gate",
+            "chore(submodule): bump agents",
+            "chore(submodule): bump agents to c23d35bf (gallery-analytics GDS learnings, PR #145)"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "chore: repair codex bridge files + global AGENTS.md symlink",
+            "docs: record CRM refund baseline incident"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped the cardsmith wing contract:** the Forge image wing now delegates card generation through a single contract surface, with tests covering the pipeline, spec, state, and brand sources. I also stood up two small local tools, a codex-gate review UI on 5556 and a grader UI wrapping grade-cli on 5557, both landing with security and proof-binding tests.\n\nOn the MIGHTY side, gallery analytics picked up a platform-aware report pipeline, classic cover variants with a deterministic tier-1 eval, and a subjects-only demographics filter. I also enforced the CRM Square refund baseline and wrote up the incident that prompted it, the kind of guardrail you only want to add once."
+    },
+    {
+      "day": 205,
+      "date": "2026-07-18",
+      "title": "Day 205 - Forge Model Generator Fixes",
+      "era": "Full Stack AI",
+      "type": [
+        "Fix"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "AI/ML",
+        "Design"
+      ],
+      "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [],
+      "builds": [
+        {
+          "repo": "forge",
+          "commits": [
+            "fix: complete model generator preview controls",
+            "fix: align model execution and export contracts",
+            "fix: harden model provider accounting"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): pull Notion edits to ACTIVE.md"
+          ]
+        }
+      ],
+      "takeaway": "**Fixed the Forge model generator end to end:** preview controls now behave, and the execution and export contracts finally agree with each other. Before this, the generator could run a model one way and export it another, which made results hard to trust.\n\nI also hardened the provider accounting so usage gets tracked accurately no matter which provider handles the call. Small fixes on their own, together they make the whole model pipeline behave predictably."
+    },
     {
       "day": 204,
       "date": "2026-07-17",
