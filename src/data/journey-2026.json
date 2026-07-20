@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20T01:02:13",
+  "lastUpdated": "2026-07-20T14:39:15",
   "totalDays": 275,
   "currentEra": "Full Stack AI",
   "entries": [
@@ -77,7 +77,72 @@
       "url": null,
       "channel": "",
       "runtime_min": null,
-      "videos": [],
+      "videos": [
+        {
+          "title": "3 Claude Code skills + the 1 I delete #claudecode #claude #claudeskills",
+          "channel": "Hasan Aboul Hasan",
+          "url": "https://www.youtube.com/watch?v=F9KKb9qjr4M",
+          "runtime_min": 0.9,
+          "category": [
+            "AI/ML",
+            "Agents"
+          ]
+        },
+        {
+          "title": "MCP VS RAG VS SKILL",
+          "channel": "JOYATRES TECHNOLOGY",
+          "url": "https://www.youtube.com/watch?v=CapHWb7p8jU",
+          "runtime_min": 1.6,
+          "category": [
+            "AI/ML",
+            "Agents"
+          ]
+        },
+        {
+          "title": "Kimi K3 Is Insane - Does It Beat Fable 5 & GPT 5.6?",
+          "channel": "BridgeMind",
+          "url": "https://www.youtube.com/watch?v=MG-uS684uc0",
+          "runtime_min": 17.7,
+          "category": [
+            "AI/ML",
+            "Frontend",
+            "Design",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Yes, the Kimi K3 Hype is Real",
+          "channel": "Chase AI",
+          "url": "https://www.youtube.com/watch?v=MeYdaNnXuHI",
+          "runtime_min": 13.7,
+          "category": [
+            "AI/ML",
+            "Business",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Databricks CEO on Kimi K3 AI model from Chinese startup Moonshot",
+          "channel": "CNBC Television",
+          "url": "https://www.youtube.com/watch?v=wot_4nNra9M",
+          "runtime_min": 0.8,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
+        },
+        {
+          "title": "Rag Design Patterns",
+          "channel": "JOYATRES TECHNOLOGY",
+          "url": "https://www.youtube.com/watch?v=lRy9RDS7_DU",
+          "runtime_min": 0.7,
+          "category": [
+            "AI/ML",
+            "Security",
+            "Design"
+          ]
+        }
+      ],
       "builds": [
         {
           "repo": "forge",
