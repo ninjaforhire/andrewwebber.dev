@@ -33,7 +33,7 @@ export function CurrentReading() {
   const upNextCount = items.filter((i) => i.status === "Up Next").length;
 
   return (
-    <div className="mb-12 md:mb-16 border-l-2 border-warm/30 pl-4 md:pl-6">
+    <div className="border-l-2 border-warm/30 pl-4 md:pl-6">
       <div className="flex flex-wrap items-baseline gap-x-6 gap-y-2 mb-3">
         <div className="font-mono text-xs font-medium tracking-[0.4em] uppercase text-warm">
           Reading Queue
