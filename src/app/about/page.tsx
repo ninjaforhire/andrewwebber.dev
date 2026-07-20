@@ -12,7 +12,7 @@ import { SITE_STATS } from "@/lib/site-stats";
 export const metadata: Metadata = {
   title: "Dossier",
   description:
-    "The story behind the code. Andrew Webber — builder, automation architect, and creative coder from Fort Worth, TX.",
+    "The story behind the code. Andrew Webber, builder, automation architect, and creative coder from Fort Worth, TX.",
 };
 
 const ROOT = process.cwd();
@@ -30,63 +30,63 @@ const CHAPTERS = [
     year: "1996",
     tag: "Origin",
     hook: "Dad brought home a Windows 3.1 machine when I was six. Zero games.",
-    body: "I clicked through every folder anyway. Trying to figure out how it all connected. Couldn't stop.",
+    body: "No Solitaire, no Minesweeper, nothing. I opened every folder on the hard drive instead, just to see what each one did.\n\nMost kids got a Nintendo. I got File Manager, and honestly, it worked out.",
     accent: "text-warm",
   },
   {
     year: "2001",
     tag: "First builds",
-    hook: "Fifth grade. Wrote my first HTML page.",
-    body: "View source on every site I liked. Copied tags into Notepad. Hit refresh. Repeat. Nobody asked me to. The compulsion never went away.",
+    hook: "Wrote my first HTML page in fifth grade.",
+    body: "My whole process was View Source on any site I liked, paste the tags into Notepad, hit refresh, and see what broke. Nobody assigned this. I was ten.\n\nIt never wore off.",
     accent: "text-data",
   },
   {
     year: "2004",
     tag: "LAN years",
     hook: "Built my first gaming rig.",
-    body: "Counter-Strike at a competitive level. LAN tournaments across the country. The sweatiest years of my life. My parents drove me everywhere, paid the entry fees, and never once told me to do something else. They are heroes.",
+    body: "Competitive Counter-Strike, LAN tournaments across the country, a full tower PC hauled through airports and hotel lobbies. The sweatiest years of my life.\n\nMy parents drove me everywhere, paid the entry fees, and never once suggested I find a normal hobby. They are heroes and I mean that.",
     accent: "text-warm",
   },
   {
     year: "2006",
     tag: "Live events",
     hook: "Started running live events across DFW.",
-    body: "Sound, lighting, AV, photography. Every weekend was a new venue, a new load-in, a new way for gear to get broken in transit. Got fluent in problem-solving under a clock.",
+    body: "Sound, lighting, AV, photography. Every weekend brought a new venue, a new load-in, and a new discovery about what a road case cannot actually survive.\n\nYou learn to solve problems fast when the room fills in twenty minutes and the clock does not care how you feel about it.",
     accent: "text-creative",
   },
   {
     year: "2016",
     tag: "MIGHTY",
     hook: "Founded MIGHTY Photo Booths.",
-    body: "Premium photo + video activations for corporate brands. Canon DSLRs. Custom designs from scratch. Self-powered battery setups.",
+    body: "Premium photo and video activations for corporate brands. Canon DSLRs, custom designs built from scratch, self-powered battery rigs so we could set up anywhere a planner pointed.\n\nIt started as a side hustle. It refused to stay one.",
     accent: "text-creative",
   },
   {
     year: "2018",
     tag: "Met Vivian",
-    hook: "Met Vivian at a Fourth of July car show. Best thing that ever happened to me or MIGHTY.",
-    body: "Kaboomtown, a private airfield in Addison, fireworks over the runway. I was working the booth with my son Aidyn right next to me, and the two of us won her over without even trying. Vivian is the driving force at MIGHTY now. She inspects every piece of creative before it goes out and puts out fires before they start at our live events, all on instinct and a sharp analytical eye. Then in 2023 she brought us our son Adrian. Best partner I will ever have.",
+    hook: "Met Vivian at a Fourth of July fireworks show. Best thing that ever happened to me or MIGHTY.",
+    body: "Kaboomtown fireworks over the runway. MIGHTY was hired to capture a private event on the Addison airfield that night, and I was working the booth with my son Aidyn right next to me. Somewhere between load-in and the finale, Vivian and I got to talking, and eight years later I am still glad she stopped by that booth.\n\nVivian is the driving force at MIGHTY now. She inspects every piece of creative before it goes out and spots fires before they start at our live events, all instinct and a sharp analytical eye.\n\nThen in 2023 she brought us our son Adrian. Best partner I will ever have.",
     accent: "text-warm",
   },
   {
     year: "2023",
     tag: "Full time",
-    hook: "Went full time. All in on the crazy idea.",
-    body: "January 1, 2023. I took the leap and let go of the AV clients I'd spent years building, the steady work and the safe money, and went all in on this crazy idea. That was the year we broke our first $100,000 in revenue, and it fueled the fire further. Every year since, the bar goes higher: learning how to scale a team, managing a full client list while attracting new ones, building new experiences constantly. This is the most fun I have ever had in business, and it only gets better.",
+    hook: "Went full time on the crazy idea.",
+    body: "January 1, 2023. Every AV contract I had spent years building expired, and I let them all go on purpose. Steady work, safe money, gone. I did the math on our savings about forty times that January.\n\nThat was the year we broke our first $100,000 in revenue. Since then the bar keeps moving: scaling a team, keeping a full client list happy while chasing new ones, building experiences nobody has seen before.\n\nThis is the most fun I have ever had in business, and it is not close.",
     accent: "text-creative",
   },
   {
     year: "2023",
     tag: "ADHD ≠ bug",
     hook: "Figured out the thing people called a weakness was actually the engine.",
-    body: `${SITE_STATS.tools}+ tools. Multiple businesses. Hyperfocus until the problem dies. Stopped fighting it. Started pointing it at code.`,
+    body: `Hyperfocus used to mean losing a whole weekend to something nobody asked for. Now it means ${SITE_STATS.tools}+ tools and counting. Same brain, better aim.\n\nI stopped fighting it and started pointing it at code.`,
     accent: "text-terminal",
   },
   {
     year: "Now",
     tag: "Today",
-    hook: "AI agents. Automation systems. Creative code. Cybersecurity.",
-    body: "Systems guy who loves perfect organization, LaCroix, and shipping things that make other people's lives easier. I help by building, not lecturing.",
+    hook: "These days I mostly teach robots to do my old jobs.",
+    body: "AI agents, automation systems, creative code, security work. I am a systems guy who loves clean organization, cold LaCroix, and shipping things that make someone's day easier.\n\nI help by building, not lecturing.",
     accent: "text-terminal",
   },
 ];
@@ -140,7 +140,7 @@ export default function AboutPage() {
             <div className="mt-24 md:mt-32 space-y-16 md:space-y-20">
               {CHAPTERS.map((c, i) => (
                 <article
-                  key={c.year}
+                  key={`${c.year}-${c.tag}`}
                   className="grid gap-3 md:grid-cols-[140px_1fr] md:gap-6"
                 >
                   <div className="font-mono">
@@ -176,9 +176,16 @@ export default function AboutPage() {
                         c.hook
                       )}
                     </p>
-                    <p className="mt-3 text-base md:text-lg leading-relaxed text-muted-foreground max-w-xl">
-                      {c.body}
-                    </p>
+                    <div className="mt-3 space-y-3 max-w-xl">
+                      {c.body.split("\n\n").map((para) => (
+                        <p
+                          key={para.slice(0, 24)}
+                          className="text-base md:text-lg leading-relaxed text-muted-foreground"
+                        >
+                          {para}
+                        </p>
+                      ))}
+                    </div>
                   </div>
                   {i < CHAPTERS.length - 1 && (
                     <div className="md:col-span-2 mt-10 h-px bg-white/5" />
