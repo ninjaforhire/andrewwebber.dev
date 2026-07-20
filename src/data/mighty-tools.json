@@ -584,7 +584,7 @@
   {
     "slug": "event-details-agent",
     "name": "event-details-agent",
-    "description": "Build Event Details pages in Notion for MIGHTY Photo Booths events",
+    "description": "[RETIRED 2026-07-14 \u2014 superseded by /sales/newclient Phase 4] Former Event Details builder entry point",
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
@@ -734,7 +734,7 @@
   {
     "slug": "internal-request",
     "name": "internal-request",
-    "description": "Create an INTERNAL Design Request for Matt from Andrew's own input (not a client event)",
+    "description": "Create an INTERNAL Design Request for the design team from Andrew's own input (not a client event)",
     "category": "photo-booth",
     "subcategory": "skill",
     "source": "skill",
@@ -1799,7 +1799,7 @@
   {
     "slug": "gdrive-recovery",
     "name": "Gdrive Recovery",
-    "description": "Tooling for reclaiming ownership + restoring Google Drive uploads (the iammagicmatt \u2192 MIGHTY ownership-fix story).",
+    "description": "Tooling for reclaiming ownership + restoring Google Drive uploads after a Drive ownership mixup.",
     "category": "tooling",
     "subcategory": "tool",
     "source": "tool",

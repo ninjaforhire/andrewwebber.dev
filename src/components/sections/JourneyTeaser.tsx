@@ -46,7 +46,7 @@ const MILESTONES = [
     description:
       "January 1. Every contract expired and I let them go. Walked away from the safety net to bet everything on MIGHTY Photo Booths, the year we broke our first $100,000 in revenue. Eyes open to eyes closed, usually 2 or 3am. A year of conviction, manual processes, and proving myself.",
     details: [
-      "Hired a creative partner for design — Matt changed the game",
+      "Hired a creative design partner who changed the game",
       "Tried to hire an executive assistant three times — all three quit",
       "Every quote, every email, every follow-up — done by hand",
       "The EA frustration became the spark: what if AI could do this?",

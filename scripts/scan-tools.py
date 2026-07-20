@@ -32,6 +32,7 @@ from __future__ import annotations
 
 import json
 import pathlib
+import re
 import sys
 
 CODE_ROOT = pathlib.Path.home() / "_Code"
@@ -47,6 +48,22 @@ SKIP_DIR_PARTS = {
 SKIP_TOOL_SLUGS = {
     "huashu-design",
 }
+
+# Public site: internal skill/agent descriptions must never surface teammate
+# names or personal account handles. Patterns live in private_name_scrub.py,
+# shared with export-journey-json.py.
+from private_name_scrub import PRIVATE_NAME, scrub_text
+
+
+def scrub_private_names(tools: list[dict]) -> list[dict]:
+    """Drop person-named tools and scrub teammate names from descriptions."""
+    kept = [
+        t for t in tools
+        if not PRIVATE_NAME.search(t["slug"]) and not PRIVATE_NAME.search(t["name"])
+    ]
+    for t in kept:
+        t["description"] = scrub_text(t.get("description", ""))
+    return kept
 
 # Domain mapping for Photo Booth sub-filter. Key = first path component after
 # mighty/agents/ or mighty/skills/. Value = display label.
@@ -106,7 +123,7 @@ GENERAL_TOOLS_ALLOWED: dict[str, dict[str, str]] = {
     },
     "gdrive-recovery": {
         "name": "Gdrive Recovery",
-        "description": "Tooling for reclaiming ownership + restoring Google Drive uploads (the iammagicmatt → MIGHTY ownership-fix story).",
+        "description": "Tooling for reclaiming ownership + restoring Google Drive uploads after a Drive ownership mixup.",
     },
 }
 
@@ -573,6 +590,7 @@ def main() -> None:
         seen.add(t["slug"])
         unique.append(t)
 
+    unique = scrub_private_names(unique)
     unique.sort(key=lambda t: (t["category"], t["name"].lower()))
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)

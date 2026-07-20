@@ -24,7 +24,7 @@ Next.js 16.2.4 + React 19.2 + Tailwind v4. Terminal/creative hybrid. Vercel depl
 npm run dev          # next dev (Turbopack)
 npm run build        # next build
 npm run lint
-npm run scan-tools   # npx tsx scripts/scan-mighty-tools.ts — refresh tool count
+npm run scan-tools   # python3 scripts/scan-tools.py — refresh tool count
 ```
 
 ## Directory Map

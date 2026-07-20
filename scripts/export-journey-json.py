@@ -181,6 +181,41 @@ def extract_rich_text(rt_list: list[dict]) -> str:
     return "".join(rt.get("text", {}).get("content", "") or rt.get("plain_text", "") for rt in rt_list)
 
 
+# ── Private-name scrub ───────────────────────────────────────────────────
+# Applied to every entry on every export. Patterns live in
+# private_name_scrub.py, shared with scan-tools.py.
+from private_name_scrub import scrub_text as _scrub_text
+
+
+def scrub_private_names(entry: dict) -> dict:
+    entry["title"] = _scrub_text(entry.get("title") or "")
+    entry["takeaway"] = _scrub_text(entry.get("takeaway") or "")
+    for b in entry.get("builds") or []:
+        b["repo"] = _scrub_text(b.get("repo") or "")
+        b["commits"] = [_scrub_text(c) for c in (b.get("commits") or [])]
+    return entry
+
+
+# ── Per-day overrides ────────────────────────────────────────────────────
+# scripts/data/journey-overrides.json holds hand-curated replacements for
+# days whose auto-generated Notion entry undersold or misstated the work
+# (keyed by streak-day number as a string). Overrides win over the Notion
+# export so a nightly run can't regress a corrected day. Remove a day's key
+# once its Notion page has been fixed at the source.
+_OVERRIDES_PATH = Path(__file__).resolve().parent / "data" / "journey-overrides.json"
+
+
+def apply_day_overrides(entries: list[dict]) -> list[dict]:
+    if not _OVERRIDES_PATH.exists():
+        return entries
+    overrides = json.loads(_OVERRIDES_PATH.read_text())
+    for entry in entries:
+        override = overrides.get(str(entry.get("day")))
+        if override:
+            entry.update(override)
+    return entries
+
+
 def parse_blocks(blocks: list[dict]) -> dict:
     videos = []
     builds = []
@@ -357,6 +392,8 @@ def main() -> None:
         entries.append(entry)
 
     entries = bundle_videos_into_journal(entries)
+    entries = [scrub_private_names(e) for e in entries]
+    entries = apply_day_overrides(entries)
     entries.sort(key=lambda e: e["day"], reverse=True)
     current_era = entries[0]["era"] if entries else ""
 

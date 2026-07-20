@@ -45,3 +45,6 @@ next-env.d.ts
 # Graphify knowledge graphs (regeneratable, AST-only)
 graphify-out/
 scripts/data/*.json
+
+# private-name scrub patterns (public repo must not republish them)
+scripts/data/private-scrub.local.json

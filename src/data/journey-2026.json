@@ -99,14 +99,16 @@
     {
       "day": 204,
       "date": "2026-07-17",
-      "title": "Day 204 - cover Nano Banana model styles",
+      "title": "Day 204 - Model Generator Redesign Lands + Cardsmith Ships",
       "era": "Full Stack AI",
       "type": [
         "Build"
       ],
       "source": "Claude Code",
       "category": [
-        "Automation"
+        "AI/ML",
+        "Design",
+        "Agents"
       ],
       "impact": "High",
       "url": null,
@@ -117,57 +119,77 @@
         {
           "repo": "forge",
           "commits": [
-            "test: cover Nano Banana model styles",
-            "test: cover model prompt preview interface",
-            "test: cover canonical model subject prompts"
+            "feat: add GPT Image 2 generation provider",
+            "feat: add format-aware watermark engine",
+            "feat: build interactive export controls"
           ]
         },
         {
           "repo": "mighty",
           "commits": [
-            "docs(design-center): address codex review findings on cardsmith",
-            "chore(vendor): archive cardsmith pipeline scripts from FABLE-CARDS session",
-            "feat(design-center): add cardsmith brand-card mode to nanobanana2"
-          ]
-        },
-        {
-          "repo": ".",
-          "commits": [
-            "chore(sync): pull Notion edits to ACTIVE.md"
+            "feat(design-center): add cardsmith brand-card mode to nanobanana2",
+            "feat(newclient): identity-validated Apify social scans + skill test harness",
+            "docs(design-center): address codex review findings on cardsmith"
           ]
         }
       ],
-      "takeaway": "**Shipped across forge, mighty, ..** Commit log captured below."
+      "takeaway": "**Landed the Model Generator redesign:** the whole branch integrated in one afternoon, covering visual catalogs, a v3 interview contract, a GPT Image 2 provider, a format-aware watermark engine, pose and output preview galleries, and interactive export controls. Then I kept building on top of it, adding a canonical prompt contract, shared Nano Banana provider execution, and provenance enforcement with matching test coverage.\n\nDesign Center picked up a cardsmith brand-card mode inside nanobanana2, with the FABLE-CARDS pipeline scripts archived once they were folded in. The /newclient pipeline also learned identity-validated Apify social scans with its own test harness."
     },
     {
       "day": 203,
       "date": "2026-07-16",
-      "title": "Day 203 - Quiet Day of Automated Housekeeping",
+      "title": "Day 203 - CRM Dashboard, Refund Hardening, Linear Foundation",
       "era": "Full Stack AI",
       "type": [
-        "Build"
+        "Build",
+        "Fix"
       ],
       "source": "Claude Code",
       "category": [
-        "Automation",
-        "DevOps",
-        "Infra"
+        "CRM",
+        "Agents",
+        "Business"
       ],
-      "impact": "Low",
+      "impact": "High",
       "url": null,
       "channel": "",
       "runtime_min": null,
       "videos": [],
       "builds": [
         {
-          "repo": ".",
+          "repo": "mighty/agents",
           "commits": [
-            "chore(sync): ops updates (1 paths)",
-            "chore(sync): maps updates (2 paths)"
+            "fix: quarantine unmatched Square refunds",
+            "fix: reconcile legacy payment adjustments",
+            "feat: add secure Linear GraphQL client"
+          ]
+        },
+        {
+          "repo": "mighty/crm/app",
+          "commits": [
+            "feat: add events list and detail screens",
+            "feat: add dashboard shell and base styles",
+            "feat: enforce single-user dashboard auth"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "feat: adopt CCF house style for agreement rendering",
+            "feat: add venue access, re-entry, and lockout liability clauses",
+            "docs(inbox-agent): leaddesk fresh-cockpit hard rule + session watcher spec"
+          ]
+        },
+        {
+          "repo": "mpb-site",
+          "commits": [
+            "feat: Custom Trading Card Experience page + iris/trading-card discoverability",
+            "fix: iteration pass 2 \u2014 P0 hero photos, quiz date optional, glam purity",
+            "fix: FilmStrip edge fade \u2014 mask moves to static wrapper"
           ]
         }
       ],
-      "takeaway": "**Let the robots run the shop:** Today was a light one on the commit log. The nightly sync daemons did their thing, pushing ops updates and refreshing the cross-project maps without me touching a keyboard.\n\nDays like this are the payoff for all the automation work. The workspace stays current, the graphs stay fresh, and I get to spend the day thinking instead of tidying."
+      "takeaway": "**Shipped the CRM P2 dashboard and hardened the money pipeline:** PR #4 landed the dashboard web app with events, pipeline, and contact screens behind single-user auth, backed by unit, route, and real-browser coverage. Alongside it, a long run of fixes closed out Square refund reconciliation, quarantining unmatched refunds and reconciling legacy payment adjustments so the books stop drifting.\n\nPR #144 repaired the review-publication path, from Gmail evidence checks to perceptual photo dedup, and the first stones of the Linear task system went in with a secure GraphQL client and task foundation. Agreements got attention too: CCF house style rendering plus new venue access, re-entry, and lockout liability clauses.\n\nThe mpb-site rebuild took three iteration passes the same day and shipped a Custom Trading Card Experience page to production."
     },
     {
       "day": 202,
@@ -1981,7 +2003,7 @@
     {
       "day": 185,
       "date": "2026-06-28",
-      "title": "Day 185 - War Room Charts and Radar Hardening",
+      "title": "Day 185 - War Room Charts and Design Tracker Hardening",
       "era": "Full Stack AI",
       "type": [
         "Build",
@@ -2048,8 +2070,8 @@
           "repo": "mighty/agents",
           "commits": [
             "chore(jimbo): hydrate ANTHROPIC_API_KEY from vault",
-            "fix(matt-radar): codex R9 \u2014 radar runs on first-seen DRs, persist DM cursor across restarts",
-            "fix(matt-radar): codex R8 \u2014 wire opt:1 send/edit/cancel approval flow, Slack thread_ts, Notion property types"
+            "fix(design-tracker): codex R9 \u2014 radar runs on first-seen DRs, persist approval cursor across restarts",
+            "fix(design-tracker): codex R8 \u2014 wire opt:1 send/edit/cancel approval flow, Slack thread_ts, Notion property types"
           ]
         },
         {
@@ -2076,7 +2098,7 @@
           ]
         }
       ],
-      "takeaway": "**Shipped the War Room Charts tab:** Chart.js panels that read straight from the board, fully hideable, fully offline. I vendored Chart.js v4.5.1 as a local UMD so the app never phones home, then wrote the board aggregation and a /charts endpoint to feed it, with tests covering both. Codex flagged a few race conditions in the render path, so I added a sequence guard, made stale charts clear on project switch or fetch error, and started counting layers by id instead of name. OSINT and Excalidraw tabs landed the same day as offline islands.\n\nMatt Radar got a long hardening pass on top of that. It now fires on first-seen design requests, holds its DM cursor across restarts, and wires up the send, edit, and cancel approval flow with real Slack threads and grounded replies. Music Box picked up a continuous Shuffle Random pill, and I fixed the dead cold tap by resuming the AudioContext before the first real track plays."
+      "takeaway": "**Shipped the War Room Charts tab:** Chart.js panels that read straight from the board, fully hideable, fully offline. I vendored Chart.js v4.5.1 as a local UMD so the app never phones home, then wrote the board aggregation and a /charts endpoint to feed it, with tests covering both. Codex flagged a few race conditions in the render path, so I added a sequence guard, made stale charts clear on project switch or fetch error, and started counting layers by id instead of name. OSINT and Excalidraw tabs landed the same day as offline islands.\n\nThe Design Tracker got a long hardening pass on top of that. It now picks up new design requests the moment they land, resumes cleanly across restarts, and wires up the send, edit, and cancel approval flow with real Slack threads and grounded replies. Music Box picked up a continuous Shuffle Random pill, and I fixed the dead cold tap by resuming the AudioContext before the first real track plays."
     },
     {
       "day": 184,
@@ -5782,7 +5804,7 @@
           ]
         }
       ],
-      "takeaway": "**Design-request agent learned an internal-input mode** so DRs can originate from inside the team, not just client intake. Small surface, big unblock: proactive design work for Matt without faking a client thread."
+      "takeaway": "**Design-request agent learned an internal-input mode** so DRs can originate from inside the team, not just client intake. Small surface, big unblock: proactive design work for the design team without faking a client thread."
     },
     {
       "day": 157,
