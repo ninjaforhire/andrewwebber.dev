@@ -1,8 +1,77 @@
 {
-  "lastUpdated": "2026-07-20T14:39:15",
-  "totalDays": 275,
+  "lastUpdated": "2026-07-21T00:14:17",
+  "totalDays": 276,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 207,
+      "date": "2026-07-20",
+      "title": "Day 207 - reroute DCP failure alerts to Telegram, standard",
+      "era": "Full Stack AI",
+      "type": [
+        "Build"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Automation"
+      ],
+      "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "Cerebras Killed Notion, Obsidian, and Your \"Second Brain\"",
+          "channel": "Nick Saraev",
+          "url": "https://www.youtube.com/watch?v=eCx3SSCcISo",
+          "runtime_min": 23.8,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Security",
+            "Business",
+            "Design"
+          ]
+        },
+        {
+          "title": "How I Tricked Big Tech\u2019s AI Pricing Algorithms to Save $8,793",
+          "channel": "Chris the Producer",
+          "url": "https://www.youtube.com/watch?v=tCSwx9LZtD8",
+          "runtime_min": 19.8,
+          "category": [
+            "Security"
+          ]
+        },
+        {
+          "title": "GPT 5.6 Sol Made This Entire Video",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=J_jswzXhYJA",
+          "runtime_min": 5.4,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business"
+          ]
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "feat: reroute DCP failure alerts to Telegram, standardized note in design-space",
+            "chore: archive Jimbo Slack DM poller (flag-gated off)",
+            "docs: mark overnight_builder superseded by flipped-loop doctrine"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): pull Notion edits to ACTIVE.md"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped across mighty/agents, ..** Commit log captured below."
+    },
     {
       "day": 206,
       "date": "2026-07-19",
