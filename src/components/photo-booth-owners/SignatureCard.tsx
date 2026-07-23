@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import NextImage from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ChevronDown,
@@ -53,6 +54,9 @@ import {
   Database,
   Stethoscope,
   ServerCog,
+  Route,
+  ScanSearch,
+  Network,
   type LucideIcon,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -110,6 +114,9 @@ const MODULE_ICONS: Record<string, LucideIcon> = {
   Database,
   Stethoscope,
   ServerCog,
+  Route,
+  ScanSearch,
+  Network,
 };
 
 export interface SignatureModule {
@@ -122,11 +129,14 @@ export interface SignatureBuild {
   slug: string;
   title: string;
   tagline: string;
-  accent: "terminal" | "creative" | "warm";
+  accent: "terminal" | "data" | "creative" | "warm";
   moduleLabel: string;
   highlights: { label: string; text: string }[];
   modules: SignatureModule[];
   wide?: boolean;
+  status?: string;
+  progress?: number;
+  visuals?: { src: string; alt: string; position?: string }[];
 }
 
 const ACCENT = {
@@ -143,6 +153,13 @@ const ACCENT = {
     border: "border-terminal/25 hover:border-terminal/50 hover:glow-terminal",
     dot: "bg-terminal",
     chip: "border-terminal/30 bg-terminal/10 text-terminal",
+  },
+  data: {
+    text: "text-data",
+    bg: "bg-data/10",
+    border: "border-data/25 hover:border-data/50 hover:glow-data",
+    dot: "bg-data",
+    chip: "border-data/30 bg-data/10 text-data",
   },
   creative: {
     text: "text-creative",
@@ -187,13 +204,53 @@ export function SignatureCard({ build }: { build: SignatureBuild }) {
           )}
         >
           <span className={cn("mr-1 inline-block h-1.5 w-1.5 -translate-y-[1px] rounded-full animate-pulse", a.dot)} />
-          Live · iterating
+          {build.status ?? "Live · iterating"}
         </span>
       </div>
+
+      {build.visuals && build.visuals.length > 0 && (
+        <div
+          className={cn(
+            "mt-5 grid gap-3 overflow-hidden rounded-lg",
+            build.visuals.length > 1 && "sm:grid-cols-2"
+          )}
+        >
+          {build.visuals.map((visual) => (
+            <div
+              key={visual.src}
+              className="relative aspect-[16/9] overflow-hidden rounded-lg border border-white/10 bg-black/30"
+            >
+              <NextImage
+                src={visual.src}
+                alt={visual.alt}
+                fill
+                sizes={build.visuals!.length > 1 ? "(min-width: 640px) 40vw, 90vw" : "90vw"}
+                className="object-cover transition-transform duration-700 hover:scale-[1.03]"
+                style={{ objectPosition: visual.position ?? "center" }}
+              />
+            </div>
+          ))}
+        </div>
+      )}
 
       <p className="mt-4 text-base leading-relaxed text-foreground/90 md:text-[17px]">
         <RichText text={build.tagline} />
       </p>
+
+      {typeof build.progress === "number" && (
+        <div className="mt-5" aria-label={`${build.progress}% complete`}>
+          <div className="mb-2 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.18em]">
+            <span className={a.text}>Build pipeline</span>
+            <span className="tabular-nums text-foreground">{build.progress}%</span>
+          </div>
+          <div className="h-2 overflow-hidden rounded-full bg-white/5">
+            <div
+              className={cn("h-full rounded-full shadow-[0_0_16px_currentColor]", a.dot)}
+              style={{ width: `${Math.max(1.5, Math.min(100, build.progress))}%` }}
+            />
+          </div>
+        </div>
+      )}
 
       <ul className="mt-5 space-y-2.5">
         {build.highlights.map((h) => (
@@ -262,6 +319,7 @@ export function SignatureCard({ build }: { build: SignatureBuild }) {
                           a.bg,
                           a.text,
                           build.accent === "terminal" && "border-terminal/25",
+                          build.accent === "data" && "border-data/25",
                           build.accent === "creative" && "border-creative/25",
                           build.accent === "warm" && "border-warm/25"
                         )}

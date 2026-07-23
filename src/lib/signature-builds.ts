@@ -1,5 +1,7 @@
 import toolsData from "@/data/mighty-tools.json";
+import buildProgress from "@/data/build-progress.json";
 import type { SignatureBuild, SignatureModule } from "@/components/photo-booth-owners/SignatureCard";
+import { SITE_STATS } from "@/lib/site-stats";
 
 interface RawTool {
   slug: string;
@@ -208,6 +210,78 @@ const FORGE_ICONS: Record<string, string> = {
   "design-forge-website-wing": "Globe",
 };
 
+const MEDIA_MODULES: SignatureModule[] = [
+  {
+    name: "Read-only media index",
+    icon: "Image",
+    description:
+      "Inventories the photo and video library without moving or renaming a single client file.",
+  },
+  {
+    name: "Visual enrichment",
+    icon: "Fingerprint",
+    description:
+      "Builds previews, captions, OCR, and duplicate clusters so years of media become searchable.",
+  },
+  {
+    name: "Teach Media",
+    icon: "BookOpen",
+    description:
+      "A resumable review flow for teaching the system which assets are approved, restricted, derivative, or just junk.",
+  },
+  {
+    name: "ContentPack retrieval",
+    icon: "PackageCheck",
+    description:
+      "Packages the right approved images, clips, rights notes, and context for Forge, HeyGen, and publishing tools.",
+  },
+];
+
+const CRM_MODULES: SignatureModule[] = [
+  {
+    name: "Quote engine",
+    icon: "FileText",
+    description:
+      "Builds branded quotes from structured product data and tracks the full Draft to Accepted lifecycle.",
+  },
+  {
+    name: "Revenue system of record",
+    icon: "Database",
+    description:
+      "Moves the business from rented CRM data into an owned Postgres foundation with auditable migrations.",
+  },
+  {
+    name: "Payment intelligence",
+    icon: "Plug",
+    description:
+      "Unifies Square and QuickBooks activity into one allocation ledger with payment status reflected back to operations.",
+  },
+  {
+    name: "Reporting dashboard",
+    icon: "Radar",
+    description:
+      "Turns leads, jobs, quotes, balances, and conversion history into the operating picture VSCO never provided.",
+  },
+];
+
+const NO_SCREEN_KIDS_MODULES: SignatureModule[] = [
+  { name: "Classic coloring page", icon: "Palette", description: "Clean printable line art." },
+  { name: "Color by number", icon: "Palette", description: "Locally validated numbered regions and a crayon palette." },
+  { name: "Adventure maze", icon: "Route", description: "A playable illustrated maze with age-adjusted difficulty." },
+  { name: "Connect the dots", icon: "ListChecks", description: "Numbered drawing practice constructed locally." },
+  { name: "I Spy", icon: "Telescope", description: "A detailed scene with explicit, validated search targets." },
+  { name: "Spot the difference", icon: "ScanSearch", description: "Paired scenes with deterministic differences." },
+  { name: "Matching", icon: "Network", description: "Kid-friendly visual pairs to connect." },
+  { name: "Trace and draw", icon: "PenLine", description: "Guided tracing that leaves room to finish the picture." },
+  { name: "Finish the picture", icon: "Wand2", description: "A partial scene that invites the child to complete it." },
+  { name: "Picture sudoku", icon: "LayoutGrid", description: "A visual logic grid built for ages three through eight." },
+  { name: "Pokémon", icon: "Sparkles", description: "A built-in character universe option." },
+  { name: "Mario Bros.", icon: "Sparkles", description: "A built-in character universe option." },
+  { name: "Pixar Cars", icon: "Sparkles", description: "A built-in vehicle-character option." },
+  { name: "Matchbox / Hot Wheels", icon: "Sparkles", description: "A built-in toy-car genre option." },
+  { name: "Bluey", icon: "Sparkles", description: "A built-in character universe option." },
+];
+
 // Placeholder descriptions from the scanner add no signal in the module list.
 const PLACEHOLDER = /^Design Forge wing\.?$/;
 
@@ -231,17 +305,24 @@ export function getSignatureBuilds(): SignatureBuild[] {
       slug: "jimbo",
       title: "JIMBO — AI Orchestrator",
       tagline:
-        "Running a booth business solo means being the salesperson, designer, accountant, dispatcher, and IT department at once, and dropping balls daily. Jimbo is the *master orchestrator* that ends that: with access to __167 tools__ he can operate directly, he routes every task to a specialist agent, holds shared memory across the whole operation, coordinates system health, manages remote servers, and runs missions overnight without supervision. You review, approve, and redirect. The business runs even when you're on a ladder at a venue.",
+        `Running a booth business solo means being the salesperson, designer, accountant, dispatcher, and IT department at once, and dropping balls daily. Jimbo is the *master orchestrator* that ends that: with access to __${SITE_STATS.tools} tools__ he can operate directly, he routes every task to a specialist agent, holds shared memory across the whole operation, coordinates system health, manages remote servers, and runs missions overnight without supervision. You review, approve, and redirect. The business runs even when you're on a ladder at a venue.`,
       accent: "warm",
       moduleLabel: "specialist agents",
       wide: true,
       highlights: [
-        { label: "Dispatch", text: "167 tools at his fingertips — every task routed to the right specialist, 24/7" },
+        { label: "Dispatch", text: `${SITE_STATS.tools} tools at his fingertips — every task routed to the right specialist, 24/7` },
         { label: "Memory", text: "one shared brain — every agent knows what the others did" },
         { label: "Missions", text: "41 autonomous overnight runs: follow-ups, monitoring, research" },
         { label: "Overwatch", text: "System Medic health triage, remote server management, watchdog + audit trail" },
       ],
       modules: JIMBO_AGENTS,
+      visuals: [
+        {
+          src: "/images/blog/claude-codex/jimbo-cameo.jpg",
+          alt: "Andrew working beside Jimbo, his AI orchestrator",
+          position: "center 42%",
+        },
+      ],
     },
     {
       slug: "spectre",
@@ -258,6 +339,17 @@ export function getSignatureBuilds(): SignatureBuild[] {
         { label: "Report", text: "Dossier, Code Council, REST API" },
       ],
       modules: modulesFor("spectre", /^SPECTRE\s*—\s*/, SPECTRE_COPY, SPECTRE_ICONS),
+      visuals: [
+        {
+          src: "/images/signature-builds/spectre.webp",
+          alt: "SPECTRE shield and raven security artwork",
+        },
+        {
+          src: "/images/signature-builds/code-council.webp",
+          alt: "The twelve Code Council reviewers in their color-coded magical hats",
+          position: "center 32%",
+        },
+      ],
     },
     {
       slug: "design-forge",
@@ -273,6 +365,68 @@ export function getSignatureBuilds(): SignatureBuild[] {
         { label: "Ship", text: "Notion-driven pipeline → posters, reels, decks, reports" },
       ],
       modules: modulesFor("design-forge", /^Design Forge\s*—\s*/, FORGE_COPY, FORGE_ICONS),
+      visuals: [
+        {
+          src: "/images/signature-builds/pandoras-forge.webp",
+          alt: "Pandora's Forge opening with music, video, and generated imagery",
+        },
+      ],
+    },
+    {
+      slug: "mighty-media-intelligence",
+      title: "MIGHTY MEDIA INTELLIGENCE",
+      tagline:
+        "Years of event photos and video are valuable only if anyone can find the right asset again. MIGHTY Media Intelligence is the planned media brain for the company: a rights-aware catalog that learns what each image is, where it belongs, and which production tools may use it. The roadmap is active; the first production phase is just beginning.",
+      accent: "creative",
+      moduleLabel: "planned capabilities",
+      status: buildProgress.mightyMediaIntelligence.status,
+      progress: buildProgress.mightyMediaIntelligence.percentage,
+      highlights: [
+        { label: "Source", text: "Drive Graph inventory with zero destructive file moves" },
+        { label: "Teach", text: "human decisions become an auditable, reversible media catalog" },
+        { label: "Retrieve", text: "approved ContentPacks for posts, decks, reels, and campaigns" },
+        {
+          label: "Pipeline",
+          text: `${buildProgress.mightyMediaIntelligence.done} of ${buildProgress.mightyMediaIntelligence.total} roadmap phases completed`,
+        },
+      ],
+      modules: MEDIA_MODULES,
+    },
+    {
+      slug: "mighty-crm",
+      title: "MIGHTY CRM",
+      tagline:
+        "MIGHTY CRM is the owned revenue system replacing the pile of rented software between a new lead and a paid event. Quotes, contracts, jobs, Square payments, QuickBooks activity, and reporting are moving onto one Postgres-backed operating system built around how MIGHTY actually sells and delivers events.",
+      accent: "data",
+      moduleLabel: "core systems",
+      status: buildProgress.mightyCrm.status,
+      progress: buildProgress.mightyCrm.percentage,
+      highlights: [
+        { label: "Foundation", text: "owned Postgres data model and quote dual-write are live" },
+        { label: "Payments", text: "Square and QuickBooks rails feed one allocation ledger" },
+        { label: "Exit plan", text: "built to replace BoothBook and VSCO Workspace safely" },
+        {
+          label: "Pipeline",
+          text: `${buildProgress.mightyCrm.done} of ${buildProgress.mightyCrm.total} master phases completed`,
+        },
+      ],
+      modules: CRM_MODULES,
+    },
+    {
+      slug: "no-screen-kids",
+      title: "NO SCREEN KIDS",
+      tagline:
+        "A free printable activity-page project for parents who need twenty quiet minutes without handing over another glowing rectangle. Pick an activity, age band, layout, and character genre; the system creates one or two print-ready pages and checks that the puzzle actually works. It is still being tested and improved, with the plan to release it free when the output is consistently safe, playable, and worth the paper.",
+      accent: "warm",
+      moduleLabel: "activities and genres",
+      status: "In Progress",
+      highlights: [
+        { label: "For kids", text: "printable activities designed for ages 3–8" },
+        { label: "Free", text: "planned as a free parent tool, not another subscription" },
+        { label: "Playable", text: "mazes, puzzles, and PDF geometry are validated locally" },
+        { label: "Iterating", text: "art quality, review gates, and print testing improve every pass" },
+      ],
+      modules: NO_SCREEN_KIDS_MODULES,
     },
   ];
 }
