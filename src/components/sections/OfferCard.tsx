@@ -25,9 +25,11 @@ export function OfferCard({ offer }: { offer: Offer }) {
 
       <h3 className="mt-3 font-heading text-2xl font-bold">{offer.title}</h3>
 
-      <div className="mt-2 flex items-baseline gap-2">
-        <span className="font-heading text-4xl font-bold">{offer.price}</span>
-        <span className="font-mono text-xs text-muted-foreground">{offer.cadence}</span>
+      <div className="mt-5 grid gap-1">
+        <span className="font-heading text-4xl font-bold leading-none">{offer.price}</span>
+        <span className="font-mono text-xs leading-relaxed text-muted-foreground">
+          {offer.cadence}
+        </span>
       </div>
 
       <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{offer.summary}</p>

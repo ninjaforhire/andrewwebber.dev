@@ -1,8 +1,265 @@
 {
-  "lastUpdated": "2026-07-21T00:14:17",
-  "totalDays": 276,
+  "lastUpdated": "2026-07-23T00:15:53",
+  "totalDays": 278,
   "currentEra": "Full Stack AI",
   "entries": [
+    {
+      "day": 209,
+      "date": "2026-07-22",
+      "title": "Day 209 - Hardened Alerts and Sponsorship Access Gate",
+      "era": "Full Stack AI",
+      "type": [
+        "Build",
+        "Fix"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Agents",
+        "Automation",
+        "Infra",
+        "DevOps"
+      ],
+      "impact": "High",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "SEE CMUX SOLVE Multi-Agent Orchestration (Claude Code and Pi Agent)",
+          "channel": "IndyDevDan",
+          "url": "https://www.youtube.com/watch?v=WAFUMBLOjHo",
+          "runtime_min": 30.5,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Design",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "I Gave Codex Full Control of My Company",
+          "channel": "Riley Brown",
+          "url": "https://www.youtube.com/watch?v=gOx37on-iA8",
+          "runtime_min": 36.7,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "Design"
+          ]
+        },
+        {
+          "title": "I Replaced Hermes Agent And OpenClaw With This",
+          "channel": "Owain Lewis",
+          "url": "https://www.youtube.com/watch?v=lmmgzIuWEbk",
+          "runtime_min": 22.2,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "How I\u2019d Make Money with Claude if my life depended on it",
+          "channel": "Nate Herk | AI Automation",
+          "url": "https://www.youtube.com/watch?v=vY0EzTP-7EA",
+          "runtime_min": 9.3,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Business"
+          ]
+        },
+        {
+          "title": "Dont Get Left Behind With Graph Engineering",
+          "channel": "Chase AI",
+          "url": "https://www.youtube.com/watch?v=Joqh7Tui9B8",
+          "runtime_min": 10.6,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
+        }
+      ],
+      "builds": [
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "fix(dcp): harden Telegram alert delivery \u2014 internal-auth header + delivery check",
+            "fix(jimbo): correct active subscription burn",
+            "feat(jimbo): add master roadmap milestones"
+          ]
+        },
+        {
+          "repo": "general-tools/no-screen-kids",
+          "commits": [
+            "test: cover command line safety gates",
+            "test: cover command line interface",
+            "feat: add command line interface"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): pull Notion edits to ACTIVE.md",
+            "fix(workspace): harden index sync receipts",
+            "docs: normalize media roadmap formatting"
+          ]
+        },
+        {
+          "repo": "mighty/sponsorship-site",
+          "commits": [
+            "docs: document private deployment",
+            "chore: lock deployment dependencies",
+            "test: add privacy coverage"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(ci): use Node 24 GitHub actions",
+            "chore(submodule): bump agents",
+            "docs(skills): add Jimbo refresh mode"
+          ]
+        },
+        {
+          "repo": "forge",
+          "commits": [
+            "chore: relocate Impeccable source under Forge"
+          ]
+        }
+      ],
+      "takeaway": "**Shipped a hardening pass across the agent stack and stood up the sponsorship site's private access gate:** I locked down DCP's Telegram alert delivery with an internal-auth header and a real delivery check, then rerouted DCP failure alerts to Telegram so they don't die silently in a channel nobody watches. Jimbo got a subscription burn fix, master roadmap milestones, and its Slack DM poller archived behind a flag since nobody was using it live.\n\nOn the sponsorship site I built the private access gate plus a generated sponsorship presentation, backed by privacy test coverage and locked deployment dependencies. Mighty's CI moved to Node 24, the agents submodule got bumped twice including a merged media agent integration, and I split time documenting a media intelligence roadmap across production, operations, and teaching plans."
+    },
+    {
+      "day": 208,
+      "date": "2026-07-21",
+      "title": "Day 208 - Hardening Forge and a Vault Fallback Rail",
+      "era": "Full Stack AI",
+      "type": [
+        "Fix",
+        "Build",
+        "Refactor"
+      ],
+      "source": "Claude Code",
+      "category": [
+        "Security",
+        "Agents",
+        "AI/ML",
+        "Design"
+      ],
+      "impact": "Medium",
+      "url": null,
+      "channel": "",
+      "runtime_min": null,
+      "videos": [
+        {
+          "title": "FORGET Loop Engineering. Agentic Engineering is about THIS",
+          "channel": "IndyDevDan",
+          "url": "https://www.youtube.com/watch?v=VQy50fuxI34",
+          "runtime_min": 34.3,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Design"
+          ]
+        },
+        {
+          "title": "PLANS For Fable 5: Rebuilding My /Plan Skill for Mythos Class Models",
+          "channel": "IndyDevDan",
+          "url": "https://www.youtube.com/watch?v=DzbqeO_diOQ",
+          "runtime_min": 62.8,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Engineers... STOP Picking GPT-5.6 Sol OR Claude Fable 5\u2026 FUSE THEM",
+          "channel": "IndyDevDan",
+          "url": "https://www.youtube.com/watch?v=AQl5Q-0l7FQ",
+          "runtime_min": 26.4,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Design",
+            "Open Source"
+          ]
+        },
+        {
+          "title": "Copy My $1 Kimi K3 Website System (All Prompts Included)",
+          "channel": "Nick Saraev",
+          "url": "https://www.youtube.com/watch?v=0zlwXSVmoeg",
+          "runtime_min": 21.6,
+          "category": [
+            "AI/ML",
+            "Automation",
+            "Security",
+            "Business",
+            "Design"
+          ]
+        },
+        {
+          "title": "5 Claude Cheat Codes Only The Top 1% Use",
+          "channel": "Sean Kochel",
+          "url": "https://www.youtube.com/watch?v=7tX7YMLDJjM",
+          "runtime_min": 20.6,
+          "category": [
+            "AI/ML",
+            "Business"
+          ]
+        },
+        {
+          "title": "FDE: The $1M/Year AI Job Explained",
+          "channel": "Greg Isenberg",
+          "url": "https://www.youtube.com/watch?v=zXysLUTLjw4",
+          "runtime_min": 51.6,
+          "category": [
+            "AI/ML",
+            "Agents",
+            "Automation",
+            "Business",
+            "DevOps"
+          ]
+        }
+      ],
+      "builds": [
+        {
+          "repo": "forge",
+          "commits": [
+            "fix(cardsmith): enforce paid-run safety",
+            "fix(tools): harden review worker lifecycle",
+            "fix(model-generator): reject duplicate structured prop types"
+          ]
+        },
+        {
+          "repo": "mighty",
+          "commits": [
+            "chore(submodule): bump agents",
+            "docs: route report cards through media agent",
+            "docs: record mighty media agent plan"
+          ]
+        },
+        {
+          "repo": "mighty/agents",
+          "commits": [
+            "fix: harden Jimbo cockpit after Fable review (#134)",
+            "feat: add BWS fallback rail to vault provider"
+          ]
+        },
+        {
+          "repo": ".",
+          "commits": [
+            "chore(sync): pull Notion edits to ACTIVE.md"
+          ]
+        }
+      ],
+      "takeaway": "**Spent the day hardening Forge:** cardsmith now blocks unsafe paid runs, the review worker cleans up its own lifecycle, and the model generator rejects duplicate prop types before they cause trouble. The kie allowlists got realigned to models I actually verified live, and creative-coding stopped choking when a runtime dependency probe fails. Small fixes, each one closing a door where a bug or a surprise bill could sneak through.\n\nI also gave the vault provider a fallback rail through Bitwarden Secrets, so a locked vault stops being a hard stop when a secret is needed. Jimbo's cockpit got tightened up after a Fable review too. Nothing flashy, just fewer sharp edges across the stack."
+    },
     {
       "day": 207,
       "date": "2026-07-20",

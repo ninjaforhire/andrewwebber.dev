@@ -11,6 +11,8 @@
 //   2. Create the product at the price below, copy the payment-link URL
 //   3. Paste it into that offer's `checkoutUrl`
 
+import { SITE_STATS } from "@/lib/site-stats";
+
 export type OfferAccent = "terminal" | "data" | "creative" | "warm";
 
 export interface Offer {
@@ -58,7 +60,7 @@ export const OFFERS: Offer[] = [
     price: "from $2,500",
     cadence: "50% to start · balance on delivery",
     summary:
-      "A production-deployed autonomous agent for your specific workflow — lead qualifier, follow-up engine, reporting bot — built on the same stack running 40+ agents at MIGHTY.",
+      `A production-deployed autonomous agent for your specific workflow — lead qualifier, follow-up engine, reporting bot — built on the same stack running ${SITE_STATS.agentsLive} agents at MIGHTY.`,
     features: [
       "Scoping call to define the agent's job",
       "Built, tested, and deployed to your systems",
@@ -174,7 +176,7 @@ export const BOOTH_OFFERS: Offer[] = [
       "Automation roadmap, ranked by time saved",
       "Written plan you can act on yourself or hire out",
       "30-minute debrief call",
-      "Built by a 10-year operator, for operators",
+      "Built by a working operator since 2016, for operators",
     ],
     accent: "data",
     ctaLabel: "Buy — $299",

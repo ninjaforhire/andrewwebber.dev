@@ -158,12 +158,47 @@ export function ToolsGrid({
       ))}
 
       <p className="mt-10 font-mono text-xs text-muted-foreground">
-        {shown} highlighted here out of {totalCount}+ built — the full inventory lives on{" "}
+        {shown} highlighted here out of {totalCount} built — the full inventory lives on{" "}
         <a href="/work" className="text-data underline decoration-data/40 hover:decoration-data">
           /work
         </a>
         . More run internally, never shown publicly.
       </p>
+
+      <nav
+        aria-label="Photo booth tool sections"
+        className="mt-8 rounded-xl border border-white/10 bg-card/70 p-4"
+      >
+        <div className="mb-3 font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
+          Interactive tool index
+        </div>
+        <div className="flex snap-x gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <a
+            href="#signature-builds"
+            className="shrink-0 rounded-full border border-creative/40 bg-creative/10 px-4 py-2 font-mono text-xs uppercase tracking-wider text-creative transition-colors hover:bg-creative/20"
+          >
+            ★ Signature Builds
+          </a>
+          {groups.map(({ meta }) => (
+            <a
+              key={`bottom-${meta.key}`}
+              href={`#group-${meta.key}`}
+              className={cn(
+                "shrink-0 rounded-full border px-4 py-2 font-mono text-xs uppercase tracking-wider transition-colors",
+                ACCENT_PILL[meta.accent]
+              )}
+            >
+              {meta.title}
+            </a>
+          ))}
+          <a
+            href="#tools"
+            className="shrink-0 rounded-full border border-white/15 px-4 py-2 font-mono text-xs uppercase tracking-wider text-foreground transition-colors hover:bg-white/5"
+          >
+            ↑ Top
+          </a>
+        </div>
+      </nav>
     </div>
   );
 }

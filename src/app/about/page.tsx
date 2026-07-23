@@ -12,7 +12,7 @@ import { SITE_STATS } from "@/lib/site-stats";
 export const metadata: Metadata = {
   title: "Dossier",
   description:
-    "The story behind the code. Andrew Webber, builder, automation architect, and creative coder from Fort Worth, TX.",
+    "How Andrew Webber went from opening every folder in Windows 3.1 to building a photo booth company and teaching robots to handle the paperwork.",
 };
 
 const ROOT = process.cwd();
@@ -30,35 +30,35 @@ const CHAPTERS = [
     year: "1996",
     tag: "Origin",
     hook: "Dad brought home a Windows 3.1 machine when I was six. Zero games.",
-    body: "No Solitaire, no Minesweeper, nothing. I opened every folder on the hard drive instead, just to see what each one did.\n\nMost kids got a Nintendo. I got File Manager, and honestly, it worked out.",
+    body: "No Solitaire, no Minesweeper, nothing. I opened every folder on the hard drive instead, just to see what each one did. I had no idea what I was looking for. I was six. There was no plan.\n\nMost kids got a Nintendo. I got File Manager and an adult-sized suspicion that computers were hiding interesting shit from me. Honestly, it worked out.",
     accent: "text-warm",
   },
   {
     year: "2001",
     tag: "First builds",
     hook: "Wrote my first HTML page in fifth grade.",
-    body: "My whole process was View Source on any site I liked, paste the tags into Notepad, hit refresh, and see what broke. Nobody assigned this. I was ten.\n\nIt never wore off.",
+    body: "My whole process was View Source on any site I liked, paste the tags into Notepad, hit refresh, and see what broke. Then I would change one thing, refresh again, and feel like a tiny wizard when the background turned blue.\n\nNobody assigned this. I was ten. Other kids had hobbies that involved sunlight.",
     accent: "text-data",
   },
   {
     year: "2004",
     tag: "LAN years",
     hook: "Built my first gaming rig.",
-    body: "Competitive Counter-Strike, LAN tournaments across the country, a full tower PC hauled through airports and hotel lobbies. The sweatiest years of my life.\n\nMy parents drove me everywhere, paid the entry fees, and never once suggested I find a normal hobby. They are heroes and I mean that.",
+    body: "Competitive Counter-Strike, LAN tournaments across the country, a full tower PC hauled through airports and hotel lobbies. Imagine a convention hall full of exhausted teenagers screaming callouts at beige monitors. The sweatiest years of my life.\n\nMy parents drove me everywhere, paid the entry fees, and never once suggested I find a normal hobby. They are heroes. They also had absolutely no idea where any of this was going.",
     accent: "text-warm",
   },
   {
     year: "2006",
     tag: "Live events",
     hook: "Started running live events across DFW.",
-    body: "Sound, lighting, AV, photography. Every weekend brought a new venue, a new load-in, and a new discovery about what a road case cannot actually survive.\n\nYou learn to solve problems fast when the room fills in twenty minutes and the clock does not care how you feel about it.",
+    body: "Sound, lighting, AV, photography. Every weekend brought a new venue, a new load-in, and a new discovery about what a road case cannot actually survive. The manufacturer always has a more optimistic answer than gravity.\n\nYou learn to solve problems fast when the room fills in twenty minutes, the keynote laptop has one mystery port, and the clock does not give a damn about your feelings.",
     accent: "text-creative",
   },
   {
     year: "2016",
     tag: "MIGHTY",
     hook: "Founded MIGHTY Photo Booths.",
-    body: "Premium photo and video activations for corporate brands. Canon DSLRs, custom designs built from scratch, self-powered battery rigs so we could set up anywhere a planner pointed.\n\nIt started as a side hustle. It refused to stay one.",
+    body: "Premium photo and video activations for corporate brands. Canon DSLRs, custom designs built from scratch, self-powered battery rigs so we could set up anywhere a planner pointed, including several places no reasonable person would describe as a setup area.\n\nIt started as a side hustle. Then it ate the garage, the weekends, and eventually the rest of my career.",
     accent: "text-creative",
   },
   {
@@ -72,21 +72,21 @@ const CHAPTERS = [
     year: "2023",
     tag: "Full time",
     hook: "Went full time on the crazy idea.",
-    body: "January 1, 2023. Every AV contract I had spent years building expired, and I let them all go on purpose. Steady work, safe money, gone. I did the math on our savings about forty times that January.\n\nThat was the year we broke our first $100,000 in revenue. Since then the bar keeps moving: scaling a team, keeping a full client list happy while chasing new ones, building experiences nobody has seen before.\n\nThis is the most fun I have ever had in business, and it is not close.",
+    body: "January 1, 2023. Every AV contract I had spent years building expired, and I let them all go on purpose. Steady work, safe money, gone. A very mature and relaxing decision. I checked our savings about forty times that January.\n\nThat was the year we broke our first $100,000 in revenue. Since then the bar keeps moving: scaling a team, keeping a full client list happy while chasing new ones, and building experiences nobody has seen before.\n\nIt is stressful in the way a roller coaster is stressful when you also own the roller coaster. It is still the most fun I have ever had in business.",
     accent: "text-creative",
   },
   {
     year: "2023",
     tag: "ADHD ≠ bug",
     hook: "Figured out the thing people called a weakness was actually the engine.",
-    body: `Hyperfocus used to mean losing a whole weekend to something nobody asked for. Now it means ${SITE_STATS.tools}+ tools and counting. Same brain, better aim.\n\nI stopped fighting it and started pointing it at code.`,
+    body: `Hyperfocus used to mean losing a whole weekend to something nobody asked for, then emerging Sunday night with a perfect solution to a problem that barely existed. My brain is still 46 browser tabs, and one of them is definitely playing music somewhere.\n\nThe difference is that I finally gave it a useful target. Today that pile is ${SITE_STATS.tools} working tools. Same brain. Better aim. Fewer apologies.`,
     accent: "text-terminal",
   },
   {
     year: "Now",
     tag: "Today",
     hook: "These days I mostly teach robots to do my old jobs.",
-    body: "AI agents, automation systems, creative code, security work. I am a systems guy who loves clean organization, cold LaCroix, and shipping things that make someone's day easier.\n\nI help by building, not lecturing.",
+    body: "These days I build AI agents, automation systems, creative tools, and security software. Mostly I teach robots to do the repetitive parts of my old jobs so the humans can keep the weird, judgment-heavy parts.\n\nI like clean systems, cold LaCroix, direct answers, and software that saves somebody from opening the same miserable spreadsheet for the four-hundredth time. I help by building the thing, not standing beside a slide deck explaining why the thing would be cool.",
     accent: "text-terminal",
   },
 ];
@@ -124,10 +124,10 @@ export default function AboutPage() {
               className="crop font-extrabold text-[clamp(56px,9vw,128px)] leading-[0.88]"
               style={{ textShadow: HERO_TEXT_SHADOW }}
             >
-              Builder. <br />
-              <span className="text-creative">Storyteller.</span>
+              A strange route <br />
+              <span className="text-creative">to right here.</span>
               <br />
-              Systems guy.
+              No sensible plan.
             </h1>
 
             {/* STATS STRIP */}

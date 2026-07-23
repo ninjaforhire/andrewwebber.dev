@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Hero } from "@/components/photo-booth-owners/Hero";
 import { ToolsGrid } from "@/components/photo-booth-owners/ToolsGrid";
 import { ServicesExplorer } from "@/components/photo-booth-owners/services/ServicesExplorer";
-import { CalcomEmbed } from "@/components/photo-booth-owners/CalcomEmbed";
 import { GuideCard } from "@/components/photo-booth-owners/GuideCard";
 import { InquiryForm } from "@/components/photo-booth-owners/InquiryForm";
 import { OffersSection } from "@/components/sections/OffersSection";
@@ -18,7 +17,7 @@ import { getSignatureBuilds } from "@/lib/signature-builds";
 export const metadata: Metadata = {
   title: "For Photo Booth Operators",
   description:
-    "Tools, automation, and consulting for photo booth business owners. Built by a 10-year operator. Available for hire.",
+    "Tools, automation, and consulting for photo booth business owners. Built by a working operator since 2016. Available for hire.",
 };
 
 interface ToolOverride {
@@ -153,21 +152,7 @@ export default function PhotoBoothOwnersPage() {
           offers={BOOTH_OFFERS}
         />
 
-        <h3 className="font-heading text-2xl font-bold mt-20 md:mt-32 mb-8">
-          Rather talk first?
-        </h3>
-        <div className="grid gap-6 md:grid-cols-2 max-w-4xl mb-12 md:mb-16">
-          <CalcomEmbed
-            label="10-min Discovery Call"
-            description="Quick call to figure out if we're a fit. No commitment. Come with a specific problem."
-          />
-          <CalcomEmbed
-            label="1-hr AMA"
-            description="Bring your questions. We'll talk through ops, automation, SEO, security — whatever you need."
-          />
-        </div>
-
-        <h3 className="font-heading text-2xl font-bold mb-8">PDF Guides</h3>
+        <h3 className="font-heading text-2xl font-bold mt-20 md:mt-32 mb-8">PDF Guides</h3>
         <div className="grid gap-4 md:grid-cols-3 max-w-5xl">
           {(guidesData as Parameters<typeof GuideCard>[0]["guide"][]).map((guide) => (
             <GuideCard key={guide.slug} guide={guide} />

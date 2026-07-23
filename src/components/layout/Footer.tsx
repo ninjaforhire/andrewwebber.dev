@@ -53,8 +53,8 @@ const SOCIALS: { name: string; handle: string; href: string; icon: "github" | "r
   },
   {
     name: "Reddit",
-    handle: "u/ninjaforhire",
-    href: "https://www.reddit.com/user/ninjaforhire/",
+    handle: "u/Kitchen_Ad6205",
+    href: "https://www.reddit.com/user/Kitchen_Ad6205/",
     icon: "reddit",
   },
 ];
