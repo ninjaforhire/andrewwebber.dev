@@ -58,7 +58,10 @@ DATA_FILES = [
     "src/data/journey-2026.json",
     "src/data/courses.json",
     "src/data/queue.json",
+    "src/data/mighty-tools.json",
+    "src/data/build-progress.json",
     "overrides.json",
+    "scripts/stats-checkpoint.json",
     # Hardcoded stat fallbacks patched by refresh-stats.py — tracked, so a
     # stats change here triggers commit + prod deploy (no-JS/SEO views stay
     # fresh and we never silently skip a deploy).
@@ -188,6 +191,7 @@ def main() -> None:
         ([PYTHON_BREW, str(SCRIPTS / "export-journey-json.py"), "--no-push"], "export-journey"),
         ([PYTHON, str(SCRIPTS / "sync-courses.py")], "sync-courses"),
         ([PYTHON, str(SCRIPTS / "sync-queue.py")], "sync-queue"),
+        ([PYTHON, str(SCRIPTS / "sync-build-progress.py")], "sync-build-progress"),
         ([PYTHON, str(SCRIPTS / "refresh-stats.py")], "refresh-stats"),
         # Fatal drift guard: refuse to publish if any hardcoded "N tools/agents/
         # skills" literal crept back into src/ (portfolio numbers must come from

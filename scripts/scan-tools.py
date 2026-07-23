@@ -125,6 +125,10 @@ GENERAL_TOOLS_ALLOWED: dict[str, dict[str, str]] = {
         "name": "Gdrive Recovery",
         "description": "Tooling for reclaiming ownership + restoring Google Drive uploads after a Drive ownership mixup.",
     },
+    "no-screen-kids": {
+        "name": "No Screen Kids",
+        "description": "Printable activity-page generator for ages 3–8. Builds coloring pages, mazes, I Spy sheets, visual puzzles, and duplex PDFs from a guided parent interview.",
+    },
 }
 
 # general-tools/Scrapers/<dir>/ — individual scrapers Andrew built. Skip the

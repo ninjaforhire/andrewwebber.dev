@@ -27,7 +27,7 @@ export function Hero() {
         </h1>
 
         <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground max-w-3xl mt-8 md:mt-12">
-          10 years running MIGHTY Photo Booths. {SITE_STATS.agentsLive} autonomous agents. {SITE_STATS.skills}+ skills. Everything on
+          Running MIGHTY Photo Booths since 2016. {SITE_STATS.agentsLive} autonomous agents. {SITE_STATS.skills} skills. Everything on
           this page exists because I needed it — and built it myself.
         </p>
 
@@ -61,9 +61,9 @@ export function Hero() {
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-warm" />
             Fort Worth, TX
           </span>
-          <span>10 yrs operating</span>
+          <span>Operating since 2016</span>
           <span>{SITE_STATS.agentsLive} agents in production</span>
-          <span>500+ events</span>
+          <span>Corporate + private events</span>
         </div>
       </div>
 

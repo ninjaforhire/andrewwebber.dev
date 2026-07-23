@@ -8,20 +8,21 @@ import { Footer } from "@/components/layout/Footer";
 import { LenisProvider } from "@/components/layout/LenisProvider";
 import { LoadingScreen } from "@/components/animation/LoadingScreen";
 import { FocusAudio } from "@/components/animation/FocusAudio";
+import { SITE_STATS } from "@/lib/site-stats";
 import "./globals.css";
+
+const siteDescription = `Systems architect, agentic engineer, and cybersecurity expert. ${SITE_STATS.agentsLive} autonomous agents, ${SITE_STATS.skills} skills, ${SITE_STATS.linesOfCode.toLocaleString()} lines of code in 2026. Fort Worth, TX.`;
 
 export const metadata: Metadata = {
   title: {
     default: "Andrew Webber — Systems Architect · Agentic Engineer · Cybersecurity Expert",
     template: "%s | andrewwebber.dev",
   },
-  description:
-    "Systems architect, agentic engineer, and cybersecurity expert. 47 autonomous agents, 399 skills, 2,916,521 lines of code in 2026. Fort Worth, TX.",
+  description: siteDescription,
   metadataBase: new URL("https://andrewwebber.dev"),
   openGraph: {
     title: "Andrew Webber — Systems Architect · Agentic Engineer · Cybersecurity Expert",
-    description:
-      "Systems architect, agentic engineer, and cybersecurity expert. 47 autonomous agents, 399 skills, 2,916,521 lines of code in 2026. Fort Worth, TX.",
+    description: siteDescription,
     url: "https://andrewwebber.dev",
     siteName: "andrewwebber.dev",
     locale: "en_US",
@@ -30,8 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Andrew Webber — Systems Architect · Agentic Engineer · Cybersecurity Expert",
-    description:
-      "Systems architect, agentic engineer, and cybersecurity expert. 47 autonomous agents, 399 skills, 2,916,521 lines of code in 2026. Fort Worth, TX.",
+    description: siteDescription,
   },
   robots: {
     index: true,

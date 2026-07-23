@@ -911,6 +911,16 @@
     "domain": "Ops"
   },
   {
+    "slug": "mighty-media-agent",
+    "name": "mighty-media-agent",
+    "description": "Single home for photo and video output evaluation, deterministic event curation, and ranked media retrieval",
+    "category": "photo-booth",
+    "subcategory": "agent",
+    "source": "agent",
+    "location": "mighty/agents/tools/mighty-media-agent",
+    "domain": "Ops"
+  },
+  {
     "slug": "mighty-music",
     "name": "mighty-music",
     "description": "Open the MIGHTY Music Box in the browser \u2014 preview/trim the Audio Library",
@@ -1148,16 +1158,6 @@
     "source": "skill",
     "location": "mighty/skills/sales/osint",
     "domain": "Sales"
-  },
-  {
-    "slug": "output-evaluator",
-    "name": "output-evaluator",
-    "description": "Photo booth AI-output QA: dual-judge vision evals (Codex + Claude) against client reference images, per-event eval profiles, branded HTML report cards + SQLite scan history",
-    "category": "photo-booth",
-    "subcategory": "agent",
-    "source": "agent",
-    "location": "mighty/agents/tools/output-evaluator",
-    "domain": "Ops"
   },
   {
     "slug": "overlay-batch-fixer",
@@ -1813,6 +1813,15 @@
     "subcategory": "tool",
     "source": "tool",
     "location": "general-tools/graphify"
+  },
+  {
+    "slug": "no-screen-kids",
+    "name": "No Screen Kids",
+    "description": "Printable activity-page generator for ages 3\u20138. Builds coloring pages, mazes, I Spy sheets, visual puzzles, and duplex PDFs from a guided parent interview.",
+    "category": "tooling",
+    "subcategory": "tool",
+    "source": "tool",
+    "location": "general-tools/no-screen-kids"
   },
   {
     "slug": "video-agent",

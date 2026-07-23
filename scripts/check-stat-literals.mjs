@@ -20,7 +20,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
-const SCAN_DIRS = ["src/app", "src/components"];
+const SCAN_DIRS = ["src/app", "src/components", "src/lib"];
 const EXTS = new Set([".tsx", ".ts", ".jsx", ".js"]);
 
 // metric word in copy -> key in overrides.json
@@ -30,6 +30,8 @@ const METRIC_KEY = { tools: "tools", agents: "agentsLive", skills: "skills" };
 // 2-digit floor avoids incidental copy ("5 tools"); the global flag finds every
 // occurrence on a line.
 const LITERAL = /\b(\d{2,4})\s*\+?\s*(?:AI\s+|autonomous\s+)?(tools|agents|skills)\b/gi;
+const APPROX_DYNAMIC =
+  /\$\{SITE_STATS\.(tools|agentsLive|skills|repos|commitsShipped|claudeHours|linesOfCode)\}\+\s*(tools|agents|skills|repos|commits|hours|lines)/g;
 
 const canonical = JSON.parse(readFileSync(join(ROOT, "overrides.json"), "utf8"));
 
@@ -58,6 +60,11 @@ for (const dir of SCAN_DIRS) {
             `${file.replace(ROOT + "/", "")}:${i + 1}: "${m[0]}" -> live ${key} is ${want}`
           );
         }
+      }
+      for (const m of line.matchAll(APPROX_DYNAMIC)) {
+        offenders.push(
+          `${file.replace(ROOT + "/", "")}:${i + 1}: "${m[0]}" uses an approximate + on a live stat`
+        );
       }
     });
   }

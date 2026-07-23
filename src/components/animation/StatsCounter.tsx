@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { SITE_STATS } from "@/lib/site-stats";
 
 type FormatType = "compact" | "default";
 
@@ -145,19 +146,19 @@ interface LiveStats {
   aiTokens: number;
 }
 
-const ZERO: LiveStats = {
-  tools: 0,
-  skills: 0,
-  linesOfCode: 0,
-  commitsShipped: 0,
-  agentsLive: 0,
-  claudeHours: 0,
-  claudeTokens: 0,
-  aiTokens: 0,
+const INITIAL_STATS: LiveStats = {
+  tools: SITE_STATS.tools,
+  skills: SITE_STATS.skills,
+  linesOfCode: SITE_STATS.linesOfCode,
+  commitsShipped: SITE_STATS.commitsShipped,
+  agentsLive: SITE_STATS.agentsLive,
+  claudeHours: SITE_STATS.claudeHours,
+  claudeTokens: SITE_STATS.claudeTokens,
+  aiTokens: SITE_STATS.aiTokens,
 };
 
 export function StatsCounter() {
-  const [data, setData] = useState<LiveStats>(ZERO);
+  const [data, setData] = useState<LiveStats>(INITIAL_STATS);
 
   useEffect(() => {
     fetch("/api/stats")

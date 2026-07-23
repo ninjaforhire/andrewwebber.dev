@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import toolsData from "@/data/mighty-tools.json";
 import { SignatureCard } from "@/components/photo-booth-owners/SignatureCard";
 import { getSignatureBuilds } from "@/lib/signature-builds";
+import { SITE_STATS } from "@/lib/site-stats";
 
 interface Tool {
   slug: string;
@@ -91,7 +92,7 @@ export function WorkPageContent() {
   const [activeCategory, setActiveCategory] = useState<Tool["category"] | null>(null);
   const [activeDomain, setActiveDomain] = useState<string | null>(null);
   const [page, setPage] = useState(1);
-  const [toolsCount, setToolsCount] = useState(TOOLS.length);
+  const [toolsCount, setToolsCount] = useState(SITE_STATS.tools);
 
   useEffect(() => {
     fetch("/api/stats")
@@ -229,7 +230,7 @@ export function WorkPageContent() {
               : "text-muted-foreground border border-white/10 hover:border-white/30",
           )}
         >
-          All ({TOOLS.length})
+          Other builds ({TOOLS.length})
         </button>
         {CATEGORY_ORDER.map((cat) => (
           <button

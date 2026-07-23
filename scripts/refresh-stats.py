@@ -5,7 +5,9 @@ Counts:
   - linesOfCode: shallow-clones every repo owned by ninjaforhire, runs
     `wc -l` against tracked code files (lockfiles/minified/binaries excluded)
   - commitsShipped: GitHub commits authored by ninjaforhire across all repos
-  - agentsLive: max(local manifest.json count, GitHub repo count) — user choice
+  - agentsLive: exact active/production entries in the local dispatch registry
+  - skills: largest complete local skill surface, without adding mirrored roots
+  - tools: larger of the public build inventory and Jimbo's live tool registry
 
 Ratchet rule: only ratchets against PRIOR readings from this same script
 (`stats-checkpoint.json` with methodology=github_clone_wc_l).
@@ -20,6 +22,8 @@ import re
 import subprocess
 import sys
 import tempfile
+import urllib.error
+import urllib.request
 from datetime import datetime, timezone
 
 OWNER = "ninjaforhire"
@@ -157,8 +161,66 @@ def count_commits_for_repo(repo_path: pathlib.Path) -> int:
     return len(seen)
 
 
+def _claude_intervals(blocks: list[dict]) -> list[tuple[datetime, datetime]]:
+    """Return valid, non-gap Claude usage intervals scoped to 2026."""
+    intervals: list[tuple[datetime, datetime]] = []
+    for block in blocks:
+        if block.get("isGap") or not block.get("actualEndTime"):
+            continue
+        try:
+            start = datetime.fromisoformat(
+                str(block["startTime"]).replace("Z", "+00:00")
+            )
+            end = datetime.fromisoformat(
+                str(block["actualEndTime"]).replace("Z", "+00:00")
+            )
+        except (KeyError, TypeError, ValueError):
+            continue
+        if start.year == 2026 and end > start:
+            intervals.append((start, end))
+    return intervals
+
+
+def _merged_seconds(intervals: list[tuple[datetime, datetime]]) -> int:
+    """Count interval seconds once even if usage blocks overlap."""
+    if not intervals:
+        return 0
+    merged: list[tuple[datetime, datetime]] = []
+    for start, end in sorted(intervals):
+        if merged and start <= merged[-1][1]:
+            prior_start, prior_end = merged[-1]
+            merged[-1] = (prior_start, max(prior_end, end))
+        else:
+            merged.append((start, end))
+    return round(sum((end - start).total_seconds() for start, end in merged))
+
+
+def _incremental_claude_seconds(blocks: list[dict], after: str | None) -> int:
+    """Count only usage newer than the persisted high-water timestamp."""
+    if not after:
+        return 0
+    try:
+        cutoff = datetime.fromisoformat(after.replace("Z", "+00:00"))
+    except ValueError:
+        return 0
+    clipped = [
+        (max(start, cutoff), end)
+        for start, end in _claude_intervals(blocks)
+        if end > cutoff
+    ]
+    return _merged_seconds(clipped)
+
+
 def fetch_claude_2026() -> dict:
-    """Scoped to calendar year 2026. Honest sum across non-gap blocks."""
+    """Read the visible 2026 window and retain its incremental boundary."""
+    empty = {
+        "hours": 0,
+        "seconds": 0,
+        "tokens": 0,
+        "sessions": 0,
+        "latest_end": None,
+        "blocks": [],
+    }
     try:
         out = subprocess.check_output(
             ["npx", "-y", "ccusage@latest", "blocks", "--offline", "--json"],
@@ -167,29 +229,32 @@ def fetch_claude_2026() -> dict:
             timeout=120,
         )
     except (subprocess.CalledProcessError, subprocess.TimeoutExpired, FileNotFoundError):
-        return {"hours": 0, "tokens": 0, "sessions": 0}
+        return empty
     try:
         data = json.loads(out)
     except json.JSONDecodeError:
-        return {"hours": 0, "tokens": 0, "sessions": 0}
+        return empty
 
-    total_ms = 0
-    total_tokens = 0
-    sessions = 0
-    for b in data.get("blocks", []):
-        if b.get("isGap") or not b.get("actualEndTime"):
-            continue
-        start = datetime.fromisoformat(b["startTime"].replace("Z", "+00:00"))
-        if start.year != 2026:
-            continue
-        end = datetime.fromisoformat(b["actualEndTime"].replace("Z", "+00:00"))
-        total_ms += int((end - start).total_seconds() * 1000)
-        total_tokens += int(b.get("totalTokens") or 0)
-        sessions += 1
+    blocks = data.get("blocks", [])
+    if not isinstance(blocks, list):
+        return empty
+    intervals = _claude_intervals(blocks)
+    total_seconds = _merged_seconds(intervals)
+    total_tokens = sum(
+        int(block.get("totalTokens") or 0)
+        for block in blocks
+        if isinstance(block, dict)
+        and not block.get("isGap")
+        and block.get("actualEndTime")
+        and str(block.get("startTime", "")).startswith("2026-")
+    )
     return {
-        "hours": round(total_ms / 1000 / 60 / 60),
+        "hours": round(total_seconds / 3600),
+        "seconds": total_seconds,
         "tokens": total_tokens,
-        "sessions": sessions,
+        "sessions": len(intervals),
+        "latest_end": max((end for _, end in intervals), default=None),
+        "blocks": blocks,
     }
 
 
@@ -223,9 +288,9 @@ def fetch_codex_2026() -> dict:
 
 
 def count_tools() -> int:
-    """Tools = entries in src/data/mighty-tools.json, written by scan-tools.py.
+    """Return the larger complete tool inventory without adding mirrors.
 
-    The rule (also documented in scripts/scan-tools.py docstring):
+    Public build inventory rule (also documented in scan-tools.py):
       - Walk ~/_Code/ subtrees Andrew authored.
       - mighty/** = photo-booth (agents + skills + apps, recursive).
       - forge/ = design-forge (parent + each wing in execution/wings/).
@@ -235,8 +300,9 @@ def count_tools() -> int:
         .worktrees, vendor/, etc.).
       - One discrete thing built by Andrew = one row.
 
-    refresh-stats.py invokes scan-tools.py before counting so the number is
-    always current.
+    Jimbo exposes its complete runtime registry at /health. Some capabilities
+    appear in both surfaces, so compare the totals and use the larger value
+    rather than adding them.
     """
     scan = ROOT / "scripts" / "scan-tools.py"
     if scan.exists():
@@ -250,34 +316,85 @@ def count_tools() -> int:
         except subprocess.CalledProcessError:
             pass
     p = ROOT / "src" / "data" / "mighty-tools.json"
-    if not p.exists():
-        return 0
+    public_count = 0
+    if p.exists():
+        try:
+            data = json.loads(p.read_text())
+            public_count = len(data) if isinstance(data, list) else 0
+        except json.JSONDecodeError:
+            pass
+
+    jimbo_count = 0
     try:
-        data = json.loads(p.read_text())
-    except json.JSONDecodeError:
-        return 0
-    return len(data) if isinstance(data, list) else 0
+        with urllib.request.urlopen("http://127.0.0.1:8324/health", timeout=3) as response:
+            health = json.loads(response.read())
+        jimbo_count = int(
+            health.get("tools")
+            or health.get("tool_count")
+            or health.get("tools_loaded")
+            or 0
+        )
+    except (
+        OSError,
+        ValueError,
+        json.JSONDecodeError,
+        urllib.error.URLError,
+    ):
+        pass
+
+    return max(public_count, jimbo_count)
 
 
 def count_skills() -> int:
-    """Skills registry sibling to agent registry. One row = one skill.
+    """Return the largest complete local skill surface without double-counting.
 
-    Registry shape (rebuild_skills_registry.py): {"_meta": {...}, "skills": {...}}.
-    Count the entries under "skills", not the top-level keys.
+    Claude, Codex, the shared agent catalog, and source repositories mirror many
+    of the same skills. Count each surface independently and take the largest
+    total, per Andrew's rule, rather than adding mirrored copies together.
     """
-    registry = pathlib.Path.home() / "_Code" / "mighty" / "agents" / "_shared" / "dispatch" / "skills_registry.json"
-    if not registry.exists():
-        return 0
-    try:
-        data = json.loads(registry.read_text())
-    except json.JSONDecodeError:
-        return 0
-    if isinstance(data, dict):
-        skills = data.get("skills", data)
-        return len(skills) if isinstance(skills, (dict, list)) else 0
-    if isinstance(data, list):
-        return len(data)
-    return 0
+    home = pathlib.Path.home()
+    skip_parts = {".git", "node_modules"}
+
+    def count_skill_files(root: pathlib.Path) -> int:
+        if not root.exists():
+            return 0
+        return sum(
+            1
+            for path in root.rglob("SKILL.md")
+            if not any(part in skip_parts for part in path.parts)
+        )
+
+    surface_counts = [
+        count_skill_files(home / ".claude" / "skills"),
+        count_skill_files(home / ".agents" / "skills"),
+        count_skill_files(home / ".codex" / "skills"),
+        count_skill_files(home / ".codex" / "plugins" / "cache"),
+        count_skill_files(home / "_Code" / "mighty" / "skills"),
+        count_skill_files(home / "_Code" / "general-tools"),
+    ]
+
+    registry = (
+        home
+        / "_Code"
+        / "mighty"
+        / "agents"
+        / "_shared"
+        / "dispatch"
+        / "skills_registry.json"
+    )
+    if registry.exists():
+        try:
+            data = json.loads(registry.read_text())
+            if isinstance(data, dict):
+                skills = data.get("skills", data)
+                if isinstance(skills, (dict, list)):
+                    surface_counts.append(len(skills))
+            elif isinstance(data, list):
+                surface_counts.append(len(data))
+        except json.JSONDecodeError:
+            pass
+
+    return max(surface_counts, default=0)
 
 
 def count_live_agents() -> int:
@@ -309,14 +426,36 @@ def load_prev() -> dict:
         return {}
 
 
-def _patch_source_fallbacks(*, loc: int, agents: int, skills: int, repos: int) -> None:
-    """Rewrite the hardcoded stat constants in tracked source files.
+def load_overrides() -> dict:
+    if not OVERRIDES.exists():
+        return {}
+    try:
+        data = json.loads(OVERRIDES.read_text())
+    except json.JSONDecodeError:
+        return {}
+    return data if isinstance(data, dict) else {}
 
-    ``JourneyTeaser.tsx`` (``STATS_FALLBACK``) and ``layout.tsx`` (the SEO meta
-    description) render before the client fetches ``/api/stats``, so crawlers,
-    social cards, and the first paint show whatever is compiled in. They are not
-    wired to ``overrides.json``, so they go stale. This keeps them in lockstep
-    with the freshly written numbers. Idempotent: a no-op when already current.
+
+def newer_timestamp(current: str | None, candidate: str | None) -> str | None:
+    """Return the later valid ISO timestamp without moving backward."""
+    if not candidate:
+        return current
+    if not current:
+        return candidate
+    try:
+        current_dt = datetime.fromisoformat(current.replace("Z", "+00:00"))
+        candidate_dt = datetime.fromisoformat(candidate.replace("Z", "+00:00"))
+    except ValueError:
+        return current
+    return candidate if candidate_dt > current_dt else current
+
+
+def _patch_source_fallbacks(*, loc: int, agents: int, skills: int, repos: int) -> None:
+    """Keep JourneyTeaser's no-JS fallback in lockstep with overrides.json.
+
+    SEO metadata and other build-time copy import ``SITE_STATS`` directly.
+    JourneyTeaser keeps a literal fallback because it hydrates from /api/stats.
+    This rewrite is idempotent and ensures its first paint stays exact.
     """
     journey = ROOT / "src" / "data" / "journey-2026.json"
     try:
@@ -350,22 +489,6 @@ def _patch_source_fallbacks(*, loc: int, agents: int, skills: int, repos: int) -
                 f"skills={skills} repos={repos} loc={loc}"
             )
 
-    layout = ROOT / "src" / "app" / "layout.tsx"
-    if layout.exists():
-        sentence = (
-            f"{agents} autonomous agents, {skills} skills, "
-            f"{loc // 1_000_000}M+ lines of code"
-        )
-        text = layout.read_text()
-        new = re.sub(
-            r"\d[\d,]* autonomous agents, [\d,]+ skills, \d+M\+ lines of code",
-            sentence,
-            text,
-        )
-        if new != text:
-            layout.write_text(new)
-            print(f"Patched layout.tsx meta -> {sentence}")
-
 
 def main() -> None:
     print("Listing repos...", file=sys.stderr)
@@ -394,11 +517,14 @@ def main() -> None:
             print(f" loc={loc:,} files={files_counted} commits={commits}", file=sys.stderr)
 
     live_agents = count_live_agents()
-    # User-confirmed methodology: max of canonical registry-active and GitHub repo count.
-    agents_live_now = max(live_agents, len(repos))
+    agents_live_now = live_agents
 
     skills_now = count_skills()
     tools_now = count_tools()
+    if len(repos) <= 0 or live_agents <= 0 or skills_now <= 0 or tools_now <= 0:
+        raise RuntimeError(
+            "Live inventory count failed; refusing to publish zero or stale stats"
+        )
 
     print("Reading Claude 2026 usage...", file=sys.stderr)
     claude = fetch_claude_2026()
@@ -410,41 +536,106 @@ def main() -> None:
     ai_tokens_now = claude["tokens"] + codex["tokens"]
 
     prev = load_prev()
+    overrides = load_overrides()
     prev_method = prev.get("methodology")
     if prev_method == METHOD:
         # Read ratchet_* (the high-water marks), not raw measurement fields.
         # Otherwise a partial-failure run that wrote a lower raw value would
         # let the next run regress past the previously ratcheted floor.
-        prev_loc = int(prev.get("ratchet_loc", prev.get("github_loc", 0)))
-        prev_commits = int(prev.get("ratchet_commits", prev.get("github_commits", 0)))
+        prev_loc = max(
+            int(prev.get("ratchet_loc", prev.get("github_loc", 0))),
+            int(overrides.get("linesOfCode", 0)),
+        )
+        prev_commits = max(
+            int(prev.get("ratchet_commits", prev.get("github_commits", 0))),
+            int(overrides.get("commitsShipped", 0)),
+        )
         prev_agents = int(prev.get("ratchet_agents", prev.get("agents_live", 0)))
-        prev_hours = int(prev.get("ratchet_claude_hours", prev.get("claude_hours", 0)))
-        prev_tokens = int(prev.get("ratchet_claude_tokens", prev.get("claude_tokens", 0)))
+        checkpoint_hours = int(
+            prev.get("ratchet_claude_hours", prev.get("claude_hours", 0))
+        )
+        override_hours = int(overrides.get("claudeHours", 0))
+        prev_hours = max(checkpoint_hours, override_hours)
+        stored_seconds = prev.get("ratchet_claude_seconds")
+        if stored_seconds is None:
+            prev_claude_seconds = prev_hours * 3600
+        else:
+            prev_claude_seconds = int(stored_seconds)
+            if override_hours > checkpoint_hours:
+                prev_claude_seconds = max(
+                    prev_claude_seconds,
+                    override_hours * 3600,
+                )
+        prev_hours_through = prev.get("claude_hours_through")
+        can_accumulate_hours = (
+            isinstance(prev_hours_through, str)
+            and checkpoint_hours >= override_hours
+        )
+        prev_tokens = max(
+            int(prev.get("ratchet_claude_tokens", prev.get("claude_tokens", 0))),
+            int(overrides.get("claudeTokens", 0)),
+        )
         # First combined run has no ratchet_ai_tokens; seed from the Claude-only
         # ratchet (combined >= claude-only, so the floor stays honest).
-        prev_ai_tokens = int(prev.get("ratchet_ai_tokens", prev.get("ratchet_claude_tokens", 0)))
+        prev_ai_tokens = max(
+            int(prev.get("ratchet_ai_tokens", prev.get("ratchet_claude_tokens", 0))),
+            int(overrides.get("aiTokens", 0)),
+        )
         prev_skills = int(prev.get("ratchet_skills", prev.get("skills", 0)))
         prev_repos = int(prev.get("ratchet_repos", prev.get("repos_count", 0)))
         prev_tools = int(prev.get("ratchet_tools", prev.get("tools", 0)))
     else:
         prev_loc = prev_commits = prev_agents = prev_hours = prev_tokens = 0
         prev_skills = prev_repos = prev_tools = prev_ai_tokens = 0
+        prev_claude_seconds = 0
+        prev_hours_through = None
+        can_accumulate_hours = False
 
     final_loc = max(total_loc, prev_loc)
     final_commits = max(total_commits, prev_commits)
-    final_agents = max(agents_live_now, prev_agents)
-    final_hours = max(claude["hours"], prev_hours)
+    final_agents = agents_live_now
+    latest_end = claude["latest_end"]
+    latest_end_iso = (
+        latest_end.isoformat().replace("+00:00", "Z")
+        if isinstance(latest_end, datetime)
+        else None
+    )
+    incremental_seconds = (
+        _incremental_claude_seconds(claude["blocks"], prev_hours_through)
+        if can_accumulate_hours
+        else 0
+    )
+    final_claude_seconds = max(
+        claude["seconds"],
+        prev_claude_seconds + incremental_seconds,
+    )
+    final_hours = max(final_claude_seconds // 3600, prev_hours)
+    final_hours_through = newer_timestamp(prev_hours_through, latest_end_iso)
     final_tokens = max(claude["tokens"], prev_tokens)
     final_ai_tokens = max(ai_tokens_now, prev_ai_tokens)
-    final_skills = max(skills_now, prev_skills)
-    final_repos = max(len(repos), prev_repos)
-    final_tools = max(tools_now, prev_tools)
+    final_skills = skills_now
+    final_repos = len(repos)
+    final_tools = tools_now
+    previous_per_repo = prev.get("per_repo", {})
+    preserved_per_repo = (
+        dict(previous_per_repo) if isinstance(previous_per_repo, dict) else {}
+    )
+    preserved_per_repo.update(per_repo)
+    full_github_refresh = len(per_repo) == len(repos)
+    checkpoint_github_loc = (
+        total_loc if full_github_refresh else int(prev.get("github_loc", 0))
+    )
+    checkpoint_github_commits = (
+        total_commits
+        if full_github_refresh
+        else int(prev.get("github_commits", 0))
+    )
 
     checkpoint = {
         "methodology": METHOD,
         "countedAt": datetime.now(timezone.utc).isoformat(),
-        "github_loc": total_loc,
-        "github_commits": total_commits,
+        "github_loc": checkpoint_github_loc,
+        "github_commits": checkpoint_github_commits,
         "live_agents_registry": live_agents,
         "repos_count": len(repos),
         "agents_live": agents_live_now,
@@ -455,6 +646,9 @@ def main() -> None:
         "claude_tokens": claude["tokens"],
         "claude_sessions": claude["sessions"],
         "ratchet_claude_hours": final_hours,
+        "ratchet_claude_seconds": final_claude_seconds,
+        "claude_hours_through": final_hours_through,
+        "claude_incremental_seconds": incremental_seconds,
         "ratchet_claude_tokens": final_tokens,
         "codex_tokens": codex["tokens"],
         "codex_sessions": codex["sessions"],
@@ -465,16 +659,10 @@ def main() -> None:
         "ratchet_repos": final_repos,
         "tools": tools_now,
         "ratchet_tools": final_tools,
-        "per_repo": per_repo,
+        "per_repo": preserved_per_repo,
     }
     CHECKPOINT.write_text(json.dumps(checkpoint, indent=2) + "\n")
 
-    overrides: dict = {}
-    if OVERRIDES.exists():
-        try:
-            overrides = json.loads(OVERRIDES.read_text())
-        except json.JSONDecodeError:
-            overrides = {}
     overrides["linesOfCode"] = final_loc
     overrides["commitsShipped"] = final_commits
     overrides["agentsLive"] = final_agents
@@ -486,12 +674,8 @@ def main() -> None:
     overrides["tools"] = final_tools
     OVERRIDES.write_text(json.dumps(overrides, indent=2) + "\n")
 
-    # Keep no-JS / SEO / pre-hydration views honest. JourneyTeaser.tsx and
-    # layout.tsx hold compile-time stat constants that render in server HTML
-    # before client hydration (and to crawlers + social cards that never run
-    # JS). They are NOT served from overrides.json, so they drift. Patch them
-    # to the fresh numbers. These files are tracked + in the nightly commit
-    # set, so this also guarantees a prod deploy whenever stats move.
+    # Keep JourneyTeaser's no-JS/pre-hydration fallback honest. Other build-time
+    # stat copy imports SITE_STATS directly from overrides.json.
     _patch_source_fallbacks(
         loc=final_loc,
         agents=final_agents,
@@ -516,6 +700,8 @@ def main() -> None:
         "aiTokens": final_ai_tokens,
         "repos": len(repos),
         "registry_live": live_agents,
+        "skills": final_skills,
+        "tools": final_tools,
     }
     print(json.dumps(summary, indent=2))
 
